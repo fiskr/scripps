@@ -1,0 +1,140 @@
+body#blog-cabin #diy-bd{margin-top:214px;*margin-top: 246px;}
+#blog-cabin .show-lead{width:966px;margin:0 auto 7px;}
+#blog-cabin .show-lead h2{height:200px;overflow:hidden;text-indent: -999em;}
+#blog-cabin .show-lead h2 a{display:block;height:200px;}
+body.ton-main #diy-sub-nav #bc-main-nav a, body.ton-tour #diy-sub-nav #bc-tour-nav a, body.ton-photo #diy-sub-nav #bc-photo-nav a, body.ton-videos #diy-sub-nav #bc-vid-nav a, body.ton-products #diy-sub-nav #bc-prod-nav a, body.ton-pchoice #diy-sub-nav #bc-pchoice-nav a, body.ton-sweeps #diy-sub-nav #bc-sweeps-nav a, body.ton-dreamcab #diy-sub-nav #bc-dreamcab-nav a, body.ton-episode #diy-sub-nav #bc-episode-nav a, body.wp #diy-sub-nav #bc-blog-nav a, body.ton-past #diy-sub-nav #bc-past-nav a {color: #CCC;background: #681104;background-position: -896px -580px;}
+#diy-e #my-dream-cabin h4{background: #fff;border-color: #fff;color: #333;float:left;font-size:123.1%;margin:0 0 7px;}
+#my-dream-cabin .hd a.more{float:right;font-size:85%;line-height:2.5;margin-right:14px;}
+#diy-e #my-dream-cabin .bd{padding:0 6px;}
+#my-dream-cabin .thumbs{height:263px;}
+#my-dream-cabin .menu{padding-bottom:7px;}
+.dream-cabin-highlight .hd{border-bottom:1px solid #ddd;margin-bottom:14px;}
+.dream-cabin-highlight h3{float:left;line-height:1.125;}
+.dream-cabin-highlight .hd .more{float:right;line-height:1.64;}
+.dream-cabin-highlight ul li{text-align:center;line-height:1.38;margin-left:23px;}
+.dream-cabin-highlight ul li.first{margin-left:0;}
+.dream-cabin-highlight ul a.thumbnail{display:block;width:120px;margin:0 auto;}
+.dream-cabin-highlight ul a.thumbnail img{display:block;}
+.dream-cabin-highlight ul p.more{line-height:1.45;}
+.dream-cabin-highlight .rating{margin:4px auto;}
+#browse-all-rooms{margin:0 14px 14px;}
+#browse-all-rooms h3{color: #000;font-weight:bold;font-size:123.1%;line-height:1;text-transform:uppercase;margin-bottom:7px;}
+#browse-all-rooms h4{font-weight:bold;font-size:108%;}
+#browse-all-rooms ul .cell{width:205px;}
+#browse-all-rooms ul .cell .bd{padding:7px 24px;margin:7px 0;min-height:205px;*min-height: 208px;}
+#browse-all-rooms ul .cell a.thumbnail{display:block;margin-bottom:7px;}
+#browse-all-rooms ul .cell a.thumbnail img{display:block;}
+#browse-all-rooms ul .cell.cap{clear:right;}
+#browse-all-rooms ul .cell .columns ul{*width: 49%;}
+#blog-cabin-2009 .small-nav{margin-bottom:7px;}
+#blog-cabin-2009 .floorplan{text-align:center;}
+#blog-cabin-2009 form .ui-dropdown{float:left;width:190px;margin-left:7px;}
+#blog-cabin-2009 form label{float:left;}
+#blog-cabin-2009 .ui-dropdown .fly-dd{margin-left: -66px;}
+#blog-cabin-2009 h5{font-weight:bold;}
+#blog-cabin-2009 #bc2009-destinations ul li.first a{background:url(http://images.diynetwork.com/webdiy/diy20/imgs/se/start-here.png) no-repeat center right;padding-right:83px;}
+#blog-cabin-sweepstakes .bd{line-height:1.38;}
+#blog-cabin-countdown{background: #000;color: #fff;margin:0 6px 12px;padding:12px 7px;text-transform:uppercase;font-weight:bold;background:url(http://images.diynetwork.com/webdiy/diy20/imgs/se/bccountdown-bg.jpg) no-repeat 0 0;height:36px;}
+#blog-cabin-countdown h5{color: #8b9e66;font-weight:bold;font-size:123.1%;line-height:1.25;}
+#blog-cabin-countdown .count{font-size:123.1%;line-height:1.25;}
+#blog-cabin #diy-we h4{color: #671104;font-size:123.1%;font-weight:bold;}
+#blog-cabin #diy-we h4 a{color: #671104;text-decoration:none;}
+#tourModule{margin:0 14px 14px; height: 463px\9;}
+
+/*BC tour - slight redesign*/
+.blog-cabin.tour-detail .tour-pagination-nav { clear: both; padding: 2px 0; color: #979797; }
+.blog-cabin.tour-detail .tour-pagination-nav li { float: left; padding: 6px 0; }
+.blog-cabin.tour-detail .tour-pagination-nav .next { border-left: dotted 1px #C3C3C5; padding-left: 12px; margin-left: 12px; }
+
+.blog-cabin.tour-detail .tour-pagination-nav .next .arrow-e { margin-left: 4px; }
+.blog-cabin.tour-detail .tour-pagination-nav .prev .arrow-w { margin-right: 4px; }
+
+.blog-cabin.tour-detail .tour-pagination-nav a { text-decoration: none; }
+.blog-cabin.tour-detail .tour-pagination-nav .link { color: #176684; }
+.blog-cabin.tour-detail .tour-pagination-nav a:hover .link { text-decoration: underline; color: #ba0707; }
+.blog-cabin.tour-detail .tour-pagination-nav a:active .link { color: #ff3333; }
+
+.blog-cabin.tour-detail .tour-pagination-nav .arrow-e,
+.blog-cabin.tour-detail .tour-pagination-nav .arrow-w {
+	border-style: dashed;
+	border-color: transparent;
+	border-width: 1em;
+	display: inline-block;
+	font-size: 5px;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: middle;
+	width: 0;
+	-webkit-transform: rotate(360deg); /*safari fix*/
+	position: relative;
+	bottom: 2px;
+}
+
+.blog-cabin.tour-detail .tour-pagination-nav .arrow-e {
+	border-left-width: 1em;
+	border-left-style: solid;
+	border-left-color: #6A9EB6;
+	left: 0.25em;
+}
+.blog-cabin.tour-detail .tour-pagination-nav a:hover .arrow-e { border-left-color: #ba0707; }
+.blog-cabin.tour-detail .tour-pagination-nav a:active .arrow-e { border-left-color: #ff3333; }
+
+.blog-cabin.tour-detail .tour-pagination-nav .arrow-w {
+	border-right-width: 1em;
+	border-right-style: solid;
+	border-right-color: #6A9EB6;
+	right: 0.25em;
+}
+.blog-cabin.tour-detail .tour-pagination-nav a:hover .arrow-w { border-right-color: #ba0707; }
+.blog-cabin.tour-detail .tour-pagination-nav a:active .arrow-w { border-right-color: #ff3333; }
+
+
+.blog-cabin.tour-detail #diy-ww { display: none; }
+.blog-cabin.tour-detail #diy-we { margin-left: 0; }
+.blog-cabin.tour-detail #diy-we > p { font-size: 15px; line-height: 1.5em; }
+.blog-cabin.tour-detail #diy-we > p strong { font-size: 22px; display: block; margin-bottom: -10px; }
+
+
+.blog-cabin.tour-detail #diy-we #related-videos h4,
+.blog-cabin.tour-detail #related-photos .sub-header { text-transform: none; font-size: 16px; margin: 28px 0 14px 0; line-height: 1; }
+
+.blog-cabin.tour-detail .crsl-we .panel,
+.blog-cabin.tour-detail .crsl-we .jcarousel-clip-horizontal { width: 544px; }
+
+.blog-cabin.tour-detail .crsl-we .crsl-item { width: 136px; }
+
+.blog-cabin.tour-detail #diy-w .crsl-we .frame { background: transparent; }
+
+.blog-cabin.tour-detail .crsl-we p { margin: 0 8px; }
+
+.blog-cabin.tour-detail .crsl-we .image img { max-width: 120px; max-height: 120px; width: auto; height: auto; border: none; margin: 0 auto; }
+.blog-cabin.tour-detail .crsl-we .image a { width: auto; }
+
+.blog-cabin.tour-detail .crsl-we .jcarousel-container { border-width: 7px; padding-top: 38px; margin: 0 8px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-prev-horizontal,
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-next-horizontal {
+	width: 30px;
+	height: 30px;
+	top: 56px;
+	border-top: 8px solid #fff;
+	border-bottom: 8px solid #fff;
+	/* IOS fix for incorrectly scaled sprites */
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-prev-horizontal { background-position: 0 -580px; left: -15px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-prev-horizontal:hover { background-position: -60px -580px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-prev-horizontal:active { background-position: -120px -580px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-prev-horizontal.jcarousel-prev-disabled { background-position: -180px -580px; }
+
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-next-horizontal { background-position: -30px -580px; right: -15px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-next-horizontal:hover { background-position: -90px -580px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-next-horizontal:active { background-position: -150px -580px; }
+.blog-cabin.tour-detail .crsl-we .jcarousel-container .jcarousel-next-horizontal.jcarousel-next-disabled { background-position: -210px -580px; }
+
+/*use image as background on blog cabin tour detail photo carousels since they are vertical and horizontal images mixed*/
+.blog-cabin.tour-detail .crsl-we.image-as-bg .jcarousel-container .jcarousel-prev-horizontal,
+.blog-cabin.tour-detail .crsl-we.image-as-bg .jcarousel-container .jcarousel-next-horizontal { top: 74px; }
+.blog-cabin.tour-detail .crsl-we.image-as-bg .image a { height: 120px; background-position: center center; background-repeat: no-repeat; }

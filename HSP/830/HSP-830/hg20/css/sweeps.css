@@ -1,0 +1,703 @@
+/* CSS Document */
+
+.dh-sweeps-lead {
+    width:997px;
+    height:104px;
+    margin:0 auto 5px;
+    }
+
+.dh-sweeps-lead h1 {
+    text-indent:-9999px;
+    background:no-repeat center top;
+    width:997px;
+    height:104px;
+    margin:0;
+    }
+
+#dream-home .sweeps h3.rls {
+    text-transform:uppercase;
+    text-align:center;
+    }
+
+#dream-home .sweeps p {
+    margin-bottom:14px;
+    }
+
+#dream-home .sweeps p.li-hd {
+    margin-bottom:0;
+    }
+
+.intro .center-ad-unit {
+    text-align:center;
+    }
+
+.intro .left {
+    float:left;
+    margin-right:12px;
+    }
+
+#pg-detail {
+    margin:0 14px;
+    }
+
+#pg-detail .right, .nl-optional .right {
+    float:right;
+    margin-left:12px;
+    }
+
+#hg-we .nl-bd {
+    border-bottom:1px solid #DAE7E3;
+    margin:14px 0;
+    padding:0;
+    }
+
+#hg-we .nl-bd .fieldset, #hg-we #stf .fieldset {
+    margin-bottom:14px;
+    padding-bottom:0;
+    background:none;
+    _float:left;
+    _width:406px;
+    }
+
+#hg-we .nl-bd legend, #hg-we #stf legend {
+    color:#000000;
+    font:bold 123.1%/1 "Trebuchet MS", sans-serif;
+    margin-bottom:14px;
+    }
+
+#hg-we .nl-bd p {
+    padding-bottom:0;
+    }
+
+#hg-we .nl-bd button.button, #hg-we #stf button.button {
+    width:auto;
+    overflow:visible;
+    white-space:nowrap;
+    }
+
+#hg-we .nl-bd button.button span em, #hg-we #stf button.button span em {
+    padding:0 7px 0 0;
+    }
+
+#hg-we .nl-bd .text-box {
+    width:189px;
+    }
+
+#hg-we #stf .text-box {
+    width:175px;
+    }
+
+#hg-we .nl-bd .text-box.lg {
+    width:392px;
+    }
+
+#hg-we .nl-bd .text-box.sm {
+    width:87px;
+    }
+
+#hg-we .nl-bd .text-box .acode {
+    float:left;
+    width:44px;
+    margin-right:8px;
+    }
+
+#hg-we .nl-bd .text-box .pnum {
+    float:left;
+    width:119px;
+    _width:117px;
+    }
+
+#hg-we .nl-bd .dd-list {
+    width:87px;
+    }
+
+#hg-we .nl-bd .nl-your-info .text-box li, #hg-we #stf .nl-your-info li {
+    margin-right:15px;
+    _margin-right:10px;
+    }
+
+#hg-we .nl-bd .nl-your-info li label {
+    white-space:nowrap
+    }
+
+#hg-we .nl-bd .nl-your-info .text-box li label {
+    margin-left:6px;
+    vertical-align:middle;
+    }
+
+#hg-we .nl-bd .nl-optional h3 {
+    font:bold 123.1%/1 "Trebuchet MS", sans-serif;
+    margin-bottom:14px;
+    }
+
+#hg-we .nl-bd .nl-optional li {
+    float:none;
+    }
+
+#hg-we .nl-bd .nl-optional li.last {
+    margin-bottom:14px;
+    }
+
+#hg-we .nl-bd .nl-optional label {
+    vertical-align:top;
+    margin-left:2px; /*font-weight: bold;*/
+    }
+
+#hg-we #stf {
+    padding:0;
+    margin-bottom:14px;
+    background:url(../imgs/nl-your-nfo-tcap.png) no-repeat 0 0;
+    }
+
+#hg-we #stf .hd {
+    padding-top:9px;
+    }
+
+#hg-we #stf .bd {
+    padding:0 12px 1px;
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    }
+
+#hg-we #stf .ft {
+    padding-bottom:9px;
+    background:url(../imgs/nl-your-nfo-bcap.png) no-repeat 0 bottom;
+    }
+
+#hg-we #stf li {
+    float:left;
+    margin-bottom:9px;
+    }
+
+#hg-we #stf .find {
+    text-align:center;
+    padding-bottom:7px;
+    }
+
+#hg-we .form-errors {
+    background:transparent url(../imgs/sp-errors-406.png) repeat-y -406px 0;
+    }
+
+#hg-we .form-errors .hd {
+    background:transparent url(../imgs/sp-errors-406.png) no-repeat 0 0;
+    position:relative;
+    }
+
+#hg-we .form-errors .hd .close {
+    position:absolute;
+    top:13px;
+    right:15px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat scroll left top;
+    width:12px;
+    height:12px;
+    text-indent:-9999px;
+    cursor:pointer;
+    }
+
+#hg-we .form-errors .bd {
+    background:transparent url(../imgs/sp-errors-406.png) no-repeat -812px bottom;
+    }
+
+#spnsr-gallery {
+    margin:0 6px;
+    }
+
+#spnsr-gallery h2 {
+    font-size:161.6%;
+    margin:0 8px 7px;
+    }
+
+.spnsr-prize {
+    border-bottom:1px solid #DAE7E3;
+    margin-bottom:7px;
+    padding:6px 8px;
+    }
+
+.spnsr-prize.last {
+    border-bottom:none;
+    margin-bottom:0;
+    }
+
+.spnsr-prize p {
+    margin-bottom:8px;
+    line-height:1.5;
+    }
+
+#site-wrapper .spnsr-prize img {
+    border:none;
+    margin-bottom:6px;
+    _margin-left:-10px;
+    padding:0;
+    }
+
+#spnsr-prize-top {
+    border:1px solid #DAE7E3;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    padding:0;
+    margin-bottom:14px;
+    }
+
+#spnsr-prize-top .hd {
+    border-bottom:1px solid #DAE7E3;
+    margin-bottom:13px;
+    padding-top:7px;
+    }
+
+#spnsr-prize-top .bd {
+    padding:0 8px;
+    }
+
+#spnsr-prize-top .ft {
+    height:10px;
+    font-size:0;
+    }
+
+#spnsr-prize-top .spnsr-prize {
+    padding:0 0 6px;
+    }
+
+#spnsr-prize-top .spnsr-prize.last {
+    padding:0;
+    }
+
+.spnsr-prod {
+    border:1px solid #A7BFA9;
+    float:right;
+    margin:0 0 10px 10px;
+    padding:2px;
+    }
+
+#site-wrapper .spnsr-prod img {
+    margin-bottom:0;
+    *margin-bottom:0;
+    _margin-bottom:0;
+    _margin-left:0;
+    }
+
+#spnsr-pod-full {
+    background:#F1F6F2;
+    margin:0 0 0 14px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    width:602px;
+    }
+
+#spnsr-pod-full .hd {
+    padding:10px 13px 0;
+    }
+
+#spnsr-pod-full .bd {
+    padding:0 13px;
+    }
+
+#spnsr-pod-full .ft {
+    background:#F1F6F2;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    padding-bottom:9px;
+    zoom:1;
+    *font-size:1%;
+    }
+
+#spnsr-pod-full h3 {
+    font:161.6% "Trebuchet MS";
+    margin-bottom:7px;
+    }
+
+#spnsr-pod-full h4 {
+    /* text-transform: uppercase;*/
+    font:123.1% "Trebuchet MS";
+    margin-bottom:7px;
+    }
+
+#spnsr-pod-full-top {
+    border-bottom:1px solid #DAE7E3;
+    padding-bottom:5px;
+    margin-bottom:12px;
+    }
+
+#spnsr-pod-full-top .spnsr-logo {
+    padding-right:32px;
+    }
+
+.spnsr-logo {
+    float:left;
+    padding-right:13px;
+    margin-bottom:5px;
+    }
+
+.spnsr-logo.last {
+    padding-right:0;
+    }
+
+#site-wrapper #spnsr-pod-full img {
+    border:none;
+    padding:0;
+    }
+
+.spnsr-list {
+    margin-right:7px;
+    margin-top:14px;
+    }
+
+#site-wrapper .spnsr-list img {
+    border:none;
+    display:inline;
+    padding:0;
+    }
+
+.spnsr-list li {
+    text-align:center;
+    margin-bottom:14px;
+    }
+
+.spnsr-list li.last {
+    margin-bottom:0;
+    }
+
+.spnsr-list.top {
+    border-bottom:1px solid #DDD;
+    margin-bottom:14px;
+    }
+
+#sweepsEntryForm .acco-res li.selected {
+    width:406px;
+    margin-right:0;
+    }
+
+#sweepsEntryForm .acco-res .acco-bd {
+    width:392px;
+    }
+
+#sweepsEntryForm .acco-res .acco-bd  li {
+    margin-right:0;
+    }
+
+#sweepsEntryForm .site-logos a {
+    height:40px;
+    background:url(http://web.hgtv.com/webhgtv/images/2009/designstar/images/logos.png) 0 0 no-repeat;
+    }
+
+#sweepsEntryForm .site-logos a.hgtv {
+    background-position:0 0;
+    width:58px;
+    }
+
+#sweepsEntryForm .site-logos a.diy {
+    background-position:-65px 0;
+    width:56px;
+    }
+
+#sweepsEntryForm .site-logos a.fln {
+    background-position:-128px 0;
+    width:56px;
+    }
+
+#sweepsEntryForm .site-logos a.gac {
+    background-position:-190px 0;
+    width:56px;
+    }
+
+#sweepsEntryForm .site-logos a.rcpczaar {
+    background-position:-251px 0;
+    width:55px;
+    }
+
+#sweepsEntryForm .site-logos a.hgtvpro {
+    background-position:-314px 0;
+    width:56px;
+    margin-right:0;
+    }
+
+#sweepsEntryForm .site-logos {
+    height:40px;
+    }
+
+#sweepsEntryForm .center-mod.yellow .hd {
+    background:transparent url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-hd-yellow.png) no-repeat scroll 0 0;
+    }
+
+#sweepsEntryForm .center-mod .bd {
+    padding:0 14px;
+    position:relative;
+    }
+
+#sweepsEntryForm .center-mod.yellow .ft {
+    background:transparent url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-ft-yellow.png) no-repeat scroll 0 0;
+    }
+
+#sweepsEntryForm .center-mod .hd, #sweepsEntryForm .center-mod .ft {
+    height:10px;
+    }
+
+#sweeps-thanks {
+    background:transparent url(../imgs/sp-errors.png) repeat-y -602px 0;
+    margin-bottom:21px;
+    position:relative;
+    z-index:101;
+    }
+
+#sweeps-thanks .hd {
+    padding:10px 15px 0 15px;
+    background:transparent url(../imgs/sp-errors.png) no-repeat 0 0;
+    }
+
+#sweeps-thanks .bd {
+    padding:0 15px 10px 15px;
+    background:transparent url(../imgs/sp-errors.png) no-repeat -1204px bottom;
+    }
+
+#sweeps-thanks h3 {
+    font:bold 108% "Trebuchet MS";
+    margin-bottom:7px;
+    }
+
+#sweeps-thanks p.last {
+    margin-bottom:0;
+    }
+
+#sweeps-thanks button.button {
+    width:auto;
+    overflow:visible;
+    white-space:nowrap;
+    }
+
+#sweeps-thanks button.button span {
+    margin:0 5px 0 0;
+    padding:0 0 0 7px;
+    }
+
+#sweeps-thanks button.button span em {
+    margin:0 -2px 0 0;
+    padding:0 7px 0 0;
+    }
+
+#sweeps-thanks #two-feature {
+    margin:0;
+    }
+
+#sweeps-thanks #two-feature ul {
+    width:572px;
+    }
+
+#sweeps-thanks #two-feature a {
+    font-size:93%;
+    }
+
+#sweeps-thanks #two-feature li {
+    margin-right:15px;
+    width:270px;
+    }
+
+#sweeps-thanks #two-feature li.last {
+    border-left:1px solid #EDDFB7;
+    margin-right:0;
+    padding-left:15px;
+    }
+
+#sweeps-thanks #two-feature li li {
+    border-left:none;
+    }
+
+#sweeps-thanks #invite-a-friend .hd {
+    background:transparent url(../imgs/sp-popups.png) no-repeat -2355px 0;
+    padding:7px 0 0;
+    }
+
+#sweeps-thanks #invite-a-friend .hd h3 {
+    margin-bottom:0;
+    }
+
+#sweeps-thanks #invite-a-friend .bd {
+    padding:23px 7px 4px;
+    background:transparent url(../imgs/sp-popups.png) repeat-y -2798px 0;
+    }
+
+#sweeps-thanks #invite-a-friend .form-submit {
+    margin-bottom:7px;
+    }
+
+#sweeps-thanks #reminder-signup {
+    position:absolute;
+    top:32px;
+    left:0;
+    width:443px;
+    height:363px;
+    display:none;
+    z-index:104;
+    }
+
+#sweeps-thanks #reminder-signup .hd {
+    padding:7px 0 0;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -2355px 0;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -2355px 0;
+    height:9px;
+    _font-size:0;
+    }
+
+#sweeps-thanks #reminder-signup .hd h3 {
+    font-size:108%;
+    font-weight:bold;
+    line-height:1.6;
+    font-family:'trebuchet ms';
+    text-transform:uppercase;
+    _font-size:14px;
+    _background:transparent url(../imgs/sp-popups.png) repeat-y scroll -2798px 0;
+    }
+
+#sweeps-thanks #reminder-signup .hd h3 span {
+    display:block;
+    padding:2px 14px;
+    margin:0 7px;
+    }
+
+#sweeps-thanks #reminder-signup .hd .close {
+    position:absolute;
+    top:13px;
+    right:15px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat scroll left top;
+    width:12px;
+    height:12px;
+    text-indent:-9999px;
+    cursor:pointer;
+    }
+
+#sweeps-thanks #reminder-signup .bd {
+    position:static;
+    clear:both;
+    padding:23px 7px 4px;
+    background:transparent url(../imgs/sp-popups.png) repeat-y -2798px 0;
+    _background:transparent url(../imgs/sp-popups.gif) repeat-y -2798px 0;
+    _float:left;
+    padding:23px 7px 4px;
+    }
+
+#sweeps-thanks #reminder-signup .fieldset {
+    _width:401px;
+    }
+
+#sweeps-thanks #reminder-signup .bd .minor {
+    color:#999;
+    }
+
+#sweeps-thanks #reminder-signup .bd .alert {
+    color:#b50938;
+    }
+
+#sweeps-thanks #reminder-signup .ft {
+    padding-left:2px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -3241px -6px;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -3241px -6px;
+    height:10px;
+    _font-size:0;
+    }
+
+/*#sweeps-thanks #reminder-signup p{margin-bottom:0;}*/
+#sweeps-thanks #reminder-signup .loading {
+    text-align:center;
+    margin:50px 0;
+    display:none;
+    }
+
+#sweeps-thanks #reminder-signup .loading p {
+    margin-bottom:10px;
+    }
+
+#sweeps-thanks #reminder-signup .success {
+    margin:0 14px;
+    display:none;
+    }
+
+#sweeps-thanks #reminder-signup .success p {
+    margin:0 0 14px;
+    }
+
+#sweeps-thanks fieldset {
+    background-color:transparent;
+    background-image:none;
+    border:0;
+    padding-bottom:0;
+    }
+
+#sweeps-thanks #two-feature .nl-bd li, #sweeps-thanks #two-feature .nl-bd li .text-box {
+    background:none;
+    width:190px;
+    margin-right:14px;
+    padding:0;
+    _margin-right:5px;
+    }
+
+#sweeps-thanks #two-feature .nl-bd li.lastname, #sweeps-thanks #two-feature .nl-bd li.confirm {
+    margin-right:0;
+    }
+
+.overlay-txt {
+    display:none;
+    position:absolute;
+    top:64px;
+    right:0;
+    width:443px;
+    height:363px;
+    z-index:104;
+    }
+
+.overlay-txt .hd {
+    padding-top:7px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -2355px 0;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -2355px 0;
+    height:9px;
+    _font-size:0;
+    }
+
+.overlay-txt .hd h3 {
+    font-size:108%;
+    font-weight:bold;
+    line-height:1.6;
+    font-family:'trebuchet ms';
+    text-transform:uppercase;
+    _font-size:14px;
+    _background:transparent url(../imgs/sp-popups.png) repeat-y scroll -2798px 0;
+    }
+
+.overlay-txt .hd h3 span {
+    display:block;
+    padding:2px 14px;
+    margin:0 7px;
+    }
+
+.overlay-txt .hd .close {
+    position:absolute;
+    top:13px;
+    right:15px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat scroll left top;
+    width:12px;
+    height:12px;
+    text-indent:-9999px;
+    cursor:pointer;
+    }
+
+.overlay-txt .bd {
+    clear:both;
+    padding:23px 7px 4px;
+    position:static;
+    background:transparent url(../imgs/sp-popups.png) repeat-y -2798px 0;
+    _background:transparent url(../imgs/sp-popups.gif) repeat-y -2798px 0;
+    _float:left;
+    padding:23px 7px 4px;
+    }
+
+.overlay-txt .bd p {
+    margin:0 14px 14px;
+    }
+
+.overlay-txt .ft {
+    padding-left:2px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -3241px -6px;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -3241px -6px;
+    height:10px;
+    _font-size:0;
+    }

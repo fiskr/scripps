@@ -1,0 +1,31 @@
+.featured-galleries { height: 249px; }
+.featured-galleries h2 { margin: 0 14px 10px 14px; color: #000; font-size: 123.1%; font-weight: bold; line-height: 1; text-transform: uppercase; }
+.featured-galleries li { float: left; width: 160px; height: 200px; padding: 0 25px; text-align: center;  overflow-y: auto;}
+.featured-galleries li img { display: block; margin-bottom: 13px; }
+.featured-galleries li a { display: block; line-height: 1.08; }
+.featured-galleries li em { color: #999; font-size: 85%; font-style: normal; }
+.featured-galleries .slug { margin-bottom: 5px; }
+
+.gallery-library { width: 966px; margin: 0 14px 0 14px; _float: left; }
+.gallery-library h3 { padding: 0 14px; color: #fff; font-size: 123.1%; font-weight: bold; text-transform: uppercase; line-height: 44px; background: url(../imgs/se/bg-textured-black-lg.png) no-repeat 0 0; }
+.gallery-library .bd { background-color: #fff; }
+.gallery-library .sections { float: left; width: 180px; padding: 7px; border: 1px solid #d8d8d8; border-top: none; }
+.gallery-library .sections ul { width: 180px; height: 409px; overflow: auto; }
+.gallery-library .sections ul li { _display: inline; }
+.gallery-library .sections ul li a.selected { color: #444; font-weight: bold; background-color: #ccc; text-decoration: none; cursor: default; }
+.gallery-library .sections ul a { display: block; margin-right: 7px; padding: 0 7px; line-height: 30px; }
+.gallery-library .items { float: left; width: 769px; height: 423px; border: 1px solid #d8d8d8; border-width: 0 1px 1px 0; }
+.gallery-library .items .viewing { padding: 0 14px; font-size: 85%; line-height: 35px; background-color: #eee; border-bottom: 1px solid #d8d8d8; }
+.gallery-library .items .thumbs { height: 354px; }
+.gallery-library .items .thumbs ul { height: 338px; /*margin-bottom: 16px; */}
+.gallery-library .items .thumbs li { float: left; width: 131px; height: 160px; padding: 8px 30px 0 30px; border: 1px dotted #ddd; border-width: 0 1px 1px 0; text-align: center; overflow-y: auto;}
+.gallery-library .items .thumbs li.last { border-right: 0; }
+.gallery-library .items .thumbs li em { display: block; margin-bottom: 2px; color: #999; font-size: 85%; font-style: normal; }
+.gallery-library .items .thumbs li img { display: block; margin: 0 auto 5px auto; }
+.gallery-library .items .thumbs li a { display: block; line-height: 1.08; }
+.gallery-library .ft { background-color: #e7e7e7; }
+.gallery-library .ft .search { width: 392px; margin-left: 378px; }
+#diy-w .gallery-library .ft .search { background: transparent; }
+.gallery-library .error { width: 310px; margin: 155px auto 0 auto; padding: 12px 14px; color: #000; line-height: 1.67; border: 1px solid #e8d5ab; background-color: #fdfad7; }
+.gallery-library .error strong { font-size: 108%; }
+.gallery-library .items .loading { height: 58px; padding-top: 155px; background: url(../imgs/se/loader.gif) no-repeat bottom center; text-align: center; }

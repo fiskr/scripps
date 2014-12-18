@@ -1,0 +1,47 @@
+INSERT INTO ff_show (
+SITE                   
+,CTNT_ID                
+,CTNT_TYPE              
+,TABLE_NAME             
+,SHOW_ID                
+,SHOW_ABBR              
+,WFLW_STATUS            
+,DELV_STATUS            
+,WFLW_STATUS_DT         
+,DELV_STATUS_DT         
+,RELEASE_DT             
+,EXPIRE_DT              
+,PURGE_DT               
+,SOURCE                 
+,SOURCE_ID              
+,ASSIGN_UID             
+,ASSIGN_DT              
+,CREATE_UID             
+,CREATE_DT              
+,LAST_UPDT_UID          
+,LAST_UPDT_DT           
+,ORIGIN_SITE            
+,TITLE                  
+,ABSTRACT               
+,SHORT_BODY             
+,CATEGORY_CD            
+,SHOW_TYPE              
+,DESCR                  
+,HOME_SECTION           
+,CTNT_ROLE              
+,FIRST_AUX_IMAGE_ID     
+,TV_DESCR               
+,FEATURE_FLG            
+,SMALL_BANNER_IMAGE_ID  
+,LARGE_BANNER_IMAGE_ID  
+,SHORT_DESCR            
+,DELV_FRMT_SITE         
+,DELV_FRMT              
+,FEATURE_BANNER_IMAGE_ID
+,SPONSORSHIP_VALUE      
+,SEO_TITLE              
+,ID                     
+,PARENT_SHOW_ID         
+,SCRID )
+VALUES
+('HGTV',36079,'SHOW','FF_SHOW',2377,'HBLCK','WIP','UNSCHEDULED',to_date('14-MAY-14','DD-MON-RR'),to_date('14-MAY-14','DD-MON-RR'),to_date('14-MAY-14','DD-MON-RR'),to_date('12-DEC-20','DD-MON-RR'),to_date('12-DEC-20','DD-MON-RR'),'ESEARCH','1796862',null,null,'FF_FEED',to_date('14-MAY-14','DD-MON-RR'),'DHODGE',to_date('20-MAY-14','DD-MON-RR'),'HGTV','Flipping the Block','In this epic competition hosted by Josh Temple, four teams battle it out in an eight-part renovation rivalry to upgrade identical living spaces from the ground up.  Each team of two will move in, demo and transform an entire place before it goes on the auction block. The winning duo keeps the return on investment, plus a $50,000 cash prize. Along the way, they''ll have to impress some HGTV all-stars including Scott McGillivray, Nicole Curtis and David Bromstad.','In this epic competition hosted by Josh Temple, four teams battle it out in an eight-part renovation rivalry to upgrade identical living spaces from the ground up.  Each team of two will move in, demo and transform an entire place before it goes on the auction block. The winning duo keeps the return on investment, plus a $50,000 cash prize. Along the way, they''ll have to impress some HGTV all-stars including Scott McGillivray, Nicole Curtis and David Bromstad.','FINE','DY','Flipping the Block','ON TV',null,null,null,null,null,null,'HS_MAIN_SHOW_DETAIL',0,null,null,null,5217609,null,null,null);            

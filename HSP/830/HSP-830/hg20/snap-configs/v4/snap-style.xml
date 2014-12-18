@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- ####### visual/skin style parameters below ####### -->
+
+	<!-- Close Button -->
+
+	<closeButton>
+		<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/close_normal.png</normal>
+		<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/close_hover.png</hover>
+		<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/close_pressed.png</press>
+	</closeButton>
+
+	<!-- Recall Button -->
+	<recallButton>
+
+		<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/recall_normal.png</normal>
+		<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/recall_hover.png</hover>
+		<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/recall_pressed.png</press>
+	</recallButton>
+
+	<textButton>
+		<!-- Start Text Button Config: Text buttons appear in the menu overlay: Send/Copy/Get Recipe, etc. -->
+		<bg>
+
+			<!-- URLs to text button graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/button_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/button_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/button_pressed2.png</press>
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/button_disabled2.png</disabled>
+		</bg>
+	    <!-- Colors of the text on the text button  -->
+
+	    <textColors>
+	      <normal>#ffffff</normal>
+	      <hover>#ffffff</hover>
+	      <press>#f5f5f5</press>
+	      <disabled>#a6a6a6</disabled>
+	    </textColors>
+	</textButton>
+
+	<controlButtons>
+		<!-- Start Control Buttons (Play/Pause/etc.) -->
+	  <!-- Colors for the different states of the button -->
+	    <buttonColors>
+	      <normal>#323232</normal>
+	      <hover>#ef4141</hover>
+	      <press>#d93b3b</press>
+
+	      <disabled>#cacaca</disabled>
+	    </buttonColors>
+	</controlButtons>
+	<overlayMenu>
+		<!-- Start Overlay Menu Config -->
+	  <!-- Overlay menu text colors -->
+	    <textColors>
+	      <title>#ffffff</title>
+
+	      <secondary>#666666</secondary>
+	      <body>#ffffff</body>
+	    </textColors>
+	</overlayMenu>
+	<playlistCarousel>
+		<!-- Start Playlist Config -->
+		<isBackground>true</isBackground>				<!-- Does playlist background appear: true/false -->
+
+		<bgURL>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/thumbnails_bg.png</bgURL>			<!-- URL to playlist background -->
+		<thumbnailBorder>big</thumbnailBorder>			<!-- Size of thumbnail border: big=rectangle around text+thumb   small=rectangle around thumb only -->
+	    <!-- Text Colors for Playlist elements -->
+	    <textColors>
+	      <normal>#386cb4</normal>
+	      <hover>#386cb4</hover>
+
+	      <selected>#333333</selected>
+	      <secondary>#999999</secondary>
+	    </textColors>
+	    <!-- Border Colors for thumbnail borders -->
+	    <borderColors>
+	      <normal>#a7bfa9</normal>
+	      <hover>#ef4141</hover>
+
+	      <selected>#ef4141</selected>
+	    </borderColors>
+		<rightArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/right_arrow_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/right_arrow_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/right_arrow_pressed2.png</press>
+
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/right_arrow_disabled2.png</disabled>
+		</rightArrow>
+		<leftArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/left_arrow_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/left_arrow_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/left_arrow_pressed2.png</press>
+
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/left_arrow_disabled2.png</disabled>
+		</leftArrow>
+		<playlistTitle>
+			<size>15</size>
+			<font>trebuchet</font>
+			<color>#000000</color>
+		</playlistTitle>
+
+		<paginationIcon>
+			<!-- Pagination Dot Icon -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/pagination_icon_empty.png</normal>
+			<selected>http://web.hgtv.com/webhgtv/hg20/snap-configs/v4/imgs/pagination_icon_full.png</selected>
+		</paginationIcon>
+		<paginationText>
+			<!-- Pagination nn of mm Text -->
+			<size>10</size>
+
+			<font>Arial</font>
+			<color>#999999</color>
+		</paginationText>
+	</playlistCarousel>
+
+
+</config>

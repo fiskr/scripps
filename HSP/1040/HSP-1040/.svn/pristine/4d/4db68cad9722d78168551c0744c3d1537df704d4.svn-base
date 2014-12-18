@@ -1,0 +1,105 @@
+.rounded-corners (@radius:4px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+
+
+.button-linear-gradient(@color1:#f6f6f4, @deg1:100%, @color2:#ecece7, @deg2:51%, @color3:#ecece6, @deg3:50%, @color4:#e1e1da, @deg4:0%) {
+    border:1px solid #c9c9c9;
+    background:    -moz-linear-gradient(top,  @color1 @deg1, @color2 @deg2, @color3 @deg3, @color4 @deg4);
+    background: -webkit-linear-gradient(top,  @color1 @deg1, @color2 @deg2, @color3 @deg3, @color4 @deg4);
+    background:     -ms-linear-gradient(top,  @color1 @deg1, @color2 @deg2, @color3 @deg3, @color4 @deg4);
+    background:   linear-gradient(to bottom,  @color1 @deg1, @color2 @deg2, @color3 @deg3, @color4 @deg4);
+}
+
+.drop-shadow(@shadow: 0 1px 3px rgba(0,0,0, 0.3)) {
+  -webkit-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  background: @color;
+  background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, @start),
+                               color-stop(1, @stop));
+  background: -ms-linear-gradient(bottom,
+                                  @start,
+                                  @stop);
+  background: -moz-linear-gradient(center bottom,
+                                   @start 0%,
+                                   @stop 100%);
+  background: -o-linear-gradient(@stop,
+                                 @start);
+}
+
+.fade(@transition: 0.3s ){
+
+-webkit-transition: opacity @transition ease-in-out;
+  -moz-transition: opacity @transition ease-in-out;
+  -o-transition:  opacity @transition ease-in-out;
+  -ms-transition: opacity @transition ease-in-out;
+  transition: opacity @transition ease-in-out;
+} 
+
+
+
+// centered-outer - For centering a div (X) of an UNKNOWN size, inside of a
+  // div (Y) with a KNOWN size. This mixin should be applied to the outer div (X).
+  .centered-outer (@width) {
+      text-align: center;
+      &:after {
+          content: "";
+          display: inline-block;
+          height: 100%;
+          margin-right: -0.25em;
+          vertical-align: middle;
+      }
+  }
+
+  // centered-inner - For centering a div (X) of an UNKNOWN size, inside of a
+  // div (Y) with a KNOWN size. This mixin should be applied to the inner div (Y).
+  .centered-inner (@maxWidth, @rightOffset: 0px) {
+      display: inline-block;
+      max-width: @maxWidth;
+      vertical-align: middle;
+      right: @rightOffset;
+  }
+
+.clearfix {
+  zoom: 1;
+  &::after {
+      content: ".";
+      display: block;
+      height: 0;
+      width: 0;
+      line-height: 0;
+      clear: both;
+      visibility: hidden;
+  }
+}    
+
+.button() {
+    .rounded-corners;
+    .button-linear-gradient;
+    .gradient(#e6e5df, #e1e1da, #f6f6f3);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c9c9c9;
+    margin:8px auto 0;
+    width:100%;
+    color:@icon-color;
+    font-family: Arial, sans-serif;
+    font-size:1.4em;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(256,256,256, 0.5);
+    height:32px;
+    &:active{
+	border-color: #aaa;
+	.gradient(#dcdbd7, #d2d1cc, #e6e6e3);
+	color: @icon-active-color;
+    }
+}

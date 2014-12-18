@@ -1,0 +1,62 @@
+
+<nav id="site-nav">
+  <strong class="active"><a href="/">Home</a></strong>
+  <span>Rooms</span>	
+  <ul>
+    <li><a href="/kitchens/index.html">Kitchens</a></li>
+    <li><a href="/bathrooms/index.html">Bathrooms</a></li>
+    <li><a href="/bedrooms/index.html">Bedrooms</a></li>
+    <li><a class="icon-plus-sign" href="javascript:void(0);"><span>More Rooms</span></a></li>
+    <li><a href="/living-rooms/index.html">Living Rooms</a></li>
+    <li><a href="/rooms/index.html">All Rooms</a></li>
+  </ul>
+  
+  <span>Decorating</span>
+  <ul>
+    <li><a href="/decorating-basics/index.html">Basics</a></li>
+    <li><a href="/color/index.html">Color</a></li>
+    <li><a href="/painting/index.html">Painting</a></li>
+    <li><a class="icon-plus-sign" href="javascript:void(0);"><span>More Decorating</span></a></li>
+    <li><a href="/painting/index.html">Painting</a></li>
+    <li><a href="/accessories/index.html">Accessories</a></li>
+    <li><a href="/window-treatments/index.html">Window Treatments</a></li>
+    <li><a href="/homekeeping/index.html">Homekeeping</a></li>
+    <li><a href="/handmade/index.html">Handmade</a></li>
+    <li><a href="/entertaining/index.html">Entertaining</a></li>
+    <li><a href="/decorating/index.html">All Decorating</a></li>
+  </ul>
+
+  <span>Outdoors</span>
+  <ul>
+    <li><a href="/gardening/index.html">Gardening</a></li>
+    <li><a href="/landscaping/index.html">Landscaping</a></li>
+    <li><a href="/outdoor-rooms/index.html">Outdoor Rooms</a></li>
+    <li><a class="icon-plus-sign" href="javascript:void(0);"><span>More Outdoors</span></a></li>
+    <li><a href="/decks-patios-porches-and-pools/index.html">Decks, Patios, Porches &amp; Pools</a></li>
+    <li><a href="/outdoors/index.html">All Outdoors</a></li>
+  </ul>
+  
+  <a href="">Designer Rooms</a>
+  <a href="">Garden Galleries</a>
+  <a href="">Dream Home Photos</a>
+  <a href="">Design Happens Blog</a>
+
+  <span>OTHER FEATURES FROM HGTV</span>
+  <ul class="last">
+    <li><a href="">Dream Home Central</a></li>
+    <li><a href="">Smart Home Sweepstakes</a></li>
+    <li><a href="">Design Star</a></li>
+    <li><a href="">On TV</a></li>
+    <li><a href="">Newsletter Signup</a></li>
+    <li class="clrfix">
+      <form action="/search/results.do" method="get" class="search">
+	<input type="text" name="hgSearchString" placeholder="Search HGTV.com For..." />
+	<button class="find icon-search" type="submit"></button>
+      </form>
+    </li>
+  </ul>
+  <p class="legal">
+    <a href="/?layout=desktop">View Desktop Site</a>
+    <small>&copy; 2013 Scripps Networks Interactive</small>
+  </p>
+</nav>

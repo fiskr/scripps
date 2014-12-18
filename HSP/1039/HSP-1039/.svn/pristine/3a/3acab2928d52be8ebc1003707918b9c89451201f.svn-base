@@ -1,0 +1,295 @@
+.floor-plans {
+    position:relative;
+    padding:0 14px 14px;
+    }
+
+.floor-plans .showing {
+    background-color:#F2F6F2;
+    }
+
+.fp-toggler {
+    padding:7px 7px 14px;
+    background-color:transparent;
+    border-radius:5px 5px 0 0;
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    position:absolute;
+    top:-50px;
+    right:14px;
+    }
+
+.fp-toggler button.button {
+    width:130px;
+    }
+
+.fp-toggler #hide-floor-plan {
+    display:none;
+    }
+
+.fp-toggler #show-floor-plan em > span,
+.fp-toggler #hide-floor-plan em > span {
+    background:url("../imgs/hgtv_ui_207.png") -550px -502px no-repeat;
+    display:block;
+    height:5px;
+    width:5px;
+    margin:13px 0 0 3px;
+    float:right;
+    }
+
+*+html .fp-toggler #show-floor-plan em > span,
+*+html .fp-toggler #hide-floor-plan em > span {
+    margin-top:-15px;
+    padding:0;
+    width:7px;
+    }
+
+*+html .fp-toggler #show-floor-plan,
+*+html .fp-toggler #hide-floor-plan {
+    width:145px;
+    }
+
+.fp-toggler #show-floor-plan em > span {
+    background-position:-550px -507px;
+    }
+
+.fp-module-wrapper {
+    clear:right;
+    width:602px;
+    background-color:#f2f6f2;
+    padding:0 0 21px 0;
+    position:relative;
+    overflow-x:hidden;
+    border-radius:5px 0 5px 5px;
+    -moz-border-radius:5px 0 5px 5px;
+    -webkit-border-radius:5px 0 5px 5px;
+    }
+
+.fp-navigator {
+    position:absolute;
+    top:164px;
+    left:0;
+    z-index:2;
+    width:602px;
+    }
+
+.fp-navigator button {
+    position:absolute;
+    background:none repeat scroll 0 0 transparent;
+    border:0 none;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-family:"Trebuchet MS";
+    font-size:92.3%;
+    font-weight:bold;
+    line-height:29px;
+    margin:0;
+    outline:medium none;
+    padding:0;
+    text-align:center;
+    width:29px;
+    }
+
+.fp-navigator button > span {
+    background:url("../imgs/hgtv_ui_207.png") no-repeat transparent;
+    display:block;
+    line-height:29px;
+    outline:medium none;
+    padding:0 5px;
+    height:29px;
+    text-indent:-9999px;
+    width:19px;
+    }
+
+.fp-navigator button.fp-previous-button span {
+    background-position:-147px -499px;
+    }
+
+.fp-navigator button.fp-previous-button:hover span {
+    background-position:-205px -499px;
+    }
+
+.fp-navigator button.fp-next-button span {
+    background-position:-176px -499px;
+    }
+
+.fp-navigator button.fp-next-button:hover span {
+    background-position:-234px -499px;
+    }
+
+.fp-navigator button.fp-previous-button-disabled,
+.fp-navigator button.fp-next-button-disabled {
+    cursor:default;
+    }
+
+.fp-navigator button.fp-previous-button-disabled span,
+.fp-navigator button.fp-previous-button-disabled:active span,
+.fp-navigator button.fp-previous-button-disabled:hover span {
+    background-position:-321px -499px;
+    }
+
+.fp-navigator button.fp-next-button-disabled span,
+.fp-navigator button.fp-next-button-disabled:active span,
+.fp-navigator button.fp-next-button-disabled:hover span {
+    background-position:-350px -499px;
+    }
+
+/* firefox off by 3 pixels */
+@-moz-document url-prefix() {
+    .fp-navigator button span {
+        margin-left: -3px;
+    }
+}
+
+.fp-previous-button {
+    left:0;
+    }
+
+.fp-next-button {
+    right:0;
+    }
+
+.fp-stage {
+    height:300px;
+    padding-top:21px;
+    padding-bottom:14px;
+    position:relative;
+    }
+
+.fp-stage-slider {
+    position:absolute;
+    height:300px;
+    left:-340px; /* puts the first floor plan in center of stage */
+    }
+
+.fp-floor-plan-display {
+    }
+
+.fp-floor-plan-wrapper {
+    width:400px;
+    height:300px;
+    background-color:white;
+    margin:0 14px;
+    float:left;
+    }
+
+.fp-floor-plan {
+    position:relative;
+    width:400px;
+    height:300px;
+    }
+
+#hg-w .fp-floor-plan img {
+    border:none;
+    padding:0;
+    z-index:0;
+    }
+
+.fp-disabled-mask {
+    background-color:#f2f6f2;
+    opacity:.6;
+    filter:alpha(opacity = 6);
+    width:400px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    }
+
+.fp-active .fp-disabled-mask {
+    display:none;
+    }
+
+.fp-toc {
+    margin:0 auto;
+    text-align:center;
+    left:auto;
+    position:relative;
+    }
+
+.fp-toc > li {
+    display:inline-block;
+    padding-bottom:7px;
+    }
+
+*+html .fp-toc > li {
+    display:inline;
+    padding-left:4px;
+    padding-right:4px;
+    }
+
+.fp-toc > li button > span > em {
+    white-space:nowrap;
+    }
+
+.fp-hot-spot-wrapper {
+    position:absolute;
+    }
+
+.fp-active .fp-hot-spot-wrapper {
+    z-index:3;
+    }
+
+.fp-active .fp-tool-tip-trigger {
+    z-index:5;
+    }
+
+.fp-hot-spot {
+    position:relative;
+    }
+
+.fp-tool-tip-trigger {
+    width:16px;
+    height:16px;
+    background:url(../imgs/tour/fp-hot-spot.png) 0 0 no-repeat transparent scroll;
+    cursor:pointer;
+    position:absolute;
+    top:2px;
+    left:4px;
+    }
+
+.fp-tool-tip {
+    display:none;
+    background-color:black;
+    padding:4px 7px 4px 34px;
+    z-index:4;
+    color:#ffffff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    position:absolute;
+    top:-4px;
+    left:-4px;
+    width:100px;
+    }
+
+.fp-hot-spot-wrapper a,
+.fp-hot-spot-wrapper a:hover,
+.fp-hot-spot-wrapper a:link,
+.fp-hot-spot-wrapper a:visited,
+.fp-hot-spot-wrapper a:active {
+    color:#FFF;
+    text-decoration:none;
+    display:block;
+    }
+
+.fp-floor-plan .tool-tip-on, .fp-active div.tool-tip-current-room {
+    z-index:5;
+    }
+
+.fp-hot-spot .fp-current-room {
+    display:none;
+    }
+
+.fp-active .fp-hot-spot div.fp-current-room {
+    display:block;
+    }
+
+.floor-plans button.button:active span, button.button.active span {
+    background-position:left -29px;
+    }
+
+.floor-plans button.button:active span em, button.button.active span em {
+    background-position:right -29px;
+    }
+

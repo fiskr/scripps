@@ -1,0 +1,235 @@
+#timezone-select form {
+    float:right;
+    width:139px;
+    _width:auto;
+    }
+
+#timezone-select label {
+    display:block;
+    font:77% "trebuchet ms", sans-serif;
+    color:#999;
+    float:left;
+    padding-top:10px;
+    }
+
+#timezone-select dl {
+    float:left;
+    }
+
+#weekof-select {
+    margin:0 14px 14px;
+    }
+
+#weekof-select .date {
+    float:left;
+    border:0;
+    font-size:138.5%;
+    color:#000;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#weekof-select .cal-button {
+    float:left;
+    }
+
+#weekof-select .cal-button a {
+    color:#a5a5a5;
+    font-size:77%;
+    height:17px;
+    line-height:17px;
+    width:89px;
+    padding-left:4px;
+    margin:3px 0 0;
+    background:url(../imgs/sp-global-hd.gif) no-repeat -394px -117px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    white-space:nowrap;
+    overflow:hidden;
+    _white-space:normal;
+    }
+
+#weekof-select .cal-button.active a {
+    color:#fff;
+    background-position:-305px -117px;
+    }
+
+#prog-guide {
+    width:602px;
+    margin:0 14px 14px;
+    border-collapse:separate;
+    }
+
+#prog-guide thead th {
+    font-size:93%;
+    padding:3px 7px;
+    border:solid #ccc;
+    border-width:1px 0;
+    }
+
+#prog-guide thead .time {
+    width:52px;
+    }
+
+#prog-guide thead .show {
+    width:234px;
+    }
+
+#prog-guide thead .episode {
+    width:274px;
+    }
+
+#prog-guide tbody tr {
+    display:none;
+    }
+
+#prog-guide tbody.active tr {
+    display:table-row;
+    *display:block;
+    }
+
+#prog-guide tbody tr.collapse-link {
+    display:table-row;
+    *display:block;
+    cursor:pointer;
+    }
+
+#prog-guide tr.collapse-link {
+    border:none;
+    }
+
+#prog-guide tr.collapse-link h3 {
+    margin-top:14px;
+    height:29px;
+    padding-left:20px;
+    line-height:28px;
+    color:#fff;
+    font-family:"trebuchet ms", sans-serif;
+    text-transform:uppercase;
+    background:#fff url(../imgs/ui.png) no-repeat;
+    }
+
+#prog-guide tr.collapse-link h3 span {
+    display:block;
+    height:28px;
+    padding-top:1px;
+    font-size:93%;
+    font-weight:bold;
+    background:#fff url(../imgs/ui.png) no-repeat;
+    }
+
+#prog-guide tbody.active tr.collapse-link h3 {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat -812px 0;
+    color:#000;
+    padding-left:7px;
+    }
+
+#prog-guide tbody.active tr.collapse-link h3 span {
+    background:none;
+    }
+
+#prog-guide tbody.active tr.collapse-link em {
+    float:left;
+    display:block;
+    width:9px;
+    height:5px;
+    margin-top:12px;
+    padding-right:6px;
+    background:transparent url(../imgs/ui.png) no-repeat -501px -498px;
+    }
+
+#prog-guide tbody .time {
+    border-left:1px solid #ddd;
+    text-align:right;
+    padding-left:7px;
+    }
+
+#prog-guide tbody .episode {
+    border-right:1px solid #ddd;
+    padding-right:7px;
+    }
+
+#prog-guide tbody .episode div {
+    line-height:1.11;
+    }
+
+#prog-guide tbody td {
+    vertical-align:top;
+    }
+
+#prog-guide tbody td div {
+    border-top:1px dashed #afb8bb;
+    padding:7px;
+    }
+
+#prog-guide tbody tr.first td div {
+    border-top:none;
+    }
+
+#prog-guide tbody tr.last td div {
+    padding-bottom:14px;
+    }
+
+#prog-guide tbody tr.last .time {
+    border-left:none;
+    background:url(../imgs/sp-boxBorders.png) no-repeat -1414px bottom;
+    }
+
+#prog-guide tbody tr.last .episode {
+    border-right:none;
+    background:url(../imgs/sp-boxBorders.png) no-repeat right bottom;
+    }
+
+#prog-guide tbody tr.last .show {
+    background:url(../imgs/sp-boxBorders.png) no-repeat -1420px bottom;
+    }
+
+#prog-guide .morning .collapse-link h3 {
+    background-position:left -791px;
+    }
+
+#prog-guide .morning .collapse-link h3 span {
+    background-position:right -791px;
+    }
+
+#prog-guide .daytime .collapse-link h3 {
+    background-position:left -820px;
+    }
+
+#prog-guide .daytime .collapse-link h3 span {
+    background-position:right -820px;
+    }
+
+#prog-guide .evening .collapse-link h3 {
+    background-position:left -849px;
+    }
+
+#prog-guide .evening .collapse-link h3 span {
+    background-position:right -849px;
+    }
+
+#prog-guide .primetime .collapse-link h3 {
+    background-position:left -878px;
+    }
+
+#prog-guide .primetime .collapse-link h3 span {
+    background-position:right -878px;
+    }
+
+#prog-guide .latenight .collapse-link h3 {
+    background-position:left -907px;
+    }
+
+#prog-guide .latenight .collapse-link h3 span {
+    background-position:right -907px;
+    }
+
+#prog-guide .ep-number {
+    color:#666;
+    font-size:77%;
+    text-transform:uppercase;
+    }
+
+#prog-guide .show img {
+    display:block;
+    }

@@ -1,0 +1,1799 @@
+/*royalSlider CSS*/
+/* v1.0.3 */
+/* customized for Lead Carousel SE-7685 */
+body#home.section h1 {
+  display:none; /* hide Home text on home page; putting it here since change of page template type was motivated by lead carousel*/
+}
+
+.royalSlider {
+    width: 600px; /* was 600px */
+    /*height: 386px; was 400px */
+    position: relative;
+    direction: ltr;
+    
+}
+
+.royalSlider > * {
+    float: left;
+}
+
+#lead-carousel img   {
+    border: none;
+    margin-top: 0;
+    padding: 0;
+    width: 517px !important;
+    height: auto !important;
+    /*height: 388px !important;*/
+}
+
+#lead-carousel {
+    margin: 13px;
+    height: 386px;
+    display: none;
+    overflow: hidden;
+    /*box-shadow:  -28px 0 28px -28px #999 inset;*/
+}
+
+#lead-carousel .panel {
+    padding: 5px 0 9px 14px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 61px;
+    /*color: #386CB4;   makes non-links appear as links */
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(51, 51, 51) transparent;
+    /* RGBa with 0.8 opacity */
+    background: rgba(51, 51, 51, 0.8);
+    /* For IE 8*/
+    background: black\9;
+    filter:alpha(opacity=80); /*this makes the text opaque too, but it looks ok*/
+    zoom: 1;
+    color: white;
+}
+
+#lead-carousel .rsSlide:not(.rsActiveSlide) .panel{
+     display: none;
+}
+
+
+#lead-carousel #hatch-left {
+    background: url("../imgs/hgtv-homepage-carousel-pattern.png") repeat left top transparent;    
+    height:100%;
+    position: absolute;
+    width: 38px;
+    left:0;
+    pointer-events: none;
+}
+
+#lead-carousel #hatch-right {
+    background: url("../imgs/hgtv-homepage-carousel-pattern.png") repeat left top transparent;    
+    height:100%;
+    position: absolute;
+    width: 38px;
+    right:0;
+    pointer-events: none;
+}
+
+/*.rsSlide:not(.rsActiveSlide){
+    opacity: .50; 
+}
+*/
+
+#lead-carousel .panel h4 a{
+    color: white;
+}
+
+#lead-carousel .panel h4 a:hover{
+    text-decoration: underline;
+}
+#lead-carousel h4 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 28px;
+
+}
+
+#lead-carousel .subhead{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    width: 490px;
+}
+
+#lead-carousel .subhead a {
+    color: #73d1c8;
+    padding-left: 9px;
+}
+
+#lead-carousel p a:hover {
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+}
+
+
+#lead-carousel span.secondary {
+    color: #fff;
+    padding-left: 9px;
+    /*margin: 0 10px;*/
+}
+
+
+/*#lead-carousel p a:nth-child(2){
+    background:  url("../imgs/bullet-white.png") no-repeat scroll left 7px transparent;
+    padding: 0 10px;
+}*/
+
+
+#lead-carousel p a:nth-child(2):before:hover {
+    text-decoration: none;
+}
+
+#lead-carousel ul.two-col {
+    float: left;
+    width: 177px;
+    padding-right: 7px;
+}
+
+#lead-carousel ul.two-col li {
+    line-height: 21px;
+}
+
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); 
+}
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+    -webkit-transform: none;
+}
+.rsOverflow {
+    width: 600px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+
+}
+
+.rsVisibleNearbyWrap{ 
+    /*box-shadow:  28px 0 28px -28px #999 inset;*/
+    -webkit-transform: translate3d(0, 0, 0); /*DRS: seems to remove odd page motions in webkit browsers*/
+}
+
+
+.rsSlide {
+    opacity: .15;
+    filter: alpha(opacity=15);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+}
+
+
+.rsVisibleNearbyWrap {
+    width: 600px; /*was 100%*/
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap .rsOverflow {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.rsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.rsArrow,
+.rsThumbsArrow {
+    cursor: pointer;
+
+}
+
+.rsThumb {
+    float: left;
+    position: relative;
+}
+
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+    opacity: 1;
+    -webkit-transition:opacity 0.3s linear;
+    -moz-transition:opacity 0.3s linear;
+    -o-transition:opacity 0.3s linear;
+    transition:opacity 0.3s linear;
+}
+
+.rsHidden {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    -moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    -o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+
+.rsGCaption {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+    position: fixed !important;
+    height: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 2147483647 !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+
+.royalSlider .rsSlide.rsFakePreloader {
+    opacity: 1 !important;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition:  0s;
+    transition:  0s;
+    display: none;
+}
+
+
+.rsSlide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+    height: auto;
+}
+
+.rsContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rsPreloader {
+    position:absolute;
+    z-index: 0; 
+}
+
+.rsNav {
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.rsNavItem {
+    -webkit-tap-highlight-color:rgba(0,0,0,0.25);
+}
+
+.rsThumbs {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    z-index: 22;
+}
+.rsTabs {
+    float: left;
+    background: none !important;
+}
+.rsTabs,
+.rsThumbs {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+
+.rsVideoContainer {
+    /*left: 0;
+    top: 0;
+    position: absolute;*/
+    /*width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;*/
+    width: auto;
+    height: auto;
+    line-height: 0;
+    position: relative;
+}
+.rsVideoFrameHolder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #141414;
+    opacity: 0;
+    -webkit-transition: .3s;
+}
+.rsVideoFrameHolder.rsVideoActive {
+    opacity: 1;
+}
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 44px;
+}
+
+.rsABlock {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 15;
+    -webkit-backface-visibility: hidden;
+}
+
+.grab-cursor {
+    cursor:url(grab.png) 8 8, move; 
+}
+
+.grabbing-cursor{ 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+.rsNoDrag {
+    cursor: auto;
+}
+
+.rsLink {
+    left:0;
+    top:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:block;  
+    z-index: 20;
+    background: url("../imgs/blank.gif");
+    -webkit-backface-visibility: hidden;
+}
+
+/***** from skin ****/
+
+.rsDefault .rsArrow {
+    height: 100%;
+    width: 44px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsDefault.rsVer .rsArrow {
+    width: 100%;
+    height: 44px;
+    
+}
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: 14px; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:14px; }
+
+.rsDefault .rsArrowIcn {        
+    width: 34px; /* was 41*/
+    height: 40px; /*was 80*/
+    top: 160px;
+    margin-top: -16px;  
+    margin-left: 0px;
+    position: absolute; 
+    cursor: pointer;    
+    background: url('../imgs/hgtv-homepage-carousel-sprite-100.png');
+    background-color: transparent;
+    *background-color: transparent;
+    border-radius: 2px;
+}
+
+/* -85 --> -60, -45 --> -67 */
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -0px -0px; left: 0;}
+.rsDefault.rsHor .rsArrowLeft:hover .rsArrowIcn { background-position: -0px -60px;}
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -67px -0px; right: 0;}
+.rsDefault.rsHor:hover .rsArrowRight:hover .rsArrowIcn { background-position: -67px -60px;}
+
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsDefault .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+/*-----------------------------------------------*/
+
+/* jCarousel CSS */
+.jcarousel-container {
+    position:relative;
+    }
+
+.jcarousel-container p {
+    margin:0;
+    }
+
+.jcarousel-clip {
+    z-index:2;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    position:relative;
+    }
+
+.jcarousel-list {
+    z-index:1;
+    overflow:hidden;
+    position:relative;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    }
+
+.jcarousel-item {
+    float:left;
+    list-style:none;
+    background:none;
+    }
+
+.jcarousel-next {
+    z-index:3;
+    display:none;
+    }
+
+.jcarousel-prev {
+    z-index:3;
+    display:none;
+    }
+
+/* --BEGIN MARK'S DPL.CAROUSEL STYLES */
+/* PREV BUTTON */
+.jcarousel-container .jcarousel-prev-horizontal {
+    cursor:pointer;
+    width:18px;
+    height:18px;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -267px -481px;
+    text-align:center;
+    }
+
+.jcarousel-container .jcarousel-prev-horizontal:hover {
+    background-position:-303px -481px;
+    }
+
+.jcarousel-container .jcarousel-prev-horizontal:active {
+    background-position:-339px -481px;
+    }
+
+.jcarousel-container .jcarousel-prev-disabled-horizontal, .jcarousel-container .jcarousel-prev-disabled-horizontal:hover, .jcarousel-container .jcarousel-prev-disabled-horizontal:active {
+    cursor:default;
+    background-position:-375px -481px;
+    }
+
+/* NEXT BUTTON */
+.jcarousel-container .jcarousel-next-horizontal {
+    cursor:pointer;
+    width:18px;
+    height:18px;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -285px -481px;
+    text-align:center;
+    }
+
+.jcarousel-container .jcarousel-next-horizontal:hover {
+    background-position:-321px -481px;
+    }
+
+.jcarousel-container .jcarousel-next-horizontal:active {
+    background-position:-357px -481px;
+    }
+
+.jcarousel-container .jcarousel-next-disabled-horizontal, .jcarousel-container .jcarousel-next-disabled-horizontal:hover, .jcarousel-container .jcarousel-next-disabled-horizontal:active {
+    cursor:default;
+    background-position:-393px -481px;
+    }
+
+/* PANE LOCATOR */
+.jcarousel-container .jcarousel-pageimg a {
+    background:transparent url(../imgs/ui.png) no-repeat -468px -512px;
+    height:8px;
+    width:8px;
+    display:inline;
+    float:left;
+    line-height:8px;
+    margin:0 1px;
+    padding:0;
+    text-indent:-9999px;
+    overflow:hidden;
+    }
+
+.jcarousel-container .jcarousel-pageimg a:hover {
+    background-position:-468px -522px;
+    }
+
+.jcarousel-container .jcarousel-pageimg a.current {
+    background-position:-468px -522px;
+    }
+
+.jcarousel-container .jcarousel-pagetext {
+    display:block;
+    text-align:center;
+    width:100%;
+    color:#999;
+    font-size:77%;
+    line-height:18px;
+    }
+
+/* CRSL-W-FOUR: Full Width Content Column: Four 120 x 90 Images */
+.crsl-w-four {
+    margin:0 14px 21px;
+    padding:0;
+    }
+
+.crsl-w-four .hd {
+    padding-bottom:14px;
+    background:url(../imgs/sp_wz_crsl.gif) no-repeat;
+    padding:11px 12px 0;
+    _zoom:1;
+    }
+
+.crsl-w-four .hd h3 {
+    text-transform:uppercase;
+    font:normal 116%/1 "trebuchet ms", sans-serif;
+    }
+
+.crsl-w-four .bd {
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    background:transparent url(../imgs/gen_grad.gif) 0 0 repeat-x;
+    }
+
+.crsl-w-four .ft {
+    background:url(../imgs/sp_w_crsl.gif) no-repeat -616px bottom;
+    height:11px
+    }
+
+.crsl-w-four .jcarousel-container {
+    padding:10px 0 3px;
+    }
+
+.crsl-w-four .jcarousel-clip-horizontal {
+    width:572px;
+    margin-left:15px;
+    }
+
+.crsl-w-four .jcarousel-item {
+    text-align:center;
+    width:572px;
+    }
+
+.crsl-w-four li li {
+    float:left;
+    width:120px;
+    margin:0 5px;
+    }
+
+.crsl-w-four li ul {
+    width:520px;
+    margin:0 auto;
+    _width:525px;
+    }
+
+.crsl-w-four li li p {
+    color:#2e74b0;
+    font-size:138.5%;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+.crsl-w-four .jcarousel-next-horizontal {
+    position:absolute;
+    top:58px;
+    right:15px;
+    _right:30px;
+    }
+
+.crsl-w-four .jcarousel-prev-horizontal {
+    position:absolute;
+    top:58px;
+    left:15px;
+    }
+
+.crsl-w-four .jcarousel-pageimg {
+    position:absolute;
+    top:-12px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+.crsl-w-four .jcarousel-pagetext {
+    position:absolute;
+    top:-24px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+/* CRSL-W-RATING: Full Width Content Column: Four 92 x 69 Images with Borders */
+.crsl-w-rating {
+    margin:0 14px 21px;
+    padding:0;
+    background-color:#f1f6f2;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    }
+
+.crsl-w-rating .hd {
+    padding:11px 12px 0;
+    _zoom:1;
+    }
+
+.crsl-w-rating .hd h3 {
+    font:normal 162.5%/1 "trebuchet ms", sans-serif;
+    }
+
+.crsl-w-rating .ft {
+    height:11px;
+    }
+
+.crsl-w-rating .jcarousel-container {
+    padding:10px 0 3px;
+    *padding-left:14px;
+    }
+
+.crsl-w-rating .jcarousel-clip-horizontal {
+    width:572px;
+    margin-left:15px;
+    }
+
+.crsl-w-rating .jcarousel-item {
+    text-align:center;
+    width:572px;
+    }
+
+.crsl-w-rating li li {
+    float:left;
+    width:92px;
+    padding:4px;
+    margin:0 17px;
+    _margin:0 13px;
+    }
+
+.crsl-w-rating li ul {
+    width:544px;
+    margin:0 auto;
+    }
+
+.crsl-w-rating .jcarousel-next-horizontal {
+    position:absolute;
+    top:42px;
+    right:15px;
+    _right:30px;
+    }
+
+.crsl-w-rating .jcarousel-prev-horizontal {
+    position:absolute;
+    top:42px;
+    left:15px;
+    _left:2px;
+    }
+
+.crsl-w-rating .jcarousel-pageimg {
+    position:absolute;
+    top:-40px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+.crsl-w-rating .jcarousel-pagetext {
+    position:absolute;
+    top:-40px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+/* Rating */
+.crsl-w-rating .rating span {
+    margin:6px auto;
+    display:block;
+    text-indent:-9999px;
+    height:13px;
+    width:75px;
+    background:url(../imgs/review-stars-200.png) no-repeat 0px 0px;
+    _background-image:url(../imgs/ie/review-stars-200.gif);
+    }
+
+.wide.crsl .rating .one, .crsl-w-rating .rating .one {
+    background-position:-61px 0px;
+    }
+
+.wide.crsl .rating .two, .crsl-w-rating .rating .two {
+    background-position:-46px 0px;
+    }
+
+.wide.crsl .rating .three, .crsl-w-rating .rating .three {
+    background-position:-31px 0px;
+    }
+
+.wide.crsl .rating .four, .crsl-w-rating .rating .four {
+    background-position:-15px 0px;
+    }
+
+.wide.crsl .rating .five, .crsl-w-rating .rating .five {
+    background-position:0px 0px;
+    }
+
+.crsl-e .rating span {
+    margin:6px auto;
+    display:block;
+    text-indent:-9999px;
+    height:13px;
+    width:75px;
+    background:url(../imgs/review_stars.png) no-repeat 0px 0px;
+    _background-image:url(../imgs/ie/review-stars-200.gif);
+    }
+
+.crsl-e .rating .one {
+    background-position:-61px 0px;
+    }
+
+.crsl-e .rating .two {
+    background-position:-46px 0px;
+    }
+
+.crsl-e .rating .three {
+    background-position:-31px 0px;
+    }
+
+.crsl-e .rating .four {
+    background-position:-15px 0px;
+    }
+
+.crsl-e .rating .five {
+    background-position:0px 0px;
+    }
+
+/* CRSL-W-frontdoor: Full Width Content Column: Four 92 x 69 Images with Borders */
+.crsl-w-frontdoor {
+    margin:0 14px 21px;
+    padding:0;
+    }
+
+/* padding: 14px 15px; */
+.crsl-w-frontdoor .hd {
+    padding:14px 15px 7px;
+    background:url(../imgs/sp_wz_crsl.gif) no-repeat 0 0;
+    }
+
+.crsl-w-frontdoor .bd {
+    padding:0 15px 14px;
+    border:1px solid #ddd;
+    border-top:none;
+    background:transparent url(../imgs/gen_grad.gif) 0 0 repeat-x;
+    }
+
+.crsl-w-frontdoor .ft {
+    padding-bottom:14px;
+    background:url(../imgs/sp_w_crsl.gif) no-repeat -616px bottom;
+    }
+
+.crsl-w-frontdoor .hd h3 {
+    text-transform:uppercase;
+    font:normal 116%/1 "trebuchet ms", sans-serif;
+    }
+
+.crsl-w-frontdoor p.powered-by {
+    float:right;
+    line-height:1;
+    font-size:77%;
+    color:#666;
+    }
+
+.crsl-w-frontdoor .jcarousel-clip-horizontal {
+    width:570px;
+    }
+
+.crsl-w-frontdoor .jcarousel-item {
+    text-align:center;
+    width:570px;
+    }
+
+.crsl-w-frontdoor li li {
+    background:#fff;
+    float:left;
+    width:92px;
+    padding:4px;
+    border:1px solid #ddd;
+    margin:0 17px;
+    _margin:0 14px;
+    }
+
+.crsl-w-frontdoor li ul {
+    width:544px;
+    margin:0 auto;
+    }
+
+.crsl-w-frontdoor li li p {
+    font-size:77%;
+    text-align:left;
+    }
+
+.crsl-w-frontdoor .jcarousel-next-horizontal {
+    position:absolute;
+    top:42px;
+    right:15px;
+    }
+
+.crsl-w-frontdoor .jcarousel-prev-horizontal {
+    position:absolute;
+    top:42px;
+    left:15px;
+    _left:0;
+    }
+
+.crsl-w-frontdoor .jcarousel-pageimg {
+    position:absolute;
+    top:-40px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+.crsl-w-frontdoor .jcarousel-pagetext {
+    position:absolute;
+    top:-40px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+/*Search*/
+#homes-for-sale #section-search {
+    padding:14px 15px 0;
+    margin:0;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#homes-for-sale #section-search .search {
+    width:570px;
+    }
+
+#homes-for-sale #section-search .search p {
+    float:left;
+    padding-top:7px;
+    font:123.1%/1 "Trebuchet MS", sans-serif;
+    color:#010101;
+    }
+
+#homes-for-sale #section-search .search .input {
+    width:330px;
+    margin-left:6px;
+    _margin-left:3px;
+    }
+
+#homes-for-sale #section-search .search .input input {
+    width:330px;
+    }
+
+/* CRSL-WW: Left Rail */
+.crsl-ww .jcarousel-container {
+    width:180px;
+    }
+
+.crsl-ww .jcarousel-clip-horizontal {
+    width:180px;
+    margin-top:14px;
+    *margin-top:26px;
+    }
+
+.crsl-ww .jcarousel-clip-horizontal ul.jcarousel-list {
+    *margin-top:14px;
+    }
+
+.crsl-ww .jcarousel-item {
+    text-align:center;
+    }
+
+.crsl-ww li {
+    float:left;
+    width:180px;
+    }
+
+.crsl-ww li img {
+    display:block;
+    width:120px;
+    margin:0 auto 10px;
+    }
+
+.crsl-ww li p {
+    text-align:left;
+    line-height:1.38;
+    padding-right:7px;
+    }
+
+.crsl-ww li p.title a {
+    color:#d72d82;
+    }
+
+.crsl-ww li a:hover {
+    text-decoration:underline;
+    }
+
+.crsl-ww li a p:hover {
+    text-decoration:none;
+    }
+
+.crsl-ww .jcarousel-next-horizontal {
+    position:absolute;
+    top:64px;
+    right:7px;
+    }
+
+.crsl-ww .jcarousel-prev-horizontal {
+    position:absolute;
+    top:64px;
+    left:7px;
+    }
+
+.crsl-ww .jcarousel-pageimg {
+    position:absolute;
+    top:0;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    width:180px;
+    }
+
+.crsl-ww .jcarousel-pagetext {
+    position:absolute;
+    top:5px;
+    color:#999;
+    font-size:77%;
+    width:180px;
+    }
+
+.crsl-ww p.view-more {
+    margin-top:7px;
+    font-weight:bold;
+    }
+
+.crsl-ww a small {
+    font-size:100%;
+    color:#2e74b0;
+    }
+
+/* CRSL-WW-ALT: Left Rail Alternate Carousel (arrows and pane indicator on bottom) */
+.crsl-ww-alt .jcarousel-container {
+    width:180px;
+    }
+
+.crsl-ww-alt .jcarousel-clip-horizontal {
+    width:180px;
+    *margin-bottom:21px;
+    _margin-bottom:0;
+    }
+
+.crsl-ww-alt .jcarousel-item {
+    text-align:center;
+    }
+
+.crsl-ww-alt li {
+    float:left;
+    width:180px;
+    margin-bottom:25px;
+    }
+
+.crsl-ww-alt li img {
+    display:block;
+    width:160px;
+    margin:0 auto;
+    }
+
+.crsl-ww-alt li p {
+    text-align:left;
+    color:#000;
+    line-height:1.38;
+    }
+
+.crsl-ww-alt .jcarousel-next-horizontal {
+    position:absolute;
+    bottom:0px;
+    right:7px;
+    }
+
+.crsl-ww-alt .jcarousel-prev-horizontal {
+    position:absolute;
+    bottom:0px;
+    left:7px;
+    }
+
+.crsl-ww-alt .jcarousel-pageimg {
+    position:absolute;
+    bottom:0;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    width:180px;
+    }
+
+.crsl-ww-alt .jcarousel-pagetext {
+    position:absolute;
+    bottom:0;
+    color:#999;
+    font-size:77%;
+    width:180px;
+    }
+
+.crsl-ww-alt p.view-more {
+    margin-top:7px;
+    font-weight:bold;
+    }
+
+.crsl-ww-alt .ft p {
+    padding:21px 7px 0;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    color:#666;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:77%;
+    text-align:center;
+    }
+
+/* CRSL-E: Right Rail: Three 92 x 69 Images with Borders */
+.crsl-e .hd {
+    padding-bottom:7px;
+    }
+
+.crsl-e .jcarousel-clip-horizontal {
+    width:330px;
+    }
+
+.crsl-e .jcarousel-item {
+    text-align:center;
+    width:330px;
+    _overflow:hidden;
+    }
+
+.crsl-e li li {
+    background:#fff;
+    float:left;
+    width:92px;
+    padding:4px;
+    border:1px solid #a7bfa9;
+    margin:0 8px 0 0;
+    }
+
+#hg-e .crsl-e li li img {
+    border:none;
+    padding:0;
+    margin-bottom:4px;
+    }
+
+.crsl-e li ul {
+    float:left;
+    }
+
+.crsl-e li li p {
+    font-size:70%;
+    text-align:left;
+    line-height:1.4;
+    color:#999;
+    }
+
+.crsl-e a.cta {
+    font-family:'trebuchet ms';
+    margin-top:3px;
+    clear:both;
+    display:block;
+    }
+
+#video-crsl a.cta {
+    margin-top:125px;
+    }
+
+#product-crsl a.cta {
+    margin-top:3px;
+    margin-left:14px;
+    }
+
+.crsl-e .jcarousel-next-horizontal {
+    position:absolute;
+    top:-18px;
+    right:14px;
+    }
+
+.crsl-e .jcarousel-prev-horizontal {
+    position:absolute;
+    top:-18px;
+    right:35px;
+    }
+
+.crsl-e .jcarousel-pageimg {
+    position:absolute;
+    top:-13px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+.crsl-e .jcarousel-pagetext {
+    position:absolute;
+    top:-13px;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    }
+
+.crsl-e .jcarousel-container .jcarousel-pageimg a {
+    background-position:-477px -512px
+    }
+
+.crsl-e .jcarousel-container .jcarousel-pageimg a.current {
+    background-position:-477px -522px;
+    }
+
+/* crsl-feature: : Three and Four 92 x 69 Images with Borders in hg-w and hg-we */
+.crsl-feature .hd {
+    padding-bottom:10px;
+    }
+
+#vid-lib-w .crsl-feature .hd {
+    padding-bottom:3px;
+    }
+
+.crsl-feature .jcarousel-clip-horizontal {
+    width:584px;
+    }
+
+/*.crsl-feature .jcarousel-container { padding: 0 16px; }*/
+.crsl-feature .jcarousel-item {
+    width:552px;
+    margin:5px 0 0 0;
+    padding:8px 16px 5px 16px;
+    }
+
+/*.crsl-feature li ul { float: left; width: 552px; }*/
+.crsl-feature li ul li {
+    float:left;
+    width:92px;
+    margin:0 18px;
+    padding:4px;
+    border:1px solid #ddd;
+    line-height:1em;
+    _display:inline;
+    _padding:4px 0;
+    }
+
+.crsl-feature li ul li p span {
+    font-size:77%;
+    color:#999;
+    }
+
+.crsl-feature li ul li img {
+    float:left;
+    width:92px;
+    padding-bottom:2px;
+    }
+
+.crsl-feature li ul li a {
+    font-size:77%;
+    text-align:left;
+    }
+
+.crsl-feature .jcarousel-next-horizontal {
+    position:absolute;
+    top:45px;
+    right:0;
+    }
+
+.crsl-feature .jcarousel-prev-horizontal {
+    position:absolute;
+    top:45px;
+    left:0;
+    }
+
+.crsl-feature .jcarousel-pageimg {
+    position:absolute;
+    top:-3px;
+    height:8px;
+    }
+
+#hg-we .crsl-feature .jcarousel-clip-horizontal,
+#hg-vid-we .crsl-feature .jcarousel-clip-horizontal,
+#hg-art-we .crsl-feature .jcarousel-clip-horizontal {
+    width:392px;
+    }
+
+#hg-we .crsl-feature .jcarousel-item,
+#hg-vid-we .crsl-feature .jcarousel-item,
+#hg-art-we .crsl-feature .jcarousel-item {
+    width:360px;
+    }
+
+#hg-we .crsl-feature li ul li,
+#hg-vid-we .crsl-feature li ul li,
+#hg-art-we .crsl-feature li ul li {
+    margin:0 9px;
+    }
+
+/* jCarouselLite CSS */
+
+/* generic carousel styles */
+.crsl {
+    position:relative;
+    }
+
+.crsl.pro-pod {
+    padding:14px 6px;
+    }
+
+.crsl .prev-btn {
+    display:block;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -267px -481px;
+    height:18px;
+    width:18px;
+    text-indent:-9999px;
+    z-index:100;
+    cursor:pointer;
+    }
+
+.crsl .next-btn {
+    display:block;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -285px -481px;
+    height:18px;
+    width:18px;
+    text-indent:-9999px;
+    z-index:100;
+    cursor:pointer;
+    }
+
+.crsl .prev-btn:hover {
+    background-position:-303px -481px;
+    cursor:pointer;
+    }
+
+.crsl .next-btn:hover {
+    background-position:-321px -481px;
+    cursor:pointer;
+    }
+
+.crsl .prev-btn.active,
+.crsl .prev-btn:active,
+.crsl .prev-btn.selected {
+    background-position:-339px -481px;
+    cursor:default;
+    }
+
+.crsl .next-btn.active,
+.crsl .next-btn:active,
+.crsl .next-btn.selected {
+    background-position:-357px -481px;
+    cursor:default;
+    }
+
+.crsl .prev-btn.disabled {
+    background-position:-375px -481px;
+    cursor:default;
+    }
+
+.crsl .next-btn.disabled {
+    background-position:-393px -481px;
+    cursor:default;
+    }
+
+* html .crsl .prev-btn, * html .crsl .next-btn {
+    line-height:18px;
+    }
+
+.crsl .nav {
+    position:relative;
+    margin:0 auto;
+    }
+
+.crsl .controls {
+    position:absolute;
+    }
+
+.crsl .crsl-wrap {
+    margin:10px 0 0;
+    }
+
+.crsl .crsl-wrap img {
+    display:block;
+    }
+
+.crsl .crsl-wrap ul .crsl-item {
+    width:158px;
+    margin:0 2px;
+    }
+
+/* default nav on the ends */
+.crsl.default-nav {
+    padding:0 0 14px;
+    }
+
+.crsl.default-nav .nav {
+    color:#676767;
+    font-size:85%;
+    text-align:center;
+    line-height:2.5em;
+    margin:0 auto;
+    }
+
+.crsl.default-nav .crsl-wrap {
+    margin:15px auto 0;
+    }
+
+.crsl.default-nav .prev-btn {
+    position:absolute;
+    left:14px;
+    top:85px;
+    float:none;
+    }
+
+.crsl.default-nav .next-btn {
+    position:absolute;
+    right:14px;
+    top:85px;
+    float:none;
+    }
+
+/* mini-nav in the top right nav */
+.crsl.mini-nav .hd, #hg-e .crsl.mini-nav.inside-pod .hd {
+    padding:7px 12px;
+    }
+
+.crsl.mini-nav .hd h4 {
+    float:left;
+    }
+
+#hg-e .crsl.mini-nav .hd h4 {
+    float:left;
+    font-size:138.5%;
+    padding:0;
+    }
+
+.crsl.mini-nav .nav {
+    float:right;
+    }
+
+.crsl.mini-nav .prev-btn, .crsl.mini-nav .next-btn, .crsl.mini-nav .controls {
+    float:left;
+    }
+
+.crsl.mini-nav .controls {
+    position:relative;
+    padding:8px 7px 0;
+    }
+
+/* btn-nav shows the nav buttons */
+.crsl .controls.btn-nav {
+    padding:7px 0;
+    }
+
+.crsl .controls.btn-nav span {
+    display:block;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -533px -502px;
+    height:8px;
+    width:8px;
+    text-indent:-9999px;
+    float:left;
+    margin:0 1px;
+    cursor:pointer;
+    }
+
+.crsl .controls.btn-nav span.active {
+    background-position:-541px -502px;
+    cursor:default;
+    }
+
+.crsl .controls.btn-nav span:hover {
+    background-position:-541px -502px;
+    cursor:pointer;
+    }
+
+/* HGTV Videos - right rail carousel - styles for jCarouselLite implementation */
+#hg-e #video-crsl {
+    background:#F1F6F2;
+    }
+
+#video-crsl .crsl-wrap {
+    margin:5px 7px;
+    _margin-left:12px;
+    }
+
+#video-crsl .crsl-wrap ul .crsl-item {
+    background:#fff;
+    width:104px;
+    margin-right:7px;
+    _margin-left:0;
+    float:left;
+    }
+
+#video-crsl .crsl-wrap ul img {
+    border:none;
+    padding:4px;
+    }
+
+#video-crsl .crsl-wrap ul a {
+    height:123px;
+    color:#999;
+    line-height:1.2em;
+    display:block;
+    width:100px;
+    font-size:77%;
+    border:1px solid #A7BFA9;
+    }
+
+#video-crsl .crsl-wrap ul a .desc {
+    padding:6px 5px 4px;
+    display:block;
+    }
+
+#video-crsl .crsl-wrap ul a .desc span {
+    font-weight:normal;
+    font-size:93%;
+    }
+
+#video-crsl .controls.btn-nav {
+    right:154px;
+    width:20px;
+    position:absolute;
+    }
+
+#video-crsl .controls.btn-nav span {
+    display:inline-block;
+    }
+
+#video-crsl .prev-btn {
+    margin-right:3px;
+    _background-position:-267px -477px;
+    }
+
+#video-crsl .next-btn {
+    _background-position:-285px -477px;
+    }
+
+/* global footer sister site carousel - styles for jCarouselLite implementation */
+#hg-ft #crsl-sisters {
+    float:right;
+    width:762px;
+    border-left:1px solid #dae7e3;
+    }
+
+#hg-ft #crsl-sisters .hd {
+    padding-top:7px;
+    padding-left:12px;
+    }
+
+#hg-ft #crsl-sisters .ft {
+    height:11px
+    }
+
+#hg-ft #crsl-sisters .nav {
+    background:none;
+    height:1em;
+    margin:0 auto;
+    }
+
+#hg-ft #crsl-sisters .controls {
+    top:-18px;
+    }
+
+.crsl.default-nav .crsl-wrap {
+    margin-top:0;
+    }
+
+#hg-ft #crsl-sisters .crsl-item {
+    width:226px;
+    height:120px;
+    _margin:0;
+    float:left;
+    }
+
+#hg-ft #crsl-sisters .crsl-item .bd {
+    width:200px;
+    margin:12px auto 0;
+    padding-bottom:12px;
+    background-color:#f8fbf9;
+    border:1px solid #ddd;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    }
+
+#hg-ft #crsl-sisters .crsl-item.mid .bd {
+    width:224px;
+    min-height:105px;
+    margin-top:0;
+    background-color:#fff;
+    }
+
+#hg-ft #crsl-sisters .crsl-item h6 {
+    padding-top:3px;
+    margin-right:10px;
+    }
+
+#hg-ft #crsl-sisters .mid.crsl-item .bd img {
+    float:left;
+    margin-right:7px;
+    }
+
+#hg-ft #crsl-sisters h6 a {
+    margin:3px 10px;
+    color:#444;
+    font-size:93%;
+    }
+
+#hg-ft #crsl-sisters .crsl-item li {
+    margin-left:7px;
+    line-height:1.6em;
+    font-size:93%;
+    }
+
+#hg-ft #crsl-sisters .crsl-item p {
+    line-height:1.5em;
+    padding:5px 10px 0 8px;
+    font-size:93%;
+    }
+
+/* carousel with rating */
+
+.crsl-w-rating {
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background:#F1F6F2;
+    }
+
+.crsl-w-rating .crsl-wrap {
+    background:transparent;
+    border:none;
+    }
+
+.crsl-w-rating .crsl-wrap ul li.crsl-item {
+    width:98px;
+    margin:0 17px 0 17px;
+    float:left;
+    }
+
+.crsl-w-rating .img-crsl-wrap {
+    padding:10px 22px 0 22px;
+    }
+
+.crsl-w-rating ul {
+    /* margin: 0 auto; */
+    }
+
+.crsl-w-rating p.rating {
+    margin:0;
+    }
+
+.crsl-w-rating .crsl-wrap ul .crsl-item {
+    }
+
+.crsl-w-rating .controls {
+    top:-43px;
+    }
+
+.crsl-w-rating .crsl-wrap {
+    /* padding: 0 14px;  */
+    }
+
+.crsl-w-rating .crsl.default-nav .prev-btn {
+    left:18px;
+    top:90px;
+    }
+
+.crsl-w-rating .crsl.default-nav .next-btn {
+    right:18px;
+    top:90px;
+    }
+
+/* product ideas module */
+#product-ideas {
+    overflow:hidden;
+    }
+
+#product-ideas div.bd.crsl-wrap {
+    padding-top:20px;
+    }
+
+#product-ideas .crsl-wrap ul .crsl-item {
+    width:166px;
+    margin:0 8px;
+    }
+
+#product-ideas .crsl-wrap ul .crsl-item img {
+    }
+
+#product-ideas .prev-btn {
+    left:12px;
+    top:92px;
+    z-index:5;
+    }
+
+#product-ideas .next-btn {
+    right:12px;
+    top:92px;
+    z-index:5;
+    }
+
+#product-ideas .nav {
+    color:#999;
+    font-size:75%;
+    }
+
+#product-ideas p.view-more {
+    margin-left:8px;
+    }
+
+#hg-ww #product-ideas.pod {
+    *position:relative;
+    }
+
+/* video library carousel styles */
+
+/* start toggle styles */
+#vid-lib-w li.switch {
+    margin-bottom:10px;
+    background:#fdfffd;
+    border:1px solid #e9f5f2;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    }
+
+#vid-lib-w  h4 {
+    background-attachment:scroll;
+    background-color:#f1f6f2;
+    color:#386cb4;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    background-position:right -264px;
+    background-repeat:no-repeat;
+    font-size:93%;
+    font-weight:bold;
+    height:20px;
+    padding:8px 0 0 8px;
+    line-height:12px;
+    cursor:pointer;
+    }
+
+#vid-lib-w  h4:hover {
+    color:#ef4141;
+    }
+
+#vid-lib-w li.active h4 {
+    background-color:#fdfffd;
+    color:#ef4141;
+    }
+
+#vid-lib-w  h4 em {
+    background-image:url("../imgs/ui.png");
+    background-position:-470px -498px;
+    background-repeat:no-repeat;
+    display:block;
+    float:left;
+    height:12px;
+    width:12px;
+    margin:1px 2px 0 0;
+    }
+
+#vid-lib-w li.active h4 em {
+    background-position:-501px -498px;
+    }
+
+/* end toggle styles */
+
+#vid-lib-w .crsl {
+    min-height:120px;
+    display:none;
+    padding-top:20px;
+    *padding-top:0px;
+    _height:130px;
+    }
+
+#vid-lib-w .crsl-wrap {
+    background:transparent;
+    border:none;
+    }
+
+#vid-lib-w .crsl-wrap ul li {
+    font-size:77%;
+    text-align:left;
+    }
+
+#vid-lib-w .crsl-wrap ul li.crsl-item {
+    width:98px;
+    margin-left:16px;
+    margin-right:16px;
+    background:#fff;
+    float:left;
+    border:1px solid #a7bfa9;
+    }
+
+#vid-lib-w .crsl-wrap ul li.crsl-item img {
+    border:none;
+    padding:2px 0;
+    }
+
+#vid-lib-w .crsl-wrap ul li.filler {
+    display:none;
+    }
+
+#vid-lib-w .crsl-wrap ul .crsl-item a {
+    margin:2px 4px;
+    display:block;
+    line-height:14px;
+    }
+
+#vid-lib-w .crsl-wrap ul .crsl-item a span.title {
+    color:#386cb4;
+    }
+
+#vid-lib-w .crsl-wrap ul .crsl-item a span {
+    color:#999;
+    }
+
+#vid-lib-w .crsl-wrap ul .crsl-item a:hover {
+    text-decoration:none;
+    }
+
+#vid-lib-w .crsl-wrap ul .crsl-item a:hover span.title {
+    text-decoration:underline;
+    }
+
+#vid-lib-w .crsl .next-btn, #vid-lib-w .crsl .prev-btn {
+    top:54px;
+    *top:64px;
+    }
+
+#vid-lib-w .controls {
+    top:-26px;
+    }
+

@@ -1,0 +1,43 @@
+<div>
+  <nav>
+    <a>HGTV Home</a>
+    <a>Rooms (tap)</a>
+    <ul>
+      <li><a href="/kitchens/index.html">Kitchens</a></li>
+      <li><a href="/bathrooms/index.html">Bathrooms</a></li>
+      <li><a href="/bedrooms/index.html">Bedrooms</a></li>
+      <li><a href="/kids-rooms/index.html">Kids' Rooms</a></li>
+      <li><a href="/living-rooms/index.html">Living Rooms</a></li>
+      <li><a href="/rooms/index.html">All Rooms</a></li>
+    </ul>
+    
+    <a>Decorating (tap)</a>
+    <ul>
+      <li><a href="/decorating-basics/index.html">Basics</a></li>
+      <li><a href="/color/index.html">Color</a></li>
+      <li><a href="/painting/index.html">Painting</a></li>
+      <li><a href="/accessories/index.html">Accessories</a></li>
+      <li><a href="/window-treatments/index.html">Window Treatments</a></li>
+      <li><a href="/homekeeping/index.html">Homekeeping</a></li>
+      <li><a href="/handmade/index.html">Handmade</a></li>
+      <li><a href="/entertaining/index.html">Entertaining</a></li>
+      <li><a href="/decorating/index.html">All Decorating</a></li>
+    </ul>
+
+    <a>Outdoors (tap)</a>
+    <ul>
+      <li><a href="/gardening/index.html">Gardening</a></li>
+      <li><a href="/landscaping/index.html">Landscaping</a></li>
+      <li><a href="/outdoor-rooms/index.html">Outdoor Rooms</a></li>
+      <li><a href="/decks-patios-porches-and-pools/index.html">Decks, Patios, Porches &amp; Pools</a></li>
+      <li><a href="/outdoors/index.html">All Outdoors</a></li>
+    </ul>
+    
+    <a>Photos (tap)</a>
+    <ul>
+      <li><a href="/designers-portfolio/main/index.html">Designers Portfolio</a></li>
+      <li><a href="/garden-galleries/index.html">Garden Galleries</a></li>
+      <li><a href="http://www.roomzaar.com/rate-my-space/multigallery.esi">Rate My Space</a></li>
+    </ul>
+  </nav>
+</div>

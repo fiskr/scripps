@@ -1,0 +1,162 @@
+/* default width */
+.box {border:1px solid #F0ECE3;padding:0;width:615px;}
+
+.btn span, .sp, .box .hd span { background: url('../imgs/se/sprite.png') no-repeat top left; }
+
+/* hide box when nested in click class */
+.click-wrap {position:relative;}
+.click-wrap .box {display:none;position:absolute;z-index:2001;top:auto;left:0;}
+.click-wrap .box .bd {background:#FFF;}
+.click-wrap .box.show {display:block;}
+
+
+/* drop width*/
+.box.drop {width:545px;-moz-border-radius: 4px;border-radius: 4px;border:7px solid rgba(0,0,0,0.50); border:7px solid #7F7F7F\9;margin:0;z-index:1001;}
+
+/* half width*/
+.box.half {width:270px;}
+
+/* half width*/
+.box.third {width:200px;}
+.box.third .hd p {width:140px;padding-right:7px;}
+
+/* quarter width*/
+.box.quart {width:135px;}
+
+/* .tint class to .hd creates a shaded header for drops class */
+.box .hd.tint {background-color:#EEECE7;border-bottom:1px solid #C8C6C1;float:left;width:100%;}
+.box .hd span, .btn.close span {background-position: 0 -2219px; width: 23px; height: 22px;display:block;float:right;cursor:pointer;margin:7px;opacity:.45;text-indent: -999em;}
+
+/* ie7 fix for close */
+.btn.close span {*float: none;display:inline-block;}
+
+.box .hd span:hover, .btn.close:hover span {opacity:1;}
+
+.box .hd p {float:left;margin-bottom:0;font-weight:bold;padding:7px 35px 7px 14px;}
+
+/* initial padding */
+.box .bd {padding:14px;overflow:hidden;}
+.box .bd.fill {background:#FFF;}
+.box .bd p {margin-bottom:0;}
+
+/* add top dotted border */
+.box .bd.bdr {border-top:1px solid #E6E6E6;margin:0;background:#FAFAFA;padding:14px 7px;}
+
+/*
+    only add within .bd and as last DIV in container
+    does nice grey tinting, and produces 0 margin/padding with relative positioning
+*/
+.box .bd .boot {background:#FAFAFA;border-top: 1px solid #E6E6E6;left: -14px;margin: 0 0 -14px;padding: 14px;position: relative;width: 100%;}
+
+/* halve the padding on quart (cause it's small) */
+.box.quart .bd {padding:7px;}
+
+/* "single" class on ul creates auto overflow and radial corner on hover */
+.box .bd ul.single {max-height:172px; overflow:auto; margin:-3px -7px;}
+.box .bd ul.single li {display:block; margin-right:1px; border-bottom:1px dotted #ccc;}
+.box .bd ul.single li span.selected {font-weight:bold; color:#333; opacity:1;}
+.box .bd ul.single li span {display:block; padding:6px 7px; margin-right:1px; font-weight:normal; color:#ccc; opacity:0.7;}
+.box .bd ul.single li a {display:block; padding:6px 7px; margin-right:1px; font-weight:normal;}
+.box .bd ul.single li span:hover {background-color:#F1F5F9; text-decoration:none;}
+.box .bd ul.single li a:hover {background-color:#F1F5F9; text-decoration:none;}
+.box .bd ul.single li a.sel {color:#333;font-weight:bold;}
+.box .bd ul.single li a.sel:hover,
+.box .bd ul.single li a.disabled:hover {background:none;cursor:default;}
+
+/* feature floats image left and anchor right with border bottom - it's nice */
+.box .bd.feature {border-bottom:1px solid #E6E6E6;font-weight:bold;}
+.box .bd.feature img { float: left; margin-right: 14px; }
+.box .bd.feature a { float: left; padding-top: 11px; }
+
+/* last class for arbitrary bottom item */
+.box .bd .last {margin:14px 0 0;}
+
+/* box color scheme definitions */
+.box.dark {background-color:#000;border:1px solid #000;color:#FFF;}
+.box.dark .hd span {background-position: 0 -2348px;}
+
+.box.coal {background-color:#242424;border:1px solid #242424;color:#FFF;}
+.box.coal .hd span {background-position: 0 -2348px;}
+
+.box.caution {background-color:#FCFAD8;border:1px solid #E7D5AD;}
+.box.caution .hd span {background-position: 0 -2534px;}
+
+.box.error {background-color:#FCDDD7;border:1px solid #E7ABA7;}
+.box.error .hd span {background-position: 0 -2662px;}
+
+.box.success {background-color:#E3FDD9;border:1px solid #BFE9AF;}
+.box.success .hd span {background-position: 0 -2598px;}
+
+.box.nav {background-color:#F0F5F9;border:1px solid #DFE8F0;}
+.box.nav .hd span {background-position: 0 -2412px;}
+
+.box.close {position:relative;background:#000;color:#fff;}
+.box.close .hd {position:absolute;top:-24px;right:14px;background-color:#000;padding:1px 7px;-moz-border-radius: 4px;border-radius: 4px;cursor:pointer;}
+.box.close .hd span {background-position:0 -2162px;width:14px;height:15px;opacity:1;}
+.box.close .hd em {display:none;font-size:0.786em;font-style:normal;}
+.box.close .hd:hover em {display:inline-block;}
+
+/* clean class used for global nav drops */
+.box.clean {background:#FFF;-moz-border-radius:0;border-radius:0;border:1px solid #B6B6B6;padding: 7px 0 0;box-shadow: 3px -1px 13px rgba(127,127,127,0.45);-moz-box-shadow: 3px -1px 13px rgba(127,127,127,0.45);-webkit-box-shadow: 3px -1px 13px rgba(127,127,127,0.45); }
+.box.clean em {position:absolute;display:block;top:-21px;left:10px;width:55px;height:21px;background:url('../imgs/se/sprite.png') no-repeat -5px -6679px;}
+.nav.e .box.clean em { left: auto; right: 10px; }
+.box.clean section { margin: 0 13px; padding: 0 0 14px}
+.box.clean section.special { margin: 0; padding: 0 13px 20px; background: #fafafa; border: 1px solid #e6e6e6; }
+.box.clean .hd {padding: 7px; border-bottom: 1px solid #E6E6E6; *zoom: 1; }
+.box.clean section.special .hd { padding-left: 0; border-bottom: none; }
+.box.clean section.special .bd { overflow: visible; }
+.box.clean .hd:after{content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+.box.clean .hd p { padding: 0; margin: 0; }
+.box.clean .bd { padding: 0; }
+.box.clean .bd ul { float: left; margin-left: 14px;}
+.box.clean .bd ul:first-child { margin: 0; }
+.box.clean .bd ul.last { margin-right:0; }
+.box.clean .bd ul li { border-bottom: 1px dotted #CCC; }
+.box.clean .bd a { display: block; padding: 7px; width: 168px; }
+.box.clean.lg .bd a { width: 203px; }
+.box.clean .bd a:hover { color: #3e8bc5; background-color: #F0F5F9; text-decoration: none; }
+.box.clean .bd p.cta { clear: both; margin: 0; border-bottom: none; }
+.box.clean .bd .cta a { font-size: .786em; font-weight:bold; }
+.box.clean .bd .cta a:hover {background:none;text-decoration:underline;}
+
+
+/* dropdowns that occur within forms - "select" menus transformed */
+.dd-list {position:relative;}
+.dd-list dt.dd-dt a {position:relative;display:block;padding:5px 14px 5px;cursor:pointer;text-decoration:none;color:#2A76A8;font-weight:bold;}
+.dd-list dt.dd-dt a em {background:url("../imgs/se/sprite.png") no-repeat 0 -3029px transparent;position:absolute;display:block;height:19px;width:10px;right:10px;top:1px;}
+.dd-list dt.dd-dt a:hover em {background-position:0 -3080px;color:#3976CC;}
+.dd-list dd{position:absolute;z-index:100;left:5%;top:26px;}
+
+
+/* filter box for topics results */
+.filter h4 {margin-bottom:14px;}
+.filter > .box {display:none;background-color:#F0F5F9;border:1px solid #DFE7F1;margin-bottom:14px;}
+.filter .box .hd span {background-position: 0 -2411px;}
+.filter .box.topic-filters {display:block;}
+.filter .box cite {margin:7px 0 14px 14px;}
+.filter > .box > li {font-weight:bold;margin:0 0 1px;}
+.filter .box li h5 {padding:3px 14px;margin-bottom:0;}
+.filter .box li a {padding:3px 14px;font-weight:bold;display:inline-block;}
+.filter .box li a:hover {text-decoration:underline;}
+.filter .box li.sel a span {color:#fff;}
+.filter .box li.sel a {color:#fff;background-color:#396987;}
+.filter .box li.sel a:hover {text-decoration:none;}
+.filter .box li a span {font-size:0.786em;font-weight:normal;color:#999;}
+.filter .box li.cta {font-weight:normal;}
+.filter .box li.cta a:hover {background:none;}
+.filter .loader {display:none;}
+.filter cite em {font-style:normal;}
+.filter .hr {padding:21px 0 0;margin:7px 0 0;}
+
+/* position drops within results box */
+#narrow-results-box {position:relative;}
+#narrow-results-box .cta .box {display:none;position:absolute;padding-bottom:0;font-size:1.25em;/* reseting font size because .cta is a bit too strong */}
+
+/* for sponsored results pod - center tag */
+.box.sponsored {
+  background-color: #FAFAFA;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0 0 0 1px #FFFFFF inset;
+}
+
+.box.sponsored .bd {padding:14px 21px;}

@@ -1,0 +1,654 @@
+#board_main {
+    width: 750px;
+	float: left;
+	margin-left: -22px;
+    padding-left: 21px;
+	border-left:1px solid #E6E6E6;
+}
+
+TABLE, DIV, TD, TH {
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 0;
+}
+
+#ev_page_intro {margin-bottom:21px;}
+
+section #board_main br {display: inline;}
+
+header .masthead .global-search .input input {width:322px;}
+
+.box.caution {width:auto;}
+
+/* CSS from IP_PLATFORM styleset: Remodels August 2011 OID: 9023916747  */
+
+/* forums module images */
+
+.ubb_add_photo{ width:16px; height:17px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/add_photo.gif') }
+.ubb_album_icon{ width:15px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/album.gif') }
+.ubb_cat_content{ width:24px; height:24px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/cat_content.gif') }
+.ubb_cat_content_new{ width:24px; height:24px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/cat_content_on.gif ') }
+.ubb_cat_minus{ width:9px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/cat_minus.gif') }
+.ubb_cat_plus{ width:9px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/cat_plus.gif') }
+.ubb_edit_album{ width:21px; height:17px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/edit_album.gif') }
+.ubb_edit_photo{ width:21px; height:17px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/edit_photo.gif') }
+.ubb_forum_content{ width:25px; height:21px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/forum_content.gif') }
+.ubb_forum_content_new{ width:25px; height:21px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/forum_content_on.gif') }
+.ubb_forward{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/fast_forward.gif') }
+.ubb_high_topic{ width:10px; height:19px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/highlight.gif') }
+.ubb_hot{ width:8px; height:10px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/hot.gif') }
+.ubb_next{ width:11px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/next.gif') }
+.ubb_pause{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/pause.gif') }
+.ubb_pause_on{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/pause_on.gif') }
+.ubb_photo_gallery{ width:11px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/gallery.gif') }
+.ubb_play{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/play.gif') }
+.ubb_play_on{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/play_on.gif') }
+.ubb_poll{ width:14px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/poll_new.gif') }
+.ubb_post{ width:14px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/post_new.gif') }
+.ubb_prev{ width:11px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/prev.gif') }
+.ubb_rewind{ width:20px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/rewind.gif') }
+.ubb_star_1{ width:80px; height:18px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/1star.png') }
+.ubb_star_2{ width:54px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/2stars.gif') }
+.ubb_star_3{ width:54px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/3stars.gif') }
+.ubb_star_4{ width:54px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/4stars.gif') }
+.ubb_star_5{ width:54px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/5stars.gif') }
+.ubb_email_a_friend{ width:101px; height:20px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/email-a-friend-blue.png') }
+.ubb_slideshow{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/slideshow.gif') }
+.ubb_album_post{ width:13px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/album_new.gif') }
+.ubb_archive{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/archive.gif') }
+.ubb_shortcut{ width:11px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/shortcut.gif') }
+
+#ev_topic_reply_bot, #ev_topic_reply_bot TABLE { text-align:right;}
+
+/* TOPIC LIST (FRM) */
+#ev_ubbx_frm TD.ev_ubbx_frm_posticon, #ev_ubbx_frm TD.ev_ubbx_frm_title, #ev_ubbx_frm TD.ev_ubbx_frm_lastreply{ background-color: #fefefe;}
+#ev_ubbx_frm TR.ev_ubbx_frm_featured A.ev_ubbx_frm_title_link { font-weight:bold;}
+#ev_ubbx_frm TD.ev_ubbx_frm_topicicon, #ev_ubbx_frm TD.ev_ubbx_frm_posticon, #ev_ubbx_frm TD.ev_ubbx_frm_author, #ev_ubbx_frm TH.ev_ubbx_frm_author, #ev_ubbx_frm TD.ev_ubbx_frm_location, #ev_ubbx_frm TH.ev_ubbx_frm_location, #ev_ubbx_frm TD.ev_ubbx_frm_replies,  #ev_ubbx_frm TH.ev_ubbx_frm_replies, #ev_ubbx_frm TD.ev_ubbx_frm_views, #ev_ubbx_frm TH.ev_ubbx_frm_views, #ev_ubbx_frm TD.ev_ubbx_frm_rating,#ev_ubbx_frm TH.ev_ubbx_frm_rating{ text-align:center;}
+#ev_ubbx_frm TD.ev_ubbx_frm_topicicon, #ev_ubbx_frm TD.ev_ubbx_frm_posticon, #ev_ubbx_frm TD.ev_ubbx_frm_author, #ev_ubbx_frm TH.ev_ubbx_frm_author, #ev_ubbx_frm TD.ev_ubbx_frm_location, #ev_ubbx_frm TH.ev_ubbx_frm_location, #ev_ubbx_frm TD.ev_ubbx_frm_replies,  #ev_ubbx_frm TH.ev_ubbx_frm_replies, #ev_ubbx_frm TD.ev_ubbx_frm_views, #ev_ubbx_frm TH.ev_ubbx_frm_views, #ev_ubbx_frm TD.ev_ubbx_frm_rating,#ev_ubbx_frm TH.ev_ubbx_frm_rating, #ev_ubbx_frm TH.ev_ubbx_frm_title, #ev_ubbx_frm TH.ev_ubbx_frm_lastreply { font-size: 83%;}
+#ev_ubbx_frm TD.ev_ubbx_frm_title { font-size: 83%;}
+#ev_ubbx_frm TD.ev_ubbx_frm_topicicon, #ev_ubbx_frm TH.ev_ubbx_frm_topicicon, TD.ev_ubbx_frm_topicicon,TH.ev_ubbx_frm_topicicon{ border-left-width:0px;}
+#ev_ubbx_frm TD.ev_ubbx_frm_lastreply{ width:    30%; font-size: 70%;}
+#ev_ubbx_frm TD.ev_ubbx_frm_author { width:    25%;}
+div.ev_ubbx_frm_topiclead { margin-left:10px; margin-top:5px;}
+#ev_ubbx_frm TD.ev_ubbx_frm_lastreply, #ev_ubbx_frm TH.ev_ubbx_frm_lastreply{ text-align:left;}
+
+/* END TOPIC LIST (FRM) */
+
+#ev_ubb_pa_tab { margin-top:0px; cursor:text;}
+#pa_edit_island { width:100%; height:100%;}
+.ev_pa_island { border-width:1px; background-color: #fefefe; padding:5px; }
+.ev_pa_island INPUT, .ev_pa_island TEXTAREA {font-size: 70%;}
+INPUT.ev_ubbx_pa_input, TEXTAREA.ev_ubbx_pa_input{ width:275px;}
+
+.progressWrapper { margin-top: 5px; border: solid 1px #003366; background-color: #fefefe; width: 357px; overflow: hidden; }
+.progressContainer { margin: 5px; padding: 5px; overflow: hidden; }
+.progressName { font-size: 8pt; font-weight: 700; /* color: #555; */ 
+width: 323px; height: 14px; text-align: left; white-space: nowrap; overflow: hidden; }
+.progressBarInProgress, .progressBarComplete, .progressBarError { font-size: 0; width: 0%; height: 2px; background-color: blue; margin-top: 2px; }
+.progressBarComplete { width: 100%; background-color: green; visibility: hidden; }
+.progressBarError { width: 100%; background-color: red; visibility: hidden; }
+.progressBarStatus { margin-top: 2px; width: 337px; font-size: 7pt; font-family: Arial; text-align: left; white-space: nowrap; }
+a.progressCancel { font-size: 0; display: block; height: 14px; width: 14px; background-image: url(/groupee_common/platform_images/cancel_button.gif); background-repeat: no-repeat; background-position: -14px 0px; float: right; }
+a.progressCancel:hover { background-position: 0px 0px; }
+
+/* CATEGORY AND FORUMS (CFRM) SUMMARY PAGE*/
+
+TABLE.ubbx_cfrm_cat_tbl { border-width:1px; padding:21px; color:#000; border-bottom:0; background-color: #F5F5F5; width:100%; }
+TABLE.ubbx_cfrm_cat_tbl TD { padding:21px 21px 7px 5px; vertical-align:top;}
+A.ubbx_cfrm_com_title_link { font-size:83%; font-weight:bold;}
+TABLE.ubbx_cfrm_cat_tbl  A.ubbx_cfrm_com_title_link, TABLE.ubbx_cfrm_cat_tbl  A.ubbx_cfrm_com_title_link:visited, TABLE.ubbx_cfrm_cat_tbl  A.ubbx_cfrm_com_title_link:active { color: #000;}
+
+.ubbx_cfrm_com_desc { font-size:70%;}
+
+TABLE.ubbx_cfrm_cat_tbl  .ubbx_cfrm_com_desc { padding-top:3px; padding-bottom:5px}
+.ubbx_cfrm_cat_info{ font-size:70%; text-align:right; padding-right:17px;}
+.ubbx_cfrm_cat_icon_plus { position:relative; top:-7px; left:12px; cursor:pointer;}
+TD.ubbx_cfrm_cat_icon { text-align:center; padding-left: 5px; width:40px;}
+TD.ubbx_cfrm_cat_icon IMG{ cursor:pointer; border:0; margin-left:7px;}
+
+/* forum table only */ 
+.ubbx_cfrm_mods_link { font-size:70%;}
+TABLE.ev_com_tbl TD.ev_forum_td_title, TABLE.ev_com_tbl TD.ev_forum_td_lastreply { text-align:left; background-color:#FFF;}
+TABLE.ev_com_tbl TD.ev_forum_td_lastreply { font-size:70%;width:30%}
+
+TR.ubbx_frm_topic_row TD { font-size:83%;}
+TABLE.ev_com_tbl TD.ev_forum_td_featuredtopic { background-color:#fcfcfc; text-align:left; padding-left:12px; background-repeat:no-repeat; background-position:top left;}
+TABLE.ev_com_tbl TD.ev_cfrm_post_count, TABLE.ev_com_tbl TH.ev_cfrm_post_count, TABLE.ev_com_tbl TD.ev_cfrm_topic_count, TABLE.ev_com_tbl TH.ev_cfrm_topic_count { text-align:center; width:10%;}
+TABLE.ev_com_tbl TH.ev_forum_td_icon { border-left-width:0px;}
+TABLE.ev_com_tbl TD.ev_cfrm_post_count, TABLE.ev_com_tbl TD.ev_cfrm_topic_count{ font-size:83%;}
+DIV.ev_cfrm_lp_icon { position:absolute; margin:3px; display:inline;}
+DIV.ev_cfrm_lp_info { }
+
+#ubbx_cfrm_reg_member_count {padding-top:3px;}
+
+/* Online Now Table */ 
+
+TD.ev_onlinenow_table { border-width:1px; padding:14px; color: #333333; background-color: #fefefe;}
+
+/* Online Now Admin Status .ip-user-type-admin, .ip-user-type-mod*/ 
+
+.ev_onlinenow_admin { font-weight: bold; text-decoration:underline;}
+
+/* NEW ALBUM TOPIC */ 
+TABLE.ev_ubbx_album { border-width:0px 1px; width:100%; background-color: #fcfcfc; padding: 8px 0px 10px 10px;}
+
+/* ALBUM PAGES */
+.ev_piclet_shell { height:185px; margin:7px 4px; float:left;}
+.ev_piclet { border-width:1px; padding:5px; font-size: 70%;}
+.ev_piclet_img { padding:3px}
+.ev_piclet_caption { width:155px;}
+.ev_piclet_title { font-weight:bold; width:140px;}
+.ev_piclet_img { text-align:center;}
+.ev_piclet_reply { text-align:right;}
+
+/* Image Island Table  */ 
+.ev_piclet_table { width:155px; height:155px; border-width:1px; background-color:#fcfcfc;}
+
+/* Image Tools Postitioning  */ 
+.ev_piclet_img_tools { visibility:hidden; position:relative; left:+2px; cursor:pointer; text-align:right;}
+
+/* Thumbnail Formatting  */ 
+.ev_piclet_thumb { border-width:1px; }
+
+/* Play Control Button Down  */ 
+.ev_buttondown { position:relative; top:+2px; left:+2px}
+
+/* Play Control Button Up  */ 
+.ev_buttonup { position:relative; top:0px; left:0px}
+TABLE.ev_ms_content,TABLE.ev_ms_content TH, TABLE.ev_ms_content TD { border-color:#96C1EB;}
+
+/* SEARCH FORM AND SEARCH RESULTS */
+
+#ev_search_form { background-color:#fefefe;}
+#ev_search_form TD { font-size: 83%; padding:5px;}
+#ev_search_form TD.ev_search_title { font-weight:bold; padding-right:10px; text-align:right; width:25%;}
+#ev_search_results DIV { padding-left:15px;}
+#ev_search_results DIV.ev_search_group { padding-left:50px;}
+
+/* END SEARCH FORM AND SEARCH RESULTS */
+.leftContentTools, .rightContentTools { padding-top: 10px; }
+.rightContentTools { text-align: right; }
+.contentTool, .externalButton { padding-right: 10px; }
+div.contentRatingWrapper { width: 85px; height: 18px; padding-top: 3px; vertical-align: middle; float: right; }
+div.contentRatingWrapper div.stars { border: 1px solid #003366; }
+
+
+/* CSS from IP_PLATFORM styleset: Remodels August 2011 OID: 9023916747  */
+
+.ev_tab {margin-bottom:5px;}
+.ev_tab img {display:inline-block;margin-top:-5px;}
+.eve_admin{ width:16px; height:10px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/admin.gif') }
+.eve_advanced{ width:14px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/adv_opts.gif') }
+.eve_background{ width:1px; height:1px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/blank.gif') }
+.eve_bread_tier1{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/breadcrumb_tier1.gif') }
+.eve_bread_tier2{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/breadcrumb_tier2.gif') }
+.eve_bread_tier3{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/breadcrumb_tier3.gif') }
+.eve_bread_post{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/breadcrumb_post.gif') }
+.eve_bread_poll{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/breadcrumb_poll.gif') }
+.eve_bread_album{ width:15px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/album.gif') }
+.eve_bread_myspace{ width:9px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/myspace.gif') }
+.eve_bread_priv_msg{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/pm.gif') }
+.eve_bread_cookies{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/cookies.gif') }
+.eve_bread_chat{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/chat_icon.gif') }
+.eve_bread_member_dir{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/chat_icon.gif') }
+.eve_buddies{ width:11px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/buddies.gif') }
+.eve_ignore_list{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/ignore_list.gif') }
+.eve_check{ width:11px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/check.gif') }
+.ubb_arr_down{ width:11px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/arrow_down.gif') }
+.ubb_arr_up{ width:11px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/arrow_up.gif') }
+.eve_arr_forwards{ width:9px; height:7px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/arrow_forward.gif') }
+.eve_arr_back{ width:9px; height:7px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/arrow_back.gif') }
+.eve_arr_up_down{ width:11px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/arrow_move_up_down.gif') }
+.eve_cookies{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/cookies.gif') }
+.eve_code_color{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/ubb_code_color.gif') }
+.eve_code_attach{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_att.gif') }
+.eve_code_bold{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_bold.gif') }
+.eve_code_email{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_email.gif') }
+.eve_code_graem{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_smilie.gif') }
+.eve_code_image{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_img.gif') }
+.eve_code_italic{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_italic.gif') }
+.eve_code_list{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_list.gif') }
+.eve_code_quote{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_quote.gif') }
+.eve_code_tag{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_tag.gif') }
+.eve_code_video{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/ubb_code_video.gif') }
+.eve_code_url{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubb_code_url.gif') }
+.eve_code_strike{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/ubb_code_strike.gif') }
+.eve_corner_bl{ width:9px; height:50px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/corner_bottom_left.gif') }
+.eve_corner_br{ width:9px; height:50px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/corner_bottom_right.gif') }
+.eve_corner_tl{ width:9px; height:50px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/corner_top_left.gif') }
+.eve_corner_tr{ width:9px; height:50px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/corner_top_right.gif') }
+.eve_custom_1{ width:1px; height:1px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/blank.gif') }
+.eve_custom_2{ width:1px; height:1px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/blank.gif') }
+.eve_custom_3{ width:1px; height:1px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/blank.gif') }
+.eve_custom_4{ width:1px; height:1px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/blank.gif') }
+.eve_digest_daily{ width:23px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_daily.gif') }
+.eve_digest_weekly{ width:23px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_weekly.gif') }
+.eve_doc{ width:14px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/doc.gif') }
+.eve_eve_icon{ width:15px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/eve_icon.gif') }
+.eve_chime_icon{ width:12px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/chime_logo.gif') }
+.eve_favs{ width:15px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/favs.gif') }
+.eve_find{ width:13px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/find.gif') }
+.eve_flag{ width:15px; height:10px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/flag.gif') }
+.eve_groups{ width:16px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/group.gif') }
+.eve_manage_user{ width:16px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/edit_user.gif') }
+.eve_minus{ width:13px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/minus.gif') }
+.eve_myspace{ width:9px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/myspace.gif') }
+.eve_new{ width:13px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/new.gif') }
+.eve_notif_email{ width:22px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_email.gif') }
+.eve_notif_im{ width:21px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_im.gif') }
+.eve_notif_sms{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_sms.gif') }
+.eve_notify{ width:14px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify.gif') }
+.eve_notify_off{ width:19px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/notify_off.gif') }
+.eve_perms{ width:9px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/rights.gif') }
+.eve_perms_off{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/perms_off.gif') }
+.eve_perms_on{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/perms_on.gif') }
+.eve_plus{ width:13px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/plus.gif') }
+.eve_prefs{ width:13px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/pref.gif') }
+.eve_priv_msg{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/pm.gif') }
+.eve_profile{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/profile.gif') }
+.eve_save{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/save.gif') }
+.eve_thrive_icon{ width:15px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/thrive_icon.gif') }
+.eve_prem_mem_icon{ width:10px; height:9px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/star.gif') }
+.eve_tools{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/tools.gif') }
+.eve_ubbx_icon{ width:14px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/ubbx_icon.gif') }
+.eve_go{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/go.gif') }
+.eve_title{ width:279px; height:63px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/title_eve.gif') }
+.eve_karma{ width:16px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/karma.gif') }
+.eve_groupee{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/groupee.gif') }
+.eve_user_posts_new{ width:18px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/user_new_posts.gif') }
+.eve_member_homepage{ width:16px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/user_homepage.gif') }
+.eve_member_im_off{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/im_off.gif') }
+.eve_member_im_on{ width:12px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/im_on.gif') }
+.eve_attach_def{ width:22px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_def.gif') }
+.eve_image{ width:14px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/img.gif') }
+.eve_attach_doc{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_word.gif') }
+.eve_attach_pdf{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_pdf.gif') }
+.eve_attach_ppt{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_ppt.gif') }
+.eve_attach_xls{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_excel.gif') }
+.eve_attach_zip{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_zip.gif') }
+.eve_attach_txt{ width:16px; height:16px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/attach_txt.gif') }
+.eve_edit{ width:17px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/edit.gif') }
+.eve_reply{ width:11px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/reply.gif') }
+.eve_reply_quick{ width:11px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/quick_reply.gif') }
+.eve_reply_quote{ width:17px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/quote_reply.gif') }
+.eve_content{ width:11px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/content.gif') }
+.eve_content_new{ width:11px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/content_new.gif') }
+.eve_msg_alert{ width:13px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/topic_alert.gif') }
+.eve_hide_post{ width:17px; height:13px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/hide_post.gif') }
+.eve_new_pm_alert{ width:15px; height:12px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/new_pm.gif') }
+.eve_lock{ width:7px; height:10px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/lock.gif') }
+.eve_mute_no_post{ width:14px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/mute_no_post.gif') }
+.eve_mute_no_view{ width:14px; height:14px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/mute_no_view.gif') }
+
+/* posting icons  */
+
+.ubb_post_icon1{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon1.gif'); }
+.ubb_post_icon2{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon2.gif'); }
+.ubb_post_icon3{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon3.gif'); }
+.ubb_post_icon4{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon4.gif'); }
+.ubb_post_icon5{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon5.gif'); }
+.ubb_post_icon6{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon6.gif'); }
+.ubb_post_icon7{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon7.gif'); }
+.ubb_post_icon8{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon8.gif'); }
+.ubb_post_icon9{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon9.gif'); }
+.ubb_post_icon10{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon10.gif'); }
+.ubb_post_icon11{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon11.gif'); }
+.ubb_post_icon12{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon12.gif'); }
+.ubb_post_icon13{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon13.gif'); }
+.ubb_post_icon14{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon14.gif'); }
+.ubb_post_icon15{ width:15px; height:15px; background-image: url('http://boards.hgtvremodels.com/groupee_common/styles/icons/icon15.gif'); }
+
+#gs_tab_posticon_menu{ width:118px; z-index:15; border-width:1px;background-color: #6699CC }
+
+.ev_piclet_img_tools {width:11px; height:11px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/styles/images/set2/quick_reply.gif')}
+
+
+/*EVE STYLES
+
+#ev_common_master_div1 TABLE, #ev_common_master_div1 DIV, #ev_common_master_div1 TD, #ev_common_master_div1 TH { border-color:    #003366; border-style:    solid; border-width:   0px;}
+#ev_common_master_div1 TD, #ev_common_master_div1 TH { vertical-align: top;}
+#ev_common_master_div1 IMG { border: 0px;}
+*/
+
+BODY.ev_popup, BODY.ev_iframe { margin: 0px; background-image: none;}
+BODY.ev_iframe { background-color:  #fcfcfc; padding-left:15px;}
+#eve_bc_top {display:none;}
+#eve_bc_top A, #eve_bc_bottom A, #eve_bc_top A:visited, #eve_bc_bottom A:visited, #eve_bc_top A:hover, #eve_bc_bottom A:hover{ font-weight:    bold;}
+#ev_portal_title_graphic_div  {display:none;}
+
+/* Document Width
+#ev_common_master_div1,DIV#ev_common_master_div1 { text-align:center;}
+#ev_common_master_div2,DIV#ev_common_master_div2, DIV.ev_ubbx_ipt, TABLE.ev_ubbx_ipt { margin-left: auto; margin-right: auto; text-align: left;}
+*/ 
+#ev_contact_links {margin-bottom:21px; text-align: center;}
+#ev_copy_txt { color: #336699; font-size: 70%}
+
+#ev_thrive_order TD { padding:8px;}
+
+/* END GENERIC STYLES */
+
+/* BEGIN NAVIGATION _TABS_AND_BUTTONS */
+
+TABLE.ev_tab_table_top, TABLE.ev_tab_table_bot, TABLE.ev_tab_table_all{ padding: 0; cursor:pointer; width:auto}
+
+/* top tabs...such as go, new, find */ 
+TABLE.ev_tab_table_top { border-width:1px 0 0 1px; margin-top:15px;}
+
+/* bottom tabs...such as comments, chat room tabs, bottom reply tabs */ 
+TABLE.ev_tab_table_bot { border-width:0 0 1px 1px;}
+
+/*full border tabs...such as chat room tabs, single tabs, post tabs */ 
+TABLE.ev_tab_table_all { border-width:1px 0 1px 1px;}
+
+/* OUTER part of tab */ 
+td.eve_tab, td.eve_tab_hover { color: #207EB2; border-width:0 2px 1px 0; border-bottom-color:  #E1EAF1; border-right-color:  #E1EAF1; vertical-align:middle; }
+td.eve_tab { background-color:#F1F6FA;}
+td.eve_tab_hover { background-color:#F1F6FA;}
+
+/* INNER part of tab */
+div.ev_tab, div.ev_tab_hover { padding:7px 7px 3px; font-size: 70%; color: #207EB2;}
+div.ev_tab { border-width: 1px 0px 0px 1px; border-color:#FFF;}
+DIV.ev_tab_hover{ border-width: 1px 0px 0px 1px; }
+
+/* END NAVIGATION _TABS_AND_BUTTONS */
+
+/* BEGIN NAVIGATION _LAYERS_AND_MENUS */
+TABLE.ev_layer_table, TABLE.ev_help_menu, TABLE.ev_hopto_table { background-color:#FBFBFB; border-width:1px;}
+TABLE.ev_layer_table TD, TABLE.ev_help_menu { background-color: #FBFBFB; }
+TABLE.ev_layer_table TD, TABLE.ev_help_menu TD, TABLE.ev_hopto_table TR TD { padding: 5px 25px 5px 5px; border-bottom-width:1px;font-size:70%; white-space: nowrap;}
+TABLE.ev_layer_table TD.ev_menu_raquo { text-align:right; padding-right: 5px;}
+TABLE.ev_layer_table TD.ev_menu_img { padding-right: 0px;}
+
+.ev_hopto_scroller { padding-left:0px; padding-right:0px; background-color:#FBFBFB; border-top-width:1px; border-bottom-color: #34679A; }
+.ev_hopto_emphasized{ background-color:#FBFBFB; }
+.ev_hopto_emphasized_hover { background-color:#34679A;}
+.ev_hopto_normal { background-color:#fcfcfc;}
+.ev_hopto_normal_hover { background-color:#fefefe;  }
+
+TABLE.ev_layer_table TD INPUT { color:#333333;}
+
+/* END NAVIGATION _LAYERS_AND_MENUS */
+
+/* BEGIN CONTAINER */
+
+TABLE.ev_container, TABLE.ev_container_bottom, DIV.ev_container_bottom { width:100%; }
+
+/* this usually has no content.  is only to show container color and border */ 
+DIV.ev_container_bottom { background-color: #FBFBFB; font-size: 83%; padding: 4px 0px 5px 5px;border-width: 1px; background-repeat: no-repeat;}
+TABLE.ev_container{ border-left-width: 1px;}
+TABLE.ev_container TD, TABLE.ev_container_bottom TD, TABLE.ev_container TH{ background-color: #FBFBFB; font-size: 83%; padding: 14px; font-weight:bold; border-top-width: 1px; background-repeat: no-repeat;}
+TABLE.ev_container TH{ text-align:left; border-left-width: 0px;}
+/*TABLE.ev_container TD *, TABLE.ev_container_bottom TD *, TABLE.ev_container TD A, TABLE.ev_container TD A:visited, TABLE.ev_container_bottom TD A:visited{ color: #ffffff;}*/
+TABLE.ev_container_bottom TD { border-bottom-width: 1px; background-position:bottom}
+TABLE.ev_container_bottom TD.ev_container_left, TABLE.ev_container_bottom TD.ev_container_right_td { white-space: nowrap; width:30%}
+TABLE.ev_container_bottom TD.ev_poweredby { text-align:center; font-size: 70%; }
+TABLE.ev_container_bottom TD.ev_poweredby A { text-decoration: none;}
+
+/* Container Top Bar Right TD */ 
+TD.ev_container_right_td { text-align:right; } TD.ev_container_right_constrained { width: 350px; }
+
+/* Container Top Right groupee TD */ 
+TABLE.ev_container TD.ev_container_table_top_right_groupee { width:30px; padding: 0px 0px 0px 4px; text-align:right;}
+
+/* Container Top Right Corner TD */ 
+TABLE.ev_container TD.ev_tr_corner, TABLE.ev_container TD.ev_tr_groupee_corner {border-right-width:1px;padding-left:0px; width:9px;}
+TABLE.ev_container TD.ev_tr_groupee_corner  { background-color: #ffffff;}
+
+/* Container Bottom Left Corner TD */ 
+TABLE.ev_container_bottom TD.ev_bl_corner {border-left-width:1px;width:9px; padding-left:0px;}
+
+/* Container Bottom LEFT Corner TD */ 
+TABLE.ev_container_bottom TD.ev_bl_corner_no { width:9px; padding-left:0px; border-left-width:1px}
+
+/* Container Bottom Right Corner TD */ 
+TABLE.ev_container_bottom TD.ev_br_corner {border-right-width:1px;width:9px; padding-left:0px;}
+
+/* Container Bottom Right Corner TD */ 
+TABLE.ev_container_bottom TD.ev_br_corner_no { width:9px; padding-left:0px; border-right-width:1px}
+
+/* END CONTAINER */
+
+/* PRINTER FRIENDLY FORMAT */
+
+/* these values are hardcoded */ 
+BODY.ev_print_view { background-color:  #FFFFFF; background-image: none;}
+BODY.ev_print_view * { font-size:10pt; color:#000000;}
+DIV.ev_print_info, DIV.ev_print_post_info { background-color:#f1f1f1; padding:5px 2px; width:100%;}
+DIV.ev_print_sitename, DIV.ev_print_date { font-weight:bold; float:right;}
+DIV.ev_print_subject { font-weight:bold;}
+DIV.ev_print_post { padding:5px 0px; width:100%;}
+
+/* END PRINTER FRIENDLY FORMAT */
+
+/* THE COMMON TABLE */
+
+TABLE.ev_com_tbl { border-width:1px; width:100%; border-bottom-width:0px;}
+TABLE.ev_com_tbl TD, TABLE.ev_com_tbl  TH { /* border-color:#ff9900;   technically, the eve stylesheet doesn't have this color available.  this is the cat color */ padding: 14px; border-width:1px; background-color:#fcfcfc; border-right-width:0px; border-bottom-width:0px;}
+TABLE.ev_com_tbl TD.ev_com_fc { border-left-width:0px;}
+
+/* Forum Icon TD  */ 
+TABLE.ev_com_tbl TD.ev_forum_td_icon { padding:14px 7px ;vertical-align: top;width:44px; text-align:center; border-bottom-width:0px; border-left-width:0px;}
+TABLE.ev_com_tbl TH { text-align: left; border-top-width:0px; background-color:#fcfcfc; padding: 7px; font-size: 70%; font-weight:bold;}
+TABLE.ev_com_tbl TH.ev_com_fc { border-left-width:0px;}
+
+/* END THE COMMON TABLE */
+
+/* EVE ISLANDS  */
+
+.ev_menu_logout { border-width:1px; font-size: 70%; background-color: #fcfcfc; padding:5px; width:300px;}
+.ev_island { border-width:1px; background-color: #fefefe; padding:5px;}
+.ev_island_alt { border-width:1px; background-color: #fcfcfc; padding:5px;}
+table.ev_island { width:100%;}
+table.ev_island TD { padding:5px;}
+DIV.ev_island   { font-size: 83%;}
+.ev_island_login { border-width:1px 1px 0px 1px; font-size: 83%; background-color: #fcfcfc; padding:5px;}
+.ev_island_content { border-width:1px 1px 0px 1px; background-color:#fcfcfc; padding:5px;}
+.ev_island_news { border-width:1px; border-bottom-width:0px; font-size: 83%; background-color: #fefefe; padding:5px;}
+
+/* END EVE ISLANDS  */
+
+/* MYSPACE STYLES  */
+
+#ev_new_user TD{ padding-left:15px;}
+.ev_ms_title { border-bottom-width:1px; font-size: 83%; font-weight:bold; padding:10px 0px; margin-bottom: 10px; width:98%;}
+.ev_ms_header { font-size: 83%; font-weight:bold; background-color: #fefefe; padding:3px; width:98%; margin-bottom:5px; margin-top:10px;}
+
+/* a table for private topics list and favorites list. NOTE: there is a border color for these defined in the Forum css */
+
+TABLE.ev_ms_content { border-width:0px 1px 1px 0px; width:100%;}
+TABLE.ev_ms_content TH, TABLE.ev_ms_content TD { font-size: 83%; border-width: 1px 0px 0px 1px; padding: 3px; text-align:center; }
+TABLE.ev_ms_content TR.ev_highlight_pm TD { font-weight:bold;}
+DIV#ev_pm_users { border-width:1px 1px 0px 1px; padding:5px 0px 5px 5px; font-size: 83%; width:  90%; }
+TABLE.eve_admin_action TD { font-size: 83%;}
+.ev_ms_content_icon, .ev_ms_content_cb { text-align: center; width:24px;}
+TABLE.ev_ms_content TD.ev_ms_content_title, TABLE.ev_ms_content TH.ev_ms_content_title, TABLE.ev_ms_content TD.ev_ms_content_lr, TABLE.ev_ms_content TH.ev_ms_content_lr{ background-color:#fefefe; text-align:left;}
+
+/* Left Hand Myspace Navigation TD */ 
+TD.ev_body_table_mypace_leftnav_td{ border-right-width:1px; vertical-align:top; padding-top:14px; width:175px; height:500px; background-color:#fefefe;}
+DIV.ev_ms_nav_head { padding:3px; font-size: 83%; width:175px}
+DIV.ev_ms_nav { width:175px; background-color:  #fcfcfc;}
+TABLE.ev_ms_nav_links { margin-left:10px; width:175px;}
+TABLE.ev_ms_nav_links TD { font-size: 83%; padding:3px;}
+
+/* Right hand Myspace Content TD*/ 
+TD.ev_body_table_myspace_content_td { padding-left:15px; background-color: #fcfcfc;}
+
+/* HELP MENU STYLES  */
+DIV.ev_help_menu_header { padding:3px; cursor:pointer; background-color:#34679A; border-width: 1px 1px 0px 1px;}
+TABLE.ev_help_menu { width:100%}
+TABLE.ev_help_menu TR{ cursor:pointer;}
+TABLE.ev_help_menu TD { padding-left:20px;}
+/* END HELP MENU STYLES  */
+
+
+/* MEMBER DIRECTORY STYLES */
+TABLE.ev_member_table { border-width:1px; width:100%; border-bottom-width:0px;}
+TABLE.ev_member_table TD, TH { padding: 5px; border-width:1px; background-color:#fefefe; border-right-width:0px; border-bottom-width:0px;}
+TABLE.ev_member_table TD.first_column { border-left-width:0px;}
+TABLE.ev_member_table TH { text-align: left; border-top-width:0px; background-color: #fcfcfc; font-size: 70%; font-weight:bold; color: #336699;}
+TABLE.ev_member_table TH.first_column { border-left-width:0px;}
+
+/* END MEMBER DIRECTORY STYLES */
+
+
+/* MISC STYLES  */ 
+#eve_group_wait_message { width:300px; position:absolute; top:25%; left:15%; border-width:1px; border-color:#cccccc; margin:20px; padding:14px; background:#ffffff; font-size:small;}
+
+.ev_text_small { font-size: 70%;}
+
+.ev_text_normal{ font-size: 83%;}
+
+/* TODO: remove instances of ev_text_bold  */ 
+.ev_text_bold {font-weight:bold;}
+
+/* Time Color */ 
+.ev_text_timecolor, .ev_text_timecolor *{ color:#336699; }
+
+/* background */ 
+.ev_background_txt A, .ev_background_txt_small A, DIV.ev_ubbx_pages A { color:#336699; }
+.ev_background_txt A:active, .ev_background_txt_small A:active, DIV.ev_ubbx_pages A:active { color:#336699;}
+.ev_background_txt A:visited, .ev_background_txt_small A:visited, DIV.ev_ubbx_pages A:visited{ color:#336699;}
+
+/* For permissions tree and other a elements that aren't really links: */ 
+A.notalink:active, A.notalink:active SPAN, A.notalink:visited, A.notalink:visited SPAN { color: #336699 }
+
+/* COLORS */
+.ev_bgcolor_row1 { background-color: #fefefe}
+.ev_bgcolor_row2 { background-color:  #fcfcfc}
+
+/* Mandatory Field BG Color  */ 
+INPUT.ev_mandatory_field, TEXTAREA.ev_mandatory_field, SELECT.ev_mandatory_field { background-color:#FFFFDD; color:#000000;}
+TEXTAREA.ev_q_msg { background-color: #ffffff; color: #333333; font-size: 83%;}
+
+/* override for these classes, so the checkbox/radio buttons don't have a background box  */ 
+.gs_radio, .gs_checkbox, .sub_forums, .filecheck, .sub_topics, .sub_members{ background:transparent;background-color:transparent}
+
+TABLE.ev_body_table { width:100%; border-width:1px; border-bottom-width:0px; height:400px; background-color:#fcfcfc;}
+IFRAME.iframe_tos { width:98%;}
+A.ev_member_link { text-decoration:none;}
+input.ev_input, input.ev_input_normal, .ev_input_normal, input.ev_input_small, .ev_input_small { background-color:#FBFBFB;border: 1px solid #BFBFBF;}
+DIV.ev_input_div input { background-color:#FBFBFB;}
+input.ev_input_normal, .ev_input_normal{ font-size: 83%;}
+input.ev_input_small, .ev_input_small { font-size: 70%;}
+.groupee_tab{ width: 25px; height: 25px; background-image: url('http://boards.hgtvremodels.com/groupee_common/ver1.3.7.9832/platform_images/livecloud-icon-25px.png'); } .loginStatusBar { font-weight: bold; vertical-align: middle; }
+
+/* DYNAMIC LAYER*/
+TABLE.ev_message_alert { background-color: #FBFBFB; border-width:1px; }
+TABLE.ev_message_alert TD { color: #333333;}
+
+/* Click-And-Drag Header*/ 
+TABLE.ev_message_alert TD.ev_grab_bar { background-color: #FBFBFB; padding: 3px; border-bottom-width:1px; border-bottom-color: #003366; cursor:pointer; font-size: 83%; font-weight:bold; vertical-align: middle;}
+
+/* Content Formatting */ 
+TABLE.ev_message_alert TD.ev_content { background-color:#fcfcfc; padding: 5px;}
+
+/* TOPIC PAGE*/
+
+/* upper page numbers*/ 
+div.ev_ubbx_pages { float:right; font-size: 83%; margin:0px 0px 10px 10px;}
+div.ev_ubbx_pages, div.ev_ubbx_pages B { color:#333333; }
+div.ev_ubbx_tpc_author { font-weight: bold; font-size: 83%;}
+div.ev_tpc_signature { display:inline}
+
+/* ALTERNATIVE topic page layouts */ 
+TD.ev_ubbx_tpc_alt{ border-left-width:1px; text-align:center}
+div.ev_ubbx_tpc_info_alt { text-align:right; width:100%; font-size: 70%; padding:5px;}
+div.ev_ubbx_tpc_info_alt, div.ev_ubbx_tpc_info_alt * { color:#336699;}
+div.ev_ubbx_tpc_alt { text-align:left; padding:5px; border-top-width:1px; width:97%; font-size: 83%;}
+
+/* NORMAL topic page layouts */
+
+/* Message Footer Table (Location, Post Count,etc) */ 
+TABLE.ev_msg_userstats_table { width:100%; border-top-width:1px; font-size: 70%;}
+TABLE.ev_msg_userstats_table TD { padding: 5px 5px 10px 0px;}
+TABLE.ev_msg_userstats_table TD * { text-decoration:none; color: #333333;}
+TABLE.ev_msg_userstats_table TD.ev_msg_buttons { text-align:right; width:20%;}
+div.ev_ubbx_tpc { text-align:left; padding:5px 0px; width:97%; font-size: 83%;}
+TABLE.ev_msg_table { width:100%; margin-top:5px;}
+TABLE.ev_msg_table TD { width:100%; padding:8px 5px 5px 5px; border-left-width:1px;}
+
+/* Post Icon */ 
+TABLE.ev_msg_table TD.ev_msg_posticon { width:25px; border-top-width:1px; text-align:center; }
+TD.ev_msg_posticon { width:25px; }
+
+/*Posted Time */ 
+TABLE.ev_msg_table TD.ev_msg_timestamp { border-bottom-width:1px; font-size: 70%;}
+div.ev_slideshow { background-color: #000000; margin-right: 10px; }
+div.ev_slideshow div { width: 100%; }
+TD.ev_msg_timestamp,TD.ev_msg_timestamp * { color:#336699; }
+TABLE.ev_msg_table TD.ev_msg_hide { border-bottom-width:1px; border-left-width:0px; font-size: 70%; text-align:right; }
+
+/* SHARED topic page items */
+
+/* Username Formatting */ 
+TD.ev_msg_userinfo{vertical-align:top;padding:14px 7px; width:15%;}
+
+TD.ev_msg_userinfo A { text-decoration: none;}
+
+/* Ignore Formatting */ 
+TD.ev_ignore_msg { padding: 8px; }
+
+/* Message Content Table */ 
+TD.ev_msg_table { padding: 8px 0px 0px 10px; text-align:left;}
+
+/*Message Table First  Color */ 
+.ev_msg_rowcolor1, TABLE.ev_msg_rowcolor1 { width:90%; background-color: #fefefe; border-width:1px 1px 0px 1px}
+
+/*Message TableSecond Color */ 
+.ev_msg_rowcolor2,  TABLE.ev_msg_rowcolor2 { width:90%; background-color: #fcfcfc; border-width:1px 1px 0px 1px;}
+
+/*Message Text */ 
+TD.ev_msg_content { padding: 10px 30px 15px 0px; line-height:1.3;}
+
+/*Poll Result Bar Color  */ 
+.ev_msg_pollcolor { background-color:orange; height:12px; overflow:hidden}
+
+div.ip-ubbcode-quote-title { margin-bottom:5px}
+div.ip-ubbcode-quote-content { border-width:2px 0px; padding: 5px 0px;}
+
+/* END TOPIC PAGE*/
+
+/* POST and EMAIL A FRIEND NEW*/
+
+TABLE.ev_post_table { height:100%; width:100%; border-width:1px}
+TABLE.ev_post_table TD { padding:8px;}
+TABLE.ev_post_table TD TABLE, TABLE.ev_post_table TD TABLE TD  { padding:0px;}
+TABLE.ev_post_table TD { border-top-width:1px; color:#333333;}
+TABLE.ev_post_table TD TABLE#eve_att_menu_table TD, TABLE#eve_att_menu_table TD{ border-width:0px}
+TABLE.ev_post_table TD input, TABLE.ev_post_table TD SELECT, TABLE.ev_post_table TD TEXTAREA, TABLE.ev_post_table TD OPTION, TABLE.ev_post_table OPTION, TABLE.ev_post_table input, TABLE.ev_post_table SELECT, TABLE.ev_post_table TEXTAREA{ background-color: #ffffff; color: #333333;}
+
+/* first row */ 
+TABLE.ev_post_table TR.ev_post_first_row TD { border-top: 0px;}
+
+/* Left Hand Top */ 
+TABLE.ev_post_table TD.ev_post_table_leftcol{ background-color:#FBFBFB; border-right-width:1px; font-weight:bold; font-size: 83%; color:#ffffff; white-space: nowrap; width:100px; border-top: 0px;}
+TABLE.ev_post_notification TD { border-top-width:0px;}
+
+#ev_post_field_postto { width:405px;}
+#ev_post_field_subject { width:370px;}
+
+/* this is a hardcoded font family*/ 
+#ev_post_field_message, #ev_post_field_lead{ font-family:Monospace, Serif;}
+
+TD.gs_att_status { text-align:right;} .poll_question { width: 400px; } .poll_add_option { float: left; } .poll_remove_question { float: right; padding-right: 20px; }
+
+/* UNKNOWN STYLES*/
+.ip-ubbcode-code-pre { font-family: monospace, serif; font-size: 11px; margin-top: 5px; margin-bottom: 5px;}
+
+
+/* EVE UBB CODE*/
+
+/* Colors */ 
+.ev_code_RED{color:#FF0000;} .ev_code_RED_chooser{background-color:#FF0000;}
+.ev_code_GREEN{color:#009933;} .ev_code_GREEN_chooser{background-color:#009933;}
+.ev_code_BLUE{color:#006699;} .ev_code_BLUE_chooser{background-color:#006699;}
+.ev_code_YELLOW{color:#FFFF00;} .ev_code_YELLOW_chooser{background-color:#FFFF00;}
+.ev_code_WHITE{color:#FFFFFF;} .ev_code_WHITE_chooser{background-color:#FFFFFF;}
+.ev_code_BLACK{color:#000000;} .ev_code_BLACK_chooser{background-color:#000000;}
+.ev_code_PINK{color:#FF99CC;} .ev_code_PINK_chooser{background-color:#FF99CC;}
+.ev_code_PURPLE{color:#663399;} .ev_code_PURPLE_chooser{background-color:#663399;}
+.ev_code_BROWN{color:#996633;} .ev_code_BROWN_chooser{background-color:#996633;}
+.ev_code_GREY{color:#666666;} .ev_code_GREY_chooser{background-color:#666666;}
+
+/* UBBCODE HR */ 
+.ev_code_hr{ color:#003366; height:1px;}

@@ -1,0 +1,24 @@
+.pagi{text-align:center;color:#999;font-size:1em;clear:both;margin:0 14px;}
+.pagi span{margin:0 7px;}
+.pagi a, .pagi a:visited{border:1px solid #EEE;color: #4A88B3;padding:5px 9px;margin-right:7px;}
+.pagi a:hover{color:#FFF;background-color:#4E98D3;text-decoration:none;}
+.pagi .current{padding:5px 9px;border:1px solid #EEE;color:#e6622d;margin-right:7px;margin-left:0;font-weight:bold;}
+.pagi .nextprev{display:none;position: relative;top: -1px;}
+.pagi a.nextprev {display:inline-block;padding:4px 7px 2px;border:0;font-size:0.786em;font-weight:bold;}
+.pagi em {display:inline-block;width:19px;height:7px;*height:11px;background:url('../imgs/se/sprite.png') no-repeat;}
+.pagi .prev em {background-position:0 -1147px;}
+.pagi .prev:hover em {background-position:0 -1245px;}
+.pagi .next em {background-position:3px -951px;}
+.pagi .next:hover em {background-position:3px -1049px;}
+
+.pagi-short{position:relative;text-align:center;color:#999;font-size:1em;clear:both;margin:0 14px;border-bottom:1px solid #EAE9E5;border-top:1px solid #EAE9E5;padding: 28px 0;}
+.pagi-short span{margin:0 7px;}
+.pagi-short a, .pagi.short a:visited, .pagi-short .current{border:1px solid #EEE;color:#4A88B3;font-weight:bold;padding:11px 15px;margin-right:1px;}
+.pagi-short a:hover{color:#4E98D3;border:1px solid #DBDAD6;background-color:#FFF;text-decoration:none;}
+.pagi-short .current{border:1px solid #EEE;color:#e6622d;font-weight:bold;margin:0 1px 0 0;}
+.pagi-short .nextprev{display:none;position:absolute;top:18px;padding:10px 15px 9px;}
+.pagi-short a.nextprev {display:inline-block;border:0;font-weight:bold;}
+.pagi-short a.nextprev.prev {left:0;padding-left:0;}
+.pagi-short a.nextprev.prev:hover {text-decoration:underline;}
+.pagi-short a.nextprev.next {right:0;color:#FFF;background-color:#4E98D3;}
+.pagi-short a.nextprev.next:hover {background-color:#62b7f0;}

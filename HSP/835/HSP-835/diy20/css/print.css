@@ -1,0 +1,103 @@
+/* ----- PRINT BASIC ----- */
+#print #diy-hd, #print #diy-site-hd {display:none;}
+body#print, #print #site-wrapper {background:none;}
+body#print #diy-bd {margin-left: 25px;}
+
+#print a.logo {background: url("../imgs/se/logo-diy-print.gif") 0 0 no-repeat; height:0; width: 59px; padding-top: 38px; overflow:hidden; display:block;}
+#print img.logo {width: 59px; height: 38px; display: block; margin-top: -14px; }
+#print .intro a.logo, #print img.logo {float: right;}
+
+#print .asset-title {border:0; margin:0;}
+#print .asset-title .author { clear: left; }
+#print #print-sponsor {border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px;}
+#print #path {clear: left; margin: 0 0 13px; padding-top: 13px; color: #afafaf;}
+#print #path a {color: #568791;}
+#print #print-link { margin: 0 14px;}
+
+#print .project-highlight {border:0; margin:0; padding-left:14px;}
+#print .project-highlight .media {margin-top:0;}
+#print .project-highlight .media a {display:none;}
+#print .project-highlight .detail {float: left;}
+#print .project-highlight .detail ul.list li {color: #568791;}
+#print .gallery p {margin-bottom: 14px; color: #454545; text-align: left; padding-top: 12px;}
+#print .gallery p em {font-weight:  bold; font-style: normal;}
+
+#print .step { margin: 0 14px 20px; }
+#print .step .visual .print-photo {width: 400px; margin: 0 auto;}
+#print .step .visual img {margin: 0 auto;}
+.print-photo h3 { color: #333333; font-size: 13px; font-weight: bold; }
+
+#print .step { margin: 0 14px 20px; }
+#print .step .visual .print-photo {width: 400px; margin: 0 auto;}
+#print .step .visual img {margin: 0 auto;}
+.print-photo h3 { color: #333333; font-size: 13px; font-weight: bold; }
+
+#print .beaut-img-wrap { margin: 0 14px; }
+#print .beaut-img-wrap .section { margin: 0 0 20px; }
+#print .section { margin: 0 14px 20px; }
+#print .section p { margin-bottom: 8px; }
+#print .section .visual { margin: 14px auto; width: 400px; }
+#print .section .visual img {display: block; }
+
+/* ----- PRINT MATERIALS ----- */
+#print .inst {color: #999; margin: 0 0 25px 11px;}
+#print .mt-hd {margin-left: 11px;}
+#print .supply-list {border: 1px solid #bfbfbf; margin-left: 11px; width: 633px;}
+#print .supply-list tr {clear: left;}
+#print .supply-list td {padding-top: 10px;}
+#print .supply-list thead td {color: #999; font-size: 85%; padding: 13px;}
+#print .supply-list tbody td {color: #333;}
+#print .square {border: 1px solid #bfbfbf; height: 13px; width: 13px; float: left; margin: 2px 5px 12px 14px;}
+
+
+
+/* ----- PRINT PHOTO GALLERY ----- */
+#print #pgallery {background-color: #fff; margin-left:0; position:static;}
+#print #pgallery .largeImage {margin-bottom: 20px;}
+#print #pgallery .largeImage .imgpanel {position: static; background-image: none; color: #474747; border: 1px solid #e1e1e1; border-top:0; width: 614px; padding:0;}
+#print #pgallery .largeImage img {padding:0;}
+#print #pgallery .imgpanel h3 {font-weight: bold; margin: 0 14px 5px; padding-top: 14px;}
+#print #pgallery .imgpanel span {color: #474747; font-size: 100%; padding: 0 14px 14px;}
+#print #more-nfo {margin-left: 14px;}
+#print #more-nfo h3 {text-transform: uppercase; font-weight:bold; margin-bottom: 4px;}
+#print #more-nfo .nfo {margin-bottom: 25px;}
+#print #more-nfo h4 {font-weight:bold;}
+#print #more-nfo .nfo ul li {margin-bottom: 4px;}
+
+
+/* ----- PRINT PROJECTS SEQUENTIAL ----- */
+#print #project-steps .project-highlight .proj-meta .time {width: 96px;}
+#print #project-steps .project-highlight .proj-meta .price-range {width: 84px;}
+#print #project-steps .project-highlight .detail {width: 440px;}
+#print .project-step {border: none;}
+#print .project-step .num {background-image: none; position: static; height:auto; width: 100%; text-indent:0;}
+#print .project-step .num  h4 {font-size: 123.1%; font-weight:bold; color: #671104; width: 530px; float: left;}
+#print .project-step .num .check {float: right; font-size: 85%; width: 55px; padding-top: 3px;}
+#print .project-step .num .square {float: right; margin-left: 8px;}
+
+
+
+/* ----- PRINT PROJECTS NONSEQUENTIAL ----- */
+#print .nonsequential .detail h3 {margin-top: 0;}
+#print .nonsequential .proj-meta {margin-top:0;margin-left:0;margin-right:0;}
+
+
+/* ----- ARTICLE IMAGE ----- */
+#print .article-body {margin-left: 14px;}
+#print .lead-img-wrap {float: left; width: 266px; margin: 5px 14px;}
+#print .article-body .author a {color: #176684;}
+#print .article-body p, #print .article-body ul, #print .article-body ol {margin-bottom: 20px;}
+#print .article-body h3 {font-size: 108%; font-weight: bold;}
+
+#print #diy-print-ft {border-top: 1px solid #e3e3e3; clear: both; padding-left: 11px; margin-top: 21px;}
+#print #diy-print-ft a.logo, #print #diy-print-ft img.logo {float: left; margin-top: 14px;}
+#print #diy-print-ft ul {float: right; margin-top: 14px;}
+#print #diy-print-ft ul li {float: left;background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -369px; margin-left:5px; padding-left:10px; font-size: 85%;}
+#print #diy-print-ft ul li.first {background: none;}
+#print #diy-print-ft ul li a {color: #568791;}
+#print p.copy {clear: both; font-size: 85%; padding-top: 14px;}
+
+/* Patching Sponsored Pod */
+#print #print-sponsor .pod { background: none;}
+#print #print-sponsor .pod .hd {display: none;}
+#print #print-sponsor .pod .bd {display: none;}

@@ -1,0 +1,25 @@
+#diy-w .tune-in { /*float: left; width: 614px; */margin: 0 14px 7px 14px; padding: 0 0 0 13px; }
+#diy-w .tune-in span { float: left; font-size: 108%; font-weight: bold; }
+#diy-w .tune-in em { text-transform: uppercase; font-style: normal; font-weight: bold; }
+#diy-w .tune-in a { float: right; }
+/* same style used for the expert talent lead */
+.show-lead { margin: 0 14px 7px 14px; background-color: #fff;}
+.show-lead h1 { text-indent: -999em; letter-spacing: -999em; overflow: hidden; width: 966px; height:200px;}
+.show-lead h1 a {display: block; height:200px;}
+.show-lead h1.mini-lead { height:100px;}
+.show-lead h1.mini-lead a {display: block; height:100px;}
+.show-lead #hub-nav { width: 939px; padding: 7px 13px; border: 1px solid #ddd; }
+
+#diy-we #episode-guide { margin-bottom: 14px; }
+#diy-we #episode-guide .tabbed-well { margin-bottom: 0; }
+div#diy-we div.callout a.thumb img{float: right;display: inline;}
+
+#find-project-from-show small { display: block; margin-bottom: 4px; color: #999; }
+#find-project-from-show ul { float: left; margin-bottom: 7px; }
+#find-project-from-show li { float: left; width: 100%; margin-bottom: 7px; }
+#find-project-from-show label { float: left; width: 80px; margin-right: 6px; color: #3d3d3d; text-align: right; }
+#find-project-from-show .input-box { float: left; width: 196px; margin-right: 9px; }
+#find-project-from-show .date-box { width: 81px; }
+#find-project-from-show .date-to-label { width: auto; margin: 0; padding: 0 7px 0 11px; }
+#find-project-from-show .submit { margin-bottom: 2px; text-align: center; }
+#find-project-from-show .submit button { width: 56px; }

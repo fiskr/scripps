@@ -1,0 +1,43 @@
+/* cartridges */
+.lead aside p {margin-bottom: 0;} /* over-ride extra spacing added in lead area */
+aside {float:right;margin:0 10px 0 35px;padding-bottom:11px;}
+aside.pros, aside.cartridge, aside.quote, aside.clip {background:url('../imgs/le/bg-cartridge.jpg') no-repeat -0px -40px;}
+aside.clip.about {background:url('../imgs/le/bg-cartridge-about-sprite.jpg') no-repeat 0 -439px #faf9f5; width: 228px; padding-bottom: 0; margin:0 0 0 35px;}
+aside .cartridge {width:230px;background:url('../imgs/le/bg-cartridge.jpg') no-repeat top;}
+aside .cartridge .bd {padding:14px 14px 21px 42px;}
+aside .cartridge h5, aside .cartridge blockquote {position:relative;}
+aside .cartrdige h5 {margin-bottom: 3px;}
+aside .cartridge blockquote {padding-left:7px;color:#111;}
+aside .cartridge p {font-size:.786em;line-height:1.25em; padding-bottom: 14px;}
+.pod aside .cartridge  p { margin-bottom: 0px;} /* to cancel out general rule here, but not elsewhere*/
+aside span {position:absolute;background:url('../imgs/se/sprite.png');}
+aside.pros .cartridge h5 span.pro {background-position:0 -3751px;width:14px;height:15px;left:-30px;margin:0;}
+aside.pros .cartridge h5 span.con {background-position:0 -3808px;width:14px;height:15px;left:-30px;top:3px;}
+aside.quote .cartridge {width:250px;}
+aside.quote, aside.quote .cartridge {background:none;position:relative;}
+aside.quote .cartridge .bd {padding-left:21px;}
+aside.quote .cartridge .bd div {border-left:7px solid #F2EFEA;margin-left:-21px;padding-left:23px;}
+aside.quote .cartridge blockquote span.open {background-position:0 -3936px;width:18px;height:17px;top:7px;left:-21px;}
+/* aside.quote .cartridge blockquote span.close {background-position:right -3995px;width:18px;height:17px;bottom:7px;right:-14px;}*/
+aside.quote .cartridge blockquote span.close {position:static;padding-right:25px;background-position:right -3992px;width:18px;height:17px;}
+aside.tip .cartridge h5 span {background-position:0 -3866px;width:44px;height:28px;top:-3px;left:-42px;}
+aside.clip span {background-position:0 -3671px;width:33px;height:39px; margin: 8px 0 0 -4px}
+aside.clip .cartridge .list {margin-left:-14px;font-size:0.786em;}
+
+aside.clip .cartridge h6 { font: normal 1.5em/1.5em Arial,sans-serif;  padding: 3px 0; }
+aside.clip .cartridge h6 a { color: #2a76a8; }
+aside.clip .cartridge h6 a:hover { color: #4E98D3; }
+
+aside.clip .cartridge .phone,
+aside.clip .cartridge .url { padding: 3px 0 3px 22px; background-image: url("../imgs/se/sprite.png"); }
+
+aside.clip .cartridge .phone { background-position: left -8134px; }
+aside.clip .cartridge .url   { background-position: left -8195px; font-size: 12px; }
+aside.clip .cartridge .url:hover  { background-position: left -8257px; }
+aside.clip .cartridge .url a:hover {color: #4E98D3;}
+
+aside.clip.about .cartridge {width:228px;background:url('../imgs/le/bg-cartridge-about-sprite.jpg') no-repeat 0 -41px;}
+aside.clip.about .cartridge h6 {text-transform: none;font-size: 21px; line-height: 28px; padding-top: 8px;}
+aside.clip.about .bd {border: 1px solid #EFEFEF;}
+.aside-about-bottom {height: 40px;width: 100%;background:url("../imgs/le/bg-cartridge-about-sprite.jpg") no-repeat scroll center top transparent;}
+aside br {display:block;}

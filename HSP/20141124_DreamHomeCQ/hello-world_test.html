@@ -1,0 +1,33 @@
+<script>
+	(function( $ ){
+		$(function(){
+			//assign proper classnames to the content you want to show/hide that editorial made
+			$('.editorialPromo').addClass('hello-world-state prelaunch reg_thanks');
+
+			//style the short form rules
+			$('.articleBody .textPromo:last-child .body').css('color', '#B8B9BA').css('font-size', '10px');
+
+			$('.videoPlaylistEmbed').addClass('hello-world-state prelaunch reg_thanks');
+
+			$('.newsletter.section').addClass('hello-world-state prelaunch reg_thanks limiter maintenance expired default');
+
+			//make the short form rules go away on ineligible_age state (the COPPA message)
+			$('.articleBody .textPromo:last-child').addClass('hello-world-state register register_error login limiter reg_thanks viral_thanks prelaunch maintenance optin expired default');
+
+		}); //end doc-ready
+	})(jQuery);
+</script>
+
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/iframe-resizer.js"></script>
+
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/hw-states.js"></script>
+
+<script src="http://frontend.scrippsnetworks.com/~bfoster/HSP/DreamHomeCQ/init.js"></script>
+
+<div id="sweepstakes-dropzone">
+	<img src="http://hgtv.sndimg.com/webhgtv/hg20/imgs/hg-loader.gif" class="hello-world-loaderimg" style="margin: 100px auto; display: block;" />
+	<div class="hello-world-state register register_error login limiter reg_thanks viral_thanks prelaunch ineligible_age maintenance optin expired default" width="100%">
+		<iframe src="http://hgtv-dreamhome.review.eprize.com/hgtv" width="100%" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+	</div>
+</div>
+

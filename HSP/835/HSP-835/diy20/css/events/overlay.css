@@ -1,0 +1,39 @@
+.show-lead { position:relative;}
+
+#event-overlay { height:86px; right:7px; position:absolute; top:7px; width:350px;}
+#event-overlay a.banner { display:block; height:86px; width:350px;}
+#event-overlay .banner span { display:block; text-indent:-999em; overflow:hidden;}
+#overlay-nav { position:absolute; right:14px; top:14px;}
+#overlay-nav .button span.c { display:block; float:left;}
+#overlay-nav a.button span.r {display:block;height:4px;width:7px;background:url(http://images.diynetwork.com/webdiy/diy20/imgs/se/diy-ui.png) -875px -580px no-repeat; margin:15px 0 0 3px; padding:0; float:left;}
+#overlay-nav a.button:hover span.r, #overlay-nav.fly-on a.button span.r {background-position: -882px -580px;}
+#overlay-nav a.button:active span.r {background-position: -889px -580px;}
+#overlay-nav.fly-on a.button { background-position:right -150px; color:#FFF; text-decoration:none;}
+#overlay-nav.fly-on a.button span { background-position:left -150px;}
+
+.futon-menu { z-index:200;}
+.futon-menu .flyout { position:absolute; left:-9999em; right:0; top:21px; z-index:5000;}
+.futon-menu.fly-on .flyout { left:auto;}
+.futon-menu .columns { padding-bottom:3px; width:327px;}
+.futon-menu .columns ul { margin-left:14px; padding-bottom:3px; width:149px;}
+
+#diy-e #event-overlay { margin-bottom:14px; position:relative; right:0; top:0; width:336px; z-index:5000;}
+
+.secondary h1.mini-lead, .secondary h1.mini-lead a { height:60px;}
+.secondary #event-overlay { height:60px; right:0; top:0; width:364px;}
+.secondary #event-overlay a.banner { height:60px; width:364px;}
+.secondary #overlay-nav { top:15px;}
+
+/*.article-detail .show-lead h1.mini-lead, .player-detail .show-lead h1.mini-lead,
+.episode-detail .show-lead h1.mini-lead, .channel-detail .show-lead h1.mini-lead,
+.show-detail .show-lead h1.mini-lead, .project-detail .show-lead h1.mini-lead,
+.howto-detail .show-lead h1.mini-lead, .materials-detail .show-lead h1.mini-lead,
+.comments-detail .show-lead h1.mini-lead, .products-detail .show-lead h1.mini-lead { height:60px;}
+.article-detail #event-overlay,
+.player-detail #event-overlay, .episode-detail #event-overlay,
+.channel-detail #event-overlay, .show-detail #event-overlay,
+.project-detail #event-overlay, .howto-detail #event-overlay { height:60px; right:0; position:absolute; top:0; width:364px;}
+.article-detail #overlay-nav,
+.player-detail #overlay-nav, .episode-detail #overlay-nav,
+.channel-detail #overlay-nav, .show-detail #overlay-nav,
+.project-detail #overlay-nav, .howto-detail #overlay-nav { right:14px; top:15px;}*/

@@ -1,0 +1,409 @@
+/* General Rules */
+.pods:after, .bd:after, .lead:after, footer .group:after, dl:after, .super-lead:after, .top-panel:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+    width:0;
+    }
+
+.pods, .lead, .tab-list {
+    clear:both;
+    }
+
+.hr {
+    background:#dae7e3;
+    clear:both;
+    height:1px;
+    margin:22px 0 0;
+    }
+
+.hr hr {
+    display:none;
+    }
+
+/* Two Across -  */
+.pods {
+    margin:26px 14px 0;
+    }
+
+.pods a {
+    color:#386cb4;
+    }
+
+.pods h4 {
+    font-size:21px;
+    color:#444;
+    font-family:Trebuchet MS;
+    }
+
+.pods h5 {
+    font-size:13px;
+    color:#444;
+    font-weight:bold;
+    margin:14px 0 10px;
+    }
+
+.pods .wrap {
+    float:left;
+    margin:0 21px 0 0;
+    }
+
+.pods ul.list.flow,
+.pods ol.list.flow {
+    overflow:hidden;
+    }
+
+.two-col {
+    float:left;
+    }
+
+.pods .two-col {
+    width:290px;
+    margin:10px 0 0;
+    padding-right:7px;
+    }
+
+.pods .bd.two-across ul {
+    margin-top:13px;
+    }
+
+/*IE8 Legacy Style*/
+html>/**/body#home div.pods div.bd.two-across ul li{width: 270px;} 
+
+.two-across li {
+    float:left;
+    width:279px;
+    margin-right:28px;
+    }
+
+.two-across img {
+    float:left;
+    margin-right:14px;
+    }
+
+.two-across li.last
+{
+    margin-right:0;
+}
+.two-across li:last-child
+ {
+    margin-right:0;
+    }
+
+.two-across .wrap {
+    width:266px;
+    margin-right:21px;
+    }
+
+.two-across.feature .wrap {
+    width:297px;
+    width:287 px\9;
+    }
+
+.two-across.feature .wrap:last-child {
+    margin-right:0;
+    }
+
+.two-across .wrap img {
+    margin-bottom:7px;
+    }
+
+.two-across .wrap.stack {
+    width:329px;
+    margin-right:0;
+    }
+
+.two-across .wrap li {
+    margin-right:0;
+    }
+
+.bd.two-across p {
+    overflow:auto;
+    }
+
+.two-across li a {
+    color:#386cb4;
+    font-size:13px;
+    font-weight:bold;
+    }
+
+.two-across li cite {
+    display:block;
+    color:#444;
+    }
+
+.bd.two-across li cite.cap,
+.bd.two-across li cite.cap a {
+    font-size:11px;
+    line-height:14px;
+    }
+
+.two-across-multiple ul {
+    margin-bottom:14px;
+    }
+
+.pods.tid h4 {
+    font-size:13px;
+    font-weight:bold;
+    line-height:21px;
+    font-family:Arial;
+    }
+
+.pods.tid p {
+    font-size:13px;
+    line-height:22px;
+    }
+
+.pods.tid p .cta {
+    font-size:11px;
+    font-weight:bold;
+    }
+
+.pods .bd a.btn.inline {
+    width:100%;
+    display:block;
+    margin-top:18px;
+    padding:12px 0;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    border:1px solid #dae7e3;
+    border-radius:4px;
+    }
+
+/* Get Inspired by HGTV */
+.get-inspired .inspired-content {
+    padding-top:5px;
+    }
+
+.get-inspired h2 {
+    color:#444;
+    font:21px 'Trebuchet MS';
+    }
+
+.get-inspired ul.three-across {
+    margin-bottom:15px;
+    }
+
+.get-inspired ul.three-across li {
+    float:left;
+    width:166px;
+    padding-right:42px;
+    }
+
+.get-inspired ul.three-across li.last {
+    padding-right:0;
+    }
+
+.get-inspired ul.three-across li a.tn-vid span {
+    width:166px;
+    height:126px;
+    }
+
+.get-inspired ul.three-across li a.desc {
+    display:block;
+    padding-top:5px;
+    font-size:13px;
+    line-height:21px;
+    }
+
+.get-inspired ul.three-across li span.count {
+    display:block;
+    padding-top:5px;
+    font-size:11px;
+    color:#999;
+    line-height:14px;
+    }
+
+.get-inspired .more-hidden {
+    display:none;
+    }
+
+.get-inspired .load-more {
+    width:100%;
+    display:block;
+    margin-top:25px;
+    padding:12px 0;
+    text-align:center;
+    font-size:13px;
+    font-weight:bold;
+    border:1px solid #dae7e3;
+    border-radius:4px;
+    }
+
+#hg-e #facebook-fan-box {
+    margin-left:14px;
+    background:none;
+    }
+
+/* feature with list - floats left and adds border */
+.feature-list {
+    float:left;
+    width:340px;
+    margin-right:14px;
+    padding-right:14px;
+    border-right:1px dotted #CCC;
+    }
+
+.feature-list.alt-list.clrfix {
+    float:none;
+    }
+
+#hg-we .feature-list {
+    width:100%;
+    border:none;
+    }
+
+.feature-list h4 {
+    margin-bottom:7px;
+    line-height:24.5px;
+    }
+
+.feature-list h4 a {
+    font-family:Arial;
+    line-height:24.5px;
+    color:#386cb4;
+    }
+
+.pods ul.list li {
+    margin-bottom:6px;
+    }
+
+.pods ul.list li.cta {
+    padding-left:0;
+    font-size:11px;
+    font-weight:bold;
+    background:none;
+    }
+
+.list-links li {
+    float:left;
+    }
+
+/* Quick poll -- added by dsisan */
+.qv-ww button.button {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png") no-repeat scroll right top #F1F6F2;
+    border:0 none;
+    cursor:pointer;
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    margin:0 5px 0 15px;
+    padding-right:7px;
+    text-align:center;
+    }
+
+/* On TV  */
+.ontv .show {
+    padding:0 13px 13px;
+    }
+
+.ontv .hd h4 {
+    float:left;
+    }
+
+.ontv .hd h4 span.time-zone {
+    font-size:11px;
+    font-family:Arial;
+    color:#999;
+    }
+
+.ontv .hd a.schedule {
+    float:right;
+    padding:13px 13px 0 7px;
+    font-size:11px;
+    font-weight:bold;
+    }
+
+.ontv .show {
+    float:none;
+    clear:both;
+    padding:14px 0;
+    margin:0 13px;
+    border-top:1px solid #dae7e3;
+    border-bottop:1px solid #dae7e3;
+    }
+
+.ontv .show h5 {
+    float:left;
+    width:77px;
+    height:30px;
+    font-size:11px;
+    font-weight:bold;
+    color:#999;
+    line-height:14px;
+    text-transform:uppercase;
+    border-right:1px solid #dae7e3;
+    }
+
+.ontv .show.hot h5 {
+    height:48px;
+    padding-top:21px;
+    margin-top:4px;
+    font-size:13px;
+    text-transform:uppercase;
+    color:#444;
+    }
+
+.ontv .show h5 span {
+    font-size:14px;
+    font-weight:bold;
+    color:#444;
+    }
+
+.ontv .show.tonight h5 span {
+    padding-top:3px;
+    line-height:16px;
+    }
+
+.ontv .show h5 span.when {
+    display:block;
+    }
+
+.ontv .show h5 span.time {
+    font-size:21px;
+    }
+
+.ontv .show h5 span.day-time {
+    font-size:11px;
+    }
+
+.ontv .show .show-info {
+    float:left;
+    width:230px;
+    padding:5px 0 0 13px;
+    }
+
+.ontv .show .show-info a {
+    font-size:13px;
+    font-weight:bold;
+    }
+
+.ontv .show .show-info img {
+    float:left;
+    margin-right:13px;
+    }
+
+.ontv .show.hot .show-info {
+    padding-top:0;
+    }
+
+.ontv .show.hot .show-info > a,
+.ontv .show.hot .show-info span {
+    width:115px;
+    float:left;
+    display:block;
+    }
+
+.ontv .show.hot .show-info span {
+    color:#999;
+    font-size:11px;
+    }
+
+.ontv .show.hot .show-info span a {
+    font-size:11px;
+    font-weight:bold;
+    }

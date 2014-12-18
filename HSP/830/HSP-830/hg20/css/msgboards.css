@@ -1,0 +1,107 @@
+/* css styles specific to eve boards or to override conflicting global styles */
+
+#eve_msgboards body {
+    visibility:visible !important;
+    }
+
+#eve_msgboards table {
+    border-collapse:separate;
+    }
+
+/* overrides strange table border lines appearing */
+#eve_msgboards .ev_ubbx_tpc_avatar {
+    width:48px;
+    height:48px
+    }
+
+#eve_msgboards #site-wrapper {
+    text-align:center;
+    }
+
+#eve_msgboards #site-wrapper img {
+    background-color:transparent;
+    border:none;
+    display:inline;
+    padding:0;
+    }
+
+#eve_msgboards #board_main {
+    margin-top:14px;
+    width:710px;
+    _width:752px;
+    }
+
+#eve_msgboards #fullwidth-wrapper, #hg-ft {
+    text-align:left;
+    }
+
+#eve_msgboards #hg-hd-outer {
+    text-align:center;
+    }
+
+#eve_msgboards .global-search .dd-list, #eve_msgboards #my-hgtv {
+    text-align:left;
+    }
+
+#eve_msgboards #hg-sitenav a.toplink span, #eve_msgboards #hg-sitenav a.toplink:active span {
+    color:#333;
+    font:102% "Trebuchet MS", sans-serif;
+    _font-size:100%;
+    }
+
+#eve_msgboards #hg-sitenav .sel a.toplink span, #eve_msgboards #hg-sitenav .sel a.toplink:active span {
+    color:#FFF;
+    }
+
+#eve_msgboards #hg-sitenav .toplink span.c {
+    _height:30px;
+    }
+
+#eve_msgboards #hg-sitenav .subnav {
+    _width:994px;
+    }
+
+#eve_msgboards #hg-sitenav .subnav li.nav a span, #eve_msgboards #hg-sitenav .subnav li.nav a:active span {
+    color:#FFF;
+    font:bold 102% "Trebuchet MS", sans-serif;
+    _font-size:100%;
+    }
+
+/*
+- overrides GO menus displaying in incorrect offset position
+- can't have this container div as relative because elements
+  within it are intended to be positioned absolute to window
+*/
+#eve_msgboards #fullwidth-bd {
+    _position:static;
+    }
+
+/* z-index issue with H1 */
+#eve_msgboards #fullwidth-bd h1 {
+    font-family:Trebuchet MS;
+    _padding-top:14px;
+    _position:relative;
+    _top:-15px;
+    _margin-bottom:-3px;
+    }
+
+/* need to add position relative to right and left columns to enable links to be clickable */
+#eve_msgboards #board_main a, #eve_msgboards #hg-ww a {
+    _position:relative;
+    }
+
+/* need to add position relative to these containers to enable child elements to be clickable */
+#eve_msgboards #board_main .ev_tab_table_top, /* GO menu tabs */
+#eve_msgboards #board_main .ev_body_table, /* login form and other blocks with form elements */
+#eve_msgboards #hg-ww,
+#eve_msgboards #ev_portal_title_graphic_div,
+#eve_msgboards #ev_page_intro,
+#eve_msgboards #gs_online_now_list a,
+#eve_msgboards #eve_bc_top,
+#eve_msgboards #gs_menu_y_baseline,
+#eve_msgboards #ev_ubbx_frm,
+#eve_msgboards #gs_logout_menu,
+#eve_msgboards #eve_bc_bottom,
+#eve_msgboards #ev_contact_links {
+    _position:relative;
+    }

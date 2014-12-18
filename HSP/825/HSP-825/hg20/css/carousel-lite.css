@@ -1,0 +1,37 @@
+/* for new implementations of jCarouselLite */
+
+/* rate my space carousel */
+.crsl-w-rating .crsl-wrap {
+    background:transparent;
+    border:none;
+    }
+
+.crsl-w-rating .crsl-wrap ul li.crsl-item {
+    width:96px;
+    margin-left:16px;
+    margin-right:16px;
+    background:#fff;
+    float:left;
+    padding:3px;
+    border:1px solid #ddd;
+    }
+
+.crsl-w-rating .img-crsl-wrap {
+    padding:0 24px 0 20px;
+    background:url(../imgs/gen_grad.gif) repeat-x scroll 0 0 transparent;
+    }
+
+.crsl-w-rating ul {
+    /* margin: 0 auto; */
+    }
+
+.crsl-w-rating p.rating {
+    margin:0;
+    }
+
+.crsl-w-rating .controls {
+    top:-43px;
+    }
+
+
+

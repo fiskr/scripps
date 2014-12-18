@@ -1,0 +1,149 @@
+        <article>
+        <header class="page-head">
+          <h2><a href="/decorating-basics/index.html">Decorating Basics</a></h2>
+          <div class="button drop-down">
+            <select class="drop-down-menu" >
+              <option value="/decorating/">Rooms</option>
+              <option value="/kitchens/">Kitchens</option>
+              <option value="/bathrooms/">Bathrooms</option>
+              <option value="/bedrooms/">Bedrooms</option>
+              <option value="/kids-rooms/">Kid's Rooms</option>
+              <option value="/living-rooms/">Living Rooms</option>
+              <option value="/all-rooms/">All Rooms</option>
+            </select>
+            <a class="button drop-down-custom icon-">Decorating &#xf0d7;</a>
+          </div>
+        </header>          
+            <header class="article-head centered">
+              <h1 class="title">
+                Color Wheel Primer
+              </h1>
+              <p class="description">Learn the basics of the color wheel, types of color schemes and color dimensions</p>
+              <div class="row clrfix">
+                <div class="column meta-data">
+                  <p class="byline">By Jennifer Huskey; Hilary Johnson</p>
+                  <p class="tags">Filed Under: <a href="">Color</a>, <a href="">Decorating</a></p>
+                </div>
+
+                <!-- Social -->
+                  
+                    <div class="dropdown share dropdown-right" id="social-toolbar">                        
+                      <a rel="scltb-share" class="button toggle-button dropdown-toggle icon-">Share</a>
+                      <div class="dropdown-menu share-photo">
+                        <ul>
+                          <li><a rel="scltb-pinterest" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml&amp;media=http%3A%2F%2Fimages%2Escrippsnetworks%2Ecom%2Fup%2Fimages%2F0197%2F0197507%5F92x69%2Ejpg&amp;description=Britany%20Simon%20shows%20how%20you%20can%20make%20your%20own%20mobile%20Christmas%20tree%2E" target="_blank" class="icon-pinterest-sign"><strong>Pinterest</strong></a></li>
+                          <li><a rel="scltb-facebook" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" target="_blank" class="icon-facebook-sign"><strong>Facebook</strong></a></li>
+                          <li><a rel="scltb-twitter" href="http://twitter.com/share?url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml&amp;text=Britany%20Simon%20shows%20how%20you%20can%20make%20your%20own%20mobile%20Christmas%20tree%2E&amp;count=none" target="_blank" class="icon-twitter-sign"><strong>Twitter</strong></a></li>
+                          <li><a rel="scltb-google" href="https://plusone.google.com/_/+1/confirm?hl=en%2DUS&amp;url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" target="_blank" class="icon-google-plus-sign"><strong>Google+</strong></a></li>
+                          <li><a rel="scltb-mailto" href="mailto:?subject=Check%20out%20this%20page%20on%20HGTV&amp;body=I%20thought%20you%20would%20be%20interested%20in%20this%20page%20on%20HGTV%3A%0Ahttp%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" class="icon-email-sign"><strong>StumbleUpon</strong></a></li>   
+                        </ul>
+                      </div>
+                    </div>
+              </div>
+            </header>
+            <hr />
+            <section class="material-tools centered">
+              <header>
+                <h3>Materials and Tools</h3>
+              </header>
+              <ul>
+                <li>
+                    screwdriver
+                </li>
+                <li>
+                  nut driver
+                </li>
+                <li>
+                  adjustable wrench
+                </li>
+                <li>
+                    towel
+                </li>
+                <li>
+                    replacement valve for icemaker water supply
+                </li>
+                <li>
+                    plumber's tape
+                </li>                  
+              </ul>
+            </section>
+            <hr />            
+            <section class="body centered">
+              <p class="intro">
+                When you’re decorating, choosing a color scheme can be a perplexing task. It’s hard enough whittling down your choice to one or two colors — but then to have to mix and match even more of them into an eye-pleasing scheme? Sometimes considering the whole color wheel is just too much to ask. Before you turn back on the world of color, get a grasp of the color wheel and how it works.
+              </p>
+              <h3>The Basic Wheel</h3>
+              <p>
+                When you’re decorating, choosing a color scheme can be a perplexing task. It’s hard enough whittling down your choice to one or two colors — but then to have to mix and match even more of them into an eye-pleasing scheme? Sometimes considering the whole color wheel is just too much to ask. Before you turn back on the world of color, get a grasp of the color wheel and how it works.
+              </p>
+              <h3>Primary Colors: Red, Yellow and Blue</h3>
+              <p>
+                Secondary Colors: Orange, Green and Violet Secondary colors are created by mixing primary colors.
+              </p>
+
+              <figure>
+                <div data-picture>
+                  <div data-src="http://hgtv.sndimg.com/HGTV/2010/04/27/DP_Mantel-01-cameras-and-books_s4x3_lg.jpg" data-media="(min-width: 300px)"></div>
+                  <noscript> <img src="http://hgtv.sndimg.com/HGTV/2010/04/27/DP_Mantel-01-cameras-and-books_s4x3_lg.jpg" alt="Accessories" /></noscript>
+                </div>
+                <figcaption>
+                  DK - Simple Steps to Success: Containers for Patios © 2007 Dorling Kindersley Limited
+                </figcaption> 
+             </figure>
+              <h3>
+                Three Colors --Triad
+              </h3>
+              <p>
+                A triad scheme is bold but more importantly, it’s balanced. It’s made up of any three colors that form a triangle in the center of the wheel.
+              </p>
+              <h3>
+                One Color - Monochromatic
+              </h3>
+              
+              <div class="inline-slider royalSlider rsDefault">      
+                <figure class="slide">
+                  <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-outdoors-decks-patios-porches-pools_4x3_lead.jpg" />
+                <figcaption>
+                  DK - Simple Steps to Success: Containers for Patios © 2007 Dorling Kindersley Limited
+                </figcaption> 
+                </figure>
+                <figure class="slide">
+                  <a class="rsImg" href="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bedrooms_4x3_lead.jpg"></a>
+                </figure>
+                <figure class="slide">
+                  <a class="rsImg" href="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_lead.jpg"></a>     
+                  <img src="" />
+                  <figcaption>
+                  DK - Simple Steps to Success: Containers for Patios © 2007 Dorling Kindersley Limited
+                </figcaption> 
+                </figure>
+                <figure class="slide">
+                  <a class="rsImg" href="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_lead.jpg"></a> 
+                </figure>
+                <figure class="slide">
+                  <a class="rsImg" href="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_lead.jpg"></a>
+                </figure>
+                <figure class="slide">
+                  <a class="rsImg" href="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-living-rooms_4x3_lead.jpg"></a>
+                  <figcaption>
+                    DK - Simple Steps to Success: Containers for Patios © 2007 Dorling Kindersley Limited
+                  </figcaption> 
+                </figure>            
+              </div>
+
+            </section>
+            <hr />            
+            <section class="share-article centered">
+              <header>
+                <h4>Share This Article</h4>
+              </header>
+              <div class="share-icons">
+                <a class="icon-pinterest-sign" href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml&amp;media=http%3A%2F%2Fimages%2Escrippsnetworks%2Ecom%2Fup%2Fimages%2F0197%2F0197507%5F92x69%2Ejpg&amp;description=Britany%20Simon%20shows%20how%20you%20can%20make%20your%20own%20mobile%20Christmas%20tree%2E" target="_blank" title="Share with Pinterest" rel="scltb-pinterest"></a>
+                <a class="icon-facebook-sign" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" target="_blank" title="Share with Facebook" rel="scltb-facebook"></a>
+                <a class="icon-twitter-sign" href="http://twitter.com/share?url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml&amp;text=Britany%20Simon%20shows%20how%20you%20can%20make%20your%20own%20mobile%20Christmas%20tree%2E&amp;count=none" target="_blank" title="Share with Twitter" rel="scltb-twitter"></a>
+                <a class="icon-google-plus-sign" href="https://plusone.google.com/_/+1/confirm?hl=en%2DUS&amp;url=http%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" target="_blank" title="Share with Google Plus" rel="scltb-google"></a>
+                <a class="icon-email-sign" href="mailto:?subject=Check%20out%20this%20page%20on%20HGTV&amp;body=I%20thought%20you%20would%20be%20interested%20in%20this%20page%20on%20HGTV%3A%0Ahttp%3A%2F%2Fwww%2Ehgtv%2Ecom%2Fvideo%2Fmake%2Da%2Dmobile%2Dchristmas%2Dtree%2Dvideo%2Findex%2Ehtml" target="_blank" title="Share Through Email" rel="scltb-email"></a>
+              </div>
+            </section>
+            <hr />            
+        </article>

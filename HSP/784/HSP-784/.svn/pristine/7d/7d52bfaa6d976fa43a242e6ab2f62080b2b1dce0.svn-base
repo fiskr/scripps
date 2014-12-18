@@ -1,0 +1,74 @@
+input[type="text"], textarea, .dd-list dt.dd-dt a {
+    outline:none;
+    background:#FFF;
+    border:1px solid #D9D9D9;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    padding:7px 14px;
+    color:#999;
+    width:100%;
+    background:-moz-linear-gradient(top, #F5F5F5, #FFFFFF);
+    background:-webkit-gradient(linear, 0 20%, 0 100%,from(#F5F5F5),to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#FFFFFF');
+    margin-bottom:7px;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+	vertical-align:top;
+	margin-right:4px;
+}
+
+input:hover, .dd-list dt.dd-dt a:hover {border:1px solid #BFBFBF;}
+input:focus {box-shadow: 0 0 5px #D1EFFF;-webkit-box-shadow: 0 0 5px #D1EFFF;-moz-box-shadow: 0 0 5px #D1EFFF;border:1px solid #D1EFFF;color:#555;}
+input:disabled, .dd-list dt.dd-dt.disabled {border:1px solid #E9E9E9;color:rgba(127,127,127,0.2);}
+
+label {display:block;margin-bottom:7px;}
+
+fieldset {margin-bottom:14px;display:inline-block;*zoom:1;*display:inline;}
+fieldset label {font-weight:bold;}
+fieldset label.small {font-weight:normal;}
+
+fieldset.full {width:478px;}
+fieldset.full input {width:478px;}
+
+/* for topics search used in sni-w
+   allows for floated search button */
+fieldset.search {position:relative;}
+fieldset.search input {width:516px;padding:14px;}
+fieldset.search.sm input {width:310px;}
+fieldset.search button {position:absolute;top:10px;right:7px;height:40px;width:50px;text-indent:-9999em;}
+fieldset.search button span {background:url('../imgs/se/sprite.png') 0 -6930px;display:block;width:22px;height:22px;}
+
+fieldset.half {*width:245px;margin-right:14px;}
+fieldset.half.right {margin-right:0;float:none;}
+fieldset.half input {width:213px;}
+
+fieldset > ul > li {float:left;padding-right:48px;margin-bottom:14px;width:42%;}
+fieldset > ul > li.third {width:26%;}
+fieldset > ul > li.full {float:none;clear:both;margin:0;width:76%;}
+.sni-e fieldset {display:inline-block;}
+.sni-e fieldset > ul > li.full {width:247px;padding-right:0;}
+
+/* for header/footer inputs mostly */
+input.plump {padding:9px 14px;}
+
+input.in {margin-right:7px;}
+
+input[type="checkbox"] {display:inline;margin-right:4px;}
+input[type="submit"] {display:block;margin:14px auto 0;}
+input[type="submit"].in {display:inline;margin:0;}
+
+/* errors */
+.error-wrap {display:none;margin-bottom:21px;background:#FDDDD7;border:1px solid #E8AAA6;padding:14px;}
+.sni-e .error-wrap {background:none;border:0;margin-bottom:7px;padding:0;}
+.error-wrap .error, label.error {color:#CC2C12;}
+.error-wrap .error {display:block;font-size:.786em;font-weight:bold;}
+
+input[type="text"].error {
+	border:1px solid #E8ADA8;
+	background:#FCDDD8;
+}
+
+form#sweepsEntryForm input[type="checkbox"]:hover{border:none;outline: none;}
+form#sweepsEntryForm input[type="checkbox"]:focus{border:none;outline: none;}
+form#sweepsEntryForm input[type="checkbox"]:disabled {border:none;outline: none;}

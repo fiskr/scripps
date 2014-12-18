@@ -1,0 +1,40 @@
+
+/* CARTRIDGES: Cartridges are little design patterns that pop up all over the place: */
+/* FEATURE-CARTRIDGE: Part of cartridge C: 120x90 image with text to the right */
+.feature-cartridge a.thumb { display: block; float: left; margin: 3px 14px 0 0;}
+.feature-cartridge a.thumb img { border:2px solid #333333; }
+.feature-cartridge a.thumb img.plain { border: none;}
+.feature-cartridge p { line-height: 1.38;}
+.feature-cartridge .wrap { float: left;}
+.feature-cartridge .wrap.we{width:272px;}
+/*right aligned image featured cartridge*/
+.feature-cartridge.ralign a.thumb {float: right;margin: 3px 0 0 7px;}
+/* TIP-CARTRIDGE: A Quick tip (with little dialogue thingy) */
+.tip-cartridge .hd { background: url(../imgs/se/tip-baseline.gif) no-repeat 0px bottom;}
+.tip-cartridge h3 { float: left;}
+.tip-cartridge .more-tips { font-size: 85%; line-height: 1.64; float: right; padding-right: 33px;} 
+.tip-cartridge .bd { margin-top: 12px; background: url(../imgs/se/big-quotes.png) no-repeat right bottom; padding-right: 28px; }
+.tip-cartridge .bd p { background: url(../imgs/se/big-quotes.png) no-repeat 0px top; line-height: 1.38; padding-left: 24px;  }
+.tip-cartridge .ft { clear: both;}
+/* STORY-CARTRIDGE */
+.story-cartridge .photo {text-align: center; line-height: 1.38; margin-bottom: 6px;}
+.story-cartridge p { line-height: 1.38;}
+/* BASIC-CARTRIDGE */
+.basic-cartridge h5 {font-size:108%;font-weight:bold;line-height:1;margin-bottom:10px;}
+.basic-cartridge .list li {/*background-position:0 7px;*/line-height:1.38;}
+.basic-cartridge .list li {/*background-position:0 7px;*/line-height:1.38;}
+.pod.basic-cartridge .list li {margin-bottom: 0;}
+
+/* featured result on search result page */
+.featured-result { margin: 0 14px 14px 14px; padding: 13px 13px 0 13px; background: #fff; border: 1px solid #dfdfdf; }
+.featured-result h3.slug { margin-bottom: 11px; }
+.featured-result .proj-summary { margin: 0 0 12px 0; padding: 0 0 24px 0; border-bottom: 1px solid #ddd; }
+.featured-result .proj-summary.last { margin-bottom: 7px; padding-bottom: 0; border-bottom: 0; }
+.featured-result .proj-summary .proj-details { width: 480px; }
+.featured-result .proj-summary .proj-image { margin-top: 0; }
+
+/* leading-cartridge is the same as a feature-cartridge.ralign */
+.leading-cartridge a.thumb { display: block; float: right; margin: 3px 0 0 7px;}
+.leading-cartridge a.thumb img { border:2px solid #333333; }
+.leading-cartridge a.thumb img.plain { border: none;}
+.leading-cartridge h5 { font-weight: bold; font-size: 108%; }

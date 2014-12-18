@@ -1,0 +1,19 @@
+<aside id="modal">
+	<!--#include file="_modal-header.html" -->
+	<section class="body"></section>
+	<div class="pg-loader hide">
+		<div class="drop">
+            <div class="bd">
+				<span>Loading...</span>
+            </div>
+		</div>
+	</div>
+</aside>
+<!-- 
+	Function call below should only be made if slide show is requested from individual photo
+	http://www.hgtv.com/decorating/our-favorite-colorful-bedrooms/pictures/page-2.html
+	pass page number to photo as the ajax request. 
+-->
+<script>
+	HGTV.M.loadModal("/mobile_static/_ajax-slideshow.html");
+</script>

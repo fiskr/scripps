@@ -1,0 +1,38 @@
+/* board overrides  */
+#ev_portal_title_graphic_div {display:none;}
+.ev_ubbx_tpc {line-height:140%; color:#000000; padding:14px 0pt !important;}
+.ev_ubbx_tpc_alt {line-height: 130% !important;}
+.ubbx_cfrm_com_desc {font-size:13px;line-height:18px;}
+#ev_ubbx_frm td.ev_ubbx_frm_lastreply {width:18%;}
+#ev_ubbx_frm td.ev_ubbx_frm_author {width:21%;}
+div.ev_cfrm_lp_info {line-height:140%;}
+nobr {text-indent:0;display:inline;float:none;margin:0 0 0 0;}
+
+#board_body {
+width: 988px;
+float: left;
+clear: left;
+}
+
+#board_main {
+float:left;
+width: 726px;
+padding: 0 21px;
+}
+
+#board_left {
+float: left;
+width: 220px;
+font-size:12px;
+font-weight:normal;
+line-height:15px;
+background-color: #F2F1EC;
+background-image: url(http://web.hgtv.com/webhgtv/images/infopop/pkgHeaderLeft.jpg);
+background-position: bottom;
+padding: 0 0 200px 0;}
+#board_ad_left {padding: 30px 14px 0;}
+#board_left ul {list-style-image:none;list-style-position:outside;list-style-type:none;margin:0;padding:15px 15px 0;}
+#board_left ul li {background:transparent url(http://web.hgtv.com/webhgtv/images/pkgTemplate/pkgGreyBullet.gif) no-repeat scroll 0 6px;padding:0 0 0 10px;}
+#board_left ul li.title {background:transparent none repeat scroll 0;font-size:15px;padding:0 0 5px;}
+#board_ad_left div {padding:0 7px;}
+#board_ad_left #google_ads * {font-size:11px !important;font-family: Arial, Helvetica, sans-serif;line-height: 15px;}

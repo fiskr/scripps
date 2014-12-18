@@ -1,0 +1,92 @@
+<Omniture>
+	<!-- variables between $ dollar signs are set by the program -->
+
+	<!-- Name of Omniture Account -->
+	<accountName>scrippshgtvremodels</accountName>
+     <visitorNamespace>ewscripps</visitorNamespace>
+     <trackingServer>sa.hgtvremodels.com</trackingServer>  
+     
+	<vars>
+		<!-- List of all variables to be sent to Omniture (case sensitive) -->
+		<!-- Set default values that will be used if no value was set by the application  -->
+		<variable name="Channel" default=""/>
+		<variable name="Brand" default="scrippshgtvremodels"/>
+		<variable name="PlayerName" default=""/>
+		<variable name="SiteID" default="HGRM"/>
+		<variable name="SlotNumber" default=""/>
+		<variable name="OriginalSite" default=""/>
+		<variable name="VideoTitle" default=""/>
+		<variable name="PlayType" default=""/>
+		<variable name="LCStation" default=""/>
+		<variable name="DARTStation" default=""/>
+		<variable name="PlayerAction" default=""/>
+		<variable name="AssetID" default=""/>
+		<variable name="VideoSearchKeyword" default=""/>
+		<variable name="VideoScreenType" default=""/>
+		<variable name="Sponsor" default=""/>
+		<variable name="ShowName" default=""/>
+		<variable name="ErrorVideoURL" default=""/>
+		<variable name="Duration" default=""/>
+	</vars>
+	<!-- List of formats of the different properties to be sent to Omniture -->
+	<formats>
+
+		<customVars>
+
+			<!-- Custom variables. All vars in between $ signs are set by the application -->
+
+			<props>
+
+				<prop number="4"><![CDATA[$PlayerAction$]]></prop>
+				<prop number="37"><![CDATA[$VideoTitle$]]></prop>
+				<prop number="38"><![CDATA[$VideoTitle$]]></prop>
+			</props>
+			<eVars>
+				<eVar number="21"><![CDATA[$PlayerAction$]]></eVar>
+				<eVar number="22"><![CDATA[$VideoTitle$]]></eVar>
+				<eVar number="23"><![CDATA[$SiteID$]]></eVar>
+				<eVar number="24"><![CDATA[$PlayerName$]]></eVar>
+				<eVar number="25"><![CDATA[$Channel$]]></eVar>
+				<eVar number="26"><![CDATA[$ErrorVideoURL$]]></eVar>
+				<eVar number="27"><![CDATA[$OriginalSite$]]></eVar>
+				<eVar number="28"><![CDATA[$PlayType$]]></eVar>
+				<eVar number="29"><![CDATA[$DARTStation$]]></eVar>
+				<eVar number="30"><![CDATA[$AssetID$]]></eVar>
+				
+				
+				<eVar number="33"><![CDATA[$Duration$]]></eVar>
+				<eVar number="34"><![CDATA[$VideoScreenType$]]></eVar>
+				<eVar number="35"><![CDATA[$Sponsor$]]></eVar>
+
+
+
+				<eVar number="39"><![CDATA[$PlayerAction$]]></eVar>
+			</eVars>
+
+			<hiers>
+				<hier number="1">
+					<![CDATA[$Brand$|$PlayerName$|$Channel$|$VideoTitle$]]>
+				</hier>
+
+			</hiers>
+
+
+		</customVars>
+
+
+	</formats>
+
+	<!-- Event formats -->
+	<events>
+		<event number="2" name="VideoAdStart"/>
+		<event number="3" name="VideoAdStart2"/>
+		<event number="4" name="VideoAdComplete"/>
+
+		<event number="5" name="VideoContentStart"/>
+		<event number="6" name="VideoContent10%"/>
+		<event number="7" name="VideoContent50%"/>
+		<event number="8" name="VideoContent90%"/>
+		<event number="9" name="VideoContent100%"/>
+		<event number="51" name="VideoNotFound"/>
+	</events>
+</Omniture>

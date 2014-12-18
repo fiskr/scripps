@@ -1,0 +1,36 @@
+/*article == this page uses a re-ordered site layout to support image wrap */
+.article-asset .lead-img-wrap, .experts-and-hosts.article-detail .lead-img-wrap {float:left; position: relative; width:266px;margin: 7px 14px 14px;_margin-left: 7px;line-height: 1; }
+
+.article-asset .beaut-img-wrap { width: 616px; padding: 14px; }
+.article-asset .beaut-img-wrap img { display: block; }
+.article-asset .lead-img-wrap #blow-up, .experts-and-hosts.article-detail .lead-img-wrap #blow-up { top: -7px; left: -7px; }
+
+
+.article-asset .caption, .experts-and-hosts.article-detail .caption {padding-bottom: 7px;line-height: 1.7;}
+.article-asset #diy-ww, .experts-and-hosts.article-detail #diy-ww {clear:left;}
+.article-asset #diy-we, .experts-and-hosts.article-detail #diy-we {float: none; margin-top: 7px; margin-left: 210px; padding-left: 14px; width: auto;}
+
+.article-asset #diy-we p, .experts-and-hosts.article-detail #diy-we p { margin-bottom: 18px; line-height: 1.385;}
+.article-asset #diy-we .section p { line-height: inherit; }
+.article-asset #diy-we h3, .experts-and-hosts.article-detail #diy-we h3 { font-weight: bold; font-size: 108%;}
+/*.article-asset #diy-we .by-line, .experts-and-hosts.article-detail #diy-we .by-line { padding-bottom: 0;}*/
+
+/*list overrides so that editors can use in article content*/
+.article-asset #diy-we ul, .article-asset #diy-we ol, .experts-and-hosts.article-detail #diy-we ul, .experts-and-hosts.article-detail #diy-we ol { padding-bottom: 20px; line-height: 1.7em;}
+.article-asset #diy-we ul li, .experts-and-hosts.article-detail #diy-we ul li  {background: none; list-style-type: square; padding-left: 0; list-style-position: inside;}
+.article-asset #diy-we ol li, .experts-and-hosts.article-detail #diy-we ol li {margin-left: 5px; list-style-type:decimal;list-style-position:inside;}
+/*list overrides so that carousels dont inherit the above*/
+.article-asset #diy-we .crsl-we ul, .article-asset #diy-we .crsl-pro ul  {padding-bottom: 0; line-height: inherit;}
+.article-asset #diy-we .crsl-we ul li, .article-asset #diy-we .crsl-pro ul li { background: none; padding: 0; list-style: none; }
+.article-asset #diy-we .crsl-we ul li .mid, .article-asset #diy-we .crsl-pro ul li .mid {margin: 0 7px;}
+.article-asset #diy-we .crsl-pro ul li ul.crsl-group li p { margin: 0; }
+
+body div#diy-we a.stepBystep{display: block; padding: 10px 0 20px 0;}
+
+#diy-we .visual { position: relative; margin-bottom: 14px; }
+#diy-we .visual .img-enlarge2 { width: 400px; }
+#diy-we .visual #blow-up { top: -127px; left: -128px; }
+
+.article-asset .author { padding: 0; margin: 4px 0; line-height: 1em; }
+
+#site-wrapper #diy-w .section h2 { color: #671104; font: bold 123.1% Arial,sans-serif; margin-bottom: 7px; }

@@ -1,0 +1,79 @@
+/* vertical tabbed list */
+.tab-list {margin:14px;}
+.tab-list .bd {overflow:hidden;position:relative;left:-22px;padding-left:21px;border-left:1px solid #E6E6E6;}
+.tab-list .bd .hr {margin-top:0;}
+.tab-list .bd .wrap {margin-bottom:14px;}
+.tab-list .tabs {float:left;width:120px;border-right:1px solid #E6E6E6;margin:0 21px 28px 0;}
+.tab-list .tabs li {border-right:7px solid #E9F0F6;}
+.tab-list .tabs li:hover {border-right:none;}
+.tab-list .tabs li.last {border-bottom:1px solid #E6E6E6;}
+.tab-list .tabs li a,
+.tab-list .tabs li.ui-state-active a:hover {display:block;padding:7px 10px;font-weight:bold;background:#fff;border-top:1px solid #E6E6E6;}
+.tab-list .tabs li:hover a:hover {color:#fff;text-decoration:none;background:#5499D1;border-right:0;margin-right:0px; padding-right:18px; border-right:none;}
+.tab-list .tabs li.ui-state-active {border-right:0;border-left:1px solid #E6E6E6;margin-right:-1px;position:relative;z-index:1;}
+.tab-list .tabs li.ui-state-active a {color:#555;}
+.tab-list .tabs li.ui-state-active a:hover {margin-right:0;}
+.tab-list .left {width:126px;margin-right:14px;padding-right:14px;}
+.tab-list .wide-col {float:left;margin-left:-15px;padding-left:20px;width:455px;}
+.tab-list ul.list {overflow:hidden;}
+.tab-list .ui-tabs-panel ul.list {clear:left;border-top:1px dotted #CCC;margin-top:14px;padding:14px 0;}
+.tab-list .bd .hr {margin-top: 0;}
+
+#pro-styles.tab-list {margin-right:0;}
+#pro-styles.tab-list.wide .tabs {width:157px;}
+#pro-styles.tab-list .tabs li {margin-left:1px; border-left:1px solid #E6E6E6; border-top:1px solid #E6E6E6;}
+#pro-styles.tab-list .tabs li.ui-state-active,
+#pro-styles.tab-list .tabs li:hover {margin-left:0px;}
+#pro-styles.tab-list .tabs li a {background:#fafbfc; border:1px solid #fff; display:block; font-size:11px; font-weight:bold; padding:0.25em 0.85em;}
+#pro-styles.tab-list .tabs li.ui-state-active a {background:#fff;}
+#pro-styles.tab-list .tabs li a:hover,
+#pro-styles.tab-list .tabs li.ui-state-active a:hover {border:1px solid #5499D1; background:#5499D1; margin-right:0;}.
+#pro-styles.tab-list .tabs li.ui-tabs-selected a:hover {background:#fff; color:#555; border:1px solid #fff; cursor:auto;}
+
+
+#pro-styles.tab-list .tabs li.ui-state-active a:hover {padding:0.25em 0.85em; display:block; font-weight:bold; background:#fafbfc; border:1px solid #fff; font-size:11px;}
+#pro-styles.tab-list .tabs li:hover a:hover {color:#fff;text-decoration:none;background:#5499D1;border-right:0;margin-right:0px; padding-right:18px; border-right:none;}
+#pro-styles.tab-list .tabs li.ui-state-active a {color:#555; background:#fff;}
+#pro-styles.tab-list .tabs li a:hover,
+#pro-styles.tab-list .tabs li.ui-state-active a:hover {border:1px solid #5499D1; background:#5499D1; margin-right:0;}
+#pro-styles.tab-list .tabs li.ui-tabs-selected a:hover {background:#fff; color:#555; border:1px solid #fff; cursor:auto;}
+
+#pro-styles.tab-list .ui-tabs-panel ul.list {border:none; clear:none; margin-top:0; padding-top:0;}
+#pro-styles.tab-list .bd h5 {padding-top:8px;}
+#pro-styles.tab-list ul.last {margin-bottom:20px;}
+#pro-styles.tab-list ul.strip.last {min-height:154px;}
+#pro-styles.tab-list ul.strip li {width:123px;}
+#pro-styles.tab-list ul li p {margin:0;}
+#pro-styles.tab-list ul li p.invert {margin:7px 0 2px 0; line-height:14px;}
+#pro-styles.tab-list ul li p.invert a:hover {text-decoration:underline;}
+#pro-styles.tab-list ul li p a {color:#2a76a8;}
+#pro-styles.tab-list .bd .hr {margin-bottom:20px;}
+
+.ui-tabs-hide {display:none;}
+
+
+/* wide list used on pro galleries */
+.tab-list.wide .tabs {width:188px;}
+
+
+/* for stacked strips in pro gallery variation */
+.tab-list ul.strip {margin:0 0 14px;}
+/* .tab-list ul.strip.last {margin-bottom:0;} */
+.tab-list ul.strip li {float:left;margin-right:14px;}
+.tab-list ul.strip li.last {margin-right:0;}
+.tab-list ul.strip p {font-size:.786em;}
+
+
+/* horizontal tabbed list (buttons) */
+.tab-btns {margin-left:14px;float:left;margin-bottom:-1px;*margin-bottom:-15px;}
+.tab-btns li {float:left;margin-right:7px;margin-bottom:7px;}
+.tab-btns li.sel {border:1px solid #EFEFEF;border-bottom:1px solid #FFF;padding:7px 14px 10px;margin-bottom:-4px;position:relative;top:-4px;}
+.tab-btns li.sel span {display:block;height:22px;color:#000;font-weight:bold;}
+.tab-btns li.sel span em {color:#999;font-style:normal;font-weight:normal;font-size:.789em;}
+.tab-btns li.sel a:hover {text-decoration:none;}
+
+
+/* filter tabs */
+.filter-cont {min-height: 200px;}
+.filter-cont li {display: none;}
+.filter-cont li.sel { display: block;}

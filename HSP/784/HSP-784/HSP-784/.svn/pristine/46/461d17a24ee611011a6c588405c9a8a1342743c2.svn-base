@@ -1,0 +1,177 @@
+section br, .local-nav br {display:none;}
+
+/* in event that pod is first element, remove top padding/margin */
+div.sni-e > div.pod:first-child,
+div.sni-w > div.pod:first-child,
+div.sni-ww > div.pod:first-child {margin-top:0;padding-top:0;}
+
+/* general */
+.pod, .lead, .tab-list {margin:21px 14px;clear:both;zoom:1;}
+.pod {margin:0 14px;}
+.top-panel .pod {margin:14px;}
+.pod:after, .bd:after, .lead:after, footer .group:after, dl:after, .super-lead:after, .top-panel:after {content:".";display:block;height:0;width:0;line-height:0;font-size:0px;clear:both;visibility:hidden;}
+
+.pull-btm {margin-bottom:0;}
+
+/* keeps p text from wrapping under floated image */
+.block p, .sni-e p {overflow:hidden;}
+
+a.option {font-size:.786em;font-weight:bold;border-left:1px dotted #B8B8B8;margin-left:10px;padding:7px 10px;}
+
+ul.last, li.last {margin-right:0;}
+
+.hr hr { display:none; }
+.hr {clear:both;background:url('../imgs/le/s.gif') repeat-x center;height:1px;margin:14px 0 0;padding:14px 0 0;}
+.bd .hr {margin-bottom:14px;padding:0;}
+.hr.dot {background:url('../imgs/le/s-dot.gif') repeat-x center;}
+.hr.powered {position:relative;}
+.hr.powered span {position:absolute;display:block;top:-11px;left:80px;background:#FAFAFA;padding:0 4px 0 0;}
+.feature > .bd {margin-left:-21px;padding-left:14px;border-left:7px solid #EF650A;zoom:1;}
+
+
+/* to add feature "orange" bar to right rail on h5 tag only */
+.sni-e .feature .bd {margin-left:-14px;border-left:none;}
+.sni-e .feature .bd h5 {border-left:7px solid #EF650A;margin-left:-14px;padding-left:14px;}
+.sni-e .feature .bd .list {margin-left:7px;}
+
+
+.two-col {float:left;width:50%;}
+.three-col {float:left;width:33%;}
+.four-col {float:left;width:25%;}
+.sni-w .two-col {width:300px;margin-right:7px;}
+.sni-w #pro-styles .two-col {width:192px;}
+.sni-w .pod > h4 { margin-bottom: 14px; }
+.sni-w .slim .two-col {width:265px;}
+.sni-e .two-col {width:150px;margin-right:7px;}
+
+.arrow > a > span {display:inline-block;width:14px;height:6px;*padding-bottom: 3px; background:url('../imgs/se/sprite.png') no-repeat 5px -6576px;}
+.arrow > a:hover > span {background-position:5px -6622px;}
+
+.cta {overflow:hidden;display:block;margin-top:4px;}
+
+.top {vertical-align:top;}
+
+.pagi {padding:28px 0;border-top:1px solid #EAE9E5;border-bottom:1px solid #EAE9E5;}
+.pro-galleries.index-detail .pagi {padding:0 0 28px;border-top:none;}
+
+/* margins */
+.mb7 {padding-bottom:7px;} .mt7 {padding-top:7px;} .ml7 {padding-left:7px;} .mr7 {padding-right:7px;}
+.mb14 {padding-bottom:14px;} .mt14 {padding-top:14px;} .ml14 {padding-left:14px;} .mr14 {padding-right:14px;}
+.mb21 {padding-bottom:21px;} .mt21 {padding-top:21px;} .ml21 {padding-left:21px;} .mr21 {padding-right:21px;}
+
+
+/* display inline */
+.in {display:inline;}
+cite {display:block;margin-bottom:7px;}
+cite.in {margin-left:4px;margin-bottom:0;white-space:nowrap;}
+cite span {display:block;color:#555;margin-top:4px;}
+cite span.light {color:#999;}
+
+
+/* can be for general use
+ typically used for article image wrap */
+.w90 {width:90px;}
+.w92 {width:92px;}
+.w120 {width:120px;}
+.w160 {width:160px;}
+.w200 {width:200px;}
+.w266 {width:266px;}
+.w616 {width:616px;}
+.wrap.active {width:auto;}
+.sni-w .wrap cite.cap {clear: both;}
+
+
+/* holds breadcrumb and toolbar */
+.utility {margin:14px 14px 14px;height:34px;}
+
+
+/* various banner sizes */
+.banner {margin:7px 0 21px 0;}
+.banner a {display:block;width:100%;height:100px;text-indent:-9999em;overflow:hidden;}
+.banner.article a {height:60px;}
+.banner.tentpole a {height:133px;}
+.banner.franchise a {height:147px;}
+
+
+/* full-width above columns, for search results text, topics, section fronts, etc.  */
+.top-panel {position:relative;border-bottom:1px solid #EAE9E5;margin:0 0 28px;padding:0;*zoom:1;}
+.top-panel .wrap {position:absolute;top:7px;right:0;}
+.top-panel h1 {font-size: 2.5em;letter-spacing: 0.015em;line-height: 1.2em;}
+.topic .top-panel h1 {width:450px;}
+.top-panel .pod p {margin-bottom:0;}
+.top-panel .article-info {margin:0 0 14px 14px;}
+
+
+/* use wrap around images, to float and add margin */
+.wrap {float:left;margin:0 21px 0 0;}
+.sni-e .wrap, .pg-endframe .wrap {margin:0 14px 0 0;}
+.wrap.right {float:right;margin:0 0 0 14px;}
+
+
+/* loader class - to add a loader to anything! */
+.loader {text-align:center;height: 42px;padding: 63px 0 84px 0;}
+.loader span {display:block;margin:0 auto;height:32px;width:32px;background:url('../imgs/le/loader-light.gif') no-repeat;}
+.loader.dark span {background:url('../imgs/le/loader-dark.gif') no-repeat;}
+.loader.grey span {background:url('../imgs/le/loader-grey.gif') no-repeat;}
+.loader.cream span {background:url('../imgs/le/loader-cream.gif') no-repeat;}
+
+
+/* definition lists for right rail - "left/right" */
+dl.lr {margin-bottom:14px;padding-bottom:7px;border-bottom:1px dotted #CCC;}
+dl.lr.last {border-bottom:0;}
+dl.lr dt {float:left;width:150px;}
+dl.lr dd {float:right;margin-right:21px;width:75px;}
+
+
+/* overlay and content (theater) styles*/
+#overlay {display: none;background-color: #333333; left: 0; -ms-filter: "alpha (opacity=0)"; filter: "alpha (opacity=0)"; opacity: 0;position: fixed; top: -10px; z-index: 1010; width: 100%; height: 10000px;}
+#overlay-inner {display: none;}
+.overlay-content {padding: 46px 0 0; width: 100%; min-height: 100%; position: fixed; top: 0; left: 0; z-index: 5002;}
+.overlay-content-inner { overflow:visible!important; height: 569px; background: #242424 url('../imgs/le/loader-grey.gif') no-repeat center center;text-align: center; width: 100%; position: relative;}
+.overlay-content-inner.loaded {background: #242424;}
+.overlay-content-inner .close .hd em { *float: left; *margin-right: 7px; }
+
+.modal-btn { top: -24px; right: 0; background: #000; color: #fff; cursor: pointer; font-size: 11px; line-height: 100%; padding: 7px 14px; position: absolute;}
+
+.box.close.inline {width: 994px; background-color: #242424; height: 0; border: 0; margin: 0 auto;}
+.box.close.inline .hd {background-color: #242424;}
+
+.inline.loader {vertical-align: middle; height: 569px;}
+.inline.loader, .inline.loader:active {box-shadow: auto; background: #242424;}
+.inline.loader span { width: 32px; height: 32px; background-image: url('../imgs/le/loader-light.gif')}
+
+/* right rail ad container */
+.mrec {text-align:center;}
+.mrec span {display:block;text-align:center;font-size:.786em;color:#999;}
+
+
+/* top and bottom solid line, one bottom line, or a bit more spacing */
+.rule {border-top:1px solid #E6E6E6;border-bottom:1px solid #E6E6E6;padding:14px 0 14px;}
+.rule-btm {border-bottom:1px solid #E6E6E6;padding:0 0 14px;}
+.rule.tall {padding:28px 0;margin:21px 0;}
+
+
+/* general use "hide and slide" */
+.hide-slide {display:none;}
+
+
+/* oops */
+.oops, .achoo {display:inline-block;width:522px;height:136px;background:url('../imgs/le/oops.jpg'); margin:28px auto 14px; }
+.achoo {background:url('../imgs/le/achoo.jpg');}
+
+/* brandscape */
+
+#pushdown_adtag {width: 100%; background: transparent; line-height: normal}
+#pushdown_adtag .iax_inner {width:970px; margin:0 auto;}
+
+body.brandscape .site-wrapper {margin-top:-7px;}
+body.brandscape section {padding:7px;}
+body.brandscape section .sni-w,
+body.brandscape section .sni-e {padding-top:21px;}
+body.brandscape section .super-lead {margin:0;}
+body.blog.brandscape .local-nav-wrap {margin-bottom:14px}
+body.brandscape #pushdown_adtag{float:none;}
+
+.banner.pro-galleries {margin:7px auto 21px; width:994px;}
+.banner.pro-galleries a {background:url(http://hgrm.sndimg.com/HGRM/2011/10/18/spPackage_Pro-Galleries_s994x133.jpg) 0 0 no-repeat;}
+.banner.pro-galleries a {height: 133px;} 

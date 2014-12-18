@@ -1,0 +1,325 @@
+.qv p {
+    line-height:1.38em;
+    }
+
+.qv form ul {
+    margin:5px 0;
+    *margin-top:8px;
+    }
+
+.qv form li {
+    /* height: 22px; */
+    line-height:22px;
+    *margin-top:-3px;
+    }
+
+.qv input {
+    float:left;
+    margin:5px 6px 0 2px;
+    *margin:1px 2px 0 -2px;
+    }
+
+.qv label {
+    display:block;
+    float:left;
+    line-height:22px;
+    }
+
+.qv p.submit {
+    text-align:left;
+    margin:15px auto 5px;
+    *margin-top:12px;
+    width:auto;
+    font-size:92.3%;
+    line-height:29px;
+    padding-right:4px;
+    }
+
+.qv p.submit a, .qv p.submit span {
+    line-height:29px;
+    *vertical-align:7px;
+    }
+
+/*changing .qv-ww to .qv.  Quick Poll will appear in -e as well --dsisan */
+.qv p.submit button.button {
+    background:#f1f6f2 url(../imgs/hgtv_ui_207.png) no-repeat right top;
+    text-align:center;
+    font-family:"trebuchet ms", sans-serif;
+    border:0;
+    margin:0 5px 0 2px;
+    padding-right:7px;
+    cursor:pointer;
+    font-weight:bold;
+    _overflow-y:hidden;
+    }
+
+.qv p.submit button.button:hover {
+    text-decoration:none;
+    outline:none;
+    background-position:right -29px;
+    }
+
+.qv p.submit button.button:active {
+    background-position:right -58px;
+    outline:none;
+    }
+
+.qv p.submit button.button span {
+    background:#f1f6f2 url(../imgs/hgtv_ui_207.png) no-repeat left top;
+    display:block;
+    height:29px;
+    line-height:29px;
+    padding:0 0 0 7px;
+    margin:0;
+    color:#fff;
+    font-size:109%;
+    }
+
+.qv p.submit button.button:hover span {
+    background-position:left -29px;
+    }
+
+.qv p.submit button.button:active span {
+    background-position:left -58px;
+    outline:none;
+    }
+
+.qv p.submit button.button::-moz-focus-inner {
+    padding:0;
+    border:0;
+    }
+
+.qv #inputPanel {
+    display:none;
+    }
+
+/* changed #resultsPanel --> .qv-results-panel*/
+#hg-bd .qv .submitting, #hg-bd .qv .loading, #hg-bd .qv .qv-results-panel {
+    line-height:2em;
+    text-align:center;
+    display:none;
+    }
+
+#hg-bd .qv .submitting img, #hg-bd .qv .loading img {
+    padding:0;
+    border:none;
+    display:inline;
+    }
+
+#hg-bd .qv .errormsg {
+    display:none;
+    margin:4px 0;
+    font-weight:bold;
+    color:#b50938;
+    }
+
+#hg-bd .qv .qv-results-panel p {
+    text-align:left;
+    }
+
+#poll-results li {
+    padding-top:3px;
+    }
+
+.qv #poll-results div {
+    width:180px;
+    }
+
+#hg-e .qv #poll-results div {
+    width:322px;
+    }
+
+#poll-results li span {
+    display:block;
+    float:left;
+    font-weight:bold;
+    }
+
+#poll-results li .vote-pct {
+    float:right;
+    text-align:right;
+    }
+
+.qv #poll-results li p {
+    width:180px;
+    height:9px;
+    overflow:hidden;
+    }
+
+#hg-e .qv #poll-results li p {
+    width:322px;
+    }
+
+#poll-results li p span {
+    height:9px;
+    overflow:hidden;
+    }
+
+#poll-results li p .bar-on {
+    background:url(../imgs/poll-result-bars-200.gif) no-repeat 0 -9px;
+    }
+
+#poll-results li p .bar-off {
+    background:url(../imgs/poll-result-bars-200.gif) no-repeat 100% 0;
+    }
+
+#hg-ww .qv label {
+    width:160px;
+    }
+
+#hg-ww .qv p.submit {
+    clear:both;
+    }
+
+/* added by dsisan*/
+#hg-e .qv label {
+    width:160px;
+    }
+
+#hg-e .qv p.submit {
+    clear:both;
+    }
+
+html body div#hg-e html body div#hg-e div.civicscience.ballotbox, html body div#hg-e div.civicscience.ballotbox div, html body div#hg-e div.civicscience.ballotbox span, html body div#hg-e div.civicscience.ballotbox form, html body div#hg-e div.civicscience.ballotbox label, html body div#hg-e div.civicscience.ballotbox input, html body div#hg-e div.civicscience.ballotbox div.poll_title, html body div#hg-e div.civicscience.ballotbox div.poll_body, html body div#hg-e div.civicscience.ballotbox div.question_text, html body div#hg-e div.civicscience.ballotbox div.answer, html body div#hg-e div.civicscience.ballotbox div.answer div.control, html body div#hg-e div.civicscience.ballotbox div.answer div.answer_text, html body div#hg-e div.civicscience.ballotbox div.result, html body div#hg-e div.civicscience.ballotbox div.result div.percent, html body div#hg-e div.civicscience.ballotbox div.result div.answer_text, html body div#hg-e div.civicscience.ballotbox div.buttons, html body div#hg-e div.civicscience.ballotbox div.detailed_results, html body div#hg-e div.civicscience.ballotbox div.wrap_up {
+    border:0 none;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    width:auto;
+    }
+
+html body div#hg-e div.civicscience.ballotbox {
+    clear:both;
+    font:12px arial;
+    margin:14px 0;
+    padding-bottom:7px;
+    width:349px;
+    background:#f1f6f2;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.poll_title {
+    color:#EF4141;
+    font-family:arial, sans-serif;
+    font-size:18px;
+    line-height:1.1em;
+    padding:10px 10px 0 10px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.poll_body {
+    color:#333;
+    font:14px "arial";
+    margin:0;
+    padding:14px;
+    position:relative;
+    height:100%;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.poll_body.loading {
+    background:url("http://civicscience-css.s3.amazonaws.com/clients/civicscience/images/loading.gif") no-repeat scroll 0 0 transparent;
+    height:20px;
+    left:150px;
+    margin:10px 0 0;
+    opacity:0.5;
+    position:absolute;
+    top:150px;
+    width:20px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.question_text {
+    margin:0 0 10px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.answer {
+    clear:both;
+    display:table;
+    margin:0;
+    padding:5px 0;
+    width:100%;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.answer div.control {
+    float:left;
+    margin:0 10px 0 5px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.answer div.control input {
+    cursor:pointer;
+    margin:0;
+    padding:0;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.answer div.answer_text label {
+    cursor:pointer;
+    display:table;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.result {
+    clear:both;
+    display:table;
+    margin:6px 0;
+    padding:3px;
+    width:100%;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.result div.percent {
+    float:left;
+    font-weight:bold;
+    width:50px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.result div.answer_text label {
+    display:table;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.buttons {
+    display:block;
+    height:18px;
+    margin:10px 0 7px;
+    text-transform:none;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.buttons input.next {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/polls/civic-next.gif") no-repeat;
+    width:26px;
+    height:18px;
+    font:10px "arial";
+    margin:0 0 14px;
+    padding:0 4px;
+    position:absolute;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.buttons input.previous {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/polls/civic-previous.gif") no-repeat;
+    width:26px;
+    height:18px;
+    float:left;
+    font:10px "arial";
+    margin:0 4px 0 0;
+    padding:0 4px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.detailed_results a {
+    color:#2e74b0;
+    font:11px "arial";
+    text-decoration:none;
+    }
+
+html body div#hg-e div.civicscience.ballotbox div.wrap_up {
+    margin:10px 0 20px;
+    }
+
+html body div#hg-e div.civicscience.ballotbox input[type="button"], html body div#hg-e div.civicscience.ballotbox input[type="button"]:hover {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/polls/civic-submit.gif") no-repeat;
+    width:53px;
+    height:29px;
+    color:#FFF;
+    cursor:pointer;
+    font:bold 12px/18px arial;
+    padding:0 7px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:none;
+    }
+
+html body div#hg-e div.civicscience.ballotbox input[type="button"]:focus {;
+    }

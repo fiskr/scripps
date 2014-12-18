@@ -1,0 +1,339 @@
+body#print {
+    background:none;
+    border-top:5px solid #ef4141;
+    }
+
+#print #site-wrapper {
+    background:none;
+    }
+
+#print h1 {
+    margin-bottom:10px;
+    margin-left:0;
+    }
+
+#print #hdr {
+    text-align:right;
+    }
+
+#print #wrap {
+    width:590px;
+    margin:25px auto;
+    }
+
+#print #brand {
+    text-indent:-9999em;
+    overflow:hidden;
+    margin-bottom:10px;
+    width:108px;
+    height:46px;
+    float:left;
+    }
+
+#print #brand h2 {
+    visibility:hidden;
+    }
+
+#print .wrap #print-link {
+    float:right;
+    margin-top:35px;
+    background:url(../imgs/icon-print-white.png) left 3px no-repeat;
+    padding-left:18px;
+    font-size:85%;
+    cursor:pointer;
+    }
+
+#print #path {
+    border-top:1px solid #e1e1e1;
+    padding-top:5px;
+    margin-top:4px;
+    clear:both;
+    text-align:left;
+    margin-bottom:14px;
+    color:#666;
+    font-size:85%;
+    }
+
+#print #cnt .intro {
+    margin:0 0 13px;
+    padding:0;
+    }
+
+#print #cnt .thmb {
+    float:left;
+    width:265px;
+    overflow:hidden;
+    margin:0 14px 7px 0;
+    }
+
+#print #article p {
+    margin:0 0 21px;
+    }
+
+#print #ftr {
+    border-top:1px solid #e1e1e1;
+    padding-top:7px;
+    margin-top:7px;
+    }
+
+#print #ft-brand {
+    text-indent:-9999em;
+    overflow:hidden;
+    margin-bottom:10px;
+    background:url(../imgs/hgtv-print-logo-ft.png) left top no-repeat;
+    width:40px;
+    height:22px;
+    float:left;
+    }
+
+#print #ft-nav {
+    float:right;
+    margin-top:6px;
+    }
+
+#print #ft-nav li {
+    float:left;
+    font-size:77%;
+    margin-left:4px;
+    padding-left:9px;
+    background-position:left 5px;
+    }
+
+#print #ft-nav li.first {
+    margin-left:0;
+    padding-left:0;
+    background:none;
+    }
+
+#print #ftr cite {
+    display:block;
+    clear:both;
+    margin-top:10px;
+    font-size:77%;
+    *margin-top:0;
+    }
+
+#print .jcarousel-item-horizontal {
+    clear:both;
+    *width:520px;
+    }
+
+#print .jcarousel-item-horizontal li {
+    margin-right:28px;
+    margin-bottom:7px;
+    }
+
+#print .jcarousel-clip-horizontal {
+    *width:520px;
+    }
+
+#print #resources h2 span {
+    display:none;
+    }
+
+#print #resources .res-item h3 {
+    text-transform:uppercase;
+    font-family:'trebuchet ms';
+    font-weight:400;
+    margin-bottom:5px;
+    }
+
+#print #resources .list li {
+    line-height:1.8em;
+    background-position:left 10px;
+    }
+
+#print .gallery .byline {
+    margin-bottom:10px;
+    }
+
+#print .caption .ph-num {
+    margin-left:3px;
+    }
+
+#print .img-sbs {
+    float:right;
+    margin-left:14px;
+    }
+
+#print .contact li {
+    float:left;
+    width:250px;
+    xheight:350px;
+    margin-right:45px;
+    margin-bottom:25px;
+    }
+
+#print .contact li img {
+    max-width:200px;
+    max-height:300px;
+    }
+
+#print .contact li p {
+    font-size:85%;
+    line-height:135%;
+    }
+
+#print .poster-cap {
+    color:#666;
+    font-size:77%;
+    margin-bottom:18px;
+    }
+
+#print .article h3 {
+    font-family:'trebuchet ms';
+    margin-bottom:5px;
+    }
+
+#print #hg-hd, #print #hg-ft, #print .jcarousel-pageimg {
+    display:none;
+    }
+
+#print .jcarousel-prev, #print .jcarousel-next, #print .text #feat-prod.res-item {
+    display:none !important;
+    }
+
+#print .guest li, #print #resources .res-item {
+    margin-bottom:14px;
+    }
+
+#print .guest li p span, #print .caption, #print .contact li span {
+    display:block;
+    }
+
+/* ARTICLES */
+#print div.intro p {
+    margin-bottom:7px;
+    }
+
+#print .article h2 {
+    margin-left:14px;
+    }
+
+#print .article div.intro .next {
+    margin-bottom:7px;
+    color:#d72d82;
+    }
+
+#print #art-hub {
+    margin-left:14px;
+    }
+
+#print #art-hub li {
+    float:left;
+    }
+
+#print #art-image {
+    margin:0 14px 10px;
+    }
+
+#print .article-std #art-image, #print .article-sbs #art-image, #print .article-bio #art-image {
+    float:left;
+    width:266px;
+    }
+
+#print .article-beauty #art-image {
+    width:588px;
+
+    }
+
+#print .art-caption, #print .art-multi dd {
+    color:#999;
+    font-size:90%;
+    }
+
+#print .sbs-image {
+    display:block;
+    float:right;
+    height:120px;
+    width:160px;
+    margin:0 10px 10px 15px;
+    padding:2px;
+    }
+
+#print #article .art-multi {
+    width:165px;
+    display:block;
+    float:right;
+    margin:0 10px 10px 15px;
+    padding:2px;
+    }
+
+#print #article .art-multi dd {
+    margin:0 0 15px 0;
+    }
+
+#print #article-epi .epi-banner {
+    margin:14px;
+    }
+
+#print #article-epi #art-image img {
+    float:left;
+    margin:0 14px 7px 0;
+    }
+
+#print #article-epi .related-link {
+    margin-bottom:14px;
+    }
+
+#print .epi-block {
+    margin-bottom:14px;
+    }
+
+#print .pg-brk {
+    page-break-after:always;
+    }
+
+#print .dp-acco {
+    width:602px;
+    margin:0 0 14px;
+    }
+
+#print .desc {
+    margin-bottom:14px;
+    }
+
+#print #hg-w-pr #brand {
+    float:right;
+    width:76px;
+    height:46px;
+    }
+
+#print #hg-w-pr .intro {
+    margin:14px 0;
+    }
+
+#print #hg-w-pr #print-link {
+    float:left;
+    }
+
+#print #hg-w-pr {
+    float:left;
+    width:602px;
+    margin:25px 14px 25px 28px;
+    }
+
+#print #hg-e-pr {
+    float:left;
+    width:350px;
+    margin-top:52px;
+    }
+
+#print #hg-w-pr .section {
+    margin:21px 0;
+    }
+
+#print #hg-w-pr .imgwrap {
+    margin:7px auto;
+    }
+
+#print #hg-e-pr .mrec {
+    margin:14px 0;
+    }
+
+#print #hg-e-pr .mrec #bigbox {
+    background:none;
+    padding-bottom:4px;
+    }
+
+

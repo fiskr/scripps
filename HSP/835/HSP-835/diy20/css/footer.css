@@ -1,0 +1,267 @@
+  div.cright div.clearFloats {float: left; clear: both;}
+  div.cright div.sister_sites_link_container{margin:0; padding: 0;width: 180px;float: right; position: relative; right: -5px;}
+  div.cright div.partners{float: none;}
+  div.cright ul.legal-list{margin:0; padding: 0;float: right;}
+  div.cright ul.legal-list li {float: left;color: #666; }
+  div.cright ul.legal-list li.first {border-left: none;} 
+  div.cright ul.legal-list li a{padding: 0 5px;font-size: 11px;}
+  div.cright .legal-copy{float: left;}
+  
+
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup { width: 249px; position: absolute; bottom: 55px; right: -7px; z-index: 9999; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_container { position: relative; padding: 20px 0 0 10px; display: block; float: right; z-index: 9999;}
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup .hd{ background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/sp-popups.png") no-repeat scroll -537px 0 transparent;
+    height: 7px; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup .ft{ background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/sp-popups.png") no-repeat scroll -1035px bottom transparent;
+    height: 10px;}
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup .bd{  background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/sp-popups.png") repeat-y scroll -786px 0 transparent;
+    padding: 0 7px;}
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup .content{background-color:#faf5ef;}
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup h3{text-align: left;background-color:#000;padding:4px 7px;font-weight:bold;clear:both; margin: 0; color: #fff; font-size: 14px; font-weight: bold; font-family: Arial;text-transform: uppercase }div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup ul { display: block; margin: 0; padding-top: 6px; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup ul li { text-align: left; display: block; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup ul li a{display: block; text-decoration: none; color: #1E7BAC; font-size: 13px;padding: 4px 14px; position: relative; zoom: 1; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup ul li a:hover { color:#b50938; background-color: white; }
+div#foot-nav div.sitefooter div.legal .pack div.right #sister_sites_popup .close {display: none;text-align: left;
+background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/sp-popups.png") no-repeat scroll left 0 transparent; cursor: pointer; height: 12px;
+  position: absolute; right: 15px; text-indent: -9999px; top: 16px; width: 12px; }
+div#foot-nav div.sitefooter div.legal .pack div.right a#sister_sites_link  {cursor: pointer; font-size: 11px; display: inline; height: 16px; padding-right: 0px; position: relative; right: 2px; }
+div#foot-nav div.sitefooter div.legal .pack div.right div.sister_sites_link_container a#sister_sites_link span#sister_sites_link_arrow{ display: none;position: absolute;
+  width: 4px; height: 5px; right: -9px; top: 7px;
+  background: url(http://images.foodnetwork.com/webfood/fn20/imgs/sp-buttons.png) no-repeat scroll right top transparent; }
+div.sitefooter div.legal div.pack div.right p a img{position: relative; top: 3px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites{/*min-height: 197px;*/}
+div#sister-sites.group{margin: 0; padding: 0;width: 973px;}
+div#sister-sites.group.links{padding: 0;margin:0; width: 974px;}
+
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links ul li{list-style-type: none;margin: 0px;padding: 0;list-style-type: none;font-size: 12px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col { font-size: 12px;float: left;margin: 0;vertical-align: top;padding: 0 0 0 9px;width: 180px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily h5 {margin: 14px 0 7px 0;padding: 0;color: #386CB4;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily h5 a {margin: 0;padding: 0;color: #386CB4;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily img{float:left;margin-right:7px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily a.small {color: #176684;font-size: 11px;line-height: 14px;display: block;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily a:link{ color: #176684;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily a:visited{color: #757575;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily a:hover{color: #ba0707;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily a:active{color: #ff3333;}
+
+
+/*New Code*/
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list{font-family: Arial; font-size: 11px;width: 188px;margin: 0 1px 0 0; padding: 0;}
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list li{margin: 0 0 5px 0; padding: 0;
+background:url(http://images.diynetwork.com/webdiy/diy20/imgs/se/bullet-999999-4x4.gif) no-repeat left 6px;background-size:4px 4px;}
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list li a:link{ font-size: 11px;color: #176684;margin: 0; padding: 0 0 0 8px;}
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list li a:visited{color: #757575;padding: 0 0 0 8px;}
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list li a:hover{color: #ba0707;}
+div#diy-ft div.foot-wrap.clrfix div#ideas-from-diy.clrfix div.columns ul.list li a:active{color: #ff3333;}
+
+/*End new code sponsored 5 column*/
+
+/*New code diy projects sister sites*/
+div#diy-ft div.foot-wrap.clrfix div#sister-sites{background: #fff;border-top: solid 1px #cccccc;min-height: 225px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites div#more-from-diy {background: #fff;margin:0;padding: 0 0 14px 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links h5.colspan{ margin:0;padding:10px 0 18px 0; position: relative; left: 9px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list{font-family: Arial; font-size: 11px;padding: 3px 14px 0 14px;margin: 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list li{margin: 0;padding: 0;
+background:url(http://images.diynetwork.com/webdiy/diy20/imgs/se/bullet-999999-4x4.gif) no-repeat left 9px;background-size:4px 4px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list li a:link{ 
+    font-weight: normal; font-size: 11px; color: #176684;padding: 4px 0 0 8px; *padding-top: 0 !important;margin: 0; display: block;line-height: 14px;margin: 0 0 4px 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list li a:visited{color: #757575;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list li a:hover{color: #ba0707;}  
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy ul.list li a:active{color: #ff3333;}
+    
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div#more-from-diy h5{padding: 10px 0 10px 13px; margin:0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div{float: left;display: inline;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily h5 {margin: 0 0 7px 0; padding: 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily h5 a{font-family: Arial; font-size: 14px; color: #176684;text-transform: none;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list {font-family: Arial; font-size: 11px; color: #176684;margin: -4px 0 0 1px; padding: 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list li{background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/bullet-999999-4x4.gif") no-repeat scroll left center transparent;margin: 0; padding: 0;background-size:4px 4px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list li a:link{font-family: Arial; font-size: 11px; color: #176684;margin: 0; padding: 0 0 0 8px;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list li a:visited{color: #757575;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list li a:hover{color: #ba0707;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links div.col.daily ul.list li a:active{color: #ff3333;}
+
+/*End sister*/
+
+/*New code Default Footer*/
+body div.sitefooter div.left{float:left;}
+body div.sitefooter div.right{float:right;}
+body div.sitefooter div.legal{float:left;width:100%;margin-top:-1px;padding-bottom:0;color:#979797;font-size:11px;}
+body div.sitefooter div.legal .pack{width:994px;margin:14px auto;}
+body div.sitefooter div.legal .pack .left{margin-left:14px;color: #666;}
+div#foot-nav div.sitefooter div.legal .pack .right{margin-top: -5px;margin-right:14px;text-align:right;color:#666;}
+div#foot-nav div.sitefooter div.legal .pack .right a{padding: 0 2px;font-size: 11px;}
+div#foot-nav div.sitefooter div.legal .pack .right a#sister_sites_link{color:#d8c5a5;font-size: 11px;}
+div#foot-nav div.sitefooter div.legal .pack p > a, div#foot-nav body div.sitefooter div.legal .pack a.more{color:#d8c5a5;}
+div#foot-nav div.sitefooter div.legal .pack p{color: #655E55;}
+body div.sitefooter div.legal .pack .left p.diy-copyright{margin-top: 15px;}
+
+/*End New code*/
+
+
+/*Pre-existing code*/
+
+#diy-ft { clear: both; background: #ddd; padding-top: 14px; }
+#diy-ft h5 {font-size: 14px;line-height: 18px; margin-bottom: 0; font-weight: bold; text-transform: uppercase;padding: 0 0 7px 0;}
+div#diy-ft div.foot-wrap.clrfix div#sister-sites.group.links h5.colspan{margin: 0;padding: 10px 0 14px 0;}
+#diy-ft .foot-wrap { width: 980px; margin: 0 auto;}
+#diy-ft #foot-nav #foot-wrap {
+    padding-left: 14px;
+}
+
+#ideas-from-diy { background: #fff; padding: 14px; margin-left: 6px; }
+#ideas-from-diy .columns .list { float: left; width: 25%;}
+
+#sister-sites { padding: 14px; background: #eee; width: 729px; /*height: 172px;*/ float: right; _margin-left: 3px;}
+
+#more-from-diy { padding: 14px 12px; width: 192px; background: #F7F7F7; margin-left: 7px; min-height: 172px; _height: 172px;}
+#more-from-diy .list li a { font-size: 11px; font-weight: bold; line-height: 1.64;}
+#more-from-diy .list li, #sister-sites .list li {
+    font-size: 11px;
+    list-style: none;
+    padding: 0 0 0 10px;
+    vertical-align: middle;
+    background: url("http://images.diynetwork.com/webdiy/diy20/imgs/se/bullet-999999-4x4.gif") no-repeat scroll left center transparent;
+}
+
+#sister-sites .list li a {
+    font-size: 11px;
+}
+
+#foot-nav { background: #28251D url(../imgs/se/ft_pattern.gif) no-repeat center top; color: #655e55; padding-top: 21px;}
+#foot-nav a { color: #d8c5a5; }
+#foot-nav h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: normal;
+    margin-top: 14px;
+}
+#foot-nav h6 { color: #fff; font-size: 85%; line-height: 1.64; font-weight: bold;}
+#foot-nav .nav {
+    width: 999px;
+    margin-left: 14px;
+    float: left;
+    _margin-left: 3px;
+    _background-image: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/se/dark_overlay.png', sizingMethod='scale');
+}
+/*
+#foot-nav #sndigital-sites { background: url(../imgs/se/light_overlay.png) repeat top left; width: 188px; padding: 14px; float: right; _background-image: none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../imgs/se/light_overlay.png', sizingMethod='scale'); }
+	#foot-nav #sndigital-sites h5 { margin-top: 0;}
+*/
+#foot-nav .nav .about, #foot-nav .nav .column {
+    float: left;
+    width: 149px;
+    padding: 0 7px;
+    height: 100%;
+}
+/*
+#foot-nav .nav .diynetwork { float: left; width: 359px; padding: 0 14px; border-right: 1px solid #453c30; height: 100%;}
+#foot-nav .nav .diynetwork .sections { float: left; margin-right:14px; width: 34%; _width: 32%; }
+#foot-nav .nav .diynetwork .spaces { float: left; width:31%;}
+#foot-nav .nav .diynetwork .spaces .list { width:auto; /**width: 49%;*//*}
+*/
+/*
+#foot-nav .nav .shows .more { line-height: 1.64; padding-left: 10px;}
+*/
+#foot-nav .list li {
+    font-size: 7px;
+    line-height: normal;
+    list-style: none;
+    vertical-align: middle;
+    background: url("../imgs/se/bullet-FFFFFF.gif") no-repeat scroll left center transparent;
+    padding: 0 0 0 10px;
+    color: #FFF;
+}
+
+
+#foot-nav .list li a {
+    font-size: 11px;
+    line-height: 1.63;
+    padding-left: 0;
+    vertical-align: middle;
+    margin-left: -2px;
+    font-weight: bold;
+}
+#foot-nav .hilite {color:#F00;}
+
+#diy-legal { clear: both; font-size: 85%; line-height: 1.82; padding: 7px 0 28px; margin-left: 7px;}
+#diy-legal .logo { background: #d8c5a5; display: block; float: left; margin-right: 14px;}
+#diy-legal .copy { padding: 7px 0 0; }
+
+.google-js-code, .superstitial-js-code {display: none;}
+
+.foot-nav-categories {
+    margin: 0 0 0 21px;
+}
+
+.foot-nav-categories ul.menu li {
+    padding: 11px 14px 0;
+    display: block;
+    border-left:1px solid #1C170F;
+    border-right:1px solid #393227;
+    margin: 2px 0;
+    padding: 9px 14px 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foot-nav-categories ul.menu li.first {
+    border-left: none;
+}
+.foot-nav-categories ul.menu li.last {
+    border-right: none;
+}
+#diy-ft .search {
+    width: 527px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+#diy-ft .search form {
+    margin: 21px 14px 0;
+}
+#foot-nav .diy-logo {
+    background: url("../imgs/se/diy-ft-logo.png") no-repeat scroll 0 0 #B60505;
+    height: 51px;
+    width: 55px;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    margin-right: 15px;
+}
+#diy-ft .search .input {width: 410px;}
+#diy-ft .search button {float: left; background-position: -568px -580px;}
+#diy-ft .search button:active {background-position:-637px -580px;}
+#diy-ft .search .site-search-options { float: left;}
+#FootSrchOpt { position: absolute; } /* help prevent some jumping on dropdown render */
+
+#diy-ft #foot-nav h5 {
+    margin: 0 0 7px;
+    font-size: 11px;
+    font-weight: bold;
+}
+/*End Pre-existing code*/
+#foot-nav .ui-dropdown.fhd .fly-dt a {
+    background-position: -617px -580px;
+    height: 32px;
+    margin-top: 1px;
+    width: 21px;
+}
+
+
+
+#eve_msgboards #sister-sites {
+    *width: 775px;
+}
+#eve_msgboards #foot-nav .nav .about, #foot-nav .nav .column {
+    height: auto;
+}
+
+#eve_msgboards #diy-ft .search .input {
+    *width: 430px;    
+}
+
+#eve_msgboards .search .input input {
+    *height: 32px;
+}

@@ -1,0 +1,6 @@
+.article-info {margin:14px;font-size:0.786em;color:#9B9B9B;}
+.article-info > li{padding:0 14px 0 0;margin:0 14px 0 0;}
+.article-info li.post{float:left;border-right:1px dotted #CCC;}
+.article-info .more {position:relative;z-index:1001;display:inline-block;zoom:1;*display:inline;}
+.article-info .box {display:none;position:absolute;font-size:1.25em;}
+.article-info .byline cite{padding-right:7px;margin-right:3px;border-right:1px solid #CCC;}

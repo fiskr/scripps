@@ -1,0 +1,51 @@
+  <aside class="related-video centered">
+    <header>
+        <h2><a href="/garden-galleries/index.html">Related Videos <span class="count">(15 videos)</span></a></h2>
+    </header>
+  <div class="video-carousel royalSlider rsDefault" id="related-videos">
+
+      <div class="rsSlide">
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0192270.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104084,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0192/0192270_160x120.jpg" width="120" height="90"> 
+          <span class="cap">2012 Urban Oasis Design Detail </span>
+        </a>      
+      
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0193126.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104088,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0193/0193126_160x120.jpg" width="120" height="90"> 
+          <span class="cap">2012 Urban Oasis Inland Views</span>
+        </a>
+      </div>
+
+
+      <div class="rsSlide">
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0193125.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104087,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0193/0193125_160x120.jpg" width="120" height="90"> 
+          <span class="cap">2012 Urban Oasis Eastern Views </span>
+        </a>
+      
+      
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0193124.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104086,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0193/0193124_160x120.jpg" width="120" height="90"> 
+          <span class="cap">2012 Urban Oasis NE Views</span>
+        </a>
+      </div>
+
+
+      <div class="rsSlide">
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0193123.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104085,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0193/0193123_160x120.jpg" width="120" height="90"> 
+          <span class="cap">2012 Urban Oasis SE Views</span>
+        </a>
+            
+        <a href="http://wms.scrippsnetworks.com/library/HGTV/0187610.wmv" data-channel-url="/hgtv/video/channel/0,1945,HGTV_32796_33681_104522,00.html">
+          <img src="http://images.scrippsnetworks.com/up/images/0187/0187610_160x120.jpg" width="120" height="90"> 
+          <span class="cap">Design Star All Stars Recap 2</span>
+        </a>
+      </div>
+
+  </div>
+<script type="text/javascript">
+  HGTV.M.DoubleWideCarousel('#related-videos');
+</script>
+
+</aside>

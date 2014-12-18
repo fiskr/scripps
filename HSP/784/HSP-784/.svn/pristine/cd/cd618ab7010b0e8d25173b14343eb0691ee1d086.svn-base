@@ -1,0 +1,21 @@
+.toolbar {float:right;position:relative;*z-index:1;}
+.sni-e .toolbar {float:left;}
+.toolbar > ul {font-size:0.786em;}
+.toolbar > ul > li {float:left;margin-right:10px;}
+#pro-galleries .toolbar > ul > li {width:90px;}
+#pro-galleries .toolbar #tb-gplus {margin-left: 10px; width:78px;}
+.toolbar > ul > li > a {padding-left:24px;}
+.fb_reset {direction:rtl !important;float:left;width:80px !important;}
+.toolbar #tb-print a {display:none;background:url('../imgs/se/sprite.png') no-repeat 2px -1496px;}
+.toolbar #tb-print a:hover{background-position: 2px -1551px;}
+.toolbar #tb-email a {background:url('../imgs/se/sprite.png') no-repeat 2px -1606px;}
+.toolbar #tb-email a:hover{background-position: 2px -1660px;}
+.toolbar #tb-tweet a{background:url('../imgs/se/sprite.png') no-repeat 5px -1714px;}
+.toolbar #tb-tweet a:hover{background-position: 5px -1770px;}
+.sni-e .toolbar #tb-tweet iframe{*width: 109px!important;}
+.pg-photo-description .toolbar #tb-tweet a {background:url('../imgs/se/sprite.png') no-repeat 0 -8086px; width: 55px; height: 20px; text-indent: -50000px; display: block;}
+
+/* email a friend popover */
+#email-a-friend {display:none;position:absolute;right:21px;top:21px;z-index:2001;}
+#email-a-friend .loader, #email-a-friend .success {display:none;padding:42px;margin:7px 0 14px;color:#999;}
+#email-a-friend .loader p {margin-bottom:14px;}

@@ -1,0 +1,483 @@
+/* global to all accordions */
+.acco-link {
+    cursor:pointer;
+    }
+
+.selected .acco-link {
+    cursor:auto;
+    }
+
+.acco-content {
+    zoom:1;
+    }
+
+/* IE6 loves adding random padding at the bottom */
+
+/* acco-a: Accordion in the Left Rail */
+.acco-a {
+    background:#fff;
+    margin-bottom:1px;
+    padding-right:1px;
+    background:url(../imgs/accoa-bcap.png) no-repeat 0px bottom;
+    }
+
+.acco-a .acco-bd {
+    padding:0 15px 0 1px;
+    background:#f0f0f0 url(../imgs/accoa-grad.png) no-repeat 0px 0px;
+    }
+
+.acco-a .acco-bd .acco-content {
+    padding:14px 0 10px 14px;
+    }
+
+.acco-a .acco-bd .acco-content .list {
+    padding-bottom:14px;
+    }
+
+.acco-a .acco-link {
+    margin:0 0 -1px 0;
+    padding:0 15px 20px 0;
+    color:#000;
+    background:url(../imgs/accoa-link.png) no-repeat 0px bottom;
+    }
+
+.acco-a .selected .acco-link h5 {
+    border-top:3px solid #d72d82;
+    }
+
+.acco-a .acco-link h5 {
+    margin-left:1px;
+    padding:17px 0 0 14px;
+    font-size:108%;
+    font-family:"trebuchet ms";
+    line-height:1;
+    text-transform:uppercase;
+    }
+
+.acco-a .acco-link p {
+    padding-left:14px;
+    }
+
+/* acco-b: Accordion in the Right Rail (Most Popular) - rebranding CLewis 2010-Jun; note new version of accordion */
+.acco-b .acco-link {
+    height:32px;
+    padding-left:7px;
+    line-height:32px;
+    background-color:#dae7e3;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    }
+
+.acco-b .acco-link .ui-icon-triangle-1-e {
+    display:block;
+    float:left;
+    width:5px;
+    height:9px;
+    margin:11px 9px 0 0;
+    background:url(../imgs/hgtv_ui_207.png) no-repeat -519px -502px;
+    }
+
+.acco-b .acco-link h5 {
+    height:32px;
+    font-weight:bold;
+    color:#386cb4;
+    margin-left:10px;
+    }
+
+.acco-b .acco-link.ui-state-active {
+    background-color:#fff;
+    border-bottom-right-radius:0;
+    -moz-border-radius-bottomright:0;
+    -webkit-border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+    -moz-border-radius-bottomleft:0;
+    -webkit-border-bottom-left-radius:0;
+    }
+
+.acco-b .acco-link .ui-icon-triangle-1-s {
+    display:block;
+    float:left;
+    width:9px;
+    height:5px;
+    margin:14px 5px 0 0;
+    background:url(../imgs/hgtv_ui_207.png) no-repeat -524px -502px;
+    }
+
+.acco-b .acco-link.ui-state-active h5 {
+    color:#ef4141;
+    }
+
+.acco-b .acco-bd.ui-accordion-content-active {
+    background-color:#fff;
+    padding-bottom:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-left-radius:4px;
+    -moz-border-radius-bottomleft:4px;
+    -webkit-border-bottom-left-radius:4px;
+    }
+
+.acco-b .acco-bd .acco-content {
+    height:148px;
+    overflow:hidden;
+    }
+
+.acco-b .acco-bd.ui-accordion-content-active .acco-content {
+    overflow:auto;
+    position:relative;
+    }
+
+.acco-b .acco-bd .acco-content ul {
+    position:relative;
+    }
+
+.acco-b li {
+    margin-bottom:14px;
+    *position:relative;
+    *zoom:1;
+    }
+
+.acco-b li.last {
+    margin-bottom:0;
+    }
+
+.acco-b li .button-nav-sm {
+    margin-bottom:1px;
+    padding:7px 8px 0 8px;
+    }
+
+/* .acco-b li .list { width: 289px; *max-width: 285px; margin: 0 8px; } */
+.acco-b li .list {
+    margin:0 8px;
+    }
+
+.acco-b li .list li {
+    background-color:#fff;
+    margin-bottom:1px;
+    padding:2px 0 2px 11px;
+    background-position:0 9px;
+    }
+
+.acco-b li .list li a {
+    display:block;
+    }
+
+.acco-b li .list-photo li {
+    height:75px;
+    margin:0;
+    padding:4px 6px 4px 3px;
+    line-height:18px;
+    vertical-align:middle;
+    }
+
+.acco-b li .list-photo img {
+    float:left;
+    vertical-align:middle;
+    }
+
+.acco-b li .list-photo small {
+    color:#666;
+    white-space:nowrap;
+    margin-left:3px;
+    }
+
+.acco-b li .list-photo span {
+    display:block;
+    margin:14px 0 0 108px;
+    width:188px;
+    *margin-top:-60px;
+    }
+
+.acco-b li .list-photo span a:hover {
+    text-decoration:underline;
+    }
+
+/* acco-res (Resources in hg-we and hg-w) */
+#hg-w .acco-res {
+    width:602px;
+    }
+
+#hg-w #hg-we .acco-res, #hg-w #hg-vid-we .acco-res {
+    width:406px;
+    }
+
+#hg-w #hg-art-we .acco-res {
+    width:406px; /*float:right;*/
+    }
+
+.acco-res .acco-link {
+    height:29px;
+    padding-left:20px;
+    line-height:28px;
+    color:#fff;
+    font-family:"Trebuchet MS";
+    background:#fff url(../imgs/ui.png) no-repeat left -264px;
+    }
+
+.acco-res .acco-link h5 {
+    height:28px;
+    padding-top:1px;
+    font-size:93%;
+    font-weight:bold;
+    background:#fff url(../imgs/ui.png) no-repeat right -264px;
+    }
+
+.acco-res .ui-state-active {
+    margin-right:0;
+    padding-left:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -812px 0;
+    }
+
+#hg-w .acco-res .ui-state-active  .acco-link {
+    width:592px;
+    }
+
+#hg-w #hg-we .acco-res .ui-state-active  .acco-link, #hg-w #hg-vid-we .acco-res .selected .acco-link, #hg-w #hg-art-we .acco-res .selected .acco-link {
+    width:396px;
+    }
+
+.acco-res .ui-state-active  em {
+    float:left;
+    display:block;
+    width:9px;
+    height:5px;
+    margin-top:12px;
+    padding-right:6px;
+    background:transparent url(../imgs/ui.png) no-repeat -501px -498px;
+    _font-size:0;
+    }
+
+.acco-res .ui-state-active  h5 {
+    color:#333;
+    background:none;
+    }
+
+.acco-res .acco-bd {
+    padding:0 6px;
+    }
+
+/*.acco-res .acco-bd .acco-content { height: 174px; padding: 6px 8px; background-color: #fff; }*/
+.acco-res li {
+    margin-bottom:14px;
+    }
+
+.acco-res li .ui-state-active {
+    padding-bottom:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -812px top;
+    }
+
+.acco-res li .ui-accordion-content-active {
+    background:#fff url(../imgs/sp-boxBorders-acc.png) no-repeat center bottom;
+    }
+
+/*.acco-res li.last { margin-bottom: 0; }*/
+.acco-res .open-only {
+    display:none;
+    }
+
+.acco-res .selected .open-only {
+    display:block;
+    float:right;
+    margin:1px 7px 0 0;
+    text-transform:none;
+    }
+
+.acco-res .selected .open-only a {
+    }
+
+#resources-w {
+    margin:0 14px 21px;
+    }
+
+#hg-we .acco-res .selected .acco-link, #hg-vid-we .acco-res .selected .acco-link, #hg-art-we .acco-res .selected .acco-link {
+    background-position:0 0;
+    }
+
+#hg-we .acco-res li.selected, #hg-vid-we .acco-res li.selected, #hg-art-we .acco-res li.selected {
+    background-position:-406px bottom;
+    }
+
+/* acco-round (Episode Finder hg-we) */
+.acco-round li {
+    margin-bottom:7px;
+    padding-bottom:8px;
+    background:#f0f0f0 url(../imgs/sp-cornerMasks.png) no-repeat bottom left;
+    _background-image:none;
+    }
+
+.acco-round .acco-link {
+    width:375px;
+    height:15px;
+    padding:9px 10px 0 8px;
+    line-height:15px;
+    color:#332720;
+    background:#f0f0f0 url(../imgs/sp-cornerMasks.png) no-repeat 0 0;
+    _background-image:none;
+    }
+
+.acco-round .acco-link h5 {
+    height:15px;
+    font-size:100%;
+    color:#2e74b0;
+    overflow:hidden;
+    }
+
+.acco-round .acco-link h5:hover {
+    text-decoration:underline;
+    }
+
+.acco-round .acco-link span {
+    float:right;
+    margin-left:10px;
+    }
+
+.acco-round .acco-link em {
+    float:left;
+    display:block;
+    width:9px;
+    height:9px;
+    margin:2px 4px 0 0;
+    background:transparent url(../imgs/ui.png) no-repeat -474px -498px;
+    _font-size:0;
+    }
+
+.acco-round .acco-link.ui-state-active em {
+    width:9px;
+    height:5px;
+    margin:4px 4px 0 0;
+    background-position:-501px -498px;
+    }
+
+.acco-round .acco-bd {
+    padding:0 7px;
+    background-color:#f0f0f0;
+    }
+
+.acco-round li.selected {
+    background-color:#e1efed;
+    }
+
+.acco-round .selected .acco-link {
+    height:auto;
+    padding-left:7px;
+    background-color:#e1efed;
+    }
+
+.acco-round .selected .acco-link h5 {
+    height:auto;
+    color:#d72d82;
+    overflow:visible;
+    *float:left;
+    }
+
+.acco-round .selected .acco-link em {
+    width:9px;
+    height:5px;
+    margin:4px 4px 0 0;
+    background-position:-501px -498px;
+    }
+
+.acco-round .selected .acco-bd {
+    background-color:#e1efed;
+    }
+
+.acco-crsl .jcarousel-container {
+    width:165px;
+    padding:8px 0 0;
+    }
+
+.acco-crsl .jcarousel-clip-horizontal {
+    width:165px;
+    margin-top:14px;
+    }
+
+.acco-crsl .jcarousel-item {
+    text-align:center;
+    }
+
+.acco-crsl li {
+    float:left;
+    width:165px;
+    }
+
+.acco-crsl li img {
+    display:block;
+    width:120px;
+    margin:0 auto 7px;
+    }
+
+.acco-crsl li p {
+    text-align:left;
+    line-height:1.38;
+    }
+
+.acco-crsl li p.title a {
+    color:#d72d82;
+    }
+
+.acco-crsl .jcarousel-next-horizontal {
+    position:absolute;
+    top:50px;
+    right:0;
+    }
+
+.acco-crsl .jcarousel-prev-horizontal {
+    position:absolute;
+    top:50px;
+    left:0;
+    }
+
+.acco-crsl .jcarousel-pageimg {
+    position:absolute;
+    top:0;
+    height:8px;
+    color:#999;
+    font-size:77%;
+    width:165px;
+    }
+
+.acco-crsl .jcarousel-pagetext {
+    position:absolute;
+    top:0;
+    color:#999;
+    font-size:77%;
+    width:165px;
+    }
+
+.acco-crsl p.view-more {
+    margin-top:7px;
+    font-weight:bold;
+    }
+
+/* Rating */
+.acco-crsl .rating span {
+    margin:6px auto;
+    display:block;
+    text-indent:-9999px;
+    height:13px;
+    width:75px;
+    background:url(../imgs/review_stars.png) no-repeat 0px 0px;
+    _background-image:url(../imgs/ie/review_stars_gray_bg.png);
+    }
+
+.acco-crsl .rating .one {
+    background-position:-61px 0px;
+    }
+
+.acco-crsl .rating .two {
+    background-position:-46px 0px;
+    }
+
+.acco-crsl .rating .three {
+    background-position:-31px 0px;
+    }
+
+.acco-crsl .rating .four {
+    background-position:-15px 0px;
+    }
+
+.acco-crsl .rating .five {
+    background-position:0px 0px;
+    }

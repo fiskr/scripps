@@ -1,0 +1,130 @@
+108491
+,108604
+,108580
+,107296
+,107014
+,107282
+,107295
+,107017
+
+ls 0,,TEXT-DETAIL_HGTV_45605__107014_TEXT-DETAIL_no_,00.html
+ls 0,,TEXT-DETAIL_HGTV_45605__107282_TEXT-DETAIL_no_,00.html
+ls 0,,TEXT-DETAIL_HGTV_45605__108491_TEXT-DETAIL_no_,00.html
+ls 0,,TEXT-DETAIL_HGTV_45605__108580_TEXT-DETAIL_no_,00.html
+ls 0,,TEXT-DETAIL_HGTV_45605__108604_TEXT-DETAIL_no_,00.html
+ls 0,,ARTICLE-DETAIL_HGTV_45605__6071815_ARTICLE-DETAIL_no_,00.html
+ls 0,,ARTICLE-DETAIL_HGTV_45605__6071817_ARTICLE-DETAIL_no_,00.html
+ls 0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_,00.html
+
+
+
+
+rm 0,,TEXT-DETAIL_HGTV_45605__107017_TEXT-DETAIL_no_,00.html
+
+
+6071815 Article
+
+http://vgn3.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-drew/pictures/index.html
+
+0,,ARTICLE-DETAIL_HGTV_45605__6071815_ARTICLE-DETAIL_no_,00.html
+
+http://vgn3.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-jonathan/pictures/index.html
+
+6071817
+
+0,,ARTICLE-DETAIL_HGTV_45605__6071817_ARTICLE-DETAIL_no_,00.html
+
+
+
+http://vgn3.hgtv.com/hgtv-brother-vs-brother/videos/index.html
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_,00.html
+
+
+http://vgn4.hgtv.com/brother-vs-brother-season-2-episodes/package/index.html
+http://vgn4.hgtv.com/brother-vs-brother-fan-central/package/index.html
+http://vgn4.hgtv.com/brother-vs-brother-2014-toddler-vs-toddler-webisode-series/package/index.html
+http://vgn4.hgtv.com/brother-vs-brother-episodes/package/index.html
+http://vgn4.hgtv.com/brother-vs-brother-photos/package/index.html
+
+rm 0,,TEXT-DETAIL_HGTV_45605__107014_TEXT-DETAIL_no_,00.html
+rm 0,,TEXT-DETAIL_HGTV_45605__107282_TEXT-DETAIL_no_,00.html
+rm 0,,TEXT-DETAIL_HGTV_45605__108491_TEXT-DETAIL_no_,00.html
+rm 0,,TEXT-DETAIL_HGTV_45605__108580_TEXT-DETAIL_no_,00.html
+rm 0,,TEXT-DETAIL_HGTV_45605__108604_TEXT-DETAIL_no_,00.html
+
+http://vgn4.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-drew/pictures/index.html
+http://vgn4.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-jonathan/pictures/index.html
+http://vgn4.hgtv.com/hgtv-brother-vs-brother/videos/index.html
+
+rm 0,,ARTICLE-DETAIL_HGTV_45605__6071815_ARTICLE-DETAIL_no_,00.html
+rm 0,,ARTICLE-DETAIL_HGTV_45605__6071817_ARTICLE-DETAIL_no_,00.html
+rm 0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_,00.html
+
+http://vgn3.hgtv.com/brother-vs-brother/craftsman-double-trouble/index.html
+
+http://vgn4.hgtv.com/brother-vs-brother/craftsman-double-trouble/index.html
+
+0,,EPISODE-DETAIL_HGTV_32663__93099_EPISODE-DETAIL_no_,00.html
+
+
+akamai
+`````````
+http://www.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-drew/pictures/index.html
+http://www.hgtv.com/brother-vs-brother/brother-vs-brother-season-2-meet-team-jonathan/pictures/index.html
+http://www.hgtv.com/brother-vs-brother-photos/package/index.html
+
+http://www.hgtv.com/brother-vs-brother/season-2-ranch-rematch/index.html
+
+
+
+http://vgn3.hgtv.com/brother-vs-brother/season-2-ranch-rematch/index.html
+
+93097
+
+0,,EPISODE-DETAIL_HGTV_32663__93097_EPISODE-DETAIL_no_,00.html
+
+
+http://vgn3.hgtv.com/brother-vs-brother/cottage-shenanigans/index.html + A
+
+0,,EPISODE-DETAIL_HGTV_32663__93098_EPISODE-DETAIL_no_,00.html
+
+
+http://vgn3.hgtv.com/brother-vs-brother/craftsman-double-trouble/index.html + A
+
+0,,EPISODE-DETAIL_HGTV_32663__93099_EPISODE-DETAIL_no_,00.html
+
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_83384-128648,00.html + A
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_83384-128648,00.html
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_83382-128642,00.html + A
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_83382-128642,00.html
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_78444-119114,00.html
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_78444-119114,00.html
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_83747-130009,00.html
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_83747-130009,00.html
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_83721-129844,00.html
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_83721-129844,00.html
+
+
+http://vgn3.hgtv.com/hgtv/video/player/0,1000149,HGTV_32796_15241_83682-129761,00.html
+
+
+0,,PLAYER-DETAIL_HGTV_32796__15241_PLAYER-DETAIL_no_83682-129761,00.html
+
+
+

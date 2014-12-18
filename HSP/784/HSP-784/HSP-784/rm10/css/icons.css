@@ -1,0 +1,65 @@
+/* for positioning icons */
+.vid-btn, .gal-btn, .enl-btn {position:relative;float:left;display:block;/*overflow:hidden*/} 
+.strip .vid-btn, .strip .gal-btn, .strip .enl-btn {float:left\9;} /* for IE7-8 only */
+
+.vid-btn .ico,
+.gal-btn .ico,
+.enl-btn .ico {background:rgba(0, 0, 0, 0.85) url('../imgs/se/sprite.png') no-repeat 7px -1991px;position:absolute;display:block;cursor:pointer;height:28px;width:28px;text-indent:-999em;}
+
+/* ie7/8 fix */
+.gal-btn .ico {*background-color:#000; *background-image:url('../imgs/se/sprite.png');}
+.gal-btn .ico {background-color:#000\0/; background-image:url('../imgs/se/sprite.png')\0/;}
+
+.gal-btn .ico {background-position:5px -2096px;top:0;right:0;}
+.vid-btn .ico, .channel.videos .vid-btn .ico {background:transparent url('../imgs/se/sprite.png') no-repeat 0 -2959px;width:36px;height:36px;right:3px;bottom:11px;opacity:0.85;}
+.vid-btn:hover .ico {opacity:1;}
+.videos .vid-btn .ico {right:9px;}
+.strip .vid-btn .ico {top:50px;}
+.channel.videos .vid-btn .ico {bottom:4px;right:10px;}
+
+.two-across .vid-btn .ico,
+.three-across .vid-btn .ico { right:17px; bottom:3px;}
+
+.enl-btn .ico {top:0;right:0;}
+.row .ico {top:13px;right:13px;}
+
+/* ico for 160x120 */
+.w160 .vid-btn .ico, .three-across .vid-btn .ico {background:transparent url('../imgs/se/sprite.png') no-repeat 0 -7556px;width:36px;height:35px;bottom:14px;right:7px;}
+
+/* ico for 266x200 and 400x300 */
+.w266 .vid-btn .ico, .w400 .vid-btn .ico {background:transparent url('../imgs/se/sprite.png') no-repeat 0 -2857px; width: 61px; height: 62px;}
+.w266 .vid-btn .ico {left:102px;bottom:70px;}
+.w400 .vid-btn .ico {left:170px;bottom:119px;}
+
+/* add video icon to lines, inline */
+.video-link .video-icon{float:none;width:auto;cursor:pointer;display:inline;*display:inline-block;color:inherit;padding:0 24px 0 0;margin:0;font-size:100%;background:transparent url('../imgs/se/sprite.png') no-repeat right -6469px;}
+.video-link:hover .video-icon{background-position:right -6521px;}
+
+/* adds image pile within .wrap only */
+.wrap.pile {padding:11px;margin-left:-11px;background:url('../imgs/se/sprite.png') no-repeat 0 -7651px;}
+.wrap.right.pile {margin-left:0;}
+.wrap.pile cite {margin-top:10px;float:left;}
+
+/* positions em tag to display text within icon on hover */
+.gal-btn:hover,
+.vid-btn:hover,
+.enl-btn:hover,
+.enlarger .enl-btn:hover {text-decoration:none;}
+
+.gal-btn .ico em, .enl-btn .ico em, .enlarger .enl-btn .ico em {display:none;}
+
+.enl-btn:hover .ico, .enlarger .enl-btn:hover .ico {width:114px;text-decoration:none;background-position:93px -2096px;}
+.enl-btn:hover .ico, .enlarger .enl-btn:hover .ico {background-position:93px -1991px;}
+
+.gal-btn:hover .ico {width:108px;text-decoration:none;background-position:85px -2096px;}
+
+.gal-btn:hover .ico em, .enl-btn:hover .ico em,
+.enlarger .enl-btn:hover .ico em, 
+.wrap.active .enl-btn .ico em {display:block;text-indent:0;font-style:normal;float:left;color:#FFF;font-size:.865em;padding:4px 0 0 7px;}
+
+
+.wrap.active .enl-btn .ico, .enlarger li.active .enl-btn .ico {background-position:7px -2043px;}
+.wrap.active .enl-btn .ico em, .enlarger li.active .enl-btn .ico em {display:none;}
+
+.wrap.active:hover .enl-btn .ico,.enlarger li.active:hover .enl-btn .ico {width:114px;background-position:93px -2043px;}
+.wrap.active:hover .enl-btn .ico em,.enlarger li.active:hover .enl-btn .ico em {display:block;}

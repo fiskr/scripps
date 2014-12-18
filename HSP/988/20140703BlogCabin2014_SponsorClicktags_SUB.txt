@@ -1,0 +1,51 @@
+Sub Pages (ENTER, THANKS, RULES) - Logo ONLY – The same clicktag will be used on BOTH DIY and HGRM EXCEPT for Window World. All clicktags need to open in a new window.  
+DISH
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104706&Redirect=http:%2f%2fwww.dish.com
+----------------------------------------------------------------------------------------------------------------------------------------
+Lumber Liquidators
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104707&Redirect=http:%2f%2fwww.lumberliquidators.com
+----------------------------------------------------------------------------------------------------------------------------------------
+Sherwin-Williams
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104708&Redirect=http:%2f%2fwww.sherwinwilliams.com/hgtvhome
+----------------------------------------------------------------------------------------------------------------------------------------
+Mitsubishi
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104709&Redirect=http:%2f%2fwww.mitsubishicomfort.com
+----------------------------------------------------------------------------------------------------------------------------------------
+Quicken Loans
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104710&Redirect=http:%2f%2fwww.quickenloans.com/online-mortgage-application/apply-now?qls=HGT_qlhgtv14.mortgage14
+----------------------------------------------------------------------------------------------------------------------------------------
+Cabinets To Go
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104711&Redirect=http:%2f%2fCabinetsToGo.com
+----------------------------------------------------------------------------------------------------------------------------------------
+
+GE Appliances
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104712&Redirect=http:%2f%2fgeappliances.com
+----------------------------------------------------------------------------------------------------------------------------------------
+Window World 
+DIY
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104713&Redirect=http:%2f%2fbit.ly/1kU2exC
+Remodels
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104721&Redirect=http:%2f%2fbit.ly/1hKgVTu
+----------------------------------------------------------------------------------------------------------------------------------------
+Easy Closets
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104714&Redirect=http:%2f%2fgo.easyclosets.com/l/22862/2014-05-13/3vn23
+----------------------------------------------------------------------------------------------------------------------------------------
+James Hardie
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104715&Redirect=http:%2f%2fJamesHardie.com
+----------------------------------------------------------------------------------------------------------------------------------------
+National Gypsum
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104716&Redirect=http:%2f%2fAskForPurple.com
+----------------------------------------------------------------------------------------------------------------------------------------
+PetSafe
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104717&Redirect=http:%2f%2fstore.petsafe.net
+----------------------------------------------------------------------------------------------------------------------------------------
+Budget Blinds
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104718&Redirect=http:%2f%2fwww.budgetblindsblogcabin2014.com
+----------------------------------------------------------------------------------------------------------------------------------------
+Kohler Generators
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104719&Redirect=http:%2f%2fwww.kohlergenerators.com/home-generators/generators-101/index.html
+----------------------------------------------------------------------------------------------------------------------------------------
+Kohler Plumbing
+http://adsremote.scrippsnetworks.com/event.ng/Type=click&FlightID=&AdID=&TargetID=&Values=2104720&Redirect=http:%2f%2fKOHLER.com
+
+

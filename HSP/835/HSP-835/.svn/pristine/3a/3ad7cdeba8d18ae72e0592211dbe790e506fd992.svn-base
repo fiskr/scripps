@@ -1,0 +1,35 @@
+.newsletter { margin: 0 14px; }
+
+.newsletter h2 { font-size: 161.6%; font-weight: bold; }
+
+.newsletter .choose { width: 565px; }
+/*.newsletter .choose .check-box label { font-weight: bold; }*/
+.newsletter .optional input { vertical-align: middle; }
+.newsletter .optional #gender-female { margin-left: 10px; }
+.newsletter .gender { display: block; }
+.newsletter .newsletter-error { display: none; }
+.newsletter .note { color: #671104; font-style: normal; }
+/*	.contact h2 { font-size: 161.6%; font-weight: bold; }*/
+.newsletter.success p { margin-bottom: 1em; }
+/*.newsletter .submit button { width: 90px; }*/
+
+.newsletter .more-newsletters .bd { display: block; }
+.newsletter .more-newsletters .bd .note { padding-top: 7px; color: #333; }
+.newsletter .more-newsletters h4 a { display: block; padding: 2px 14px; font-weight: bold; background: transparent url(../imgs/se/toggle-closed.gif) no-repeat 0 9px; cursor: pointer; }
+.newsletter .more-newsletters h4 a.active { background: transparent url(../imgs/se/toggle-open.gif) no-repeat 0 9px; }
+.newsletter .more-newsletters .check-box p { color: #909090; font-size: 85%; line-height: 18px; }
+.newsletter .more-newsletters ul { width: auto; }
+.newsletter .more-newsletters li { margin-bottom: 11px; border-bottom: 1px dotted #ddd; }
+.newsletter .more-newsletters li.last { border-bottom: 0; }
+
+.newsletter .logos { margin-left: 25px; }
+.newsletter .logos a { float: left; width: 84px; height: 44px; margin-right: 14px; background: url('../imgs/se/logos.png') no-repeat 0 0; text-indent: -999em; }
+.newsletter .logos .fn { width: 50px; background-position: -98px 0; }
+.newsletter .logos .fl { background-position: -161px 0; }
+.newsletter .logos .gac { background-position: -259px 0; }
+.newsletter .logos .rz { background-position: -357px 0; }
+.newsletter .logos .hgpro { background-position: -455px 0; }
+
+.newsletter .form .submit button.subscribe {width:88px;}
+.newsletter .form .submit button.unsubscribe {width:104px;}
+.newsletter .form .submit button.change-email {width:167px;}

@@ -1,0 +1,62 @@
+#hg-w.article-deprecated {
+    padding:0 14px;
+    width:600px;
+    }
+
+#hg-w.article-deprecated h1 {
+    margin:0 0 14px;
+    }
+
+#hg-w.article-deprecated li {
+    list-style-position:inside;
+    list-style-type:disc;
+    }
+
+#hg-w.article-deprecated ol li {
+    list-style-position:inside;
+    list-style-type:decimal;
+    }
+
+.articleGroupWrapper {
+    margin-bottom:28px;
+    clear:both;
+    }
+
+.articleGroupWrapper p {
+    padding:7px 0;
+    clear:none;
+    }
+
+#hg-w.article-deprecated blockquote {
+    padding:0;
+    margin:0;
+    }
+
+.phototext {
+    font-size:11px;
+    text-align:left;
+    width:160px;
+    line-height:13px;
+    }
+
+.article-detail .articleTwoBodyColumns .bodytext {
+    width:24%;
+    padding-right:14px;
+    }
+
+.articleGroupWrapper .resourcestitle {
+    font-size:138.5%;
+    line-height:1;
+    color:#000;
+    font-family:"Trebuchet MS", sans-serif;
+    margin-bottom:14px;
+    }
+
+table.deprecated-article {
+    width:590px;
+    margin:0 auto;
+    }
+
+#article-deprecated-print {
+    margin:25px auto;
+    }

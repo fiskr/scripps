@@ -1,0 +1,462 @@
+#uber:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+#uber .lead {line-height: inherit; padding-top: 14px; padding-right: 14px;}
+#uber .header h1 {margin-left: 0;}
+#uber .header h1 span {display: none; }
+
+#uber .cap {clear: both;}
+#uber .feature .in.cap {display:none;}
+#uber .feature p {clear: left;}
+
+#uber .interlinking h4 {
+    font-weight: normal;
+    padding-bottom: 4px;
+
+}
+
+#uber .pod p + p {
+    padding-top: 16px;
+}
+
+#uber .pod .cap {
+    padding-top: 4px;
+}
+
+#uber .pod .pile .cap {
+    padding-top: 0;
+}
+
+#uber .sni-w .pod.enlarger{
+    border-top:1px solid #DAE7E3;
+    border-bottom:1px solid #DAE7E3;
+    margin: 22px 14px 16px 14px;
+    padding: 14px 0;
+}
+
+#uber .sni-e{width:349px;padding-bottom:21px;float:left;margin-left:-1px;border-left:1px solid #E6E6E6;}
+/*#uber footer{float:left;width:100%;}*/
+
+#uber .breadcrumb {
+    border-bottom: 1px solid #E1E6E5;
+    padding: 0px 0 10px 14px;    
+}
+
+#uber #bigbox {background-color: #fff;}
+
+#uber .article-detail .sni-w, #uber .article-detail .sni-e {margin-top:14px;}
+
+.article-detail  #uber h1{
+    color: #444;
+}
+
+#uber .sni-w {
+    border-right: 1px solid #E6E6E6;
+    float: left;
+    padding:14px 0px 11px 0; /* was: 14px 8px 11px 21px; top right bottom left*/ 
+    width: 647px;
+}
+
+#uber .lead .bd {padding-bottom: 21px;}
+#uber .sni-w .pod, #uber .sni-w .lead {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.w160 {width:160px;}
+.w120 {width:120px;}
+.w266 {width:266px;}
+.w616 {width:616px;}
+.w462 {width: 462px;}
+#uber .w462 {margin-left: 76px;}
+#site-wrapper .w616 img {border: none;}
+#uber .pod .wrap.pile {background:url('../imgs/uber-sprite.png') no-repeat 6px -905px; padding:6px 20px 11px 11px;margin-left:-11px;}
+#uber  .wrap.right {float: right; padding-left:20px;}
+#uber .wrap.active {padding-bottom: 8px; width:auto;float:none; padding-left: 0;} /*to prevent large image spilling out of frame*/
+#uber .pod.enlarger p {width: 93%; clear:both; padding: 21px 7px 7px 7px;}
+#uber  .wrap {float: left;  padding-right:20px;}
+.article-detail #uber .feature { /*heading region*/
+	width:100%;
+    float: none;
+}
+#uber .sni-w .pod.next-up .bd{
+	background-color: #f1f6f3;
+	margin: 14px 14px 0px 0px;
+	padding: 14px;
+}
+
+#uber .sni-w .pod.feature .bd img{
+	float: right;
+}
+
+#uber .sni-w .pod.feature .bd h4.in{
+	font-size: 21px;
+    line-height: 26px;
+    padding-bottom: 9px;
+}
+#uber  {
+	background-color: white;
+	border-radius: 4px;
+	width: 1012px;
+}
+#uber .subhead {
+	font-weight: normal;
+    width: 620px;
+}
+
+#uber .pod h4, #uber .lead h4  {
+	font-size: 21px;
+	padding-top: 16px; /*should this be on pod? */
+	line-height: 23px;
+	margin-bottom: 6px;
+}
+
+aside .cartridge h5 {
+	font-weight: bold;
+	padding-top: 4px; /*should this be on pod? */
+    padding-bottom: 4px;
+}
+
+#uber .enlarger h5{
+    text-align: center; margin-bottom: 5px;
+}
+
+#uber .enlarger .cap {
+    width: 270px;
+}
+#uber .enlarger .active .cap {
+    width: 75%;
+}
+#uber .wrap.right.pile {margin-left:0;}
+#uber .wrap.pile cite {margin-top:10px;float:left;}
+
+/* positions em tag to display text within icon on hover */
+#uber .vid-btn .ico {
+    background: url("http://www.sndimg.com/webhgrm/rm10/imgs/se/sprite.png") no-repeat scroll 7px -1991px;
+    background-color: rgba(0,0,0,.85);
+    background-color: #000\9;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    position: absolute;
+    text-indent: -999em;
+    width: 28px;
+    right: 3px;
+    top: 3px;
+}
+#uber .gal-btn .ico {
+    background: url("../imgs/uber-sprite.png") no-repeat scroll 4px -357px;
+    background-color: rgba(0,0,0,.85);
+    background-color: #000\9;
+    width: 24px; height: 24px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+} 
+#uber .gal-btn:hover .ico  {width:98px;text-decoration:none;background-position:78px -357px;}
+#uber .enl-btn .ico {
+ background: url("../imgs/hgtv_photogallery_sprite.png") no-repeat scroll -576px -64px;
+    background-color: rgba(0,0,0,.85);
+    background-color: #000\9;
+    cursor: pointer;
+    display: block;
+    height: 24px;
+    position: absolute;
+    text-indent: -999em;
+    width: 24px;
+    right: 3px;
+    top: 3px;   
+}
+#uber .gal-btn:hover,
+#uber .vid-btn:hover,
+#uber .enl-btn:hover,
+#uber .enlarger .enl-btn:hover {text-decoration:none;}
+
+#uber .gal-btn .ico em, #uber .enl-btn .ico em, #uber .enlarger .enl-btn .ico em {display:none;}
+
+#uber .enl-btn:hover .ico, #uber .enlarger .enl-btn:hover .ico {width:110px;text-decoration:none;background-position:-490px -64px;}
+
+
+#uber .gal-btn:hover .ico em, #uber .enl-btn:hover .ico em,
+#uber .enlarger .enl-btn:hover .ico em, 
+#uber .gal-btn:hover .ico em, #uber .wrap.active .enl-btn .ico em {display:block;text-indent:0;font-style:normal;float:left;color:#FFF;font-size:.865em;padding:2px 0 0 7px;}
+
+
+/*shrink button*/
+#uber .wrap.active .enl-btn .ico, #uber .enlarger li.active .enl-btn .ico {background-position:-576px -86px;}
+#uber .wrap.active .enl-btn .ico em, #uber .enlarger li.active .enl-btn .ico em {display:none;}
+
+#uber .wrap.active:hover .enl-btn .ico, #uber .enlarger li.active:hover .enl-btn .ico {width:114px;background-position:-486px -86px;}
+#uber .wrap.active:hover .enl-btn .ico em, #uber .enlarger li.active:hover .enl-btn .ico em {display:block;}
+
+
+
+#uber .gal-btn, #uber .vid-btn, #uber .enl-btn {
+	display: block;
+    float: left;
+    position: relative;
+}
+
+#uber .strip ul li {
+    margin-right: 14px;
+}
+
+#uber .pod .hr {
+  margin-bottom: 3px;
+}
+
+
+#uber .enlarger .bd.row{
+    padding-left: 10px;
+}
+
+#uber .enlarger .bd.row li {
+    float: left;
+    padding-right: 39px;
+    padding-left:7px !important; /* makes the side-by-side panels go back to correct position after open/close */
+}
+#uber .enlarger .bd.row li.active {
+    margin-left: -19px;
+}
+#uber .bd.row li.last {
+    padding-right: 0px;
+}
+
+
+#uber .strip .cta {
+    
+    border: 1px solid #A7BFA9;
+    float: left;
+    height: 90px;
+    margin: 0;
+    width: 120px;
+    padding: 2px;
+}
+
+#uber .strip .cta:hover {
+    border: 1px solid #ef4141;
+}
+
+#uber .strip .cta a {
+    color: #666666;
+    background-color: #f1f6f2;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    line-height: 21px;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#uber .strip .cta a span {
+    color: #376bb6;
+    display: block;
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    padding: 3px 0;
+}
+
+#uber .strip h5, #uber .strip ul, #uber .strip cite {
+    padding-left: 38px;
+}
+
+#uber .strip h5 {
+    font-weight: bold;
+    padding-top: 11px;
+    padding-bottom: 7px;
+}
+
+#uber .strip cite {
+    padding-top: 7px;
+    width: 85%;
+    color: #555;
+}
+
+#uber .enl-btn .ico {
+    right: 3px;
+    top: 3px;
+}
+
+
+
+#uber .strip .vid-btn .ico {
+    top: 50px;
+}
+#uber .vid-btn .ico, #uber .channel.videos .vid-btn .ico {
+    background: url("http://www.sndimg.com/webhgrm/rm10/imgs/se/sprite.png") no-repeat scroll 0 -2959px transparent;
+    bottom: 11px;
+    height: 36px;
+    opacity: 0.85;
+    right: 3px;
+    width: 36px;
+}
+
+#uber .feature.next-up {
+    width: 639px;
+}
+
+#uber .next-up img {
+    margin-top: 8px;
+    width: 120px;
+    height: 90px;
+}
+
+#uber .next-up p {
+    line-height: 18px;
+}
+
+#uber .next-up .wrap.right {
+    padding-right: 0;
+}
+
+#uber .recommend-top {
+  margin-top: 27px;
+}
+
+
+/* cartridges */
+ .lead aside p {margin-bottom: 0;} /* over-ride extra spacing added in lead area */
+  aside {float:right;margin-left:35px;margin-top: 14px;padding-bottom:11px; padding-right: 7px;}
+   
+ 
+
+
+ aside.pros, aside.clip, aside.about,aside.tip {border-left: 1px dotted #cccccc; padding-bottom: 0; margin-bottom: 14px;}
+ aside.clip.about { padding: 0; margin:0 0 14px 35px; border: none;}
+ aside.clip.about > span {background-position: 0 -1108px; width: 21px; height: 19px; margin-top: 13px;}
+      aside.about ul.list li {background: none; padding-left: 8px; font-weight: bold;}
+ .aside-about-bottom {background:url('../imgs/uber-sprite.png'); background-position: 0 -1194px; height: 8px;}
+ aside .cartridge {width:230px;}
+ aside .cartridge .bd {padding:0 14px 0 42px;}
+ aside.clip.about .cartridge .bd {background-color: #f1f6f2; padding-top: 7px; padding-bottom: 14px; padding-left: 40px;}
+ aside .cartridge h5, 
+ aside .cartridge blockquote {position:relative;}
+ aside .cartrdige h5 {margin-bottom: 3px;}
+ aside .cartridge blockquote {padding-left:2px;color:#444; line-height: 23px; font-size: 18px;}
+ aside .cartridge p {font-size:.846153846em;line-height:1.272727273em; padding-bottom: 14px;}
+ .pod aside .cartridge  p { margin-bottom: 0px;} /* to cancel out general rule here, but not elsewhere*/
+ aside span {position:absolute;background:url('../imgs/se/sprite.png');}
+ aside.pros  span.pro {background:url('../imgs/uber-sprite.png') 0 0; width: 17px; height: 19px;left:-30px;top: 2px; margin:0;}
+ aside.pros  span.con {background:url('../imgs/uber-sprite.png'); background-position: 0 -61px; width: 17px; height: 19px;
+    left:-30px;top:7px;}
+
+aside.quote  
+  {
+    background: #fff; border-bottom: 1px solid #DAE7E3; border-top: 1px solid #DAE7E3;
+    overflow: visible;
+    margin-bottom: 8px;
+    margin-right: -14px;
+  }
+ 
+
+ aside.quote .cartridge .bd {padding-left:0; padding-bottom: 7px;}
+ aside.quote .cartridge .bd div {margin-left:-21px;padding-left:23px;}
+  aside.quote .cartridge h5 {padding-top: 8px;}
+ aside.quote .cartridge blockquote span.open {
+    background:url('../imgs/uber-sprite.png');
+    background-position: 0 -122px; width: 18px; height: 17px;
+    top:0px;left:-21px;
+}
+ aside.quote .cartridge blockquote span.close {
+    background:url('../imgs/uber-sprite.png');
+    background-position: -103px -176px; width: 18px; height: 18px; 
+    position:static;padding-right:25px; margin-right:25px;}
+ aside.tip .cartridge h5 span {
+    background:url('../imgs/uber-sprite.png');
+    background-position: 0 -240px; width: 18px; height: 16px; 
+    top:6px;left:-28px;
+}
+
+ aside.clip > span {background: url('../imgs/uber-sprite.png');  background-position: 0 -298px; width: 14px; height: 22px;  margin: 5px 0 0 13px}
+ aside.clip .cartridge ul.list li {margin-left:-9px; line-height: 20px;}
+
+ aside.clip .cartridge h6 { font: normal 1.5em/1.5em Arial,sans-serif;  padding: 3px 0; }
+ aside.clip .cartridge h6 a { color: #2a76a8; }
+ aside.clip .cartridge h6 a:hover { color: #4E98D3; }
+
+ aside.clip .cartridge .phone { background-position: left -8134px; }
+ aside.clip .cartridge .url   { background-position: left -8195px; font-size: 12px; }
+ aside.clip .cartridge .url:hover  { background-position: left -8257px; }
+ aside.clip .cartridge .url a:hover {color: #4E98D3;}
+
+ aside.clip.about .cartridge {width:232px; border: 1px solid #e6e6e6; padding: 2px;}
+ aside.clip.about .cartridge h6 {text-transform: none;font-size: 21px; line-height: 28px; padding-top: 8px;}
+ aside br {display:block;}
+
+#uber .two-col {width: 50%;}
+#uber .pod ul.list li {line-height: 22px;}
+
+/*--------- inline from Blog ------- */
+
+#uberInline section.theater.inline{background-color:#303030;margin:0;width:100%;position:relative;min-height:550px;}
+#uberInline div.photo-gallery4{position:relative;width:994px;margin:0 auto 28px; font-family:Arial;}
+#uberInline .box.close.inline{width:994px;background-color:#303030;height:0;border:0;margin:0 auto}
+#uberInline .box.close.inline .hd{background-color:#303030;}
+#uberInline .box.close{position:relative;background:#000;color:#fff}
+#uberInline .box{padding:0}
+#uberInline .box.close.inline .hd{background-color:#303030;}
+#uberInline .box.close.inline .hd em{color: #fff;}
+#uberInline .pg-navigation {background-color: #303030; font-family: trebuchet ms;}
+#uberInline .showing_thumbnails .pg-photo-description, #uberInline .interstitial-show .pg-photo-description {display: none;}
+#uberInline .pg-loader {top: 260px; left: 300px;}
+#uberInline .pg-endframe{width: 406px;}
+
+
+
+#uberInline .pg-endframe{display:none;position:absolute;box-shadow:0;z-index:3;top:0;background:rgba(0,0,0,0.9);background:#000;opacity:.9;border:0;margin:28px 28px 0}
+#uberInline .pg-endframe.tabbed{top:19px}
+#uberInline .pg-endframe .recommend{margin-top:7px}
+#uberInline .pg-endframe .products{display:none;overflow:auto;margin-top:21px;height:368px}
+#uberInline .pg-endframe.tabbed .recommend{margin-top:0}
+#uberInline .pg-endframe .tabs{position:absolute;left:0;top:-37px}
+#uberInline .pg-endframe .tabs li{float:left;margin-right:7px}
+#uberInline .pg-endframe-info{display:none}
+#uberInline .pg-endframe-tools li{margin:0 0 7px 21px}
+#uberInline .pg-endframe-tools a{display:block;color:#fff;font-weight:bold;background:url('../imgs/uber-sprite.png');padding:7px 0 0 49px}
+#uberInline .pg-endframe-tools .replay,
+#uberInline .pg-endframe-tools .back{background-position:38px -3457px;padding:85px 0 0 0;text-align:center;margin:0 0 42px -14px}
+#uberInline .pg-endframe-tools .replay:hover{background-position:0px -794px}
+#uberInline .pg-endframe-tools .back{background-position:83px -3236px; padding-left: 0px; padding-top: 87px; height: 16px; top: 50px;}
+#uberInline .pg-endframe-tools .back:hover{background-position:83px -3236px}
+#uberInline .pg-endframe-tools .back span{top: 100px;}
+
+#uberInline .pg-endframe.inline .pg-endframe-tools a:hover {text-decoration: none;}
+#uberInline .pg-endframe.inline .pg-endframe-tools .replay{ background-position: 75px -687px; height: 16px;}
+#uberInline .pg-endframe.inline .pg-endframe-tools .replay:hover{background-position:75px -794px;background-repeat:no-repeat;}
+#uberInline .pg-endframe.inline .pg-endframe-tools .back{background-position:75px -473px}
+#uberInline .pg-endframe.inline .pg-endframe-tools .back:hover{background-position:75px -580px;background-repeat:no-repeat;}
+#uberInline .pg-endframe-tools .fav{background-position:0 -4388px;width:35px;height:32px}
+#uberInline .pg-endframe-tools .fav:hover{background-position:0 -4462px}
+#uberInline .pg-endframe-tools .email{background-position:0 -4535px;width:34px;height:26px}
+#uberInline .pg-endframe-tools .email:hover{background-position:0 -4603px}
+#uberInline .pg-endframe-tools .tweet a{background-position:-3px -4668px;width:42px;height:31px;padding-top:14px}
+#uberInline .pg-endframe-tools .tweet a:hover{background-position:-3px -4741px}
+#uberInline .pg-endframe-tools .facebook{margin-top:21px}
+#uberInline .pg-endframe.inline{background:0;height:300px;left:75px;top:40px}
+#uberInline .pg-endframe.inline li{float:left;width:200px;height:300px;background:rgba(0,0,0,0.9);background:#000;opacity:.9;margin:0 0 0 2px}
+#uberInline .pg-endframe.inline li a{position:relative;top:96px;left:7px}
+
+/* moves caption under ad */
+#uberInline .photo-gallery4 .pg-photo-description,
+#uberInline .photo-gallery4 .pg-endframe-info, #uberInline .photo-gallery .pg-you-might-like{float:left;margin-top:7px;width:336px}
+#uberInline div.photo-gallery4 .pg-photo-description{margin-left:25px;width:324px;}
+#uberInline div.photo-gallery4 .pg-photo-description h5{color:#FFF;font-size:21px;margin:8px 0}
+#uberInline .pg-viewport .ad-unit {padding-top: 16px;}
+#uberInline .box.close .hd span{ 
+    background:url('../imgs/uber-sprite.png') 0 -419px;
+    color: #FFFFFF;
+    height: 12px;
+    margin-left: 6px;
+    opacity: 1;
+    width: 12px;
+    text-indent: -9999px;
+}
+

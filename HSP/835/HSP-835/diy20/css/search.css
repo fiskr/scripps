@@ -1,0 +1,42 @@
+.results-title { margin: 0 14px 10px 14px; font-size: 167%; font-weight: bold; text-transform: uppercase; line-height: 1; }
+.results-sorry { margin: 0 14px 8px 14px; line-height: 1.231; }
+.results-toolbar { margin-bottom: 10px; }
+.results-toolbar .showing { float: left; font-size: 108%; font-weight: bold; text-transform: uppercase; }
+.results-toolbar .sortby { float: right; width: 180px; line-height: 24px; }
+.results-toolbar .sortby .ui-dropdown { float: right; width: 125px; margin-left: 6px; }
+.results-toolbar .sortby .ui-dropdown .fly-dt { width: 125px; }
+/*	.results-toolbar .sortby .ui-dropdown .fly-dt a span { background-color: #f6f6f6; }*/
+.results-toolbar .sortby .ui-dropdown .fly-dd { margin-left: -14px; }
+
+.project-results .results-ad .sponsored { margin-bottom: 1px; color: #999; font-size: 77%; text-align: center; }
+.project-results .results-ad ol { padding-bottom: 0; }
+.project-results .results-ad ol li { list-style: none; }
+.project-results .results-ad ol li h5 { padding-left: 0; }
+
+.filters h5 { margin-bottom: 2px; }
+.filters p.note { margin-bottom: 3px; color: #999; font-size: 85%; }
+.filters .selections { margin: 0; padding: 0 0 3px 0; border-bottom: 1px dotted #e1e1e1; }
+.filters .selections li { margin-bottom: 2px; font-size: 85%; }
+.filters .filter { margin: 0; padding: 3px 0 3px 0; border-top: 1px dotted #fff; border-bottom: 1px dotted #e1e1e1; }
+.filters .filter .list em { color: #999; font-size: 85%; font-style: normal; }
+.filters .filter .more em { color: #999; font-style: normal; }
+.filters .filter.first { border-top: 0; }
+.filters .filter.last { border-bottom: 0; }
+.filters .fly-bd h3 { margin-bottom: 0; }
+.filters .fly-dd { margin-top: 0; }
+.filters .flyout { display: none; }
+#diy-ww .filter p.more { margin-top: 1px; }
+
+#search .filters .list li a:visited { color: #176684; }
+
+.search-suggestions { margin: 0 14px 9px 14px; }
+.search-suggestions h3 { margin-bottom: 1px; font-size: 123.1%; font-weight: bold; line-height: 1.231; text-transform: uppercase; }
+.search-suggestions h4 { margin-bottom: 1px; font-weight: bold; line-height: 1.231; }
+.search-suggestions p { margin-bottom: 12px; }
+.search-suggestions .list li { line-height: 1.385; }
+
+.hot-searches { padding: 10px 14px; border: 1px solid #dfdfdf; background-color: #fff; }
+.hot-searches h4 { margin-bottom: 7px; font-size: 108%; font-weight: bold; text-transform: uppercase; line-height: 1.231; }
+.hot-searches .col1 { float: left; width: 181px; margin-right: 14px; border-right: 1px solid #ddd; }
+.hot-searches .col2 { float: right; width: 180px; }
+.hot-searches .list li { line-height: 1.38; }

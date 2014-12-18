@@ -1,0 +1,27 @@
+/* Video Library */
+.video h1.video-title {font-weight: bold; font-size: 167%; color: #241f19; text-transform: uppercase; margin-bottom: 4px; margin-left: 14px;}
+
+#video-library {margin: 0 14px;}
+
+#video-library .crsl-media {margin: -15px 0 0;}
+#video-library .crsl-media .crsl-item {margin: 0 14px;}
+#video-library .crsl-media .jcarousel-prev-horizontal {left:0;}
+#video-library .crsl-media .jcarousel-next-horizontal {right:0;}
+#video-library .crsl-media .jcarousel-clip-horizontal {width:560px;}
+#video-library .crsl-media .panel {width:560px;}
+
+#video-library li.switch {border-bottom: 1px solid #e3e3e3;}
+#video-library li.switch h4 {color: #333333; text-transform: uppercase; font-weight: bold; font-size: 100%; background: transparent url(../imgs/se/toggle-closed.gif) 0 15px no-repeat; padding: 10px 0 10px 13px; cursor: pointer;}
+#video-library li.active h4 {background: transparent url(../imgs/se/toggle-active.gif) 0 15px no-repeat;}
+
+/* This Video in - Carousel */
+#thisvideoin h3 {font-weight: bold; font-size: 100%; text-transform: uppercase; margin-bottom: 3px; color: #333;}
+#thisvideoin h5 a {color: #176684;}
+
+/* This Video in - Carousel */
+#thisvideoin-carousel {margin-bottom: 15px;}
+#thisvideoin-carousel h3 {font-weight: bold; font-size: 100%; text-transform: uppercase; margin-bottom: 6px;}
+#thisvideoin-carousel .pod {margin-bottom: 14px;}
+
+body.video #featured-video {padding-bottom: 22px;}
+body.package #featured-video, body.channel-detail #featured-video, body.player-detail #featured-video, body.video .full-vid-player, .full-vid-player {padding-bottom: 25px;}

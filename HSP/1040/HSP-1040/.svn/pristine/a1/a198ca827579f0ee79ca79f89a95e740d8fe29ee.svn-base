@@ -1,0 +1,309 @@
+/*
+ * TAKEOVER HEADER
+ */
+
+#takeover-hd {
+    background:#FFF;
+    height:46px;
+    margin:0 auto;
+    position:relative;
+    width:994px;
+    }
+
+#takeover-logo {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2011/dh/images/takeover-logo.png) no-repeat scroll 0 0;
+    display:block;
+    float:left;
+    height:46px;
+    margin-right:10px;
+    width:72px;
+    text-indent:-999em;
+    overflow:hidden;
+    }
+
+#takeover-logo:hover {
+    background-position:0 -46px;
+    }
+
+#takeover-nav {
+    float:left;
+    height:46px;
+    margin-right:10px;
+    width:736px;
+    }
+
+#takeover-nav li {
+    float:left;
+    font-family:Trebuchet MS;
+    }
+
+#takeover-nav li a {
+    display:block;
+    height:33px;
+    padding:13px 9px 0;
+    text-align:center;
+    }
+
+#takeover-nav li.sel a {
+    color:#EF4141;
+    text-decoration:none;
+    }
+
+#takeover-nav li a span.c {
+    display:block;
+    float:left;
+    }
+
+#takeover-nav li a span.b {
+    display:block;
+    clear:both;
+    width:15px;
+    height:8px;
+    margin:0 auto;
+    *margin:3px 0 0;
+    border-top:3px solid transparent;
+    *border-top:none;
+    }
+
+#takeover-nav li.sel a span.b {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2011/dh/images/takeover-selbg.png) no-repeat scroll 0 0;
+    }
+
+#takeover-search {
+    background:#FFF;
+    height:38px;
+    padding:4px;
+    position:absolute;
+    right:0;
+    top:0;
+    width:154px;
+    }
+
+#takeover-search.longbox {
+    width:325px;
+    }
+
+#takeover-search .input {
+    border:1px solid #C0D4CB;
+    height:26px;
+    padding:5px;
+    position:relative;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    }
+
+#takeover-search .input label {
+    cursor:text;
+    color:#9CBBB4;
+    font-size:108%;
+    pointer-events:none;
+    }
+
+#takeover-search .input label span {
+    left:6px;
+    position:absolute;
+    top:6px;
+    z-index:2;
+    }
+
+#takeover-search .input label span.focus {
+    color:#DEE6E4;
+    }
+
+#takeover-search .input input {
+    border:0;
+    color:#444;
+    float:left;
+    font-size:108%;
+    padding:5px 5px 5px 0;
+    width:104px;
+    }
+
+#takeover-search.longbox .input input {
+    width:275px;
+    }
+
+#takeover-search button {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2011/dh/images/takeover-search.png) no-repeat scroll 0 0;
+    float:left;
+    height:26px;
+    padding:0;
+    width:33px;
+    cursor:pointer;
+    border:0;
+    overflow:hidden;
+    }
+
+#takeover-search button:hover {
+    background-position:0 -26px;
+    }
+
+#takeover-search button:active {
+    background-position:0 -52px;
+    }
+
+#takeover-search button span {
+    display:block;
+    text-indent:-9999px;
+    }
+
+/*
+ * TENTPOLE HEADER
+ */
+
+#tentpole-menu {
+    background-color:#f15f0e;
+    border-top:1px solid #FFF;
+    height:41px;
+    width:980px;
+    }
+
+#tentpole-menu li {
+    float:left;
+    height:41px;
+    margin-right:1px;
+    position:relative;
+    }
+
+#tentpole-menu li.all {
+    float:right;
+    }
+
+#tentpole-menu li a {
+    display:block;
+    height:31px;
+    padding:8px 14px 0;
+    margin-top:2px;
+    color:#fff;
+    font:bold 116%/20px "Trebuchet MS", sans-serif;
+    text-align:center;
+    cursor:pointer;
+    text-decoration:none;
+    }
+
+#tentpole-menu li:hover, #tentpole-menu li.sel {
+    background:#EF4141;
+    }
+
+#tentpole-menu li a span.c {
+    display:block;
+    float:left;
+    text-shadow:#A80000 0 1px 0;
+    }
+
+#tentpole-menu li a span.r {
+    display:none;
+    float:left;
+    width:7px;
+    height:4px;
+    margin:9px 0 0 3px;
+    background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png) -466px -502px no-repeat;
+    }
+
+#tentpole-menu li a span.r.on {
+    display:block;
+    }
+
+#tentpole-menu li a span.b {
+    display:block;
+    clear:both;
+    width:15px;
+    height:8px;
+    margin:0 auto;
+    *margin:3px 0 0;
+    border-top:3px solid transparent;
+    *border-top:none;
+    }
+
+#tentpole-menu li.sel a span.b {
+    background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png) -504px -502px no-repeat;
+    }
+
+#tentpole-menu .dd20 {
+    left:-16px;
+    top:33px;
+    z-index:5000;
+    text-indent:0;
+    text-align:left;
+    }
+
+#tentpole-menu li.e .dd20 {
+    left:auto;
+    right:-16px;
+    }
+
+/*#tentpole-menu li.dd-on .dd20 { display:block;}*/
+#tentpole-menu li:hover .dd20 {
+    display:block;
+    }
+
+#tentpole-menu .dd20 .dd20-hd, #tentpole-menu .dd20 .dd20-ft {
+    width:368px;
+    }
+
+#tentpole-menu .dd20 .dd20-hd .c, #tentpole-menu .dd20 .dd20-ft .c {
+    width:348px;
+    }
+
+#tentpole-menu .dd20 .dd20-bd-outer {
+    width:359px;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content .grp ul {
+    width:155px;
+    }
+
+#tentpole-menu .dd20 .content h3 {
+    margin-top:4px;
+    font-size:84.6%;
+    font-family:"Trebuchet MS", sans-serif;
+    font-weight:bold;
+    position:relative;
+    clear:both;
+    }
+
+#tentpole-menu .dd20 .content a {
+    padding:0;
+    margin:0;
+    display:inline;
+    text-align:left;
+    font:normal 100% arial, sans-serif;
+    color:#2e74b0;
+    background:none;
+    }
+
+#tentpole-menu .dd20 .content a:hover {
+    text-decoration:underline;
+    background:none;
+    }
+
+#tentpole-menu .dd20 .content ul {
+    margin-top:5px;
+    margin-bottom:4px;
+    }
+
+#tentpole-menu .content li {
+    padding:2px 0 2px 8px;
+    background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/bullet-red.png) no-repeat left 9px;
+    line-height:1.2em;
+    height:auto;
+    border:0;
+    float:none;
+    *zoom:1;
+    }
+
+#tentpole-menu .dd20 .content p {
+    float:left;
+    clear:both;
+    margin:4px 0;
+    width:100%;
+    }
+
+#tentpole-menu .dd20 .content p.cta {
+    float:left;
+    clear:both;
+    width:100%;
+    margin-top:0;
+    font-size:84.6%;
+    }

@@ -1,0 +1,131 @@
+  #app {
+    height: 455px;
+    width: 322px;
+    position: relative;
+  }
+  #floorplanContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #tip, #start {
+    display: none; 
+    font-size: 11px;
+    position: absolute; 
+    background: #2E3335; 
+    border-radius: 2px; 
+    padding: 3px 8px 4px 8px; 
+    color: white;
+    z-index: 100;
+    line-height: normal;
+  }
+
+  #tip {
+    margin-top: 2px;
+  }
+
+  #start.display {
+    display: block;
+  }
+
+  #floor_buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #app .text_button {
+    margin: 0;
+    padding: 6px 11px;
+    border-radius: 2px;
+    background: #EEE;
+    border: 1px solid #ACACAC;
+    box-shadow: inset 1px 1px 1px #CCC;
+    outline: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #444;
+    line-height: normal;
+  }
+
+  #app .text_button.active {
+    background: #A31D1D;
+    color: #FFF;
+    border: 1px solid #83160F;
+    box-shadow: inset 1px 1px 1px #B83232;
+  }
+
+  #app .text_button.active:hover {
+    background: #D92120;
+    border: 1px solid #B51A11;
+    box-shadow: inset 1px 1px 1px #EE6060;
+  }
+
+  #app .arrow_button {
+    position: absolute;
+    top: 192px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-family: Consolas, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 22px;
+    color: #CCC;
+    outline: 0;
+    font-weight: bold;
+    text-align:center;
+    border: none;
+  }
+
+  #app .arrow_button:disabled, #app .text_button:disabled {
+    opacity: 1;
+  }
+
+  #app .active {
+    cursor: pointer;
+  }
+
+  #floor-down {
+    position: absolute;
+    left: 0px;
+    background: transparent url(http://images.diynetwork.com/webdiy/diy20/imgs/se/diy-ui.png) no-repeat -180px -580px;
+  }
+
+  #floor-down.active {
+    background-position: 0 -580px;
+  }
+  #floor-down.active:hover {
+    background-position: -60px -580px;
+  }
+
+  #floor-up {
+    position: absolute;
+    left: 292px;
+    background: transparent url(http://images.diynetwork.com/webdiy/diy20/imgs/se/diy-ui.png) no-repeat -210px -580px;
+  }
+
+  #floor-up.active {
+    background-position: -30px -580px;
+  }
+
+  #floor-up.active:hover {
+    background-position: -90px -580px;
+  }
+
+  #mobileCurtain {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 322px;
+    height: 455px;
+  }
+  @media only screen and (max-device-width: 600px) {
+    #mobileCurtain {
+      display: block;
+    }
+  }

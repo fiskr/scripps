@@ -1,0 +1,27 @@
+#google_ad {
+    position:relative;
+    font-family:'trebuchet ms'
+    }
+
+#google_ad .google_title {
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    margin-top:-8px;
+    margin-bottom:10px;
+    color:#666;
+    }
+
+#google_ad .google_ad_link {
+    margin-bottom:14px;
+    font-size:93%;
+    }
+
+#google_ad .google_ad_link a {
+    color:#c01964
+    }
+
+#google_ad .google_ad_link .google_ad_link_title a {
+    color:#17434a
+    }
+

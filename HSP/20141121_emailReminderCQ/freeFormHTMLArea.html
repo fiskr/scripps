@@ -1,0 +1,178 @@
+<div class="email-reminder-signup hello-world-state reg_thanks prelaunch default" style="border-top:1px solid #E6E6E6; padding-top: 14px; ">
+	<h3>Sign Up Now for Reminders</h3>
+	<p>Receive <span class="list-label">daily email reminders to enter the HGTV Dream Home 2014 Giveaway</span> twice online per day &mdash; once on HGTV.com and once on FrontDoor.com.</p>
+	<div class="form-wrap">
+		<strong class="label">Your Email:</strong>
+		<div id="valid-msg"></div>
+		<div class="rounded-input">
+			<input type="hidden" id="nl-name" value="smart" />
+			<div class="input" style="margin: 0 0 14px 0;">
+				<input style="display:inline-block; width: 85%;" class="form-control" type="text" name="emailaddress" id="emailaddress" value="" />
+				<button style="float:right;" type="submit" class="btn btn-default">Sign Up</button>
+			</div>
+		</div>
+		<div class="fineprint" style="font-size: 10px; color: #B8B9BA; margin: 0 0 28px 0;">
+			By submitting, you acknowledge having read and agreed to <a target="_blank" href="http://www.scrippsnetworksinteractive.com/privacy-policy/">HGTV's Privacy Policy</a> and <a target="_blank" href="http://www.scrippsnetworksinteractive.com/terms-of-use/">Terms of Use</a>. You will have the option to unsubscribe from any messages you receive.
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+(function($){
+	/*!
+	 * Sweeps Reminder
+	 * @version 1.5.2
+	 * @author Jeffery Moore, Brandon Foster
+	 * @requires jQuery 1.4.2+
+	 */
+
+	var ftn = ftn || $( {} );
+
+	ftn.extend({
+
+		reminder : function( listId, config ) {
+			
+			var defaults = {
+				selector	: ".email-reminder-signup",
+				placeholder	: "ex. jane@" + location.hostname.replace('www.', ''),
+				emailError	: "check the address format",
+				successMsg	: "<h3>Thank You!</h3><p>You have successfully registered to receive {list_label} email reminders. Emails will be sent to {email}.</p>",
+				failureMsg	: "Submission failed! Please contact Customer Service.",
+				hintClass	: "input-hint",
+				listLabel	: ""
+			};
+			
+			if (config) {
+				config = $.extend( defaults, config );
+			} else {
+				config = defaults;
+			}
+			
+			if ( !listId ) {
+				listId = "none";
+			}
+			
+			$(config.selector).each(function() {
+				
+				var $module = $(this),
+					$el = $module.find("input[type=text]"),
+					$validMsg = $module.find('#valid-msg'),
+					$inputs = $module.find('.rounded-input'),
+					$loading = $('<div class="reminder-loading" style="display:none;"><p><img class="plain-img" src="http://images.hgtv.com/webhgrm/rm10/pkgs/2012/greenhome/images/ajax-loader.gif" /> Submitting...</p></div>').prependTo($module);
+				
+				$module.css({ 'minHeight' : $module.height() });
+				
+			/**
+			 * Populates the field with placeholder text and adds defined CSS class for placeholder.
+			 */
+
+				function inputReset() {
+					var input = $el.val();
+					console.log('input: ' + input);
+					if ( input === "" ) {
+						$el.val( config.placeholder ).addClass( config.hintClass );
+					} else if ( input === config.placeholder ) {
+						$el.addClass( config.hintClass );
+					}
+				}
+				
+				
+				function isValidEmail( value ) {
+					return /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test( value );
+				}
+				
+			/**
+			 * Resets the field and removes the CSS class on focus. Runs the reset function on blur.
+			 */
+
+				$el.focus( function() {
+					if ( $el.val() === config.placeholder ) {
+						$(this).val("").removeClass( config.hintClass );
+					}
+					$inputs.addClass('focus').removeClass("error");
+				})
+				
+				.blur( function() {
+					inputReset();
+					$inputs.removeClass('focus');
+				})
+				
+				.bind('keypress', function (e) {
+					var code = (e.keyCode ? e.keyCode : e.which);
+					if (code == 13) {
+						$module.find("button").click();
+						return false;
+					}
+				});
+				
+				
+			/**
+			 * Checks to see if email is valid on submit. If not, it updates the html with the message and adds an error class to the field.
+			 */
+				
+				$module.find("button").click( function() {
+					
+					var email = $el.val();
+					
+					$el.bind('keyup', function() {
+						if ( isValidEmail($el.val()) ) {
+							$validMsg.css({ visibility: 'hidden' });
+							$inputs.removeClass("error");
+						} else {
+							$validMsg.css({ visibility: 'visible' });
+							$inputs.addClass("error");
+						}
+					});
+					
+					if ( isValidEmail( email ) ) {
+						$(this).focus();	//removes focus from input box to avoid flashing cursor in IE
+						$el.removeClass("error");
+						$loading.show().find('p').css( { top: ( ( $module.outerHeight() - $loading.find('p').height() ) / 2 ) + 'px' } );	//show and vertically center loading img/message
+						$.getJSON('https://mynewsletters.scrippsnetworks.com/services/reminders_home_json.php?emailaddress=' + email + '&list=' + listId + '&jsonpCallback=?', function( json ) {
+							$inputs.hide();
+							$loading.hide();
+							if ( json.success === "true" ) {
+							
+								var listLabel = config.listLabel,
+									labelInline = $module.find('.list-label')[0];
+								
+								if (labelInline && labelInline.innerHTML) {
+									listLabel = labelInline.innerHTML;
+								}
+								var successMsg = config.successMsg.replace( '{email}', email )
+																  .replace( '{list_label}', listLabel);
+								
+								$validMsg.removeClass('fail').addClass('pass').html( successMsg ).css({ visibility: 'visible' });
+								$inputs.removeClass("error");
+								$loading.siblings(':not(.form-wrap)').hide();
+								
+								if ((config.successCallback) && (typeof(config.successCallback) == "function")) {
+									config.successCallback($module);
+								}
+								
+							} else {
+								$el.addClass("error");
+								$inputs.addClass("error");
+								$validMsg.addClass("fail").text( config.failureMsg );
+							}
+							$el.closest('.form-wrap').find('.label').hide();
+						});
+					} else {
+						$el.addClass("error");
+						$inputs.addClass("error");
+						$validMsg.addClass("fail").text( config.emailError );
+						return false;
+					}
+				});
+				
+				inputReset();
+				
+			});
+		}
+		
+	});
+
+	ftn.reminder( 'dream', {successMsg : "<h3>Thank You!</h3><p>You have successfully registered to receive {list_label}. Messages will be sent to {email}.</p>"});
+})(jQuery);
+
+</script>

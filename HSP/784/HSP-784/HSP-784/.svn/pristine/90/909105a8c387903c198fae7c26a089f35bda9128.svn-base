@@ -1,0 +1,9 @@
+/* ALL TEMP */
+/* grid for testing only */
+.temp {display:inline;font-size: 0.790em;background:#999;color:#000;padding:2px 6px;}
+.toggler {display:block;opacity:.8;width:77px;padding:14px;background:#FFE5E5;border-left:7px solid #FF9A9A;color:#333;position:fixed;right:0;bottom:0;text-align:left;z-index:1000;}
+section.grid {background-position:0 0;}
+section.grid {background:url("../imgs/grid.png") repeat scroll 0 1px #FFFFFF;}
+section.grid {-moz-box-shadow:0 0 7px rgba(0, 0, 0, 0.125);background-color:#FFFFFF;}
+cite.temp {display:none;background-color:orange;}
+cite.temp.visible {display:inline-block;}

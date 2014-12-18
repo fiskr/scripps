@@ -1,0 +1,5 @@
+    <div id="ad_wrapper">
+        <div id="ad">
+        	<script>MobileBannerAd(1);</script>
+        </div>
+    </div>

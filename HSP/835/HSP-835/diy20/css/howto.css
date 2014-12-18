@@ -1,0 +1,153 @@
+/* ----- BASIC ----- */
+
+/* shared project highlight module - exists in How-To and in Projects */
+.project-highlight {border: 7px solid #2f2a25; margin: 0 14px 14px 7px; padding: 7px 14px 7px; background-color: #fff;}
+.project-highlight .media {position: relative;float: left; width: 160px;margin-top: 7px;}
+.project-highlight .media #blow-up { top: -7px; left: -7px; }
+
+.project-highlight .detail {float: right; width: 405px;margin: 0 0 4px 14px;}
+.project-highlight .detail p.intro {margin: 3px 0 14px;}
+.project-highlight .detail h3 {color:#671104;font-size:123.1%;font-weight:bold;line-height:1.3; margin-top: 7px;}
+.project-highlight .detail ul.list {margin: 5px 0 4px; line-height:1.4;}
+.project-highlight .detail ul.list li { padding-left: 30px; background-position: 20px -565px; width: 380px} /*MM:2504*/
+.project-highlight .detail ul.list li.thisPg { background-color: #f5f5f5;  background-position: 20px -369px; }
+.project-highlight .detail ul.list li span { float: right; margin-right: 21px; font-size: 85%; }
+.project-highlight .detail ul.list li a { *float: left;  }
+
+.project-highlight .introstep { border-top: 1px solid #cecece; margin: 0; clear: both; }
+.project-highlight .introstep p { margin: 10px 0 4px; }
+
+/*  shared in project page project time/price range/difficulty */
+.proj-meta {font-size: 85%; border-bottom: 1px solid #cecece; margin: 0 7px 10px 0;}
+.proj-meta ul {padding-bottom: 4px;margin-bottom: 2px; line-height: 1.5;}
+.proj-meta .property {font-weight: bold;}
+.proj-meta li {color: #3d3d3d; border-left: 1px solid #cecece; float: left; padding-left: 7px; min-height: 35px;margin-left: 7px;}
+.proj-meta li.first, .proj-meta li:first-child  { border-left: none; margin-left: 0; }
+.proj-meta li.time {background: url(../imgs/se/sp-diy-icons-lg.gif) -5px -5px no-repeat; padding-left: 40px; width: 87px;}
+.proj-meta li.price-range  {background: url(../imgs/se/sp-diy-icons-lg.gif) 2px -89px no-repeat; padding-left: 48px; width: 87px;}
+
+.howto-gallery .crsl-pro { margin: 0; background: none transparent;}
+.howto-gallery .crsl-pro .jcarousel-clip-horizontal { width: 330px; }
+.howto-gallery .crsl-pro .panel { width: 330px; }
+.howto-gallery .crsl-pro .crsl-item { width: 96px; }
+.howto-gallery .crsl-pro .jcarousel-container p { line-height: 1.31; }
+.howto-gallery .crsl-pro li p { font-size: 85%; }
+.howto-gallery .crsl-pro li.active p { color: #fff; }
+.howto-gallery .crsl-pro .photos { width: 400px; height: 300px; padding: 0 3px 3px 3px; background: none repeat scroll 0 0 #151615}
+.howto-gallery .crsl-pro .photos img { display: block; }
+.howto-gallery .crsl-pro .photos .photo { display: none; position: absolute; }
+.howto-gallery .crsl-pro .photos .active { display: block; }
+.howto-gallery .crsl-pro .jcarousel-container {background: none repeat scroll 0 0 #151615;}
+.howto-gallery .crsl-pro .authors p.active { display: block; }
+.howto-gallery .crsl-pro .authors .author { display: none; }
+
+.step {margin-bottom: 20px; font-size: 100%; color: #515151;}
+.step h3.sub-header { margin-bottom: 5px; }
+.step p {margin-bottom: 8px; line-height: 1.6em;}
+.step .visual-ft {float: right; font-size: 85%; padding-top: 4px; text-align: right;}
+.step .visual-ft li {float: left; border-right: 1px solid #e0e0e0; /*text-align: right;*/ padding-right: 7px; margin-right: 7px;}
+.step .visual-ft li.suggest {border-right: 0; padding-right:0; margin-right:0;}
+.step .visual-ft a {color: #187997;}
+.step .visual-ft a span {color: #7a7a7a;}
+.step .visual-ft li.suggest a {font-weight: bold;}
+
+/*list overrides so that editors can use in step content */
+.step ul, .step ol { padding-bottom: 20px; line-height: 1.7em;}
+.step ul li {background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -369px; padding-left: 10px; margin-left: 5px;}
+.step ol li {margin-left: 5px; list-style-type:decimal;list-style-position:inside;}
+/*but not for carousels */
+.step .crsl ul {padding-bottom:0;}
+.step .crsl ul li {background: none; padding-left: 0; margin-left: 0;}
+.step .crsl ul li.crsl-item {margin:0 7px;}
+
+/* related content flyouts */
+.step .rc-wrap {position: relative;}
+.step .rc-wrap h3.sub-header { display: inline; border-bottom: dotted 1px #671104; cursor: pointer;}
+.step .rc { display: none; left: 60px; width: 341px; z-index: 1000; position: absolute; margin-top:-2px;} 
+.step .rc .close { right: 20px; }
+.step .rc .feature-cartridge { margin: 0 7px 0 14px; }
+.step .rc .feature-cartridge p {line-height:1.38;}
+.step .rc .feature-cartridge em { display: block; color:#999999;font-size:85%;font-style:normal;}
+
+.project-ft h4 {color: #671104; font: bold 123.1% arial;}
+.project-ft {clear: both; margin-bottom: 15px;}
+.project-ft .next {float: right; background: url(../imgs/se/diy-ui.png) 0 -919px no-repeat; width: 210px; height: 84px; margin-right: 14px;}
+.project-ft .next a {color: #176684; display: block; width: 170px; margin-left: 15px;line-height: 1.3;}
+.project-ft .next h4 {margin: 15px 0 0 15px;}
+.project-ft .howto-extras {background-color: #eee; float: left; width: 406px; margin-left: 14px; height: 84px;}
+.project-ft.full .howto-extras{width: 616px;}
+.project-ft .useful {border-bottom: #e1e1e1 1px solid;}
+.project-ft .useful h4 {margin: 15px 0 10px 13px; float: left;}
+.project-ft .useful a.button {float:right; margin: 7px 14px; }
+.project-ft .useful a.button em {background: url( ../imgs/se/sp-diy-icons.gif) no-repeat -5px -320px; padding-left: 20px; font-style: normal; font-weight: bold; margin: 0 8px;}
+.project-ft .comments {color: #333; border-top: #fff 1px solid;line-height: 2.8; padding-left: 18px;}
+.project-ft .comments a {color: #176684;}
+
+/* ----- VIDEOS ----- */
+#featured-video {background-color: #151615; text-align:center; padding-top: 25px; margin-left: 7px; margin-bottom: 15px;}
+#featured-video object, #featured-video embed {margin: 0 auto; display: block;}
+
+#now-playing {margin-bottom: 20px;}
+#now-playing h3 {margin-bottom: 10px; }
+#now-playing h4 {font: bold 100% arial, verdana; margin-bottom: 5px;}
+#now-playing h4 span {font: normal 85% arial, verdana;}
+
+
+
+/* ----- COMMENTS ----- */
+#comment-form {border: 1px solid #d3d3d3; background-color: #f7f7f7; width: 614px;  margin-left: 14px; margin-bottom: 18px;}
+#comment-form-hd a.toggle {color: #176684; background: url(../imgs/se/toggle-closed.gif) left center no-repeat; display: block; margin: 15px 14px; padding-left: 18px; font: bold 100% arial, verdana;}
+#comment-form-hd a.open {color: #176684; background: url(../imgs/se/toggle-open.gif) left center no-repeat; display: block; margin: 15px 14px; padding-left: 18px; font: bold 100% arial, verdana;}
+#comment-form-hd a:hover {text-decoration: none;}
+#comment-form form {display:none;}
+#comment-form p.msg {color: #909090; font: normal 85% arial, verdana;}
+#comment-form ul {margin-left: 15px;}
+#comment-form ul li {margin-bottom: 20px;}
+#comment-form ul li h3 {line-height: 1.231;}
+#comment-form ul li.useful h3 {float: left; margin-right: 15px; padding-top: 5px;}
+#comment-form ul li.useful .button {float: left; margin-right: 10px;}
+#comment-form ul li.useful .button em {padding-left: 12px; padding-right: 14px;}
+#comment-form ul li.useful button.yes em {background: url(../imgs/se/thumbsup.gif) 0 center no-repeat; padding-left: 18px; padding-right: 20px; margin-left: 14px;}
+#comment-form ul li.useful p {padding-top: 10px;}
+#comment-form ul li.post {text-align: center;}
+#comment-form ul li.post p {width: 175px; margin: 0 auto;}
+#comment-form ul li.post button { margin-right: 5px;}
+#comment-form ul li.post button em {padding-left: 12px; padding-right: 14px;}
+#comment-form ul li.post a {color: #176684;}
+
+#comment-form input, #comment-form textarea {width: 580px;}
+#comment-form input {margin-bottom: 6px;}
+#comment-form textarea {height: 66px;}
+
+#comments {margin-left: 27px; width: 603px;}
+#comments .user-nfo {float: left; width: 115px;}
+.comment {margin-bottom: 15px;}
+.user-comment {border: 1px solid #cecece; width: 473px; float: right;}
+.user-comment .user-comment-hd {background-color: #f7f7f7; border-bottom: 1px solid #cecece; padding-top: 15px; padding-bottom: 10px; position: relative;}
+.user-comment .user-comment-hd h5 {color: #671104; font: bold 100% arial, verdana; float:left; width: 350px; margin-left: 13px;}
+.user-comment .user-comment-hd .thumbup {background: url(../imgs/se/thumbsup.gif) right center no-repeat; padding-right: 18px; float: right; width: 63px; font: normal 85% arial, verdana; margin-right: 15px;}
+.user-comment .user-comment-hd .bubble {background: url(../imgs/se/diy-ui.png) -385px -620px no-repeat; height: 15px; width: 15px; position: absolute; top: 14px; left: -15px;}
+.comment .user-comment-bd {background: url(../imgs/se/sm-quotes.png) 0px 0px no-repeat; margin-left: 14px; margin-top: 14px;}
+.comment .user-comment-bd .comment-container {background: url(../imgs/se/sm-quotes.png) 100% bottom no-repeat; margin-left: 20px; margin-bottom: 5px; margin-right: 14px;}
+.comment .user-nfo h4 {font: bold 85% arial, verdana; color: #333; margin-bottom: 4px;}
+.comment .user-nfo .nfo {font: normal 85% arial, verdana; color:#909090; margin-bottom: 4px;}
+
+
+#comments #comments-hd {margin-bottom: 20px;}
+#comments #comments-hd #pagination-nfo {float: left;}
+#comments #comments-hd #thumbs-nfo {float: right; background: url(../imgs/se/thumbsup.gif) right center no-repeat; padding-right: 18px; font: normal 85% arial, verdana; margin-right: 14px; padding-top: 3px;}
+
+
+#comments .pagi {width: 473px; float: right; margin-top: 8px;}
+
+/* ----- MATERIALS AND TOOLS ----- */
+#materials-tools li {border-bottom: 1px solid #e5e5e5;zoom:1;}
+#materials-tools .materials {margin-bottom: 15px;}
+#materials-tools ul {clear: both;}
+#materials-tools li {padding: 7px 0;}
+
+#before-after { padding: 7px 3px 3px 3px; }
+#before-after .hd { height: 31px; *position: relative; }
+#before-after .bd img { display: block; }
+.step #before-after ul li { background-image: none; }
+.author { padding: 4px 0; font-size: 11px; color: #999; }

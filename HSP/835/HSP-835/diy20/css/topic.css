@@ -1,0 +1,33 @@
+.conversations p {
+margin-bottom: 7px;
+}
+
+
+#popular-topics {}
+#popular-topics .topic-index-container {background-color: #fafafa; border: 1px solid #d8d8d8; margin: 0 14px 28px;}
+#popular-topics h5 {font-weight: bold; font-size: 123.1%; text-transform: uppercase; margin: 0 14px 10px;}
+#popular-topics .topics {width: 196px; border-right: 1px solid #d8d8d8; float: left;}
+#popular-topics .topics ul {padding-top: 12px;}
+#popular-topics .topics ul li {margin: 0 14px 12px; color: #176684; cursor: pointer;}
+#popular-topics .topics ul li.active {background-color:#d6d6d6; color:#444; font-weight:bold; margin: 0 7px 7px; padding: 7px;}
+#popular-topics .topic-detail {float: right; width: 406px; padding-top: 18px;}
+#popular-topics .topic-detail .pod {margin-bottom: 20px;}
+#popular-topics .topic-detail .pod h3.sub-header {color: #333; text-transform: uppercase; font-size: 108%; margin-bottom: 13px;}
+#popular-topics .all-about h3 {color: #333; text-transform: uppercase; font-size: 108%; font-weight:bold;}
+#popular-topics .all-about ul {width: 196px; float: left;}
+#popular-topics .topic-alpha {border-top: 1px solid #d8d8d8; text-align: center; padding-top: 10px; padding-bottom: 10px;}
+#popular-topics .topic-alpha ul {margin: 0 auto; width: 464px;}
+#popular-topics .topic-alpha ul li {float: left; width: 10px; margin-right: 3px;}
+#popular-topics .topic-alpha ul li.alpha-header {width: 92px; color: #333;}
+#popular-topics .topic-alpha ul li.last {margin-right:0;}
+#popular-topics .ctnt .bbsctnt {display:none;}
+#popular-topics .ctnt .active {display:block;}
+
+/*A-to-Z page */
+#about-us.index-detail .button-nav.pgltr { width: 560px; padding: 0; margin: 14px 56px 7px 14px; background: 0; }
+#about-us.index-detail .button-nav li {float: left; margin: 0 4px 4px 0;}
+#about-us.index-detail .button-nav a {padding-right: 14px;}
+#about-us.index-detail .button-nav a.disabled {cursor: pointer;}
+#about-us.index-detail .button-nav a span {padding-left: 12px;}
+#about-us.index-detail .list {margin: 14px;}
+#about-us.index-detail .list li {float:left; width: 294px;}

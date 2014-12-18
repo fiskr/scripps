@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<!-- ####### player config settings ####### -->
+
+	<media>
+		<width>576</width>							<!-- video dimensions -->
+		<height>432</height>
+		<playerSize>big</playerSize>				<!-- player size: big/small -->
+	</media>
+	<actions>
+		<autoPlay>true</autoPlay>					<!-- autoplay: true/false -->
+		<shufflePlaylist>false</shufflePlaylist>	<!-- shuffle/randomize playlist order: true/false -->
+	</actions>
+	<elements>
+		<playlist>true</playlist>					<!-- playlist appears: true/false -->
+		<displayPlaylistTitle>true</displayPlaylistTitle>	<!-- enable playlist title: true/false -->
+		<fullscreen>true</fullscreen>				<!-- fullscreen button appears: true/false -->
+	</elements>
+	<omniture>
+		<!-- url to omniture config file -->
+		<config>http://web.hgtv.com/webhgtv/hg20/snap-configs/hgtv-omniture.xml</config>
+		<version>2</version>	<!-- version: 1==frontdoor/fineliving; 2==food/hgtv -->
+	</omniture>
+
+
+	<!-- ####### portability/customization parameters below ####### -->
+
+	<textButton>
+		<!-- Start Text Button Config: Text buttons appear in the menu overlay: Send/Copy/Get Recipe, etc. -->
+		<bg>
+			<!-- URLs to text button graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/button_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/button_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/button_pressed2.png</press>
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/button_disabled2.png</disabled>
+		</bg>
+		<textColors>
+			<!-- Colors of the text on the text button (in hex) -->
+			<normal>#ffffff</normal>
+			<hover>#ffffff</hover>
+			<press>#ffffff</press>
+			<disabled>#999999</disabled>
+		</textColors>
+	</textButton>
+	<controlButtons>
+		<!-- Start Control Buttons (Play/Pause/etc.) -->
+		<buttonColors>
+			<!-- Colors for the different states of the button (in hex) -->
+			<normal>#454545</normal>
+			<hover>#b50938</hover>
+			<press>#f95baa</press>
+			<disabled>#CCCCCC</disabled>
+		</buttonColors>
+	</controlButtons>
+	<overlayMenu>
+		<!-- Start Overlay Menu Config -->
+		<textColors>
+			<!-- Overlay menu text colors (in hex) -->
+			<title>#73d1c8</title>
+			<secondary>#666666</secondary>
+			<body>#ffffff</body>
+		</textColors>
+	</overlayMenu>
+	<playlistCarousel>
+		<!-- Start Playlist Config -->
+		<isBackground>true</isBackground>				<!-- Does playlist background appear: true/false -->
+		<bgURL>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/thumbnails_bg_4_title.png</bgURL>			<!-- URL to playlist background -->
+		<thumbnailBorder>big</thumbnailBorder>			<!-- Size of thumbnail border: big=rectangle around text+thumb   small=rectangle around thumb only -->
+		<textColors>
+			<!-- Text Colors for Playlist elements (in hex) -->
+			<normal>#195a64</normal>
+			<hover>#195a64</hover>
+			<selected>#333333</selected>
+			<secondary>#999999</secondary>
+		</textColors>
+		<borderColors>
+			<!-- Border Colors for thumbnail borders (in hex) -->
+			<normal>#dddddd</normal>
+			<hover>#dddddd</hover>
+			<selected>#d72d82</selected>
+		</borderColors>
+		<rightArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/right_arrow_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/right_arrow_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/right_arrow_pressed2.png</press>
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/right_arrow_disabled2.png</disabled>
+		</rightArrow>
+		<leftArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/left_arrow_normal2.png</normal>
+			<hover>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/left_arrow_hover2.png</hover>
+			<press>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/left_arrow_pressed2.png</press>
+			<disabled>http://web.hgtv.com/webhgtv/hg20/snap-configs/imgs/left_arrow_disabled2.png</disabled>
+		</leftArrow>
+	</playlistCarousel>
+
+	<!-- Start Email Config -->
+	<email>
+		<!-- Email Server URL -->
+		<server><![CDATA[http://www.foodnetwork.com/app/emailservice/sendEmail.html]]></server>
+		<params>
+			<!-- Name of parameters (not values) that need to be passed to the email service -->
+			<senderEmail>from_email</senderEmail>
+			<senderName>from_name</senderName>
+			<recipient>to_emails</recipient>
+			<message>body</message>
+			<subject>subject</subject>
+			<securityToken>security_token</securityToken>
+		</params>
+		<paramValues>
+			<!-- Preset values of the parameters -->
+			<securityToken><![CDATA[68-91-143-161-245-213-218-70-154-90-195-249-151-254-139-24-214-245-53-141-94-96-245-11]]></securityToken>
+			<senderEmail><![CDATA[donotreply@hgtv.com]]></senderEmail>
+		</paramValues>
+		<texts>
+			<!-- Texts that are passed to the server. The following variables are replaced within the application:
+			$$SENDER_NAME$$ - Name of the sender
+			$$VIDEO_TITLE$$ - Title of the video
+			$$VIDEO_URL$$ - URL to the video
+			$$COMMENTS$$ - The text in the comments node
+			$$USER_MESSAGE$$ - User's comments/message
+
+			Make sure to keep the line breaks.
+			-->
+			<subject><![CDATA[$$SENDER_NAME$$ has sent you an HGTV.com video]]></subject>
+			<message><![CDATA[$$SENDER_NAME$$ thought you might enjoy this HGTV.com video:
+$$VIDEO_TITLE$$
+$$VIDEO_URL$$.
+
+$$COMMENTS$$
+View more HGTV.com videos at http://www.hgtv.com/video-library/]]></message>
+			<comments><![CDATA[Comments from $$SENDER_NAME$$:
+$$USER_MESSAGE$$]]></comments>
+		</texts>
+	</email>
+	<!-- End Email Config -->
+
+	<!-- begin links out of player into site -->
+	<links>
+		<moreVideoURL><![CDATA[http://www.hgtv.com/video-library/index.html]]></moreVideoURL>
+	</links>
+	<!-- end links out of player into site -->
+</config>

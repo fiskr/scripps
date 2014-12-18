@@ -1,0 +1,64 @@
+#dh-head, #sh-head, #ou-head, #dh-head-gen, #sh-head-gen, #uo-head-gen{
+	background-size: 640px;
+	h1{
+		position: relative;
+		top: 10px;
+		width: 100%;
+	}
+}
+
+#dh-head { background: url("../imgs/spMobilePackage_Dream-Home-2013-fbfff4_s1280x144.jpg") #fbfff4 no-repeat; }
+#sh-head { background: url("http://hgtv.sndimg.com/HGTV/2013/03/29/SH2013_banner-tentpole-mobile-e7f7ff_1280x144.jpg") #e7f7ff no-repeat; }
+#uo-head { background: url("http://hgtv.sndimg.com/HGTV/2013/07/31/UO2013_banner-mobile-ebf7fb_s1280x144.jpg") #ebf7fb no-repeat; }
+/* generic (non-current) banners */
+#dh-head-gen { background: url("http://hgtv.sndimg.com/HGTV/2013/04/10/Dream-Home_generic-banner-mobile-ecf5ff_1280x144.jpg") #ecf5ff no-repeat; }
+#sh-head-gen { background: url("http://hgtv.sndimg.com/HGTV/2013/04/10/Smart-Home_generic-banner-mobile-f2fbf3_1280x144.jpg") #f2fbf3 no-repeat; }
+#uo-head-gen { background: url("http://hgtv.sndimg.com/HGTV/2013/07/31/UO2013_banner-mobile-ebf7fb_s1280x144.jpg") #ebf7fb no-repeat; }
+
+#featured-room{
+	position:relative;
+
+	.title{
+		position:absolute;
+		bottom:3px;
+		background: rgba(0,0,0,.7);		
+		width:100%;
+		max-width:400px;
+	}
+	h2{
+		padding: 10px;
+		font-size: 18px;
+		color: white;
+	}
+
+	img{
+	  width:100%;
+	  max-width: 400px;
+	}
+}
+
+#dh-sweepstakes, #sh-sweepstakes, #uo-sweepstakes{
+	padding-top: 24px;
+
+	.promo-text{
+		position: relative;
+		left:10px;
+    	top: 20px;
+    	margin-right: 5%;
+    	font-size: 16px;
+    	line-height:18px;
+    	font-weight: bold;
+	}
+	img{
+		float:left;
+		width: 35%;
+		max-width: 266px;
+	}
+}
+
+.river.notabs {
+	padding-top: 7px;
+	h2{
+		padding: 14px 0;
+	}
+}

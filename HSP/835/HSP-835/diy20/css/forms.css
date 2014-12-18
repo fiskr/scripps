@@ -1,0 +1,43 @@
+/* default form styles */
+
+form .input-box {background:transparent url(../imgs/se/diy-ui.png) no-repeat left -388px; padding-left:2px;}
+form .input-box span { height: 24px; background:transparent url(../imgs/se/diy-ui.png) no-repeat right -388px; display: block; padding: 0 6px 0 4px;line-height:24px;margin-right: -2px;}
+form .input-box input{width: 100%;color: #3d3d3d;border: 0; outline: none; *margin-top: 4px; }
+
+form .txtarea-box {background: url(../imgs/se/diy-ui.png) no-repeat left -670px;padding-left:2px;}
+form .txtarea-box span {background: url(../imgs/se/diy-ui.png) no-repeat right -670px; display: block; padding: 6px 6px 0 4px;line-height:1.7;margin-right: -2px;height:121px}
+form textarea{color: #3d3d3d; border:0;height: 116px;width:100%;resize:none;}
+
+form .date-box { float: left; padding-left: 2px; background: transparent url(../imgs/se/diy-ui.png) no-repeat left -388px; margin-right: 5px; }
+form .date-box span { display: block; height: 24px; margin-right: -2px; padding: 0 16px 0 5px; background: transparent url(../imgs/se/diy-ui.png) no-repeat right -388px; line-height: 24px; }
+form .date-box input{ width: 100%; margin-right: -18px; color: #176684; font-size: 85%; font-weight: bold; border: 0; outline: none; background:transparent url(../imgs/se/sp-diy-icons.gif) no-repeat right -212px; cursor: pointer; *margin-top: 5px; padding-right: 8px; }
+form .date-box input.active { color: #333; }
+form .date-box input.datepicker_open { color: #999; }
+
+form .check-box input { float: left; }
+form .check-box div { margin-left: 20px; line-height: 1.385; *margin-left: 22px; }
+
+/* generic form styles for things like the 'contact us' form */
+.form fieldset { margin: 0 0 14px 0; padding: 6px 13px 5px 13px; background-color: #fff; border: 1px solid #d8d8d8; }
+.form h3 { color: #000; font-size: 123.1%; font-weight: bold; text-transform: uppercase; }
+.form .ui-dropdown { width: 142px; }
+.form .input-box { width: 206px; }
+.form ul { width: 448px; margin-bottom: 6px; }
+.form li { float: left; width: 210px; margin: 0 14px 8px 0; }
+.form li.full { float: none; width: 100%; margin-right: 0; }
+.form li.text { margin-bottom: 3px; }
+.form li.small .input-box { width: 80px; }
+.form li small { color: #999; font-size: 85%; }
+.form .submit { text-align: center; }
+/*.form .submit button { width: 117px; }*/
+.form p { margin-bottom: 10px; }
+.form fieldset.alt { background-color: #f7f7f7; }
+
+/* form error message box */
+.form-errors { display: none; margin-bottom: 14px; border: 1px solid #e8d5ab; background-color: #fdfad7; }
+.form-errors .hd { padding: 13px 14px 0 14px; color: #671104; }
+/*.form-errors .hd p { line-height: 1; }*/
+.form-errors .bd { padding: 0 15px 10px 15px; }
+.form-errors li { padding-left: 13px; line-height: 1.7; }
+.form-errors .close { float: right; margin: -6px -7px 0 0; background: transparent url(../imgs/se/sp-popups.png) no-repeat left 0; _background-image:url(../imgs/se/sp-popups.gif); width: 12px; height: 12px; text-indent: -9999px; cursor: pointer; }
+form label.error { padding: 4px 7px 3px; color: #fff; background-color: #671104; }

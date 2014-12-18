@@ -1,0 +1,35 @@
+/*episode == this page uses a re-ordered site layout to support image wrap */
+.episode-detail .episode-title {margin: 0 0 14px 14px; line-height: 1;}
+.episode-detail .episode-title img {margin-bottom: 10px;}
+.episode-detail .episode-title h2 {color: #333; text-transform: uppercase; font-size: 167%;}
+.episode-detail .episode-title .epi-num {color: #999;}
+
+.episode-detail .lead-img-wrap {float:left;width:266px;margin: 0 14px 14px;_margin-left: 7px;line-height: 1;}
+.episode-detail #diy-ww {clear:left;}
+.episode-detail #diy-we {float: none;margin-left: 210px;padding-left: 14px;width: auto;}
+.episode-detail #diy-we .episode-intro {margin-bottom: 14px;}
+.episode-detail #diy-we .pod {float:right;width:406px;}
+.episode-detail #diy-we .sub-header {float:right;width:406px;}
+
+.episode-detail .crsl-we .hd h3 {float: left; width: auto;line-height:1.7;margin-bottom: 7px;}
+.episode-detail .crsl-we .hd p.more {float: right;font-size: 100%;}
+
+.episode-detail .tune-in-pod ul {padding:0 7px;}
+/* projects from the show overrides for the overrides */
+.episode-detail #projects-from-show {margin-bottom: 0;}
+.episode-detail #projects-from-show .sub-header {float: left; width:300px;}
+.episode-detail #diy-we .pod.search {width: 392px;}
+	
+/* related assets pod in episode pages */
+#diy-we .episode-related {margin-bottom: 14px;}
+.episode-related .sub-header {font-size: 100%;}
+.episode-related .sub-header a:link {color: #176684;}
+.episode-related .sub-header a:hover {color:#BA0707;text-decoration:underline;}
+.episode-related .sub-header a:visited {color:#757575;}
+.episode-related  h5 {font-weight:bold; line-height:1;}
+.episode-related .proj-summary, 
+.episode-related .feature-cartridge, 
+.episode-related .gallery-tease {border-top:1px solid #DDDDDD;padding: 14px 0; }
+#diy-we .episode-related .pod.gallery-tease { margin-bottom: 14px; }
+.episode-related .last {border-bottom:none; }
+

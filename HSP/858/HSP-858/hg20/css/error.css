@@ -1,0 +1,27 @@
+.error-unavail-maint {
+    margin:0 14px;
+    }
+
+.error-unavail-maint h1 {
+    float:left;
+    margin:41px;
+    width:300px;
+    _width:250px;
+    line-height:1.3em
+    }
+
+.error-unavail-maint span {
+    display:block;
+    overflow:hidden;
+    text-indent:-9999em;
+    background:url(../imgs/be-right-back.png) 0 0 no-repeat;
+    width:158px;
+    height:236px;
+    float:right;
+    margin-right:60px;
+    margin-bottom:25px;
+    }
+
+.error-unavail-maint p {
+    clear:both;
+    }

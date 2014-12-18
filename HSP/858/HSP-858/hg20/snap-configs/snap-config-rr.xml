@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- ####### player feature config parameters below ####### -->
+
+	<!-- AutoPlay: true/false -->
+	<autoPlay>false</autoPlay>
+
+	<!-- Shuffle Playlist: true/false -->
+	<shuffle>false</shuffle>
+
+	<!-- Number of seconds before Related Overlay appears -->
+	<relatedOverlayDelay>2</relatedOverlayDelay>
+
+	<!-- Number of seconds until Related Overlay opens -->
+	<relatedOverlayInitialOpenTime>4</relatedOverlayInitialOpenTime>
+
+	<!-- Full screen button appears: true/false -->
+	<fullscreen>false</fullscreen>
+
+	<!-- Playlist appears: true/false -->
+	<showCarousel>true</showCarousel>
+
+	<!-- Show Playlist Title -->
+	<showPlaylistTitle>false</showPlaylistTitle>
+
+	<!-- Display Menu button -->
+	<showMenuButton>false</showMenuButton>
+
+	<!-- Display Embed Menu tab -->
+	<showEmbedMenu>true</showEmbedMenu>
+
+	<!-- Enable the Next Video countdown layer -->
+	<enableNextVideoOverlay>True</enableNextVideoOverlay>
+
+	<!-- Enable Repeat Mode (at the end of the last video loop to the first video) -->
+	<enableRepeateMode>True</enableRepeateMode>
+
+	<!-- Enable Share Menu -->
+	<enableShare>true</enableShare>
+
+	<!-- Enable Email Menu -->
+	<enableEmail>false</enableEmail>
+
+	<!-- Enable ads -->
+	<showAds>true</showAds>
+       
+	<!-- path to omniture config file -->
+	<omnitureConfig>http://web.hgtv.com/webhgtv/hg20/snap-configs/snap-hgtv-omniture.xml</omnitureConfig>
+
+<!--
+	<omnitureConfig>http://web.hgtv.com/webhgtv/hg20/snap-configs/hgtv-omniture.xml</omnitureConfig>
+-->
+
+	<!-- which version of omniture to use: food|hgtv|diy|fdoor|fine -->
+	<omnitureVersion>hgtv</omnitureVersion>
+
+	<!-- more video link out of player into site -->
+	<moreVideoURL><![CDATA[http://www.hgtv.com/video-library/index.html]]></moreVideoURL>
+
+	<!-- email to friend config -->
+	<email>
+
+		<!-- email service url (accepts POST) -->
+		<server><![CDATA[http://www.hgtv.com/app/emailservice/sendEmail.html]]></server>
+
+		<!-- the form names of parameters (not the values) that need to be passed to the email service -->
+		<params>
+			<senderEmail>from_email</senderEmail>
+			<senderName>from_name</senderName>
+			<recipient>to_emails</recipient>
+
+			<message>body</message>
+			<subject>subject</subject>
+			<securityToken>security_token</securityToken>
+		</params>
+
+		<!-- preset values of the parameters -->
+		<paramValues>
+			<securityToken><![CDATA[68-91-143-161-245-213-218-70-154-90-195-249-151-254-139-24-214-245-53-141-94-96-245-11]]></securityToken>
+
+			<senderEmail><![CDATA[donotreply@hgtv.com]]></senderEmail>
+		</paramValues>
+
+		<!--
+		Texts that are passed to the server. The following variables are replaced within the application:
+
+		$$SENDER_NAME$$ - Name of the sender
+		$$VIDEO_TITLE$$ - Title of the video
+		$$VIDEO_URL$$ - URL to the video
+		$$COMMENTS$$ - The text in the comments node
+		$$USER_MESSAGE$$ - User's comments/message
+
+		Make sure to keep the line breaks.
+		-->
+		<texts>
+			<subject><![CDATA[$$SENDER_NAME$$ has sent you an HGTV.com video]]></subject>
+			<message><![CDATA[$$SENDER_NAME$$ thought you might enjoy this HGTV.com video:
+$$VIDEO_TITLE$$
+$$VIDEO_URL$$
+
+$$COMMENTS$$
+View more HGTV.com videos at http://www.hgtv.com/video-library/]]></message>
+			<comments><![CDATA[Comments from $$SENDER_NAME$$:
+$$USER_MESSAGE$$]]></comments>
+		</texts>
+
+	</email>
+
+</config>

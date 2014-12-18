@@ -1,0 +1,559 @@
+
+/*for designer in Garden Gallery main page */
+#lead-carousel .designer{
+    font-size: 12px;
+    font-weight: normal;
+    
+}
+
+/*royalSlider CSS*/
+/* v1.0.3 */
+@carWidth: 266px;
+
+
+#lead-carousel {
+    padding-top: 0px;
+    margin-top: 24px;
+    visibility: hidden;
+    /*box-shadow:  -28px 0 28px -28px #999 inset;*/
+    width: @carWidth; 
+    height: 200px;
+    max-width: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    direction: ltr;
+    /*overflow: hidden;*/
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+    li {list-style-type: none;}
+
+    .pod {display: block !important;} /*to make sure dynamic version pods aren't hid for performance fix SE-9214 */
+        
+        a { padding-top: 0;
+            color:white;
+            font-size: 16px;
+         }
+
+        h4 {
+            font-weight: bold;
+            color: white;
+            padding: 7px 10px;
+            top: 50%;
+            font-size: 16px;
+        }
+
+        img {
+            border: none;
+            margin-top: 0;
+            padding: 0;
+            width: @carWidth;
+            /*height: auto;*/
+            height: 100%;    
+        }
+
+        .rsSlide {
+            filter: (alpha=40);
+            opacity: .4;
+            overflow: visible;
+            height: 200px;
+
+                .panel {
+                    height: 25%;
+                    min-height: 20px;
+                    position: absolute;
+                    bottom: 0px;
+                    width: @carWidth;
+                    background-color: rgba(0,0,0,.7);
+                    color: white;
+                }
+        }
+
+        #hatch-left {
+            background: url("../imgs/hgtv-homepage-carousel-pattern.png") repeat left top transparent;    
+            height:100%;
+            position: absolute;
+            width: @carWidth;
+            left: -1 * @carWidth - 10px;
+            pointer-events: none;
+            top: 0;
+        }
+
+        #hatch-right {
+            background: url("../imgs/hgtv-homepage-carousel-pattern.png") repeat left top transparent;    
+            height:100%;
+            position: absolute;
+            width: @carWidth;
+            right: -1 * @carWidth - 10px;
+            pointer-events: none;
+            top: 0;
+        }
+}
+
+/*#lead-carousel .rsVisibleNearbyWrap{ -webkit-transform: translate3d(0, 0, 0);} */ /*DRS: seems to remove odd page motions in webkit browsers*/ 
+
+
+
+@vidWidth: 280px;
+
+.portfolio-promo .royalSlider,
+#article-promo-carousel, #video-carousel,
+.video-carousel, .strip .royalSlider {
+    display: none;
+    width: @vidWidth; /* was 600px */
+    min-height: 142px; /*was 400px */
+    position: relative;
+    left: 0; 
+    direction: ltr;
+    overflow: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+
+
+    .rsSlide {
+        a {
+            width: 120px;
+            float: left;
+            margin-right: 19px;
+            position: relative;
+        }
+    }
+
+    .cap {
+	overflow: hidden;
+	display: -webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+
+        span{
+            color: #999;
+            font-size: 12px;
+        }
+    }   
+
+    img   {
+        border: none;
+        margin-top: 0;
+        padding: 0;
+ 
+    }
+}
+
+.portfolio-promo {
+    hgroup {
+        padding: 24px 0 11px;
+    }
+    h2 { 
+        line-height: normal;
+        .count{
+            font-size: 14px;    
+        }
+    }
+    .pod{
+        float: left;
+        span {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .royalSlider  {
+    height: auto;
+        min-height: 112px;
+        .portfolio{
+            float: left;
+            padding-right: 19px;
+            width: 43%;
+            a {
+                position: relative;
+                padding-right: 0;
+            }
+            .title {
+                display: none;
+            }
+            .credit {
+                display: none;
+            }
+            span.credit {
+                color: gray;
+            }           
+        }
+        a.view-more{
+            .gradient(#e6e5df, #e1e1da, #f6f6f3);
+            .rounded-corners(4px 4px 4px 4px);
+            padding: 20px 0 0 0;            
+            text-align: center;
+            width: 120px;
+            height: 68px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #c9c9c9;
+            color: @icon-color;
+            vertical-align: middle;
+            font-weight: bold;
+            padding-right: 0;
+            span{
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            strong{
+                display: block;
+                font-weight: bold;
+            }
+            &:active{
+				border-color: #aaa;
+				.gradient(#dcdbd7, #d2d1cc, #e6e6e3);
+				color: @icon-active-color;
+		}
+    }
+    }
+}
+
+.royalSlider > * {
+    float: left;
+}
+
+
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0); 
+}
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+    -webkit-transform: none;
+}
+.rsOverflow {
+    /*width: 600px;*/
+    height: 100%;
+    position: relative;
+    overflow: display;
+    float: left;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+
+}
+
+
+.rsVisibleNearbyWrap {
+    width: 100px; /*was 100%*/
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.rsVisibleNearbyWrap .rsOverflow {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+.rsContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.rsArrow,
+.rsThumbsArrow {
+    cursor: pointer;
+
+}
+
+.rsThumb {
+    float: left;
+    position: relative;
+}
+
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+    opacity: 1;
+    -webkit-transition:opacity 0.3s linear;
+    -moz-transition:opacity 0.3s linear;
+    -o-transition:opacity 0.3s linear;
+    transition:opacity 0.3s linear;
+}
+
+.rsHidden {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    -moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    -o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+    transition:visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+
+.rsGCaption {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+    position: fixed !important;
+    height: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 2147483647 !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+
+.royalSlider .rsSlide.rsFakePreloader {
+    opacity: 1 !important;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition:  0s;
+    transition:  0s;
+    display: none;
+}
+
+
+.rsSlide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+    height: auto;
+}
+
+.rsContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rsPreloader {
+    position:absolute;
+    z-index: 0; 
+}
+
+.rsNav {
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.rsNavItem {
+    -webkit-tap-highlight-color:rgba(0,0,0,0.25);
+}
+
+.rsThumbs {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    z-index: 22;
+}
+.rsTabs {
+    float: left;
+    background: none !important;
+}
+.rsTabs,
+.rsThumbs {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+
+.rsVideoContainer {
+    /*left: 0;
+    top: 0;
+    position: absolute;*/
+    /*width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;*/
+    width: auto;
+    height: auto;
+    line-height: 0;
+    position: relative;
+}
+.rsVideoFrameHolder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #141414;
+    opacity: 0;
+    -webkit-transition: .3s;
+}
+.rsVideoFrameHolder.rsVideoActive {
+    opacity: 1;
+}
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 44px;
+}
+
+.rsABlock {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 15;
+    -webkit-backface-visibility: hidden;
+}
+
+.grab-cursor {
+    cursor:url(grab.png) 8 8, move; 
+}
+
+.grabbing-cursor{ 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+.rsNoDrag {
+    cursor: auto;
+}
+
+.rsLink {
+    left:0;
+    top:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:block;  
+    z-index: 20;
+    background: url(blank.gif);
+    -webkit-backface-visibility: hidden;
+}
+
+/***** from skin ****/
+
+.rsDefault .rsArrow {
+    height: 100%;
+    width: 44px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    z-index: 21;
+}
+.rsDefault.rsVer .rsArrow {
+    width: 100%;
+    height: 44px;
+    
+}
+.rsDefault.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsDefault.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsDefault.rsHor .rsArrowLeft { left: 0; top: -18px; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top:-18px; }
+
+.rsDefault .rsArrowIcn {        
+    width: 41px;
+    height: 80px;
+    top: 92px;
+    margin-top: -16px;  
+    margin-left: 0px;
+    position: absolute; 
+    cursor: pointer;    
+    /*background: url('hgtv-homepage-carousel-sprite-100.png');*/
+    background-color: transparent;
+    *background-color: transparent;
+    border-radius: 2px;
+}
+
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn { background-position: -0px -0px; left: 0;}
+.rsDefault.rsHor .rsArrowLeft:hover .rsArrowIcn { background-position: -0px -85px;}
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn { background-position: -45px -0px; right: 0;}
+.rsDefault.rsHor:hover .rsArrowRight:hover .rsArrowIcn { background-position: -45px -85px;}
+
+.rsDefault.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsDefault.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsDefault .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+/*-----------------------------------------------*/
+.section-topics {
+    h2 {
+        margin-top: 24px;
+        margin-bottom: 10px;
+    }
+    .pod {
+        > a  {
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    .royalSlider {
+        min-height: 120px;
+	direction: ltr;
+	display: none;
+	left: 0;
+	overflow: visible;
+	position: relative;
+	width: 321px;
+
+        .rsSlide {
+	    .rsSlide {
+		.pod {
+		    a {
+			width:92px;
+			padding-right:15px;
+			margin-right:0;
+		    }		
+		}
+	    }
+	}
+    }
+}
+
+.video-carousel {
+    height: 125px;
+}
+.inline-slider{
+    min-height: 280px;
+    width: 80%;
+    .rsSlide{
+        float: left;
+        img {
+            max-width: 400px;
+        }
+    }
+}

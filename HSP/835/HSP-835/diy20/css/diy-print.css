@@ -1,0 +1,6 @@
+body#print{border:0;}
+#print #print-link{display:none}
+#print #resources{clear:both;}
+#print #diy-e {display:none;}
+#print #diy-w {width: auto;}
+#print #diy-bd {width: auto; margin-left: none;}

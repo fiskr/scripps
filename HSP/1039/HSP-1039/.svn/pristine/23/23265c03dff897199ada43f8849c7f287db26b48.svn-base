@@ -1,0 +1,59 @@
+<section class="sections-list centered clrfix">
+	<ol class="two-column">
+		<li class="pod">
+			<a href="/bathrooms/index.html">
+				<div data-picture>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bathrooms_4x3_med.jpg" data-media="(min-width: 200px)" ></div>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bathrooms_4x3_al.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+			        <noscript> <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bathrooms_4x3_med.jpg" alt="Bathrooms" /></noscript>
+			        <img/>
+		       </div>  
+			</a>
+			<p><a href="/bathrooms/index.html">Bathrooms</a></p>
+		</li>
+		<li class="pod">
+			<a href="/bedrooms/index.html">
+				<div data-picture>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bedrooms_4x3_med.jpg" data-media="(min-width: 200px)" ></div>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bedrooms_4x3_al.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+			        <noscript> <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-bedrooms_4x3_med.jpg" alt="Bedrooms" /></noscript>
+			        <img/>
+		       </div> 				
+			</a>
+			<p><a href="/bedrooms/index.html">Bedrooms</a></p>
+		</li>
+		<li class="pod">
+			<a href="/kids-rooms/index.html">
+				<div data-picture>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_med.jpg" data-media="(min-width: 200px)" ></div>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_al.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+			        <noscript> <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kids-rooms_4x3_med.jpg" alt="Kid's Rooms" /></noscript>
+			        <img/>
+		       </div> 	
+			</a>
+			<p><a href="/kids-rooms/index.html">Kid's Rooms</a></p>
+		</li>
+		<li class="pod">
+			<a href="/kitchens/index.html">
+				<div data-picture>
+				        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kitchens_4x3_med.jpg" data-media="(min-width: 200px)" ></div>
+				        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kitchens_4x3_al.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+				        <noscript> <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-kitchens_4x3_med.jpg" alt="Kitchens" /></noscript>
+				        <img/>
+		       </div> 
+			</a>
+			<p><a href="/kitchens/index.html">Kitchens</a></p>
+		</li>
+		<li class="pod">
+			<a href="/living-rooms/index.html">
+				<div data-picture>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-living-rooms_4x3_med.jpg" data-media="(min-width: 200px)" ></div>
+			        <div data-src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-living-rooms_4x3_al.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+			        <noscript> <img src="http://hgtv.sndimg.com/HGTV/2013/03/14/mobile_super-section-rooms-living-rooms_4x3_med.jpg" alt="Living Rooms" /></noscript>
+			        <img/>
+		       </div> 
+			</a>
+			<p><a href="/living-rooms/index.html">Living Rooms</a></p>
+		</li>	
+	</ol>
+</section>

@@ -1,0 +1,51 @@
+
+#vid-head {
+	min-height: 72px;
+}
+
+#vid-content {
+	h1 {
+		padding: 14px 0;
+		width: 65%;
+	}
+
+	.description {
+		font-size: 16px;
+		padding: 16px 0;
+
+	}
+
+	.dropdown{
+		float:none;
+		z-index: 3;
+		position: absolute;
+		top:74px;
+		right: 5%;
+		
+
+	}
+
+
+	video {		
+		height: 217px !important;
+		width: 289px !important;
+	}
+
+	.vid-html {
+		height: 225px !important;
+		width: auto !important;
+	}
+
+	#vlp-player-instance{
+		margin: 0 auto;
+	}
+
+	.dropdown .dropdown-menu{
+		left:-128px;
+		ul:after{
+			left: 159px; //shift nib b/c it's on the right	
+		}
+	}
+
+}
+

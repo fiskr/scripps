@@ -1,0 +1,72 @@
+
+#diy-e { float:right;}
+
+.show-lead { position:relative;}
+.show-lead h1.mini-lead { height: 125px;}
+.show-lead ul { background:#9F1B1B; margin-top:1px;}
+.show-lead li { float:left;}
+.show-lead li a { display:block; font-size:108%; font-weight:bold; line-height:2.9; padding:0 9px; text-shadow:#671104 0 1px 0;}
+.show-lead li a:link, .show-lead li a:visited { color:#f7f7f7;}
+.show-lead li a:hover { color:#FFF; text-decoration:none; background:#BA0707;}
+.show-lead li a:active, .show-lead li.sel a { color:#CCC; background:#681104;}
+
+#event-brand-logos { background:none; height:45px; margin:0; position:absolute; left:593px; top:71px; width:361px;}
+#event-brand-logos a { background:none; display:block; height:100%; padding:0; width:100%; text-indent:-999em; overflow:hidden;}
+#event-brand-logos a:link, #event-brand-logos a:visited, #event-brand-logos a:hover, #event-brand-logos a:active{ background:none;}
+#event-brand-logos .hg { height:45px; width:65px;}
+#event-brand-logos .diy { height:45px; width:72px;}
+#event-brand-logos .fd { height:45px; width:121px;}
+#event-brand-logos .hpro { height:45px; width:103px;}
+
+.generic-lead .hd { border-bottom:1px solid #E3E3E3; padding:7px 14px;}
+.generic-lead .hd h2 { color:#404830; font-size:161.6%; font-weight:bold;}
+.generic-lead .hd h3 { color:#404830;}
+
+#five-feature { background:#fafafa; border:1px solid #E3E3E3; float:left; margin:0 7px 14px 14px; padding:14px 20px; width:931px;}
+#five-feature h2 { border-bottom:1px solid #E3E3E3; font-size:108%; font-weight:bold; margin-bottom:7px; padding-bottom:7px; text-transform:uppercase;}
+#five-feature h3 { font-size:138.5%; font-weight:bold; line-height:1.2; margin-bottom:3px;}
+#five-feature p { line-height:1.4;}
+#five-feature li { float:left; margin-right:14px; width:166px;}
+#five-feature li.last { margin-right:0;}
+#five-feature li h3 { height:43px;}
+#five-feature img { margin-bottom:3px;}
+#five-feature.w { width:574px;}
+#five-feature.w li { margin-right:35px;}
+#five-feature.w li.n3 { margin-right:0;}
+#five-feature.w li.last, #five-feature.w li.n4 { margin-top:14px;}
+
+.mod-w { background:#FFF; border:1px solid #E3E3E3; float:left; height:252px; margin:0 0 14px 14px; padding:14px 20px; width:438px;}
+.mod-w h3 { font-size:108%; font-weight:bold; text-transform:uppercase;}
+.mod-w .thumbs { margin-bottom:7px;}
+.mod-w .thumbs li { float:left; margin-top:14px; width:219px;}
+.mod-w .thumbs img.thumb { border:2px solid #333; float:left; margin-right:7px;}
+.mod-w .thumbs p { line-height:1.4; margin-top:18px;}
+#services-search.mod-w { position:relative;}
+#services-search.mod-w .kudzu-logo, #services-search.pod .kudzu-logo { float:none; height:auto; margin:0; padding-top:0; position:absolute; right:13px; top:13px; width:auto;}
+#services-search.pod .kudzu-logo { top:0;}
+#services-search.mod-w form { margin-right:0;}
+#services-search.pod form { margin-bottom:7px;}
+#services-search.mod-w fieldset, #services-search.pod fieldset { border-top:1px solid #DDD; margin-top:14px; padding:10px 0 14px;}
+/*#services-search.mod-w label { font-weight:bold;}*/
+#services-search.mod-w div.item1 { float:left; width:205px;}
+#services-search.mod-w div.item2 { float:left; margin-left:14px; width:210px;}
+#services-search.pod div.item1 { float:left; width:182px;}
+#services-search.pod div.item2 { float:left; margin-left:14px; width:109px;}
+#services-search.mod-w p { line-height:1.4;}
+#services-search.mod-w .input-box { float:none;}
+#services-search.pod div.item1 .input-box { width:180px;}
+#services-search.mod-w .input-box input, #services-search.pod .input-box input { font-size:100%;}
+#services-search.mod-w .find, #services-search.pod .find { text-align:center;}
+
+.top-listing { margin:0 14px 14px;}
+.top-listing h4 { font-weight:bold; margin-top:7px;}
+.top-listing .large h4 { font-size:138.5%;}
+.top-listing ol li { clear:left;}
+.top-listing li .bd { background:#fff; border-top:1px solid #DDD; float:left; padding:10px 0; width:564px;}
+/*.top-listing ol li:first-child { border-top:1px solid #E3E3E3;}*/
+.top-listing a.thumb { border-left:4px solid #b16458; float:left; margin: 0 14px 0 0;}
+.top-listing .large a.thumb { border-left:4px solid #671104;}
+.top-listing img { display:block;}
+.top-listing .listingNum { background:#fafafa; border-top:1px solid #FFF; color:#a35448; float:left; font-size:215.4%; height:110px; line-height:1; padding:20px 10px 0 0; text-align:right; width:42px;}
+.top-listing .large .listingNum { color:#671104; border-top:1px solid #DDD; font-size:338.4%; height:190px;}
+.top-listing .attr { color:#999; font:77% Trebuchet MS;}

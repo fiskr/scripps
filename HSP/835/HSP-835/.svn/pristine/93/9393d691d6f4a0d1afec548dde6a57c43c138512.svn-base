@@ -1,0 +1,52 @@
+.sponsor-multi-logo { float: right; }
+.sponsor-multi-logo em { color: #a4a4a4; font-size: 85%; font-style: normal; }
+.sponsor-multi-logo a { float: left; margin-left: 5px; }
+/*.sponsor-multi-logo img { display: block; }*/
+
+.asset-title .sponsor { float: right; width: 340px; text-align: right; }
+
+.sweeps-lead .sponsor { float: right;}
+.sweeps-lead .sponsor p {font-size: 77%; color: #999; line-height: 2.82; float: none;}
+.sweeps-lead .sponsor img { vertical-align: middle; }
+
+/*SPONSORS-LEAD plain lead with sponsor thumbs */
+.sponsor-lead { border-bottom:none;border-right: 1px solid #ddd;border-left: 1px solid #ddd;border-top: 1px solid #ddd; padding: 7px 14px; margin: 0 14px; line-height:3; background-color: #fff; }
+.sponsor-lead span { float: left; color: #999; font-size: 77%; }
+.sponsor-lead .sponsors { float: right; }
+.sponsor-lead .sponsors img { display: block;}
+.generic-lead .sponsor { padding:2px 9px;}
+.sponsor h3 { font-size:123.1%; font-weight:bold; line-height:1.375;}
+.sponsor .sponsor-multi-logo em { float:none;display:block;line-height:normal;padding-bottom:7px;text-align:center;}
+.sponsor .sponsor-multi-logo em.solo { float: left; line-height: 4; padding-bottom: 0;}
+
+.section-title .sponsor { border: 1px solid #ccc; background: #fff; margin: 7px -11px -7px; padding: 7px 10px; font-size: 43%; line-height: 1; color: #333; line-height: 27px; text-transform: none; }
+.section-title .sponsor p { float: left; font-weight: bold;line-height: 3;}
+.section-title .sponsor ul { float: right;}
+.section-title .sponsor li { line-height: 1; }
+.section-title .sponsor li a { display: block; }
+
+.sponsored-lead { margin: 0 14px 14px; border: 1px solid #ddd;}
+.sponsored-lead a.sponsor { display: block; float: left; }
+.sponsored-lead a.sponsor img { display: block;}
+.sponsored-lead h4 { font-size:108%;line-height: 1; font-weight: bold; text-transform: uppercase;}
+.sponsored-lead .presented-by { float: left; margin: 14px 0; padding: 0 14px;}
+.sponsored-lead .sponsored-by { float: left; margin: 14px 0; padding: 0 14px; border-left: 1px solid #ddd;}
+.sponsored-lead .also-sponsored-by { clear: both; border-top: 1px solid #ddd; padding: 14px;}
+
+.pack-title { width:616px; margin: 0 0 7px 14px;}
+.pack-title .hd { height:60px;}
+.pack-title #hub-nav { border-left:1px solid #E3E3E3; border-right:1px solid #E3E3E3; border-bottom:1px solid #E3E3E3; padding:7px 11px;}
+
+/* sponsor recommendations in the right rail */
+#spon-recommendations a { 
+display:block;
+background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -369px; 
+padding-left: 10px;
+}
+#spon-recommendations img {
+display: none;
+} 
+
+/* sponsor logo on how-to page */
+.howto-detail .sponsor-multi-logo em { display: block; padding-bottom: 7px; text-align: center; }
+.howto-detail .sponsor-multi-logo a { margin-left: 0; }

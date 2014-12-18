@@ -1,0 +1,767 @@
+/*body#dream-home { background:#9C9AA1;}
+#dream-home #leaderboard-wrap { background:#807F84;}*/
+#dream-home #site-wrapper .tentpole-container {
+    padding:7px 7px 0;
+    position:relative;
+    z-index:999;
+    }
+
+#dream-home #site-wrapper .super-lead .tentpole-container {
+    padding:7px 7px 0;
+    }
+
+#dream-home .super-lead {
+    background:#FFF;
+    margin-bottom:0;
+    z-index:999;
+    -moz-border-radius-topleft:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-left-radius:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    }
+
+#dream-home.section .super-lead {
+    margin-bottom:-11px;
+    }
+
+#dream-home #site-wrapper .super-lead img {
+    padding:0;
+    }
+
+#dream-home.article-detail h1 {
+    font-weight:normal;
+    color:#444;
+    }
+
+.super-lead {
+    height:auto; /* margin: 0;*/
+    }
+
+#site-wrapper .super-lead img {
+    border:none;
+    padding:7px 0;
+    margin:0 auto;
+    }
+
+#package-nav {
+    margin:0 0 14px 14px;
+    }
+
+.dh-body {
+    padding:0 14px 15px;
+    }
+
+#ipix-player {
+    }
+
+#dream-home .dh-body #tour-carousel, #dreamhome .dh-body #tour-carousel, #green-home .dh-body #tour-carousel, #urban-oasis .dh-body #tour-carousel {
+    margin-bottom:14px;
+    }
+
+#dream-home .hub ul.button-nav a, #green-home .hub ul.button-nav a, #urban-oasis .hub ul.button-nav a {
+    font-weight:normal;
+    }
+
+#dream-home .hub, #green-home .hub, #urban-oasis .hub {
+    margin:0 14px 14px;
+    }
+
+#dream-home #toolbar, #green-home #toolbar, #urban-oasis #toolbar {
+    margin:0 14px 14px;
+    }
+
+#dream-home .modbox .meta, #green-home .modbox .meta, #urban-oasis .modbox .meta {
+    float:right;
+    margin:21px 0 0 7px;
+    position:static;
+    }
+
+#dream-home .modbox .meta a, #green-home .modbox .meta a, #urban-oasis .modbox .meta a {
+    display:block;
+    }
+
+#dream-home .modbox .meta img, #green-home .modbox .meta img, #urban-oasis .modbox .meta img {
+    border:1px solid #d4d4d4;
+    display:block;
+    margin:3px 0 7px;
+    padding:1px;
+    }
+
+#dream-home .modbox a.cta, #green-home .modbox a.cta, #urban-oasis .modbox a.cta {
+    display:block;
+    color:#D72D82;
+    }
+
+.dream-home #pgallery, .green-home #pgallery, .urban-oasis #pgallery {
+    margin-bottom:10px;
+    }
+
+.article-detail .large-desc {
+    margin-bottom:15px;
+    }
+
+/* ----- [ NAV OVERRIDES ] ----- */
+.products-detail #package-nav .products a, #dream-home.section #package-nav .main a, #dream-home.player-detail #package-nav .video a {
+    background-position:right -29px;
+    text-decoration:none;
+    }
+
+.products-detail #package-nav .products a span, #dream-home.section #package-nav .main a span, #dream-home.player-detail #package-nav .video a span {
+    background-position:left -29px;
+    }
+
+/* ----- [ FEATURES ] ----- */
+.alt-list img.thumb {
+    display:block;
+    padding:2px;
+    border:1px solid #ddd;
+    width:92px;
+    height:69px;
+    float:right;
+    margin:5px 0 0 5px;
+    }
+
+#hg-we .alt-list p {
+    padding-bottom:0;
+    }
+
+/* ----- [ ARTICLE ] ----- */
+#art-intro p {
+    margin:0 14px;
+    }
+
+#art-intro a.art-more {
+    padding-left:14px;
+    }
+
+/* ----- [ PRODUCT SHOWCASE ] ----- */
+#showcase {
+    margin:0 14px;
+    }
+
+#showcase ul li {
+    float:left;
+    height:210px;
+    margin-right:5px;
+    margin-left:5px;
+    width:185px;
+    line-height:1.2em;
+    }
+
+#showcase p {
+    margin-bottom:20px;
+    }
+
+#showcase table.products {
+    width:100%;
+    }
+
+#showcase table.products tr {
+    vertical-align:top;
+    }
+
+#showcase table.products td {
+    width:210px;
+    padding:15px;
+    border:1px solid #e9e9e9;
+    border-bottom:0;
+    }
+
+#showcase table.products tr.first td {
+    border-top:0;
+    }
+
+#showcase table.products td.first {
+    border-left:0;
+    border-right:0;
+    }
+
+#showcase table.products td.last {
+    border-left:0;
+    border-right:0;
+    }
+
+#showcase table.products td a {
+    display:block;
+    }
+
+#showcase table.products td img {
+    display:block;
+    }
+
+/* ----- [ BLOG ] -----*/
+#blog {
+    margin-bottom:15px;
+    }
+
+#blog .hd {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll 0 0;
+    }
+
+#blog .powered-by {
+    float:right;
+    margin-right:10px;
+    margin-top:14px;
+    margin-left:7px;
+    font-size:77%;
+    }
+
+#blog .powered-by a {
+    float:right;
+    margin-top:-16px;
+    margin-left:7px;
+    }
+
+#blog .ft {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll -406px bottom;
+    padding-bottom:10px;
+    }
+
+#blog .bd {
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    }
+
+#blog h2 {
+    line-height:1;
+    margin:0 15px 7px;
+    padding-top:15px;
+    }
+
+#blog p.intro {
+    padding-bottom:10px;
+    color:#424242;
+    margin-left:15px;
+    margin-right:15px;
+    }
+
+#blog .entry {
+    margin:0 15px;
+    }
+
+#blog .entry cite {
+    color:#a6a6a6;
+    font:normal 77% arial;
+    }
+
+#blog .entry h4 {
+    line-height:1em;
+    }
+
+#blog a.morelink {
+    margin:0 15px 15px;
+    }
+
+/* ----- [ BLOG ] -----*/
+#messageboard {
+    margin-bottom:14px;
+    }
+
+#messageboard .hd {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll 0 0;
+    }
+
+#messageboard .bd {
+    padding:0 14px;
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    }
+
+#messageboard .ft {
+    height:10px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll -406px bottom;
+    _font-size:0;
+    }
+
+#messageboard h2 {
+    margin-bottom:0;
+    padding:14px 14px 5px 14px;
+    }
+
+#messageboard .mb-hd {
+    margin-bottom:8px;
+    line-height:1.385;
+    }
+
+#messageboard .mb-ft {
+    padding:0 5px;
+    }
+
+#messageboard .mb-ft .left {
+    float:left;
+    }
+
+#messageboard .mb-ft .right {
+    float:right;
+    }
+
+#messageboard .mb-bd {
+    margin-bottom:3px;
+    }
+
+#messageboard .mb-bd li {
+    float:left;
+    width:375px;
+    margin-bottom:5px;
+    }
+
+#messageboard .mb-bd .bubble {
+    float:left;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat 0 top;
+    }
+
+#messageboard .mb-bd .bubble q {
+    display:block;
+    margin-left:10px;
+    padding:7px 10px 1px 0;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat right top;
+    line-height:1.385;
+    }
+
+#messageboard .mb-bd .bubble a {
+    display:block;
+    }
+
+#messageboard .mb-bd cite {
+    clear:left;
+    display:block;
+    color:#666;
+    background:#fff url(../imgs/mb-bubble.png) no-repeat 0 -379px;
+    }
+
+#messageboard .mb-bd cite span {
+    display:block;
+    padding-top:8px;
+    margin-left:34px;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat right -379px;
+    *padding-top:3px;
+    }
+
+/* ----- [ POD OVERRIDES ] -----*/
+#hg-e .pod.countdown p, #hg-e .pod.green-pod p {
+    line-height:1.4em;
+    }
+
+#hg-e .countdown .bd p {
+    padding-bottom:5px;
+    zoom:1;
+    }
+
+#hg-e .green-pod .bd ul.list {
+    margin-left:0;
+    margin-top:10px;
+    clear:left;
+    *padding-bottom:10px;
+    }
+
+#hg-e .green-pod .bd img.thumb {
+    float:left;
+    display:block;
+    margin-right:7px;
+    margin-bottom:7px;
+    }
+
+#dream-home #hg-e .pod ul.list {
+    float:left;
+    }
+
+#dream-home .pod img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#floorplan-container {
+    margin-top:14px;
+    }
+
+/* ----- [ CAROUSEL OVERRIDES ] -----*/
+#tour-carousel {
+    width:602px;
+    margin:0;
+    background:#fff url(../imgs/bg_tour_crsl.png) no-repeat 0 bottom;
+    border-top:1px solid #c5c5c5;
+    }
+
+#tour-carousel .hd, #photo-carousel .hd {
+    padding-bottom:12px;
+    }
+
+#tour-carousel h3, #photo-carousel h3 {
+    font-size:108%;
+    }
+
+#tour-carousel li li, #photo-carousel li li {
+    border:1px solid #dae7e3;
+    }
+
+#tour-carousel li li a, #photo-carousel li li a {
+    display:block;
+    font:normal 77% arial;
+    }
+
+#tour-carousel li li:hover, #tour-carousel li li.hover, #photo-carousel li li:hover, #photo-carousel li li.hover, #photo-carousel li li.sel, #tour-carousel li li.sel {
+    border:1px solid #ef4141;
+    }
+
+#tour-carousel li li:hover a, #tour-carousel li li.hover a, #photo-carousel li:hover a, #photo-carousel li li.hover a {
+    color:#434343;
+    }
+
+#tour-carousel li li a.room, #photo-carousel li a.room {
+    text-align:left;
+    line-height:14px;
+    }
+
+#tour-carousel li li img, #photo-carousel li li img {
+    margin-bottom:5px;
+    }
+
+#tour-carousel .jcarousel-item, #photo-carousel .jcarousel-item {
+    margin-bottom:8px;
+    }
+
+#tour-carousel .jcarousel-pageimg, #photo-carousel .jcarousel-pageimg {
+    top:-23px;
+    }
+
+#photo-carousel {
+    margin:0;
+    }
+
+#photo-carousel .hd {
+    padding-bottom:0;
+    }
+
+#vid-lib-we .jcarousel-clip, #vid-lib-we .jcarousel-clip-horizontal {
+    _width:392px;
+    }
+
+/*.crsl-e .jcarousel-clip-horizontal {width:326px;}*/
+
+#dream-home .intro p, #dreamhome .intro p {
+    margin-bottom:0;
+    }
+
+#dream-home .intro .next, #dreamhome .intro .next {
+    margin-bottom:7px;
+    }
+
+/* add some padding to the carousels inside of pods */
+#hg-ww #related-videos .bd,
+#hg-ww #tour-rooms .bd,
+#hg-ww #photo-gallery .bd {
+    margin-top:6px;
+    padding-bottom:4px;
+    }
+
+#photo-gallery .view-more {
+    font-weight:normal;
+    }
+
+#resources {
+    margin-bottom:20px;
+    }
+
+/* some stuff just needs a common bottom margin */
+#dream-home .gallery-tease, #dream-home .related-link, #dreamhome .gallery-tease, #dreamhome .related-link {
+    margin-bottom:14px;
+    }
+
+/* Video Library */
+#design-star #video-library, #green-home #video-library, #urban-oasis #video-library {
+    margin:0 0 14px;
+    width:406px;
+    }
+
+#design-star #video-library .crsl-media, #green-home #video-library .crsl-media, #urban-oasis #video-library .crsl-media {
+    margin:-5px 0 0;
+    }
+
+#design-star #video-library .crsl-media .crsl-item, #green-home #video-library .crsl-media .crsl-item, #urban-oasis #video-library .crsl-media .crsl-item {
+    margin:0 9px;
+    }
+
+#design-star #video-library .crsl-media .jcarousel-prev-horizontal, #green-home #video-library .crsl-media .jcarousel-prev-horizontal, #urban-oasis #video-library .crsl-media .jcarousel-prev-horizontal {
+    left:0;
+    }
+
+#design-star #video-library .crsl-media .jcarousel-next-horizontal, #green-home #video-library .crsl-media .jcarousel-next-horizontal, #urban-oasis #video-library .crsl-media .jcarousel-next-horizontal {
+    right:0;
+    }
+
+#design-star #video-library .crsl-media .jcarousel-clip-horizontal, #green-home #video-library .crsl-media .jcarousel-clip-horizontal, #urban-oasis #video-library .crsl-media .jcarousel-clip-horizontal {
+    width:396px;
+    }
+
+#design-star #video-library .crsl-media .panel, #green-home #video-library .crsl-media .panel, #urban-oasis #video-library .crsl-media .panel {
+    width:396px;
+    }
+
+/* channel-crsl : Three and Four 92 x 69 Images with Borders in hg-w and hg-we */
+#dream-home #hg-we .channel-crsl .hd, #video #hg-we .channel-crsl .hd, #green-home #hg-we .channel-crsl .hd, #urban-oasis #hg-we .channel-crsl .hd {
+    padding-bottom:10px;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-clip-horizontal, #green-home #hg-we .channel-crsl .jcarousel-clip-horizontal, #video #hg-we .channel-crsl .jcarousel-clip-horizontal, #urban-oasis #hg-we .channel-crsl .jcarousel-clip-horizontal {
+    width:392px;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-item, #green-home #hg-we .channel-crsl .jcarousel-item, #video #hg-we .channel-crsl .jcarousel-item, #urban-oasis #hg-we .channel-crsl .jcarousel-item {
+    width:552px;
+    margin:5px 0 0 0;
+    padding:8px 16px 5px 16px;
+    }
+
+#dream-home #hg-we .channel-crsl li ul li, #green-home #hg-we .channel-crsl li ul li, #video #hg-we .channel-crsl li ul li, #urban-oasis #hg-we .channel-crsl li ul li {
+    float:left;
+    width:92px;
+    margin:0 9px;
+    padding:4px;
+    border:1px solid #ddd;
+    line-height:1em;
+    _display:inline;
+    }
+
+#dream-home #hg-we .channel-crsl li ul li p span, #green-home #hg-we .channel-crsl li ul li p span, #video #hg-we .channel-crsl li ul li p span, #urban-oasis #hg-we .channel-crsl li ul li p span {
+    font-size:77%;
+    color:#999;
+    }
+
+#dream-home #hg-we .channel-crsl li ul li img, #green-home #hg-we .channel-crsl li ul li img, #video #hg-we .channel-crsl li ul li img, #urban-oasis #hg-we .channel-crsl li ul li img {
+    float:left;
+    width:92px;
+    padding:0 0 2px;
+    border:none;
+    }
+
+#dream-home #hg-we .channel-crsl li ul li a, #green-home #hg-we .channel-crsl li ul li a, #video #hg-we .channel-crsl li ul li a, #urban-oasis #hg-we .channel-crsl li ul li a {
+    font-size:77%;
+    text-align:left;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-next-horizontal, #green-home #hg-we .channel-crsl .jcarousel-next-horizontal, #video #hg-we .channel-crsl .jcarousel-next-horizontal, #urban-oasis #hg-we .channel-crsl .jcarousel-next-horizontal {
+    position:absolute;
+    top:45px;
+    right:0;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-prev-horizontal, #green-home #hg-we .channel-crsl .jcarousel-prev-horizontal, #video #hg-we .channel-crsl .jcarousel-prev-horizontal, #urban-oasis #hg-we .channel-crsl .jcarousel-prev-horizontal {
+    position:absolute;
+    top:45px;
+    left:0;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-pageimg, #video #hg-we .channel-crsl .jcarousel-pageimg, #green-home #hg-we .channel-crsl .jcarousel-pageimg, #urban-oasis #hg-we .channel-crsl .jcarousel-pageimg {
+    position:absolute;
+    top:-10px;
+    height:8px;
+    }
+
+#dream-home #hg-we .channel-crsl .jcarousel-item, #video #hg-we .channel-crsl .jcarousel-item, #green-home #hg-we .channel-crsl .jcarousel-item, #urban-oasis #hg-we .channel-crsl .jcarousel-item {
+    width:360px;
+    }
+
+#hg-we .channel-crsl .jcarousel-clip-horizontal {
+    width:392px;
+    }
+
+#hg-we .channel-crsl .jcarousel-item {
+    width:360px;
+    }
+
+#dream-home #hg-we p, #video #hg-we p, #green-home #hg-we p, #urban-oasis #hg-we p {
+    padding-bottom:0;
+    }
+
+#dream-home #video-library .channel-list li.switch, #green-home #video-library .channel-list li.switch, #video #video-library .channel-list li.switch, #urban-oasis #video-library .channel-list li.switch {
+    margin-bottom:14px;
+    background:#FFFFFF url(../imgs/ui.png) no-repeat scroll left -264px;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS";
+    height:29px;
+    line-height:28px;
+    padding-left:20px;
+    text-transform:uppercase;
+    }
+
+#dream-home #video-library .channel-list li.switch .channel-bd, #green-home #video-library .channel-list li.switch .channel-bd, #video #video-library .channel-list li.switch .channel-bd, #urban-oasis #video-library .channel-list li.switch .channel-bd {
+    border-left:1px solid #DDDDDD;
+    border-right:1px solid #DDDDDD;
+    padding:0 6px;
+    }
+
+#dream-home #video-library .channel-list li.switch .channel-hdr, #green-home #video-library .channel-list li.switch .channel-hdr, #video #video-library .channel-list li.switch .channel-hdr, #urban-oasis #video-library .channel-list li.switch .channel-hdr {
+    background:#FFFFFF url(../imgs/ui.png) no-repeat scroll right -264px;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS";
+    height:29px;
+    line-height:28px;
+    text-transform:uppercase;
+    }
+
+#dream-home #video-library .channel-list li.switch .channel-hdr h4, #green-home #video-library .channel-list li.switch .channel-hdr h4, #video #video-library .channel-list li.switch .channel-hdr h4, #urban-oasis #video-library .channel-list li.switch .channel-hdr h4 {
+    font-size:93%;
+    font-weight:bold;
+    height:28px;
+    padding-top:1px;
+    cursor:pointer;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr, #dream-home #video-library .channel-list li.selected .channel-hdr, #green-home #video-library .channel-list li.selected .channel-hdr, #urban-oasis #video-library .channel-list li.selected .channel-hdr {
+    margin-right:0;
+    padding-left:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat 0px 0;
+    }
+
+#video #hg-w #hg-we .crsl-container, #dream-home #hg-w #hg-we .crsl-container, #green-home #hg-w #hg-we .crsl-container, #urban-oasis #hg-w #hg-we .crsl-container {
+    width:396px;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr em, #dream-home #video-library .channel-list li.selected .channel-hdr em, #green-home #video-library .channel-list li.selected .channel-hdr em, #urban-oasis #video-library .channel-list li.selected .channel-hdr em {
+    float:left;
+    display:block;
+    width:9px;
+    height:5px;
+    margin-top:12px;
+    padding-right:6px;
+    background:transparent url(../imgs/ui.png) no-repeat -501px -498px;
+    _font-size:0;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr h4, #dream-home #video-library .channel-list li.selected .channel-hdr h4, #green-home #video-library .channel-list li.selected .channel-hdr h4, #urban-oasis #video-library .channel-list li.selected .channel-hdr h4 {
+    color:#333;
+    background:none;
+    }
+
+#video #video-library .channel-list li.selected, #dream-home #video-library .channel-list li.selected, #green-home #video-library .channel-list li.selected, #urban-oasis #video-library .channel-list li.selected {
+    padding-bottom:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -406px bottom;
+    padding-left:0;
+    }
+
+#video #video-library .channel-list li.selected, #dream-home #video-library .channel-list li.selected, #green-home #video-library .channel-list li.selected, #urban-oasis #video-library .channel-list li.selected {
+    height:170px;
+    }
+
+#video #video-library .subhead, #dream-home #video-library .subhead, #green-home #video-library .subhead, #urban-oasis #video-library .subhead {
+    padding-top:13px;
+    }
+
+#video #video-library h3.sub-header, #dream-home #video-library h3.sub-header, #design-star #video-library .subhead h3, #green-home #video-library h3.sub-header, #green-home #video-library .subhead h3, #urban-oasis #video-library h3.sub-header, #urban-oasis #video-library .subhead h3 {
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    margin-bottom:2px;
+    }
+
+#video #video-library h3.sub-header, #dream-home #video-library h3.sub-header, #green-home #video-library h3.sub-header, #urban-oasis #video-library h3.sub-header {
+    margin-bottom:10px;
+    }
+
+#video #video-library .subhead p, #dream-home #video-library .subhead p, #green-home #video-library .subhead p, #urban-oasis #video-library .subhead p {
+    margin-bottom:10px;
+    }
+
+#dream-home .photo-gallery #pgallery3, #green-home .photo-gallery #pgallery3, #video .photo-gallery #pgallery3, #urban-oasis .photo-gallery #pgallery3 {
+    margin-left:0;
+    margin-right:0;
+    }
+
+/* DREAMHOME 2009 GALLERY STYLES */
+#dream-home .dh2009 #pgallery #photonav {
+    margin-bottom:10px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav, #dream-home .dh2009 #pgallery #photonav a {
+    color:#195A64;
+    height:auto;
+    }
+
+#dream-home .dh2009 #pgallery #photonav ul {
+    text-align:center;
+    }
+
+#dream-home .dh2009 #pgallery #photonav ul li {
+    width:auto;
+    }
+
+#dream-home .dh2009 #pgallery #photonav ul li.prev {
+    float:left;
+    width:6em;
+    }
+
+#dream-home .dh2009 #pgallery #photonav ul li.next {
+    float:right;
+    width:6em;
+    }
+
+#dream-home .dh2009 #pgallery #photonav ul li.paginate-position {
+    margin:0;
+    font:normal 85% arial;
+    padding-top:5px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .prev a.btn {
+    display:block;
+    cursor:pointer;
+    width:18px;
+    height:0;
+    padding-top:18px;
+    overflow:hidden;
+    background:transparent url(../imgs/ui.png) no-repeat -267px -494px;
+    text-align:center;
+    float:left;
+    margin-right:5px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .prev a.btn:hover, #dream-home .dh2009 #pgallery #photonav .prev a.hover {
+    background-position:-303px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .prev a.btn:active {
+    background-position:-339px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .prev a.disabled, #dream-home .dh2009 #pgallery .photonav .prevlnk a.disabled:hover, #dream-home .dh2009 #pgallery .photonav .prevlnk a.disabled:active {
+    cursor:default;
+    background-position:-375px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .prev span {
+    color:#999;
+    padding:2px 0;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .next a.btn {
+    display:block;
+    cursor:pointer;
+    width:18px;
+    height:0;
+    padding-top:18px;
+    overflow:hidden;
+    background:transparent url(../imgs/ui.png) no-repeat -285px -494px;
+    text-align:center;
+    float:right;
+    margin-left:5px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .next a.btn:hover, #dream-home .dh2009 #pgallery #photonav .next a.hover {
+    background-position:-321px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .next a.btn:active {
+    background-position:-357px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .next a.disabled, #dream-home .dh2009 #pgallery .photonav .next a.disabled:hover, #dream-home .dh2009 #pgallery .photonav .next a.disabled:active {
+    cursor:default;
+    background-position:-393px -494px;
+    }
+
+#dream-home .dh2009 #pgallery #photonav .next span {
+    color:#999;
+    }
+

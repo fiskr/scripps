@@ -1,0 +1,5 @@
+http://my.gactv.com/50-honky-tonks/editupload.esi
+http://my.gactv.com/50-honky-tonks
+http://my.gactv.com/50-honky-tonks/detail.esi
+http://my.gactv.com/cma-music-festival-photos/gallery.esi
+http://my.gactv.com/cma-music-festival-fan-photos/gallery.esi

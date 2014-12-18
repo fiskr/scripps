@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)http://assets.adobedtm.com/076e416a6caa07234c15d9bd371ee9e19eef88d3/scripts/satellite-53b3041446a1a8d059000561.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css"></style></head><body>
+    <script>
+      (function(){
+        function parseQueryString(){
+          var ret = {}, parts = location.search.substring(1).split('&');
+          for (var i = parts.length; i--;) {
+            var vardef = parts[i].split('='), varname = vardef[0], value = vardef[1];
+            ret[varname] = value;
+          }
+          return ret;
+        }
+        var queryParams = parseQueryString();
+
+        var markup = "<!-- START Nielsen Online SiteCensus V6.0 -->\n<!-- COPYRIGHT 2010 Nielsen Online -->\n<script type=\"text/javascript\">\n  (function () {\n    var d = new Image(1, 1);\n    d.onerror = d.onload = function () {\n      d.onerror = d.onload = null;\n    };\n    d.src = [\"//secure-us.imrworldwide.com/cgi-bin/m?ci=us-200639h&cg=0&cc=1&si=\", escape(window.location.href), \"&rp=\", escape(document.referrer), \"&ts=compact&rnd=\", (new Date()).getTime()].join('');\n  })();\n</scr"+"ipt>\n<noscript>\n  <div>\n    <img src=\"//secure-us.imrworldwide.com/cgi-bin/m?ci=us-200639h&amp;cg=0&amp;cc=1&amp;ts=noscript\"\n    width=\"1\" height=\"1\" alt=\"\" />\n  </div>\n</noscript>\n<!-- END Nielsen Online SiteCensus V6.0 -->";
+
+        for (var name in queryParams){
+          var regex = new RegExp('%' + name.replace('.', '\.') + '%', 'ig');
+          markup = markup.replace(regex, queryParams[name]);
+        }
+
+        document.write(markup)
+      })();
+    </script><!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-200639h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  &lt;div&gt;
+    &lt;img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-200639h&amp;amp;cg=0&amp;amp;cc=1&amp;amp;ts=noscript"
+    width="1" height="1" alt="" /&gt;
+  &lt;/div&gt;
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+  
+
+</body></html>

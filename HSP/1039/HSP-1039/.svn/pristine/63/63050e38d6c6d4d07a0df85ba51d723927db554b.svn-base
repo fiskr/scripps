@@ -1,0 +1,22 @@
+        <div class="directory-list" id="directory-list">
+          <header>
+            <h2>Shows A-Z</h2>
+          </header> 
+              <ul>
+                <li><a href="/bathrooms/index.html">15 Bodacious Backyards</a></li>
+                <li><a href="/kitchens/index.html">15 Fresh Handmade Gift Ideas</a></li>
+                <li><a href="/bedrooms/index.html">20 Ways to Add Value to Your Home</a></li>
+                <li><a href="/dining-rooms/index.html">24 Hour Design</a></li>
+                <li><a href="/living-rooms/index.html">25 Biggest Decorating Mistakes</a></li>
+                <li><a href="/kids-rooms/index.html">25 Biggest Renovating Mistakes</a></li>
+                <li><a href="/specialty-rooms/index.html">25 Great Holiday Ideas</a></li>
+                <li><a href="/specialty-rooms/index.html">30 Holiday Decorating Hits & Misses</a></li>
+                <li><a href="/bathrooms/index.html">A Man Named Pearl</a></li>
+                <li><a href="/kitchens/index.html">A Very Merry Curb Appeal</a></li>
+                <li><a href="/bedrooms/index.html">All American Handyman</a></li>
+                <li><a href="/dining-rooms/index.html">All Out American Christmas</a></li>
+                <li><a href="/living-rooms/index.html">Amazing Water Homes</a></li>
+                <li><a href="/kids-rooms/index.html">Amazing Waterfront Homes</a></li>
+                <li><a href="/specialty-rooms/index.html">America's Best Kept Secrets</a></li>
+              </ul>
+            </div>

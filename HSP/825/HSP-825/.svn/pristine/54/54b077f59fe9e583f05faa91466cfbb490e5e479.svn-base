@@ -1,0 +1,19 @@
+#social {
+	a {
+	  float:left;
+	  margin: 0 auto;
+	  width: 33%;
+	  font-size:48px;
+	  text-align: center;
+	}
+
+	@border-color: #efefee;
+	.icon-twitter-sign{
+	  border-left: 1px solid @border-color;
+	  border-right: 1px solid @border-color;
+	}
+
+	.icon-facebook-sign {color:#3b5998;}
+	.icon-twitter-sign {color:#00acee;}
+	.icon-pinterest-sign {color:#cb2027;}
+}

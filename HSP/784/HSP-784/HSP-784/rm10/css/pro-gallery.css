@@ -1,0 +1,48 @@
+section.theater.pro-gallery .pagination-bgr {position:relative; height:75px; background: none repeat scroll 0 0 rgba(128, 128, 128, 0.1); box-shadow:0 1px 0 0 rgba(0, 0, 0, 0.18);}
+section.theater.pro-gallery .photo-gallery {margin-top:-75px;}
+.pro-gallery .pg-navigation {height:75px; padding:0; margin-bottom:20px;}
+
+.pro-gallery .pg-navigation .left {border-right:1px solid rgba(255, 255, 255, 0.07);}
+.pro-gallery .pg-navigation .right {border-left:1px solid rgba(255, 255, 255, 0.07);}
+
+.pro-gallery .pro-filters {float:left; width:663px; margin:0 auto;}
+.pro-gallery .pro-filters .filter-wrap {display:block; text-align:center; padding-top:25px;}
+
+#pro-galleries nav .nav-wrap .box.drop {z-index:5106;}
+#pro-galleries .local-nav-wrap {z-index:5105;}
+.pro-gallery .pg-navigation {z-index:5104;}
+.pro-gallery .pg-navigation .narrowby a.view-all {color:#66bfe7;}
+.pro-gallery .pg-navigation .narrowby a.view-all:hover {color:#8be0ff;}
+.pro-gallery .pg-navigation a.nextprev {font-size:14px; font-weight:bold; color:#69c0e7; text-decoration:none;}
+.pro-gallery .pg-navigation a.nextprev,
+.pro-gallery .pg-navigation a.nextprev:visited,
+.pro-gallery .pg-navigation a.nextprev:active {color:#fff; text-decoration:none; text-shadow:0 1px rgba(0, 0, 0, 0.5); display:block;}
+.pro-gallery .pg-navigation a.nextprev.prev {border-right: 1px solid rgba(0, 0, 0, 0.21);}
+.pro-gallery .pg-navigation a.nextprev.next {border-left: 1px solid rgba(0, 0, 0, 0.21);}
+.pro-gallery .pg-navigation a.nextprev span {display:block; width:137px; padding:29px 0 0 12px; height:46px; opacity:0.7; background:url(../imgs/se/sprite.png) 107px -7921px no-repeat;}
+.pro-gallery .pg-navigation a.nextprev.prev span {padding:29px 0 0 55px; width:123px; background-position:left -8007px;}
+.pro-gallery .pg-navigation a.nextprev:hover span {opacity:0.9;}
+.pro-gallery .pg-navigation .p-wrap {border-right:1px solid #484848; display:inline-block;}
+.pro-gallery .pg-navigation .p-wrap p {color:#fff; font-weight:bold; font-size:1em;height:30px;}
+.pro-gallery .pg-navigation p {padding-right:16px;}
+.pro-gallery .pg-navigation p,
+.pro-gallery .pg-navigation div.narrowby {display:inline-block;padding-left:14px;padding-top:4px;text-align:left;margin:0;}
+
+.pro-gallery .pg-photo-display .pg-fitted .photo img {height:462px;}
+.pro-gallery .pg-photo-description {margin:14px 0 0 0;clear:left;width:614px;}
+.pro-gallery .pg-photo-description h1 {font-size:1em; margin-bottom:7px; font-weight:bold; line-height:1.5em; font-family:Arial,Helvetica,sans-serif;}
+.pro-gallery .pg-photo-description h2 {font-size:14px; line-height:1.5em; font-family:Arial,Helvetica,sans-serif; letter-spacing:0;}
+.pro-gallery .pg-photo-description .toolbar {float:none;padding-top:25px;}
+
+.pro-gallery #email-a-friend {left:0;top:49px;}
+
+.pro-galleries div.sni-w > div.pod:first-child, 
+.pro-galleries div.sni-e > div.pod:first-child {margin-top:21px;}
+.pro-galleries .pod.sponsor-links a {display:block;padding-left:14px;background:url(../imgs/se/sprite.png) 0 7px no-repeat;margin-bottom:7px;line-height:1.6em;}
+.pro-galleries div.sni-w .master h5 a {color:#2a76a8;}
+.pro-galleries div.sni-w .master h5 a:hover {color:#4e98d3;}
+
+.pro-galleries .lead.rule {border-top:none;margin-top:-14px;padding-top:0;}
+.pro-galleries .pod.grid {min-height:207px;}
+
+.pro-gallery .pg-navigation .p-wrap p span.spaces{display:none;}

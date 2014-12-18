@@ -1,0 +1,162 @@
+article{
+	margin-top: 18px;
+	a {
+	font-size: 16px;
+	}
+	h2 {
+		font-size: 21px;
+		padding: 0;
+	}
+	.title {
+		font: bold 24px arial;
+	}
+	header {
+		.column{
+			float: left;
+		}
+	}
+	figure{
+		padding: 15px 0;
+		img{
+			width: 100%;
+			max-width: 616px;
+		}
+	}
+	figcaption {
+		font-size: 12px;
+		color: #999999;
+	}
+	strong{
+		font-weight: bold;
+	}
+	p,
+	.component{
+		padding: 10px 0 20px 0;
+		font: 16px/24px arial;
+
+	}
+	ol{
+		li {
+			list-style: decimal;
+			list-style-position: inside;
+		}
+	}
+	.centered {
+		padding: 25px 0 0 0;
+
+	}
+	.continued,
+	.readfull{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.continued{
+		margin-top: 10px;
+		a {
+			font-weight:bold;
+		}
+	}
+	.readfull{
+		a {
+		    background: -moz-linear-gradient(center bottom , #E1E1DA 0%, #F6F6F3 100%) repeat scroll 0 0 transparent;
+		    border-color: #C9C9C9;
+		    border-radius: 4px 4px 4px 4px;
+		    border-style: solid;
+		    border-width: 1px;
+		    color: #386CB4;
+		    display: inline-block;
+		    font-size: 1.4em;
+		    font-weight: bold;
+		    padding: 10px 0;
+		    position: relative;
+		    text-align: center;
+		    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+		    width: 100%;
+		    z-index: 1;
+			&:before{
+				content: "\f055";
+				margin-right: 5px;
+		    	font-family: hgtv_iconsregular;
+		    	font-size: 16px;
+		   		text-shadow: 0px 1px 1px rgba(256,256,256, 0.5);
+		    	font-weight: normal;
+		    }
+	    }
+	}
+
+	.article-head{
+		padding-top: 0;
+		.row {
+			.dropdown{
+	    		float: right;
+
+		        .dropdown-menu{
+		            right: 0;
+		            left: auto;
+		            ul:after{
+		                right: 25px;
+		                left: auto;
+		            }
+		        }
+		    }
+		}
+	    
+	}
+	.material-tools {
+		ul{
+			list-style-position: inside;
+			list-style-type: disc;
+			li{
+				padding: 8px 0;
+				font-size: 16px;
+			}
+		}
+	}
+	.meta-data {
+		width: 70%;
+		p {
+			padding: 0;
+			font-size: 12px;
+			line-height: normal;
+			color: #999999;
+			a {
+				font-size: 12px;
+			}
+		}
+	}
+	.section {
+		width: 90%;
+		margin: 0 auto;
+		padding: 25px 0 0 0;
+
+		p,
+		.component{
+		padding-bottom: 0;
+		}
+	}
+	.page{
+		font: 16px/24px arial;
+	}
+	.page-head {
+		padding-top: 0;
+		h1, 
+		.drop-down {
+			margin-top: 0;
+			margin-right: 5%;
+		}
+		h1 {margin-left: 5%;}
+	}
+	.share-article{
+		h4 {
+			font-size: 22px;
+		}
+	}
+	.share-icons {
+		display: table;
+		a{
+			padding-right: 15px;
+			display: table-cell;
+            font-size: 32px;
+		}
+	}
+} 

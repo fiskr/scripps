@@ -1,0 +1,102 @@
+/* .toolbar: Global toolbar */
+.toolbar {padding: 0 7px;line-height: 1;vertical-align: middle;position: relative;border-bottom: 1px solid #ddd;z-index: 100;}
+.toolbar .font-resize { float: left; font-size: 85%;margin: 9px 0 9px 2px;}
+.toolbar .font-resize li{padding: 2px 3px;margin-left:2px;}
+.toolbar .font-resize li.active { background: #ddd;}
+.toolbar .font-resize .sm { font-size:65%;cursor: pointer;}
+.toolbar .font-resize .med { font-size:85%;cursor: pointer;}
+.toolbar .font-resize .lg { font-size:100%;cursor: pointer; }
+
+.toolbar .font-resize li.sm{margin-top: 2px;}
+*:first-child+html .toolbar .font-resize li.sm{ margin-top: 4px;}
+* html .toolbar .font-resize li.sm{ margin-top: 4px;}
+
+.toolbar .sharing { float:right;font-size: 85%; line-height: 1.2;margin: 9px 7px 0 2px; padding-bottom: 8px; }
+.toolbar .sharing li {margin-left:7px;padding-left: 7px;}
+
+.toolbar .print a {background: url(../imgs/se/sp-diy-icons.gif) no-repeat -5px -106px; padding-left:16px}
+.toolbar .email {border-left: 1px solid #ddd;}
+.toolbar .email a {background: url(../imgs/se/sp-diy-icons.gif) no-repeat -5px -4px; padding-left:18px}
+
+.toolbar .print.active a, .toolbar .print:hover a {background-position: -5px -159px;}
+.toolbar .email.active a, .toolbar .email:hover a {background-position: -5px -54px;}
+
+/* sub toolbar overrides */
+#toolbar-sub.toolbar {padding: 0;border-top: 1px solid #ddd;margin-bottom: 14px; position: static;}
+#toolbar-sub.toolbar .sharing {float:left;margin-left:0;}
+#toolbar-sub.toolbar .sharing li {margin-left:0;padding-left: 0;}
+#toolbar-sub.toolbar .thumb-rate {float: right;background-position: left -264px;padding: 0 0 0 25px;margin-top:5px;}
+.howto-detail #toolbar-sub.toolbar {height:30px;}
+
+/* Email flyout */
+.email-a-friend { position: absolute; top: 24px; right: -8px; display: none; z-index:4000;}
+.email-a-friend .bd .minor {color: #999;}
+.email-a-friend .bd .alert { color: #b50938;}
+.email-a-friend .sm-field .input-box {width: 182px;}
+.email-a-friend .sm-field .input-box input{width: 180px;}
+.email-a-friend .lg-field .input-box input{width: 350px;}
+.email-a-friend .txtarea-box textarea{width:375px;}
+.email-a-friend .input-box.two-col {width:193px;float:left;margin-right:14px;}
+.email-a-friend form {margin: 0 14px;} 
+.email-a-friend .sm-field {float: left; margin-bottom: 14px;}
+.email-a-friend .lg-field {clear: both; margin-bottom: 14px;}
+.email-a-friend .sm-field.sm-right{margin-left: 28px;}
+.email-a-friend .form-submit {text-align: center;padding-bottom: 10px;}
+.email-a-friend .form-submit button.button { width: 65px;}
+.email-a-friend label { line-height: 1.9;}
+.email-a-friend label.error { padding: 4px; background-color:#ffd24f; }
+.email-a-friend .loading {text-align: center; margin: 125px 0 126px; display: none;}
+.email-a-friend .loading p { margin-bottom: 10px;}
+.email-a-friend .success { margin: 14px 14px 0; display: none;}
+.email-a-friend .success p { margin: 0 0 14px;}
+.email-a-friend .message{line-height: 1.7;}
+.email-a-friend #captcha-img {float:left;}
+.email-a-friend #captcha-request {font-size:85%;float:left;margin:12px 0 0 7px;}
+
+/* Social Toolbar */
+#social-toolbar {
+    padding:6px 0 6px;
+    border-bottom:1px solid #dddddd;
+    height:21px;
+    }
+#social-toolbar ul {
+    float:right;
+    }
+#social-toolbar li {
+    float:left;
+    margin:0 14px 0 0;
+    }
+#social-toolbar #tb-pinterest {
+    margin:0 36px 0 0;
+    }
+
+#social-toolbar #tb-twitter {
+    margin:0 -14px 0 0;
+    }
+
+#social-toolbar #tb-gplus {
+    margin:0 -16px 0 0;
+    }
+
+.show-lead #social-toolbar {
+    border-bottom: none;
+    float:right;
+    padding:13px 0 0 0;
+    }
+body.talent-detail .show-lead {
+    border-bottom: 1px solid #ddd;
+    }
+body.talent-detail .show-lead #hub-nav {
+    width:auto;
+    border-left:1px solid #ddd;
+    border-top:1px solid #ddd;
+    border-bottom:none;
+    border-right:none;
+    }
+body.talent-detail #social-toolbar {
+    width:600px;
+    }
+  
+#social-toolbar #tb-pinit {
+	margin-right: 36px;
+}

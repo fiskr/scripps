@@ -1,0 +1,30 @@
+.join-the-conversation.pod .bd,
+#diy-e .join-the-conversation.pod .bd { padding: 0 9px; }
+
+.join-the-conversation.pod .shares { float: left; margin-right: 6px; padding: 7px 2px 0px 0; border-right: 1px solid #D8D8D8; }
+.join-the-conversation.pod .shares #fb-like-e { float: left; margin-right: 2px; }
+.join-the-conversation.pod .shares #tweet-anywhere-e { float: left; margin-right: 5px; }
+
+.join-the-conversation.pod .networks { width: 76px; margin-right: 8px; float: left; border-right: 1px solid #D8D8D8; }
+.join-the-conversation.pod .networks li { float: left; margin: 3px 6px 3px 0; }
+
+.join-the-conversation.pod .sprite a,
+.join-the-conversation.pod .sprites li a {
+	display: block;
+	float: left;
+	background: url('../imgs/join-the-conversation-sprite.png') no-repeat 0 0;
+	height: 32px;
+	width: 32px;
+	text-indent: -99999em;
+	overflow: hidden;
+}
+.join-the-conversation.pod .blogs { float: left; width: 92px; font-size: 12px; line-height: 1.4em; }
+.join-the-conversation.pod .blogs.one-blog { margin-top: 23px; }
+.join-the-conversation.pod .blogs .sprite a { width: 92px; }
+
+.join-the-conversation.pod .sprites .fb a { background-position: -32px 0; }
+.join-the-conversation.pod .sprites .pinterest a { background-position: 0 -32px; }
+.join-the-conversation.pod .sprites .instagram a { background-position: -32px -32px; }
+.join-the-conversation.pod .blogs .blog-cabin.sprite a { background-position: -64px 0; }
+.join-the-conversation.pod .blogs .blog-cabin.sprite a:hover { background-position: -156px 0; }
+.join-the-conversation.pod .blogs .blog-cabin.sprite a:active { background-position: -248px 0; }

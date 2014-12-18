@@ -1,0 +1,64 @@
+/* A-Z Index pages */
+.index-detail .intro {
+    margin:0;
+    padding:0 14px 14px;
+    border-bottom:1px dotted #ddd;
+    }
+
+.index-detail #hg-w h1 {
+    margin:14px 0 10px;
+    font-family:"Trebuchet MS", Arial, sans-serif;
+    font-weight:bold;
+    color:#EF4141;
+    font-size:246%;
+    }
+
+.index-detail p.subhd {
+    margin-bottom:0;
+    font-weight:bold;
+    color:#333;
+    }
+
+.index-detail #hg-w h2 {
+    margin:14px;
+    color:#333;
+    font-weight:bold;
+    }
+
+.idxlist {
+    width:300px;
+    float:left;
+    margin:14px 0;
+    line-height:154%;
+    }
+
+.onecol {
+    width:600px;
+    }
+
+.idxlist li {
+    padding-left:20px;
+    background:url(../imgs/bullet-red.png) 13px 8px no-repeat;
+    }
+
+/* lettered page navigation */
+.button-nav.pgltr {
+    width:560px;
+    padding:0;
+    margin:14px 56px 7px 14px;
+    background:none;
+    }
+
+.button-nav.pgltr li {
+    margin-bottom:4px;
+    }
+
+.button-nav.pgltr a {
+    padding-right:14px;
+    }
+
+.button-nav.pgltr a span {
+    padding-left:14px;
+    }
+
+

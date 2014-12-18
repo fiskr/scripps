@@ -1,0 +1,39 @@
+<# Proc name="getTPBanner" param="TP_TENTPOLE_HEADER" /#>
+<style>
+
+h1.topic-title { color:#444; margin:28px 14px 21px 14px;}
+#hg-w .pod.top-listing { margin:0 14px 21px 0;}
+.intro.clrfix { border-bottom: 1px solid #DAE7E3; margin-bottom:0px; }
+#hg-w #browse-all-rooms .grid .cell { padding: 21px 19px 14px 19px; }
+
+</style> 
+
+<div id="hg-bd-wrap"> 
+	<div id="bd-container"> 
+		<div id="bd-wrapper" class="clrfix ui-sortable"> <link rel="stylesheet" href="http://www.hgtv.com/webhgtv/hg20/pkgs/2012/holiday-event/style.css" type="text/css"> 
+			<div id="hg-w"> 
+					 <h1 class="topic-title">Brother Vs. Brother Photo Galleries</h1>
+
+				<div class="intro clrfix"> 
+					<!--<div id="cnt_sponsor"> <span class="sponsor-multi-logo"><script type="text/javascript">MultiLogoAd("LOGO",4);</script></span> 
+					</div>-->
+<p>Check out the latest Brother Vs. Brother galleries, including before-and-after photos  from each episode's renovations and top behind-the-scenes moments from Team Jonathan and Team Drew.</p>
+
+				</div> 
+					<# Proc name="getTentpolePhotos" param="53663-NEW_TO_OLD" /#>											
+			</div> 
+			<div id="hg-e">
+				
+				<div class="mrec">
+					<span>Advertisement</span>
+					<div id="bigbox"><script type="text/javascript">BigboxAd(5);</script></div>
+
+				</div>
+
+				<# Proc name="getTPBundleTextElement" param="DS_BUNDLE_SWEEPSTAKES" /#>
+				<# Proc name="getTPBundleTextElement" param="DS_BUNDLE_SHUFFLE_GAME" /#>
+
+			</div>				
+ 		</div> 
+	</div> 
+</div> 

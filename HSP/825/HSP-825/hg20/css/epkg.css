@@ -1,0 +1,231 @@
+/* epkg globals */
+.epkg-wrap {
+    margin:14px 14px 35px;
+    }
+
+.epkg-wrap a {
+    position:relative;
+    }
+
+.epkg-wrap cite {
+    color:#999;
+    font-size:85%;
+    padding-left:4px;
+    display:inline-block;
+    }
+
+#hg-w .epkg-wrap h2 {
+    margin-bottom:7px;
+    font-size:161.6%;
+    }
+
+/* intro stylez */
+.epkg .intro h2 {
+    line-height:20px;
+    color:#472609;
+    line-height:1.8em;
+    margin-bottom:0;
+    }
+
+/* epkg static lead hybrid */
+.epkg-wrap .static-lead {
+    margin:0;
+    }
+
+#hg-w .epkg-wrap .static-lead h2 {
+    font-weight:normal;
+    margin-bottom:0;
+    padding-right:10px;
+    }
+
+#hg-w .epkg-wrap .static-lead p {
+    line-height:1.4em;
+    }
+
+.epkg-wrap .static-lead ul.list {
+    padding-left:420px;
+    margin-top:4px;
+    line-height:1.5em;
+    }
+
+.epkg-wrap .static-lead ul.list li {
+    margin-bottom:4px;
+    }
+
+/* epkg three feature overrides */
+.epkg-wrap #three-feature {
+    margin:0;
+    }
+
+.epkg-wrap #three-feature h3 {
+    margin-bottom:7px;
+    }
+
+.epkg-wrap #three-feature li {
+    width:197px;
+    }
+
+.epkg-wrap #three-feature li.last {
+    width:179px;
+    }
+
+.epkg-wrap #three-feature p {
+    float:left;
+    font-size:108%;
+    line-height:1.28em;
+    }
+
+.epkg-wrap #three-feature img {
+    margin:0 0 5px;
+    }
+
+.epkg-wrap #three-feature cite {
+    padding:0;
+    }
+
+/* epkg til (title, image, link) items */
+.epkg-wrap.til div {
+    width:80%;
+    clear:both;
+    margin:14px 0;
+    }
+
+.epkg-wrap.til div h3 {
+    font-size:100%;
+    font-weight:bold;
+    }
+
+.epkg-wrap.til div img {
+    float:left;
+    margin-right:14px;
+    }
+
+.epkg-wrap.til div ul {
+    margin-left:103px;
+    }
+
+/* epkg video and gallery icon elements */
+.epkg .video, .epkg .gallery {
+    position:relative;
+    }
+
+.epkg .video a.thumb, .epkg .gallery a.thumb {
+    float:left;
+    }
+
+.epkg .gallery a.thumb {
+    left:-1px;
+    }
+
+.epkg-wrap .play-button {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/vid-thumb-overlay.png") no-repeat center center transparent;
+    cursor:pointer;
+    height:100%;
+    left:0;
+    position:absolute;
+    top:0;
+    }
+
+.epkg #three-feature .gallery a.thumb {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat 0 -157px transparent;
+    }
+
+.epkg .epkg-wrap.til .gallery a.thumb,
+.epkg-wrap .crsl-w-four ul li.gallery a.thumb,
+.epkg-wrap .topic-feature .gallery a.thumb {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/gallery-thumb-120-90.png") no-repeat 0 0 transparent;
+    height:99px;
+    }
+
+.epkg .til .gallery a.thumb img,
+.epkg .epkg-wrap #three-feature .gallery a.thumb img,
+.epkg-wrap .crsl-w-four ul li.gallery a.thumb img,
+.epkg-wrap .topic-feature .gallery a.thumb img {
+    margin:0 0 3px 3px;
+    }
+
+.epkg .epkg-wrap #three-feature .gallery p {
+    margin-top:2px;
+    }
+
+.epkg .epkg-wrap.til div h3, .epkg .epkg-wrap.til div p {
+    padding-left:140px;
+    line-height:1.62em;
+    }
+
+/* position for differing play button sizes */
+.epkg-wrap .static-lead .play-button {
+    width:407px;
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/vid-thumb-overlay-lg.png") no-repeat center center transparent;
+    opacity:0.5;
+    }
+
+.epkg-wrap #three-feature .play-button {
+    width:167px;
+    }
+
+.epkg-wrap.til .play-button {
+    width:127px;
+    }
+
+.epkg-wrap .crsl-w-four .play-button {
+    width:129px;
+    height:99px;
+    }
+
+/* epkg "topics" carousel hybrid */
+.epkg-wrap .crsl-w-four, .epkg-wrap #top-spaces {
+    margin:0;
+    }
+
+.epkg-wrap .crsl-w-four .hd h3 {
+    text-transform:none;
+    font-size:161.6%;
+    }
+
+.epkg-wrap #top-spaces p {
+    float:left;
+    }
+
+.epkg-wrap .crsl-w-four ul li img {
+    margin-bottom:7px;
+    }
+
+.epkg-wrap .crsl-w-four ul li a {
+    font-weight:bold;
+    font-size:93%;
+    }
+
+.epkg-wrap .crsl-w-four cite {
+    padding:0;
+    }
+
+.epkg-wrap .crsl-w-four ul li.gallery a.thumb {
+    margin-bottom:4px;
+    }
+
+/* epkg "topic-feature hybrid */
+.epkg-wrap .topic-feature {
+    margin:0;
+    padding:0;
+    }
+
+.epkg-wrap .topic-feature p {
+    margin-top:4px;
+    line-height:1.5em;
+    }
+
+.epkg-wrap .topic-feature ul.list li {
+    line-height:1.6em;
+    }
+
+#hg-w .epkg-wrap .topic-feature h3 {
+    padding:0;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:138.5%;
+    font-weight:normal;
+    }
+
+.epkg-wrap .two-image-feature .right-feature {
+    top:-9px;
+    }

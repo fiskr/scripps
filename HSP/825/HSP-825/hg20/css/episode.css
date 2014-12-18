@@ -1,0 +1,680 @@
+#epi-list {
+    width:602px;
+    margin:0 14px 14px;
+    border-collapse:separate;
+    }
+
+#epi-list thead th {
+    font-size:93%;
+    padding:3px 7px;
+    border:solid #ccc;
+    border-width:1px 0;
+    }
+
+#epi-list thead .time {
+    width:52px;
+    }
+
+#epi-list thead .show {
+    width:234px;
+    }
+
+#epi-list thead .episode {
+    width:274px;
+    }
+
+#epi-list tbody tr {
+    display:none;
+    }
+
+#epi-list tbody.active tr {
+    display:table-row;
+    *display:block;
+    }
+
+#epi-list tbody tr.collapse-link {
+    display:table-row;
+    *display:block;
+    cursor:pointer;
+    }
+
+#epi-list tr.collapse-link {
+    border:none;
+    }
+
+#epi-list tr.collapse-link h3 {
+    margin-top:14px;
+    height:29px;
+    padding-left:20px;
+    line-height:28px;
+    color:#fff;
+    font-family:"trebuchet ms", sans-serif;
+    text-transform:uppercase;
+    background:#fff url(../imgs/ui.png) left -264px no-repeat;
+    }
+
+/*#epi-list tr.collapse-link em { float: left; display: block; width: 4px; height: 9px; margin-top: 12px; padding-right: 6px; background: transparent url(../imgs/ui.png) no-repeat -483px -498px; }*/
+#epi-list tr.collapse-link h3 span {
+    display:block;
+    height:28px;
+    padding-top:1px;
+    font-size:93%;
+    font-weight:bold;
+    background:#fff url(../imgs/ui.png) right -264px no-repeat;
+    }
+
+#epi-list tbody.active tr.collapse-link h3 {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat -812px 0;
+    color:#000;
+    padding-left:7px;
+    }
+
+#epi-list tbody.active tr.collapse-link h3 span {
+    background:none;
+    }
+
+#epi-list tbody.active tr.collapse-link em {
+    float:left;
+    display:block;
+    width:9px;
+    height:5px;
+    margin-top:12px;
+    padding-right:6px;
+    background:transparent url(../imgs/ui.png) no-repeat -501px -498px;
+    }
+
+#epi-list tbody .epi-name {
+    border-left:1px solid #ddd;
+    padding-left:7px;
+    }
+
+#epi-list tbody .epi-num {
+    border-right:1px solid #ddd;
+    padding-right:7px;
+    width:150px;
+    }
+
+#epi-list tbody .episode div {
+    line-height:1.11;
+    }
+
+#epi-list tbody td {
+    vertical-align:top;
+    }
+
+#epi-list tbody td.epi-num {
+    text-transform:uppercase;
+    }
+
+#epi-list tbody td div {
+    border-top:1px dashed #afb8bb;
+    padding:5px 0;
+    }
+
+#epi-list tbody tr.col-label div {
+    border:1px solid #afb8bb;
+    border-right:0;
+    border-left:0;
+    padding:5px 0;
+    }
+
+#epi-list tbody tr.first div {
+    border-top:0;
+    }
+
+#epi-list tbody tr.last td div {
+    padding:0 0 7px;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    background:url(../imgs/sp-boxBorders.png) no-repeat -1414px bottom;
+    }
+
+#episode-hdr, #episode-videos, #episode-photos, #episode-designers {
+    padding:0 0 20px 14px;
+    margin-bottom:20px;
+    width:600px;
+    border-bottom:1px solid #DAE7E3;
+    zoom:1;
+    }
+
+#episode-hdr:after, #episode-videos:after, #episode-photos:after, #episode-designers:after {
+    content:".";
+    display:block;
+    height:0;
+    width:0;
+    line-height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#episode-hdr h2 {
+    font-size:32px;
+    color:#E42F32;
+    font-weight:bold;
+    margin:15px 0 0;
+    }
+
+#episode-hdr h3 {
+    font-size:15px;
+    color:#444;
+    font-weight:normal;
+    margin-bottom:10px;
+    }
+
+#episode-hdr .nav {
+    width:100%;
+    height:30px;
+    margin-bottom:20px;
+    }
+
+#episode-hdr a {
+    display:block;
+    width:78px;
+    height:26px;
+    background:#4B786E;
+    color:#fff;
+    float:left;
+    margin-right:5px;
+    border-bottom:1px solid #34544C;
+    border-top:1px solid #72978F;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    font-size:12px;
+    text-align:center;
+    line-height:2.4;
+    }
+
+#episode-hdr a.selected {
+    background:#E42F32;
+    border-bottom:1px solid #AC2527;
+    border-top:1px solid #EA5C5E;
+    }
+
+#episode-hdr img, #episode-videos img {
+    width:160px;
+    height:120px;
+    background:#878787;
+    padding:2px;
+    float:left;
+    margin-right:5px;
+    }
+
+#episode-hdr h4 {
+    font-size:15px;
+    }
+
+#episode-hdr p {
+    line-height:1.5;
+    }
+
+#episode-videos h3, #episode-photos h3, #episode-designers h3 {
+    font-size:21px;
+    color:#444;
+    font-weight:normal;
+    margin-bottom:11px;
+    }
+
+#episode-videos div {
+    margin:0 44px 14px 0;
+    float:left;
+    width:170px;
+    }
+
+#episode-videos div.last {
+    margin-right:0;
+    }
+
+#episode-videos div p.grey {
+    color:#878787;
+    font-size:11px;
+    }
+
+#episode-videos p {
+    display:inline;
+    }
+
+#episode-photos img {
+    width:95px;
+    height:70px;
+    display:block;
+    padding:2px;
+    background:#878787;
+    float:left;
+    margin:0 14px 14px 0;
+    }
+
+.res-pod {
+    width:405px;
+    float:right;
+    margin-bottom:14px;
+    }
+
+.res-pod h2 {
+    margin-left:0;
+    }
+
+/* Episode Finder (hg-we) OLD. BEING UPDATED TO NEW INCLUDE*/
+#episode-finder-search {
+    margin-bottom:14px;
+    }
+
+#episode-finder-search .hd {
+    padding:2px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#episode-finder-search .button-nav {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+#episode-finder-search .guide-link {
+    display:block;
+    float:right;
+    line-height:29px;
+    }
+
+#episode-finder-search .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#episode-finder-search .ft {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat -406px -93px;
+    }
+
+#episode-finder-search .acco-content {
+    padding:8px 11px 0 11px;
+    }
+
+#episode-finder-search .thumb {
+    float:left;
+    border:1px solid #ddd;
+    background-color:#fff;
+    }
+
+#episode-finder-search .thumb img {
+    display:block;
+    width:92px;
+    height:69px;
+    padding:2px;
+    }
+
+#episode-finder-search p, #episode-finder-search .list {
+    margin-left:110px;
+    }
+
+#episode-finder-search p {
+    padding-bottom:2px;
+    line-height:17px;
+    }
+
+#episode-finder-search .list li {
+    margin-bottom:0;
+    padding-left:9px;
+    padding-bottom:0;
+    }
+
+#episode-finder-search .ft {
+    padding-bottom:7px;
+    background-color:#fff;
+    }
+
+#episode-finder-search .ef-form {
+    }
+
+#episode-finder-search .ef-form .show-select .dd-list {
+    float:right;
+    margin:0 24px 6px 0;
+    width:230px;
+    font-size:85%
+    }
+
+#episode-finder-search .ef-form fieldset {
+    margin:0 1px;
+    padding:3px 3px 0;
+    }
+
+#episode-finder-search .ef-form h4 {
+    margin-bottom:10px;
+    font-family:"Trebuchet MS";
+    font-size:100%;
+    color:#332720;
+    text-transform:uppercase;
+    float:left
+    }
+
+#episode-finder-search .ef-form .info {
+    float:right;
+    color:#999;
+    font-size:93%
+    }
+
+#episode-finder-search .ef-form .ef-fields {
+    width:335px;
+    margin:0 auto;
+    clear:both;
+    }
+
+#episode-finder-search .ef-form label {
+    float:left;
+    clear:right;
+    text-align:right;
+    color:#666;
+    }
+
+#episode-finder-search .ef-form label.keyword {
+    margin-left:11px;
+    }
+
+#episode-finder-search .ef-form .text-box {
+    float:right;
+    width:229px;
+    margin-right:25px;
+    }
+
+/*#episode-finder-search .ef-form .text-box input { color: #989898; }*/
+#episode-finder-search .ef-form .dates {
+    clear:left;
+    float:right;
+    width:300px;
+    padding:6px 0;
+    }
+
+#episode-finder-search .ef-form .date-box {
+    float:left;
+    width:102px;
+    }
+
+#episode-finder-search .ef-form .dates label {
+    margin:0 6px 0 7px;
+    }
+
+#episode-finder-search .ef-form .find {
+    clear:both;
+    margin:0;
+    padding-bottom:2px;
+    text-align:center;
+    }
+
+#episode-finder-search .ef-form .find button {
+    width:42px;
+    }
+
+/* Episode Finder (hg-we) NEW */
+#hg-w .episodefinder {
+    margin-bottom:14px;
+    }
+
+#hg-w .episodefinder .hd {
+    padding:2px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#hg-w .episodefinder .button-nav {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+#hg-w .episodefinder .guide-link {
+    display:block;
+    float:right;
+    line-height:29px;
+    }
+
+#hg-w .episodefinder .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#hg-w .episodefinder .ft {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat -406px -93px;
+    }
+
+#hg-w .episodefinder .acco-content {
+    padding:8px 11px 0 11px;
+    }
+
+#hg-w .episodefinder .thumb {
+    float:left;
+    border:1px solid #ddd;
+    background-color:#fff;
+    }
+
+#hg-w .episodefinder .thumb img {
+    display:block;
+    width:92px;
+    height:69px;
+    padding:2px;
+    }
+
+#hg-w .episodefinder p, #hg-w .episodefinder .list {
+    margin-left:110px;
+    }
+
+#hg-w .episodefinder p {
+    padding-bottom:2px;
+    line-height:17px;
+    margin-top:5px
+    }
+
+#hg-w .episodefinder .list li {
+    margin-bottom:0;
+    padding-left:9px;
+    padding-bottom:0;
+    }
+
+#hg-w .episodefinder .ft {
+    height:7px;
+    background-color:#fff;
+    _font-size:0;
+    }
+
+#hg-w .episodefinder .ef-form {
+    clear:both;
+    }
+
+#hg-w .episodefinder .ef-form .dd-list {
+    float:left;
+    margin:0 0 6px 0;
+    width:230px;
+    font-size:85%
+    }
+
+#hg-w .episodefinder .ef-form .dd-list dd {
+    margin-left:-52px;
+    }
+
+#hg-w .episodefinder .ef-form .dd-list .dd-li {
+    margin:0;
+    padding:0;
+    border-bottom:0;
+    }
+
+#hg-w .episodefinder .ef-form fieldset {
+    margin:0 1px;
+    padding:3px 3px 0;
+    }
+
+#hg-w .episodefinder h4 {
+    margin:2px 0 10px 6px;
+    font-family:"Trebuchet MS";
+    font-size:100%;
+    color:#332720;
+    text-transform:uppercase;
+    float:left
+    }
+
+#hg-w .episodefinder p {
+    float:right;
+    color:#999;
+    font-size:93%
+    }
+
+#hg-w .episodefinder .ef-form .ef-fields {
+    width:335px;
+    margin:0 auto;
+    clear:both;
+    }
+
+#hg-w .episodefinder .ef-form label {
+    float:left;
+    margin-right:7px;
+    width:120px;
+    text-align:right;
+    color:#666;
+    line-height:30px;
+    margin-bottom:6px;
+    }
+
+#hg-w .episodefinder .ef-form .text-box {
+    float:left;
+    width:230px;
+    }
+
+#hg-w .episodefinder .ef-form .dates {
+    float:left;
+    width:357px;
+    margin-bottom:7px;
+    }
+
+#hg-w .episodefinder .ef-form #find-episode-to-label {
+    width:26px;
+    margin-right:0;
+    text-align:center;
+    }
+
+#hg-w .episodefinder .ef-form .date-box {
+    float:left;
+    width:102px;
+    margin-bottom:6px;
+    }
+
+#hg-w .episodefinder .find {
+    clear:both;
+    float:none;
+    line-height:30px;
+    margin:0 0 4px 0;
+    padding:0;
+    text-align:center;
+    }
+
+#hg-w .episodefinder .find button {
+    width:42px;
+    }
+
+#hg-w .episodefinder .e-extra {
+    display:none
+    }
+
+/* TO HANDLE RECYCLED FORM ELEMENT */
+#hg-w .episodefinder .find .we-extra {
+    display:none;
+    }
+
+#hg-e .we-extra {
+    display:none;
+    }
+
+/* TO HANDLE RECYCLED FORM ELEMENT */
+
+#episode-hdr h3 {
+    width:200px;
+    float:left;
+    }
+
+#episode-hdr ul.episode-nav {
+    width:230px;
+    float:right;
+    list-style-type:none;
+    text-align:right;
+    }
+
+#episode-hdr ul.episode-nav li {
+    border-right:1px solid #666;
+    padding-right:4px;
+    margin-left:4px;
+    float:left;
+    }
+
+#episode-hdr ul.episode-nav li.last {
+    border-right:none;
+    }
+
+#episode-hdr ul.episode-nav li.bordernone {
+    border:none;
+    }
+
+#episode-hdr ul.episode-nav li a {
+    border:none;
+    background-color:none;
+    display:inline;
+    background:none;
+    color:#E42F32;
+    height:auto;
+    width:100px;
+    line-height:1em;
+    }
+
+#episode-hdr .desc {
+    clear:both;
+    }
+
+#episode-hdr img {
+    margin-right:14px;
+    }
+
+#episode-videos p.morelink {
+    clear:both;
+    display:block;
+    width:100%;
+    color:#386CB4;
+    }
+
+#episode-videos p.morelink a {
+    color:#386CB4;
+    }
+
+#episode-videos h3, #episode-photos h3, #episode-designers h3 {
+    font-size:21px;
+    color:#444;
+    font-weight:normal;
+    margin-bottom:11px;
+    }
+
+#episode-videos div {
+    margin:0 44px 14px 0;
+    float:left;
+    width:170px;
+    }
+
+#episode-videos div.last {
+    margin-right:0;
+    }
+
+#episode-videos div p.grey {
+    color:#878787;
+    font-size:11px;
+    }
+
+#episode-photos img {
+    width:95px;
+    height:70px;
+    display:block;
+    padding:2px;
+    background:#878787;
+    float:left;
+    margin:0 14px 14px 0;
+    }
+
+form#ep-fndr {
+    *position:relative;
+    }
+
+form#ep-fndr .dd-list dd {
+    margin-top:auto;
+    margin-left:auto;
+    }

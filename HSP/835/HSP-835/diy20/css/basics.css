@@ -1,0 +1,6 @@
+/* basics landing page */
+.basics-lead h1{float:left;letter-spacing:-999em;overflow:hidden;text-indent:-999em;background:url(http://img.diynetwork.com/DIY/2011/10/12/DIY-GFX_DIY-Download-Basics_s994x100.jpg);width:966px;height:100px;margin:0 14px 7px;}
+#basics .panel {border-bottom: 1px solid #ddd; margin: 0 14px 7px; padding-bottom: 7px;}
+#basics .last {border-bottom:0; margin-bottom: 0; padding-bottom:0;}
+#basics .panel h3.sub-header {color: #000; font-size: 123.1%; text-transform: uppercase;}
+#basics .columns {margin-bottom: 5px;}

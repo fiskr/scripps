@@ -1,0 +1,88 @@
+<script>
+	(function( $ ){
+		$(function(){
+			var $gmcModule = $('.editorialPromo').eq(0);
+			//GMC module to only show on thanks (it's the first editorialPromo component)
+			$gmcModule.addClass('hello-world-state reg_thanks limiter'); //instead of .eq(0) you can use .first()
+
+			//make the GMC image open in a new window.
+			//$gmcModule.find('a').attr('target', '_blank');
+			$('.editorialPromo a[href*="GMCVehicleSweeps.com"]').attr('target', '_blank');
+
+			//promo for Piece of the Dream
+			$('.editorialPromo').eq(1).addClass('hello-world-state prelaunch');
+
+			//assign proper classnames to the content you want to show/hide that editorial made
+			$('.editorialPromo').slice(2).addClass('hello-world-state prelaunch limiter reg_thanks');
+
+
+			$('.videoPlaylistEmbed').addClass('hello-world-state prelaunch limiter reg_thanks expired');
+
+			//oops message
+			$('.textPromo').first().addClass('hello-world-state default');
+
+			//make the short form rules go away on ineligible_age state (the COPPA message)
+			$('.articleBody .textPromo:last-child').addClass('hello-world-state register register_error login limiter reg_thanks viral_thanks prelaunch maintenance optin expired default');
+
+			if(document.getElementsByClassName('videoPlaylistEmbed') > 0 && typeof window.SNI !== 'undefined' && typeof window.SNI.Video.Events !== 'undefined'){
+				window.SNI.Video.Events.addEventListener('OnPlayerLoaded',  function () {
+					if(window.location.href.match(/qa2\./)){//use frontend for QA environment...
+						require(["http://frontend.scrippsnetworks.com/~bfoster/HSP/DreamHomeCQ/init.js"]);
+					}else{
+						require(["http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/init.js"]);
+					}
+					
+				});
+			}else{
+				if(window.location.href.match(/qa2\./)){//use frontend for QA environment...
+					require(["http://frontend.scrippsnetworks.com/~bfoster/HSP/DreamHomeCQ/init.js"]);
+				}else{
+					require(["http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/init.js"]);
+				}
+			}
+			
+		}); //end doc-ready
+	})(jQuery);
+</script>
+
+<style>
+/* short form rules */ 
+.textPromo:nth-last-child(2) .body {
+	color: #B8B9BA; 
+	font-size: 10px;
+}
+/* sponsor logos */
+.sponsor-block {
+	font-size: 11px;
+	border-top: 1px solid #f2f2f2;
+	padding: 28px 0;
+}
+@media only screen and (max-device-width: 480px) {
+	.sponsor-block img{
+		padding: 7px 0;
+	}
+}
+</style>
+
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/iframe-resizer.js"></script>
+
+<script>
+(function( $ ){
+	if(document.URL.match(/qa2\./)){//use frontend for QA environment...
+		require(["http://frontend.scrippsnetworks.com/~bfoster/HSP/DreamHomeCQ/hw-states.js"]);
+	}else{
+		require(["http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/hw-states.js"]);
+	}
+})( jQuery );
+</script>
+
+<div id="sweepstakes-dropzone">
+	<img src="http://hgtv.sndimg.com/webhgtv/hg20/imgs/hg-loader.gif" class="hello-world-loaderimg" style="margin: 100px auto; display: block;" />
+	<div class="hello-world-state register register_error login limiter reg_thanks viral_thanks prelaunch ineligible_age maintenance optin expired default" width="100%">
+		<!-- Production -->
+		<!--<iframe src="http://hgtv-dreamhome.promo.eprize.com/hgtv" width="100%" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>-->
+		<!-- Staging -->
+		<iframe src="http://hgtv-dreamhome.review.eprize.com/hgtv" width="100%" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+	</div>
+</div>
+<div class="sni-ads-disable-repeating-bigbox"></div>

@@ -1,0 +1,52 @@
+/*
+FN-E POD TYPES:
+thumb-list: thumbnail and a floated list
+list-1: single column list
+list-2: double column list
+banner: wide show banner
+sponsor-pod: if it has a sponsor block at the bottom
+*/
+
+/* BACKGROUND COLOR VARIATIONS */
+.pod.bg1 {
+    background-color:#aacdd2;
+    }
+
+.pod.bg2 {
+    background-color:#e9f5f9;
+    }
+
+.pod.bg3 {
+    background-color:#faf4e1;
+    }
+
+.pod.bg4 {
+    background-color:#f2e2d5;
+    }
+
+.pod.bg5 {
+    background-color:#ffffff;
+    }
+
+.pod.bg6 {
+    background-color:#f0f0f0;
+    }
+
+.pod.bg7 {
+    background-color:#bed2aa;
+    }
+
+.pod.thumb-list {
+    }
+
+.pod.list-1 {
+    }
+
+.pod.list-2 {
+    }
+
+.pod.banner {
+    }
+
+
+ 

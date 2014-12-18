@@ -1,0 +1,325 @@
+/*body#green-home { background:#c5d1dc;}
+#green-home #leaderboard-wrap { background:#a7b4c0; border-bottom:1px solid #9eabb6;}*/
+#green-home #site-wrapper .tentpole-container {
+    padding:7px 7px 0;
+    position:relative;
+    z-index:999;
+    }
+
+#green-home #site-wrapper .super-lead .tentpole-container {
+    padding:7px 7px 0;
+    }
+
+#green-home .super-lead {
+    background:#FFF;
+    margin:7px 0 -11px;
+    z-index:999;
+    -moz-border-radius-topleft:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-left-radius:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    }
+
+#green-home #site-wrapper .super-lead img {
+    padding:0;
+    }
+
+/* some stuff just needs a common bottom margin */
+
+#green-home .gallery-tease, #green-home .related-link, #greenhome .gallery-tease, #greenhome .related-link,
+#dream-home .gallery-tease, #dream-home .related-link, #dream-home .gallery-tease, #dream-home .related-link,
+#urban-oasis .gallery-tease, #urban-oasis .related-link, #urban-oasis .gallery-tease, #urban-oasis .related-link,
+#video .gallery-tease, #video .related-link, #video .gallery-tease, #video .related-link {
+    margin-bottom:14px;
+    }
+
+#green-home #hg-e .pod.green .ft {
+    background:transparent url(../imgs/dp-rr-pod.png) no-repeat scroll right bottom;
+    }
+
+#green-home #hg-e .pod ul.list {
+    float:left;
+    }
+
+#green-home .pod img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#green-home .pod p {
+    line-height:1.4;
+    }
+
+#green-home #hg-e .widget .hd h4 {
+    color:#333;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    }
+
+#green-home #hg-e .widget .bd img.thumb {
+    display:block;
+    float:left;
+    margin-bottom:7px;
+    margin-right:7px;
+    }
+
+#green-home .sweeps p {
+    margin-bottom:14px;
+    }
+
+#green-home .sweeps p.li-hd {
+    margin-bottom:0;
+    }
+
+#green-home #spnsr-prize-top {
+    padding:0;
+    background:#F5F9F7;
+    margin-bottom:14px;
+    }
+
+/*#design-star #spnsr-prize-top{padding:0;background:#FFFAE5; margin-bottom:14px;}*/
+#green-home #spnsr-prize-top .hd {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2010/gh/images/spnsr-prize-bg.png) no-repeat scroll left top;
+    }
+
+#green-home #spnsr-prize-top .ft {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2010/gh/images/spnsr-prize-bg.png) no-repeat scroll left bottom;
+    }
+
+#green-home #spnsr-prize-top .spnsr-prize.last, #design-star #spnsr-prize-top .spnsr-prize.last {
+    padding:0;
+    }
+
+/*#green-home .article-std .feature-list{ margin-top:-14px;}*/
+#green-home .gallery-tease, #dream-home .gallery-tease, #video .gallery-tease, #urban-oasis .gallery-tease {
+    width:406px;
+    margin:0 auto 14px;
+    overflow:hidden;
+    _float:right;
+    }
+
+#green-home .alt-list p, #green-home .gallery-tease p, #dream-home .alt-list p, #dream-home .gallery-tease p, #video .alt-list p, #video .gallery-tease p, #urban-oasis .alt-list p, #urban-oasis .gallery-tease p {
+    margin-bottom:0;
+    }
+
+#green-home .gallery-tease p, #dream-home .gallery-tease p, #video .gallery-tease p, #urban-oasis .gallery-tease p {
+    font:123.1% "trebuchet ms", sans-serif;
+    line-height:137.5%;
+    padding-bottom:4px;
+    }
+
+#green-home #resources-we .acco-res li .selected .acco-link,
+#dream-home #resources-we .acco-res li .selected .acco-link,
+#urban-oasis #resources-we .acco-res li .selected .acco-link,
+#video #resources-we .acco-res li .selected .acco-link {
+    _padding-left:0;
+    }
+
+/*TO Be properly Integrated to cut down on duplicate rules Robert E.*/
+#dream-home .super-lead .show-info, #greenhome .super-lead .show-info, #urban-oasis .super-lead .show-info {
+    bottom:25px;
+    left:30px;
+    }
+
+#dream-home .intro p, #greenhome .intro p, #urban-oasis .intro p {
+    margin-bottom:0;
+    }
+
+#dream-home .intro .next, #greenhome .intro .next, #urban-oasis .intro .next {
+    margin-bottom:7px;
+    }
+
+#dream-home #pgallery .imgpanel .desc a {
+    color:#D72D82;
+    }
+
+/* #dream-home .jcarousel-pagetext{top: -21px;} */
+#dream-home #related-galleries .jcarousel-pagetext {
+    position:absolute;
+    }
+
+#dream-home #pgallery #photonav {
+    width:602px;
+    margin-bottom:7px;
+    }
+
+#dream-home #pgallery #photonav .paginate-position {
+    padding-top:30px;
+    margin:0 auto;
+    color:#999;
+    }
+
+#dream-home #pgallery #photonav a {
+    display:block;
+    height:72px;
+    width:93px;
+    padding-top:0;
+    position:relative;
+    text-decoration:none;
+    }
+
+#dream-home #pgallery #photonav ul li {
+    width:114px;
+    }
+
+#dream-home #pgallery #photonav a .desc {
+    z-index:102;
+    background:url(../imgs/gallery-txt.png) 0 0 repeat-y;
+    width:92px;
+    height:18px;
+    color:#fff;
+    position:absolute;
+    bottom:1px;
+    font-size:85%;
+    }
+
+#dream-home #pgallery #photonav .next .desc {
+    left:1px;
+    }
+
+#dream-home #pgallery #photonav .prev .desc {
+    left:21px;
+    }
+
+#dream-home #pgallery #photonav a img {
+    border:1px solid #ddd;
+    }
+
+#dream-home #pgallery #photonav .prev a img {
+    border-left:none;
+    }
+
+#dream-home #pgallery #photonav .next a img {
+    border-right:none;
+    }
+
+#dream-home #pgallery #photonav .prev a.btn {
+    background:url(../imgs/gh-nav-arrows.gif) left 0 no-repeat;
+    padding-left:21px;
+    }
+
+#dream-home #pgallery #photonav .next a.btn {
+    background:url(../imgs/gh-nav-arrows.gif) right -219px no-repeat;
+    padding-right:21px;
+    }
+
+#dream-home #pgallery #photonav .prev a.btn:hover {
+    background-position:0 -73px;
+    }
+
+#dream-home #pgallery #photonav .prev a.btn:active {
+    background-position:0 -146px;
+    }
+
+#dream-home #pgallery #photonav .next a.btn:hover {
+    background-position:right -292px;
+    }
+
+#dream-home #pgallery #photonav .next a.btn:active {
+    background-position:right -365px;
+    }
+
+/* some stuff just needs a common bottom margin */
+
+#dream-home #hg-e .pod.green .ft, #video #hg-e .pod.green .ft {
+    background:transparent url(../imgs/dp-rr-pod.png) no-repeat scroll right bottom;
+    }
+
+#dream-home #hg-e .pod ul.list, #video #hg-e .pod ul.list {
+    float:left;
+    }
+
+#dream-home .pod img.thumb, #video .pod img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#dream-home .pod p, #video .pod p {
+    line-height:1.4;
+    }
+
+#dream-home #hg-e .widget .hd h4, #video #hg-e .widget .hd h4 {
+    color:#333;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    }
+
+#dream-home #hg-e .widget .bd img.thumb, #video #hg-e .widget .bd img.thumb {
+    display:block;
+    float:left;
+    margin-bottom:7px;
+    margin-right:7px;
+    }
+
+#dream-home .sweeps p, #video .sweeps p {
+    margin-bottom:14px;
+    }
+
+#dream-home .sweeps p.li-hd, #video .sweeps p.li-hd {
+    margin-bottom:0;
+    }
+
+#dream-home #spnsr-prize-top, #video #spnsr-prize-top {
+    padding:0;
+    background:#F5F9F7;
+    margin-bottom:14px;
+    }
+
+/*#design-star #spnsr-prize-top{padding:0;background:#FFFAE5; margin-bottom:14px;}*/
+#dream-home #spnsr-prize-top .hd {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2010/gh/images/spnsr-prize-bg.png) no-repeat scroll left top;
+    }
+
+#dream-home #spnsr-prize-top .ft {
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2010/gh/images/spnsr-prize-bg.png) no-repeat scroll left bottom;
+    }
+
+#dream-home #spnsr-prize-top .spnsr-prize.last, #design-star #spnsr-prize-top .spnsr-prize.last {
+    padding:0;
+    }
+
+#green-home .modbox .meta {
+    float:right;
+    margin:21px 0 0 7px;
+    position:static;
+    }
+
+#green-home .modbox .meta a {
+    display:block;
+    }
+
+#green-home .modbox .meta img {
+    border:1px solid #d4d4d4;
+    display:block;
+    margin:3px 0 7px;
+    padding:1px;
+    }
+
+#green-home .modbox a.cta {
+    display:block;
+    color:#D72D82;
+    }
+
+#green-home .modbox p {
+    width:260px;
+    *width:250px;
+    }
+
+#green-home #pgallery3 {
+    margin-left:0;
+    margin-right:0;
+    }
+
+#green-home #video-cl .jcarousel-pagetext {
+    top:5px;
+    }
+
+#green-home #get-social .list {
+    width:180px;
+    }

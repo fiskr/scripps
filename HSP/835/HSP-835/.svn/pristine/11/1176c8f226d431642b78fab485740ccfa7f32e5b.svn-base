@@ -1,0 +1,71 @@
+/* ----- PROJECTS SEQUENTIAL ----- */
+#project-steps .project-highlight .proj-meta {margin: 7px 0 7px 0;}
+#project-steps .project-highlight .proj-meta .time {width: 140px;}
+#project-steps .project-highlight .proj-meta .price-range {width: 140px;}
+
+#project-steps .proj-meta {margin-left: 14px;}
+#project-steps .proj-meta li {padding-left: 15px;}
+#project-steps .proj-meta .time {width: 148px;padding-left:40px;}
+#project-steps .proj-meta .price-range {width: 154px;background-position: 10px -89px; padding-left:58px;}
+
+/* projects carousel */
+.project-highlight .crsl-w {margin:8px 0 0 0; border-top: 1px solid #dfdfdf;}
+.project-highlight .crsl-w .jcarousel-pageimg {top:7px;}
+.project-highlight .crsl-w .jcarousel-prev-horizontal,.project-highlight .crsl-w .jcarousel-next-horizontal {top:31px}
+.project-highlight .crsl-w .bd {width: 576px; border: 0;padding: 7px 0 7px;}
+.project-highlight .crsl-w .jcarousel-container {width: 566px;padding-top: 20px;}
+.project-highlight .crsl-w ul li {float: left;line-height:4.8;}
+.project-highlight .crsl-w .crsl-item {font-size: 100%;margin: 0; width: 144px;}
+.project-highlight .crsl-w .jcarousel-container .crsl-item {font-size: 100%;margin: 0; width: 134px;}
+.project-highlight .crsl-w ul li a {_float: left;_display: block;width: 100px; color: #176684;display:inline;display:inline-table;display:inline-block;vertical-align:middle;line-height: 1.2;}
+.project-highlight .crsl-w .jcarousel-container ul li a {width: 80px;}
+.project-highlight .num {float: left; width: 39px; background: url(../imgs/se/sp-diy-numbers.gif) 0 0 no-repeat; text-indent: -9999px;display:inline;display:inline-table;display:inline-block;vertical-align:middle;}
+.project-highlight .s2 {background-position:-39px 0}
+.project-highlight .s3 {background-position:-78px 0}
+.project-highlight .s4 {background-position:-117px 0}
+.project-highlight .s5 {background-position:-156px 0}
+.project-highlight .s6 {background-position:-195px 0}
+.project-highlight .s7 {background-position:-234px 0}
+.project-highlight .s8 {background-position:-273px 0}
+.project-highlight .s9 {background-position:-312px 0}
+.project-highlight .s10 {background-position:-351px 0}
+
+/* step numbers */
+.project-step {border: 7px solid #dfdfdf; margin: 0 14px 15px 14px; background-color: #fff; position: relative;}
+.project-step .num { width: 39px; height: 60px; background: url(../imgs/se/sp-diy-numbers.gif) 0 -208px no-repeat; position: absolute; top: 31px; left: -14px;text-indent: -9999px;}
+.project-step .s2 {background-position:-39px -208px;}
+.project-step .s3 {background-position:-78px -208px;}
+.project-step .s4 {background-position:-117px -208px;}
+.project-step .s5 {background-position:-156px -208px;}
+.project-step .s6 {background-position:-195px -208px;}
+.project-step .s7 {background-position:-234px -208px;}
+.project-step .s8 {background-position:-273px -208px;}
+.project-step .s9 {background-position:-312px -208px;}
+.project-step .s10 {background-position:-351px -208px;}
+
+/*project step overrides*/
+#project-steps .project-step .thumb-rate {background: none; height: 35px; width: 95px; float: right; text-align: right; margin: 0 14px 0;line-height: 3.2;}
+#project-steps .project-step .proj-meta {clear: right; border-top: 1px solid #cecece; }
+#project-steps .project-step .proj-meta ul {margin-top: 7px;}
+#project-steps .project-step .proj-meta .time {background-position: 15px -5px; padding-left: 65px; width: 114px;}
+#project-steps .project-step .proj-meta .price-range {width: 134px;}
+
+#project-steps .project-step .media {position: relative; margin: 4px 10px 7px 14px; width: 96px; float: left;}
+#project-steps .project-step .media a {font-size: 85%; color: #176684; display:block;}
+#project-steps .project-step .media a.play, #project-steps .project-step .media a.img-enlarge {top: 58px;}
+#project-steps .project-step .media {position: relative;}
+#project-steps .project-step .media img {border: 2px solid #000;}
+#project-steps .project-step .media a.watchvideo {display:block; margin-top: -3px;} 
+#project-steps .project-step .desc-txt {margin-left: 12px;}
+#project-steps .project-step .step-footer {text-align: center; margin: 7px 0 14px; clear:left;}
+#project-steps .project-step .step-footer a.button {margin: 0 auto; float: none; width: 239px;}
+#project-steps .project-step .step-footer a.button span {font-weight: bold;padding-right: 20px; padding-left: 27px;}
+
+
+#project-steps #project-search { width: 477px; margin-top: 35px; margin-left: 85px;}
+#project-steps #project-search h3 {color: #671104; font: bold 123.1% arial, verdana; margin-bottom: 3px;}
+#project-steps #project-search .search { padding: 7px; background: #dfdfdf;}
+
+#project-steps.nonsequential .project-step .time {background-position: -5px -5px; padding-left: 40px;}
+
+div.products-ft a.button span,div.products-ft .button-nav a span {color: #fff;}

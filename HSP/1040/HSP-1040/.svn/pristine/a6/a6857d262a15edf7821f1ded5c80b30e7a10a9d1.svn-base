@@ -1,0 +1,91 @@
+/*ontv*/
+@border-color: #dae7e3;
+
+.onTVMobile {
+	/*width: 100%;*/
+	background: #faf9f7;
+	min-height: 2px;
+	border-top: 1px solid @border-color;
+	border-bottom: 1px solid @border-color;
+	margin-top: 25px;
+
+	.hot {
+		border-bottom: 1px solid @border-color;
+	}
+
+
+	h4 {
+		float:left;
+		font-size: 2.1em;
+		padding: 18px 0 14px 0;
+		text-align: center;
+	}
+
+	.time-zone {
+		display: block;
+		font-size: 1.2em;
+		line-height: 2.5em;
+		font-family: Arial;
+		color: #999;
+		padding-left: 4px;
+		margin-top: 4px;
+		margin-bottom: 4px;
+	}
+
+	a.schedule {
+		float: right;
+		font-family: Arial, sans-serif;
+		font-size: 1.2em;
+		padding: 24px 1px 14px 0;
+	}
+
+	.show {
+		float: none;
+		clear: both;
+		padding: 14px 0;
+		border-top: 1px solid @border-color;	
+	
+
+		h5 {
+			float: left;
+			width: 5em;
+			height: 30px;
+			font-size: 1.1em;
+			text-transform: uppercase;
+
+			span {
+				font-size: 18px;
+				font-weight: bold;
+				color: #444;
+			}
+	
+			span.when {
+				display: block;
+			}
+		}
+	}
+
+	
+
+	.show-info {
+		a {font-size: 1em;}
+		float: left;
+		clear: none;
+		width: 70%;
+		padding: 0 0 0 30px;
+		font-size: 1.6em;
+	
+
+ 		img {
+			float: left;
+			margin-right: 13px;
+		}
+	}
+
+	.icon-time:before {
+		margin-right: 4px;
+		font-family: hgtv_iconsregular;
+		font-size: 16px;
+	}
+
+} 

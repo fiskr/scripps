@@ -1,0 +1,212 @@
+.btn {cursor:pointer; *margin-right: 7px;}
+
+.btn, .btn:visited {
+    padding:7px 14px;
+    font-weight:bold;
+    border:1px solid #387399;
+    color: rgb(247, 247, 247);
+}
+
+.btn, .btn span {display:inline-block;}
+
+/* start advanced CSS */
+.btn,
+.btn:visited {
+    background: #64A3C8;
+    background:-moz-linear-gradient(top, #64A3C8, #4287B4);
+    background:-webkit-gradient(linear, 0 20%, 0 100%,from(#64A3C8),to(#4287B4));
+    border-radius: 4px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.21);
+    box-shadow: inset 1px 0 #7BB1D0, 0 1px 0 rgba(0,0,0,0.12);
+    -moz-border-radius: 4px;
+    -moz-box-shadow: inset 0 1px 0 #7BB1D0,0 1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 1px 0 #7BB1D0, 0 1px 0 rgba(0,0,0,0.12);
+    border-top-color: #60A3CC;
+    border-bottom-color: #387399;
+    border-left-color: #60A3CC #387399;
+    border-right-color: #60A3CC #387399;
+    -moz-border-top-colors: #60A3CC;
+    -moz-border-bottom-colors: #387399;
+    -moz-border-left-colors: #60A3CC #387399;
+    -moz-border-right-colors: #60A3CC #387399;
+}
+
+.btn:hover {
+    text-decoration:none;
+    color:rgb(247, 247, 247);
+    background: #7ebbe1;
+    background:-moz-linear-gradient(top, #7EBBE1, #5EA4D5);
+    background:-webkit-gradient(linear, 0 0, 100% 100%,from(#7EBBE1),to(#5EA4D5));
+    box-shadow: inset 1px 0 #91C5E5, 0 1px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 0 1px 0 #91C5E5,0 1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 1px 0 #91C5E5, 0 1px 0 rgba(0,0,0,0.12);
+}
+
+.btn:active {
+	color:rgb(247, 247, 247);
+    color:rgba(247, 247, 247, 1);
+    background:#487490;
+    background:-moz-linear-gradient(top, #487490, #487490);
+    background:-webkit-gradient(linear, 0 0, 100% 100%,from(#487490),to(#487490));
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+    box-shadow: inset 0 3px 26px #395C72;
+    -moz-box-shadow: inset 0 3px 26px #395C72;
+    -webkit-box-shadow: inset 0 3px 26px #395C72;
+    border:1px solid #395C72;
+    -moz-border-top-colors: #395C72;
+    -moz-border-bottom-colors: #395C72;
+    -moz-border-left-colors: #395C72;
+    -moz-border-right-colors: #395C72;
+}
+
+.btn.sel {
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+    box-shadow: inset 0 3px 36px #395C72;
+    -moz-box-shadow: inset 0 3px 36px #395C72;
+    -webkit-box-shadow: inset 0 3px 36px #395C72;
+}
+
+.btn.dis, .btn.disabled, .btn.pg-disabled, .loading .btn {
+    cursor:default;
+    color:rgba(128, 128, 128, 0.21);
+	color:#CCC\9;
+    background:rgba(0, 0, 0, 0.12);
+	background:#E0E0E0\9; /* fallback */
+	border: 1px solid #E0E0E0;
+    -moz-border-top-colors: rgba(0, 0, 0, 0);
+    -moz-border-bottom-colors: rgba(0, 0, 0, 0);
+    -moz-border-left-colors: rgba(0, 0, 0, 0);
+    -moz-border-right-colors: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+}
+
+/* theater (dark) overrides */
+.theater .btn,
+.theater .btn:visited {
+    border-top-color: #5B9FC7;
+    border-bottom-color: #1D5B79;
+    border-left-color: #5B9FC7 #1D5B79;
+    border-right-color: #5B9FC7 #1D5B79;
+    -moz-border-top-colors: #5B9FC7;
+    -moz-border-bottom-colors: #1D5B79;
+    -moz-border-left-colors: #5B9FC7 #1D5B79;
+    -moz-border-right-colors: #5B9FC7 #1D5B79;
+    box-shadow: inset 1px 0 #7EB3CE, 0 1px 0 rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 0 1px 0 #7EB3CE,0 1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: inset 0 1px 0 #7EB3CE, 0 1px 0 rgba(0,0,0,0.12);
+}
+
+.theater .btn:hover {
+	background:#7ebbe1\9; /* fallback */
+}
+
+.theater .btn:active {
+}
+
+.theater .btn.sel {
+    border-top-color: #487590;
+    border-bottom-color: #324F62;
+    border-left-color: #242424 #324F62;
+    border-right-color: #242424 #324F62;
+    -moz-border-top-colors: #487590;
+    -moz-border-bottom-colors: #324F62;
+    -moz-border-left-colors: #242424 #324F62;
+    -moz-border-right-colors: #242424 #324F62;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+    box-shadow: inset 0 3px 36px #395C72;
+    -moz-box-shadow: inset 0 3px 36px #395C72;
+    -webkit-box-shadow: inset 0 3px 36px #395C72;
+	opacity:.9;
+}
+
+.theater .btn.dis, .theater .btn.pg-disabled, .theater .loading .btn {
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    -moz-border-top-colors: rgba(0, 0, 0, 0);
+    -moz-border-bottom-colors: rgba(0, 0, 0, 0);
+    -moz-border-left-colors: rgba(0, 0, 0, 0);
+    -moz-border-right-colors: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.12);
+	background-color:#282828\9;
+	border: 1px solid #282828\9;
+	color:#3B3B3B\9;
+}
+
+/* button inline overrides */
+.btn.inline{width:586px;height:auto;padding:14px;text-align:center;color:rgba(42, 118, 168, 1);text-shadow:0 0 0 rgba(0, 0, 0, 0);-moz-border-radius:0;border-radius:0;background:rgba(42, 118, 168, 0.12);box-shadow:inset 0 0 0 rgba(42, 118, 168, 0.7);-moz-box-shadow:inset 0 0 0 rgba(42, 118, 168, 0.7);-webkit-box-shadow:inset 0 0 0 rgba(42, 118, 168, 0.7);border:1px solid rgba(42,118,168,0);-moz-border-top-colors:rgba(42,118,168,0);-moz-border-bottom-colors:rgba(42,118,168,0);-moz-border-left-colors:rgba(42,118,168,0);-moz-border-right-colors:rgba(42,118,168,0);margin-top:7px;}
+.btn.inline:hover{color:rgba(247, 247, 247, 1);text-shadow:0 -1px 0 rgba(0,0,0,0.21);background:rgba(42, 118, 168, 1);border:1px solid rgba(42,118,168,1);}
+.btn.inline:active{color:rgba(247, 247, 247, 1);text-shadow:0 -1px 0 rgba(0,0,0,0.21);box-shadow:inset 0 3px 26px #395C72;-moz-box-shadow:inset 0 3px 26px #395C72;-webkit-box-shadow:inset 0 3px 26px #395C72;background:rgba(42, 118, 168, 0.12);background:-moz-linear-gradient(top, #487490, #487490);background:-webkit-gradient(linear, 0 0, 100% 100%,from(#487490),to(#487490));border:1px solid rgba(42,118,168,0.7);}
+
+
+/* add spinner to inline button */
+.btn.inline.loader {text-align:center;padding:9px 14px 2px;}
+.btn.inline.loader span {background:url('../imgs/le/loader-light.gif') no-repeat;height:32px;width:32px;}
+
+.btn.inline.loader:hover,.btn.inline.loader:active{background:rgba(42,118,168,0.12);box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;}
+
+
+.btn-wrap {float:left;margin:14px 0;padding:4px 0;border-top:1px solid #EAE9E5;border-bottom:1px solid #EAE9E5;}
+
+/* small text for "see more" - maybe depreciated */
+.btn.inline.cta {font-size:0.786em;text-align:center;}
+
+/* for tabbed items */
+.btn.tabbed {-moz-border-radius: 4px 4px 0 0;border-radius: 4px 4px 0 0;}
+.theater .btn.tabbed.sel{border:1px solid rgba(127,127,127,0);text-shadow:none;box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none;background:#000;-moz-border-top-colors:rgba(127,127,127,0);-moz-border-bottom-colors:rgba(127,127,127,0);-moz-border-left-colors:rgba(127,127,127,0);-moz-border-right-colors:rgba(127,127,127,0);}
+
+
+
+/* begin button specific */
+.btn.large {}
+.btn-list a {margin:0 0 4px}
+.btn.small {font-size:.786em;}
+.btn em {font-style:normal;font-weight:normal;}
+
+.btn.pull {font-size:.786em;padding:0 0 0 7px; min-width:136px;}
+.btn.pull span {float:right;*float:none;*display:inline; background-position:8px -236px; width:24px; height:19px; margin-bottom:-1px;}
+.loading .btn.pull span {opacity:.3;}
+.btn.pull:hover span {background-position:8px -287px;}
+.btn.pull:active span {background-position:8px -338px;}
+.btn.pull.sel span {background-position:8px -338px;}
+.btn.pull.sel:hover span {background-position:8px -338px;}
+
+.btn.direct span {margin:0 -3px -2px 7px;padding-bottom:1px;background-position: 0 -1049px; width: 15px; height: 9px;}
+.btn.direct.dis span {background-position: 0 -1098px;}
+
+.btn.solo {margin:0;} /* solo = no text */
+.btn.solo, .btn.solo.next {padding:3px 7px;*padding:7px 7px 9px;}
+
+.btn.next span {margin:0 -7px -1px 7px;*margin-bottom:3px;background-position: 0 -617px; width: 12px; height: 14px;}
+.btn.next.solo span   {width: 7px;margin:0 2px -1px 4px;}
+.btn.next:hover span {background-position: 0 -673px;}
+.btn.next.dis span,
+.btn.next.pg-disabled,
+.btn.next.disabled span {background-position: 0 -728px;}
+
+.btn.prev span   {margin:0 3px -1px -3px;*margin-bottom:3px;background-position: 0 -784px; width: 12px; height: 14px;}
+.btn.prev.solo span   {width: 7px;margin:0 4px -1px 3px;}
+.btn.prev:hover span {background-position: 0 -840px;}
+.btn.prev.dis span,
+.btn.prev.pg-disabled span,
+.btn.prev.disabled span {background-position: 0 -895px;}
+
+.btn.thumbs span {margin:0 7px -3px -2px;background-position: 0 -446px; width: 19px; height: 15px;}
+.btn.thumbs:hover span {background-position: 0 -503px;}
+.btn.thumbs.dis span {background-position: 0 -560px;}
+
+.btn.close {padding-right:7px;background-color:#3C6986;}
+.btn.close span {background-position:0 -2475px;width:16px;height:16px;margin:0 0 -2px 7px;}
+.btn.close div {float:left; *margin-right: 7px;}
+
+/* define button font size */
+button.btn {font-size:1em;}
+
+.btn.search { width: 51px; height: 38px; padding: 8px 14px 10px 13px; }
+.btn.search span { display: block; width: 22px; height: 18px; background-position: 0 -6930px; text-indent: -999em; }

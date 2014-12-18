@@ -1,0 +1,32 @@
+/* for block level anchors */
+/* outer parent should not act as link... we'll set it inside */
+.package a.block,
+.package a.block:visited,
+.package a.block:hover {color: inherit;display: block;text-decoration: inherit;}
+
+/* children act as links */
+.package a.block * {color: #2A76A8;}
+
+/* cloaked children only "light up" when hovered */
+.package a.block .cloaked,
+.package a.block:visited .cloaked {color: inherit;}
+
+.package a.block:hover *,
+.package a.block:hover .cloaked {color: #3976CC;text-decoration: underline;}
+
+/* images should never have underlines */
+.package a.block img {text-decoration: none;}
+
+.package .two-across li {margin:0 28px 14px 0;}
+
+
+/* to handle banner on pages that are hubbed to packages */
+.show-lead.secondary {width:994px;margin:0 auto;}
+
+
+/* these will not show up in IE6, but will degrade quite gracefully
+.package .three-across li > a.block {border-left: 1px dotted #ccc;padding-left: 28px;}
+.package .three-across li.mod3 > a.block {border-left: none;padding-left: 0;}
+.package .three-across li.last-mod3,
+.package .three-across li.last-mod3 + li,
+.package .three-across li.last-mod3 + li + li {border-bottom-style: solid;}*/

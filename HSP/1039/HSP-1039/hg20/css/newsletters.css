@@ -1,0 +1,373 @@
+.nl-bd {
+    padding:0 14px;
+    }
+
+.nl-bd .button-nav {
+    margin-bottom:14px;
+    }
+
+.nl-bd p {
+    margin-bottom:14px;
+    }
+
+/*.nl-bd legend { display: block; font-size: 138.5%; line-height: 1; color: #000; font-family: "Trebuchet MS", sans-serif; padding-bottom: 6px; }*/
+.nl-bd .nl-choose h4 {
+    margin-bottom:14px;
+    }
+
+.nl-bd .nl-choose h4 label {
+    padding-left:7px;
+    }
+
+.nl-bd .nl-list li {
+    margin-bottom:12px;
+    padding-bottom:8px;
+    border-bottom:1px solid #ddd;
+    line-height:1.539;
+    font-size:100%;
+    }
+
+.nl-bd .nl-list li.last {
+    margin-bottom:0;
+    border-bottom:0;
+    }
+
+.nl-bd .nl-list label {
+    margin-left:2px;
+    *margin-left:0;
+    }
+
+.nl-bd .nl-list .check-all {
+    margin-bottom:10px;
+    border-bottom:0;
+    }
+
+.nl-bd .nl-list .desc {
+    padding-top:2px;
+    margin-left:19px;
+    color:#999;
+    font-size:85%;
+    *margin-left:24px;
+    }
+
+.nl-bd .nl-list .desc p {
+    margin-bottom:0;
+    }
+
+.nl-bd .nl-list .samplelink {
+    float:right;
+    margin-left:20px;
+    }
+
+.nl-bd .nl-your-info li {
+    float:left;
+    margin-bottom:9px;
+    }
+
+.nl-bd .text-box {
+    width:210px;
+    margin-right:14px;
+    }
+
+.nl-bd .nl-optional ul {
+    margin-bottom:5px;
+    }
+
+.nl-bd .nl-optional li {
+    float:left;
+    margin-right:15px;
+    }
+
+.nl-bd .nl-optional label {
+    margin-left:6px;
+    vertical-align:middle;
+    }
+
+.nl-bd .nl-optional .radio {
+    vertical-align:middle;
+    }
+
+.nl-bd .acco-res {
+    _float:left;
+    _width:602px;
+    }
+
+.nl-bd .acco-res .acco-link {
+    cursor:pointer;
+    }
+
+.nl-bd .acco-res .acco-bd {
+    display:none;
+    }
+
+.nl-bd .acco-res .nl-list {
+    padding:12px 7px 0 7px;
+    }
+
+.nl-bd .acco-res .nl-list .last {
+    padding-bottom:0;
+    }
+
+.nl-bd .site-logos a {
+    height:49px;
+    display:block;
+    margin-right:6px;
+    background:url(../imgs/logos.png) 0 0 no-repeat;
+    float:left;
+    text-indent:-999em;
+    }
+
+.nl-bd .site-logos a.hgtv {
+    background-position:0 0;
+    width:88px;
+    }
+
+.nl-bd .site-logos a.diy {
+    background-position:-97px 0;
+    width:89px;
+    }
+
+.nl-bd .site-logos a.fln {
+    background-position:-193px 0;
+    width:90px;
+    }
+
+.nl-bd .site-logos a.gac {
+    background-position:-292px 0;
+    width:87px;
+    }
+
+.nl-bd .site-logos a.rcpczaar {
+    background-position:-390px 0;
+    width:88px;
+    }
+
+.nl-bd .site-logos a.hgtvpro {
+    background-position:-486px 0;
+    width:88px;
+    margin-right:0;
+    }
+
+.nl-bd .site-logos {
+    height:49px;
+    overflow:hidden;
+    }
+
+.nl-bd .find {
+    text-align:center;
+    }
+
+.nl-bd .button {
+    width:75px;
+    }
+
+/* success */
+.nl-bd.success h2 {
+    margin-bottom:5px;
+    }
+
+.nl-bd.success p {
+    margin-bottom:20px;
+    }
+
+.nl-bd.success .safe-list li {
+    padding-left:12px;
+    background:transparent url(../imgs/bullet_gray.png) 0 9px no-repeat;
+    }
+
+/* change email address */
+.nl-bd.change-email .fieldset ul {
+    /*margin-bottom: 7px;*/
+    }
+
+.nl-bd.change-email .fieldset li {
+    margin-bottom:9px;
+    }
+
+.nl-bd.change-email .fieldset li.left {
+    float:left;
+    }
+
+.nl-bd.change-email .button {
+    width:149px;
+    }
+
+/* unsubscribe */
+.nl-bd.unsubscribe h4 {
+    margin-bottom:10px;
+    }
+
+.nl-bd.unsubscribe .acco-res h4 {
+    margin:0 0 0 10px;
+    }
+
+.nl-bd.unsubscribe .button {
+    width:87px;
+    }
+
+/*.nl-bd.unsubscribe .fieldset ul { float: left; }*/
+.nl-bd.unsubscribe .fieldset li {
+    float:left;
+    margin-bottom:9px;
+    }
+
+.nl-bd.unsubscribe .nl-list-plain {
+    margin-bottom:8px;
+    padding-bottom:12px;
+    border-bottom:1px solid #ddd;
+    }
+
+.nl-bd.unsubscribe .nl-list-plain li {
+    float:none;
+    margin-bottom:0;
+    padding-bottom:0;
+    }
+
+/* newsletter signup */
+#nl-ajax-signup p {
+    padding-bottom:14px;
+    }
+
+#nl-ajax-signup label#nl-emailaddress-lbl {
+    display:block;
+    font-weight:bold;
+    width:100px;
+    }
+
+#nl-emailaddress {
+    padding:3px;
+    width:235px;
+    width:220px \9;
+    _width:220px;
+    display:block;
+    float:left;
+    }
+
+* html #nl-emailaddress {
+    width:220px;
+    }
+
+.grey-button {
+    background:url("../imgs/hgtv_photogallery_sprite.png") no-repeat scroll right -286px transparent;
+    color:#FFFFFF;
+    padding-right:4px;
+    height:29px;
+    float:right;
+    }
+
+.grey-button button {
+    background:url("../imgs/hgtv_photogallery_sprite.png") no-repeat scroll left -286px #E9F5F9;
+    display:block;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    padding:0 0 0 4px;
+    border:none;
+    height:29px;
+    color:#FFF;
+    }
+
+.grey-button:hover {
+    background-position:right -315px;
+    text-decoration:none;
+    color:#FFFFFF;
+    }
+
+.grey-button:hover button {
+    background-position:left -315px;
+    }
+
+.grey-button:active {
+    background-position:right -344px;
+    text-decoration:none;
+    color:#FFFFFF;
+    }
+
+.grey-button:active button {
+    background-position:left -344px;
+    }
+
+.nl-legal {
+    clear:both;
+    padding-top:3px;
+    }
+
+.nl-legal label {
+    font-size:.85em;
+    }
+
+.nl-errors li,
+.nl-loading,
+.nl-thank-you {
+    display:none;
+    }
+
+.nl-errors li {
+    color:#FF0000;
+    }
+
+#nl-ajax-signup .bd {
+    position:relative;
+    height:150px;
+    }
+
+#site-wrapper #hg-e #nl-ajax-signup .bd {
+    padding-top:9px;
+    }
+
+#nl-ajax-signup .highlight {
+    background-color:#FF0000;
+    padding:5px;
+    color:#FFFFFF;
+    }
+
+#nl-ajax-signup .highlight a,
+#nl-ajax-signup .highlight a:active,
+#nl-ajax-signup .highlight a:hover,
+#nl-ajax-signup .highlight a:link,
+#nl-ajax-signup .highlight a:visited {
+    color:#2E74B0;
+    }
+
+#nl-ajax-signup .highlight a {
+    color:#FFFFFF;
+    }
+
+.nl-loading {
+    position:absolute;
+    top:0;
+    left:0;
+    width:346px;
+    height:100%;
+    text-align:center;
+    background-color:#E9F5F9;
+    }
+
+* html .nl-loading {
+    height:130px;
+    width:330px;
+    }
+
+.nl-loading-msg {
+    padding-top:40px;
+    }
+
+.nl-loading .spinner {
+    display:block;
+    height:29px;
+    background:url("../imgs/hg-loader.gif") no-repeat scroll transparent;
+    color:#000;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    }
+
+.nl-thank-you h5 {
+    font-weight:bold;
+    }
+
+.nl-legal {
+    margin-top:4px;
+    white-space:nowrap;
+    }
+

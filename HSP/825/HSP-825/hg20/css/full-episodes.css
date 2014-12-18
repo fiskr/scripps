@@ -1,0 +1,98 @@
+#full-epi h1 {
+    }
+
+#full-epi p.intro {
+    margin:7px 14px 21px;
+    }
+
+#full-epi .jump-nav {
+    margin:14px;
+    }
+
+#full-epi .jump-nav:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#full-epi .jump-nav span {
+    float:left;
+    margin-right:7px;
+    font-family:'trebuchet ms';
+    margin-top:-2px;
+    _text-transform:uppercase;
+    }
+
+#full-epi .jump-nav li {
+    float:left;
+    margin-right:5px;
+    }
+
+#full-epi .jump-nav li span {
+    float:left;
+    margin:0;
+    }
+
+#full-epi .jump-nav a.button-sm {
+    text-align:center;
+    letter-spacing:.3em;
+    }
+
+#full-epi #fe-list {
+    clear:both;
+    margin:14px;
+    }
+
+#full-epi #fe-list li li {
+    border-top:1px solid #ccc;
+    clear:both;
+    padding-top:21px;
+    margin:7px 0 14px;
+    }
+
+#full-epi #fe-list li:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#full-epi #fe-list li.first {
+    border:0;
+    padding-top:0;
+    }
+
+#full-epi #fe-list li p {
+    line-height:1.3em;
+    }
+
+#full-epi #fe-list li p.cta {
+    margin:18px 0 7px;
+    }
+
+#full-epi #fe-list li p.cta a {
+    margin-left:10px;
+    }
+
+#full-epi #fe-list li p.cta .button {
+    margin:-6px 12px 0 0;
+    }
+
+#full-epi #fe-list .banner {
+    float:left;
+    margin-right:14px;
+    }
+
+#full-epi #fe-list h2 {
+    font-size:108%;
+    }
+
+#full-epi #fe-list h3 {
+    font-size:108%;
+    font-family:'trebuchet ms';
+    letter-spacing:.4em;
+    margin:7px 0
+    }

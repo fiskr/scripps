@@ -1,0 +1,68 @@
+.themed-lead{height:300px;position:relative;border-bottom:0;}
+.themed-lead .hd{background:#2E2E2E;padding:14px 21px 21px;float:right;height:265px;width:552px;color:#FFF;}
+.themed-lead p {color:#999;margin-bottom:7px;}
+.themed-lead p.small {margin-bottom:0;}
+.themed-lead h2 {color:#FFF;}
+.themed-lead h2 a:active,.themed-lead h2 a:link,.themed-lead h2 a:visited{color: #fff;text-decoration: none;}
+.themed-lead h2 a:hover{color: #2a76a8; text-decoration: none; } 
+.themed-lead h4 {font-weight:bold;margin-bottom:7px;line-height:1.15em;}
+.themed-lead h5 {font-size:.786em;margin-bottom:4px;color:#999;}
+.themed-lead .active p,
+.themed-lead .active h5 {color:#666;}
+.themed-lead .lead-images{float:left;}
+.themed-lead .lead-menu{position:absolute;right:7px;bottom:7px;background: #FFF;width:616px;z-index:300;}
+.themed-lead .lead-menu ul{height:190px;}
+.themed-lead .lead-menu li{height:172px;width:205px;padding:14px 0;float:left;position:relative;}
+.themed-lead .lead-menu li .bd{border-left:1px dotted #ddd;height:100%;overflow:hidden;padding:0 14px;}
+.themed-lead .lead-menu li.first .bd{border-left:none;}
+.themed-lead .dl-menu li em {display:block;position:absolute;top:0;left:100px;background: url('../imgs/se/sprite.png') no-repeat 0 -6370px;width:18px; height:9px;}
+.themed-lead .dl-menu li.active em {background-position: 0 -6422px;width:18px; height:9px;}
+.themed-lead .dl-content ul{position:relative;z-index:200;}
+.themed-lead .dl-content li{position:absolute;width:400px;height:300px;}
+.themed-lead .dl-content li img{display:block;width:400px;height:300px;}
+
+
+.triple-promo {height:300px;background:#2E2E2E;border-bottom:0;}
+.triple-promo a {color:#66BFE7;}
+.triple-promo a:hover {color:#8be0ff;}
+.triple-promo p {color:#999;margin-bottom:7px;}
+.triple-promo p a {font-weight:normal;}
+.triple-promo p.small {margin-bottom:0;}
+.triple-promo h2 {color:#FFF;}
+.triple-promo h4 {font-weight:bold;margin-bottom:7px;}
+.triple-promo h5 {font-size:.786em;margin-bottom:7px;color:#999;}
+.triple-promo .panel{float:left;}
+.triple-promo .major{width:648px;}
+.triple-promo .major .panel{padding:14px;height:272px;width:220px;overflow:auto;}
+.triple-promo .minor{width:300px;height:258px;background:#3E3E3E;padding:14px;margin:7px 9px;}
+.triple-promo .minor a.thumb{display:block;margin:0 auto 7px;width:120px;}
+.triple-promo .minor a.thumb img{display:block;}
+.triple-promo .minor .panel{margin-bottom:7px;width:150px;}
+.triple-promo .minor .panel .bd{height:221px;overflow:auto;padding-right:7px;}
+.triple-promo .minor .pane2 h3{padding-left:14px;}
+.triple-promo .minor .pane2 .bd{border-left:1px dotted #777;padding-left:14px;}
+.triple-promo .minor .more{clear:both;border-top:1px dotted #777;padding-top:14px;}
+.triple-promo .minor .more p{font-weight:bold;line-height:1;*zoom:1;}
+.triple-promo .major img{display:block;float:left;}
+.triple-promo .major dl.proj-details{font-size:.856em;margin-top:20px;line-height:1.27em;}
+.triple-promo .major dl.proj-details dt{font-weight:bold;float:left;margin-right:3px;}
+.triple-promo .major p.more{font-size:.856em;line-height:1.64;margin-top:20px;}
+.triple-promo .major .tune-in{font-size:.856em;margin-top:20px;line-height:1.27em;}
+
+
+/* super lead globals */
+.super-lead {margin:14px 0 21px;clear:both;zoom:1;border-bottom:1px solid #e5e5e5;}
+.super-lead .col {float:left;padding:0 14px 14px;margin:0 0 14px -1px;min-height:272px;border-right:1px dotted #CCC;}
+.super-lead .col .sep {padding-bottom:10px;margin-bottom:10px;border-bottom:1px dotted #CCC;}
+.super-lead .col.sm {width:182px;}
+.super-lead .col.med {width:250px;}
+.super-lead .col.lg {width:266px;}
+.super-lead .col.xl {width:475px;}
+.super-lead .col.first {margin-left:0;}
+.super-lead .col.last {border-right:0;padding-right:0;}
+.super-lead .col h4 {font-size:.786em;font-weight:bold;color:#777;margin-bottom:7px;}
+.super-lead .col h5 a:hover {text-decoration:underline;}
+.super-lead .col p, .super-lead .col ul  {font-size:.786em;color:#777;line-height:1.272em;margin-bottom:14px;}
+.super-lead .col p.jump, .super-lead .col ul.inline {margin-bottom:0;}
+.super-lead .col ul.grey {margin-bottom:0;}
+.super-lead .col ul.inline li {display:inline-block;margin:0;}

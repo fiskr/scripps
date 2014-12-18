@@ -1,0 +1,13 @@
+<header class="tool-belt clrfix">
+	<div class="dropdown share">
+		<a  class="button dropdown-toggle">Share <i class="icon-">&#xf0d7;</i></a>
+		<div class="dropdown-menu">
+		
+		</div>
+	</div>
+	<div class="logo">
+		<a href="/" class="icon-">&#xf500;</a>
+	</div>
+	<a href="#" class="button close">Done</a>
+</header>
+<!-- //#header -->

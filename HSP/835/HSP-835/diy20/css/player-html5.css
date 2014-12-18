@@ -1,0 +1,75 @@
+/*Generic styles*/
+.channel-detail div#vid-player-wrap { height: auto; background: none; padding 4px; border: 1px solid #ccc; border-radius: 4px; }
+.vid-html video { display: block; margin: 0 auto; width:576px;; }
+.vid-wrap { width: 100%; position: relative; background-color: #222; }
+.vid-wrap .vid-over { display: none; position: absolute; width: 100%; height: 100%; background: -moz-linear-gradient(-67deg, #eee, #ccc); background: -webkit-linear-gradient(-67deg, #eee, #ccc); 
+border: none; border-radious: 2px; box-shadow: 2px 2px 10px #999; -webkit-box-shadow: 2px 2px 10px #999; }
+.vid-wrap .vid-over div { padding: 10%; font: 138.5% Trebuchet MS, arial, sans-serif; color: #666; }
+.vid-wrap .vid-over span.prog { display: block; width: 0; height: 10px; margin: 10px 0 0; transition: width .1s linear; -webkit-transition: width .1s linear; -moz-transition: width .1s linear; background-color: #777;}
+.vid-wrap .vid-over span.prog.on { width: 70%; transition: width 5s linear; -webkit-transition: width 5s linear; -moz-transition: width 5s linear; }
+.vid-wrap.overlay .vid-over { display: -moz-box; display: -webkit-box; -moz-box-align: center; -webkit-box-align: center; }
+.vid-wrap.overlay video { -webkit-transform:translateX(-2048px) }
+.vid-html .crsl {overflow: hidden; position: relative; }
+.vid-html .crsl .prev-btn, .vid-html .crsl .next-btn { position: absolute; display: block; width: 24px; height: 24px; cursor: pointer; text-indent: 100%;
+white-space: nowrap; overflow: hidden; }
+.lead-feature .vid-html.inline { margin: 4px 0 10px; }
+.vid-html .crsl .crsl-wrap { margin: 0 auto; }
+.vid-html .crsl .crsl-wrap li.crsl-item { float: left; position: relative; list-style: none; }
+.vid-html .crsl li img { display: block; }
+.vid-html .crsl li .icn { width: 33px; height: 33px; position: absolute; background-image: url(../imgs/play-medium.png);}
+.vid-html .crsl li a:hover .icn { background-image: url(../imgs/play-medium-over.png);}
+.vid-html .crsl li.sel .icn, .vid-html .crsl li.sel a:hover .icn { background-image: none; }
+.vid-html .crsl li a { display: block; }
+.vid-html .crsl li a:hover {text-decoration:none;}
+.vid-html .crsl li.sel a:hover {cursor:default;}
+.vid-html .crsl li a:hover span {text-decoration:underline;}
+.vid-html .crsl li.sel a:hover span {text-decoration:none;}
+.vid-html .crsl li a:hover .sec {text-decoration:none;}
+.vid-html .crsl li p { font-size: 84.6%; line-height:1.3em; margin: 4px 0 0;}
+.vid-html .crsl .controls {padding:7px 0; z-index: 3; top: -40px}
+
+/*Recipe*/
+div#recipe-player-instance {margin-bottom: 7px; display: inline-block;}
+.vid-html.recipe .crsl .prev-btn, .vid-html.recipe .crsl .next-btn { top: 78px; }
+.vid-html.recipe .crsl .prev-btn { left: 14px; }
+.vid-html.recipe .crsl .next-btn { right: 14px; }
+
+/*FullScreenWide*/
+.vid-html.fullscreenwide .crsl, .vid-html.recipe .crsl { width: 100%; height: 160px; margin-top: 0px; padding: 25px 0 0 0; }
+.vid-html.fullscreenwide .crsl .prev-btn, .vid-html.fullscreenwide .crsl .next-btn { top: 90px; }
+.vid-html.fullscreenwide .crsl .prev-btn { left: 35px; }
+.vid-html.fullscreenwide .crsl .next-btn { right: 35px; }
+.vid-html.fullscreenwide .crsl .crsl-wrap li.crsl-item, .vid-html.recipe .crsl .crsl-wrap li.crsl-item { width: 96px; margin: 7px 15px; }
+.vid-html.fullscreenwide .crsl li img, .vid-html.recipe .crsl li img { width: 92px; height: 69px; border-width: 2px; border-style: solid; }
+.vid-html.fullscreenwide .crsl li .icn, .vid-html.recipe .crsl li .icn { top: 30px; left: 54px; }
+.vid-html.fullscreenwide .crsl .controls.btn-nav, .vid-html.recipe .crsl .controls.btn-nav {top: -28px; display:inline-block;}
+
+/*RightRail*/
+.vid-html.rightrail[style] {height:366px !important; margin-top:35px;}
+.vid-html.rightrail .crsl { width: 100%; height: 136px; margin-top: 0px; padding-bottom: 0px; }
+.vid-html.rightrail video{width: 320px; height:203px;}
+.vid-html.rightrail .crsl .crsl-wrap li.crsl-item { width: 156px; margin: 0 4px 0 0; }
+.vid-html.rightrail .crsl .hd { margin: 0; padding: 0; background: none; }
+.vid-html.rightrail .crsl li img { width: 60px; height: 45px; float: left; padding: 1px 0 1px 1px; }
+.vid-html.rightrail .crsl li .icn { top: 12px; left: 26px; }
+.vid-html.rightrail .crsl li a:hover { border:1px solid #D8C5A5; }
+.vid-html.rightrail .crsl li.sel a { border:1px solid #FFF; }
+.vid-html.rightrail .crsl li p { width: 79px; margin: 4px 7px; float: left; font-size: 76.9%; letter-spacing: -.2px; line-height: 1.1em; }
+.vid-html.rightrail .crsl .controls.btn-nav {top: 58px;}
+.vid-html.rightrail .crsl .controls.btn-nav {top: 58px;}
+.vid-html.rightrail .crsl .prev-btn, .vid-html.rightrail .crsl .next-btn { top: 103px; }
+.vid-html.rightrail .crsl .prev-btn { left: 110px; }
+.vid-html.rightrail .crsl .next-btn { right: 110px; }
+.vid-html.rightrail .crsl .controls{width:auto;}
+.vid-html.rightrail .crsl .nav{width:40px !important;display:inline-block; margin:0 46%; top:97px; position:relative;}
+.vid-html.rightrail .crsl .crsl-wrap li.crsl-item{height:50px;}
+
+.vid-html .crsl .controls.btn-nav span{display: block; height: 8px; width: 8px; background: transparent no-repeat 0 0; text-indent: -9999px;float: left;margin: 0 1px; cursor:pointer;}
+.vid-html .crsl .controls.btn-nav span.active{cursor:default;}
+#vplayer-1-instance .vid-html.fullscreenwide .crsl .nav[style]{width: auto !important;}
+.vid-html .crsl li{height:192px;}
+
+/*End scene*/
+.vid-over a:link, .vid-over a:visited{
+    color: #176684;
+}

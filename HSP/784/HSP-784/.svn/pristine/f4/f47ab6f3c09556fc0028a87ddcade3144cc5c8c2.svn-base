@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- ####### visual/skin style parameters below ####### -->
+
+	<!-- Close Button -->
+	<closeButton>
+		<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/close_normal.png</normal>
+		<hover>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/close_hover.png</hover>
+		<press>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/close_pressed.png</press>
+	</closeButton>
+
+	<!-- Recall Button -->
+	<recallButton>
+		<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/recall_normal.png</normal>
+		<hover>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/recall_hover.png</hover>
+		<press>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/recall_pressed.png</press>
+	</recallButton>
+
+	<textButton>
+		<!-- Start Text Button Config: Text buttons appear in the menu overlay: Send/Copy/Get Recipe, etc. -->
+		<bg>
+			<!-- URLs to text button graphics -->
+			<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/button_normal2.png</normal>
+			<hover>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/button_hover2.png</hover>
+			<press>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/button_pressed2.png</press>
+			<disabled>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/button_disabled2.png</disabled>
+		</bg>
+		<!-- Colors of the text on the text button  -->
+		<textColors>
+			<normal>#ffffff</normal>
+			<hover>#ffffff</hover>
+			<press>#ffffff</press>
+			<disabled>#999999</disabled>
+		</textColors>
+	</textButton>
+	<controlButtons>
+		<!-- Start Control Buttons (Play/Pause/etc.) -->
+		<!-- Colors for the different states of the button -->
+		<buttonColors>
+			<normal>#454545</normal>
+			<hover>#75b9e1</hover>
+			<press>#45728f</press>
+			<disabled>#CCCCCC</disabled>
+		</buttonColors>
+	</controlButtons>
+	<overlayMenu>
+		<!-- Start Overlay Menu Config -->
+		<!-- Overlay menu text colors -->
+		<textColors>
+			<title>#69c0e7</title>
+			<secondary>#666666</secondary>
+			<body>#ffffff</body>
+		</textColors>
+	</overlayMenu>
+	<playlistCarousel>
+		<!-- Start Playlist Config -->
+		<isBackground>true</isBackground>
+		<!-- Does playlist background appear: true/false -->
+		<bgURL>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/thumbnails_bg.png</bgURL>
+		<!-- URL to playlist background -->
+		<thumbnailBorder>big</thumbnailBorder>
+		<!-- Size of thumbnail border: big=rectangle around text+thumb   small=rectangle around thumb only -->
+		<!-- Text Colors for Playlist elements -->
+		<textColors>
+			<normal>#2a76a8</normal>
+			<hover>#4e98d3</hover>
+			<selected>#333333</selected>
+			<secondary>#999999</secondary>
+		</textColors>
+		<!-- Border Colors for thumbnail borders -->
+		<borderColors>
+			<normal>#e6e6e6</normal>
+			<hover>#cccccc</hover>
+			<selected>#cccccc</selected>
+		</borderColors>
+		<rightArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/right_arrow_normal2.png</normal>
+			<hover>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/right_arrow_hover2.png</hover>
+			<press>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/right_arrow_pressed2.png</press>
+			<disabled>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/right_arrow_disabled2.png</disabled>
+		</rightArrow>
+		<leftArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/left_arrow_normal2.png</normal>
+			<hover>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/left_arrow_hover2.png</hover>
+			<press>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/left_arrow_pressed2.png</press>
+			<disabled>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/left_arrow_disabled2.png</disabled>
+		</leftArrow>
+		<playlistTitle>
+			<size>14</size>
+			<font>arial</font>
+			<color>#333</color>
+		</playlistTitle>
+		<paginationIcon>
+			<!-- Pagination Dot Icon -->
+			<normal>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/pagination_icon_empty.png</normal>
+			<selected>http://www.sndimg.com/webhgrm/rm10/snap-configs/imgs/pagination_icon_full.png</selected>
+		</paginationIcon>
+		<paginationText>
+			<!-- Pagination nn of mm Text -->
+			<size>10</size>
+			<font>Arial</font>
+			<color>#999999</color>
+		</paginationText>
+	</playlistCarousel>
+
+</config>

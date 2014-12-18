@@ -1,0 +1,172 @@
+#event-overlay {
+    height:86px;
+    right:7px;
+    position:absolute;
+    top:7px;
+    width:350px;
+    }
+
+#event-overlay a.banner {
+    display:block;
+    height:86px;
+    width:350px;
+    }
+
+#event-overlay .banner span {
+    display:block;
+    text-indent:-999em;
+    overflow:hidden;
+    }
+
+#overlay-nav {
+    position:absolute;
+    right:14px;
+    top:14px;
+    }
+
+#overlay-nav a.button {
+    margin-right:2px;
+    padding:0 0 0 7px;
+    }
+
+#overlay-nav a.button:link, #overlay-nav a.button:visited {
+    background:transparent url(images/hgtv_event_ui.png) left top no-repeat;
+    }
+
+#overlay-nav a.button span {
+    background:transparent url(images/hgtv_event_ui.png) right top no-repeat;
+    line-height:29px;
+    margin-right:-2px;
+    padding:0 7px 0 0;
+    }
+
+#overlay-nav a.button span.c {
+    background:none;
+    float:left;
+    margin:0;
+    padding:0;
+    }
+
+#overlay-nav a.button span.r, #overlay-nav.dd-on a.button span.r, #overlay-nav a.button:hover span.r {
+    float:left;
+    width:7px;
+    height:4px;
+    margin:13px 0 0 3px;
+    padding:0;
+    background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png) -466px -502px no-repeat;
+    }
+
+#overlay-nav a.button:hover, #overlay-nav.dd-on a.button, #overlay-nav a.button:active {
+    background-position:left -29px;
+    }
+
+#overlay-nav a.button:hover span, #overlay-nav.dd-on a.button span, #overlay-nav a.button:active span {
+    background-position:right -29px;
+    }
+
+.futon-menu {
+    z-index:200;
+    }
+
+.futon-menu .dd20 {
+    left:auto;
+    right:0;
+    top:21px;
+    line-height:1.7;
+    }
+
+.futon-menu.dd-on .dd20 {
+    display:block;
+    }
+
+.futon-menu .dd20 h3 {
+    font:bold 85% "Trebuchet MS", sans-serif;
+    margin-top:4px;
+    }
+
+.futon-menu .dd20 ul {
+    float:left;
+    margin:5px 0 4px 14px;
+    width:155px;
+    }
+
+.futon-menu .dd20 ul.first {
+    margin-left:0;
+    }
+
+.futon-menu .dd20 li {
+    padding:2px 0 2px 8px;
+    background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/bullet-red.png) no-repeat left 9px;
+    line-height:1.2em;
+    height:auto;
+    border:0;
+    float:none;
+    *zoom:1;
+    }
+
+.futon-menu .dd20 .dd20-hd, .futon-menu .dd20 .dd20-ft {
+    width:368px;
+    }
+
+.futon-menu .dd20 .dd20-hd .c, .futon-menu .dd20 .dd20-ft .c {
+    width:348px;
+    }
+
+.futon-menu .dd20 .dd20-bd-outer {
+    width:359px;
+    }
+
+.futon-menu .dd20 .dd20-bd .content {
+    padding:6px 13px 13px;
+    }
+
+.futon-menu .dd20 .dd20-bd .content p {
+    margin-bottom:7px;
+    }
+
+.article-detail .mini-lead, .article-detail .mini-lead h1,
+.player-detail .mini-lead, .player-detail .mini-lead h1, .channel-detail .mini-lead, .channel-detail .mini-lead h1 {
+    height:60px;
+    }
+
+.article-detail #event-overlay,
+.player-detail #event-overlay, .channel-detail #event-overlay {
+    height:60px;
+    right:0;
+    position:absolute;
+    top:0;
+    width:364px;
+    }
+
+.article-detail #overlay-nav,
+.player-detail #overlay-nav, .channel-detail #overlay-nav {
+    right:18px;
+    top:21px;
+    }
+
+.mini-lead {
+    z-index:2;
+    }
+
+.mini-lead h1 a {
+    display:block;
+    height:100%;
+    width:100%;
+    }
+
+.mini-lead.secondary, .mini-lead.secondary h1 {
+    height:60px;
+    }
+
+.secondary #event-overlay {
+    height:60px;
+    right:0;
+    top:0;
+    width:364px;
+    background:url(http://web.hgtv.com/webhgtv/hg20/pkgs/2011/spring/images/asset-spring-overlay-bg.png) no-repeat scroll 0 0;
+    }
+
+.secondary #event-overlay a.banner {
+    height:60px;
+    width:364px;
+    }

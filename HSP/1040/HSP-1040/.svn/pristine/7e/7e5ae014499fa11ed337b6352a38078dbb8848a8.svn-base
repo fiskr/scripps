@@ -1,0 +1,3401 @@
+/*  first, legacy pod styles */
+
+/* left rail #hg-ww pods */
+#hg-ww .pod {
+    width:196px;
+    margin:14px 0;
+    border-top-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    background:#f1f6f2;
+    position:relative;
+    _zoom:1;
+    }
+
+#hg-ww #product-ideas.pod {
+    *position:static;
+    margin-top:0;
+    }
+
+#hg-ww .pod .hd {
+    min-height:2px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat right top;
+    _background-image:none;
+    }
+
+#hg-ww .pod .hd h4 {
+    margin:0 14px 0 0;
+    padding:10px 0 10px 7px;
+    line-height:1.1em;
+    background:url(../imgs/border-red-orange.png) 0 bottom repeat-x;
+    font-size:108%;
+    font-family:"Trebuchet MS", sans-serif;
+    color:#ef4141;
+    _position:relative;
+    }
+
+#hg-ww .pod .bd {
+    padding:10px 7px 0;
+    }
+
+#hg-ww .pod .ft {
+    height:8px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-br.png) no-repeat right bottom;
+    _background-image:none;
+    }
+
+#hg-ww #hgtv-hosts {
+    *z-index:102;
+    }
+
+#hg-ww #hgtv-hosts .ft {
+    *z-index:102;
+    }
+
+#hg-ww .pod .drops {
+    *z-index:103;
+    }
+
+/*  used where???
+#hg-ww #about-this p{line-height:18px;}
+#hg-ww .pod .epi-content {border-top:1px solid #EBEBEB;margin-top: 7px;padding-top: 7px;}
+#hg-ww .pod .epi-content p {padding-bottom: 7px;}
+#hg-ww .pod .epi-content h5 {color:#D72D82;font-family:"Trebuchet MS",sans-serif;line-height:1;text-transform:uppercase;}
+*/
+
+/* right rail #hg-e pods */
+#hg-e .pod, .sni-e .pod { /*.sni-e is for uber articles */
+    width:349px;
+    margin:14px 0;
+    background:#f1f6f2;
+    *background:none;
+    border-top-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    }
+
+#hg-e .pod .hd, .sni-e .pod .hd {
+    padding-left:13px;
+    min-height:2px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat right top;
+    _background-image:none;
+    }
+
+#hg-e .pod .hd h4, .sni-e .pod .hd h4{
+    color:#ef4141;
+    padding-top:10px;
+    font-size:138.5%;
+    line-height:1.1em;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#hg-e .pod .bd, .sni-e .pod .bd {
+    padding:4px 0 0 13px;
+    *background:#f1f6f2;
+    }
+
+#hg-e .pod .ft, .sni-e .pod .ft {
+    padding-left:13px;
+    height:8px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-br.png) no-repeat right bottom;
+    _background-image:none;
+    }
+
+#hg-e .pod .cta, .sni-e .pod .cta {
+    *background:#f1f6f2;
+    }
+
+#ERA_WRAPPER {
+    min-height:250px;
+    }
+
+/* RR carousel of video thumbs; could/should just be .pod */
+#hg-e .inside-pod {
+    width:349px;
+    margin:14px 0;
+    background:#f1f6f2;
+    *background:none;
+    border-top-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    }
+
+#hg-e .inside-pod .hd {
+    padding:2px 0 0 13px;
+    min-height:2px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat right top;
+    _background-image:none;
+    }
+
+#hg-e .inside-pod .hd h4 {
+    color:#ef4141;
+    padding-top:10px;
+    font-size:138.5%;
+    line-height:1.1em;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#hg-e .inside-pod .bd {
+    padding:14px 0 7px 13px;
+    *background:#f1f6f2;
+    }
+
+#hg-e .inside-pod .ft {
+    padding-left:13px;
+    height:7px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-br.png) no-repeat right bottom;
+    _background-image:none;
+    }
+
+/* RR .widget also same as .pod */
+#hg-e .widget, .sni-e .widget {
+    width:349px;
+    margin:14px 0;
+    background:#f1f6f2;
+    *background:none;
+    border-top-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    }
+
+#hg-e .widget .hd, .sni-e .widget .hd {
+    padding-left:13px;
+    min-height:2px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat right top;
+    _background-image:none;
+    }
+
+#hg-e .widget .hd h4, .sni-e .widget .hd h4  {
+    color:#ef4141;
+    padding-top:10px;
+    font-size:138.5%;
+    line-height:1.1em;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#hg-e .widget .bd, .sni-e .widget .bd  {
+    padding:7px 14px 0 13px;
+    *background:#f1f6f2;
+    }
+
+#hg-e .widget .ft, .sni-e .widget .ft {
+    padding-left:13px;
+    height:7px;
+    *background:#f1f6f2 url(../imgs/ie/cnr-mask-wh-br.png) no-repeat right bottom;
+    _background-image:none;
+    }
+
+/* sponsor text links RR HP */
+#hg-e .sponslink .bd, .sni-e .sponslink .bd {
+    padding-top:5px;
+    *padding-top:2px;
+    }
+
+.sponslink .bd a {
+    display:block;
+    padding-left:7px;
+    background:transparent url(../imgs/bullet-red.png) no-repeat scroll left 10px;
+    }
+
+/* for 1x1 tracker in sponsor text links: */
+#site-wrapper .sponslink .bd img {
+    display:none;
+    }
+
+
+/* join the conversation right rail module -- based on code from FN by Matt Ford */
+.pod.join-the-conversation .hd,
+.pod.join-the-conversation .bd,
+.pod.join-the-conversation .ft { margin: 0; padding: 0 12px; }
+
+.pod.join-the-conversation .hd { padding-bottom: 12px; }
+.pod.join-the-conversation .bd { padding-bottom: 4px; }
+
+.pod.join-the-conversation .shares,
+.pod.join-the-conversation .social-items { float: left; }
+
+.pod.join-the-conversation .shares { padding-top: 3px; margin-right: 7px; padding-right: 10px; border-right: 1px solid #dfdfdf; height: 67px; }
+.pod.join-the-conversation .shares > * { float: left; }
+
+.pod.join-the-conversation .social-items.networks { width: 76px; border-right: 1px solid #dfdfdf; padding-right: 7px; margin-right: 10px; }
+.pod.join-the-conversation .social-items.blogs { width: 96px; margin-top: 16px; line-height: 1.4em; }
+
+.pod.join-the-conversation .social-items.networks > li {
+	text-indent: -5000px;
+	overflow: hidden;
+	background: url(../imgs/jtc-social-sprite.png) no-repeat;
+	float: left;
+	width: 32px;
+	height: 32px;
+	margin: 0 3px;
+}
+
+.pod.join-the-conversation .social-items.networks > li a { display: block; height: 100%; }
+.pod.join-the-conversation .social-items.networks > li.row-two { margin-top: 6px; }
+
+.pod.join-the-conversation .social-items.networks .twitter { background-position: 0 0; }
+.pod.join-the-conversation .social-items.networks .fb { background-position: -32px 0; }
+.pod.join-the-conversation .social-items.networks .pinterest { background-position: -64px 0; }
+.pod.join-the-conversation .social-items.networks .instagram { background-position: -96px 0; }
+	
+	
+/* .tvschedule: On HGTV, a special pod with its own bg image  */
+#hg-e .tvschedule {
+    width:349px;
+    margin:14px 0;
+    background:#fbefb5 url(../imgs/on-tv.jpg) no-repeat -1px 0;
+    border-top-right-radius:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    }
+
+#hg-e .tvschedule .hd {
+    padding-left:14px;
+    height:38px;
+    *background:url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat right top;
+    _background-image:none;
+    }
+
+#hg-e .tvschedule .hd h4 {
+    text-indent:-999em;
+    }
+
+#hg-e .tvschedule .bd {
+    padding:0 14px;
+    background:transparent;
+    }
+
+#hg-e .tvschedule .ft {
+    padding-left:10px;
+    height:14px;
+    *background:url(../imgs/ie/cnr-mask-wh-br.png) no-repeat right bottom;
+    _background-image:none;
+    }
+
+.tvschedule li.acco-link {
+    height:80px;
+    }
+
+.tvschedule li.acco-bd {
+    height:80px;
+    background:#fefcf0;
+    }
+
+.tvschedule .bd li.acco-group .ui-state-active div.bg,
+.tvschedule .bd li.acco-group .ui-accordion-content div.bg {
+    background:#fefcf0;
+    }
+
+.tvschedule .bd li.acco-group .ui-accordion-content div.bg.showimg {
+    height:110px;
+    }
+
+.tvschedule .bd li.acco-group .ui-accordion-content {
+    *overflow:hidden;
+    }
+
+.tvschedule .bd li {
+    margin-bottom:2px;
+    background:#fff;
+    padding:5px;
+    padding-left:10px;
+    overflow:hidden;
+    width:306px;
+    }
+
+.tvschedule .bd li.episodefinder {
+    overflow:visible;
+    }
+
+.tvschedule .bd li.selected {
+    height:138px;
+    overflow:auto;
+    overflow-x:hidden;
+    position:relative;
+    }
+
+.tvschedule .bd li div.bg {
+    margin:0 0 2px 56px;
+    background:#f1f6f2;
+    }
+
+.tvschedule .bd li.selected div {
+    background:#fefcf0;
+    }
+
+.tvschedule .bd h5 {
+    font:bold 116% "Trebuchet MS", sans-serif;
+    color:#195a64;
+    padding:10px 0 10px 56px;
+    margin-left:-56px;
+    cursor:pointer;
+    width:240px;
+    }
+
+.tvschedule .bd .dontmiss {
+    background:transparent url(../imgs/onhgtv-slots.gif) no-repeat 0 -71px;
+    }
+
+.tvschedule .bd .dontmiss a, .tvschedule .bd .dontmiss a:hover {
+    text-decoration:none;
+    }
+
+.tvschedule .bd .primetime {
+    background:transparent url(../imgs/onhgtv-slots.gif) no-repeat 0 -213px;
+    }
+
+.tvschedule .bd .onnow {
+    background:transparent url(../imgs/onhgtv-slots.gif) no-repeat 5px -353px;
+    }
+
+.tvschedule .bd li h5 span {
+    display:block;
+    margin-left:4px;
+    padding-left:15px;
+    }
+
+.tvschedule .bd h5 p {
+    padding:17px 0 0 78px;
+    margin:-17px 0 0 -59px;
+    font:normal 85% arial, sans-serif;
+    color:#333;
+    _zoom:1;
+    height:15px;
+    overflow:hidden;
+    *z-index:1;
+    }
+
+#hg-e .tvschedule .bd li div img {
+    border:none;
+    padding-bottom:14px;
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:7px;
+    background-color:inherit;
+    }
+
+.tvschedule .bd li span a:hover {
+    text-decoration:none;
+    }
+
+.tvschedule .bd li .acco-link {
+    _zoom:1;
+    }
+
+.tvschedule .bd li.selected .acco-link {
+    background:none;
+    }
+
+.tvschedule .bd li h5 span.link {
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat -795px -489px;
+    }
+
+.tvschedule .bd li h5 span {
+    *z-index:2;
+    *position:relative;
+    }
+
+.tvschedule .bd li .ui-state-active h5 span.link {
+    background-position:-795px -508px;
+    }
+
+.tvschedule .bd li.selected span.link {
+    background:none;
+    }
+
+.tvschedule .bd li span a {
+    display:block;
+    height:19px;
+    overflow:hidden;
+    }
+
+.tvschedule .bd li.selected span a {
+    position:relative;
+    }
+
+.tvschedule .bd li.selected span a:hover {
+    text-decoration:underline;
+    }
+
+.tvschedule .bd li.selected h5 {
+    width:227px;
+    cursor:default;
+    *width:225px;
+    }
+
+.tvschedule li.episodefinder {
+    height:auto;
+    margin-bottom:0;
+    position:static;
+    }
+
+.tvschedule .bd li.episodefinder div.bg {
+    }
+
+.tvschedule .bd li.episodefinder .episode {
+    margin:0px 10px 0 -60px;
+    padding:9px 0 0 70px;
+    background:transparent url(../imgs/onhgtv-slots.gif) no-repeat 0px -420px;
+    }
+
+.tvschedule .bd li.episodefinder .episode p {
+    margin:0 0 7px 0;
+    }
+
+.tvschedule .bd li.episodefinder .episode .text-box {
+    width:230px;
+    }
+
+.tvschedule .bd li.episodefinder .episode fieldset {
+    }
+
+.tvschedule .bd li.episodefinder .episode fieldset .topic, .tvschedule .bd li.episodefinder .episode fieldset p {
+    margin:0 0 10px 0;
+    width:230px;
+    background:none;
+    }
+
+.tvschedule .bd li.episodefinder .episode .btn-find {
+    background:transparent url(../imgs/dpl-formassets.png) no-repeat -50px -179px;
+    display:block;
+    position:relative;
+    float:left;
+    width:46px;
+    height:28px;
+    margin:0 0 0 95px;
+    _margin:0 0 0 55px;
+    border:none;
+    text-indent:-9999px;
+    vertical-align:top;
+    cursor:pointer;
+    }
+
+.tvschedule .bd li.episodefinder .episode .btn-find:active, .tvschedule .bd li.episodefinder .episode .btn-find:focus {
+    background:transparent url(../imgs/dpl-formassets.png) no-repeat -50px -206px;
+    border:none;
+    outline:none;
+    }
+
+.tvschedule .bd li.episodefinder .episode span.connector {
+    color:#666;
+    line-height:30px;
+    display:inline;
+    float:left;
+    margin:0 10px;
+    }
+
+.tvschedule .episodefinder .dd-list {
+    width:230px;
+    margin-bottom:9px;
+    }
+
+.tvschedule .episodefinder .dd-list dd {
+    margin-left:-53px;
+    }
+
+.tvschedule .episodefinder .dd-list li {
+    position:static;
+    }
+
+.tvschedule .episodefinder .text-box {
+    margin-bottom:9px;
+    }
+
+/*.tvschedule .episodefinder .text-box input { color: #989898; }*/
+.tvschedule .episodefinder .dates .date-box {
+    float:left;
+    width:102px;
+    }
+
+.tvschedule #find-episode-to-label {
+    float:left;
+    padding:4px 6px 0 7px;
+    }
+
+.tvschedule .bd li.episodefinder .episode fieldset p.find {
+    margin:7px 0 4px 0;
+    text-align:center;
+    }
+
+.tvschedule .episodefinder .button {
+    width:42px;
+    }
+
+.st-600am, .st-630am, .st-700am, .st-730am, .st-800am, .st-830am,
+.st-900am, .st-930am, .st-1000am, .st-1030am, .st-1100am, .st-1130am,
+.st-1200pm, .st-1230pm, .st-100pm, .st-130pm, .st-200pm, .st-230pm,
+.st-300pm, .st-330pm, .st-400pm, .st-430pm, .st-500pm, .st-530pm,
+.st-600pm, .st-630pm, .st-700pm, .st-730pm, .st-800pm, .st-830pm,
+.st-900pm, .st-930pm, .st-1000pm, .st-1030pm, .st-1100pm, .st-1130pm,
+.st-1200am, .st-1230am, .st-100am, .st-130am, .st-200am, .st-230am {
+    background:transparent url(../imgs/onhgtv-showtimes-200.png) no-repeat;
+    }
+
+.st-600am {
+    background-position:0 0;
+    }
+
+.st-630am {
+    background-position:0 -30px;
+    }
+
+.st-700am {
+    background-position:0 -60px;
+    }
+
+.st-730am {
+    background-position:0 -90px;
+    }
+
+.st-800am {
+    background-position:0 -120px;
+    }
+
+.st-830am {
+    background-position:0 -150px;
+    }
+
+.st-900am {
+    background-position:0 -180px;
+    }
+
+.st-930am {
+    background-position:0 -210px;
+    }
+
+.st-1000am {
+    background-position:0 -240px;
+    }
+
+.st-1030am {
+    background-position:0 -270px;
+    }
+
+.st-1100am {
+    background-position:0 -300px;
+    }
+
+.st-1130am {
+    background-position:0 -330px;
+    }
+
+.st-1200pm {
+    background-position:0 -360px;
+    }
+
+.st-1230pm {
+    background-position:0 -390px;
+    }
+
+.st-100pm {
+    background-position:0 -420px;
+    }
+
+.st-130pm {
+    background-position:0 -450px;
+    }
+
+.st-200pm {
+    background-position:0 -480px;
+    }
+
+.st-230pm {
+    background-position:0 -510px;
+    }
+
+.st-300pm {
+    background-position:0 -540px;
+    }
+
+.st-330pm {
+    background-position:0 -570px;
+    }
+
+.st-400pm {
+    background-position:0 -600px;
+    }
+
+.st-430pm {
+    background-position:0 -630px;
+    }
+
+.st-500pm {
+    background-position:0 -660px;
+    }
+
+.st-530pm {
+    background-position:0 -690px;
+    }
+
+.st-600pm {
+    background-position:0 -720px;
+    }
+
+.st-630pm {
+    background-position:0 -750px;
+    }
+
+.st-700pm {
+    background-position:0 -780px;
+    }
+
+.st-730pm {
+    background-position:0 -810px;
+    }
+
+.st-800pm {
+    background-position:0 -840px;
+    }
+
+.st-830pm {
+    background-position:0 -870px;
+    }
+
+.st-900pm {
+    background-position:0 -900px;
+    }
+
+.st-930pm {
+    background-position:0 -930px;
+    }
+
+.st-1000pm {
+    background-position:0 -960px;
+    }
+
+.st-1030pm {
+    background-position:0 -990px;
+    }
+
+.st-1100pm {
+    background-position:0 -1020px;
+    }
+
+.st-1130pm {
+    background-position:0 -1050px;
+    }
+
+.st-1200am {
+    background-position:0 -1080px;
+    }
+
+.st-1230am {
+    background-position:0 1110px;
+    }
+
+.st-100am {
+    background-position:0 -1140px;
+    }
+
+.st-130am {
+    background-position:0 -1170px;
+    }
+
+.st-200am {
+    background-position:0 -1200px;
+    }
+
+.st-230am {
+    background-position:0 -1230px;
+    }
+
+/* Sister Site Promos - bottom of hg-w */
+#sister-promos {
+    clear:both;
+    padding:28px 3px;
+    border-top:1px solid #dae7e3;
+    }
+
+#home #sister-promos {
+    border-top:none;
+    }
+
+#sister-promos img {
+    padding:0;
+    border:none;
+    margin-bottom:3px;
+    }
+
+#sister-promos .item {
+    float:left;
+    width:234px;
+    padding:0 39px;
+    text-align:center;
+    }
+
+#sister-promos .item p {
+    text-align:center;
+    font-size:85%;
+    line-height:1.22;
+    }
+
+/* Super Lead  - rebranding CLewis 2010-Jun  */
+.super-lead {
+    width:994px;
+    height:200px;
+    margin:7px auto 14px;
+    background:#dae7e3;
+    position:relative;
+    }
+
+.super-lead h1 {
+    width:994px;
+    height:200px;
+    margin:0;
+    text-indent:-999em;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    }
+
+.super-lead h1 span {
+    display:block;
+    height:100%;
+    width:100%;
+    }
+
+.super-lead .show-info {
+    width:623px;
+    position:absolute;
+    left:7px;
+    bottom:7px;
+    background-color:#fff;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    }
+
+.super-lead .show-info .bd {
+    padding:7px 0 0;
+    }
+
+.super-lead .show-info .ft {
+    height:6px;
+    _font-size:0; /*padding-bottom: 7px; font-size: 1%;*/
+    }
+
+.super-lead .show-info .airtime {
+    font-size:123.1%;
+    font-weight:bold;
+    padding:0 14px;
+    float:left;
+    }
+
+.super-lead .show-info .airtime span {
+    color:#ef4141;
+    }
+
+.super-lead .show-info .schedule {
+    padding:0 14px;
+    float:right;
+    line-height:2.09;
+    }
+
+.on-tv .super-lead h1 {
+    margin:0;
+    }
+
+/* Flex Lead */
+.flex-lead {
+    width:1002px;
+    margin:0 auto 5px;
+    _margin-bottom:-18px;
+    background:no-repeat 3px 3px;
+    position:relative;
+    }
+
+.flex-lead h1 {
+    text-indent:-9999px;
+    margin:0;
+    width:0;
+    height:0;
+    }
+
+.flex-lead .ld-hd {
+    display:block;
+    background:url(../imgs/flexlead-mask-tcap.png) no-repeat 0px 0px;
+    _background:url(../imgs/flexlead-mask-tcap.gif) no-repeat 0px 0px;
+    height:12px;
+    width:100%;
+    }
+
+.flex-lead .ld-bd {
+    background:url(../imgs/flexlead-mask-body.png) left top repeat-y;
+    _background:url(../imgs/flexlead-mask-body.gif) left top repeat-y;
+    zoom:1;
+    }
+
+.flex-lead .ld-ft {
+    display:block;
+    background:url(../imgs/flexlead-mask-bcap.png) no-repeat 0px 0px;
+    _background:url(../imgs/flexlead-mask-bcap.gif) no-repeat 0px 0px;
+    height:12px;
+    width:100%;
+    }
+
+.flex-lead .show-info {
+    width:630px;
+    position:absolute;
+    left:10px;
+    bottom:10px;
+    }
+
+.flex-lead .show-info .bd {
+    background:url(../imgs/superlead_info.png) no-repeat 0px 0px;
+    padding:7px 0 0;
+    }
+
+.flex-lead .show-info .ft {
+    background:url(../imgs/superlead_info_bcap.png) no-repeat 0px bottom;
+    height:6px;
+    _font-size:0; /*padding-bottom: 7px; font-size: 1%;*/
+    }
+
+.flex-lead .show-info .airtime {
+    font-size:123.1%;
+    font-weight:bold;
+    padding:0 14px;
+    float:left;
+    }
+
+.flex-lead .show-info .airtime span {
+    color:#d72d82;
+    }
+
+.flex-lead .show-info .schedule {
+    padding:0 14px;
+    float:right;
+    line-height:2.09;
+    }
+
+/* Mini Lead - rebranding CLewis 2010-Jun*/
+.mini-lead {
+    width:994px;
+    height:100px;
+    margin:0 auto 5px;
+    background:#dae7e3;
+    position:relative;
+    }
+
+.mini-lead h1 {
+    width:994px;
+    height:100px;
+    margin:0;
+    text-indent:-999em;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    }
+
+.mini-lead h1 span {
+    display:block;
+    height:100%;
+    width:100%;
+    }
+
+.mini-lead .show-info {
+    width:623px;
+    position:absolute;
+    left:7px;
+    bottom:7px;
+    background-color:#fff;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    }
+
+.mini-lead .show-info .bd {
+    padding:7px 0 0;
+    }
+
+.mini-lead .show-info .ft {
+    height:6px;
+    _font-size:0;
+    }
+
+.mini-lead .show-info .airtime {
+    font-size:123.1%;
+    font-weight:bold;
+    padding:0 14px;
+    float:left;
+    }
+
+.mini-lead .show-info .airtime span {
+    color:#ef4141;
+    }
+
+.mini-lead .show-info .schedule {
+    padding:0 14px;
+    float:right;
+    line-height:2.09;
+    }
+
+.on-tv .mini-lead h1 {
+    margin:0;
+    }
+
+/* Static Lead */
+.static-lead {
+    background:#fff;
+    color:#444;
+    margin:14px;
+    padding-bottom:14px;
+    border-bottom-width:1px;
+    border-color:#A7BFA9;
+    border-bottom-style:solid;
+    }
+
+.static-lead img {
+    display:block;
+    float:left;
+    width:400px;
+    height:300px;
+    margin-right:14px;
+    }
+
+.static-lead h2 {
+    font-weight:bold;
+    font-size:161.6%;
+    padding:14px 14px 5px;
+    line-height:1.01;
+    margin-bottom:0;
+    }
+
+.static-lead p.description {
+    font-size:100%;
+    line-height:1.45;
+    padding:0 14px 10px;
+    }
+
+.static-lead p.link a {
+    font-size:123.1%;
+    padding-bottom:14px;
+    }
+
+.static-lead .list li {
+    margin-bottom:5px;
+    }
+
+/* Feature-List  - rebranding CLewis 2010-Jun  */
+.feature-list {
+    width:406px;
+    margin:14px 0;
+    overflow:hidden;
+    _float:none;
+    }
+
+/*.feature-list:first-child { margin-top: 0; }*/
+.feature-list h3 {
+    font:normal 123.1%/1.2em "trebuchet ms", sans-serif;
+    margin:2px 0 12px;
+    }
+
+.feature-list img.thumb {
+    width:92px;
+    height:69px;
+    float:left;
+    margin:0 10px 0 6px;
+    _margin-left:3px;
+    }
+
+.feature-list ul.list {
+    margin:14px 0 0 113px;
+    }
+
+.feature-list.plain ul.list {
+    margin-left:0;
+    }
+
+.feature-list ul.list li {
+    line-height:1.69;
+    background-position:4px 9px;
+    padding-left:14px;
+    }
+
+.feature-list ul.list li.featured {
+    background-image:url(../imgs/bullet-feat-200.png);
+    font-size:116%;
+    font-weight:bold;
+    line-height:1.46;
+    background-position:0px 5px;
+    _background-image:url(../imgs/ie/bullet-feat-200.gif)
+    }
+
+/* Sponsor Pods */
+#hg-e .sponsor-pod .hd h4 {
+    font-size:123.1%;
+    margin-bottom:7px;
+    }
+
+#hg-e .sponsor-pod .bd {
+    line-height:1.38em;
+    padding:4px 14px 0 13px;
+    }
+
+.sponsor-pod .bd img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+.sponsor-pod .bd ul.list {
+    margin-left:106px;
+    }
+
+.sponsor-pod .bd p.sponsored-by {
+    float:right;
+    margin:10px 0 0;
+    color:#999;
+    font-size:70%;
+    }
+
+#hg-e .sponsor-pod .bd p.sponsored-by span {
+    display:block;
+    float:left;
+    margin-top:3px;
+    }
+
+#hg-e .sponsor-pod .bd p.sponsored-by img {
+    float:left;
+    margin-left:7px;
+    padding:0;
+    border:none;
+    }
+
+#hg-e .pod.green {
+    border-color:#8e9d7f;
+    background-image:url(../imgs/rr_greenpod_tcap.png);
+    _background-image:none;
+    _background-color:#bed2aa;
+    }
+
+#hg-e .pod.green .hd, #hg-e .pod.green .bd {
+    background-color:#bed2aa;
+    }
+
+#hg-e .pod.green .ft {
+    background-image:url(../imgs/rr_greenpod_bcap.png);
+    _background-image:none;
+    _background-color:#bed2aa;
+    }
+
+#hg-e .pod.secondary-pod {
+    background-color:#e9f5f9;
+    border-color:#bcc5c7;
+    }
+
+#hg-e .pod.more-pod {
+    background-color:#fff;
+    border-color:#cacaca;
+    }
+
+/* Ad-Unit */
+.mrec {
+    text-align:center;
+    color:#999;
+    font-size:77%;
+    margin:14px 14px 14px 13px;
+    font-family:"trebuchet ms", sans-serif;
+    }
+ #uber .mrec {
+    margin-top: 0;
+ } 
+
+ #uber .mrec span {
+    position: relative;
+    top: 276px;
+ }  
+
+.mrec #bigbox {
+    background-color:#f1f6f2;
+    }
+
+#hg-bd #bigbox img {
+    display:inline;
+    padding:0;
+    border:none;
+    }
+
+/* Essentials/Basics */
+div.essentials, div.basics {
+    padding:0 14px;
+    margin:0 0 14px;
+    }
+
+div.essentials.full {
+    margin-bottom:21px;
+    }
+
+div.essentials h2, div.basics h2 {
+    font-weight:bold;
+    margin-bottom:7px;
+    }
+
+div.essentials ol, div.basics ul li {
+    width:50%;
+    float:left;
+    }
+
+div.essentials.full ol, div.basics.full ul li {
+    width:100%;
+    }
+
+/* two column list control */
+.pod.col-2 .list {
+    float:left;
+    width:45%;
+    padding-right:14px;
+    }
+
+div.basics ul li {
+    width:47%;
+    float:left;
+    margin-right:7px;
+    margin-bottom:5px;
+    min-height:90px;
+    }
+
+div.basics ul li li {
+    width:100%;
+    min-height:inherit;
+    }
+
+div.basics li p {
+    margin-top:5px;
+    }
+
+div.basics li p a {
+    font-size:138.5%;
+    padding-top:5px;
+    line-height:1em;
+    }
+
+div.basics li p a img {
+    float:left;
+    border:1px solid #ccc;
+    padding:2px;
+    margin-right:7px;
+    margin-top:-7px;
+    }
+
+div.essentials li, div.basics ol li {
+    line-height:2;
+    padding-left:32px;
+    background:url(../imgs/bullet_essentials.png) no-repeat;
+    margin:0;
+    }
+
+div.essentials.full li, div.basics ol li {
+    line-height:1.8em;
+    }
+
+div.essentials li.one, div.basics ol li.one {
+    background-position:0px 0px;
+    *min-height:26px;
+    }
+
+div.essentials li.two, div.basics ol li.two {
+    background-position:0px -26px;
+    *min-height:26px;
+    }
+
+div.essentials li.three, div.basics ol li.three {
+    background-position:0px -52px;
+    *min-height:26px;
+    }
+
+div.essentials li.four, div.basics ol li.four {
+    background-position:0px -78px;
+    *min-height:26px;
+    }
+
+div.essentials li.five, div.basics ol li.five {
+    background-position:0px -104px;
+    *min-height:26px;
+    }
+
+div.essentials li.six, div.basics ol li.six {
+    background-position:0px -130px;
+    *min-height:26px;
+    }
+
+/* Dynamic Lead CLewis rebrand 2010-Jul*/
+.dynlead {
+    height:306px;
+    margin:14px 14px 0;
+    position:relative;
+    }
+
+.dynlead .dl-content ul li {
+    position:absolute;
+    width:406px;
+    height:306px;
+    }
+
+.dynlead .dl-content ul li img {
+    display:block;
+    width:400px;
+    height:300px;
+    }
+
+.dynlead .dl-menu {
+    position:absolute;
+    right:0px;
+    z-index:1;
+    width:203px;
+    }
+
+.dynlead .dl-menu ul li {
+    background:#e8e8e8 url(../imgs/ui.png) no-repeat 0px -695px;
+    border-width:0 0 1px 1px;
+    border-style:solid;
+    border-color:#fff;
+    height:75px;
+    padding:0 10px;
+    cursor:pointer;
+    overflow:hidden;
+    width:185px;
+    float:right;
+    clear:right;
+    line-height:1.38;
+    }
+
+.dynlead .dl-menu ul li.last {
+    border-width:0 0 0 1px;
+    height:76px;
+    }
+
+.dynlead .dl-menu ul li.active {
+    background:url(../imgs/ui.png) no-repeat 0px -542px;
+    height:154px;
+    border:0;
+    width:191px;
+    color:#fff;
+    cursor:default;
+    }
+
+.dynlead .dl-menu ul li h2, .dynlead .dl-menu ul li h2 a {
+    font:bold 100% "Trebuchet MS", sans-serif;
+    color:#387079;
+    margin-bottom:0;
+    padding-top:10px;
+    }
+
+.dynlead .dl-menu ul li.active h2, .dynlead .dl-menu ul li.active h2 a {
+    font-size:116%;
+    color:#73d1c8;
+    }
+
+.dynlead .dl-menu ul li p a {
+    color:#ef4141;
+    font-weight:bold;
+    }
+
+.dynlead .dl-menu ul li .more {
+    display:none;
+    }
+
+.dynlead .dl-menu ul li.active .more {
+    display:block;
+    }
+
+.dynlead .dl-menu ul li ul {
+    display:none;
+    }
+
+.dynlead .dl-menu ul li.active ul li {
+    background:transparent url(../imgs/bullet_pink.png) no-repeat scroll left 7px;
+    _background-image:url(../imgs/bullet_pink_brown_bg.png);
+    height:auto;
+    width:auto;
+    border:0;
+    text-align:left;
+    float:none;
+    line-height:1.62em;
+    }
+
+.dynlead .dl-menu ul li.active ul li a {
+    color:#66cccc;
+    font-weight:normal;
+    }
+
+.dynlead .dl-menu ul li.active ul {
+    margin-top:14px;
+    display:block;
+    }
+
+/* Three-Feature */
+#three-feature {
+    margin:10px 0 14px 14px;
+    *zoom:1;
+    }
+
+#three-feature li {
+    float:left;
+    display:block;
+    width:196px;
+    margin-right:14px;
+    line-height:1.38;
+    }
+
+#three-feature li.last {
+    margin-right:0;
+    }
+
+.buzz h3 {
+    font:normal 115.35%/1.7 "trebuchet ms", sans-serif;
+    }
+
+#three-feature h3 {
+    color:#444;
+    font:bold 13px arial;
+    margin-bottom:15px;
+    }
+
+#three-feature img {
+    margin:0 0 5px;
+    width:160px;
+    height:120px;
+    display:block;
+    }
+
+#three-feature p.tip {
+    background:url(../imgs/quotes.png) no-repeat 0px 4px;
+    padding:0 14px 0 16px;
+    height:120px;
+    margin-bottom:5px;
+    }
+
+#three-feature p.tip a {
+    color:#d72d82;
+    }
+
+/**
+ * Generic Three Feature (TIL3)
+ * CSS to be integrated with module management, preserving the previous iteration
+ */
+.three-feature .panel {
+    margin:0 14px 17px;
+    float:left;
+    width:185px;
+    }
+
+.three-feature .last {
+    margin-right:0;
+    }
+
+.story-cartridge .photo {
+    text-align:center;
+    line-height:1.38;
+    margin-bottom:6px;
+    }
+
+.v2-three-feature .slug {
+    font:123.1%/1.7 "trebuchet ms", sans-serif;
+    color:#444;
+    }
+
+.v2-three-feature .slug a {
+    color:#444;
+    }
+
+.v2-three-feature p {
+    line-height:1.38
+    }
+
+/*
+ * * end Generic Three Feature
+ * * */
+/* Two-Feature */
+#two-feature {
+    margin:0 14px 14px;
+    }
+
+#two-feature li {
+    float:left;
+    display:block;
+    width:50%;
+    }
+
+#two-feature img {
+    float:left;
+    width:92px;
+    height:69px;
+    padding:2px;
+    border:1px solid #ddd;
+    margin-right:7px;
+    }
+
+#two-feature p a {
+    line-height:1;
+    font-size:138.5%;
+    }
+
+/* Buzz */
+.buzz {
+    margin:0 14px 14px 14px;
+    }
+
+.buzz .buzz-w {
+    float:left
+    }
+
+.buzz .buzz-e {
+    margin-left:306px;
+    }
+
+.buzz h3 {
+    margin-bottom:11px;
+    }
+
+.buzz .list li {
+    margin-bottom:3px;
+    padding-left:9px;
+    }
+
+/* Related Links */
+.related-link {
+    clear:both;
+    margin-bottom:14px;
+    line-height:1.53;
+    *zoom:1;
+    }
+
+.related-link.full {
+    padding:0 14px;
+    line-height:1.53;
+    }
+
+#hg-we .related-link p {
+    padding-bottom:0;
+    }
+
+.related-link img {
+    display:block;
+    padding:2px;
+    border:1px solid #ddd;
+    float:right;
+    margin-left:10px;
+    }
+
+.related-link.full img {
+    float:left;
+    margin-left:0;
+    margin-right:10px;
+    }
+
+.related-link a {
+    font-size:108%;
+    }
+
+.related-link .more a {
+    color:#ef4141;
+    font-size:100%;
+    }
+
+#hg-art-we .clrfix.related-link {
+    clear:none;
+    }
+
+#hg-art-we #more-shows {
+    margin-left:196px;
+    }
+
+/* Small-Lead */
+.small-lead {
+    margin:0 14px 14px;
+    line-height:1.38;
+    }
+
+.small-lead img {
+    display:block;
+    float:left;
+    margin-right:10px;
+    }
+
+.small-lead p {
+    margin-bottom:14px;
+    }
+
+.small-lead a {
+    font-size:108%;
+    }
+
+.small-lead .more a {
+    font-size:100%;
+    color:#d72d82;
+    }
+
+/* Text-Lead */
+.text-lead {
+    margin:0 14px 14px;
+    }
+
+.text-lead p {
+    color:#1e588a;
+    font-size:146.5%;
+    line-height:1.53;
+    }
+
+.text-lead em {
+    display:block;
+    color:#999;
+    font-size:77%;
+    line-height:1.8;
+    }
+
+/* Cross-Promos */
+.cross-promos {
+    clear:both;
+    border-top:1px solid #ddd;
+    padding-top:14px;
+    }
+
+.cross-promos .item {
+    width:50%;
+    float:left;
+    }
+
+.cross-promos .item h3 {
+    color:#000;
+    font:normal 116%/1.7 "trebuchet ms", sans-serif;
+    padding-right:14px;
+    }
+
+.cross-promos .item p {
+    padding-right:14px;
+    line-height:1.38;
+    }
+
+.cross-promos .item .logo {
+    margin-right:7px;
+    height:60px;
+    float:left;
+    }
+
+/* Gallery-Tease - rebranding CLewis 2010-Jun */
+.gallery-tease {
+    margin-bottom:14px;
+    }
+
+#hg-we .gallery-tease p {
+    padding-bottom:4px;
+    line-height:137.5%;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:123.1%;
+    }
+
+.gallery-tease img {
+    display:block;
+    width:92px;
+    height:69px;
+    float:left;
+    margin-right:3px;
+    _margin-right:2px;
+    margin-top:14px;
+    }
+
+.gallery-tease a.gallery-link {
+    display:block;
+    float:left;
+    width:92px;
+    height:69px;
+    background:#f1f6f2;
+    padding:2px;
+    border:1px solid #a7bfa9;
+    margin:14px 3px 0 0;
+    text-align:center;
+    line-height:1;
+    text-decoration:none;
+    }
+
+.gallery-tease a.gallery-link:hover {
+    border-color:#ef4141;
+    }
+
+.gallery-tease .gallery-link img {
+    width:auto;
+    height:auto;
+    float:none;
+    margin:0;
+    }
+
+.gallery-tease a.gallery-link span {
+    color:#ef4141;
+    font-weight:bold;
+    font-size:108%;
+    line-height:1.14;
+    }
+
+.gallery-tease .sponsor {
+    margin-top:7px;
+    }
+
+.gallery-tease .sponsor #kodak {
+    color:#eeb11a;
+    font-size:123.1%;
+    font-weight:bold;
+    font-family:"trebuchet ms", sans-serif;
+    margin-top:7px;
+    }
+
+.gallery-tease a.gallery-link span.plain {
+    display:block;
+    line-height:1;
+    padding-top:7px;
+    }
+
+/* Meet The Host (left rail pod) */
+#meet-the-host .host-link {
+    margin-bottom:7px;
+    }
+
+#meet-the-host img.host-img {
+    float:left;
+    margin-right:7px;
+    width:48px;
+    height:48px;
+    }
+
+#meet-the-host .host-name a {
+    font-size:116%;
+    line-height:1;
+    font-weight:bold;
+    }
+
+#meet-the-host .also-meet {
+    clear:both;
+    margin-top:14px;
+    border-top:1px solid #ddd;
+    padding:7px 0 0;
+    }
+
+#meet-the-host .also-meet h5 {
+    text-transform:uppercase;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#meet-the-host .host-link .thumbnail {
+    margin-bottom:14px;
+    }
+
+#meet-the-host .epTime {
+    padding-top:14px;
+    }
+
+/* Quick Vote */
+/* east versions added by dsisan*/
+#quick-vote-e.pod .bd p {
+    line-height:1.38;
+    }
+
+#quick-vote-e.pod .submit {
+    text-align:left;
+    padding-bottom:7px;
+    }
+
+#quick-vote-e.pod form ul {
+    margin:7px 0;
+    }
+
+#quick-vote-e.pod form ul input {
+    margin:4px 7px 0 0;
+    float:left;
+    }
+
+#quick-vote-e.pod button.button {
+    width:60px;
+    }
+
+#quick-vote.pod .bd p {
+    line-height:1.38;
+    }
+
+#quick-vote.pod .submit {
+    text-align:center;
+    padding-bottom:7px;
+    }
+
+#quick-vote.pod form ul {
+    margin:7px 0;
+    }
+
+#quick-vote.pod form ul input {
+    margin:4px 7px 0 0;
+    float:left;
+    }
+
+#quick-vote.pod button.button {
+    width:42px;
+    }
+
+/* Episode Finder (hg-we) */
+#episode-finder {
+    margin-bottom:14px;
+    }
+
+#episode-finder .hd {
+    padding:7px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#episode-finder .button-nav {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+#episode-finder .guide-link {
+    display:block;
+    float:right;
+    line-height:29px;
+    }
+
+#episode-finder .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#episode-finder .ft {
+    background:transparent url(../imgs/acco-round-bcap.png) no-repeat 0 bottom;
+    }
+
+#episode-finder .acco-content {
+    padding:8px 11px 0 11px;
+    }
+
+#episode-finder .thumb {
+    float:left;
+    border:1px solid #ddd;
+    background-color:#fff;
+    }
+
+#episode-finder .thumb img {
+    display:block;
+    width:92px;
+    height:69px;
+    padding:2px;
+    }
+
+#episode-finder p, #episode-finder .list {
+    margin-left:110px;
+    }
+
+#episode-finder p {
+    padding-bottom:2px;
+    line-height:17px;
+    }
+
+#episode-finder .list li {
+    margin-bottom:0;
+    padding-left:9px;
+    padding-bottom:0;
+    }
+
+#episode-finder .ft {
+    padding-bottom:7px;
+    background-color:#fff;
+    }
+
+#episode-finder .ef-form {
+    border-width:0 1px 0 1px;
+    border-style:solid;
+    border-color:#ddd;
+    }
+
+#episode-finder .ef-form fieldset {
+    margin:0 1px;
+    padding:3px 10px 0 10px;
+    border-top:1px solid #ddd;
+    background-color:#f0f0f0;
+    }
+
+#episode-finder .ef-form h4 {
+    margin-bottom:10px;
+    font-family:"Trebuchet MS";
+    font-size:116%;
+    color:#332720;
+    text-transform:uppercase;
+    }
+
+#episode-finder .ef-form .ef-fields {
+    width:230px;
+    margin:0 auto;
+    }
+
+#episode-finder .ef-form label {
+    float:left;
+    padding-top:4px;
+    color:#666;
+    }
+
+#episode-finder .ef-form .text-box {
+    float:left;
+    width:176px;
+    margin-right:6px;
+    }
+
+/*#episode-finder .ef-form .text-box input { color: #989898; }*/
+#episode-finder .ef-form .dates {
+    clear:left;
+    float:left;
+    width:230px;
+    padding:6px 0;
+    }
+
+#episode-finder .ef-form .date-box {
+    float:left;
+    width:102px;
+    }
+
+#episode-finder .ef-form .dates label {
+    margin:0 6px 0 7px;
+    }
+
+#episode-finder .ef-form .find {
+    clear:left;
+    margin:0;
+    padding-bottom:12px;
+    text-align:center;
+    }
+
+#episode-finder .ef-form .find button {
+    width:42px;
+    }
+
+/* Episode Finder (hg-w) */
+#episode-finder-w .hd {
+    padding:7px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#episode-finder-w .button-nav {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+#episode-finder-w .guide-link {
+    display:block;
+    float:right;
+    line-height:29px;
+    }
+
+#episode-finder-w .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#episode-finder-w .acco-content {
+    padding:8px 11px 0 11px;
+    }
+
+#episode-finder-w .thumb {
+    float:left;
+    border:1px solid #ddd;
+    background-color:#fff;
+    }
+
+#episode-finder-w .thumb img {
+    display:block;
+    width:92px;
+    height:69px;
+    padding:2px;
+    }
+
+#episode-finder-w p, #episode-finder-w .list {
+    margin-left:110px;
+    }
+
+#episode-finder-w p {
+    padding-bottom:2px;
+    line-height:17px;
+    }
+
+#episode-finder-w .list li {
+    margin-bottom:0;
+    padding-left:9px;
+    padding-bottom:0;
+    }
+
+#episode-finder-w .ft {
+    padding-bottom:7px;
+    background-color:#fff;
+    }
+
+#episode-finder-w .ef-form {
+    border-width:0 1px 0 1px;
+    border-style:solid;
+    border-color:#ddd;
+    }
+
+#episode-finder-w .ef-form fieldset {
+    margin:0 1px;
+    padding:3px 10px 0 10px;
+    }
+
+#episode-finder-w .ef-form h4 {
+    margin-bottom:10px;
+    font-family:"Trebuchet MS";
+    font-size:116%;
+    color:#332720;
+    text-transform:uppercase;
+    }
+
+#episode-finder-w .ef-form .ef-fields {
+    margin:0 auto;
+    }
+
+#episode-finder-w .ef-form label {
+    float:left;
+    padding-top:4px;
+    margin-right:6px;
+    color:#666;
+    }
+
+#episode-finder-w .ef-form .text-box {
+    float:left;
+    width:176px;
+    margin-right:6px;
+    }
+
+/*#episode-finder-w .ef-form .text-box input { color: #989898; }*/
+#episode-finder-w .ef-form .dates {
+    float:left;
+    width:230px;
+    }
+
+#episode-finder-w .ef-form .date-box {
+    float:left;
+    width:102px;
+    }
+
+#episode-finder-w .ef-form .dates label {
+    margin:0 6px 0 7px;
+    }
+
+#episode-finder-w .ef-form .find {
+    float:left;
+    margin:0;
+    margin-left:6px;
+    padding-bottom:12px;
+    text-align:center;
+    }
+
+#episode-finder-w .ef-form .find button {
+    width:42px;
+    }
+
+/* Episode videos, photos and designers (hg-w) */
+#episode-hdr, #episode-videos, #episode-photos, #episode-designers {
+    padding:0 0 20px 14px;
+    margin-bottom:20px;
+    width:600px;
+    border-bottom:1px solid #DAE7E3;
+    }
+
+#episode-hdr h2 {
+    font-size:32px;
+    color:#E42F32;
+    font-weight:bold;
+    margin:15px 0 0;
+    }
+
+#episode-hdr h3 {
+    font-size:15px;
+    color:#444;
+    font-weight:normal;
+    margin-bottom:10px;
+    }
+
+#episode-hdr .nav {
+    width:100%;
+    height:30px;
+    margin-bottom:20px;
+    }
+
+#episode-hdr a {
+    display:block;
+    width:78px;
+    height:26px;
+    background:#4B786E;
+    color:#fff;
+    float:left;
+    margin-right:5px;
+    border-bottom:1px solid #34544C;
+    border-top:1px solid #72978F;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    font-size:12px;
+    text-align:center;
+    line-height:2.4;
+    }
+
+#episode-hdr a.selected {
+    background:#E42F32;
+    border-bottom:1px solid #AC2527;
+    border-top:1px solid #EA5C5E;
+    }
+
+#episode-hdr img, #episode-videos img {
+    width:160px;
+    height:120px;
+    background:#878787;
+    padding:2px;
+    float:left;
+    margin-right:5px;
+    }
+
+#episode-hdr h4 {
+    font-size:15px;
+    font-weight:bold;
+    }
+
+#episode-hdr p {
+    line-height:1.5;
+    }
+
+#episode-hdr .hub {
+    margin-left:0;
+    }
+
+#episode-videos h3, #episode-photos h3, #episode-designers h3 {
+    font-size:21px;
+    color:#444;
+    font-weight:normal;
+    margin-bottom:11px;
+    }
+
+#episode-videos div {
+    margin:0 44px 14px 0;
+    float:left;
+    width:170px;
+    }
+
+#episode-videos div.last {
+    margin-right:0;
+    }
+
+#episode-videos div p.grey {
+    color:#878787;
+    font-size:11px;
+    }
+
+#episode-photos img {
+    width:95px;
+    height:70px;
+    display:block;
+    padding:2px;
+    background:#878787;
+    float:left;
+    margin:0 14px 14px 0;
+    }
+
+#episode-videos .video-thumb {
+    height:120px;
+    margin-bottom:7px;
+    position:relative;
+    width:160px;
+	display:block;
+	}
+
+#episode-videos .video-thumb-med .play-icon {
+    background-image:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/vid-thumb-overlay.png");
+    background-position:center top;
+    bottom:10px;
+    height:34px;
+    right:10px;
+    width:34px;
+	}
+
+#episode-videos .video-thumb .play-icon {
+    background-repeat:no-repeat;
+    display:block;
+    position:absolute;
+	}
+
+
+/* Home Page Host Feature - rebranding CLewis 2010-Jun */
+.host-feat {
+    clear:both;
+    margin:14px 0;
+    }
+
+.host-feat .bd {
+    position:relative;
+    width:406px;
+    height:200px;
+    background:transparent url(../imgs/feat-talent-gable.png) no-repeat left bottom;
+    _zoom:1;
+    _background:#fff;
+    }
+
+.host-feat .bd img {
+    _background:#fff;
+    }
+
+.host-feat .feature-content {
+    position:absolute;
+    bottom:11px;
+    right:0px;
+    width:254px;
+    height:154px;
+    padding:7px 10px;
+    border:1px solid #f1e7c0;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#fff;
+    line-height:1.38;
+    }
+
+.host-feat .feature-content h3 {
+    font:italic normal 138.5% "trebuchet ms", sans-serif;
+    color:#ef4141;
+    }
+
+.host-feat .feature-content ul {
+    _zoom:1;
+    }
+
+.host-feat .feature-content ul li {
+    line-height:1.62em;
+    background-position:left 9px;
+    }
+
+.host-feat .feature-content .duration {
+    font-size:85%;
+    color:#999;
+    }
+
+#hg-we .host-feat .host-image {
+    width:225px;
+    height:200px;
+    padding:0;
+    border:none;
+    background-color:transparent;
+    }
+
+#hg-we .host-feat p {
+    padding-bottom:0;
+    }
+
+#hg-we .host-feat p.air-time {
+    margin-top:4px;
+    }
+
+#most-popular .button-nav-sm li {
+    margin-bottom:0;
+    }
+
+/* common styles for a popup window */
+body#popup {
+    background:#fff;
+    }
+
+body#popup #hg-hd {
+    height:54px;
+    margin-bottom:9px;
+    background:#fff url(../imgs/chat-bg.png) repeat-x 0 0;
+    min-width:0px;
+    }
+
+body#popup #hg-bd {
+    width:602px;
+    margin:0 14px;
+    }
+
+body#popup h1 {
+    width:84px;
+    height:51px;
+    text-indent:-999em;
+    background:transparent url(../imgs/chat-logo.png) no-repeat 0 0;
+    }
+
+body#popup h2 {
+    margin-bottom:8px;
+    }
+
+body#popup fieldset {
+    margin-bottom:14px;
+    }
+
+body#popup fieldset li {
+    float:left;
+    margin-bottom:9px;
+    }
+
+body#popup fieldset .text-box {
+    width:202px;
+    margin-right:14px;
+    }
+
+body#popup .find {
+    text-align:center;
+    }
+
+body#popup .button {
+    width:80px;
+    }
+
+/* HGTV Hosts module in hg-ww */
+#hgtv-hosts.pod .bd {
+    padding:11px 17px 13px 17px;
+    }
+
+#hgtv-hosts .bd img {
+    display:block;
+    margin-bottom:11px;
+    }
+
+#hgtv-hosts .bd p {
+    margin-bottom:12px;
+    line-height:1.385;
+    }
+
+#hgtv-hosts .bd p a {
+    display:block;
+    }
+
+#hgtv-hosts .dd-list {
+    width:160px;
+    }
+
+#hgtv-hosts .dd-list dd {
+    margin-left:-11px;
+    }
+
+#hgtv-hosts .dd-list dd .dd-ul {
+    margin-right:7px;
+    }
+
+/* Don't Miss tabbed module in hg-we */
+#dont-miss {
+    margin-bottom:14px;
+    }
+
+#dont-miss .hd {
+    padding:7px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#dont-miss .button-nav {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+#dont-miss .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#dont-miss .ft {
+    height:7px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -406px bottom;
+    _font-size:0;
+    }
+
+#dont-miss .bd li {
+    margin-bottom:8px;
+    padding-bottom:9px;
+    border-bottom:1px solid #ddd;
+    }
+
+#dont-miss .bd li a {
+    display:block;
+    }
+
+#dont-miss .bd li.first {
+    margin-bottom:0;
+    border-bottom:none;
+    }
+
+#dont-miss .bd li.last {
+    margin-bottom:0;
+    padding-bottom:3px;
+    border-bottom:none;
+    }
+
+#dont-miss .when {
+    float:left;
+    width:69px;
+    }
+
+#dont-miss .when .day {
+    display:block;
+    margin:1px 0 8px 0;
+    width:60px;
+    height:7px;
+    text-indent:-999em;
+    background-image:url(../imgs/sp-daysofweek.png);
+    _font-size:0;
+    }
+
+#dont-miss .when .time {
+    display:block;
+    width:50px;
+    height:32px;
+    text-indent:-999em;
+    background-image:url(../imgs/sp-times.png);
+    }
+
+#dont-miss .info {
+    float:left;
+    width:309px;
+    padding-bottom:3px;
+    }
+
+#dont-miss .info h5 {
+    margin-bottom:2px;
+    font-size:116%;
+    font-weight:bold;
+    line-height:1;
+    }
+
+#dont-miss .info p {
+    padding-bottom:9px;
+    line-height:1.385;
+    }
+
+#dont-miss .info img {
+    display:block;
+    }
+
+#dm-shows-az {
+    height:445px;
+    overflow:auto;
+    }
+
+.day-mon {
+    background-position:0 0;
+    }
+
+.day-tue {
+    background-position:0 -10px;
+    }
+
+.day-wed {
+    background-position:0 -20px;
+    }
+
+.day-thu {
+    background-position:0 -30px;
+    }
+
+.day-fri {
+    background-position:0 -40px;
+    }
+
+.day-sat {
+    background-position:0 -50px;
+    }
+
+.day-sun {
+    background-position:0 -60px;
+    }
+
+.rounded-hd {
+    padding-top:11px;
+    background:#e1efed url(../imgs/sp-cornerMasks.png) no-repeat 0 0;
+    _font-size:0;
+    _background-image:none;
+    }
+
+.rounded-bd {
+    padding:0 7px;
+    background-color:#e1efed;
+    }
+
+.rounded-ft {
+    height:11px;
+    background:#e1efed url(../imgs/sp-cornerMasks.png) no-repeat bottom left;
+    _font-size:0;
+    _background-image:none;
+    }
+
+#be-on-hgtv {
+    margin-bottom:14px;
+    }
+
+#be-on-hgtv h3 {
+    color:#000;
+    font:normal 123.1% "trebuchet ms", sans-serif;
+    }
+
+#hg-we #be-on-hgtv p {
+    padding-bottom:0;
+    line-height:1.385
+    }
+
+#be-on-hgtv ul {
+    padding:7px;
+    }
+
+#be-on-hgtv li {
+    margin-bottom:7px;
+    }
+
+#be-on-hgtv .hd {
+    padding:7px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat 0 0;
+    }
+
+#be-on-hgtv .bd {
+    padding:0 6px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+#be-on-hgtv .ft {
+    height:7px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -406px bottom;
+    _font-size:0;
+    }
+
+/* sponsor multi-logo tags */
+.sponsor-multi-logo {
+    float:right;
+    }
+
+#hg-w span.sponsor-multi-logo {
+    float:right;
+    margin-top:14px;
+    }
+
+.sponsor-multi-logo.ecologue {
+    margin-right:8px;
+    }
+
+.sponsor-multi-logo span.featuring {
+    color:#999;
+    float:left;
+    font-size:69%;
+    font-weight:normal;
+    font-style:normal;
+    text-align:center;
+    line-height:normal;
+    }
+
+#site-wrapper .sponsor-multi-logo img {
+    display:inline;
+    padding:0;
+    border:none;
+    background:transparent;
+    }
+
+.sponsor-multi-logo a img {
+    display:inline;
+    margin:0 7px;
+    }
+
+#hg-bd .sponsor-multi-logo em {
+    color:#999;
+    display:block;
+    padding-bottom:7px;
+    font-size:69%;
+    font-weight:normal;
+    font-style:normal;
+    text-align:center;
+    line-height:normal;
+    }
+
+#dp-main .sponsor-multi-logo, #designers-portfolio .sponsor-multi-logo {
+    margin-right:7px;
+    }
+
+#dp-main .sponsor-multi-logo img, #designers-portfolio .sponsor-multi-logo img {
+    vertical-align:top;
+    }
+
+#designers-portfolio .sponsor-multi-logo {
+    margin-bottom:14px;
+    }
+
+#dp-main #hg-bd .sponsor-multi-logo em, #designers-portfolio #hg-bd .sponsor-multi-logo em {
+    float:left;
+    margin-top:6px;
+    }
+
+/* sponsor multi-logo across west column (section front) */
+.west-spons {
+    display:none;
+    width:600px;
+    border:1px solid #d8d8d8;
+    margin:14px;
+    margin-bottom:21px;
+    _margin-bottom:14px;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    }
+
+.west-spons .sponsor-multi-logo {
+    width:579px;
+    margin:14px;
+    margin-right:7px;
+    }
+
+.west-spons .sponsor-multi-logo em {
+    float:left;
+    margin-top:14px;
+    }
+
+.west-spons .sponsor-multi-logo img {
+    float:right;
+    }
+
+/* Front Door Search Widget */
+#frodo-search-widget #fd-search-wrapper {
+    background:none;
+    border:0;
+    }
+
+#frodo-search-widget .global-search .input {
+    background-color:#f0f0f0;
+    width:268px;
+    }
+
+#frodo-search-widget h5 {
+    color:#2e2e2e;
+    clear:both;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:123.1%;
+    margin-bottom:14px;
+    line-height:1;
+    margin-top:21px;
+    }
+
+#frodo-search-widget #fd-search-header {
+    margin-bottom:21px;
+    zoom:1;
+    }
+
+#frodo-search-widget #fd-search-header:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#frodo-search-widget #fd-search-logo {
+    float:left;
+    }
+
+#frodo-search-widget #fd-search-poweredby {
+    float:right;
+    }
+
+/* Site map */
+#hg-w .sitemap-head h1 {
+    margin-bottom:14px;
+    }
+
+#hg-w .sitemap-head p {
+    font-size:100%;
+    }
+
+h1#sitemap-title {
+    background-position:left -293px;
+    }
+
+.sitemap-text {
+    padding:0 14px;
+    }
+
+.sitemap-text h2 {
+    clear:both;
+    }
+
+.sitemap-text .col-1, .sitemap-text .col-2 {
+    float:left;
+    width:270px;
+    margin-bottom:14px;
+    overflow:hidden;
+    }
+
+.sitemap-text h3 {
+    margin-bottom:3px;
+    font-weight:bold;
+    font-family:'trebuchet ms';
+    clear:both;
+    }
+
+.sitemap-text h2 a, .sitemap-text h3 a {
+    color:#000;
+    }
+
+#hg-e.sitemap-e h2 a {
+    color:#000;
+    }
+
+#hg-e.sitemap-e .pod {
+    background-color:#fff;
+    }
+
+/* Sponsor Links Styles */
+
+#dp-more-sponsor a {
+    display:block;
+    line-height:1.384em;
+    background:transparent url(../imgs/bullet_pink.png) no-repeat scroll left 7px;
+    padding-left:11px;
+    }
+
+/* "Best Of" module (view slider) */
+.best-of-full {
+    margin:14px;
+    position:relative
+    }
+
+.best-of-full h2 {
+    margin:0 14px 10px;
+    font:normal normal normal 138.5% "trebuchet ms", sans-serif;
+    }
+
+.best-of-full a.more-lnk {
+    display:block;
+    float:right;
+    height:17px;
+    margin:4px 14px 0 0;
+    color:#fff;
+    font:normal normal bold 77% "trebuchet ms", sans-serif;
+    cursor:pointer;
+    }
+
+.best-of-full a.more-lnk:hover {
+    text-decoration:none;
+    }
+
+.best-of-full a.more-lnk span {
+    display:block;
+    float:left;
+    height:17px;
+    }
+
+.best-of-full a.more-lnk span.txt {
+    padding-left:7px;
+    background:url(../imgs/ui.png) no-repeat scroll 0 -443px;
+    }
+
+.best-of-full a.more-lnk span.spinner {
+    width:21px;
+    background:url(../imgs/ui.png) no-repeat scroll -973px -443px;
+    }
+
+.best-of-full a.more-lnk.sel {
+    cursor:default;
+    }
+
+.best-of-full a.more-lnk.sel span.txt {
+    background:url(../imgs/ui.png) no-repeat scroll 0 -460px;
+    }
+
+.best-of-full a.more-lnk.sel span.spinner {
+    width:21px;
+    background:url(../imgs/ui.png) no-repeat scroll -973px -460px;
+    }
+
+.best-of-full .view-slider {
+    height:150px;
+    margin:0 14px;
+    overflow:auto;
+    position:relative;
+    }
+
+.best-of-full .view-slider ul {
+    position:absolute;
+    top:0;
+    left:0;
+    white-space:nowrap;
+    }
+
+.best-of-full .view-slider li {
+    float:left;
+    width:120px;
+    margin-right:14px;
+    }
+
+.best-of-full .view-slider li img {
+    display:block;
+    padding-bottom:5px;
+    }
+
+.best-of-full .view-slider li h5 {
+    white-space:normal;
+    line-height:100%;
+    font-weight:bold;
+    }
+
+/* generic rounded popups/flyouts - used the sprites provided in basecamp */
+.drops {
+    width:249px;
+    display:none;
+    position:absolute;
+    right:7px;
+    top:14px;
+    z-index:100;
+    _width:237px;
+    _border:5px solid #f1ddd2;
+    _background:#f1f6f2;
+    }
+
+.drops .hd {
+    height:10px;
+    background:transparent url(../imgs/sp-popups-200.png) no-repeat -563px -1px;
+    _background:none;
+    *font-size:1%;
+    _display:none;
+    }
+
+.drops .bd {
+    background:transparent url(../imgs/sp-popups-200.png) repeat-y -816px 0;
+    _background:none;
+    padding:0 6px;
+    _padding:0;
+    }
+
+.drops .ft {
+    height:10px;
+    background:transparent url(../imgs/sp-popups-200.png) no-repeat -1069px -6px;
+    _background:none;
+    *font-size:1%;
+    _display:none;
+    }
+
+.drops .bd .close {
+    display:block;
+    text-indent:-9999em;
+    background:url(../imgs/sp-popups-200.png) no-repeat left top;
+    width:12px;
+    height:12px;
+    position:absolute;
+    right:7px;
+    top:6px;
+    _background:transparent url(../imgs/ie/close-x-ie6.gif) no-repeat;
+    _width:13px;
+    _height:13px
+    }
+
+/* small 185px -  can set up the other ones as needed */
+.drops.small {
+    width:185px;
+    _width:173px;
+    }
+
+.drops.small .hd {
+    background-position:-5666px -1px;
+    }
+
+.drops.small .bd {
+    background-position:-5855px 0;
+    }
+
+.drops.small .ft {
+    background-position:-6044px -8px;
+    }
+
+.drops .bd h3 {
+    height:31px;
+    line-height:31px;
+    padding-left:10px;
+    position:relative;
+    color:#444;
+    font-family:"Trebuchet MS", sans-serif;
+    font-size:100%;
+    font-weight:normal;
+    }
+
+.drops .bd ul {
+    max-height:146px;
+    overflow:auto;
+    margin-bottom:7px;
+    }
+
+.drops .bd ul li {
+    padding-left:10px;
+    list-style:none;
+    background:none;
+    line-height:1.69em;
+    *margin-top:-1px;
+    }
+
+.drops .bd ul li.sel {
+    background-color:#fff;
+    color:#444;
+    font-weight:bold;
+    }
+
+.drops .bd ul li a {
+    display:block;
+    }
+
+.drops .bd ul li a:hover {
+    color:#fff;
+    text-decoration:none;
+    }
+
+.drops .bd ul li:hover {
+    background-color:#ef4141;
+    }
+
+* html .pod20 .drops ul li a:hover, * html .mod20-w .pod .drops ul li a:hover {
+    background-color:#ef4141;
+    }
+
+.drops .bd ul li.sel:hover {
+    background-color:transparent;
+    }
+
+.drops .bd ul li a span {
+    font-size:85%;
+    color:#999;
+    }
+
+.drops .bd ul li a:hover span {
+    color:#fff;
+    }
+
+.drops .bd .shim {
+    height:1px;
+    background-color:#fff;
+    border-bottom:1px solid #ddd;
+    }
+
+.drops .bd .lgbtn {
+    padding:14px 0;
+    }
+
+p.btn-wrap {
+    display:table;
+    margin:0 auto;
+    }
+
+center.ac-ie {
+    text-align:center;
+    }
+
+center.ac-ie p.btn-wrap {
+    display:inline;
+    }
+
+/*video icon*/
+
+div.bd h4 a.video-link span.video-icon,.video-link .video-icon {
+    float:none;
+    width:auto;
+    cursor:pointer;
+    display:inline;
+    *display:inline-block;
+    color:inherit;
+    padding:0 24px 0 0;
+    margin:0;
+    font-size:100%;
+    background:transparent url(../imgs/video-icon.gif) no-repeat right center;
+    }
+
+
+div.bd h4 a.video-link:hover span.video-icon,.video-link:hover .video-icon {
+    background-image:url(../imgs/video-icon-over.gif) no-repeat;
+    }
+
+.list a.video-link span.video-icon, .list a {
+    color:#386cb4;
+    }
+
+/* featured room module */
+#featured-room {
+    background-color:#f2f6f2;
+    padding:20px 14px;
+    margin: 21px 14px 7px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+}
+
+#featured-room h3 {
+    font-family:'trebuchet ms';
+    font-size:138.5%;
+    }
+
+#featured-room h2, #featured-room .room-desc strong {
+    font-family:'trebuchet ms';
+    }
+
+#featured-room .room-desc {
+    float:left;
+    width:440px;
+    }
+
+#featured-room a.img-thumb {
+    float:left;
+    margin:0 10px 10px 0;
+    display:block;
+    width:94px;
+    height:71px;
+    }
+
+#featured-room .hub-list li {
+    margin-top:5px;
+    margin-right:5px;
+    padding:0 5px 0 0;
+    line-height:.8em;
+    float:left;
+    border-right:1px solid #000;
+    }
+
+#featured-room .hub-list li.last {
+    border-right:none;
+    }
+
+/* showtime module */
+#showtime {
+    background-color:#f2f6f2;
+    padding:14px 14px;
+    margin-top:20px;
+    }
+
+#showtime h2 {
+    color:#454545;
+    font:bold 16px arial, helvetica;
+    width:480px;
+    float:left;
+    margin-bottom:0;
+    }
+
+#showtime h2 span {
+    color:#ef4141;
+    }
+
+#showtime .toggle {
+    width:90px;
+    float:right;
+    color:#386cb4;
+    text-align:right;
+    cursor:hand;
+    cursor:pointer;
+    }
+
+#showtime .showtime-bd {
+    border-top:1px solid #dae7e3;
+    padding-top:20px;
+    display:none;
+    margin-top:14px;
+    padding-bottom:5px;
+    }
+
+#showtime h3 {
+    color:#444;
+    font:normal 21px arial, helvetica;
+    margin-bottom:10px;
+    }
+
+#showtime .showtime-bd .desc {
+    width:435px;
+    float:left;
+    line-height:20px;
+    }
+
+#showtime .showtime-bd .thumb {
+    float:right;
+    font:normal 11px Arial, helvetica;
+    }
+
+#blog-main h2 {
+    font:normal 21px Trebuchet, arial;
+    }
+
+#blog-main .hd p {
+    display:block;
+    margin-top:14px;
+    }
+
+#blog-main h2 {
+    margin-bottom:0;
+    }
+
+#blog-main a.thumbnail {
+    display:block;
+    height:71px;
+    width:94px;
+    float:left;
+    margin-right:14px;
+    }
+
+#blog-main a.thumbnail img {
+    margin-right:0;
+    }
+
+#blog-main .desc {
+    text-align:left;
+    float:left;
+    width:290px;
+    }
+
+#hg-we #blog-main .desc p {padding-bottom: 0;}
+
+
+#blog-main .nothumb {
+    width:100%;
+    }
+
+#blog-main .hd {
+    padding:15px 0 14px;
+    background-image:none;
+    }
+
+#blog-main .hd, #blog-main .ft {
+    background-image:none;
+    }
+
+#blog-main .ft {
+    padding:0 0 15px;
+	font-weight: bold;
+    }
+
+#blog-main .bd {
+    border:none;
+    padding:0;
+    }
+
+#blog-main h3, #blog-main small {
+    display:block;
+    clear:left;
+    }
+
+#blog-main .comment-count { font-weight: normal; }
+	
+#blog-main small {
+    color:#999;
+	font-size: 11px;
+    }
+
+#blog-main .blog-item {
+    margin-bottom:21px;
+    }
+
+#hg-we #blog-main .blog-item p {padding-bottom: 0;}
+
+#blog-main .blog-item a {
+    display:block;
+    float:left;
+    }
+
+#blog-main img {
+    margin-right:14px;
+    }
+
+#hg-we #blog-main .hd p {
+		padding-bottom: 0;
+}
+
+#blog-main .blog-item .nothumb a {
+    display:inline;
+    float:none;
+    }
+
+.show-detail h1 {
+    margin:27px 0 17px 13px;
+    }
+
+#episode-lead {
+    margin:0 0 21px 17px;
+    }
+
+#hg-w .episode-recap h2 {
+    font-size:21px;
+    margin-bottom:0;
+    padding-left:14px;
+    }
+
+.episodes-list li {
+    border-bottom:1px dotted #DDDDDD;
+    }
+
+.episodes-list .episode {
+    padding:14px 0 14px 14px;
+    }
+
+.episodes-list a.episode-img {
+    width:160px;
+    }
+
+.episodes-list .episode-info {
+    width:428px;
+    }
+
+.episodes-list .no-image .episode-info {
+    width:auto;
+    }
+
+#hg-w .episodes-list .episode-info h3 {
+    font-size:18px;
+    margin-bottom:14px;
+    }
+
+.episode-recap {
+    margin-bottom:21px;
+    }
+
+.episode-recap .episode-summary {
+    border-bottom:medium none;
+    margin-bottom:0;
+    padding-bottom:21px;
+    }
+
+.episode-recap .hub-list li {
+    border-bottom:medium none;
+    }
+
+h2.episode-hdr {
+    margin-left:14px !important;
+    }
+
+.episode-info {
+    float:left;
+    padding-right:14px;
+    width:318px;
+    }
+
+a.episode-img {
+    display:block;
+    float:left;
+    margin-right:14px;
+    width:266px;
+    }
+
+ul.hub-list li {
+    border-right:1px solid #3D3D3D;
+    clear:none;
+    color:#333333;
+    float:left;
+    font-size:13px;
+    margin-right:4px;
+    padding:0 4px 0 0;
+    }
+
+.hub-list li.last {
+    border:medium none;
+    }
+
+
+#episode-airing {
+    margin:14px;
+    background-color:#F1F6F2;
+    padding:13px;
+    }
+
+#episode-airing .epTime {
+    color:#EF4141;
+    }
+
+#episode-airing .bd {
+    display:none;
+    padding-bottom:14px;
+    padding-top:14px;
+    }
+
+#episode-airing .hd h3 {
+    float:left;
+    width:475px;
+		font-size: 16px;		
+		font-size: 16px;		
+    }
+
+#episode-airing .hd .toggle {
+    float:right;
+    width:80px;
+    color:#386CB4;
+    text-align:right;
+    cursor:hand;
+    cursor:pointer;
+    }
+
+#episode-airing .hd .toggle:hover {
+		text-decoration: underline;
+}
+
+#episode-airing .bd p {
+    float:left;
+    width:450px;
+    }
+
+#episode-airing .bd .thumbnail {
+    float:right;
+    width:122px;
+		font-size: 11px;
+		margin-top: -31px;
+    }
+
+
+#episode-airing .thumbnail p {
+    text-align:center;
+    width:120px;
+    }
+
+#episode-airing .no-img h3, #episode-airing .no-img p {
+    float:none;
+    width:100%;
+    }
+#episode-airing h2 {border-top: 1px solid #dae7e3; padding-top: 21px;}
+
+/*fixes layout issue of RR newsletter module in IE */
+#nl-emailaddress-lbl{
+    padding-right: 20px;
+    float: left;
+}
+
+/* TPH 01.23.13 */
+/* SHFEE-523: Content River Group */
+#hg-w .content-river p {line-height: 1.4}
+#hg-w .content-river h4 {line-height: 1.2; margin-bottom: 4px;}
+#hg-w .content-river ul.two-col {width: 200px; margin-top: 4px;}
+#hg-w .content-river .wrap { margin-right: 14px }
+#hg-w .content-river .bd > ul > li {margin-bottom: 21px;}
+
+/*
+    Blog module - show page
+    TENTPOLE-3139
+*/
+
+.blog-module{ margin: 14px; }
+.blog-module .blog-main{ width:376px; padding:7px 14px 17px 0; margin:14px 14px 0 0; float:left; }
+.blog-module .blog-main .hd { margin-bottom:14px; }
+.blog-module .blog-main li { margin-bottom:14px; vertical-align:top; display:block; }
+.blog-module .blog-main a.thumb{ float:left; margin-right:9px; }
+.blog-module .blog-main .date { display:block; color: #999; font-size: 11px; line-height: 17px; }
+.blog-module .blog-main .comment-count { font-weight: normal; }
+.blog-module .blog-main h3 {display:inline;}
+.blog-module .blog-main h3 em { font-style:normal; font-size:11px; color:#999; }
+.blog-module .blog-main p { display:table-cell; line-height: 1.5em; *zoom:1; }
+.blog-module .blog-main .ft a{ font-weight:700; }
+.blog-module .blog-tout{ margin:14px 0 0 404px; padding:14px; background:#f2f6f2; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.blog-tout h2{ font: 700 13px Trebuchet, sans-serif;}
+.blog-tout img{ display:block; margin-bottom:5px; }
+.blog-tout .bd{ display:table-cell; }
+.blog-tout .list{ margin:5px 0; }
+
+
+/* EMAIL REMINDER MODULE */
+.email-reminder-signup {
+	margin: 14px;
+	padding: 10px 14px; 
+	position: relative;
+	border: 1px solid #CCC;
+	background: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+.email-reminder-signup h3 { font-size: 20px; font-weight: normal; margin-top: -2px; }
+.email-reminder-signup p { line-height: 20px; margin-bottom: 10px; }
+.email-reminder-signup .form-wrap { position: relative; }
+
+.email-reminder-signup .rounded-input {
+	background:#fff;
+	border: 1px solid #ddd;
+	width: 346px;
+	height: 29px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: #fff;
+	line-height: normal;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: inset 0 2px 1px #f0f0f0;
+	-moz-box-shadow: inset 0 2px 1px #f0f0f0;
+	-o-box-shadow: inset 0 2px 1px #f0f0f0;
+	box-shadow: inset 0 2px 1px #f0f0f0;
+}
+.email-reminder-signup .rounded-input.focus {
+	-webkit-box-shadow: inset 0 2px 1px #f0f0f0, 0 0 5px #D1EEFC;
+	-moz-box-shadow: inset 0 2px 1px #f0f0f0, 0 0 5px #D1EEFC;
+	-o-box-shadow: inset 0 2px 1px #f0f0f0, 0 0 5px #D1EEFC;
+	box-shadow: inset 0 2px 1px #f0f0f0, 0 0 5px #D1EEFC;
+}
+.email-reminder-signup .rounded-input.error {
+	border-color: #E7A7A8;
+	background-color: #FDDBD7;
+	-webkit-box-shadow: inset 0 2px 1px #F4CDC6;
+	-moz-box-shadow: inset 0 2px 1px #F4CDC6;
+	-o-box-shadow: inset 0 2px 1px #F4CDC6;
+	box-shadow: inset 0 2px 1px #F4CDC6;
+}
+.email-reminder-signup .rounded-input .input { width: 320px; height: 34px; margin: 0 76px 0 0; padding: 0 12px; line-height: normal; }
+
+.email-reminder-signup input[type=text] {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0; 
+	background: none; 
+	border: none; 
+	color: #aaa; 
+	font-size: 14px;
+}
+.email-reminder-signup input[type=text]:focus,
+.email-reminder-signup .error input[type=text] { color: #222; }
+
+.email-reminder-signup button { position: absolute; width: 60px; right: -68px; top: 0; margin: 0; }
+
+.email-reminder-signup .reminder-loading {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1; 
+	left: -1px; 
+	top: -1px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #f6f6f6;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.email-reminder-signup .reminder-loading p {
+	position: relative;
+	top: 0;
+	margin: 0;
+	font-weight: bold;
+	margin-top: -8px;
+}
+.email-reminder-signup .reminder-loading p img {
+	position: relative;
+	top: 8px;
+	padding: 4px !important;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #ccc !important;
+	background: #fff !important;
+	float: none !important;
+	display: inline !important;
+}
+.email-reminder-signup #valid-msg { margin: 0; padding: 0; }
+.email-reminder-signup #valid-msg.pass { margin-bottom: 24px; }
+.email-reminder-signup #valid-msg.fail { display: inline; visibility: visible; color: #cc2414; font-style: italic; }
+
+
+.email-reminder-signup.compact { width: 322px; float: left; margin: 16px 0 0 0; padding: 0; border: none; }
+.email-reminder-signup.compact .rounded-input { width: auto; margin-right: 68px; }
+.email-reminder-signup.compact .rounded-input .input { width: 226px; }
+.email-reminder-signup.compact .reminder-loading { border: none; }

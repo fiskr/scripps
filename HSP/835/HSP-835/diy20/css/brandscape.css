@@ -1,0 +1,19 @@
+/* applies two-column to body; adding padding to top */
+#diy-bd {background: #fff url(../imgs/se/body_bg.png) repeat-y fixed center top; padding-top: 7px;}
+/* footer fixes for brandscape */
+#diy-ft { background: transparent; padding-top: 0;}
+#diy-ft .foot-wrap { background: #ddd; padding: 14px 7px 0;}
+#foot-nav .foot-wrap { background: none; padding: 0;}
+
+
+
+/* Wal Mart Brandscape Specific */
+
+/* body needs to match either bottom color of gradient, or pattern.
+	if pattern should mimic #site-wrapper */
+body { background: #93A656}
+#site-wrapper { background: #1356AD url(http://adimages.scrippsnetworks.com/hgtv/walmart/brandscape/042809/images/hgtv_wm_bg.jpg) repeat-x scroll center top; padding-top: 0px;}
+
+#pushdown_adtag {width: 100%; background: transparent; line-height: normal}
+#pushdown_adtag .iax_inner {width:970px; margin:0 auto;}
+

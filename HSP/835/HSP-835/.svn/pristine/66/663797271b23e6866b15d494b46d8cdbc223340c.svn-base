@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- ####### visual/skin style parameters below ####### -->
+
+	<!-- Close Button -->
+	<closeButton>
+		<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/close_normal.png</normal>
+		<hover>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/close_hover.png</hover>
+		<press>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/close_pressed.png</press>
+	</closeButton>
+
+	<!-- Recall Button -->
+	<recallButton>
+
+		<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/recall_normal.png</normal>
+		<hover>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/recall_hover.png</hover>
+		<press>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/recall_pressed.png</press>
+	</recallButton>
+
+	<textButton>
+		<!-- Start Text Button Config: Text buttons appear in the menu overlay: Send/Copy/Get Recipe, etc. -->
+		<bg>
+
+			<!-- URLs to text button graphics -->
+			<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/button_normal.png</normal>
+			<hover>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/button_hover.png</hover>
+			<press>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/button_pressed.png</press>
+			<disabled>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/button_disabled.png</disabled>
+		</bg>
+	    <!-- Colors of the text on the text button  -->
+
+	    <textColors>
+	      	<normal>#176684</normal>
+		    <hover>#ff3333</hover>
+		    <press>#3a3a3a</press>
+		    <disabled>#cccccc</disabled>
+	    </textColors>
+	</textButton>
+
+	<controlButtons>
+		<!-- Start Control Buttons (Play/Pause/etc.) -->
+	  <!-- Colors for the different states of the button -->
+	    <buttonColors>
+	      <normal>#454545</normal>
+	      <hover>#b50938</hover>
+	      <press>#6B0521</press>
+
+	      <disabled>#CCCCCC</disabled>
+	    </buttonColors>
+	</controlButtons>
+	<overlayMenu>
+		<!-- Start Overlay Menu Config -->
+	  <!-- Overlay menu text colors -->
+	    <textColors>
+	      <title>#d8c5a5</title>
+
+	      <secondary>#999999</secondary>
+	      <body>#ffffff</body>
+	    </textColors>
+	</overlayMenu>
+	<playlistCarousel>
+		<!-- Start Playlist Config -->
+		<isBackground>false</isBackground>				<!-- Does playlist background appear: true/false -->
+
+		<bgURL>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/playlist_bg.png</bgURL>			<!-- URL to playlist background -->
+		<thumbnailBorder>small</thumbnailBorder>			<!-- Size of thumbnail border: big=rectangle around text+thumb   small=rectangle around thumb only -->
+	    <!-- Text Colors for Playlist elements -->
+	    <textColors>
+	      <normal>#d8c5a5</normal>
+	      <hover>#d8c5a5</hover>
+
+	      <selected>#ffffff</selected>
+	      <secondary>#999999</secondary>
+	    </textColors>
+	    <!-- Border Colors for thumbnail borders -->
+	    <borderColors>
+	      <normal>#151615</normal>
+	      <hover>#d8c5a5</hover>
+
+	      <selected>#ffffff</selected>
+	    </borderColors>
+		<rightArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/right_arrow_normal.png</normal>
+			<hover>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/right_arrow_hover.png</hover>
+			<press>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/right_arrow_pressed.png</press>
+
+			<disabled>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/right_arrow_disabled.png</disabled>
+		</rightArrow>
+		<leftArrow>
+			<!-- Playlist arrows graphics -->
+			<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/left_arrow_normal.png</normal>
+			<hover>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/left_arrow_hover.png</hover>
+			<press>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/left_arrow_pressed.png</press>
+
+			<disabled>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/left_arrow_disabled.png</disabled>
+		</leftArrow>
+		<playlistTitle>
+			<size>11</size>
+			<font>arial</font>
+			<color>#FFFFFF</color>
+		</playlistTitle>
+
+		<paginationIcon>
+			<!-- Pagination Dot Icon -->
+			<normal>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/pagination_icon_empty.png</normal>
+			<selected>http://images.diynetwork.com/webdiy/diy20/snap-configs/imgs/pagination_icon_full.png</selected>
+		</paginationIcon>
+		<paginationText>
+			<!-- Pagination nn of mm Text -->
+			<size>11</size>
+
+			<font>Arial</font>
+			<color>#FFFFFF</color>
+		</paginationText>
+	</playlistCarousel>
+
+
+</config>

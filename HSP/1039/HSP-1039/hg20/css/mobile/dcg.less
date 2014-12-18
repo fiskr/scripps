@@ -1,0 +1,56 @@
+#dynamic-content-grid-module {
+    ul.hidden {display:none;}
+    ul {
+	@max-width: 300px;
+	@max-height: 400px;    
+	li {
+	    float:left;
+	    width:47.5%;
+/*	    max-width: @max-width;*/
+	}
+    
+	li:nth-child(odd) {
+	    margin-right:5%;
+	}
+
+/*	
+	@media (min-width:480px) {
+	    li {
+		margin-right:5%;
+	    }	
+	}
+*/	
+	div[data-picture] img{
+	    width:100%;
+	    max-width: @max-width;
+	    max-height:@max-height;
+	}
+	
+	a {
+		position: relative;
+	    max-width: @max-width;
+	    display:block;
+	    font-size:1.4em;
+	    line-height:16px;
+	}
+	
+	a:nth-child(even) {
+	    padding-top:5px;
+	}
+	.desc {
+		padding-bottom: 24px;
+	}
+	
+    }
+    button {
+	.button
+		}
+    button.icon-plus-sign:before {
+    	margin-right: 5px;
+    	font-family: hgtv_iconsregular;
+    	font-size: 16px;
+    	text-shadow: 0px 1px 1px rgba(256,256,256, 0.5);
+    	font-weight: normal;
+    }
+}
+ 

@@ -1,0 +1,225 @@
+<!-- project name, default target and base directory -->
+<project name="sni-build" default="init" basedir=".">
+    <property name="project" location=".."/>
+
+    <!-- Load in Ant-Contrib - the .jar file is located in the tools directory -->
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="tools/ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+
+    <!-- load properties -->
+    <property file="default.properties"/>
+
+    <!-- default target -->
+    <target name="build" depends="buildCSS,buildJS"/>
+
+    <!-- set date/time stamp to prepend on build files -->
+    <tstamp>
+        <format property="timestamp" pattern="E, dd MMM yyyy kk:mm:ss z" locale="en"/>
+    </tstamp>
+
+    <!-- create random number for cachebuster parameter -->
+    <tstamp>
+        <format property="cachebuster" pattern="kkmmssSSS" locale="en"/>
+    </tstamp>
+
+    <!-- jsmin task -->
+    <taskdef name="jsmin" classname="net.matthaynes.jsmin.JSMin_Task">
+        <classpath>
+            <pathelement location="${jsmin}"/>
+        </classpath>
+    </taskdef>
+
+
+
+    <target name="buildCSS" description="Concatenate and minify CSS files">
+        <!-- get number of .lst files present, fail if 0 -->
+        <resourcecount property="count.css">
+            <fileset dir="${basedir}/css" includes="*.lst"/>
+        </resourcecount>
+
+        <if>
+            <equals arg1="${count.css}" arg2="0"/>
+            <then>
+                <fail message="No .lst files present in ${basedir}/css"/>
+            </then>
+        </if>
+
+        <!-- clean out /deploy/ and recreate -->
+        <delete dir="${dir.deploy}"/>
+        <mkdir dir="${dir.deploy}/css"/>
+        <mkdir dir="${dir.deploy}/js"/>
+
+        <!-- set environment-specific URL for replacing image paths, DEFAULT: Prod url -->
+        <if>
+            <equals arg1="${env}" arg2="dev"/>
+            <then>
+             <property name="env.url" value="${url.dev}"/>
+            </then>
+
+            <elseif>
+             <equals arg1="${env}" arg2="stage"/>
+             <then>
+                 <property name="env.url" value="${url.stage}"/>
+             </then>
+            </elseif>
+
+            <else>
+             <property name="env.url" value="${url.prod}"/>
+            </else>
+        </if>
+
+        <!-- iterate through each <file>.lst in /build/css/ -->
+        <for param="file">
+            <path>
+                <fileset dir="${basedir}/css" includes="*.lst"/>
+            </path>
+
+            <sequential>
+                <!-- get the filename of <filename>.lst -->
+                <propertyregex override="yes"
+                      property="file"  input="@{file}"
+                      regexp="^.+/([^/]+)\.lst$" replace="\1"/>
+                <!-- load the .lst file -->
+                <loadfile property="css.list" srcFile="${basedir}/css/${file}.lst"/>
+
+                <!-- concatenate the .css files in the .lst file and prepend timestamp -->
+                <echo>Concatenating files in ${file}.lst...</echo>
+                <concat destfile="${dir.deploy}/css/${file}-tmp.css">
+                    <header trimleading="yes">
+                        /*! ${file}.css -- ${timestamp}
+                        */
+                    </header>
+                    <filelist dir="${dir.css}" files="${css.list}"/>
+                </concat>
+
+                <!-- run the concatenated file through YUI Compressor -->
+                <echo>Minifying ${file}.css...</echo>
+                <apply executable="java" parallel="false" failonerror="true">
+                    <fileset dir="${dir.deploy}/css" includes="${file}-tmp.css"/>
+                    <arg line="-jar"/>
+                    <arg path="${yui}"/>
+                    <srcfile/>
+                    <arg line="-o"/>
+                    <mapper type="glob" from="*.css" to="${project}/deploy/css/${file}.css"/>
+                    <targetfile/>
+                    <arg line="--line-break 0"/>
+                </apply>
+
+                <!-- check for hardcoded frontend.scrippsnetworks.com references -->
+                <if>
+                <equals arg1="${env}" arg2="prod"/>
+                    <then>
+                        <fail message="Found hardcoded references to frontend.scrippsnetworks.com. Remove these from the source and rebuild.">
+                            <condition>
+                                <resourcecontains resource="${dir.deploy}/css/${file}.css" substring="frontend.scrippsnetworks.com"/>
+                            </condition>
+                        </fail>
+                    </then>
+                </if>
+
+                <!-- find relative URLs (../) and replace with environment-specific path -->
+                <echo>Replacing relative image URLs...</echo>
+                <replaceregexp flags="gi">
+                    <regexp pattern="\.\.\/"/>
+                    <substitution expression="${env.url}"/>
+                    <fileset dir="${dir.deploy}/css">
+                        <include name="${file}.css"/>
+                    </fileset>
+                </replaceregexp>
+
+                <if>
+                     <equals arg1="${bustCache}" arg2="true"/>
+                     <then>
+                         <echo>Appending cachebuster params to image URLs...</echo>
+                         <replaceregexp byline="true">
+                             <regexp pattern="(\.png|\.jpg|\.gif)"/>
+                             <substitution expression="\1\?t=${cachebuster}"/>
+                             <fileset dir="${dir.deploy}/css">
+                                 <include name="${file}.css"/>
+                             </fileset>
+                         </replaceregexp>
+                     </then>
+                </if>
+
+                <!-- cleanup the tmp file -->
+                <delete file="${dir.deploy}/css/${file}-tmp.css"/>
+
+                <!-- unset the property used in <loadfile> so it can be reused. Depends on ant-contrib -->
+                <var name="css.list" unset="true"/>
+
+                <echo>Done! New build created: /deploy/css/${file}.css</echo>
+
+            </sequential>
+        </for>
+
+    </target>
+
+
+
+    <target name="buildJS" description="Concatenate and minify JS files">
+        <!-- get number of .lst files present, fail if 0 -->
+        <resourcecount property="count.js">
+            <fileset dir="${basedir}/js" includes="*.lst"/>
+        </resourcecount>
+
+        <if>
+            <equals arg1="${count.js}" arg2="0"/>
+            <then>
+                <fail message="No .lst files present in ${basedir}/js"/>
+            </then>
+        </if>
+
+        <!-- itereate through each <file>.lst in build/js -->
+        <for param="file">
+            <path>
+                <fileset dir="${dir.build}/js" includes="*.lst"/>
+            </path>
+            <sequential>
+                <!-- get the filename of <filename>.lst -->
+                <propertyregex override="yes"
+                      property="file"  input="@{file}"
+                      regexp="^.+/([^/]+)\.lst$" replace="\1"/>
+
+                <!-- load the .lst file -->
+                <loadfile property="js.list" srcFile="${dir.build}/js/${file}.lst"/>
+
+                <!-- concatenate the .js files in the .lst file and prepend timestamp -->
+                <echo>Concatenating files in ${file}.lst...</echo>
+                <concat destfile="${dir.deploy}/js/${file}.js">
+                    <filelist dir="${dir.js}" files="${js.list}"/>
+                </concat>
+
+                <if>
+                    <equals arg1="${file}" arg2="sni-diy"/>
+                    <then>
+                        <property name="copyright" value="${file}.js -- ${timestamp} :: License information: http://www.sndimg.com/common/txt/licenses-diy.txt"/>
+                    </then>
+
+                    <else>
+                        <property name="copyright" value="${file}.js -- ${timestamp}"/>
+                    </else>
+                </if>
+
+                <!-- run the concatenated file through YUI Compressor -->
+                <echo>Minifying ${file}.js...</echo>
+                <jsmin force="true" suffix="false" copyright="${copyright}">
+                    <fileset dir="${dir.deploy}/js" includes="${file}.js"/>
+                </jsmin>
+
+                <!-- cleanup the tmp file -->
+                <delete file="${dir.deploy}/js/${file}-tmp.js"/>
+
+                <echo>Done! New build created: /deploy/js/${file}.js</echo>
+
+                <!-- unset the property used in <loadfile> so it can be reused. Depends on ant-contrib -->
+                <var name="js.list" unset="true"/>
+                <var name="copyright" unset="true"/>
+                <var name="file" unset="true"/>
+            </sequential>
+        </for>
+    </target>
+
+</project>

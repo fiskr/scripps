@@ -1,0 +1,209 @@
+<body id="gallery-tophat" class="gallery upload">
+	<div style="display: none; top: 250px;" id="progressbarstatuscontrol" align="center">
+		<div id="uploadStatusBar">
+			<div id="processingStatus" style="z-index:40000;" class="copy14V_noul">
+				<div id="proS-inner">
+					<h2>Hold tight. Your files are uploading.</h2>
+					<div id="uploadStatusTD">
+						<div id="proS-bor">
+							<div id="proS-done-div" style="width:0%; height: 20px; background-image:url(%SKIN_PATH%/skins/main/images/account/widget_upload_bar.gif); float:left;" >
+								<img id="proS-done-img" src="%SKIN_PATH%/skins/main/images/account/dot.gif" width="0%" height="20px" />
+							</div>
+							<div id="proS-remain-div" style="width:100%; height:20px;">
+								<img id="proS-remain-img" src="%SKIN_PATH%/skins/main/images/account/dot.gif" width="100%" height="20px" />
+							</div>
+							<div style="clear: both;"></div>
+						</div>
+						<p id="proS-status">We're uploading your files now<img src="%SKIN_PATH%/skins/main/images/account/upload/e_ani.gif"></p>
+					</div>
+					<p><a href="javascript:clearProcessingStatus();">Cancel</a></p>
+				</div>
+			</div>
+			<div id="proS-ft"></div>
+		</div>
+	</div>
+	<div id="grey_background" name="grey_background"><iframe style=" filter:alpha(opacity=0);-moz-opacity:0; opacity:0; width: 95%; *width: 100%; height: 3000px;"></iframe></div>
+	<!--  HEADER INCLUDE //-->
+	<div id="cgp-hd-wrapper">
+		<!--$ Header -->
+	</div>
+	<div id="site-wrapper">
+		<div id="pushdown_adtag">
+			<script type="text/javascript">PushdownAd(1);</script>
+			<div id="brandscape"></div>
+		</div>
+		<div id="hg-bd">
+			<div id="hg-bd-wrap">
+				<div id="bd-container">
+					<div id="bd-wrapper" class="clrfix">
+						<div id="hg-w">
+							<!-- MAIN WIDGET INCLUDE - D2C, D2A (inc. taxonomies) etc. etc. //-->
+							<!--$ PickleWidget collectionsuploadnonur 2 -->
+						</div>
+						<div id="hg-e"  onmouseover="$('#cgp-selectList04').hide();">
+							<div class="mrec">
+								<div id="bigbox">
+									<script type="text/javascript">
+										BigboxAd(5);
+									</script>
+								</div>
+								<span>Advertisement</span> 
+							</div>
+							<div class="mrec">
+								<div>
+									<script type="text/javascript">
+										BigboxAd300x150(1);
+									</script>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER INCLUDE //-->
+	<div id="hg-ft" class="clrfix">
+		<div class="tcap">
+			<!-- FOR CAPS -->
+		</div>
+		<div class="wrap clrfix">
+			<!--$ Footer 50 -->
+			<!--$ Footer 51 -->
+			<!--$ Footer 52 -->
+		</div>
+		<div class="bcap">
+			<!-- FOR CAPS -->
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+	//defining the jQuery objects for zip code and phone number inputs
+	var $zip = $('#zipCode_txt');
+	var $phone = $('#phone_txt');
+
+
+	//put the short form rules at the bottom of the center well
+	$('#cgp-detail-widget')
+		.after('<div id="rules-fineprint"> NO PURCHASE NECESSARY. Open to legal residents of the 48 contiguous United States and D.C., age 21 or older. Void in Alaska, Hawaii, and where prohibited. Contest ends at 11:59 p.m. ET on August 1, 2014. For full official rules, visit www.hgtv.com/vern. Sponsored by Scripps Networks, LLC dba Home & Garden Television, 9721 Sherrill Boulevard, Knoxville, Tennessee 37932. </div>');
+	//flip flopping the header and paragraph before the form
+	$('#cgp-nour-space-1 h2').css('display', 'none');
+	$('#cgp-nour-space-1').prepend('<h2>' + $('#cgp-nour-space-1 h2').html() + '</h2>');
+	$('#cgp-nour-space-1').css('padding','0 0 14px');
+	//modifying description for Vern's House submission to be limited to ~ 300 words
+    document.getElementById("desc").maxLength = "1800";
+    //making the RR left border extend from top to bottom of page
+	$('#hg-w').css('border-right','1px solid #DAE7E3');
+	$('#gallery-tophat.gallery.upload #hg-e').css('border-left','none');
+	//forcing the fields to follow another instead of bunch up and look ugly
+	$('div.fpSection-e').css('clear','both');
+	//give the upload title the value of the email field when hovering over submit button
+	//the upload  title is necessary to submit a form (don't hide it in Pickle, use CSS hack to hide it)
+	$('li.save a.btn').hover(function(){
+		$('input#caption').val($('input#lastName_txt').val());
+	});
+	//Some field validation:
+	//limit Phone field to 10 characters
+	$phone.attr('maxLength', '10');
+	//limit Zip code field to 5 characters
+	$zip.attr('maxLength', '5');
+
+	//backup of the submit function
+	var backup = SNI.Community.Widgets.termsCheckSingleMode;
+
+	//overriding the submit function
+	SNI.Community.Widgets.termsCheckSingleMode = function(){
+		//make functions to check length of the fields
+		function isZip(){
+			return $zip.val().length === 5;
+		}
+
+		function isPhone(){
+			return $phone.val().length === 10;
+		}
+		//if they are the proper length,
+		if(isPhone() && isZip()){
+			//run the original function
+			backup();	
+		}else{
+			//otherwise, style fields to indicate something is wrong
+			if(!isPhone()){
+				$phone
+					.addClass('inputError')
+					.after('<small class=\"error\">Please ensure phone number is 10 digits.</small>')
+					.bind('keyup', function(){
+						if(isPhone()){
+							$phone
+								.removeClass('inputError')
+								.siblings('.error').remove();
+						}
+					});
+			}
+			if(!isZip()){
+				$zip
+					.addClass('inputError')
+					.after('<small class=\"error\">Please ensure zip code is 5 digits.</small>')
+					.bind('keyup', function(){
+						if(isZip()){
+							$zip
+								.removeClass('inputError')
+								.siblings('.error').remove();
+						}
+					});
+			}
+		}
+		return false;
+	};
+
+	//plug-in to remove non-numeric characters on certain events
+	$.fn.numOnly = function() {
+		return this.each( function() {
+			
+			function remove( that ) {
+				$(that).val( $(that).val().replace(/[\D]/g,'') );
+			}
+			remove( $(this) );
+			
+			$(this).bind( "keyup keydown change click focus", function() {
+				remove( $(this) );
+			} );
+		} );
+	};
+	//running the plugin to bind that removal for zip and phone
+	$( '#phone_txt, #zipCode_txt' ).numOnly();
+});
+</script>
+<style>
+/* styling for the short form rules at the bottom of center well */
+#rules-fineprint{
+	border-top: 1px solid #E1E6E5;
+	clear: both;
+	color: #ADADAD;
+	font-size: 11px;
+	line-height: 17px;
+	margin-bottom: 14px;
+	padding: 14px 14px 0;
+}
+/* make sure line on RR hits header, but give lead proper top padding */
+div#hg-w {margin:0 !important; padding: 7px 0 0 !important;}
+/* gives 'upload different files' button some margin */
+div.upActions ul.saveUpload li { margin:14px !important; }
+/* hide the upload title */
+#cgp-newedit-new-space-title { display:none !important; }
+/* getting rid of that ugly whitespace in the RR */
+#gallery-tophat.gallery.upload #hg-e { margin: 0 !important; }
+/*the line-height was too tight- fixing that too*/
+#cgp-nour-space-1 p { line-height: 20px !important; }
+/*the 480px width squishes the center well to look terrible*/
+#cgp-single-upload { width: auto !important; }
+/*getting rid of the ugly and unclear "Upload your File"*/
+#cgp-nour-space-2 { display: none !important; } 
+/*styling for the error message below invalid fields*/
+.error { color: #CC2414 !important; font-style: italic; } 
+/*styling for the input when it needs to be corrected*/
+.inputError { 
+		background: #FDDBD7 !important;
+		border-color: #E7A7A8 !important;
+		box-shadow: 0 2px 1px #F4CDC6 inset !important; }
+</style>
+		</body>

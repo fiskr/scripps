@@ -1,0 +1,32 @@
+<!-- BEGIN Portfolio Promo module -->
+<div class="mod clrfix">
+  <h2>Designer Spaces</h2>
+  <div class="clrfix" id="port-promo">
+    <div class="pod">
+      <a href="/designers-portfolio/main/index.html">
+        <div data-picture>
+          <div data-src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/DP_promo-button_160x120.jpg" data-media="(min-width: 200px)" ></div>
+          <div data-src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/DP_promo-button_266x200.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+          <noscript> <img src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/DP_promo-button_160x120.jpg"></noscript>
+          <img/>
+        </div>
+      </a>
+    </div>
+
+    <div class="pod">
+      <a href="/garden-galleries/index.html">
+
+        <div data-picture>
+          <div data-src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/GG_promo-button_160x120.jpg" data-media="(min-width: 200px)" ></div>
+          <div data-src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/GG_promo-button_266x200.jpg" data-media="(min-width: 400px),(min-height: 400px)"></div>
+          <noscript> <img src="http://frontend.scrippsnetworks.com/development/webhgtv/hg20/imgs/GG_promo-button_160x120.jpg"></noscript>
+          <img/>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+<!-- END Portfolio Promo module -->
+
+

@@ -1,0 +1,35 @@
+<div id="cover" class="hello-world-states loading" style="position: absolute; height: 100%; width: 100%; background: #FFF; z-index:9999;">
+	<div id="loadingdot" style="margin: 42px auto; position: relative;"> 
+		<div id="loadingdot1" class="loadingdot"> </div> 
+		<div id="loadingdot2" class="loadingdot"> </div> 
+		<div id="loadingdot3" class="loadingdot"> </div> 
+		<div id="loadingdot4" class="loadingdot"> </div>
+	</div>
+</div>
+<script>
+(function( $ ){
+	var cover = function(){
+		if(document.getElementsByClassName('videoPlaylistEmbed') > 0 && typeof window.SNI !== 'undefined' && typeof window.SNI.Video.Events !== 'undefined'){
+			  window.SNI.Video.Events.addEventListener('OnPlayerLoaded',  function () {
+			  $("#cover").hide();
+			});
+		}else{
+			$(window).on('load', function() {
+			$("#cover").hide();
+			});
+		}
+	};
+
+	//if not author- put up a cover
+
+	// use window.location.hostname instead of document.URL
+	if(!document.URL.match(/author\./g)){
+		cover();
+		// use window.location.href
+	}else if(document.URL.match(/wcmmode\=disabled/g)){ //if in preview, put up the cover
+		cover();
+	}else{ //if not preview and still author - hide the cover.
+		$("#cover").hide();
+	}
+})( jQuery );
+</script>

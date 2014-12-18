@@ -1,0 +1,34 @@
+/* Kudzu module: upgradable to dynamic version w/ AJAX for context-sensitive results */
+#services-search.dyn { position: relative; margin-top: 14px; padding-top: 135px; z-index: 1; }
+
+#services-search.dyn .lg-img { width: 321px; height: 187px; position: absolute; top: -13px; left: 0; background-image: url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/kudzu-big.png); }
+
+#diy-bd #diy-e #services-search.dyn h4 { position: relative; height: 32px; width: 328px; border: none; background: #9dbcb3; *zoom: 1; margin-bottom: 15px; padding: 0; }
+
+#services-search.dyn h4 span { display: none; position: absolute; top: 0; right: 0; width: 308px; margin-left: 6px; padding: 8px 7px; background-color: #5b7f73; }
+#services-search.dyn h4 .default { display: block; }
+#services-search.dyn h4 .loader { display: block; position: absolute; top: 8px; right: 14px; width: 16px; height: 16px; background-image: url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/loader-green.gif); }
+#services-search.dyn .kudzu-logo { position: absolute; top: 27px; right: 27px; margin: 0; padding: 0; width: 82px; z-index: 101; }
+#services-search.dyn .kudzu-logo p { margin-top: 15px; color: #a6a6a; font-size: 77%; color: #a6a6a6; }
+#services-search.dyn .kudzu-logo a { margin: 0; float: right; }
+
+#services-search.dyn fieldset { margin: 8px 0; }
+#services-search.dyn label { display: none; }
+
+#services-search .input-box { float: left; }
+#services-search .input-box input { width: 100%; color: #999; font-size: 84.6%; }
+#services-search .item1 { width: 197px; }
+#services-search .item2 { width: 96px; margin-left: 7px; }
+#services-search .submit { margin: 14px 0 4px; text-align: center; }
+#services-search button { width: 146px; }
+
+/* for dynamic version - unchanged from HGTV, untested
+#services-search.dyn .transit { display: none; position: absolute; bottom: 14px; left: 13px; height: 123px; width: 322px; opacity: 0.75; *filter: alpha(opacity = 75); background-color: #f1f6f2; }
+#services-search.dyn .results { display: none; margin: -9px 14px 10px 0; line-height: normal; }
+#services-search.dyn .results li { padding: 12px 0 15px; *padding: 9px 0 14px; border-bottom: 1px solid #dae7e3; }
+#services-search.dyn .results h5 { font-weight: bold; line-height: normal; }
+#services-search.dyn .results p { font-size: 85%; *margin-top: -3px; }
+#services-search.dyn .results .rating { float: right; width: 100px; margin-top: 1px; *margin-top: 4px; }
+#services-search.dyn .results .rating span { float: right; margin: 0 auto 1px; }
+#services-search.dyn .results .rating p { margin-right: 0; text-align: right; clear: both; *margin-top: 0; }
+*/

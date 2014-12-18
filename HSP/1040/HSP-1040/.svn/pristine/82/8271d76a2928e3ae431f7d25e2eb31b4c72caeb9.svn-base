@@ -1,0 +1,75 @@
+.contact-bd {
+    padding:0 14px;
+    }
+
+.contact-bd p {
+    margin-bottom:14px;
+    }
+
+.contact-bd .fieldset li {
+    float:left;
+    margin-bottom:9px;
+    }
+
+.contact-bd .fieldset small {
+    display:block;
+    color:#999;
+    font-size:85%;
+    }
+
+.contact-bd .text-box, .contact-bd .dd-list {
+    width:203px;
+    margin-right:14px;
+    }
+
+.contact-bd .dd-list dd {
+    margin-left:-11px;
+    }
+
+.contact-bd .find {
+    text-align:center;
+    }
+
+.contact-bd .button {
+    width:93px;
+    }
+
+.contact-bd ul.cable {
+    margin-bottom:9px;
+    padding-bottom:5px;
+    border-bottom:1px solid #ddd;
+    }
+
+.contact-bd ul.cable li {
+    float:none;
+    }
+
+.contact-bd .optional p {
+    margin-bottom:4px;
+    }
+
+.contact-bd.live-chat .find {
+    text-align:center;
+    }
+
+.contact-bd.live-chat .button {
+    width:80px;
+    }
+
+.contact-bd .fieldset li.last {
+    _clear:both;
+    _height:260px;
+    _position:relative;
+    }
+
+.contact-bd .fieldset li.last .textarea-box {
+    _position:absolute;
+    _bottom:10px;
+    _left:0;
+    }
+
+.contact-bd #smartbutton img {
+    margin-bottom:20px;
+    border:none;
+    }
+	

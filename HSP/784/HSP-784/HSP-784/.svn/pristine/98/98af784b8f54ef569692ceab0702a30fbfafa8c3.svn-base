@@ -1,0 +1,148 @@
+/* SNDigital Typography */
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	color: #555;
+	}
+
+/* 
+
+	FONT SIZE CONVERSION CHART 
+	BASED ON 14PX
+	
+	8px  -> 0.571em -> 57.1% -> 6pt
+	9px  -> 0.643em -> 64.3% -> 7pt
+	10px -> 0.714em -> 71.4% -> 8pt
+	11px -> 0.786em -> 78.6% -> 8pt
+	12px -> 0.857em	-> 85.7% -> 9pt
+	13px -> 0.929em	-> 92.9% -> 10pt
+	14px -> 1em 	-> 100%  -> 11pt
+
+*/
+	
+/* HEADINGS */
+
+h1,h2,h3,h4,h5,h6,blockquote {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #333;
+	}
+h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+h1 {
+	font-size: 4em;
+	line-height: 1.10em;
+	}
+
+h2 {
+	font-size: 2.5em;
+	letter-spacing: 0.015em;
+	line-height: 1.2em;
+	}
+
+h3,h4, blockquote {
+	font-size: 1.5em;
+	line-height: 1.333em;
+	}
+
+h4 {margin-bottom:14px;}
+
+h5,h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	}
+
+h5 { font-weight: bold; margin-bottom:7px;}
+
+h6 { text-transform: uppercase; letter-spacing: 0.05em;}
+
+h1 span {
+	font-size:.25em;
+	line-height:1.125em;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#9B9B9B;
+	white-space:nowrap;
+	letter-spacing:0;
+}
+
+a {color: #2A76A8; text-decoration: none; }
+a:hover { color: #4e98d3; text-decoration: underline; }
+a:visited { color: #2A76A8; }
+
+h1 a,
+h2 a,
+h3 a,
+h6 a { color: #111; text-decoration: none; }
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover { color: #4E98d3; text-decoration: none; }
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h5 a:visited,
+h6 a:visited { color: #2A76A8; text-decoration: none; }
+
+.cap,
+.small,
+.article .small,
+li.byline cite {
+	font-size: 0.786em;
+	line-height: 1.272em;
+}
+
+.cap {color:#999;}
+.theater .temp {position:absolute;}
+
+.subhead { font-style:italic; color: #9B9B9B;}
+
+.solo {margin:0 14px 14px;}
+.center {text-align:center;}
+strong, .strong {font-weight: bold;}
+em {font-style: italic; font-weight: inherit; }
+.amp {font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;}
+.justify { text-align: justify; }
+.smallcap { font-variant: small-caps; text-transform: lowercase; }
+
+/* ul.list, ol.list {overflow:hidden;} when this follows floated item, list will appear block */
+ul.list.flow, ol.list.flow {overflow:hidden;}
+
+ul.list li {
+    list-style-type:none;
+	background: url('../imgs/se/sprite.png') 0 -7113px no-repeat;
+	padding-left: 14px;
+	margin-bottom:7px;
+}
+
+ul.list.small li, ul.list li .small {background-position:0 -7116px;}
+
+ul.list.grey li {background: url('../imgs/se/sprite.png') 0 -46px no-repeat;}
+
+ul li.cta {font-weight:normal;font-size:0.786em;padding-left:0;background:none;}
+ul.list li.cta {font-weight:bold;}
+
+ol.list li {
+	list-style-type:decimal;
+	margin:0 7px 7px 21px;
+	*margin-left:30px;
+}
+
+.theater h1,
+.theater h2,
+.theater h3,
+.theater h4,
+.theater > h5,
+.theater > p {color:#FAFAFA;}
+
+
+/* makes link color dark, and hover, the link color */
+.invert a {color:#333;}
+.invert a:hover {color:#2A76A8;text-decoration:none;}

@@ -1,0 +1,31 @@
+<div>
+  <h3 style="font-size:20px;">Tour HGTV Dream Home 2015</h3>
+
+  <div id="app">
+    <div id="mobileCurtain"></div>
+    <div id="floorplanContainer"></div>
+    <div id="start">Start Here</div>
+    <div id="tip"></div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/floorplan.css"/>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+<script>
+(function( $ ) {
+	// cf. http://requirejs.org/docs/api.html#config-waitSeconds
+	//if waitSeconds in requirejs config has been set, use that - otherwise default to 7
+	var originalWait = ( typeof requirejs.config.waitSeconds !== 'undefined' ) ? requirejs.config.waitSeconds : '7'; 
+	requirejs.config.waitSeconds = 30; //expand the wait time to 15 seconds
+	require(['http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js'], function( Kinetic ){ 
+		if(window.location.href.match(/qa2\./)){//use frontend for QA environment...
+			require(["http://frontend.scrippsnetworks.com/~bfoster/HTO/DreamHome2015/floorplan.js"]);
+		}else{
+			require(['http://images.hgtv.com/webhgtv/hg20/pkgs/2015/dream-home/floorplan.js']);
+		}
+		
+	});
+	requirejs.config.waitSeconds = originalWait; //put things back as they were.
+})( jQuery );
+
+</script>

@@ -1,0 +1,77 @@
+<body id="gallery-tophat" class="gallery upload">
+			<div style="display: none; top: 250px;" id="progressbarstatuscontrol" align="center">
+				<div id="uploadStatusBar">
+					<div id="processingStatus" style="z-index:40000;" class="copy14V_noul">
+						<div id="proS-inner">
+							<h2>Hold tight. Your files are uploading.</h2>
+							<div id="uploadStatusTD">
+								<div id="proS-bor">
+									<div id="proS-done-div" style="width:0%; height: 20px; background-image:url(%SKIN_PATH%/skins/main/images/account/widget_upload_bar.gif); float:left;" >
+										<img id="proS-done-img" src="%SKIN_PATH%/skins/main/images/account/dot.gif" width="0%" height="20px" />
+									</div>
+									<div id="proS-remain-div" style="width:100%; height:20px;">
+										<img id="proS-remain-img" src="%SKIN_PATH%/skins/main/images/account/dot.gif" width="100%" height="20px" />
+									</div>
+									<div style="clear: both;"></div>
+								</div>
+								<p id="proS-status">We're uploading your files now<img src="%SKIN_PATH%/skins/main/images/account/upload/e_ani.gif"></p>
+							</div>
+							<p><a href="javascript:clearProcessingStatus();">Cancel</a></p>
+						</div>
+					</div>
+					<div id="proS-ft"></div>
+				</div>
+			</div>
+			<div id="grey_background" name="grey_background"><iframe style=" filter:alpha(opacity=0);-moz-opacity:0; opacity:0; width: 95%; *width: 100%; height: 3000px;"></iframe></div>
+			<!--  HEADER INCLUDE //-->
+			<div id="cgp-hd-wrapper"><!--$ Header --></div>
+			<div id="site-wrapper">
+				<div id="pushdown_adtag"><script type="text/javascript">PushdownAd(1);</script><div id="brandscape"></div></div>
+				<div id="hg-bd">
+					<div id="hg-bd-wrap">
+						<div id="bd-container">
+							<div id="bd-wrapper" class="clrfix">
+								<div id="hg-w">
+									<!-- MAIN WIDGET INCLUDE - D2C, D2A (inc. taxonomies) etc. etc. //-->
+									<!--$ PickleWidget collectionsuploadnonur 2 -->
+								</div>
+								<div id="hg-e"  onmouseover="$('#cgp-selectList04').hide();">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER INCLUDE //-->
+			<div id="hg-ft" class="clrfix">
+				<div class="tcap"><!-- FOR CAPS --></div>
+					<div class="wrap clrfix">
+					<!--$ Footer 50 -->
+					<!--$ Footer 51 -->
+					<!--$ Footer 52 -->
+					</div>
+				<div class="bcap"><!-- FOR CAPS --></div>
+			</div>
+<script type="text/javascript">
+$(function(){
+	$('#hg-w').css('border-right','1px solid #DAE7E3');
+	$('#gallery-tophat.gallery.upload #hg-e').css('border-left','none');
+	$('div.fpSection-e').css('clear','both');
+	$('#fileSelectBtn.btn').click(function(){
+		console.log('cake');
+		/*
+			
+		*/
+		if($('#image0').length > 0){
+			console.log('one image');
+		}
+		$('li.create a.btn:not(#fileSelectBtn)').css('visibility','hidden');
+		$('li.create a.btn:not(#fileSelectBtn)').css('display','none');
+	});
+});
+</script>
+<style>
+#gallery-tophat.gallery.upload textarea {width: 380px !important;}
+#p2-uplwide.nour.wide .uptop.typetwo, #p2-uplwide.nour.wide .upbottom.typetwo {margin:21px 0 21px 202px !important;}
+</style>
+		</body>

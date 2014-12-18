@@ -1,0 +1,11 @@
+/* make stars  - block by default */
+.stars {display:block;background:url('../imgs/se/sprite.png') 0 -4874px; height:14px;width:80px;}
+.stars.lg {background-position:0 -4874px;}
+.stars.in {display:inline-block;}
+
+.stars.none {background-position:0 -4874px;}
+.stars.one {background-position:0 -4932px;}
+.stars.two {background-position:0 -4990px;}
+.stars.three {background-position:0 -5048px;}
+.stars.four {background-position:0 -5106px;}
+.stars.five {background-position:0 -5164px;}

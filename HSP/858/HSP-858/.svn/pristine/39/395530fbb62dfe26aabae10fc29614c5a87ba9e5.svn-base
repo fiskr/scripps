@@ -1,0 +1,338 @@
+article.builder-uber{
+    margin-top: 11px;
+    .lead {padding-top: 24px; }
+    .pod {
+        padding-top: 14px;
+    }
+    h5 {
+        font-size: 1.4em;
+        font-weight: bold;
+        a { font-size: 12px; }
+    }
+    
+    ul.list li {
+        a {font-size: 12px;}
+    }
+    .cap {
+        clear:both; 
+        display:block;
+        color: #999;
+        a {
+            padding-left: 1px;
+            font-size: 10px;
+        }
+    }
+
+    #nobanner {
+        h1 a {font-size: 24px;}
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .page-head h1{
+        color: #386CB4;
+    }
+    .vid-over{
+        display: none; /*not sure why this is showing on uber*/
+    }
+
+    #vlp-player-wrap{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .interlinking{
+        h4.strong a, h4.strong {
+            font-size: 16px;
+            padding-bottom: 4px;
+            font-weight: normal;
+        }
+        .bd {
+            width: 90;
+            margin: 0 auto;
+            &:after{
+                clear:both;
+                content: ".";
+                display: block;
+                height:0;
+                visibility: hidden;
+            }
+        }
+        ul.list{
+            &.two-col {
+                width: 50%;
+                float: left;
+                clear: none;
+            }
+            li{
+                font-size: 12px;
+                line-height: 22px;
+                list-style: disc;
+                margin-left: 50px;
+            }
+        }
+    }
+    .w266 img{ 
+            max-width: 266px;
+            width: 100%;
+            height: 100%;
+    }
+    .w616 img{ 
+            max-width: 616px;
+            width: 100%;
+            height: 100%;
+    }
+
+    .w462 img{ 
+            max-width: 462px;
+            width: 100%;
+            height: 100%;
+    }
+    
+    .lead h4{
+        padding-bottom: 10px;
+
+    }
+
+    .pod, .lead{
+        h4,p, .w616, .w462,.w266, .next-up, .strip, &.enlarger{
+            width: 90%;
+            margin: 0 auto;        
+        }
+    }
+
+    .enlarger {
+        h5 {
+            font-size: 21px;font-weight: normal;
+        }
+        .last h5 {padding-top: 14px;}
+        img{
+            width:100%;
+            height: 100%;
+            max-width: 616px;
+        }
+        p {margin-left: 0; font-size: 12px; line-height: 16px;}
+    }
+
+
+
+    .pod.next-up .bd{
+        background-color: #faf9f7;
+        margin: 14px 0px 0px 0px;
+        padding: 14px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        min-height:93px;
+        h5, .in {margin-left:0; padding-left: 19px;}
+        .in { font-size: 21px; line-height: 21px;  width: 95%;}
+        h5{margin-top: 7px; font-size: 14px;}
+        cite {display:none;}
+        .wrap {width:120px; padding-right: 8px; padding-left: 5px; float: left;}
+        img{ width:100%;position: relative; top: 2px;}
+        p {display: none;} /*hide description for mobile*/
+    }
+
+    video {     
+        height: 217px !important;
+        width: 289px !important;
+    }
+
+    .vid-html {
+        height: 225px !important;
+        width: auto !important;
+    }
+
+}
+
+
+
+.bd.strip {
+    cite {display: none;}
+    a.view-more{
+            .gradient(#e6e5df, #e1e1da, #f6f6f3);
+            .rounded-corners(4px 4px 4px 4px);
+            padding: 12px 0 0 0;            
+            text-align: center;
+            width: 120px;
+            height: 76px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #c9c9c9;
+            color: #333;
+            vertical-align: middle;
+            padding-right: 0;
+            font-size: 12px;
+            span{
+                display: block;
+                color: @icon-color;
+                font-size: 32px;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+
+            strong{
+                display: block;
+                font-weight: bold;
+            }
+            &:active{
+                border-color: #aaa;
+                .gradient(#dcdbd7, #d2d1cc, #e6e6e3);
+                color: @icon-active-color;
+        }
+    }
+}
+
+@vidWidth: 280px;
+.strip .royalSlider {
+    display: none;
+    width: @vidWidth; /* was 600px */
+    min-height: 90px; /*was 400px */
+    padding-top: 12px; 
+    position: relative;
+    left: 0; 
+    direction: ltr;
+    overflow: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    .rsSlide {
+        a {
+            width: 120px;
+            float: left;
+            margin-right: 19px;
+            position: relative;
+        }
+    }
+    .cap {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+        span{
+            color: #999;
+            font-size: 12px;
+        }
+    }   
+    img   {
+        border: none;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+
+/*inner rail modules */
+.builder-uber aside .cartridge .bd p {margin-left: 0;}
+.lead aside p {margin-bottom: 0;} /* over-ride extra spacing added in lead area */
+.builder-uber aside {
+    margin-top: 14px;
+    padding-bottom:11px;
+    padding-right: 7px;
+    span {
+        position:absolute;
+    }
+}
+     
+aside .cartridge {
+    padding:0 14px 0 0px;  
+    border-left: 36px solid #F5F4F2;
+    .bd {
+        padding-top: 12px;
+        border-left: 3px solid #eaeae7;
+        h5, h6, p {padding-left: 14px;}
+        h5 {padding-top: 0;}
+    }
+    h5 {
+        position: relative;
+        margin-bottom: 3px;
+    }
+    blockquote {
+        position: relative;
+        padding-left:14px;color:#444; line-height: 23px; font-size: 18px;
+    }
+    
+    p {font-size:1.2em;line-height:1.4em; padding-bottom: 14px;}
+}
+  
+.pod aside .cartridge  p { margin-bottom: 0px;} /* to cancel out general rule here, but not elsewhere*/
+ 
+.ico {display: none;} //desktop flair
+
+aside.pros span {
+    background-image:url('../imgs/uber-sprite-mobile.png');
+    width: 17px; height: 19px;
+    left:-30px;top: 2px;
+    &.pro { background-position: 0 0px; }
+    &.con { background-position: 0 -61px;}
+}
+
+aside.quote  {
+    background: #fff; 
+    overflow: visible;
+    margin-bottom: 8px;
+    margin-right: -14px;
+    span.mobilequote {
+        background:url('../imgs/uber-sprite-mobile.png');
+        background-position: 0 -122px; width: 18px; height: 17px;
+        position:absolute;
+        margin:12px 0 0 9px;
+    }
+    span.open{position: relative; padding-right: 3px;}
+    .cartridge {
+        .bd {
+            padding-left:0; padding-bottom: 7px;
+            div {
+                margin-left:-21px;padding-left:23px;
+            }
+        }
+        blockquote {
+            .open:after{content:"\201C"; font-style: cursive;} //open quote
+            .close:after{font-style: cursive; content:"\201D";}
+            span.close { position:static;padding-right:25px; margin-right:25px; }
+        }
+    }
+}
+ 
+
+aside.tip .cartridge h5 span {
+    background:url('../imgs/uber-sprite-mobile.png');
+    background-position: 0 -240px; width: 18px; height: 16px; 
+    left:-28px;
+}
+
+aside.clip {
+    > span {background: url('../imgs/uber-sprite-mobile.png');  background-position: 0 -298px; width: 14px; height: 22px;  margin: 14px 0 0 13px;}
+    .cartridge {
+        ul.list li {margin-left:29px; line-height: 20px; list-style: disc;}
+        h6 { 
+            font: normal 1.5em/1.5em Arial,sans-serif;
+            padding: 3px 0 3px 14px; 
+
+            a { 
+                color: #2a76a8; 
+                &:hover { color: #4E98D3; }
+            }
+        }
+        .phone { background-position: left -8134px; }
+        .url   { 
+            background-position: left -8195px; 
+            font-size: 12px; 
+            &:hover { color: #4E98D3; }
+            a:hover { color: #4E98D3;}
+        }
+        h5 {padding-bottom: 12px;}
+        ul.list {padding-bottom: 8px;}
+    }
+ }
+
+ aside.clip.about {/*about designer module has clip class (b/c of HGRM) but no paperclip*/
+    > span {background-position: 0 -352px; width: 19px; height: 16px; margin-top: 12px;}
+    a {font-size: 12px;}
+    .cartridge {
+        width:228px;
+        ul.list li {
+            list-style: none; margin-left: 5px; padding-top: 8px;
+        }
+        h6 {text-transform: none;font-size: 21px !important; line-height: 28px; padding-top: 8px;}
+        ul.list li {background: none; padding-left: 8px; font-weight: bold;}
+    }
+}
+ 
+aside br {display:block;}

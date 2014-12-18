@@ -1,0 +1,337 @@
+/*Family Bar*/
+.family-bar-wrap {width: 100%; height: 34px;background: url(http://images.diynetwork.com/webdiy/diy20/imgs/family-bar.gif) repeat-x;  background-position: 33px;}
+.family-bar {height:34px; padding:0; margin:0 auto; min-width:994px; position:relative; width:994px;}
+.family-bar ul {height:29px; padding-top:5px; padding-left: 14px; float:left;}
+.family-bar ul li {float:left;padding-top: 1px; } 
+.family-bar ul li.current {padding-top: 2px; background: url(http://images.diynetwork.com/webdiy/diy20/imgs/family-bar-current.gif) repeat-x;  background-position: 639px -4px;height: 34px;}
+.family-bar ul li.current:hover{cursor: pointer;text-decoration: none;color: #fff;background: url(http://images.diynetwork.com/webdiy/diy20/imgs/family-bar-current.gif) repeat-x;  background-position: 535px -4px;height: 34px;}
+html body .family-bar ul li a{padding:0 14px 0 14px;font-size:11px;font-weight:bold;color:#176684;}
+.family-bar ul li a:link {padding:0 14px 0 14px; font-size:11px; font-weight:bold; color:#176684;}
+.family-bar ul li a:visited {color:#176684;}
+.family-bar ul li a:hover{color: #ba0707; text-decoration: underline;}
+.family-bar ul li a:active{color: #ff3333; text-decoration: underline;}
+.family-bar ul li.current a {color:#444444;}
+.family-bar .diyClear{clear: both;}
+.family-bar ul li.current:hover a{text-decoration: none;color: #fff;}
+.family-bar ul li.current:active a{text-decoration: none;}
+/*End Family Bar*/
+
+#diy-hd { background-color: #2a251d; height: 109px;position:relative;
+          z-index:999;}
+#diy-hd .nav {position: relative; width: 994px; margin: 0 auto; margin-top: 9px; *height: 83px; _height: auto; padding-bottom: 7px;}
+body#blog-cabin #diy-hd .nav {/* *padding-top: 72px;*/ *height: auto;}
+#diy-hd a:link, #diy-hd a:visited { color: #d8c5a5; }
+#diy-hd a:hover { color:#d8c5a5;}
+#diy-hd a:active { color: #fff;}
+
+#diy-hd #find-project-wrap a { color:#F7F7F7;}
+#diy-hd #find-project-wrap a:hover { color:#FFF; }
+#diy-hd #find-project-wrap a:active { color: #444; background-position: right -60px;}
+#diy-hd #find-project-wrap a:active span { background-position: left -60px;}
+/* hack for flyout when porject finder pushes nav down */
+#diy-sub-nav .flyout {
+    top: auto !important;
+}
+#diy-sub-nav {
+    position: relative;
+}
+#diy-hd .fly-li a:link, #diy-hd .fly-li a:visited,
+#foot-nav .fly-li a:link, #foot-nav .fly-li a:visited { color: #176684; }
+#diy-hd .fly-li a:hover,
+#foot-nav .fly-li a:hover { color:#BA0707;}
+#diy-hd .fly-li a:active,
+#foot-nav .fly-li a:active { color: #ff3333;}
+
+/* categories */
+#diy-categories { margin-left: 115px; margin-right: 14px; }
+#diy-categories a { text-transform: uppercase; font-size: 85%; line-height: 1; font-weight: bold; padding: 8px 14px 9px; }
+#diy-categories li#links { float: right; text-align: right; line-height: 1;padding-top: 3px;}
+#diy-categories li#links a { font-size: 77%; background: #14110d;display:inline; text-transform: none; font-weight: normal;padding:4px 6px 4px 7px; /*margin-left:3px;*/}
+#diy-categories li a:hover, #diy-categories li#links a:hover { color: #FFF; background-color: #9F1B1B; text-decoration: none; }
+#diy-categories li a:active, #diy-categories li#links a:active { color: #999; background-color: #4D0D03; text-decoration: none; }
+#diy-categories li {
+    margin: 0 1px;
+}
+#diy-categories li a {
+    background-color: #14110d;
+}
+/* show the active tab based on the body id. default to home improvement tab*/
+#diy-categories #home-imp-tab a { background: #9F1B1B; color: #CCC; text-decoration: none; padding-bottom: 11px; margin-left: 0;}
+
+body#home #home-imp-tab a,
+body#home-improvement #home-imp-tab a,
+body#tv-shows #shows-tab a,
+body#experts-and-hosts #experts-hosts-tab a,
+body#mp-home #shop-tab a,
+body #services #services-tab a,
+body#blog-cabin .menu #blog-cabin a { background: #9F1B1B; color: #CCC; text-decoration: none; padding-bottom: 11px;}
+
+body#tv-shows #diy-categories #home-imp-tab a,
+body#experts-and-hosts #diy-categories #home-imp-tab a,
+body#mp-home #diy-categories #home-imp-tab a,
+body #services #diy-categories #home-imp-tab a,
+body#blog-cabin #diy-categories #home-imp-tab a { background-color: #14110D; color: #d8c5a5; padding: 8px 14px 9px;}
+
+body#tv-shows #diy-categories #home-imp-tab a:hover,
+body#experts-and-hosts #diy-categories #home-imp-tab a:hover,
+body#mp-home #diy-categories #home-imp-tab a:hover,
+body #services #diy-categories #home-imp-tab a:hover,
+body#blog-cabin #diy-categories #home-imp-tab a:hover { background-color: #9F1b1b; color: #FFF;}
+
+/* section tabs */
+#diy-sub-nav { margin: 0 14px; border-bottom: 1px solid #cdcdcd; width: 966px; background-color: #9F1B1B;}
+#diy-sub-nav li a {
+    cursor: pointer;
+}
+#diy-sub-nav li a:link, #diy-sub-nav li a:visited  {line-height: 2.9; color: #F7F7F7; padding: 0 9px; font-size: 13px; background: #9f1b1b; font-weight: bold;}
+#diy-sub-nav li:hover a, #diy-sub-nav li.nav-on a {color: #FFFFFF;text-decoration: none;background: #BA0707;}
+#diy-sub-nav li a:active {color:#999999; background: #681104;}
+#diy-sub-nav li a:focus {outline:none}
+/*
+#diy-sub-nav #plumbing-nav {border-right: 1px solid #ddd;}
+#diy-sub-nav #bathroom-nav {border-left: 1px solid #fff;}
+#diy-sub-nav li.all-nav {float: right;}
+#diy-sub-nav li.all-nav a:link, #diy-sub-nav li.all-nav a:visited { font-size: 85%; font-weight: normal; color: #666666; padding: 0 13px; line-height: 3.4;}
+*/
+
+
+#diy-sub-nav .nav-item-wrapper {
+    display: block;
+    float: left;
+}
+
+/* diy message board fixes due to missing DOCTYPE */
+.diy-msg-board-hd #diy-sub-nav .nav-item-wrapper {
+    color: #F7F7F7;
+}
+.diy-msg-board-hd #diy-sub-nav li a:hover .nav-item-wrapper {
+    color: #FFFFFF;
+}
+.diy-msg-board-hd #diy-sub-nav li a {
+    _display: inline;
+}
+.diy-msg-board-hd .nav #diy-categories li#links a {
+    _display: inline-block;
+}
+.diy-msg-board-hd #diySearchForm div.input {
+    _width: 443px;
+}
+.diy-msg-board-ft #diySearchForm div.input {
+    _width: 430px;
+}
+.diy-msg-board-hd #diySearchForm div.input #diy-search-input,
+.diy-msg-board-ft #diySearchForm div.input #diy-search-input {
+    _height: 30px;
+}
+#diy-hd.diy-msg-board-hd .nav {
+    _position: relative;
+}
+#diy-hd.diy-msg-board-hd .nav .home-improvement-nav,
+#diy-hd.diy-msg-board-hd .nav .tv-shows-nav,
+#diy-hd.diy-msg-board-hd .nav .services-nav,
+#diy-hd.diy-msg-board-hd .nav .experts-and-hosts-nav {
+    _position: absolute;
+}
+
+#diy-hd.diy-msg-board-hd #diy-sub-nav .flyout {
+    _top: 55px !important;
+}
+#diy-hd.diy-msg-board-hd .nav li#links {
+    _padding-right: 14px;
+}
+#diy-hd.diy-msg-board-hd .find-project a#pf-btn {
+    _overflow: hidden;
+}
+.diy-msg-board-hd .find-project a#pf-btn {
+    _padding-right: 50px;
+}
+#diy-ft.diy-msg-board-ft #foot-nav .nav .column {
+    height: auto;
+}
+#diy-sub-nav .nav-arrow {
+    display: block;
+    height: 4px;
+    width: 7px;
+    background: url(../imgs/se/diy-ui.png) -875px -580px no-repeat;
+    margin: 17px 0 0 3px;
+    float: left;
+}
+#diy-sub-nav a:hover .nav-arrow {
+    background-position: -882px -580px;
+}
+#diy-sub-nav li a:active .nav-arrow {
+    background-position: -889px -580px;
+}
+/* hide the main navigation when it shouldn't show up */
+ul.tv-shows-nav,
+ul.experts-and-hosts-nav,
+ul.services-nav,
+ul.blog-cabin-nav, 
+body#tv-shows ul.home-improvement-nav,
+body#tv-shows ul.experts-and-hosts-nav,
+body#tv-shows ul.services-nav,
+body#tv-shows ul.blog-cabin-nav, 
+body#experts-and-hosts ul.home-improvement-nav,
+body#experts-and-hosts ul.tv-shows-nav,
+body#experts-and-hosts ul.services-nav,
+body#experts-and-hosts ul.blog-cabin-nav, 
+body #services ul.home-improvement-nav,
+body #services ul.tv-shows-nav,
+body #services ul.experts-and-hosts-nav,
+body #services ul.blog-cabin-nav,
+body#blog-cabin ul.home-improvement-nav, 
+body#blog-cabin ul.tv-shows-nav, 
+body#blog-cabin ul.experts-and-hosts-nav,
+body#blog-cabin ul.services-nav { display: none; }
+
+/* display the main navigation when in the appropriate section */
+body#tv-shows ul.tv-shows-nav,
+body#experts-and-hosts ul.experts-and-hosts-nav,
+body #services ul.services-nav,
+body#blog-cabin ul.blog-cabin-nav { display: block; }
+
+/* sub nav pulldowns */
+#diy-sub-nav .flyout{position:absolute;left:-9999em;z-index:5000; text-indent:0; *margin-top: -14px;}
+#diy-sub-nav .columns{width: 327px;padding-bottom: 3px;}
+#diy-sub-nav .columns ul {width: 149px;_width:142px;margin-left:14px; padding-bottom: 3px;}
+#diy-sub-nav .all-nav .list{height: 135px;margin:0 7px 0 14px; padding-bottom: 3px;overflow: auto;}
+#diy-sub-nav .fly-bd h3 {margin-bottom: 9px;}
+
+#diy-sub-nav .fly-bd a:hover,
+body ul#diy-sub-nav .fly-bd a:hover,
+body ul#diy-sub-nav .all-nav .fly-bd a:hover, #diy-sub-nav .fly-bd .more:hover {color:#BA0707; text-decoration: underline;}
+
+#diy-sub-nav .fly-bd a:link,
+#diy-sub-nav .fly-bd a:visited,
+#diy-sub-nav .all-nav .fly-bd a:link,
+#diy-sub-nav .all-nav .fly-bd a:visited {background: none; color:#176684; font-weight: normal; font-size: 100%; line-height: 1.55;padding:0;}
+
+#diy-sub-nav .fly-bd a:active {color:#FF3333;}
+#diy-sub-nav .fly-bd ul.list li {background-position: 0 -369px; float:none;line-height:1.55;}
+#diy-sub-nav .fly-bd .more:link,
+#diy-sub-nav .fly-bd .more:visited  {font-size:85%; margin-left:14px; padding:0 0 11px 0; line-height:1.25;}
+
+#diy-sub-nav li:hover .flyout {left:auto;}
+/* sub nav sections */
+body.painting #diy-sub-nav #painting-nav a,
+body.windows-walls-and-doors #diy-sub-nav #windows-walls-nav a,
+body.floors #diy-sub-nav #floors-nav a,
+body.decorating #diy-sub-nav #decorating-nav a, 
+body.remodeling #diy-sub-nav #remodeling-nav a,
+body.electrical #diy-sub-nav #electrical-nav a,
+body.plumbing #diy-sub-nav #plumbing-nav a,
+body.bathroom #diy-sub-nav #bathroom-nav a,
+body.kitchen #diy-sub-nav #kitchen-nav a,
+body.outdoors #diy-sub-nav #outdoors-nav a {color: #CCC; background: #681104; background-position: -896px -580px;}
+
+/* floating header project finder */
+#diy-site-hd { height: 63px; width: 100%; position: relative; z-index: 10;}
+/* IE6 fixed position */
+/*#diy-site-hd { _position: absolute; _top: expression(document.documentElement.scrollTop + 63 - offsetHeight); }*/
+
+#diy-masthead {  height: 63px; width: 966px; margin: 0 auto; }
+#diy-logo { width: 88px; float:left;}
+#diy-logo a { display: block; height: 62px; text-indent: -9999px; color: #fff; background: #b60505 url(../imgs/se/diy_masthead.png) no-repeat; border-bottom: 1px solid #cf2829; overflow: hidden; _background-image: none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.diynetwork.com/webdiy/diy20/imgs/se/diy_masthead.png', sizingMethod='crop'); }
+/*search*/
+#diy-site-hd .search { width: 542px; height: 62px; background: #3e322a; border-bottom: 1px solid #594b3e; float: left;}
+#diy-site-hd .search form {margin: 15px 14px 0;}
+#diy-site-hd .search .input {width: 426px;}
+#diy-site-hd .search button {float: left; background-position: -568px -580px;}
+#diy-site-hd .search button:active {background-position:-637px -580px;}
+#diy-site-hd .search .site-search-options { float: left;}
+#HeadSrchOpt { position: absolute; } /* help prevent some jumping on dropdown render */
+
+#diy-masthead .find-project { float: left; background: #2d2821; width: 336px; height: 62px; border-bottom: 1px solid #3b342b;}
+#diy-masthead .find-project a { color: #fff; font-weight: bold; font-size: 116%; text-transform: uppercase; width: 239px; height:32px; background:transparent url(../imgs/se/diy-ui.png) no-repeat 0 -797px;display:block;margin: 15px 0 0 83px;outline:none;line-height: 2.2;text-indent: 14px;text-shadow: -1px -1px 0 #7e1e1f;}
+#diy-masthead .find-project a:visited, #diy-masthead .find-project a:hover, #diy-masthead .find-project a:active{text-decoration: none;}
+#diy-masthead .find-project a:active {background-position: -239px -797px ;outline:none}
+#diy-masthead .find-project a.pf-btn-open {background-position: -478px -797px ;}
+#diy-masthead .find-project a.pf-btn-open:active {background-position: -717px -797px ;}
+
+
+
+#find-project-wrap {display: none; background:#151615;width: 966px; margin: 0 auto;}
+#find-project-wrap .proj-wrap {width: 238px; float: left;margin: 7px 0 7px 7px; }
+#find-project-wrap .proj-pane { border: 1px solid #373737;}
+#find-project-wrap h2 {font-weight: bold;color: #ccc; font-size:85%;background: #373737; padding-left: 7px;}
+
+.proj-tabs {background: none;width: 240px;padding: 0;}
+#find-project-wrap .proj-tabs h2 {color: #909090; background: none; display: block; float:left;padding-left: 7px;cursor: pointer;}
+#find-project-wrap .proj-tabs #pf-all-proj {width: 114px;}
+#find-project-wrap .proj-tabs #pf-tv-prog {width: 111px;}
+#find-project-wrap .proj-tabs .pf-tab-on{color: #fff; background: #373737;}
+
+.proj-pane .empty-pane {padding-top: 29px;/*display: none; */color: #aaa; font-size: 182%; font-weight: normal; text-align: center; line-height: 26px;padding-left:0;}
+.proj-pane .empty-pane:hover {background: none;color: #aaa;}
+.proj-pane .loading { height: 100px; padding: 0; color: #aaa; font-size: 182%; font-weight: normal; text-align: center; line-height: 26px; background: url(../imgs/se/loader-dark.gif) no-repeat 97px 40px; }
+.proj-pane .loading:hover { color: #aaa; }
+
+.proj-pane ul {display: none;overflow: auto;height:121px;padding-top: 10px;}
+.proj-pane ul.populated {background: #202020; }
+.proj-pane ul li {font-size:85%; font-weight: bold; color: #a8a8a8; padding-left: 8px;cursor: pointer;line-height: 2;margin: 0 6px;}
+.proj-pane ul li:hover{color: #fff;}
+.proj-pane ul li.sel  {color: #fff; background: #343434;}
+.proj-pane ul li a { display: none; float: right; width: 14px; height: 14px; margin: 4px 7px 0 0; text-indent: -999em; background: url(../imgs/se/diy-ui.png) no-repeat -980px -797px; font-size: 0; }
+.proj-pane ul li.sel a { display: block; }
+#pf-results { display: none; width: 222px;float: left; padding: 20px 0 0; text-align: center;}
+#pf-results #avail-proj {color: #aaa;font-size: 174%;font-weight: bold;margin: 0 auto 0;line-height: 1;}
+#pf-results #avail-proj-txt {color: #aaa;font-size: 131%;}
+#pf-results #get-proj {width: 84px;margin: 13px auto 5px;}
+
+/* the flyout styles are overriden based on where this lives so we have to add them back */
+#sign-in { display: inline;}
+body #diy-categories li#links a {*display: block; *float: left; *margin-right: 5px;}
+body #diy-categories li#links #sign-in a {*margin-right: 0;}
+/* safari hack */
+body:first-of-type #sign-in {display: inline-block;}
+#sign-in .flyout { top: 21px; right: 14px; display: none; }
+#sign-in .flyout .fly-bd h3 { margin-bottom: 0; }
+#diy-categories #sign-in .flyout { text-align: left; }
+#diy-categories #sign-in .flyout .fly-bd .close { margin: 0; padding: 0; background: url(../imgs/se/sp-popups.png) no-repeat 0 0; }
+#diy-categories #sign-in .flyout .fly-li a { display: block; padding: 0 0 0 14px; color: #176684; font-size: 100%; line-height: 20px; background: none; }
+#diy-categories #sign-in .flyout .fly-li a:hover { margin: -2px 0; padding: 2px 0 2px 14px; color: #a91d1e; background-color: #fff; text-decoration: none; }
+#diy-categories #sign-in .flyout .fly-li a.sign-out { font-size: 85%; }
+.flyout p.cta {
+    padding-left: 14px;
+    font-size: 12px;
+}
+
+
+
+/* auto suggest */
+#asug.flyout { width:341px; padding: 0px; overflow: hidden; z-index: 100000;}
+#asug.flyout ul { *position: relative; width: 100%; list-style-position: outside; list-style: none; padding: 0;margin: 0; }
+#asug.flyout iframe {display:none; position:absolute; top:0; left:0; z-index:-1; filter:mask(); width:3000px; height:3000px; }
+#asug.flyout li {color: #1e7bac; margin: 0 2px; padding: 0 10px; cursor: pointer; display: block; width: 304px; _width:305px; overflow: hidden;}
+#asug.flyout li.ac_over { color: #b50a36; background: #fff;}
+#asug.flyout .fly-bd h3 { margin-bottom: 7px;}
+
+body #leaderboard-wrap { text-align: center; margin: 0 auto; background-color: #AAA;}
+body #leaderboard-wrap #leaderboard { z-index: 1000; margin: 0 auto; text-align: center; padding: 0px; width: 994px;}
+body.topic #leaderboard-wrap, body.package #leaderboard-wrap {background-color: transparent;}
+/* noquery search popup */
+#diy-site-hd .noquery { display: none; margin-left: -481px; position: absolute; top: 48px; left: 50%; z-index: 5000; }
+#diy-site-hd .noquery .col1 { float: left; width: 100px; height: 125px; margin: 17px 0 0 4px; background: url(../imgs/se/noquery-arrow.png) no-repeat 0 0; }
+#diy-site-hd .noquery .col2 { margin-left: 104px; padding-top: 15px; }
+#diy-site-hd .noquery p { margin-bottom: 5px; line-height: 18px; }
+#diy-site-hd .noquery ul { padding-bottom: 14px; line-height: 20px; }
+
+body #diy-hd #diy-sub-nav .fly-bd ul.list li a {
+    background-color: transparent;
+    color: #176684
+}
+
+/*Social Icons*/
+#diy-masthead #social-icons {display: inline; width:84px;float: right;margin-top:20px;}
+#diy-masthead #social-icons ul li{float:left;}
+#diy-masthead #social-icons ul li a{background: url('../imgs/social_sprite.gif') no-repeat; width:22px; height:22px; display: block;}
+#diy-masthead #social-icons ul li a#social-fb{background-position: 0px;}
+#diy-masthead #social-icons ul li a#social-twitter{background-position:-30px  0px; margin:0 8px; }
+#diy-masthead #social-icons ul li a#social-pinterest{background-position:-58px  0px; }
+
+/* Made + Remade tab*/
+#diy-categories #remade-tab a{background:url('../imgs/nav_made-remade.gif') no-repeat;width:117px; height:28px; padding:0; margin:0px;}
+#diy-categories #remade-tab a:active{background:url('../imgs/nav_made-remade.gif') no-repeat;background-position: 0px -56px}
+#diy-categories #remade-tab a:hover{background:url('../imgs/nav_made-remade.gif') no-repeat;background-position: 0px -28px}
+
+

@@ -1,0 +1,189 @@
+.photo-gallery .pg-navigation {
+    border-radius:4px 4px 0 0;
+    padding:30px 0;
+    }
+
+.photo-gallery .pg-navigation a {
+    background:none;
+    }
+
+.photo-gallery .pg-photo-description {
+    width:600px;
+    }
+
+.photo-gallery .pg-photo-description cite {
+    color:#999999;
+    }
+
+.photo-gallery .pg-photo-description h5 {
+    font:18px trebuchet MS;
+    margin:10px 0;
+    }
+
+body.garden-galleries #bd-container .photo-gallery .pg-photo-description h1 {
+    font:18px trebuchet MS;
+    margin:10px 0;
+    }
+
+body.garden-galleries #bd-container .photo-gallery .pg-photo-description {
+    color:#fff;
+    }
+
+.photo-gallery .pro-filters .filter-wrap .narrowby {
+    float:left;
+    margin-left:5px;
+    }
+
+.photo-gallery .pro-filters .filter-wrap .click-wrap {
+    background:url("../imgs/hgtv_ui_207.png") no-repeat scroll right -413px transparent;
+    cursor:pointer;
+    float:left;
+    height:17px;
+    margin:0 5px;
+    width:85px;
+    padding-right:15px;
+    }
+
+.photo-gallery .pro-filters .filter-wrap .click-wrap a {
+    background:url("../imgs/hgtv_ui_207.png") no-repeat scroll left -413px transparent;
+    font-family:'trebuchet ms', sans-serif;
+    font-size:77%;
+    font-weight:bold;
+    height:17px;
+    margin-left:-2px;
+    margin-top:0px;
+    position:static;
+    overflow:hidden;
+    padding:0 0 0 10px;
+    }
+
+.photo-gallery .pg-navigation a, .photo-gallery .pg-navigation a span {
+    background:none;
+    height:28px;
+    }
+
+.photo-gallery .pg-navigation a.nextprev.disabled {
+    opacity:.4;
+    filter:alpha(opacity = 40);
+    cursor:default;
+    }
+
+.photo-gallery .pg-navigation .left {
+    margin-left:15px;
+    width:175px;
+    }
+
+.photo-gallery .pg-navigation .left a, .photo-gallery .pg-navigation .left a:hover.disabled {
+    padding-right:20px;
+    padding-bottom:1px;
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll right -576px transparent;
+    }
+
+.photo-gallery .pg-navigation .left a span, .photo-gallery .pg-navigation .left a:hover.disabled span {
+    font:bold 93%/2.42em "trebuchet ms", sans-serif;
+    margin-left:-3px;
+    padding-left:41px;
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll left -576px transparent;
+    }
+
+.photo-gallery .pg-navigation .left a:hover {
+    background-position:right -605px;
+    }
+
+.photo-gallery .pg-navigation .left a:hover span {
+    background-position:left -605px;
+    }
+
+.photo-gallery .pg-navigation .right {
+    float:right;
+    width:145px;
+    }
+
+.photo-gallery .pg-navigation .right a, .photo-gallery .pg-navigation .right a:hover.disabled {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll left -692px transparent;
+    padding-left:20px;
+    padding-bottom:1px;
+    }
+
+.photo-gallery .pg-navigation .right a span, .photo-gallery .pg-navigation .right a:hover.disabled span {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll right -692px transparent;
+    font:bold 93%/2.42em "trebuchet ms", sans-serif;
+    padding-right:45px;
+    margin-right:-3px;
+    }
+
+.photo-gallery .pg-navigation .right a:hover {
+    background-position:left -721px;
+    }
+
+.photo-gallery .pg-navigation .right a:hover span {
+    background-position:right -721px;
+    }
+
+.garden-designer-info {
+    padding:20px;
+    }
+
+.garden-designer-info h2 {
+    font:21px trebuchet MS;
+    margin-bottom:20px;
+    }
+
+.garden-designer-info .primary-info {
+    border-bottom:1px solid #DAE7E3;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    }
+
+.garden-designer-info .left-info {
+    float:left;
+    width:49%;
+    }
+
+.garden-designer-info .right-info {
+    float:right;
+    width:49%;
+    }
+
+.garden-designer-info ul li {
+    line-height:21px;
+    }
+
+.garden-designer-info ul li a {
+    font-weight:bold;
+    }
+
+.garden-designer-info .speech-bubble {
+    background:none repeat scroll 0 0 #F1F6F2;
+    border-radius:5px;
+    padding:15px 20px;
+    width:216px;
+    border:1px solid #DAE7E3;
+    position:relative;
+    top:5px;
+    }
+
+.garden-designer-info .speech-bubble .arrow {
+    background:url("../imgs/header-sprite.png") no-repeat scroll 0 -232px transparent;
+    height:21px;
+    left:-14px;
+    position:absolute;
+    top:25px;
+    width:15px;
+    }
+
+.garden-designer-info .speech-bubble h4 {
+    color:#EF4141;
+    font:bold 15px arial;
+    }
+
+.garden-designer-info .secondary-info {
+    border-bottom:1px solid #DAE7E3;
+    padding-bottom:20px;
+    margin-bottom:-20px;
+    }
+
+.garden-designer-info .secondary-info h4 {
+    font:bold 13px arial;
+    margin-bottom:5px;
+    }

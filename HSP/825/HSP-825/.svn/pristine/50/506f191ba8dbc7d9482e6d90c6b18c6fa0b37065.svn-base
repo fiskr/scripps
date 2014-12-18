@@ -1,0 +1,132 @@
+<!-- Begin Module: HGTV Show Hosts -->
+<aside class="portfolio-promo centered clrfix">
+	<header>
+			<h2>HGTV Show Hosts</h2>
+	</header>
+	<div class="royalSlider rsDefault" id="hgtv-hosts">
+		<div>
+			
+			<div class="pod">
+				<a href="/david-bromstad/bio/index.html">
+					<img data-src="http://img.hgtv.com/HGTV/2011/05/18/HSTAR6_David-Bromstad-Bio_med.jpg" width="120" height="90" />
+					<span class="title">David Bromstad</span>
+				</a>
+			</div>
+
+			
+			<div class="pod">
+				<a href="/genevieve-gorder/bio/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2012/03/30/HSTAR7_Genevieve-Gorder_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Genevieve Gorder</span>
+				</a>
+			</div>
+
+		</div>
+		<div class="rsSlide">
+			
+			<div class="pod">
+				<a href="/vern-yip/bio/index.html">
+					<img data-src="http://img.hgtv.com/HGTV/2011/05/18/HSTAR6_Vern-Yip-Bio_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Vern Yip</span>
+				</a>
+
+			</div>
+
+			<div class="pod">
+				<a href="/sabrina-soto/bio/index.htm">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2009/06/17/Sabrina-Soto-updated-bio_med.jpg" width="120" height="90" />
+					<span class="title">Sabrina Soto</span>
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="rsSlide">
+			
+			<div class="pod">
+				<a href="/on-tv/drew-scott/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2013/05/17/TalentMaster_Drew-Scott-2012-120104-0184-ret_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Drew Scott</span>
+				</a>
+
+			</div>
+
+			<div class="pod">
+				<a href="/on-tv/jonathan-scott/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2013/05/17/TalentMaster_Jonathan-Scott-2012-62922-5046_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Jonathan Scott</span>
+				</a>
+
+			</div>
+
+		</div>
+
+		<div class="rsSlide">
+			
+			<div class="pod">
+				<a href="/decorating-basics/qa-with-candice-olson/index.html">
+					<img data-src="http://img.hgtv.com/HGTV/2010/12/03/HCTAL_Candice-Olson-Bio_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Candice Olson</span>
+				</a>
+
+			</div>
+
+			<div class="pod">
+				<a href="/on-tv/anthony-carrino/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2011/10/03/TalentMaster_Bio-Anthony-Carrino-HKITC-12_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Anthony Carrino</span>
+				</a>
+
+			</div>
+
+		</div>
+
+
+		<div class="rsSlide">
+			
+			<div class="pod">
+				<a href="/john-colaneri/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2011/10/03/TalentMaster_Bio-John-Colaneri-HKITC-16_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">John Colaneri</span>
+				</a>
+
+			</div>
+
+			<div class="pod">
+				<a href="/sarah-richardson/bio/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2010/07/12/talentmaster_Bio-Sarah-Richardson-Sarahs-House_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Sarah Richardson</span>
+				</a>
+
+			</div>
+
+		</div>
+
+
+		<div class="rsSlide">
+			
+			<div class="pod">
+				<a href="/on-tv/chris-lambton/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2012/04/24/TalentMaster_Chris-Lambton-ext-5052_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Chris Lambton</span>
+				</a>
+
+			</div>
+
+			<div class="pod">
+				<a href="/scott-mcgillivray/bio/index.html">
+					<img data-src="http://hgtv.sndimg.com/HGTV/2008/12/09/ScottMcGillivray_s3x4_med.jpg" width="120" height="90" />
+					<span class="title">Scott McGillivray</span>
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		HGTV.M.DoubleWideCarousel('#hgtv-hosts');
+	</script>
+</aside>
+		

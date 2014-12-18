@@ -1,0 +1,183 @@
+.notes, .notes a, #subhead, #subhead a {
+	font-size: 16px;
+	line-height: 24px;
+
+	h4 {
+		font-size: 21px;
+		line-height: 21px;
+		padding: 0 0 16px 0;		
+	}
+
+}
+
+.about-designers {
+	font-size: 14px;
+	line-height: 16px;
+
+	h4 {
+		font-size: 21px;
+		line-height: 21px;
+		padding: 24px 0 16px 0;		
+	}
+
+	a{
+		font-size: 14px;
+		line-height: 16px;
+
+	}
+
+	br {
+		line-height: 32px;
+	}
+
+}
+
+.see-more{/*make this wider for long text*/
+    overflow: hidden;
+    padding:10px 0;
+    margin: 24px 0 5px 5%;
+    width: 90%;
+    height: auto;
+    font-family: arial;
+    font-size:1.4em;
+    line-height:1.2em;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px rgba(256,256,256, 0.5);
+    text-align: center;
+	&:before{
+		margin-right: 5px;
+    	font-family: hgtv_iconsregular;
+    	font-size: 16px;
+   		text-shadow: 0px 1px 1px rgba(256,256,256, 0.5);
+    	font-weight: normal;
+    }
+}
+a.see-more {
+    padding: 10px 0;
+}
+
+#dp-head {
+	background: url("../imgs/spMobilePackage_Designers-Portfolio-fff5f6_s1280x144.jpg") #fff5f6 no-repeat;
+	background-size: 640px 100%;
+    .drop-down {top: 19px; }
+}
+
+#gg-head {
+	background: url("../imgs/spMobilePackage_Garden-Galleries-f0f4eb_s1280x144.jpg") #f0f4eb no-repeat;
+	background-size: 640px 100%;
+    .drop-down {top: 19px; }
+}
+
+/* banners -- first ones are current, and the generic are for older tentpoles*/
+/* dream home, smart home banners defined in dream.less */
+#uo-head {
+	background: url("http://hgtv.sndimg.com/HGTV/2013/03/29/UO2013_banner-location-mobile-ebf7fb_1280x144.jpg") #ebf7fb no-repeat;
+	background-size: 640px;
+	.drop-down {top: 28px; }
+}
+
+#uo-head-gen {
+	background: url("http://hgtv.sndimg.com/HGTV/2013/04/10/Urban-Oasis_generic-banner-mobile-fbf4f4_1280x144.jpg") #fbf4f4 no-repeat;
+	background-size: 640px;
+	.drop-down {top: 28px; }
+}
+
+#nobanner {//this is for sections that have a super-section and the dropdown
+	h1 {
+	    line-height: 24px;
+	    padding-top: 6px;
+
+	    a {font-size: 24px;}
+	}
+	  }
+
+#empty.page-head {
+	border-bottom: none;
+	min-height: 0;
+	padding:0;
+
+
+}
+
+#dp-content {
+	img {
+		width: 90%;
+		max-width: 400px;
+	}
+}
+
+#content {
+	.main-image {
+		position: relative;
+		width: 100%;
+		max-width: 400px;
+		a {
+			font-size: inherit;
+		}
+		img {
+			width: 100%;
+			max-width: 400px;			
+		}
+
+		
+		.view-gallery { 			
+			position: absolute;
+			height:16px;
+			padding: 8px 0;
+			background: black;
+			background: rgba(0,0,0,.75);
+			width:120px;
+			left: 50%;
+			margin-left: -60px;
+			top: 50%;
+			margin-top: -16px;
+			font-family: arial;
+    		font-size:1.4em;
+    		line-height:1.2em;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+			border-radius: @tab-radius;
+			.drop-shadow(0 0 2px rgba(255,255,255,.5));
+
+			&:before{
+				margin-right: 5px;
+    			font-family: hgtv_iconsregular;
+    			font-size: 16px;
+    			font-weight: normal;
+			};
+		}
+
+	}
+
+}
+
+#author {
+	font-size: 12px;
+	color: #999;
+	padding-bottom: 19px;
+}
+
+#credit, #byline, #credit a, #byline a {
+	font-size: 12px;
+	color: #999;
+	padding: 10px 0;
+	font-style: italic;
+}
+#credit a, #byline a {
+	color: @link-color;
+}
+
+h1.headline {
+	padding-bottom: 19px;
+}
+
+#psection{
+	font-size: 12px;
+	color: @heading-color;
+	margin-bottom:-8px;
+}
+
+
+
+

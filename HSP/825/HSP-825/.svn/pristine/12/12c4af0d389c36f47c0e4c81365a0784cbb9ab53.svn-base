@@ -1,0 +1,48 @@
+<!--
+    <div class="photosByTopic" id="photosByTopic-446498">
+-->
+<div id="photos-by-topic-module">
+  <h2 class="centered">Photos by Topic</h2>
+  <div class="tab"><h3 class="active">Rooms</h3><h3>Decorating</h3><h3>Outdoors</h3></div>
+  <div class="super-section">
+    <div class="content">
+      <ul>
+	<li><a href="/bathrooms/index.html">Bathrooms</a></li>
+	<li><a href="/kitchens/index.html">Kitchens</a></li>
+	<li><a href="/bedrooms/index.html">Bedrooms</a></li>
+	<li><a href="/dining-rooms/index.html">Dining Rooms</a></li>
+	<li><a href="/living-rooms/index.html">Living Rooms</a></li>
+	<li><a href="/kids-rooms/index.html">Kids' Rooms</a></li>
+	<li><a href="/specialty-rooms/index.html">Specialty Rooms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="super-section">
+    <div class="content">
+      <ul>
+	<li><a href="/color/index.html">Color</a></li>
+	<li><a href="/entertaining/index.html">Entertaining</a></li>
+	<li><a href="/painting/index.html">Painting</a></li>
+	<li><a href="/walls-doors-and-floors/index.html">Walls, Doors and Floors</a></li>
+	<li><a href="/window-treatments/index.html">Window Treatments</a></li>
+	<li><a href="/handmade/index.html">Handmade</a></li>
+	<li><a href="/decorating-basics/index.html">Decorating Basics</a></li>
+	<li><a href="/homekeeping/index.html">Homekeeping</a></li>
+	<li><a href="/accessories/index.html">Accessories</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="super-section">
+    <div class="content">
+      <ul>
+	<li><a href="/decks-patios-porches-and-pools/index.html">Decks, Patios, Porches and Pools</a></li>
+	<li><a href="/gardening/index.html">Gardening</a></li>
+	<li><a href="/landscaping/index.html">Landscaping</a></li>
+	<li><a href="/outdoor-rooms/index.html">Outdoor Rooms</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--
+</div>
+-->

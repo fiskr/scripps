@@ -1,0 +1,34 @@
+#hg-sitenav .topnav li:hover .toplink {
+    color:#fff;
+    }
+
+#hg-sitenav .topnav li:hover .toplink span.l {
+    background-position:left -558px;
+    }
+
+#hg-sitenav .topnav li:hover .toplink span.c {
+    background-position:center -558px;
+    }
+
+#hg-sitenav .topnav li:hover .toplink span.r {
+    width:7px;
+    background-position:right -558px;
+    }
+
+#hg-sitenav .topnav li:hover .subnav {
+    display:block;
+    }
+
+#hg-sitenav .subnav > li a:hover {
+    background-color:#ef4141;
+    text-decoration:none;
+    }
+
+#hg-sitenav .subnav > li a:hover span.r, #hg-sitenav .subnav > li.sel a span.r {
+    background-position:-473px -502px;
+    }
+
+.global-search select {
+    position:static;
+    left:auto;
+    }

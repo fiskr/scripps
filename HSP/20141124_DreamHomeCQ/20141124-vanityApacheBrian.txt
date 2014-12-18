@@ -1,0 +1,6 @@
+hgtv-infrastructure-cq5
+
+instace/config/dispatcher/apache/
+
+www is default
+

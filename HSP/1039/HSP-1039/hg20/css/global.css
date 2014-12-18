@@ -1,0 +1,2450 @@
+* {
+    outline:none
+    }
+
+body {
+    color:#000;
+    background:#fff;
+    }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin:0;
+    padding:0;
+    }
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    }
+
+fieldset, img {
+    border:0;
+    }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style:normal;
+    font-weight:normal;
+    }
+
+li {
+    list-style:none;
+    }
+
+caption, th {
+    text-align:left;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    font-size:100%;
+    font-weight:normal;
+    }
+
+q:before, q:after {
+    content:'';
+    }
+
+abbr, acronym {
+    border:0;
+    font-variant:normal;
+    }
+
+sup, sub {
+    line-height:-1px;
+    vertical-align:text-top;
+    }
+
+sub {
+    vertical-align:text-bottom;
+    }
+
+input, textarea, select {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    }
+
+body {
+    font:13px/1.7 arial, helvetica, clean, sans-serif;
+    *font-size:small;
+    *font:x-small;
+    }
+
+table {
+    font-size:inherit;
+    font:100%;
+    }
+
+pre, code, kbd, samp, tt {
+    font-family:monospace;
+    *font-size:108%;
+    line-height:99%;
+    }
+
+.clrfix {
+    zoom:1;
+    }
+
+.clrfix:after {
+    content:".";
+    display:block;
+    height:0;
+    width:0;
+    line-height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+.clr {
+    clear:both;
+    }
+
+body {
+    background:#e1e6e5;
+    color:#444;
+    }
+
+body > iframe, body > a {
+    visibility:hidden;
+    }
+
+a {
+    color:#386cb4;
+    text-decoration:none;
+    }
+
+a:hover {
+    text-decoration:underline;
+    }
+
+a:active {
+    color:#386cb4;
+    text-decoration:none;
+    }
+
+a:visited {
+    color:#386cb4;
+    }
+
+strong {
+    font-weight:bold;
+    }
+
+em {
+    font-style:italic;
+    }
+
+p.minor {
+    font-size:77%;
+    color:#999;
+    }
+
+.pdf-ico {
+    *display:inline-block;
+    cursor:pointer;
+    white-space:nowrap;
+    }
+
+.pdf-ico span {
+    padding-right:23px;
+    background:#fff url(../imgs/HGTV_pdf_icon.png) no-repeat 100% 50%;
+    *display:inline-block;
+    }
+
+.bullet {
+    margin-left:7px;
+    padding-left:10px;
+    background:url(../imgs/bullet-red.png) no-repeat 0 5px;
+    }
+
+.inln-blt {
+    display:inline-block;
+    height:4px;
+    width:5px;
+    margin:0 4px 3px;
+    *margin-bottom:5px;
+    padding:0;
+    background:url(../imgs/bullet-red.png) no-repeat 0 0;
+    }
+
+.minor2 {
+    color:#999;
+    }
+
+/* a.video { padding-right: 26px; background: url(../imgs/sp-hgtv-icons.gif) right -490px no-repeat; } */
+
+/* global thumbnail styles */
+#hg-bd img, #hg-ft img {
+    display:block;
+    padding:2px;
+    border:1px solid #a7bfa9;
+    background-color:#fff;
+    }
+
+#hg-bd a:hover img, #hg-ft a:hover img {
+    border-color:#ef4141;
+    }
+
+#print #cnt img, #print #hdr img, #print #ftr img {
+    padding:0;
+    border:none;
+    }
+
+#hg-bd .plain-img img, #hg-bd img.plain-img {
+    padding:0;
+    border:none;
+    }
+
+.tn-stack {
+    display:block;
+    width:98px;
+    height:75px;
+    padding:0 0 3px 3px;
+    background:url(../imgs/tn-stack-frame-sm.png) no-repeat left bottom;
+    }
+
+.tn-vid {
+    display:block;
+    position:relative;
+    }
+
+.tn-vid span {
+    display:block;
+    width:98px;
+    height:75px;
+    position:absolute;
+    top:0;
+    right:0;
+    background:transparent url(../imgs/vid-thumb-overlay.png) no-repeat 50% 50%;
+    cursor:pointer;
+    }
+
+#site-wrapper {
+    zoom:1;
+    padding-top:7px;
+    }
+
+#site-wrapper:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#hg-bd {
+    width:994px;
+    margin:0 auto;
+    zoom:1;
+    }
+
+#hg-bd:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    }
+
+#hg-bd-wrap {
+    width:994px;
+    margin:7px auto 0;
+    }
+
+#bd-wrapper {
+    background:#fff;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    }
+
+#hg-e {
+    float:left;
+    width:361px;
+    margin-left:-1px;
+    border-left:1px solid #dae7e3;
+    _position:relative;
+    }
+
+#hg-w {
+    width:630px;
+    float:left;
+    border-right:1px solid #dae7e3;
+    _position:relative;
+    _z-index:1;
+    clear:both;
+    }
+
+#hg-w-ft {
+    clear:both;
+    }
+
+#hg-we {
+    width:406px;
+    padding-right:14px;
+    margin-bottom:8px;
+    float:right;
+    *zoom:1;
+    }
+
+#hg-ww {
+    float:left;
+    clear:left;
+    width:196px;
+    margin-right:14px;
+    *position:relative;
+    *z-index:5;
+    }
+
+/*For firefly social module icons*/
+#hg-ww div.pod20 ul.list li {
+    float:left;
+    display:block;
+    width:155px;
+    }
+
+#hg-ww div.pod20 ul.list li a {
+    cursor:pointer;
+    float:left;
+    display:block;
+    }
+
+body #hg-ww div.pod20 ul.list li a img {
+    padding:0;
+    float:left;
+    cursor:pointer;
+    display:block;
+    }
+
+body #hg-ww div.pod20 ul.list li img {
+    padding:0;
+    float:none;
+    display:inline;
+    margin:0 0 0 7px;
+    border:none;
+    position:relative;
+    top:1px;
+    }
+
+/* corner caps for IE7; masking with white */
+.tcap-wh, .bcap-wh {
+    height:2px;
+    clear:both;
+    }
+
+.tcap-wh .l {
+    display:block;
+    float:left;
+    width:2px;
+    height:2px;
+    *background:transparent url(../imgs/ie/cnr-mask-wh-tl.png) no-repeat;
+    _background-image:none;
+    }
+
+.tcap-wh .r {
+    display:block;
+    float:right;
+    width:2px;
+    height:2px;
+    *background:transparent url(../imgs/ie/cnr-mask-wh-tr.png) no-repeat;
+    _background-image:none;
+    }
+
+.bcap-wh .l {
+    display:block;
+    float:left;
+    width:2px;
+    height:2px;
+    *background:transparent url(../imgs/ie/cnr-mask-wh-bl.png) no-repeat;
+    _background-image:none;
+    }
+
+.bcap-wh .r {
+    display:block;
+    float:right;
+    width:2px;
+    height:2px;
+    *background:transparent url(../imgs/ie/cnr-mask-wh-br.png) no-repeat;
+    _background-image:none;
+    }
+
+h1 {
+    font-size:184.6%;
+    line-height:1;
+    margin:0 14px 14px;
+    }
+
+h1.section-title, h1.topic-title {
+    margin:14px;
+    font-size:246%;
+    font-family:"Trebuchet MS", sans-serif;
+    font-weight:bold;
+    color:#ef4141;
+    }
+
+h2 {
+    font-size:146.5%;
+    line-height:1;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:14px;
+    }
+
+h3 {
+    font-weight:bold;
+    }
+
+#hg-we p {
+    padding-bottom:17px;
+    }
+
+/* ************************************** */
+/* lead elements  - belong somewhere else?  */
+/* ************************************** */
+
+/* generic lead (hg-w) */
+.generic-lead {
+    border-bottom:1px solid #dae7e3;
+    padding-left:14px;
+    margin:14px 0;
+    }
+
+.generic-lead h3.slug {
+    margin-bottom:3px;
+    font-family:'trebuchet ms', sans-serif;
+    font-weight:bold;
+    font-size:100%;
+    }
+
+.generic-lead .thumb {
+    float:left;
+    margin-right:10px;
+    }
+
+.generic-lead hr {
+    display:none;
+    margin:14px 0;
+    border:none;
+    background-color:#dae7e3;
+    *color:#dae7e3;
+    height:1px;
+    }
+
+.generic-lead .hd {
+    padding:0 12px;
+    border-bottom:1px solid #dae7e3;
+    line-height:45px;
+    }
+
+.generic-lead .hd span {
+    float:left;
+    color:#999;
+    font-size:77%;
+    }
+
+.generic-lead .hd .sponsors {
+    float:right;
+    }
+
+.generic-lead .hd .sponsors img {
+    display:block;
+    margin-top:8px;
+    }
+
+.generic-lead .bd .bd {
+    padding:0;
+    }
+
+.generic-lead .feature {
+    float:left;
+    border-right:1px solid #dae7e3;
+    padding:0 14px 10px 0;
+    width:272px;
+    }
+
+.generic-lead .feature p {
+    line-height:1.5;
+    padding-top:2px;
+    }
+
+.generic-lead .secondary {
+    float:left;
+    width:329px;
+    margin-left:-1px;
+    }
+
+.generic-lead .secondary br {
+    display:none; /* wtf is this doing here anyway? */
+    }
+
+.generic-lead .feature .vid-html video {
+	width:100%;		/* TENTPOLE-3844 - html5 video player width issue fix, was seen on tentpoles like HGTV Star and Brother vs Brother */
+	}
+	
+.generic-lead .feature-cartridge {
+    margin-bottom:6px;
+    border-bottom:1px solid #dae7e3;
+    padding:14px;
+    padding-top:0;
+    }
+
+.generic-lead .feature-cartridge.last {
+    border-bottom:none;
+    }
+
+.generic-lead .feature-cartridge p {
+    line-height:1.5;
+    margin-bottom:4px;
+    }
+
+.generic-lead .basic-cartridge {
+    margin:0 14px 14px;
+    }
+
+.generic-lead .basic-cartridge h5 {
+    text-transform:uppercase;
+    margin-left:14px;
+    }
+
+.generic-lead .lead-img img {
+	margin-bottom: 7px;
+}
+
+.generic-lead .pb-current {
+	line-height: 150%;
+	margin-bottom: 4px;
+}
+
+/* ************************************** */
+/*  to do....        */
+/* ************************************** */
+
+#hg-fullwidth {
+    width:994px;
+    margin:0 auto;
+    padding-top:0;
+    }
+
+#fullwidth-container {
+    margin:7px auto 0;
+    width:994px;
+    _zoom:1;
+    }
+
+#fullwidth-wrapper {
+    padding:0;
+    }
+
+#fullwidth-bd {
+    background:#fff;
+    float:left;
+    width:994px;
+    margin-top:0;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    _margin-top:-11px;
+    _position:relative;
+    _top:-15px;
+    }
+
+#fullwidth-w {
+    width:644px;
+    float:left;
+    margin-top:14px;
+    }
+
+#fullwidth-we {
+    width:510px;
+    float:right;
+    }
+
+#fullwidth-ww {
+    width:120px;
+    float:left;
+    clear:left;
+    margin-right:14px;
+    }
+
+#fullwidth-e {
+    width:308px;
+    float:right;
+    margin-right:8px;
+    margin-top:14px;
+    }
+
+#hg-ww ul.list {
+    padding-bottom:3px;
+    }
+
+#hg-ww ul.list li {
+    padding-right:7px;
+    list-style:none;
+    list-style:none;
+    }
+
+ul.list li {
+    background:url(../imgs/bullet-red.png) no-repeat left 7px;
+    padding-left:11px;
+    line-height:1.38;
+    list-style:none;
+    }
+
+ul.list-inline {
+    float:left;
+    width:100%;
+    margin-bottom:14px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ddd;
+    }
+
+ul.list-inline li {
+    float:left;
+    background:url(../imgs/bullet-red.png) no-repeat left 9px;
+    margin-right:4px;
+    padding-left:9px;
+    font-size:108%;
+    line-height:1.67;
+    white-space:nowrap;
+    }
+
+ul.list-inline li.first {
+    padding:0;
+    background-image:none;
+    }
+
+ul.list-inline.last {
+    border-bottom:0;
+    }
+
+/*MM-2651 sub-task MM-2715*/
+.iax_outer {
+    width:100%;
+    margin:0 auto;
+    }
+
+.iax_inner {
+    width:970px;
+    margin:0 auto;
+    }
+
+#hg-w .epi-lead a {
+    display:block;
+    text-indent:-9999em;
+    overflow:hidden;
+    width:601px;
+    height:60px;
+    }
+
+#hg-w .epi-sub-title {
+    margin-left:14px;
+    font-size:116%;
+    }
+
+/* POD CLASSES */
+#hg-ww .acco {
+    width:196px;
+    background:#fff url(../imgs/wwacco-tcap.png) no-repeat -1px 0px;
+    padding-top:9px;
+    margin-bottom:14px;
+    }
+
+#hg-ww .acco .hd {
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+    margin-right:1px;
+    }
+
+#hg-ww .acco .hd h4 {
+    border-bottom:3px solid #fff;
+    font-size:108%;
+    line-height:1;
+    font-family:"Trebuchet MS", sans-serif;
+    color:#d72d82;
+    text-transform:uppercase;
+    }
+
+#hg-ww .acco .hd h4 span {
+    display:block;
+    padding-bottom:7px;
+    padding-left:6px;
+    padding-right:7px;
+    border-bottom:1px solid #ebebeb;
+    }
+
+#hg-e .video-pod {
+    width:346px;
+    border-left:4px solid #bbb7a9;
+    margin:14px 0;
+    padding-top:14px;
+    _background-image:none;
+    _background-color:#faf4e1;
+    }
+
+#hg-e .video-pod .hd p {
+    margin-bottom:14px;
+    }
+
+#hg-e .video-pod .hd h4 {
+    font-size:138.5%;
+    line-height:1;
+    font-family:"trebuchet ms", sans-serif;
+    }
+
+#hg-e .video-pod .bd {
+    padding-left:10px;
+    padding-right:14px;
+    padding-top:7px;
+    background:#faf4e1;
+    }
+
+#hg-e .video-pod .ft {
+    padding-left:10px;
+    background:url(../imgs/rr_videopod_bcap.png) no-repeat right bottom;
+    padding-bottom:14px;
+    zoom:1;
+    *font-size:1%;
+    _background-image:none;
+    _background-color:#faf4e1;
+    }
+
+#hg-e .video-pod {
+    border-left:none;
+    -moz-border-radius-bottomright:4px;
+    -moz-border-radius-topright:4px;
+    background:none repeat scroll 0 0 #F1F6F2;
+    margin:14px 0;
+    position:relative;
+    }
+
+#hg-e .video-pod .bd {
+    background-color:transparent;
+    padding-left:13px;
+    }
+
+#hg-e .video-pod .hd {
+    padding-left:13px;
+    }
+
+#hg-e .video-pod .hd h4 {
+    color:#EF4141;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1em;
+    margin-right:14px;
+    padding:4px 0 7px;
+    }
+
+#hg-e .video-pod .ft {
+    background-image:none;
+    background-color:transparent;
+    }
+
+#hg-e #tonight-on-hgtv .pod .hd {
+    background-color:#a7cdd1
+    }
+
+#hg-e #tonight-on-hgtv .pod .bd {
+    background-color:#a7cdd1
+    }
+
+#hg-e #tonight-on-hgtv .pod .ft {
+    background-color:#a7cdd1
+    }
+
+/* generic text box */
+.text-box span {
+    display:block;
+    margin:0 2px 0 0;
+    padding:0 0 0 8px;
+    line-height:0;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat left -293px;
+    }
+
+.text-box span em {
+    display:block;
+    height:30px;
+    line-height:30px;
+    margin:0 -2px 0 0;
+    padding:0 8px 0 0;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat right -293px;
+    font-style:normal;
+    }
+
+.text-box span input {
+    width:100%;
+    border:0;
+    color:#333;
+    outline:none;
+    font-weight:normal;
+    background:transparent;
+    *margin-top:6px;
+    }
+
+.text-box span input.input-hint {
+    color:#989898;
+    }
+
+/* generic textarea field css */
+.textarea-box {
+    width:420px;
+    height:201px;
+    margin:0;
+    padding:0;
+    line-height:0;
+    background:#fff url(../imgs/sp-forms.png) no-repeat left 0;
+    _width:416px;
+    }
+
+.textarea-box span {
+    display:block;
+    height:193px;
+    margin:0 0 0 8px;
+    padding:5px 8px 0 0;
+    border:0;
+    background:#fff url(../imgs/sp-forms.png) no-repeat right 0;
+    *margin-left:4px;
+    *padding-right:11px;
+    _padding-right:8px;
+    }
+
+.textarea-box span textarea {
+    width:100%;
+    height:191px;
+    border:0;
+    outline:none;
+    color:#333;
+    font-family:arial;
+    font-weight:normal;
+    background-color:transparent;
+    resize:none;
+    }
+
+/* generic form button */
+button.button {
+    text-align:center;
+    color:#fff;
+    font-family:"Trebuchet MS";
+    font-size:92.3%;
+    font-weight:bold;
+    border:0;
+    margin:0;
+    padding:0;
+    cursor:pointer;
+    outline:none;
+    background:none;
+    height:29px;
+    line-height:29px;
+    *overflow:visible;
+    }
+
+button.button span {
+    display:block;
+    margin:0 2px 0 0;
+    padding-left:5px;
+    line-height:29px;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat left 0;
+    outline:none;
+    }
+
+button.button span em {
+    display:block;
+    height:29px;
+    margin:0 -2px 0 2px;
+    padding-right:7px;
+    line-height:29px;
+    background:transparent url(../imgs/hgtv_ui_207.png) no-repeat right 0;
+    font-style:normal;
+    font-weight:bold;
+    }
+
+button.button:hover span {
+    background-position:left -29px;
+    }
+
+button.button:hover span em {
+    background-position:right -29px;
+    }
+
+button.button:active span, button.button.active span {
+    background-position:left -58px;
+    }
+
+button.button:active span em, button.button.active span em {
+    background-position:right -58px;
+    }
+
+button.button.disabled span {
+    background-position:left 0px;
+    color:#fff;
+    cursor:default;
+    }
+
+button.button.disabled span em {
+    background-position:right 0px;
+    color:#fff;
+    cursor:default;
+    }
+
+button.button::-moz-focus-inner {
+    padding:0;
+    border:0;
+    }
+
+/* generic link button: NORMAL SIZE - rebranding CLewis 2010-Jun */
+a.button, .button-nav a, a.button:visited, .button-nav a:visited {
+    display:block;
+    float:left;
+    height:29px;
+    padding-right:7px;
+    color:#fff;
+    font-family:"Trebuchet MS";
+    font-size:93%;
+    background:#fff url(../imgs/hgtv_ui_207.png) right top no-repeat;
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+a.button span, .button-nav a span {
+    display:block;
+    padding:1px 0 0 7px;
+    background:#fff url(../imgs/hgtv_ui_207.png) left top no-repeat;
+    line-height:28px;
+    }
+
+/* Use ems within the button text for quantities (ie photos or videos) */
+a.button span em, .button-nav a span em {
+    font-style:normal;
+    color:#ddd;
+    }
+
+a.button:hover, .button-nav a:hover {
+    background-position:right -29px;
+    text-decoration:none;
+    }
+
+a.button:hover span, .button-nav a:hover span {
+    background-position:left -29px;
+    }
+
+a.button:active, .button-nav a:active {
+    background-position:right -58px;
+    }
+
+a.button:active span, .button-nav a:active span {
+    background-position:left -58px;
+    }
+
+a.button.selected, a.button.selected:visited, a.button.selected:active, .button-nav a.selected, .button-nav a.selected:active, .button-nav a.selected:visited, .button-nav .ui-tabs-selected a, .button-nav .ui-tabs-selected a:visited {
+    background-position:right -87px;
+    text-decoration:none;
+    }
+
+a.button.selected span, .button-nav a.selected span, .button-nav .ui-tabs-selected a span {
+    background-position:left -87px;
+    }
+
+.button-nav li {
+    float:left;
+    margin-right:4px;
+    white-space:nowrap;
+    }
+
+.button-nav a.selected {
+    cursor:default;
+    }
+
+.button-nav a.disabled {
+    background-position:right -116px;
+    cursor:default;
+    }
+
+.button-nav a.disabled span {
+    background-position:left -116px;
+    }
+
+/* small button-nav - rebranding CLewis 2010-Jul */
+a.button-sm, .button-nav-sm a, a.button-sm:visited, .button-nav-sm a:visited {
+    display:block;
+    float:left;
+    height:18px;
+    padding-right:6px;
+    color:#fff;
+    font-size:77%;
+    background:#fff url(../imgs/hgtv_ui_207.png) right -145px no-repeat;
+    text-decoration:none;
+    cursor:pointer;
+    }
+
+a.button-sm span, .button-nav-sm a span {
+    display:block;
+    padding:1px 0 0 6px;
+    background:#fff url(../imgs/hgtv_ui_207.png) left -145px no-repeat;
+    line-height:17px;
+    }
+
+a.button-sm:hover, .button-nav-sm a:hover {
+    background-position:right -163px;
+    text-decoration:none;
+    }
+
+a.button-sm:hover span, .button-nav-sm a:hover span {
+    background-position:left -163px;
+    text-decoration:none;
+    }
+
+a.button-sm.selected, a.button-sm.selected:visited, .button-nav-sm a.selected, .button-nav-sm a:visited.selected, .button-nav-sm .ui-tabs-selected a, .button-nav-sm .ui-tabs-selected a:visited {
+    background-position:right -199px;
+    text-decoration:none;
+    }
+
+.button-nav-sm a.selected span, .button-nav-sm .ui-tabs-selected a span {
+    background-position:left -199px;
+    }
+
+a.button-sm:active, .button-nav-sm a:active, .button-nav-sm a.selected:active {
+    background-position:right -181px;
+    }
+
+a.button-sm:active span, .button-nav-sm a:active span {
+    background-position:left -181px;
+    }
+
+.button-nav-sm li {
+    float:left;
+    margin:0 5px 0 0;
+    white-space:nowrap;
+    }
+
+/* disabled (greyed) -217px */
+
+/* tabs */
+.ui-tabs-hide {
+    display:none;
+    }
+
+/* HUB - rebranding CLewis 2010-Jun  */
+.hub {
+    margin:14px;
+    clear:both;
+    }
+
+.hub a {
+    font-family:"trebuchet ms", sans-serif;
+    font-weight:bold;
+    }
+
+.hub em {
+    font-weight:normal;
+    }
+
+.hub sup {
+    font-size:46%;
+    line-height:1;
+    }
+
+.channel-detail .hub {
+    margin:0 0 14px;
+    }
+
+/* global toolbar placeholder */
+#toolbar {
+    margin:14px 14px;
+    border-top:1px solid #cacaca;
+    border-bottom:1px solid #cacaca;
+    }
+
+.channel-detail #toolbar {
+    margin:14px 0 0;
+    }
+
+/* moved photo gallery styles to photogallery.css */
+
+/* intro at the top of many hg-w sections */
+div.intro {
+    margin:14px;
+    }
+
+div.intro h1 {
+    margin:0 0 9px 0;
+    }
+
+div.intro h2 {
+    font:146.5% Arial;
+    color:#2d3031;
+    }
+
+div.intro p, div.intro .button-nav {
+    margin-bottom:14px;
+    }
+
+div.intro .list {
+    margin-bottom:10px;
+    }
+
+div.intro .list li {
+    line-height:22px;
+    background-position:left 8px;
+    }
+
+div.intro .next a {
+    color:#ef4141;
+    }
+
+div.intro .next a span {
+    color:#aaa;
+    }
+
+#error_404 #hg-we h2 {
+    margin-bottom:6px;
+    }
+
+#error_500 .intro {
+    padding-bottom:0;
+    }
+
+#error_500 .intro p {
+    line-height:1.38;
+    }
+
+/* form error message box */
+.form-errors {
+    display:none;
+    margin-bottom:14px;
+    background:transparent url(../imgs/sp-errors.png) repeat-y -602px 0;
+    _width:100%;
+    }
+
+.form-errors .hd {
+    padding:10px 15px 0 15px;
+    color:#c00;
+    background:transparent url(../imgs/sp-errors.png) no-repeat 0 0;
+    }
+
+.form-errors .hd p {
+    margin-bottom:0;
+    }
+
+.form-errors .bd {
+    padding:0 15px 10px 15px;
+    background:transparent url(../imgs/sp-errors.png) no-repeat -1204px bottom;
+    }
+
+.form-errors li {
+    padding-left:13px;
+    color:#3d3d3d;
+    background:transparent url(../imgs/error-bullet.png) no-repeat 0 10px;
+    line-height:1.7;
+    }
+
+.form-errors .close {
+    float:right;
+    margin:0 -5px 0 0;
+    background:transparent url(../imgs/sp-popups.png) no-repeat left 0;
+    width:12px;
+    height:12px;
+    text-indent:-9999px;
+    cursor:pointer;
+    }
+
+form label.error, form h4.error {
+    padding:2px 4px;
+    color:#fff;
+    background:transparent url(../imgs/error-label-bg.png) repeat-x 0 0;
+    }
+
+/* generic fieldset style with rounded borders to go with forms */
+.fieldset {
+    margin-bottom:14px;
+    padding-bottom:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -1414px bottom;
+    _float:left;
+    _width:602px;
+    }
+
+.fieldset .hd {
+    padding:14px 14px 6px 14px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -812px 0;
+    }
+
+.fieldset .hd h2 {
+    margin-bottom:0;
+    }
+
+.fieldset .bd {
+    padding:0 13px;
+    border-right:1px solid #ddd;
+    border-left:1px solid #ddd;
+    }
+
+/* generalized RR pod styles to replace TP-specific */
+
+/*TentPole Project */
+.wp-ds #hd-sub-nav li#blog-tab {
+    background-position:right -58px;
+    }
+
+.wp-ds #hd-sub-nav li#blog-tab a {
+    background-position:left -58px;
+    }
+
+/* Travelling Navigation */
+#nav-travelling img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#nav-travelling ul.list a, #nav-travelling ul.list a:visited {
+    color:#195A64;
+    }
+
+#hot-this-season li {
+    border-bottom:1px dashed #c1c1c1;
+    padding-bottom:3px;
+    margin-bottom:3px;
+    }
+
+#hot-this-season li.last {
+    border-bottom:none;
+    }
+
+#video #hg-e .pod.green .ft {
+    background:transparent url(../imgs/dp-rr-pod.png) no-repeat scroll right bottom;
+    }
+
+#video #hg-e .pod ul.list {
+    float:left;
+    }
+
+#video .pod img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#video .pod p {
+    line-height:1.4;
+    }
+
+#video #hg-e .widget .hd h4 {
+    color:#333;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    }
+
+#video #hg-e .widget .bd img.thumb {
+    display:block;
+    float:left;
+    margin-bottom:7px;
+    margin-right:7px;
+    }
+
+#video .gallery-tease, #video .related-link, #video .related-link {
+    margin-bottom:14px;
+    }
+
+#video .sweeps p {
+    margin-bottom:14px;
+    }
+
+#video .sweeps p.li-hd {
+    margin-bottom:0;
+    }
+
+#video #spnsr-prize-top {
+    padding:0;
+    background:#F5F9F7;
+    margin-bottom:14px;
+    }
+
+#video #resources-we .acco-res li .selected .acco-link {
+    _padding-left:0;
+    }
+
+#video .gallery-tease {
+    width:406px;
+    margin:0 auto 14px;
+    overflow:hidden;
+    _float:right;
+    }
+
+#video .alt-list p, #video .gallery-tease p {
+    margin-bottom:0;
+    }
+
+#video .gallery-tease p {
+    font:123.1% "trebuchet ms", sans-serif;
+    line-height:137.5%;
+    padding-bottom:4px;
+    }
+
+#video .super-lead .show-info {
+    bottom:25px;
+    left:30px;
+    }
+
+#video .intro p {
+    margin-bottom:0;
+    }
+
+#video .intro .next {
+    margin-bottom:7px;
+    }
+
+#video #pgallery .imgpanel .desc a {
+    color:#D72D82;
+    }
+
+#video .jcarousel-pagetext {
+    top:-21px;
+    }
+
+#video #related-galleries .jcarousel-pagetext {
+    position:absolute;
+    }
+
+#video #video-library .channel-list li.switch {
+    margin-bottom:14px;
+    background:#FFFFFF url(../imgs/ui.png) no-repeat scroll left -264px;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS";
+    height:29px;
+    line-height:28px;
+    padding-left:20px;
+    text-transform:uppercase;
+    }
+
+#video #video-library .channel-list li.switch .channel-bd {
+    border-left:1px solid #DDDDDD;
+    border-right:1px solid #DDDDDD;
+    padding:0 6px;
+    }
+
+#video #video-library .channel-list li.switch .channel-hdr {
+    background:#FFFFFF url(../imgs/ui.png) no-repeat scroll right -264px;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS";
+    height:29px;
+    line-height:28px;
+    text-transform:uppercase;
+    }
+
+#video #video-library .channel-list li.switch .channel-hdr h4 {
+    font-size:93%;
+    font-weight:bold;
+    height:28px;
+    padding-top:1px;
+    cursor:pointer;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr {
+    margin-right:0;
+    padding-left:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat 0px 0;
+    }
+
+#video #hg-w #hg-we .crsl-container {
+    width:396px;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr em {
+    float:left;
+    display:block;
+    width:9px;
+    height:5px;
+    margin-top:12px;
+    padding-right:6px;
+    background:transparent url(../imgs/ui.png) no-repeat -501px -498px;
+    _font-size:0;
+    }
+
+#video #video-library .channel-list li.selected .channel-hdr h4 {
+    color:#333;
+    background:none;
+    }
+
+#video #video-library .channel-list li.selected {
+    padding-bottom:10px;
+    background:#fff url(../imgs/sp-boxBorders.png) no-repeat -406px bottom;
+    padding-left:0;
+    }
+
+#video #video-library .channel-list li.selected {
+    height:170px;
+    }
+
+#video #video-library .subhead {
+    padding-top:13px;
+    }
+
+#video #video-library h3.sub-header {
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    margin-bottom:2px;
+    }
+
+#video #video-library h3.sub-header {
+    margin-bottom:10px;
+    }
+
+#video #video-library .subhead p {
+    margin-bottom:10px;
+    }
+
+#video #pgallery #photonav {
+    width:602px;
+    margin-bottom:7px;
+    }
+
+#video #pgallery #photonav .paginate-position {
+    padding-top:30px;
+    margin:0 auto;
+    color:#999;
+    }
+
+#video #pgallery #photonav a {
+    display:block;
+    height:72px;
+    width:93px;
+    padding-top:0;
+    position:relative;
+    text-decoration:none;
+    }
+
+#video #pgallery #photonav ul li {
+    width:114px;
+    }
+
+#video #pgallery #photonav a .desc {
+    z-index:102;
+    background:url(../imgs/gallery-txt.png) 0 0 repeat-y;
+    width:92px;
+    height:18px;
+    color:#fff;
+    position:absolute;
+    bottom:1px;
+    font-size:85%;
+    }
+
+#video #pgallery #photonav .next .desc {
+    left:1px;
+    }
+
+#video #pgallery #photonav .prev .desc {
+    left:21px;
+    }
+
+#video #pgallery #photonav a img {
+    border:1px solid #ddd;
+    }
+
+#video #pgallery #photonav .prev a img {
+    border-left:none;
+    }
+
+#video #pgallery #photonav .next a img {
+    border-right:none;
+    }
+
+#video #pgallery #photonav .prev a.btn {
+    background:url(../imgs/gh-nav-arrows.gif) left 0 no-repeat;
+    padding-left:21px;
+    }
+
+#video #pgallery #photonav .next a.btn {
+    background:url(../imgs/gh-nav-arrows.gif) right -219px no-repeat;
+    padding-right:21px;
+    }
+
+#video #pgallery #photonav .prev a.btn:hover {
+    background-position:0 -73px;
+    }
+
+#video #pgallery #photonav .prev a.btn:active {
+    background-position:0 -146px;
+    }
+
+#video #pgallery #photonav .next a.btn:hover {
+    background-position:right -292px;
+    }
+
+#video #pgallery #photonav .next a.btn:active {
+    background-position:right -365px;
+    }
+
+.center-mod {
+    margin:0 auto 14px;
+    _width:406px;
+    }
+
+.center-mod h2 {
+    margin:0 0 0;
+    }
+
+.center-mod h3 {
+    font:normal 138.5% "Trebuchet MS", sans-serif;
+    line-height:1;
+    margin-bottom:7px;
+    }
+
+#hg-we .center-mod p {
+    padding:0 0 0;
+    }
+
+#hg-we #nl-bd .center-mod p {
+    margin-bottom:0;
+    line-height:1.2;
+    }
+
+.center-mod .hd, .center-mod .ft {
+    height:10px;
+    _font-size:0;
+    }
+
+.center-mod .bd {
+    padding:0 14px;
+    position:relative;
+    }
+
+.center-mod.yellow .hd {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-hd-yellow.png) no-repeat scroll 0 0;
+    }
+
+.center-mod.yellow .bd {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-bd-yellow.png) repeat-y scroll 0 0;
+    }
+
+.center-mod.yellow .ft {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-ft-yellow.png) no-repeat scroll 0 0;
+    }
+
+.center-mod.green .hd {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-hd-green.png) no-repeat scroll 0 0;
+    }
+
+.center-mod.green .bd {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-bd-green.png) repeat-y scroll 0 0;
+    }
+
+.center-mod.green .ft {
+    background:url(http://web.hgtv.com/webhgtv/images/2009/greenhome/images/center-mod-ft-green.png) no-repeat scroll 0 0;
+    }
+
+.center-mod button.button span {
+    padding:0 0 0 7px;
+    margin:0 5px 0 0;
+    }
+
+.center-mod button.button span em {
+    padding:0 7px 0 0;
+    margin:0 -2px 0 0;
+    }
+
+.center-mod a.button {
+    float:none !important;
+    }
+
+.center-mod .flt-rt {
+    float:right;
+    _float:none;
+    margin-left:10px;
+    _margin-left:0;
+    }
+
+.user-alert {
+    color:#D72D82;
+    font-weight:bold;
+    text-align:center;
+    }
+
+#invite-a-friend {
+    position:absolute;
+    top:32px;
+    left:0;
+    width:443px;
+    height:363px;
+    display:none;
+    z-index:104;
+    }
+
+#invite-a-friend .hd {
+    padding-top:7px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -2355px 0;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -2355px 0;
+    height:9px;
+    _font-size:0;
+    }
+
+#invite-a-friend .hd h3 {
+    font-size:108%;
+    font-weight:bold;
+    line-height:1.6;
+    font-family:'trebuchet ms';
+    text-transform:uppercase;
+    _font-size:14px;
+    _background:transparent url(../imgs/sp-popups.png) repeat-y scroll -2798px 0;
+    }
+
+#invite-a-friend .hd h3 span {
+    display:block;
+    padding:2px 14px;
+    margin:0 7px;
+    }
+
+#invite-a-friend .hd .close {
+    position:absolute;
+    top:13px;
+    right:15px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat scroll left top;
+    width:12px;
+    height:12px;
+    text-indent:-9999px;
+    cursor:pointer;
+    }
+
+#invite-a-friend .bd {
+    clear:both;
+    padding:23px 7px 4px;
+    position:static;
+    background:transparent url(../imgs/sp-popups.png) repeat-y -2798px 0;
+    _background:transparent url(../imgs/sp-popups.gif) repeat-y -2798px 0;
+    _float:left;
+    _background-image:none;
+    padding:23px 7px 4px;
+    }
+
+#invite-a-friend .bd .minor {
+    color:#999;
+    }
+
+#invite-a-friend .bd .alert {
+    color:#b50938;
+    }
+
+#invite-a-friend .ft {
+    padding-left:2px;
+    background:transparent url(../imgs/sp-popups.png) no-repeat -3241px -6px;
+    _background:transparent url(../imgs/sp-popups.gif) no-repeat -3241px -6px;
+    height:10px;
+    _font-size:0;
+    }
+
+#invite-a-friend textarea {
+    border:0;
+    background:none;
+    width:393px;
+    height:79px;
+    }
+
+#invite-a-friend div.text-box {
+    background:transparent url(../imgs/ui.png) no-repeat scroll right -293px;
+    }
+
+#invite-a-friend fieldset {
+    _position:relative;
+    }
+
+#invite-a-friend input {
+    background-color:#fff;
+    }
+
+#invite-a-friend .text-box input {
+    color:#3d3d3d;
+    font-weight:normal;
+    }
+
+#invite-a-friend .sm-field {
+    float:left;
+    width:193px;
+    margin:0 0 14px 14px;
+    }
+
+#invite-a-friend .lg-field {
+    clear:both;
+    margin:14px 14px;
+    }
+
+#invite-a-friend .form-submit {
+    text-align:center;
+    }
+
+#invite-a-friend .form-submit .cancel {
+    font-size:85%;
+    }
+
+#invite-a-friend .form-submit .cancel.disabled {
+    color:#999;
+    }
+
+#invite-a-friend .form-submit .cancel.disabled a {
+    cursor:default;
+    color:#999;
+    }
+
+#invite-a-friend .form-submit .cancel.disabled a:hover {
+    text-decoration:none;
+    }
+
+#invite-a-friend label {
+    padding:4px 0;
+    }
+
+#invite-a-friend label.error {
+    padding:4px;
+    background-color:#ffd24f;
+    }
+
+#invite-a-friend .loading {
+    text-align:center;
+    margin:50px 0;
+    display:none;
+    }
+
+#invite-a-friend .loading p {
+    margin-bottom:10px;
+    }
+
+#invite-a-friend .success {
+    margin:0 14px;
+    display:none;
+    }
+
+#invite-a-friend .success p {
+    margin:0 0 14px;
+    }
+
+#invite-a-friend .message {
+    margin:0 14px;
+    }
+
+#invite-a-friend .text-box span {
+    padding:7px;
+    *padding:0 4px 2px 6px;
+    }
+
+/* TOUR LANDING PAGE */
+#browse-all-rooms {
+    margin:0 14px 14px;
+    }
+    
+#browse-all-rooms h2 {
+    font-weight:bold;
+    font-size:182%;
+    margin:14px 0;
+    }
+
+#browse-all-rooms h4 {
+    font-weight:bold;
+    font-size:108%;
+    margin-bottom:7px;
+    }
+
+#hg-w #browse-all-rooms .grid {
+    width:602px;
+    overflow:hidden;
+    margin:0;
+    }
+
+#hg-w #browse-all-rooms .grid ul {
+    width:50%;
+    }
+
+#hg-w #browse-all-rooms .grid li {
+    width:auto;
+    margin:0;
+    }
+
+#hg-w #browse-all-rooms .grid .cell {
+    float:left;
+    border-bottom:1px solid #ddd;
+    width:162px;
+    border-right:1px solid #ddd;
+    padding:14px 19px;
+    height:208px;
+    }
+
+#hg-w #browse-all-rooms .grid .cap {
+    border-right:none;
+    }
+
+#browse-all-rooms .cell a.thumbnail {
+    display:block;
+    margin-bottom:7px;
+    }
+
+#browse-all-rooms .cell a.thumbnail img {
+    display:block;
+    }
+
+#browse-all-rooms .cell.cap {
+    clear:right;
+    }
+
+#browse-all-rooms .cell .columns ul {
+    *width:49%;
+    }
+
+#browse-all-rooms .cell cite { 
+    color:#999; padding-top:5px; 
+    } 
+
+.columns .list {
+    float:left;
+    width:50%;
+    }
+
+.columns .list li {
+    line-height:1.39;
+    }
+
+/* extra styles */
+.hide {
+    display:none;
+    }
+
+.test {
+    border:1px solid red;
+    }
+
+/* message board styles */
+#messageboard .ev_bgcolor_row1, #messageboard .ev_bgcolor_row2 {
+    background-image:url(../imgs/bubble_l.gif);
+    background-repeat:no-repeat;
+    height:45px;
+    vertical-align:top;
+    padding:0px 14px 10px;
+    background-position:top left;
+    }
+
+#messageboard .ev_bgcolor_row1 .ev_text_small, #messageboard .ev_bgcolor_row2 .ev_text_small {
+    background-image:url(../imgs/bubble_r.gif);
+    background-repeat:no-repeat;
+    background-position:top right;
+    height:45px;
+    padding:14px 0;
+    padding-right:14px;
+    float:left;
+    }
+
+#messageboard .ev_bgcolor_row1 a, #messageboard .ev_bgcolor_row2 a {
+    float:left;
+    clear:both;
+    display:block;
+    color:#195a64;
+    text-decoration:none;
+    }
+
+#messageboard .ev_bgcolor_row1 a:hover, #messageboard .ev_bgcolor_row2 a:hover {
+    text-decoration:underline;
+    }
+
+#messageboard .ev_bgcolor_row1 a:active, #messageboard .ev_bgcolor_row2 a:active {
+    text-decoration:underline;
+    color:#d72d82;
+    }
+
+#messageboard nobr {
+    display:block;
+    clear:both;
+    float:left;
+    text-indent:-.5em;
+    margin:18px 5px;
+    overflow:hidden;
+    color:#666666;
+
+    }
+
+#messageboard .ev_container {
+    display:none;
+    }
+
+.article-detail .large-desc {
+    margin-bottom:15px;
+    }
+
+/* ----- [ NAV OVERRIDES ] ----- */
+.products-detail #package-nav .products a, #dream-home.section #package-nav .main a, #dream-home.player-detail #package-nav .video a {
+    background-position:right -29px;
+    text-decoration:none;
+    }
+
+.products-detail #package-nav .products a span, #dream-home.section #package-nav .main a span, #dream-home.player-detail #package-nav .video a span {
+    background-position:left -29px;
+    }
+
+/* ----- [ COUNTDOWN CLOCK/SWEEPSTAKES MODULE ] ----- */
+#hg-e .pod.countdown .bd, #hg-e .dhpromo .bd {
+    padding:7px 0 0;
+    }
+
+#hg-e .countdown img {
+    border:none;
+    padding:0;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap {
+    position:relative;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap {
+    position:absolute;
+    top:18px;
+    left:9px;
+    width:161px;
+    height:46px;
+    background:url(../imgs/temp/countdown_bg.png) no-repeat left top;
+    _background:url(../imgs/temp/countdown_bg.gif) no-repeat left top;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap .cw_inner {
+    padding:1px 6px 0;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap h4 {
+    color:#FEFFFF;
+    font:bold 153.9% "Trebuchet MS";
+    line-height:1.1;
+    margin-bottom:0;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap h5 {
+    color:#FEFFFF;
+    font:bold 16px "Trebuchet MS";
+    line-height:14px;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap h6 {
+    color:#FEFFFF;
+    font:bold 11px "Trebuchet MS";
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap div {
+    font:bold 14px Arial, Helvetica, sans-serif;
+    color:#EF4141;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap .dhcd_days {
+    float:left;
+    display:inline;
+    width:49%;
+    text-align:left;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap .dhcd_days span,
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap .dhcd_time span {
+    font-size:100%;
+    }
+
+#hg-e .countdown .bd .counter_banner_wrap .counter_wrap .dhcd_time {
+    float:right;
+    display:inline;
+    text-align:right;
+    }
+
+#hg-e .countdown .bd .dhcd_additional_text {
+    padding:10px 10px 0px;
+    }
+
+#hg-e .dhpromo .bd .dhcd_additional_text {
+    padding:10px 10px 0px;
+    *padding:10px;
+    }
+
+#hg-e .dhpromo .bd .dhcd_additional_text a {
+    color:#436b5d;
+    }
+
+/* ----- [ FEATURES ] ----- */
+.alt-list {
+    margin:14px 0;
+    }
+
+.alt-list img.thumb {
+    display:block;
+    padding:2px;
+    border:1px solid #ddd;
+    width:92px;
+    height:69px;
+    float:right;
+    margin:5px 0 0 5px;
+    }
+
+#hg-we .alt-list p {
+    padding-bottom:0;
+    }
+
+.alt-list a.morelink {
+    color:#ef4141;
+    }
+
+/* ----- [ ARTICLE ] ----- */
+#art-intro p {
+    margin:0 14px;
+    }
+
+#art-intro a.art-more {
+    padding-left:14px;
+    }
+
+/* ----- [ PRODUCT SHOWCASE ] ----- */
+#showcase {
+    margin:0 14px;
+    }
+
+#showcase ul li {
+    float:left;
+    height:210px;
+    margin-right:5px;
+    margin-left:5px;
+    width:185px;
+    line-height:1.2em;
+    }
+
+#showcase p {
+    margin-bottom:20px;
+    }
+
+#showcase table.products {
+    width:100%;
+    }
+
+#showcase table.products tr {
+    vertical-align:top;
+    }
+
+#showcase table.products td {
+    width:210px;
+    padding:15px;
+    border:1px solid #e9e9e9;
+    border-bottom:0;
+    }
+
+#showcase table.products tr.first td {
+    border-top:0;
+    }
+
+#showcase table.products td.first {
+    border-left:0;
+    border-right:0;
+    }
+
+#showcase table.products td.last {
+    border-left:0;
+    border-right:0;
+    }
+
+#showcase table.products td a {
+    display:block;
+    }
+
+#showcase table.products td img {
+    display:block;
+    }
+
+/* ----- [ BLOG ] -----*/
+#blog {
+    margin-bottom:15px;
+    }
+
+#blog .hd {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll 0 0;
+    }
+
+#blog .powered-by {
+    float:right;
+    margin-right:10px;
+    margin-top:14px;
+    margin-left:7px;
+    font-size:77%;
+    }
+
+#blog .powered-by a {
+    float:right;
+    margin-top:-16px;
+    margin-left:7px;
+    }
+
+#blog .ft {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll -406px bottom;
+    padding-bottom:10px;
+    }
+
+#blog .bd {
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    }
+
+#blog h2 {
+    line-height:1;
+    margin:0 15px 7px;
+    padding-top:15px;
+    }
+
+#blog p.intro {
+    padding-bottom:10px;
+    color:#424242;
+    margin-left:15px;
+    margin-right:15px;
+    }
+
+#blog .entry {
+    margin:0 15px;
+    }
+
+#blog .entry cite {
+    color:#a6a6a6;
+    font:normal 77% arial;
+    }
+
+#blog .entry h4 {
+    line-height:1em;
+    }
+
+#blog a.morelink {
+    margin:0 15px 15px;
+    }
+
+/* ----- [ BLOG ] -----*/
+#messageboard {
+    margin-bottom:14px;
+    }
+
+#messageboard .hd {
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll 0 0;
+    }
+
+#messageboard .bd {
+    padding:0 14px;
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    }
+
+#messageboard .ft {
+    height:10px;
+    background:transparent url(../imgs/sp-boxBorders.png) no-repeat scroll -406px bottom;
+    _font-size:0;
+    }
+
+#messageboard h2 {
+    margin-bottom:0;
+    padding:14px 14px 5px 14px;
+    }
+
+#messageboard .mb-hd {
+    margin-bottom:8px;
+    line-height:1.385;
+    }
+
+#messageboard .mb-ft {
+    padding:0 5px;
+    }
+
+#messageboard .mb-ft .left {
+    float:left;
+    }
+
+#messageboard .mb-ft .right {
+    float:right;
+    }
+
+#messageboard .mb-bd {
+    margin-bottom:3px;
+    }
+
+#messageboard .mb-bd li {
+    float:left;
+    width:375px;
+    margin-bottom:5px;
+    }
+
+#messageboard .mb-bd .bubble {
+    float:left;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat 0 top;
+    }
+
+#messageboard .mb-bd .bubble q {
+    display:block;
+    margin-left:10px;
+    padding:7px 10px 1px 0;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat right top;
+    line-height:1.385;
+    }
+
+#messageboard .mb-bd .bubble a {
+    display:block;
+    }
+
+#messageboard .mb-bd cite {
+    clear:left;
+    display:block;
+    color:#666;
+    background:#fff url(../imgs/mb-bubble.png) no-repeat 0 -379px;
+    }
+
+#messageboard .mb-bd cite span {
+    display:block;
+    padding-top:8px;
+    margin-left:34px;
+    background:transparent url(../imgs/mb-bubble.png) no-repeat right -379px;
+    *padding-top:3px;
+    }
+
+/* add some padding to the carousels inside of pods */
+#hg-ww #related-videos .bd,
+#hg-ww #tour-rooms .bd,
+#hg-ww #photo-gallery .bd {
+    margin-top:6px;
+    padding-bottom:4px;
+    }
+
+#photo-gallery .view-more {
+    font-weight:normal;
+    }
+
+#resources {
+    margin-bottom:20px;
+    }
+
+/* ----- [ POD OVERRIDES ] -----*/
+#hg-e .pod.countdown p, #hg-e .pod.green-pod p {
+    line-height:1.4em;
+    }
+
+#hg-e .countdown .bd p {
+    padding-bottom:5px;
+    zoom:1;
+    }
+
+#hg-e .pod.sister-pod {
+    background-color:#f0f0f0;
+    border-color:#c1c1c1;
+    _background-image:none;
+    }
+
+#hg-e .pod.sister-pod a span {
+    color:#333;
+    }
+
+#hg-e .pod.green-pod {
+    background-color:#d6e6c6;
+    border-color:#b3bfa9;
+    _background-image:none;
+    }
+
+#hg-e .green-pod .bd ul.list {
+    margin-left:0;
+    margin-top:10px;
+    clear:left;
+    *padding-bottom:10px;
+    }
+
+#hg-e .green-pod .bd img.thumb {
+    float:left;
+    display:block;
+    margin-right:7px;
+    margin-bottom:7px;
+    }
+
+#dream-home #hg-e .pod ul.list {
+    float:left;
+    }
+
+#dream-home .pod img.thumb {
+    display:block;
+    float:left;
+    margin-right:7px;
+    }
+
+#floorplan-container {
+    margin-top:14px;
+    }
+
+#package-nav {
+    margin:0 0 14px 14px;
+    }
+
+.dh-body {
+    padding:0 14px 15px;
+    }
+
+#ipix-player {
+    }
+
+/* ----- [ CAROUSEL OVERRIDES ] -----*/
+#tour-carousel {
+    width:602px;
+    margin:0;
+    background:#fff url(../imgs/bg_tour_crsl.png) no-repeat 0 bottom;
+    border-top:1px solid #c5c5c5;
+    }
+
+#tour-carousel .hd, #photo-carousel .hd {
+    padding-bottom:12px;
+    }
+
+#tour-carousel h3, #photo-carousel h3 {
+    font-size:108%;
+    }
+
+#tour-carousel li li a, #photo-carousel li li a {
+    display:block;
+    font:normal 77% arial;
+    }
+
+#tour-carousel li li:hover, #tour-carousel li li.hover, #photo-carousel li li:hover, #photo-carousel li li.hover, #photo-carousel li li.sel, #tour-carousel li li.sel {
+    border:1px solid #ef4141;
+    padding:3px;
+    }
+
+#tour-carousel li li:hover a, #tour-carousel li li.hover a, #photo-carousel li li:hover a {
+    text-decoration:none;
+    }
+
+#tour-carousel li li a.room, #photo-carousel li a.room {
+    text-align:left;
+    line-height:14px;
+    }
+
+#tour-carousel li li img, #photo-carousel li li img {
+    margin-bottom:5px;
+    padding:0;
+    border:none;
+    }
+
+#tour-carousel .jcarousel-item, #photo-carousel .jcarousel-item {
+    margin-bottom:8px;
+    }
+
+#tour-carousel .jcarousel-pageimg, #photo-carousel .jcarousel-pageimg {
+    top:-23px;
+    }
+
+#hg-we .channel-crsl .jcarousel-clip-horizontal {
+    width:392px;
+    }
+
+#hg-we .channel-crsl .jcarousel-item {
+    width:360px;
+    }
+
+#photo-carousel {
+    margin:0;
+    }
+
+#photo-carousel .hd {
+    padding-bottom:0;
+    }
+
+#vid-lib-we .jcarousel-clip, #vid-lib-we .jcarousel-clip-horizontal {
+    _width:392px;
+    }
+
+#btnIOE {
+    clear:both;
+    }
+
+/*TentPole Project******************************/
+
+#ie6-msg {
+    background:#fef9e6;
+    border:none;
+    height:96px;
+    line-height:1.5;
+    margin:0 auto 6px;
+    position:relative;
+    width:994px;
+    }
+
+#ie6-msg h3 {
+    font:138.5% "Trebuchet MS";
+    margin-bottom:6px;
+    }
+
+#ie6-txt {
+    float:left;
+    margin:11px 40px 0 13px;
+    width:600px;
+    }
+
+#ie6-msg ul {
+    margin-top:18px;
+    }
+
+#ie6-msg li {
+    float:left;
+    margin-right:18px;
+    }
+
+#ie6-msg li a {
+    background:url(../imgs/ie/browser_icons.jpg) no-repeat scroll 0 0;
+    display:block;
+    height:63px;
+    width:61px;
+    text-indent:-999em;
+    overflow:hidden;
+    }
+
+#ie6-msg li a#icn-ie {
+    background-position:0 0;
+    }
+
+#ie6-msg li a#icn-ff {
+    background-position:-83px 0;
+    }
+
+#ie6-msg li a#icn-sf {
+    background-position:-166px 0;
+    }
+
+#ie6-msg li a#icn-ch {
+    background-position:-249px 0;
+    }
+
+#ie6-msg .close {
+    position:absolute;
+    top:6px;
+    right:7px;
+    background:transparent url(../imgs/ie/close-x-ie6.gif) no-repeat;
+    width:13px;
+    height:13px;
+    text-indent:-999em;
+    cursor:pointer;
+    }
+
+iframe[name^="google_conversion_frame"] {
+    display:none;
+    }
+
+#hg-ft img {
+    border:none;
+    padding:0;
+    }
+
+/**Hidding errant tracking pixel square**/
+#hg-e > img[width="1"] {
+    display:none;
+    }
+
+#hg-ft #daaIcon {
+    background:none repeat scroll 0 0 transparent;
+    display:inline;
+    }
+
+/* Desktop Ribbon */
+#dRibbonWrap {
+    width:100%; height:48px; display:block; border-bottom:2px solid #ffffe8;
+    background-color:#fffed2;
+    background: -moz-linear-gradient(top, #fffeeb 0%, ##fffed2 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top, #fffeeb 0%, ##fffed2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fffeeb 0%,##fffed2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fffeeb 0%,##fffed2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #fffeeb 0%,##fffed2 100%); /* W3C */
+}
+
+#dRibbonWrap a.to-mobile {
+    font-size:16px; display:block; width:100%; text-align:center; padding-top:10px;
+}
+#dRibbonWrap a#dRibbonX {
+    font-size:16px; display:block; position:absolute; top:14px; right:14px; width:21px;  height:21px; background:url(../imgs/header-sprite.png) -169px -272px no-repeat;
+}

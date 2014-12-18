@@ -1,0 +1,186 @@
+/*
+* TENTPOLE HEADER
+*/
+/*#tentpole-menu { background-color:#f15f0e; border-top:1px solid #FFF; height:41px; width:980px;}
+#tentpole-menu li { float:left; height:41px; margin-right:1px; position:relative;}
+#tentpole-menu li.all { float:right;}
+#tentpole-menu li a { display:block; height:31px; padding:8px 14px 0; margin-top:2px; color:#fff; font:bold 116%/20px "Trebuchet MS", sans-serif; text-align:center; cursor:pointer; text-decoration:none;}
+#tentpole-menu li:hover, #tentpole-menu li.sel { background:#EF4141;}
+#tentpole-menu li a span.c { display:block; float:left; text-shadow:#A80000 0 1px 0;}
+#tentpole-menu li a span.r { display:none; float:left; width:7px; height:4px; margin:9px 0 0 3px; background:url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png) -466px -502px no-repeat;}
+#tentpole-menu li a span.r.on { display:block;} 
+#tentpole-menu li a span.b { display:block; clear:both; width:15px; height:8px; margin:0 auto; *margin:3px 0 0; border-top:3px solid transparent; *border-top:none;}
+#tentpole-menu li.sel a span.b { background: url(http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_ui_207.png) -504px -502px no-repeat;}
+*/
+
+#tentpole-menu {
+    font:bold 11px arial;
+    margin:18px 5px 28px;
+    position:relative;
+    border-bottom:1px solid #e6e6e6;
+    padding-bottom:30px;
+    }
+
+#tentpole-menu li {
+    margin-right:21px;
+    float:left;
+    position:relative;
+    }
+
+#tentpole-menu li.sel {
+    margin-right:21px;
+    }
+
+#tentpole-menu li a {
+    color:#386CB4;
+    text-decoration:none;
+    }
+
+#tentpole-menu > li > a:hover, #tentpole-menu > li.hover > a, #tentpole-menu > li:hover > a {
+    -moz-opacity:.50;
+    filter:alpha(opacity = 50);
+    opacity:.50; /*IE Hack*/
+    color:#9cb6da\9;
+    }
+
+#tentpole-menu li a .r.on {
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:4px solid #a0a0a0;
+    height:0;
+    margin-right:5px;
+    position:absolute;
+    right:-17px;
+    top:4px;
+    width:0;
+    padding-bottom:15px; /*IE Hack*/
+    top:5 px\9;
+    }
+
+#tentpole-menu li.sel a {
+    background:#383838;
+    border-radius:4px 4px 4px 4px;
+    color:#FFFFFF;
+    padding:4px 14px 4px 14px;
+    float:left;
+    margin-top:-4px;
+    }
+
+#tentpole-menu li.sel a .r.on {
+    right:5px;
+    }
+
+#tentpole-menu li.sel a.selem {
+    padding-right:26px;
+    }
+
+#tentpole-menu li.sel a:hover {
+    background:#606060;
+    }
+
+#tentpole-menu li.sel .dd20 {
+    left:26px;
+    top:11px;
+    }
+
+#tentpole-menu .dd20 {
+    position:absolute;
+    visibility:hidden;
+    display:block;
+    top:11px;
+    left:48%;
+    padding-top:11px;
+    z-index:105; /*IE Hack*/
+    z-index:-10 \9;
+    }
+
+#tentpole-menu li:hover .dd20 {
+    visibility:visible;
+    }
+
+#tentpole-menu li.emroom {
+    margin-right:32px;
+    padding-bottom:15px;
+    }
+
+#tentpole-menu li.emroom.sel {
+    margin-right:15px;
+    }
+
+#tentpole-menu .dd20 .dd20-hd {
+    left:-10px;
+    position:absolute;
+    top:-1px;
+    z-index:1000;
+    background:url("../imgs/header-sprite.png") no-repeat scroll 0 -85px transparent;
+    height:15px;
+    width:30px;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content {
+    background-color:#FFFFFF;
+    border:1px solid #E1E6E5;
+    box-shadow:3px 3px 13px rgba(127, 127, 127, 0.45);
+    clear:both;
+    left:-65px;
+    padding:10px 7px;
+    display:block;
+    position:absolute;
+    top:12px;
+    width:160px;
+    z-index:999;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content li {
+    width:160px;
+    padding:0;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content li:hover {
+    background:#EF4141;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content li:hover a {
+    color:#ffffff;
+    text-decoration:none;
+    }
+
+#tentpole-menu .dd20 .content h3 {
+    font:bold 11px "Arial", sans-serif;
+    margin:0 7px 5px;
+    text-transform:uppercase;
+    }
+
+#tentpole-menu .dd20 .content a {
+    padding:6px 7px;
+    margin:0;
+    display:block;
+    text-align:left;
+    font-weight:bold;
+    color:#2e74b0;
+    background:none;
+    }
+
+#tentpole-menu .dd20 .content a:hover {
+    background:#EF4141;
+    }
+
+#tentpole-menu .dd20 .content ul {
+    margin:0;
+    }
+
+#tentpole-menu .content li {
+    display:block;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content.tenplus {
+    width:320px;
+    }
+
+#tentpole-menu .dd20 .dd20-bd .content.tenplus ul.first {
+    margin-right:50px;
+    }
+
+.blog #tentpole-menu {
+    margin-bottom:0;
+    }

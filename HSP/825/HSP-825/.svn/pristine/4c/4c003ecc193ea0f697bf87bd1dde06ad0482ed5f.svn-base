@@ -1,0 +1,139 @@
+body#urban-oasis {
+    background:#E1E6E5;
+    }
+
+#urban-oasis #site-wrapper .tentpole-container {
+    padding:7px 7px 0;
+    position:relative;
+    z-index:999;
+    }
+
+#urban-oasis #site-wrapper .super-lead .tentpole-container {
+    padding:7px 7px 0;
+    }
+
+#urban-oasis .super-lead {
+    background:#FFF;
+    margin:7px 0 -11px;
+    z-index:999;
+    -moz-border-radius-topleft:4px;
+    -moz-border-radius-topright:4px;
+    -webkit-border-top-left-radius:4px;
+    -webkit-border-top-right-radius:4px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    }
+
+#urban-oasis #site-wrapper .super-lead img {
+    padding:0;
+    }
+
+#urban-oasis #hg-e .pod.green .ft {
+    background:transparent url(../imgs/dp-rr-pod.png) no-repeat scroll right bottom;
+    }
+
+#urban-oasis #hg-e .pod ul.list {
+    float:left;
+    }
+
+#urban-oasis #hg-e .pod img.thumb {
+    display:block;
+    float:left;
+    margin-bottom:7px;
+    margin-right:7px;
+    }
+
+#urban-oasis .pod p {
+    line-height:1.4;
+    }
+
+#urban-oasis #hg-e .widget .hd h4 {
+    color:#333;
+    font-family:"trebuchet ms", sans-serif;
+    font-size:138.5%;
+    line-height:1;
+    }
+
+#urban-oasis #hg-e .widget .bd img.thumb {
+    display:block;
+    float:left;
+    margin-bottom:7px;
+    margin-right:7px;
+    }
+
+#urban-oasis .sweeps p {
+    margin-bottom:14px;
+    }
+
+#urban-oasis .sweeps p.li-hd {
+    margin-bottom:0;
+    }
+
+#urban-oasis .modbox .meta {
+    float:right;
+    margin:21px 0 0 7px;
+    position:static;
+    }
+
+#urban-oasis .modbox .meta a {
+    display:block;
+    }
+
+#urban-oasis .modbox .meta img {
+    border:1px solid #d4d4d4;
+    display:block;
+    margin:3px 0 7px;
+    padding:1px;
+    }
+
+#urban-oasis .modbox a.cta {
+    display:block;
+    color:#D72D82;
+    }
+
+#urban-oasis .modbox p {
+    width:260px;
+    *width:250px;
+    }
+
+#urban-oasis #pgallery3 {
+    margin-left:0;
+    margin-right:0;
+    }
+
+#urban-oasis #video-cl .jcarousel-pagetext {
+    top:5px;
+    }
+
+#urban-oasis #get-social .list {
+    width:180px;
+    }
+
+#urban-oasis #hg-w #sponsors {
+    text-align:center;
+    border-bottom:1px solid #ddd;
+    margin:14px;
+    padding-bottom:5px;
+    }
+
+#urban-oasis #hg-w #sponsors img {
+    border:none;
+    padding:0;
+    margin:0;
+    }
+
+#urban-oasis #hg-w #sponsors ul {
+    margin:0 auto;
+    width:474px;
+    }
+
+#urban-oasis #hg-w #sponsors ul li {
+    float:left;
+    margin-right:10px;
+    }
+
+#urban-oasis #hg-w #sponsors ul li.byline {
+    font:normal 77% verdana, arial;
+    color:#ccc;
+    padding-top:10px;
+    }

@@ -1,0 +1,1100 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      #app {
+        height: 455px;
+        width: 322px;
+        position: absolute;
+      }
+      #floorplanContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #tip, #start {
+        display: none; 
+        font-family: Arial;
+        font-size: 11px;
+        position: absolute; 
+        background: rgba(0,0,0,0.8); 
+        border-radius: 10px; 
+        padding: 3px 8px 4px 8px; 
+        color: white;
+        z-index: 100;
+      }
+
+      #tip {
+        margin-top: 2px;
+      }
+
+      #start.display {
+        display: block;
+      }
+
+      #start::after {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 27px;
+        left: calc(100% / 2 - 5px);
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 5px solid rgba(0,0,0,0.8);
+      }
+
+      #floor_buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+
+      .text_button {
+        margin: 0;
+        padding: 6px 11px;
+        border-radius: 2px;
+        background: #EEE;
+        border: 1px solid #ACACAC;
+        box-shadow: inset 1px 1px 1px #CCC;
+        outline: 0;
+        font-weight: bold;
+        font-size: 13px;
+        color: #444;
+      }
+
+      .text_button.active {
+        background: #A31D1D;
+        color: #FFF;
+        border: 1px solid #83160F;
+        box-shadow: inset 1px 1px 1px #B83232;
+      }
+
+      .text_button.active:hover {
+        background: #D92120;
+        border: 1px solid #B51A11;
+        box-shadow: inset 1px 1px 1px #EE6060;
+      }
+
+      .arrow_button {
+        position: absolute;
+        top: 192px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        font-family: Consolas, sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 22px;
+        color: #CCC;
+        outline: 0;
+        font-weight: bold;
+        text-align:center;
+        border: none;
+      }
+
+      .active {
+        cursor: pointer;
+      }
+
+      #floor-down {
+        position: absolute;
+        left: 0px;
+        background: transparent url(http://images.diynetwork.com/webdiy/diy20/imgs/se/diy-ui.png) no-repeat -180px -580px;
+      }
+
+      #floor-down.active {
+        background-position: 0 -580px;
+      }
+      #floor-down.active:hover {
+        background-position: -60px -580px;
+      }
+
+      #floor-up {
+        position: absolute;
+        left: 292px;
+        background: transparent url(http://images.diynetwork.com/webdiy/diy20/imgs/se/diy-ui.png) no-repeat -210px -580px;
+      }
+
+      #floor-up.active {
+        background-position: -30px -580px;
+      }
+
+      #floor-up.active:hover {
+        background-position: -90px -580px;
+      }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="floorplanContainer"></div>
+      <div id="start">Start Here</div>
+      <div id="tip"></div>
+      <div id="floor_buttons">
+        <input id="floor-1" class="text_button active" type="button" value="First Floor" />
+        <input id="floor-2" class="text_button active" type="button" value="Second Floor" />
+        <!-- <input id="floor-3" class="text_button" type="button" value="Third Floor" /> -->
+      </div>
+      <input id="floor-down" class="arrow_button active" type="button" value="" />
+      <input id="floor-up" class="arrow_button active" type="button" value="" />
+    </div>
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v5.0.2.min.js"></script>
+    <script defer="defer">
+
+    var FloorPlan = FloorPlan || {};
+
+    FloorPlan.App = function () {
+
+      var tentpoleId = "DH14",
+          rooms = [],
+          roomData = [];
+
+      //---------------------------------
+      // room object data
+      //---------------------------------
+
+      roomData = [
+        {
+          name: "Foyer",
+          id: 6072594,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/foyer-tour-from-blog-cabin-2014/index.html",
+          point: {x: 241, y: 219},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(247.0, 197.0);
+            ctx.lineTo(247.0, 186.0);
+            ctx.lineTo(223.0, 186.0);
+            ctx.lineTo(223.0, 229.0);
+            ctx.lineTo(203.0, 229.0);
+            ctx.lineTo(203.0, 242.0);
+            ctx.lineTo(258.0, 242.0);
+            ctx.lineTo(258.0, 197.0);
+            ctx.lineTo(247.0, 197.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Living Room",
+          id: 6072620,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/living-room-tour-from-blog-cabin-2014/index.html",
+          point: {x: 180.3, y: 181.3},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(209.0, 171.0);
+            ctx.lineTo(209.0, 161.0);
+            ctx.lineTo(144.0, 161.0);
+            ctx.lineTo(144.0, 227.0);
+            ctx.lineTo(144.0, 229.0);
+            ctx.lineTo(144.0, 242.0);
+            ctx.lineTo(175.0, 242.0);
+            ctx.lineTo(175.0, 229.0);
+            ctx.lineTo(208.0, 229.0);
+            ctx.lineTo(209.0, 229.0);
+            ctx.lineTo(223.0, 229.0);
+            ctx.lineTo(223.0, 185.8);
+            ctx.lineTo(214.5, 171.0);
+            ctx.lineTo(209.0, 171.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Dining Room",
+          id: 6072637,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/dining-room-tour-from-blog-cabin-2014/index.html",
+          point: {x: 167.7, y: 121.3},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(209.0, 161.0);
+            ctx.lineTo(144.0, 161.0);
+            ctx.lineTo(144.0, 110.0);
+            ctx.lineTo(209.0, 110.0);
+            ctx.lineTo(209.0, 161.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Kitchen",
+          id: 6072641,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/kitchen-tour-from-blog-cabin-2014/index.html",
+          point: {x: 150.7, y: 41.3},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(195.0, 110.0);
+            ctx.lineTo(134.0, 110.0);
+            ctx.lineTo(134.0, 24.0);
+            ctx.lineTo(195.0, 24.0);
+            ctx.lineTo(195.0, 110.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Kids Bedroom",
+          id: 6072651,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/kids-bedroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 224, y: 110.3},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(258.0, 94.0);
+            ctx.lineTo(247.0, 94.0);
+            ctx.lineTo(244.0, 94.0);
+            ctx.lineTo(209.0, 94.0);
+            ctx.lineTo(209.0, 145.0);
+            ctx.lineTo(247.0, 145.0);
+            ctx.lineTo(247.0, 110.0);
+            ctx.lineTo(258.0, 110.0);
+            ctx.lineTo(258.0, 94.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Guest Bedroom",
+          id: 6072657,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/guest-bedroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 229.3, y: 49.3},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(214.0, 24.0);
+            ctx.lineTo(209.0, 24.0);
+            ctx.lineTo(195.0, 24.0);
+            ctx.lineTo(195.0, 89.0);
+            ctx.lineTo(195.0, 109.9);
+            ctx.lineTo(195.0, 110.0);
+            ctx.lineTo(209.0, 110.0);
+            ctx.lineTo(209.0, 97.4);
+            ctx.lineTo(213.0, 93.9);
+            ctx.lineTo(213.0, 69.0);
+            ctx.lineTo(258.0, 69.0);
+            ctx.lineTo(258.0, 24.0);
+            ctx.lineTo(214.0, 24.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Jack & Jill Bathroom",
+          id: 6072661,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/jack-and-jill-bathroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 240, y: 83.7},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(213.0, 69.0);
+            ctx.lineTo(213.0, 90.0);
+            ctx.lineTo(224.0, 90.0);
+            ctx.lineTo(224.0, 94.0);
+            ctx.lineTo(258.0, 94.0);
+            ctx.lineTo(258.0, 90.0);
+            ctx.lineTo(258.0, 89.0);
+            ctx.lineTo(258.0, 69.0);
+            ctx.lineTo(213.0, 69.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Laundry Room",
+          id: 6072665,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/laundry-room-tour-from-blog-cabin-2014/index.html",
+          point: {x: 226.7, y: 166.7},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(209.0, 145.0);
+            ctx.lineTo(209.0, 171.0);
+            ctx.lineTo(214.5, 171.0);
+            ctx.lineTo(223.4, 186.4);
+            ctx.lineTo(247.0, 186.0);
+            ctx.lineTo(247.0, 171.0);
+            ctx.lineTo(247.0, 169.0);
+            ctx.lineTo(247.0, 145.0);
+            ctx.lineTo(209.0, 145.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Family Room",
+          id: 6072671,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/family-room-tour-from-blog-cabin-2014/index.html",
+          point: {x: 191.3, y: 267},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(247.0, 297.0);
+            ctx.lineTo(169.0, 297.0);
+            ctx.lineTo(169.0, 242.0);
+            ctx.lineTo(247.0, 242.0);
+            ctx.lineTo(247.0, 297.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Office",
+          id: 6072675,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/office-tour-from-blog-cabin-2014/index.html",
+          point: {x: 184, y: 310.7},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(205.0, 329.0);
+            ctx.lineTo(172.0, 329.0);
+            ctx.lineTo(172.0, 297.0);
+            ctx.lineTo(205.0, 297.0);
+            ctx.lineTo(205.0, 329.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Sunroom",
+          id: 6072679,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/sunroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 154, y: 273},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(169.0, 297.0);
+            ctx.lineTo(169.0, 242.0);
+            ctx.lineTo(134.0, 242.0);
+            ctx.lineTo(134.0, 329.0);
+            ctx.lineTo(159.0, 329.0);
+            ctx.lineTo(169.0, 329.0);
+            ctx.lineTo(172.0, 329.0);
+            ctx.lineTo(172.0, 297.0);
+            ctx.lineTo(169.0, 297.0);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Sitting Area",
+          id: 6072683,
+          floor: 2,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/sitting-area-tour-from-blog-cabin-2014/index.html",
+          point: {x: 179.8, y: 192.9},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(223.5, 242.6);
+            ctx.lineTo(144.5, 242.6);
+            ctx.lineTo(144.5, 163.6);
+            ctx.lineTo(223.5, 163.6);
+            ctx.lineTo(223.5, 242.6);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Master Bedroom",
+          id: 6072687,
+          floor: 2,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/master-bedroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 174.2, y: 121.2},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(223.5, 163.6);
+            ctx.lineTo(144.5, 163.6);
+            ctx.lineTo(144.5, 69.6);
+            ctx.lineTo(223.5, 69.6);
+            ctx.lineTo(223.5, 163.6);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Master Bathroom",
+          id: 6072691,
+          floor: 2,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/master-bathroom-tour-from-blog-cabin-2014/index.html",
+          point: {x: 180.2, y: 52.5},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(223.5, 69.6);
+            ctx.lineTo(144.5, 69.6);
+            ctx.lineTo(144.5, 24.6);
+            ctx.lineTo(223.5, 24.6);
+            ctx.lineTo(223.5, 69.6);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Front Yard",
+          id: 6072695,
+          floor: 1,
+          roomBoundaries: 0,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/front-yard-tour-from-blog-cabin-2014/index.html",
+          point: {x: 280.7, y: 219},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(280.7, 225.5);
+            ctx.bezierCurveTo(277.1, 225.5, 274.2, 222.6, 274.2, 219.0);
+            ctx.bezierCurveTo(274.2, 215.4, 277.1, 212.5, 280.7, 212.5);
+            ctx.bezierCurveTo(284.3, 212.5, 287.2, 215.4, 287.2, 219.0);
+            ctx.bezierCurveTo(287.2, 222.6, 284.3, 225.5, 280.7, 225.5);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Garden",
+          id: 6072699,
+          floor: 1,
+          roomBoundaries: 0,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/garden-tour-from-blog-cabin-2014/index.html",
+          point: {x: 274, y: 310},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(274.0, 316.5);
+            ctx.bezierCurveTo(270.4, 316.5, 267.5, 313.6, 267.5, 310.0);
+            ctx.bezierCurveTo(267.5, 306.4, 270.4, 303.5, 274.0, 303.5);
+            ctx.bezierCurveTo(277.6, 303.5, 280.5, 306.4, 280.5, 310.0);
+            ctx.bezierCurveTo(280.5, 313.6, 277.6, 316.5, 274.0, 316.5);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Back Patio",
+          id: 6072703,
+          floor: 1,
+          roomBoundaries: 0,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/back-patio-tour-from-blog-cabin-2014/index.html",
+          point: {x: 74.7, y: 156.7},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(74.7, 163.2);
+            ctx.bezierCurveTo(71.1, 163.2, 68.2, 160.3, 68.2, 156.7);
+            ctx.bezierCurveTo(68.2, 153.1, 71.1, 150.2, 74.7, 150.2);
+            ctx.bezierCurveTo(78.3, 150.2, 81.2, 153.1, 81.2, 156.7);
+            ctx.bezierCurveTo(81.2, 160.3, 78.3, 163.2, 74.7, 163.2);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Pergola",
+          id: 6072707,
+          floor: 1,
+          roomBoundaries: 0,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/pergola-tour-from-blog-cabin-2014/index.html",
+          point: {x: 61, y: 293.7},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(61.0, 300.2);
+            ctx.bezierCurveTo(57.4, 300.2, 54.5, 297.3, 54.5, 293.7);
+            ctx.bezierCurveTo(54.5, 290.1, 57.4, 287.2, 61.0, 287.2);
+            ctx.bezierCurveTo(64.6, 287.2, 67.5, 290.1, 67.5, 293.7);
+            ctx.bezierCurveTo(67.5, 297.3, 64.6, 300.2, 61.0, 300.2);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Dock",
+          id: 6072711,
+          floor: 1,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/dock-tour-from-blog-cabin-2014/index.html",
+          point: {x: 42, y: 37.6},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(76.0, 22.2);
+            ctx.bezierCurveTo(72.5, 22.2, 69.6, 25.1, 69.6, 28.6);
+            ctx.bezierCurveTo(69.6, 28.7, 69.6, 28.9, 69.6, 29.0);
+            ctx.lineTo(43.0, 29.0);
+            ctx.lineTo(43.0, 20.0);
+            ctx.lineTo(18.0, 20.0);
+            ctx.lineTo(18.0, 37.0);
+            ctx.lineTo(27.0, 37.0);
+            ctx.lineTo(27.0, 50.0);
+            ctx.lineTo(63.0, 50.0);
+            ctx.lineTo(63.0, 69.0);
+            ctx.lineTo(27.0, 69.0);
+            ctx.lineTo(27.0, 77.0);
+            ctx.lineTo(63.0, 77.0);
+            ctx.lineTo(77.0, 77.0);
+            ctx.lineTo(77.0, 69.0);
+            ctx.lineTo(77.0, 50.0);
+            ctx.lineTo(77.0, 48.0);
+            ctx.lineTo(77.0, 34.9);
+            ctx.bezierCurveTo(80.1, 34.4, 82.4, 31.8, 82.4, 28.6);
+            ctx.bezierCurveTo(82.4, 25.1, 79.5, 22.2, 76.0, 22.2);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        },
+        {
+          name: "Upper Deck",
+          id: 6072900,
+          floor: 2,
+          roomBoundaries: 1,
+          visited: isVisited(this.name),
+          clicktag: "http://www.diynetwork.com/blog-cabin/upper-deck-tour-from-blog-cabin-2014/index.html",
+          point: {x: 51.3, y: 53.5},
+          drawFunc: function(ctx) {
+            ctx.beginPath();
+            ctx.moveTo(81.9, 25.1);
+            ctx.lineTo(78.7, 22.6);
+            ctx.lineTo(73.3, 23.3);
+            ctx.lineTo(67.9, 29.2);
+            ctx.lineTo(60.2, 36.6);
+            ctx.lineTo(35.5, 36.6);
+            ctx.lineTo(35.5, 69.6);
+            ctx.lineTo(69.5, 69.6);
+            ctx.lineTo(69.5, 38.3);
+            ctx.lineTo(74.4, 33.2);
+            ctx.lineTo(77.2, 35.6);
+            ctx.lineTo(78.5, 35.5);
+            ctx.lineTo(81.3, 33.6);
+            ctx.lineTo(83.0, 30.8);
+            ctx.lineTo(83.2, 27.7);
+            ctx.lineTo(81.9, 25.1);
+            ctx.closePath();
+            ctx.fillStrokeShape(this);
+          }
+        }
+      ];
+
+      //---------------------------------
+      // cookie functions
+      //---------------------------------
+      var createCookie = function (name,value,days) {
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime()+(days*24*60*60*1000));
+          var expires = "; expires="+date.toGMTString();
+        }
+        else var expires = "";
+        document.cookie = name+"="+value+expires+"; path=/";
+      };
+
+      var readCookie = function (name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+          var c = ca[i];
+          while (c.charAt(0)==' ') c = c.substring(1,c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+      };
+
+      var eraseCookie = function (name) {
+        createCookie(name,"",-1);
+      };
+
+      //---------------------------------
+      // state load
+      //---------------------------------
+
+      var cookie = readCookie('visitedRooms'),
+          decompVisitedRooms = JSON.parse(cookie);
+
+      var selectedRoom = mdManager.getParameter('DetailId');
+      var selectedRoomId = selectedRoom ? getRoomById(parseInt(selectedRoom)) ? parseInt(selectedRoom) : roomData[0].id : roomData[0].id;
+      var startHere = getRoomById(parseInt(selectedRoom)) ? false : true;
+
+      var visitedRooms = decompVisitedRooms != null ? decompVisitedRooms : [];
+
+      createCookie('visitedRooms', JSON.stringify(visitedRooms), 1);
+
+      function isVisited(room) {
+          return decompVisitedRooms != null ? decompVisitedRooms.indexOf(room) > -1 : false;
+      }
+
+      function setDefaultColor(room) {
+        if (!startHere)
+          return room == selectedRoomId ? "#CC5252" : isVisited(room) ? "#F3D4D4" : "#FFF";
+        else 
+          return isVisited(room) ? "#F3D4D4" : "#FFF";
+      }
+
+      function addRoomVisit(room) {
+        if (!isVisited(room))
+          visitedRooms.push(room);
+        createCookie('visitedRooms', JSON.stringify(visitedRooms), 1);
+      }
+
+      var tip = $('#tip'),
+          start = $('#start'),
+          floorBtnDown = $('#floor-down'),
+          floorBtnUp = $('#floor-up'),
+          floorBtnFirst = $('#floor-1'),
+          floorBtnSecond = $('#floor-2');
+          //floorBtnThird = $('#floor-3');
+
+      var stage = new Kinetic.Stage({
+        container: 'floorplanContainer',
+        width: 322,
+        height: 455
+      });
+
+      var currentRoomText = new Kinetic.Text({
+        x: 0,
+        y: 395,
+        fontFamily: 'Arial',
+        fontSize: 11,
+        fill: '#888' 
+      });
+
+      var currentRoomName = new Kinetic.Text({
+        x: 0,
+        y: 393,
+        fontFamily: 'Arial',
+        fontSize: 15,
+        fontStyle: 'bold',
+        fill: '#444' 
+      });
+      
+      var floorPlanLayer = new Kinetic.Layer();
+      var overlayLayer = new Kinetic.Layer();
+      var firstFloorGroup = new Kinetic.Group();
+      var secondFloorGroup = new Kinetic.Group();
+      var locationPointGroup = new Kinetic.Group();     
+
+      var firstFloorRooms = new Kinetic.Group();
+      var firstFloorWalls = new Kinetic.Group();
+      var secondFloorRooms = new Kinetic.Group();
+      var secondFloorWalls = new Kinetic.Group();
+
+      var firstFloorWallsImage;
+      var secondFloorWallsImage;
+
+      //---------------------------------
+      // room object creation
+      //---------------------------------
+
+      for (var i = roomData.length - 1; i >= 0; i--) {
+        rooms.push({
+            name: roomData[i].name,
+            id: roomData[i].id,
+            floor: roomData[i].floor,
+            clicktag: roomData[i].clicktag,
+            shape: new Kinetic.Shape({
+              drawFunc: roomData[i].drawFunc,
+              fill: setDefaultColor(roomData[i].id),
+              name: roomData[i].name,
+              id: i,
+              opacity: roomData[i].roomBoundaries
+            })
+          });
+      };
+          
+      for (var i = rooms.length - 1; i >= 0; i--) {
+
+        rooms[i].shape.on('mouseover', function() {
+          tip.show().text(this.getAttr('name'));//animate({width: '100px'}, 100).text(rooms[i].name);
+          if (roomData[this.getAttr('id')].id != selectedRoomId || startHere)
+            this.setFill('#E4A0A0');
+          floorPlanLayer.draw();
+          document.body.style.cursor = 'pointer';
+          start.removeClass('display'); 
+        });
+
+        rooms[i].shape.on('click', function() {
+          addRoomVisit(roomData[this.getAttr('id')].id);
+          s.events = "event47";
+          s.eVar46 = tentpoleId;
+          s.eVar47 = tentpoleId + ":Select New Space-RR Floor Plan";
+          s.eVar48 = tentpoleId + ":Tour:Select New Space-RR Floor Plan:" + getRoomById(selectedRoomId).name + " to " + this.getAttr('name');
+          s.tl();
+          window.location.href = roomData[this.getAttr('id')].clicktag;
+        });
+
+        rooms[i].shape.on('mouseout', function() {
+          tip.hide();
+          this.setFill(setDefaultColor(roomData[this.getAttr('id')].id));
+          floorPlanLayer.draw();
+          document.body.style.cursor = 'default';
+          if (startHere) {
+            start.addClass('display');
+          }
+        });
+        if (rooms[i].floor == 1)
+          firstFloorRooms.add(rooms[i].shape);
+        else
+          secondFloorRooms.add(rooms[i].shape);
+
+      }
+      
+      $('#floorplanContainer').on('mousemove', function(e) {
+        //Change these numbers to move the tooltip offset
+        var mousex = e.pageX - (tip.width() / 2); //Get X coodrinates
+        var mousey = e.pageY - 31; //Get Y coordinates. 
+        var tipWidth = tip.width(); //Find width of tooltip
+        var tipHeight = tip.height(); //Find height of tooltip
+        
+        //Distance of element from the right edge of viewport
+        var tipVisX = $('#floorplanContainer').width() - (mousex + tipWidth);
+        //Distance of element from the bottom of viewport
+        var tipVisY = $('#floorplanContainer').height() - (mousey + tipHeight);
+        if (tipVisX < 20) { //If tooltip exceeds the X coordinate of viewport
+            mousex = e.pageX - tipWidth;
+        } if (tipVisY < 20) { //If tooltip exceeds the Y coordinate of viewport
+            mousey = e.pageY - tipHeight - 20;
+        }
+        //Absolute position the tooltip according to mouse position
+        tip.css({ top: mousey, left: mousex });
+      });
+
+      function getRoomById(id) {
+        if (id != null) {
+          var pos = roomData.map(function(e) { return e.id; }).indexOf(id);
+          return roomData[pos];
+        }
+        
+        return false;
+      }
+
+      function writeMessage(message) {
+        currentRoomName.setText(message);
+        currentRoomText.setText("CURRENT SPACE: ");
+        currentRoomText.offsetX(-(stage.getWidth() - currentRoomText.getWidth() - currentRoomName.getWidth()) / 2);
+        currentRoomName.offsetX(-currentRoomText.getWidth() - (stage.getWidth() - currentRoomText.getWidth() - currentRoomName.getWidth()) / 2);
+        floorPlanLayer.draw();
+      }
+
+      currentRoomText.offsetX(-(stage.getWidth() - currentRoomText.getWidth()) / 2);
+
+      function loadImages(sources, callback) {
+        var assetDir = '';
+        var images = {};
+        var loadedImages = 0;
+        var numImages = 0;
+        for(var src in sources) {
+          numImages++;
+        }
+        for(var src in sources) {
+          images[src] = new Image();
+          images[src].onload = function() {
+            if(++loadedImages >= numImages) {
+              callback(images);
+            }
+          };
+          images[src].src = assetDir + sources[src];
+        }
+      }
+
+
+      function buildStage(images) {
+        var backgroundImage = new Kinetic.Image({
+          image: images.backgroundImage,
+          x: 0,
+          y: 0
+        });
+
+        firstFloorWallsImage = new Kinetic.Image({
+          image: images.firstFloorWallsImage,
+          x: 0,
+          y: 0
+        });
+
+        secondFloorWallsImage = new Kinetic.Image({
+          image: images.secondFloorWallsImage,
+          x: 0,
+          y: 0
+        });
+
+        overlayLayer.add(firstFloorWallsImage);
+        overlayLayer.add(secondFloorWallsImage);
+        floorPlanLayer.add(backgroundImage);
+        floorPlanLayer.add(firstFloorRooms);
+        floorPlanLayer.add(secondFloorRooms);
+        overlayLayer.add(currentRoomText);
+        overlayLayer.add(currentRoomName);
+
+        stage.add(floorPlanLayer);
+        stage.add(overlayLayer);
+
+        if (getRoomById(selectedRoomId).floor == 1) {
+          secondFloorRooms.hide();
+          secondFloorWallsImage.hide();
+          floorBtnDown.removeClass('active').prop({disabled:true});
+          floorBtnFirst.removeClass('active').prop({disabled:true});
+        }
+        else {
+          firstFloorRooms.hide();
+          firstFloorWallsImage.hide();
+          floorBtnUp.removeClass('active').prop({disabled:true});
+          floorBtnSecond.removeClass('active').prop({disabled:true});
+        }
+
+        overlayLayer.listening(false);
+
+        floorPlanLayer.draw();
+        overlayLayer.draw();
+
+        function toggleButtons(floor) {
+            floorBtnDown.toggleClass('active').prop({disabled:true});
+            floorBtnUp.toggleClass('active').prop({disabled:true});
+            floorBtnFirst.toggleClass('active').prop({disabled:true});
+            floorBtnSecond.toggleClass('active').prop({disabled:true});
+            $('.active').prop({disabled:false});
+
+            if (startHere) {
+              if (floor == 1)
+                start.show().css('display', '');
+              else
+                start.hide();
+            }
+        }
+
+        floorBtnDown.on('click', function() {
+          if ($(this).hasClass('active')) {
+            if (getRoomById(selectedRoomId).floor == 1) {
+              locationPointGroup.show();
+            } else {
+              locationPointGroup.hide();
+            }
+            secondFloorRooms.hide();
+            secondFloorWallsImage.hide();
+            firstFloorRooms.show();
+            firstFloorWallsImage.show();
+            floorPlanLayer.draw();
+            overlayLayer.draw();
+            toggleButtons(1);
+          }
+        });
+
+        floorBtnUp.on('click', function() {
+          if ($(this).hasClass('active')) {
+            if (getRoomById(selectedRoomId).floor == 1) {
+              locationPointGroup.hide();
+            } else {
+              locationPointGroup.show();
+            }
+            firstFloorRooms.hide();
+            firstFloorWallsImage.hide();
+            secondFloorRooms.show();
+            secondFloorWallsImage.show();
+            floorPlanLayer.draw();
+            overlayLayer.draw();
+            toggleButtons(2);
+          }
+        });
+
+        floorBtnFirst.on('click', function () {
+          if ($(this).hasClass('active')) {
+            if (getRoomById(selectedRoomId).floor == 1) {
+              locationPointGroup.show();
+            } else {
+              locationPointGroup.hide();
+            }
+            secondFloorRooms.hide();
+            secondFloorWallsImage.hide();
+            firstFloorRooms.show();
+            firstFloorWallsImage.show();
+            floorPlanLayer.draw();
+            overlayLayer.draw();
+            toggleButtons(1);
+          }
+        });
+
+        floorBtnSecond.on('click', function () {
+          if ($(this).hasClass('active')) {
+            if (getRoomById(selectedRoomId).floor == 1) {
+              locationPointGroup.hide();
+            } else {
+              locationPointGroup.show();
+            }
+            firstFloorRooms.hide();
+            firstFloorWallsImage.hide();
+            secondFloorRooms.show();
+            secondFloorWallsImage.show();
+            floorPlanLayer.draw();
+            overlayLayer.draw();
+            toggleButtons(2);
+          }
+        });
+
+      }
+
+      var sources = {
+        firstFloorWallsImage: 'http://frontend.scrippsnetworks.com/~bfoster/HSP/1732/first-floor.png',
+        secondFloorWallsImage: 'http://frontend.scrippsnetworks.com/~bfoster/HSP/1732/second-floor.png',
+        backgroundImage: 'http://frontend.scrippsnetworks.com/~bfoster/HSP/1732/background.png'
+        
+      };
+
+      loadImages(sources, buildStage);
+
+      var room = getRoomById(selectedRoomId),
+          roomX = room.point.x,
+          roomY = room.point.y;
+
+      if (startHere) {
+        start.css({ top: roomY + 10, left: roomX - (start.outerWidth() / 2) }).addClass('display');
+      } 
+      else {
+        writeMessage(room.name);
+
+        var locationPoint = new Kinetic.Circle({
+          x: roomX,
+          y: roomY,
+          radius: 6.5,
+          fill: '#333'
+        });
+
+        var radar1 = new Kinetic.Circle({
+          x: roomX,
+          y: roomY,
+          radius: 4,
+          stroke: '#633',
+          strokeWidth: 1
+        });
+
+        var radar2 = new Kinetic.Circle({
+          x: roomX,
+          y: roomY,
+          radius: 4,
+          stroke: '#633',
+          strokeWidth: 1
+        });
+
+        var radar3 = new Kinetic.Circle({
+          x: roomX,
+          y: roomY,
+          radius: 4,
+          stroke: '#633',
+          strokeWidth: 1
+        });
+
+        locationPointGroup.add(radar1);
+        locationPointGroup.add(radar2);
+        locationPointGroup.add(radar3);
+        locationPointGroup.add(locationPoint);
+        overlayLayer.add(locationPointGroup);
+
+        var pointTween1 = new Kinetic.Tween({
+          node: locationPoint, 
+          duration: .8,
+          scaleX: 1.6,
+          scaleY: 1.6,
+          onFinish: function() {
+            var pointTween2 = new Kinetic.Tween({
+              node: locationPoint, 
+              duration: .5,
+              scaleX: 1,
+              scaleY: 1,
+              onFinish: function() {
+                setTimeout(function() {
+                    pointTween2.reset();
+                  pointTween1.play();
+                }, 3000);
+              }
+            });
+            this.reset();
+            pointTween2.play();
+            setTimeout(function() {
+              radar1Tween.play();
+              radar2Tween.play();
+            }, 100);
+            setTimeout(function() {
+              radar3Tween.play();
+            }, 200);
+          }
+        });
+
+        var radar1Tween = new Kinetic.Tween({
+          node: radar1, 
+          duration: .9,
+          radius: 48,
+          opacity: 0.05,
+          easing: Kinetic.Easings['EaseOut'],
+          onFinish: function() {
+            this.reset();
+          }
+        });
+        var radar2Tween = new Kinetic.Tween({
+          node: radar2, 
+          duration: 1.8,
+          radius: 48,
+          opacity: 0.05,
+          easing: Kinetic.Easings['EaseOut'],
+          onFinish: function() {
+            this.reset();
+          }
+        });
+        var radar3Tween = new Kinetic.Tween({
+          node: radar3, 
+          duration: 3.4,
+          radius: 48,
+          opacity: 0.05,
+          easing: Kinetic.Easings['EaseOut'],
+          onFinish: function() {
+            playTweens();
+            this.reset();
+          }
+        });
+
+        function playTweens() {
+          pointTween1.play();
+        }
+
+        pointTween1.play();
+      }
+
+      return {
+        createCookie: createCookie,
+        readCookie: readCookie,
+        eraseCookie: eraseCookie
+      }
+    }();
+
+    </script>
+  </body>
+</html>

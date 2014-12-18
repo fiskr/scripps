@@ -1,0 +1,27 @@
+/* image enlarge pop-up */
+#blow-up { width: 660px; z-index: 10; position: absolute; } 
+#blow-up img { display: block; margin-left: 14px; padding: 25px 0 7px; }
+#blow-up p.blow-up-btn { width: 50px; margin: 0 auto; padding: 7px 0; }
+#blow-up .close { right: 20px; }
+
+/* for IE stacking, must have sequential IDs (see article multi-image) */
+#imgpop00 { *z-index: 20; }
+#imgpop01 { *z-index: 19; }
+#imgpop02 { *z-index: 18; }
+#imgpop03 { *z-index: 17; }
+#imgpop04 { *z-index: 16; }
+#imgpop05 { *z-index: 15; }
+#imgpop06 { *z-index: 14; }
+#imgpop07 { *z-index: 13; }
+#imgpop08 { *z-index: 12; }
+#imgpop09 { *z-index: 11; }
+#imgpop10 { *z-index: 10; }
+#imgpop11 { *z-index: 9; }
+#imgpop12 { *z-index: 8; }
+#imgpop13 { *z-index: 7; }
+#imgpop14 { *z-index: 6; }
+#imgpop15 { *z-index: 5; }
+#imgpop16 { *z-index: 4; }
+#imgpop17 { *z-index: 3; }
+#imgpop18 { *z-index: 2; }
+#imgpop19 { *z-index: 1; }

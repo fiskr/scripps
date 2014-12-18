@@ -1,0 +1,630 @@
+<link rel="stylesheet" type="text/css" href="http://hgtv.sndimg.com/webhgtv/hg20/css/sni-hgtv-tentpole.2.0.css">
+<script type="text/javascript" src="http://hgtv.sndimg.com/webhgtv/hg20/js/sni-hgtv-tentpole.2.0.js"></script>
+<!--link rel="stylesheet" href="http://images.hgtv.com/webhgtv/hg20/pkgs/2014/smart-home/ss/local.css" / -->
+
+
+
+
+<style>
+/* These styles are specific to the vote html. For live vote pages, you may need to add styles for other elements on live vote pages. */
+
+#show-vote .loading {
+    position:absolute;
+    top:150px;
+    left:0;
+    text-align:center;
+    width:600px;
+}
+#show-vote .loading img {
+    float:none;
+    margin:0 auto;
+}
+#show-vote .loading p {
+    color:#333;
+    font-weight:bold;
+    padding-top:20px;
+}
+#show-vote {
+    border-top:1px solid #DAE7E3;
+    margin:14px;
+    padding:14px 0;
+    min-height: 602px;
+    position: relative;
+}
+#show-vote h2, #show-vote p {
+    margin:0 14px 7px;
+}
+#show-vote ul {
+    margin-bottom:14px;
+}
+#show-vote li {
+    clear:left;
+    padding:7px 14px;
+}
+#show-vote li img {
+    cursor:zoom-in;
+    cursor:-webkit-zoom-in;
+    cursor:-moz-zoom-in;
+}
+#show-vote button.button { 
+    padding-left: 3px;
+    margin: 0 93px;
+}
+#show-vote button.button span {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll left 0;
+    display:block;
+    font-family:"trebuchet ms",sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    line-height:29px;
+    background-position:right -692px;
+    margin:0;
+    padding: 0 10px 0 0;
+}
+#show-vote button.button em {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll right 0;
+    cursor:pointer;
+    display:block;
+    height:29px;
+    margin:0 0 0 -2px;
+    text-align:left;
+    background-position:left -692px;
+    padding-left: 14px;
+}
+#show-vote button.button.fauxhover span {
+    background-position: right -721px;
+}
+#show-vote button.button.fauxhover span em {
+    background-position: left -721px;
+}
+#show-vote button.button:active span { 
+    background-position: right -750px;
+}
+#show-vote button.button:active span em {
+    background-position: left -750px;
+}
+#show-vote {
+            padding:10px 0px;
+            margin-left:0;
+            margin-right:0;
+        }
+#show-vote img {
+            border:0;
+            padding:0;
+        }
+#show-vote h3 {
+            font-size:1.2em;
+        }
+#show-vote h3 .counter {
+            font-size:.8em;
+            color:#999;
+            font-weight:normal;
+        }
+#show-vote p {
+            margin-left:0;
+            margin-right:0;
+        }
+#show-vote .category {
+            margin:10px auto;
+        }
+#show-vote .category .votelist  {
+            float:left;
+            clear:none;
+            padding:10px 20px;
+        }
+        
+#show-vote .votelist li {
+            float:left;
+            clear:none;
+            padding:5px;
+            text-align:center;
+            font-weight:bold;
+            width: 266px;
+        }
+        
+#show-vote .votelist li.or {
+            position:relative;
+            padding:0;
+            border:0;
+            width: 5px; 
+        }
+#show-vote .votelist li.or b {
+            padding-top:41px;
+            height:0;
+            overflow:hidden;
+            width:41px;
+            display: block;
+            text-align: center;
+            margin:88px -18px 0 -18px;
+            background:url("http://images.hgtv.com/webhgtv/hg20/pkgs/2014/dream-home/potd/votesprite.png") bottom right no-repeat;
+        }
+#show-vote .votelist li p {
+            margin-top:5px;
+        }
+#show-vote .votelist li a.button {
+            margin-left:95px;
+            width:50px;         
+        }
+#show-vote .progress {
+            width:97%;
+            height:10px;
+            clear:both;
+            margin:0 auto;
+            border-radius: 3px;
+            border:2px solid #bccdca;   
+        }
+        
+#show-vote .progress div {
+            width:0;
+            height:10px;
+            background-color:#e1e6e5;
+            transition: width 1.5s;
+        }
+                
+#votelightbox-mask {
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: #000;     
+            opacity:0.3;
+            filter:alpha(opacity=0.3);  
+            z-index:3999;   
+            display:none;
+        } 
+#votelightbox {
+            color:#fff;
+            position:absolute;
+            border:1px solid #333;
+            top:650px;
+            left:0;
+            width:100%;
+            background-color: #333;         
+            display:none;       
+            z-index:4001;
+            text-align:center;
+            box-shadow:0 2px 12px #000; 
+            margin:0;
+            padding: 0;
+        }
+#votelightbox .navbuttons {
+            margin:10px auto 10px auto;
+            width:616px;
+            height:32px;
+        } 
+        
+#votelightbox .navbuttons .next .button span em, #votelightbox .navbuttons .prev .button span em { 
+    line-height:31px;
+}
+#votelightbox .navbuttons .next .button span {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll left 0;
+    cursor:pointer;
+    display:block;
+    font-family:"trebuchet ms",sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    height:29px;
+    background-position:right -692px;
+    margin:0 -2px 0 0;
+    padding:0 38px 0 0;
+}
+#votelightbox .navbuttons .next .button em {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll right 0;
+    cursor:pointer;
+    display:block;
+    height:29px;
+    margin:0 0 0 -2px;
+    text-align:left;
+    background-position:left -692px;
+    padding-left:21px;
+}
+#votelightbox .navbuttons .prev .button span {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll left 0;
+    cursor:pointer;
+    display:block;
+    font-family:"trebuchet ms",sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    height:29px;
+    background-position:right -576px;
+    margin:0;
+    padding:0 12px 0 0;
+}
+#votelightbox .navbuttons .prev .button em {
+    background:url("http://hgtv.sndimg.com/webhgtv/hg20/imgs/hgtv_photogallery_sprite.png") no-repeat scroll right 0;
+    cursor:pointer;
+    display:block;
+    height:29px;
+    margin:0 0 0 -2px;
+    text-align:left;
+    background-position:left -576px;
+    padding-left:41px;
+}
+#votelightbox .navbuttons .next.disabled .button span {
+    background-position:right -779px;
+    color:#666; cursor:default;
+}
+#votelightbox .navbuttons .next.disabled .button em {
+    background-position:left -779px;
+    color:#666;
+    cursor:default
+}
+#votelightbox .navbuttons .prev.disabled .button span {
+    background-position:right -663px;
+    color:#666;
+    cursor:default;
+}
+#votelightbox .navbuttons .prev.disabled .button em {
+    background-position:left -663px;
+    color:#666; 
+    cursor:default;
+}
+#votelightbox .navbuttons .next:hover span {
+    background-position: right -721px;
+}
+#votelightbox .navbuttons .next:hover span em { 
+    background-position: left -721px;
+}
+#votelightbox .navbuttons .prev:hover span { 
+    background-position: right -605px;
+}
+#votelightbox .navbuttons .prev:hover span em {
+    background-position: left -605px;
+}
+#votelightbox .navbuttons .next:active span {
+    background-position: right -750px;
+}
+#votelightbox .navbuttons .next:active span em {
+    background-position: left -750px;
+}
+#votelightbox .navbuttons .prev:active span {
+    background-position: right -634px;
+}
+#votelightbox .navbuttons .prev:active span em {
+    background-position: left -634px;
+}
+#votelightbox img {
+            height:462px;
+            clear:both;
+            margin:0 auto 12px auto;
+            background-color: #000;         
+            border:0;
+            padding:0;
+        }   
+#votelightbox .caption {
+            font-weight:bold;
+            height:34px;
+        }   
+#votelightbox .close {
+            box-shadow:0 -2px 12px #333;
+            color:#fff;
+            background-color:#333;
+            height:0;
+            width:24px;
+            overflow:hidden;
+            border:0;
+            margin:-18px auto 4px 960px;
+            border-radius:3px;
+            padding:18px 2px 2px 2px;
+            font-size:1.5em;
+            line-height:1em;
+            font-weight:bold;
+            cursor:pointer;
+            background:#333 url("http://images.hgtv.com/webhgtv/hg20/pkgs/2014/dream-home/potd/votesprite.png") top right no-repeat;
+        } 
+#votelightbox .prev {
+            float:left; 
+        } 
+#votelightbox .next {
+            float:right;    
+        }           
+        
+#thanks-msg .share {
+            padding:8px;
+            line-height:30px;
+        }
+#thanks-msg p.intro {
+        margin:14px 0;
+        padding:0 7px;
+    }
+
+#hg-w #sweeps-promo.recommend-lead { 
+        margin:14px 0;
+    }
+#sweeps-promo {
+        border-top:1px solid #DAE7E3; 
+        clear:both;
+        margin:14px 0;
+        padding:14px 8px 0 14px;    
+    }   
+
+#pinchoices h3  {
+     border-top:1px solid #dae7e3;  
+     padding:8px 0 0 16px;
+     font-size:1.6em;
+     font-weight:normal;
+     margin:0;
+}
+
+#pinchoices ul {
+    margin:0 16px;
+    width:100%; 
+    height:350px;
+}   
+#pinchoices li { 
+    float:left;
+    padding: 0 30px 0 0;
+    text-align:center;
+    }
+#pinchoices li img { 
+    margin: 10px 0 5px 0;
+    }
+
+        
+#vote-results { 
+    border:1px solid #DAE7E3;
+    margin:14px;
+    padding:14px 0;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+}
+#vote-results h2, #vote-results p {
+    margin:0 14px 14px;
+}
+#vote-results {
+    min-height: 900px;
+}
+#vote-results .hd p {
+    border-bottom:1px solid #dae7e3;
+    height:30px;
+    margin:0 0 10px 0;
+    padding-left:15px;
+}
+#vote-results .hd ul {
+    border-bottom:1px solid #dae7e3;
+    height:30px;
+    padding-left:5px;
+}
+#vote-results .hd ul li {
+        float:left;
+        border-top-left-radius:3px;
+        border-top-right-radius:3px;
+        border:1px solid transparent;   
+        padding:5px 10px 0 10px;
+        margin:0 0 0 1px;   
+        height:23px;
+    }
+#vote-results .hd ul li:hover {
+        background-color:#f1f5fA;
+    }
+#vote-results .hd ul li a {
+        text-decoration: none;
+        cursor:pointer;
+    }
+#vote-results .hd ul li a:hover {
+        text-decoration: none;
+    }
+#vote-results .hd ul li.sel {
+        background-color:#fff;  
+        border:1px solid #dae7e3;   
+        border-bottom:1px solid #fff;           
+        height:24px;
+    }
+#vote-results .hd ul li.sel a {
+        color:#666;
+        cursor:default;
+    }
+#vote-results .hd h3 {
+         margin:0;
+         padding:10px 15px;
+         font-size:1.45em;
+         font-weight:normal;
+         border-bottom:1px solid #dae7e3;   
+    }
+    
+#vote-results .hd h3 .dates {
+         font-size:.7em;
+    }
+
+#html-results {
+    font-size: .9em;
+}
+#html-results .loading {
+    margin:100px 0 0 0;
+    text-align:center;
+    font-size:1.3em;
+    font-weight:bold;   
+}
+#html-results .loading:last-child {
+    margin:10px;    
+}   
+
+#html-results .cats li img {
+    float:left;
+    clear:left;
+    margin:-15px 10px 0 0;
+}
+
+#html-results .cats li h3 {
+    font-size: 1.2em;
+    font-weight:bold;
+    margin:8px 0 5px 8px;
+}
+#html-results .paren {
+    font-weight:normal;
+}   
+
+#html-results .cats li ul.items {
+    border-bottom:1px solid #DAE7E3;
+}
+
+#html-results .cats li:last-child ul.items {
+    border-bottom:0;    
+}
+
+
+#html-results .cats li ul.items li {
+    border-bottom:0;
+    height:auto;
+    margin:2px 0 5px 0;
+    clear:none;
+    color:#666;
+    padding:25px 10px 10px 10px;
+}
+
+#html-results .cats li ul.items li.winner {
+    background-color:#f1f6f2;
+}
+
+#html-results .resultbar {
+    width:470px;
+    background-color:#fff;
+    height:25px;
+    border:1px solid #DAE7E3;
+    margin-bottom:15px;
+    display:inline-block;
+}
+#html-results .resultbar .ink {
+    -webkit-transition:width 2s;
+    transition:width 2s;
+    width:0;
+    background-color:#ef4141;
+    color:#666;
+    height:25px;
+    font-size:13px;
+    line-height: 25px;
+}
+#html-results ul.items li.winner .resultbar .ink {
+    -webkit-transition:width 1.5s;
+    transition:width 1.5s;
+}
+#html-results .resultbar .ink.filled {
+    width:100%;
+    height:25px;
+    text-align:right;
+}
+#html-results .resultbar .ink .pct {
+    opacity:.001;
+    -webkit-transition:opacity 3s;
+    transition:opacity 3s;
+    margin-right: -30px;
+    font-size:13px;
+    line-height: 25px;
+}
+#html-results .resultbar .ink.filled .pct {
+    opacity:1;
+}
+
+
+
+div.intro.sweeps {margin-top:0;}
+#hg-bd img, #hg-ft img {float: none;}
+
+</style>
+
+<div id="voteReplay"></div>
+<script>
+var voteReplayBigbox = getDartEnterpriseUrl("BIGBOX", 5);
+var voteReplayDivCheck = document.getElementById('voteReplay');
+if(voteReplayDivCheck != ''){
+                document.getElementById('voteReplay').innerHTML = "<iframe src='"+ nguidReplayBigbox +"&topic2=IFRAME' width='300' height='250' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'></iframe>";
+}else{
+                <!-- no vote div -->
+}
+
+
+</script>
+
+
+<div id="hg-bd-wrap">
+    <div id="bd-container">
+        <div id="bd-wrapper" class="clrfix">
+            <# Proc name="getTPBanner" param="TP_TENTPOLE_HEADER" /#>
+            
+            <!-- MUST GO BEFORE TENTPOLE #$&^*$#! -->
+            <style>
+            #show-vote{display:block;}
+            </style>
+            
+            <div id="hg-w">
+
+
+
+
+                <div class="intro sweeps">
+                    <h1>Smart Swag Vote and Sweepstakes</h1>
+                </div>
+
+                <div class="intro-enter">
+          <p>We are offering fans the opportunity to enter for a chance to win home goods and furnishings used in the interior design of HGTV Smart Home 2014. How it works: Products will be divided into three rounds of voting, based upon theme. During each round you are invited to vote up to 10 times per day for your favorite products in each of several categories and <a href="/smart-home/hgtv-smart-home-2014-smart-swag-giveaway/index.html">enter once per day for a chance to win</a> the round's winning collection of products. Three rounds means three potential winners! The approximate value of each round's collection of products is up to $1,300.</p>
+
+
+
+
+
+
+          <!--
+          ***************************************************************
+          * VOTE HTML STARTS HERE
+          ***************************************************************
+          -->
+          <div id="show-vote">
+            <div class="group">
+              <h3><span class="round-header">Loading...</span> <span class="counter"></span></h3>
+              <p>Now through April 29, 2014, at 8:59 am ET, vote up to ten times per day for your favorite high-tech picks in each of several categories. Then enter once per day for a chance to win the collection. Good luck! </p>
+              <div class="loading"><img src="http://images.hgtv.com/webhgtv/hg20/pkgs/2011/rmm/images/loader.gif" alt="Loading content" width="30" height="30" class="plain-img"> </div>
+              <div class="category"></div>
+            </div>
+            <div class="progress"><div class="fill-0"></div></div>
+            <div class="sponsor"></div>
+          </div>
+          <div id="votelightbox-mask"></div>
+          <div id="votelightbox"><button class="close">x</button><div class="navbuttons"><div class="prev"><button class="button"><span><em>Previous</em></span></button></div><div class="next"><button class="button"><span><em>Next</em></span></button></div></div><div class="image"></div><p class="caption"></p></div>
+          <!--
+          ***************************************************************
+          * VOTE HTML ENDS HERE
+          ***************************************************************
+          -->
+
+
+
+</div>
+
+
+
+
+            </div>
+            <div id="hg-e">
+                <# Proc name="getTPBundleTextElement" param="TP_BUNDLE_COUNTDOWN"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_GET_SOCIAL"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_BIG_BOX"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_FLOOR_PLAN"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_FAMILY"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_PROMO_UNIT_1"/#>
+                <# Proc name="getTPBundleTextElement" param="TP_PROMO_UNIT_2"/#>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/js/mustache.min.js"></script>
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/js/tentpole-vote.full.js"></script>
+<script src="http://images.hgtv.com/webhgtv/hg20/pkgs/2014/smart-home/smart-swag/sh-vote-allrounds.js"></script>
+
+<script type="text/javascript">
+$(function() {
+SNI.TP.Vote.initVote({
+  name      : 'SH14',
+  endURL      : '/hgtv-smart-home-2014-smart-swag-vote-thanks/package/index.html',
+  voteLimitURL  : '/hgtv-smart-home-2014-smart-swag-vote-thanks/package/index.html',
+  brand     : 'hgtv'
+});
+});
+
+$( "ul#tentpole-menu li.tab-smart-swag-sweepstakes" ).addClass( "sel" );
+
+</script>

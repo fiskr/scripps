@@ -1,0 +1,5 @@
+.sponsor-multi-logo {float:right; margin-left:14px;}
+.photo-gallery .sponsor-multi-logo {float:left; background-color:#fff; border-radius:2px; font-size:11px; margin:0 0 15px 81px;}
+.sponsor-multi-logo.split {margin-right:14px;padding-right:14px;border-right:1px dotted #B8B8B8;}
+.sponsor-multi-logo em {float:left;color:#999;font-size:.786em;font-style:normal;padding:7px;}
+.sponsor-multi-logo img {padding:6px 7px 0 0;}

@@ -1,0 +1,17 @@
+# Basic path setup
+dir.project = ../
+dir.build   = ${basedir}
+dir.js      = ${dir.project}/js
+dir.css     = ${dir.project}/css
+dir.tools   = ${dir.build}/tools
+dir.deploy  = ${dir.project}/deploy
+yui         = ${dir.tools}/yuicompressor-2.4.7.jar
+jsmin       = ${dir.tools}/jsmin.0.2.4.jar
+
+# Site environment root URLs used for image paths in CSS
+url.dev     = http://frontend.scrippsnetworks.com/development/webhgrm/rm10/
+url.stage   = http://frontend.scrippsnetworks.com/staging/webhgrm/rm10/
+url.prod    = http://www.sndimg.com/webhgrm/rm10/
+
+# Append cachebuster parameter to images?
+bustCache   = false

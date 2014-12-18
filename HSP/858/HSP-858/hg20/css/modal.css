@@ -1,0 +1,130 @@
+.overlay-bg {
+    position: fixed;
+    z-index:10000;
+    top: 0;
+    left: 0;
+    height:100%;
+    width:100%;
+    background: #000;
+    opacity:.5;
+    font-size:100%;
+    }
+.modal-container {
+    background: #f0f0f0;
+    padding:21px 18px 11px 18px;
+    border-radius:2px;
+    opacity:1;
+    z-index:11000;
+    position:absolute;
+    left:50%;
+    top:70px;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.33);
+    }
+.modal-bd {
+    border-top:1px dotted #cccccc;
+    border-bottom:1px dotted #cccccc;
+    margin:18px 0 10px 0;
+    padding:25px 18px 11px 18px;
+    overflow:auto;
+    }
+.modal-bd img {
+    float:left;
+    }
+.modal-container h2 {
+    font-family:"Trebuchet Ms", sans-serif;
+    color:#664991;
+    font-weight:700;
+    text-align:center;
+    }
+.modal-container li {
+    background:transparent url(../imgs/modal-bullet-2x.png) no-repeat 0 6px;
+    background-size: 7px 15px;
+    line-height:27px;
+    margin:0 0 15px 0;
+    padding:0 0 0 18px;
+    }
+.modal-container ul {
+    font-size:18px;
+    width:287px;
+    float:right;
+    }
+.modal-container .close-perm {
+    background:transparent url(../imgs/modal-close-small-2x.png) no-repeat 0 1px;
+    background-size: 13px 13px;
+    padding:0 0 0 16px;
+    }
+.modal-ft {
+    font-size:14px;
+    text-align:center;
+    }
+.modal-container .close-button {
+    background:transparent url(../imgs/modal-close-2x.png) no-repeat;
+    background-size: 33.5px 33.5px;
+    display:block;
+    width:33.5px;
+    height:33.5px;
+    text-indent:-50000px;
+    position:absolute;
+    top:-16px;
+    right:-16px;
+    }
+
+
+/* iPad [portrait + landscape] */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .modal-container {
+        width:61.7%;
+        margin:0 0 0 -31.85%;
+        }
+    .modal-container h2 {
+        font-size:30.62px;
+        }
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 480px) {
+    .modal-container {
+        width:790px;
+        margin:0 0 0 -415px;
+        top:150px;
+        padding:30px 31px 25px;
+        border-radius:6px;
+        }
+    .modal-container h2 {
+        font-size:68.75px;
+        margin:0 4.3%;
+        line-height:72px;
+        }
+    .modal-container ul {
+        font-size:43.75px;
+        width:53%;
+        }
+    .modal-container li {
+        background:transparent url(../imgs/modal-bullet-2x.png) no-repeat 0 11px;
+        background-size: 21.875px 46.875px;
+        margin:0 0 46.875px 0;
+        padding:0 0 0 37px;
+        line-height:65px;
+        }
+    .modal-ft {
+        font-size:34.375px;
+        }
+    .modal-container .close-button {
+        background-size:75px 75px;
+        width:75px;
+        height:75px;
+        top:-35px;
+        right:-35px;
+        }
+    .modal-container .close-perm {
+        background-size: 35px 35px;
+        padding:0 0 0 50px;
+        }
+    .modal-bd {
+        border-top:1px dotted #cccccc;
+        border-bottom:1px dotted #cccccc;
+        margin:35px 0 20px 0;
+        padding:40px 0 20px 0;
+        overflow:auto;
+        }
+}

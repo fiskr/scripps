@@ -1,0 +1,80 @@
+<style>
+    #featured-projects-lead {
+        margin: 0;
+        position: relative;
+    }
+    #featured-projects-lead img {
+        border: none;
+        display: inline;
+    }
+    .hspot {
+        background: transparent !important;
+        border: 0 !important;
+        left: 0;
+        overflow: visible !important;
+        /*filter: alpha( opacity=1 ); opacity: 0.1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=01)";*/
+        filter: 0 !important;
+        padding: 0 !important;
+        position: absolute;
+        top: 0;
+        zoom: 1;
+    }
+    .hs-presents {
+        left: 25px;
+        top: 332px;
+    }
+    .hs-joy {
+        left: 487px;
+        top:   83px;
+    }
+    .hs-yarn {
+        left: 145px;
+        top: 222px;
+    }
+    .hs-tree {
+        left: 341px;
+        top: 312px;
+    }
+    .hs-wreath {
+        left: 218px;
+        top: 130px;
+    }
+    
+</style>
+
+
+<!-- the dfp lead ad floats but doesn't clear afterwards, hence cleafix-->
+<div class="clearfix"></div>
+<div id="featured-projects-lead">
+    <img src="http://hgtv.sndimg.com/HGTV/2014/10/06/HH2014-customlead.jpg" width="616px" />
+
+    <a href="/content/hgtv-com/en/design/make-and-celebrate/handmade/photo-galleries/2014/7/7-upcycled-gift-wrap-ideas-from-around-the-house.html" title="Unique Gift Wrap Ideas">
+        <img class="hspot hs-presents" src="http://hgtv.sndimg.com/HGTV/2014/10/13/presents-220.png" alt="Unique Gift Wrap Ideas" />
+    </a>
+    <a href="/content/hgtv-com/en/design/make-and-celebrate/handmade/photo-galleries/2014/w/wrap-trees-in-yarn-for-the-holidays.html" title="Wrap a Tree in Yarn">
+        <img class="hspot hs-yarn" src="http://hgtv.sndimg.com/HGTV/2014/10/07/yarn-140.png" alt="Wrap a Tree in Yarn" />
+    </a>
+    <a href="/content/hgtv-com/en/design/make-and-celebrate/handmade/photo-galleries/2014/h/how-to-make-a-metallic-pvc-pipe-wreath.html" title="PVC Pipe Wreath">
+        <img class="hspot hs-wreath" src="http://hgtv.sndimg.com/HGTV/2014/10/07/wreath-182.png" alt="PVC Pipe Wreath" />
+    </a>
+    <a href="/content/hgtv-com/en/design/make-and-celebrate/handmade/photo-galleries/2014/m/make-an-alternative-christmas-tree-that-displays-cards.html" title="Alternative Christmas Tree">
+        <img class="hspot hs-tree" src="http://hgtv.sndimg.com/HGTV/2014/10/07/cardtree-182.png" alt="Alternative Christmas Tree" />
+    </a>
+    <a href="/content/hgtv-com/en/design/make-and-celebrate/handmade/photo-galleries/2014/m/make-a-holiday-inspired-string-art-sign.html" title="String Art Sign">
+        <img class="hspot hs-joy" src="http://hgtv.sndimg.com/HGTV/2014/10/07/joy-140.png" alt="String Art Sign" />
+    </a>
+</div>
+<script>
+require(['http://images.hgtv.com/webhgtv/hg20/pkgs/2014/holiday-house/imageSpot.js'], function(){
+    $(function(){
+        $('.hspot').imageSpot({
+            speed: 750,
+            track: function ($this) {
+                $this.click(function () {
+                    moduleTrack(this, 'Holiday House Lead Module', ($this.parent().attr('title') || ''), $('#featured-projects-lead a').index($this.parent()), window.location.href, 'click');
+                });
+            }
+        });
+    });
+});
+</script>

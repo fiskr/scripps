@@ -1,0 +1,12 @@
+@heading-color: #333;
+@link-color: #386cb4;
+@icon-color: #386cb4;
+@icon-active-color: #999;
+@text-color: #444;
+
+/* header nav */
+@nav-width:82%;
+@nav-heading-lp:15px;
+@nav-heading-height:22px;
+@nav-heading-color:#999;
+/* END header nav */

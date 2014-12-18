@@ -1,0 +1,274 @@
+/*body { background:#e3e8d6;}
+#leaderboard-wrap { background:#c9cebd; border-bottom:none;} */
+.intro h1 {
+    color:#ef4141;
+    font:bold 161.6% Trebuchet MS;
+    }
+
+.intro h2 {
+    font:146%/1.3 Arial;
+    margin-bottom:0;
+    }
+
+#hg-e {
+    float:right;
+    min-height:330px \9;
+    }
+
+/*
+ * TENTPOLE HEADER
+ */
+
+.tentpole-container {
+    height:167px;
+    padding:7px 7px 0;
+    position:relative;
+    }
+
+.tentpole-container h1 {
+    height:125px;
+    margin:0;
+    width:980px;
+    background:url(http://hgtv.sndimg.com/HGTV/2011/06/30/HGTV-Graphic_Fall11-Banner_s980x125.jpg) no-repeat scroll 0 0;
+    text-indent:-999em;
+    overflow:hidden;
+    }
+
+#event-brand-logos {
+    height:45px;
+    position:absolute;
+    left:614px;
+    top:79px;
+    width:361px;
+    }
+
+#event-brand-logos li {
+    float:left;
+    }
+
+#event-brand-logos a {
+    display:block;
+    height:100%;
+    width:100%;
+    text-indent:-999em;
+    overflow:hidden;
+    }
+
+#event-brand-logos .hg {
+    height:45px;
+    width:65px;
+    }
+
+#event-brand-logos .diy {
+    height:45px;
+    width:72px;
+    }
+
+#event-brand-logos .fd {
+    height:45px;
+    width:121px;
+    }
+
+#event-brand-logos .hpro {
+    height:45px;
+    width:103px;
+    }
+
+/*
+ * LANDING
+ */
+
+#five-feature {
+    background:#f0f6f2;
+    float:left;
+    margin:14px;
+    padding:14px;
+    width:938px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    }
+
+#five-feature h2 {
+    border-bottom:1px solid #DAE7E3;
+    color:#ef4141;
+    font-size:161.6%;
+    font-weight:bold;
+    padding-bottom:7px;
+    }
+
+#five-feature h3 {
+    font-size:138.5%;
+    line-height:1.2;
+    margin-bottom:3px;
+    }
+
+#five-feature p {
+    line-height:1.4;
+    }
+
+#five-feature li {
+    float:left;
+    margin-right:14px;
+    width:166px;
+    }
+
+#five-feature li.last {
+    margin-right:0;
+    }
+
+#five-feature li h3 {
+    height:43px;
+    }
+
+#five-feature img {
+    margin-bottom:3px;
+    }
+
+#five-feature.w {
+    width:574px;
+    }
+
+#five-feature.w li {
+    margin-right:35px;
+    }
+
+#five-feature.w li.n3 {
+    margin-right:0;
+    }
+
+#five-feature.w li.last, #five-feature.w li.n4 {
+    margin-top:14px;
+    }
+
+.mod-w {
+    border:1px solid #DAE7E3;
+    float:left;
+    height:252px;
+    margin:0 0 14px 14px;
+    padding:13px;
+    width:448px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    }
+
+.mod-w h3 {
+    font:bold 161.6% Trebuchet MS;
+    }
+
+.mod-w .thumbs {
+    margin-bottom:7px;
+    }
+
+.mod-w .thumbs li {
+    float:left;
+    margin-top:14px;
+    width:224px;
+    }
+
+.mod-w .thumbs img.thumb {
+    float:left;
+    margin-right:7px;
+    }
+
+.mod-w .thumbs p {
+    line-height:1.4;
+    margin-top:18px;
+    }
+
+#services-search.mod-w {
+    position:relative;
+    }
+
+#services-search.mod-w form {
+    margin-right:0;
+    }
+
+#services-search.mod-w p {
+    line-height:1.4;
+    }
+
+.mod-w #services-search-type-input, .mod-w #services-search-zip-input {
+    width:205px;
+    }
+
+#hg-w .pod {
+    margin:0 14px;
+    padding-top:14px;
+    }
+
+#hg-w .top-listing {
+    border-top:none;
+    padding-top:0;
+    }
+
+.top-listing {
+    margin:0 14px 14px;
+    }
+
+.top-listing h4 {
+    font-size:161.6%;
+    font-weight:bold;
+    }
+
+.top-listing ol > li {
+    border-bottom:1px solid #DAE7E3;
+    clear:left;
+    }
+
+.top-listing ol > li .bd {
+    float:left;
+    padding:14px 0;
+    width:590px;
+    }
+
+.top-listing .bd > * {
+    overflow:hidden;
+    line-height:1.5em;
+    margin-bottom:4px;
+    }
+
+.top-listing a.thumb {
+    float:left;
+    margin:0 10px 0 0;
+    }
+
+.top-listing .listingNum {
+    color:#ef4141;
+    float:left;
+    font:bold 161.6% Trebuchet MS;
+    padding:14px 0;
+    }
+
+.top-listing .attr {
+    color:#999;
+    font:77% Trebuchet MS;
+    }
+
+.two-across > * {
+    width:279px;
+    margin-right:10px;
+    padding-right:11px;
+    float:left;
+    }
+
+.two-across > *.mod2 {
+    clear:left;
+    border-right:1px solid #DAE7E3;
+    }
+
+.two-across img {
+    float:left;
+    margin:0 14px 14px 0;
+    }
+
+.two-across > * > * {
+    overflow:hidden;
+    }
+
+.feature-list > div {
+    margin-bottom:14px;
+    }
+
+#hg-we #blog-main .desc p {padding-bottom: 0;}

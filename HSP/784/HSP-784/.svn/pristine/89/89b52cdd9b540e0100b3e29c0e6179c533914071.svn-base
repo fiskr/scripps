@@ -1,0 +1,28 @@
+header, section {zoom:1;}
+header:after, section:after {content:".";display:block;height:0;width:0;line-height:0;font-size:0px;clear:both;visibility:hidden;}
+
+.site-wrapper{min-width:996px;}
+
+body > section, .site-wrapper > section, .sni-bd {display:block;margin:auto;width:994px;background-color:#FFF;}
+
+header, nav {display:block;}
+.sni-w{width:644px;padding-bottom:21px;float:left;border-right:1px solid #E6E6E6;}
+.sni-ww{clear:left;float:left;margin-right:21px;width:210px;border-right:1px solid #E6E6E6;}
+.sni-we{width:250px;margin-top:-14px;float:right;border-left:solid 1px #E6E6E6;}
+.sni-e{width:349px;padding-bottom:21px;float:left;margin-left:-1px;border-left:1px solid #E6E6E6;}
+footer{float:left;width:100%;}
+
+/* for photo gallery padding below theater */
+.article-detail .sni-w, .article-detail .sni-e {margin-top:14px;}
+
+.gallery .sni-w, .gallery .sni-e {padding-top:28px;}
+
+.site-wrapper > section.theater{position:relative;margin:21px auto 0;width:100%;background-color:#2E2E2E;}
+.site-wrapper > section.theater.inline {background-color: #242424;margin:0;}
+
+.sni-ft{clear:both;height:0;display:inline-block;}
+
+footer {display:block;}
+
+/* removing space below page */
+body > a, iframe[name^="google_conversion_frame"] {display: none;}

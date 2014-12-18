@@ -1,0 +1,675 @@
+.hide {display: none;}
+*{outline:none}body{color:#000;background:#fff;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup,sub{line-height:normal;}sub{vertical-align:text-bottom;}input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+body{font:13px/1.7 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+.clrfix{zoom:1;}
+.clrfix:after{content:".";display:block;height:0;width:0;line-height:0;font-size:0px;clear:both;visibility:hidden;}
+.clr{clear:both;}
+
+
+body { background: #fff url(../imgs/se/body_bg.png) repeat-y fixed center top; color: #333; }
+
+strong { font-weight: bold;}
+em { font-style: italic;}
+
+a:link { color: #176684; text-decoration: none;}
+a:visited { color: #757575;text-decoration: none;}
+a:hover { color: #ba0707; text-decoration: underline;}
+a:active { color: #f33;}
+
+hr { margin: 14px 0; border: none; background: #ddd; height: 1px;}
+
+/* ul.menu creates a horizontal menu */
+ul.menu { *zoom:1; }
+ul.menu:after {content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+ul.menu li { float: left;}
+ul.menu li a {display: block;}
+
+/* ul.grid needs cells */
+ul.grid { *zoom:1; }
+ul.grid:after {content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+/* every li in .grid should have .cell */
+ul.grid .cell { float: left; border-bottom: 1px solid #ddd; }
+/* the last row of li's need .last as well */
+ul.grid .last { border-bottom: none;}
+/* within a cell is a .bd */
+ul.grid .cell .bd { border-right: 1px solid #ddd; }
+/* and the last cell in a row is a .cap */
+ul.grid .cap .bd { border-right: none;}
+
+/* ul.list creates a standard list with grey bullets */
+ul.list li { background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -369px; padding-left: 10px; float: none; }
+ul.list li a { display: inline;}
+ul.list li a em { color: #999; font-size: 85%; font-style: normal; }
+#diy-e ul.list li { /*background-position: 0px 7px;*/ line-height: 1.385; }
+#diy-ww ul.list li { background-position: 0px -371px; }
+
+/*Added to support multiple hosts*/
+ul.list li.AlsoMeet{ width: 150px; }
+/*Added to support multiple hosts*/
+
+ol.thumbs { height: 160px; overflow: auto;}
+ol.thumbs li { padding: 7px 0 5px 7px; margin: 0 7px 0 0; border-top: 1px dotted #ddd; zoom:1;}
+ol.thumbs li.first { border-top: none; padding-top: 0;}
+ol.thumbs li:after {content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+ol.thumbs a.thumbnail { display: block; float: left; margin-right: 7px; line-height: 1; }
+ol.thumbs a.thumbnail img { border: 2px solid #241f19; }
+ol.thumbs .title { line-height: 1.38;}
+ol.thumbs .title em { color: #959595; font-style: normal; white-space: nowrap; }
+ol.thumbs .description { font-size: 85%; line-height: 1.46;}
+
+/* ul.topics creates a list with block anchor elements
+	and a dotted border	between the list items */
+ul.topics li {border-top: 1px dotted #fff; border-bottom: 1px dotted #e1e1e1; }
+ul.topics .first { border-top: none;}
+ul.topics .last { border-bottom: none; _zoom: 1;}
+
+/* ul.cloud is a tag cloud (borrows stuff from .menu) */
+ul.cloud li { line-height: 27px; display: inline; padding-right: 7px; }
+li.popular {font-size: 161.6%; font-weight: bold;}
+li.frequent { font-size: 108%; font-weight: bold;}
+li.notable { font-size: 100%;}
+li.common { font-size: 85%;}
+
+ul.vote li { line-height: 1.69; clear: both;}
+ul.vote input { display: block; float: left; margin: 4px 7px 0 0;}
+ul.vote li span { display: block; float: left; }
+ul.vote li .vote-pct { float: right; text-align: right; }
+ul.vote li p span { height: 9px; overflow: hidden; }
+ul.vote li p .bar-on { background: url(../imgs/se/diy-ui.png) no-repeat 0 -898px; }
+ul.vote li p .bar-off { background: url(../imgs/se/diy-ui.png) no-repeat 100% -889px;}
+
+/* list overrides so that editors can use in CMA editorial content pods  */
+.editorial-control ul, .editorial-control ol { line-height: 1.7em;}
+.editorial-control ul li {background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -369px; padding-left: 10px; margin-left: 5px;}
+.editorial-control ol li {margin-left: 5px; list-style-type:decimal; list-style-position:inside;}
+
+/* p.more makes for smaller size; but large line-height */
+p.more { font-size: 85%; line-height: 1.91;}
+p.more a em { color: #999; font-style: normal; }
+#diy-ww p.more { font-size: 85%; line-height: 1.5;margin-top: 6px; }
+p.minor { font-size: 77%; color: #999;}
+
+/* A pro-pod is a magical creation designed to
+	PAINT IT BLACK (see: Rolling Stones) */
+.pro-pod { background: #000; color: #fff;}
+.pro-pod a:link, .crsl-pro a:visited { color: #d8c5a5; }
+.pro-pod a:hover { color:#d8c5a5;}
+.pro-pod a:active { color: #fff;}
+
+/* button.button creates a generic form button.
+ 	use class of active for :active state
+	use class of selected for an alternate pressed state
+	use class of disabled for disabled state	*/
+button.button { text-align: center; color: #F7F7F7; font-size: 100%; line-height: 1; font-weight: bold; border: 0; margin: 0; padding: 0; cursor: pointer; outline: none; background: none; font-family: arial;
+                *height: 30px; }
+button.button span { display: block; margin: 0 2px 0 0; padding: 0; line-height: 0; background: transparent url(../imgs/se/diy-ui.png) left 0px no-repeat; outline: none; }
+button.button span em { display: block; height: 30px; margin: 0 -2px 0 13px; padding: 0 12px 0 0; line-height: 30px; background: transparent url(../imgs/se/diy-ui.png) right 0px no-repeat; font-style: normal; font-weight: bold;}
+button.button:hover {color: #FFF;}
+button.button:hover span {background-position: left -150px;}
+button.button:hover em {background-position:  right -150px;}
+
+button.button:active { color: #444;}
+button.button:active span, button.button.active span { background-position: left -30px; }
+button.button:active span em, button.button.active span em { background-position: right -30px; }
+button.button.active { color: #444; }
+button.button.selected { color: #fff; }
+button.button.selected span { background-position: left -60px; }
+button.button.selected span em { background-position: right -60px; }
+button.button.disabled { color: #ccc; }
+button.button.disabled span { background-position: left -90px; cursor: default; }
+button.button.disabled span em { background-position: right -90px; cursor: default; }
+button.button::-moz-focus-inner { padding: 0; border: 0; }
+
+/* a.button creates a generic button
+	same classes as button.button
+	Set to float left:
+	needs to be contained by a floating element */
+a.button, .button-nav a, a.button:visited, .button-nav a:visited { display: block; float: left; height: 30px; padding-right: 7px; color: #F7F7F7; font-size: 100%; background: url(../imgs/se/diy-ui.png) right top no-repeat; text-decoration: none; cursor: pointer; margin-left: 1px; }
+a.button span, .button-nav a span { font-weight: bold; display: block; padding: 1px 0 0 7px; background: url(../imgs/se/diy-ui.png) left top no-repeat; line-height: 29px; margin-left: -1px; }
+a.button:hover, .button-nav a:hover { color: #FFF;  text-decoration: none;}
+
+a.button:hover, .button-nav a:hover { background-position: right -150px;}
+a.button:hover span, .button-nav a:hover span { background-position: left -150px;}
+
+a.button:active, .button-nav a:active, a.button.active, .button-nav a.active { background-position: right -30px; color: #444; }
+.button-nav .ui-tabs-selected a  { background-position: right -30px; color: #444; }
+a.button:active span, .button-nav a:active span, a.button.active span, .button-nav a.active span { background-position: left -30px; }
+.button-nav .ui-tabs-selected a span { background-position: left -30px; }
+a.button.selected, .button-nav a.selected { color: #444; background-position: right -60px;  }
+a.button.selected span, .button-nav a.selected span { background-position: left -60px; text-shadow: none; }
+a.button.disabled, .button-nav a.disabled { color: #ccc; background-position: right -90px;  }
+a.button.disabled span, .button-nav a.disabled span { background-position: left -90px;}
+
+/* button.button-alt and a.button-alt create
+	the Black Button	*/
+button.button-alt { text-align: center; color: #fff; font-size: 100%; line-height: 1; font-weight: bold; border: 0; margin: 0; padding: 0; cursor: pointer; outline: none; background: none;
+                    *height: 30px; }
+button.button-alt span { display: block; margin: 0 2px 0 0; padding: 0; line-height: 0; background: transparent url(../imgs/se/diy-ui.png) left -120px no-repeat; outline: none; }
+button.button-alt span em { display: block; height: 30px; margin: 0 -2px 0 2px; padding: 0 2px 0 0; line-height: 30px; background: transparent url(../imgs/se/diy-ui.png) right -120px no-repeat; font-style: normal; }
+button.button-alt:hover {color: #fff; }
+button.button-alt:hover span, button.button-alt.active span, button.button-alt.selected span {background-position: left -150px;}
+button.button-alt:hover span em, button.button-alt.active span em, button.button-alt.selected span em  { background-position: right -150px;}
+button.button-alt:active { color: #b8a5a6;}
+button.button-alt:active span  { background-position: left -180px; }
+button.button-alt:active span em{ background-position: right -180px; }
+button.button-alt.disabled { color: #ccc; }
+button.button-alt.disabled span { background-position: left -90px; cursor: default; }
+button.button-alt.disabled span em { background-position: right -90px; cursor: default; }
+button.button-alt::-moz-focus-inner { padding: 0; border: 0; }
+
+a.button-alt, a.button-alt:visited { display: block; float: left; height: 30px; padding-right: 7px; color: #fff; font-size: 100%; background: url(../imgs/se/diy-ui.png) right -120px no-repeat; text-decoration: none; cursor: pointer; margin-left: 1px; }
+a.button-alt span { display: block; padding: 1px 0 0 7px; background: url(../imgs/se/diy-ui.png) left -120px no-repeat; line-height: 29px; margin-left: -1px; }
+a.button-alt:hover, a.button-alt.active, a.button-alt.selected { color: #fff;  text-decoration: none; background-position: right -150px;}
+a.button-alt:hover span, a.button-alt.active span, a.button-alt.selected span { background-position: left -150px; }
+a.button-alt:active { background-position: right -180px; color: #b8a5a6; }
+a.button-alt:active span { background-position: left -180px; }
+a.button-alt.disabled { color: #ccc; background-position: right -90px;  }
+a.button-alt.disabled span { background-position: left -90px;}
+
+/* Like button.button, button.small-button
+	(and button.small-button-alt) creates
+	small-buttons	*/
+button.small-button { text-align: center; color: #F7F7F7; font-size: 85%; line-height: 1; font-weight: bold; border: 0; margin: 0; padding: 0; cursor: pointer; outline: none; background: none;
+                      *height: 24px; }
+button.small-button span { display: block; margin: 0 2px 0 0; padding: 0; line-height: 0; background: transparent url(../imgs/se/diy-ui.png) left -210px no-repeat; outline: none; }
+button.small-button span em { display: block; height: 24px; margin: 0 -2px 0 2px; padding: 0 2px 0 0; line-height: 24px; background: transparent url(../imgs/se/diy-ui.png) right -210px no-repeat; font-style: normal; font-weight: bold; }
+button.small-button:hover span {
+    color: #FFF;
+    background-position: left -306px;
+}
+button.small-button:hover span em {
+    background-position: right -306px;
+}
+button.small-button:active, button.small-button.active, button.small-button.selected, button.small-button:active span { color: #444444;}
+button.small-button:active span, button.small-button.active span, button.small-button.selected span { background-position: left -234px; }
+button.small-button:active span em, button.small-button.active span em, button.small-button.selected span em { background-position: right -234px; }
+button.small-button.disabled { color: #ccc; }
+button.small-button.disabled span { background-position: left -258px; cursor: default; }
+button.small-button.disabled span em { background-position: right -258px; cursor: default; }
+button.small-button::-moz-focus-inner { padding: 0; border: 0; }
+
+button.small-button-alt { text-align: center; color: #fff; font-size: 85%; line-height: 1; font-weight: bold; border: 0; margin: 0; padding: 0; cursor: pointer; outline: none; background: none;
+                          *height: 24px; }
+button.small-button-alt span { display: block; margin: 0 2px 0 0; padding: 0; line-height: 0; background: transparent url(../imgs/se/diy-ui.png) left -282px no-repeat; outline: none; }
+button.small-button-alt span em { display: block; height: 24px; margin: 0 -2px 0 2px; padding: 0 2px 0 0; line-height: 24px; background: transparent url(../imgs/se/diy-ui.png) right -282px no-repeat; font-style: normal; }
+button.small-button-alt:hover span, button.small-button-alt.active span, button.small-button-alt.selected span {background-position: left -306px;}
+button.small-button-alt:hover span em, button.small-button-alt.active span em, button.small-button-alt.selected span em {background-position: right -306px;}
+button.small-button-alt:active { color: #b29495;}
+button.small-button-alt:active span { background-position: left -330px; }
+button.small-button-alt:active span em { background-position: right -330px; }
+button.small-button-alt.disabled { color: #ccc; }
+button.small-button-alt.disabled span { background-position: left -258px; cursor: default; }
+button.small-button-alt.disabled span em { background-position: right -258px; cursor: default; }
+button.small-button-alt::-moz-focus-inner { padding: 0; border: 0; }
+
+a.small-button, a.small-button:visited, .small-nav a, .small-nav a:visited { display: block; float: left; height: 24px; padding-right: 7px; color: #F7F7F7; font-size: 85%; font-weight: bold; background: url(../imgs/se/diy-ui.png) right -210px no-repeat; text-decoration: none; cursor: pointer; margin-left: 1px;}
+a.small-button span, .small-nav a span { display: block; padding: 1px 0 0 7px; background: url(../imgs/se/diy-ui.png) left -210px no-repeat; line-height: 23px; margin-left: -1px; }
+a.small-button:hover, .small-nav a:hover {
+    color: #FFF;
+    background-position: right -306px;
+}
+.a.small-button:hover span, .small-nav a:hover span {
+    background-position: left -306px;
+}
+a.small-button:active,
+a.small-button.active,
+a.small-button.selected,
+.small-nav a:active,
+.small-nav a.active {
+    color: #444;
+    background-position: right -234px;
+    text-shadow: none;
+}
+
+.small-nav a.selected,
+.small-nav .ui-tabs-selected a {
+    color: #444;
+    background-position: right -234px;
+}
+a.small-button:active span,
+a.small-button.active span,
+a.small-button.selected span,
+.small-nav a:active span,
+.small-nav a.active span{ background-position: left -234px; }
+
+.small-nav a.selected span,
+.small-nav .ui-tabs-selected a span {
+    background-position: left -234px;
+
+}
+a.small-button.disabled, .small-nav a.disabled { color: #ccc; background-position: right -258px;  }
+a.small-button.disabled span, .small-nav a.disabled span { background-position: left -258px;}
+
+.pro-pod .small-nav a { text-shadow: none;}
+a.small-button-alt,
+a.small-button-alt:visited,
+.pro-pod .small-nav a,
+.pro-pod .small-nav a:visited
+{
+    display: block;
+    float: left;
+    height: 24px;
+    padding-right: 7px;
+    color: #F7F7F7;
+    font-size: 85%;
+    background: url(../imgs/se/diy-ui.png) right -282px no-repeat;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 1px;
+}
+a.small-button-alt span,
+.pro-pod .small-nav a span {
+    display: block;
+    padding: 1px 0 0 7px;
+    background: url(../imgs/se/diy-ui.png) left -282px no-repeat;
+    line-height: 23px;
+    margin-left: -1px;
+}
+a.small-button-alt:hover,
+.pro-pod .small-nav a:hover {
+    background-position: right -306px;
+    color: #FFF;
+
+}
+a.small-button-alt.selected,
+.pro-pod .small-nav a.selected,
+.pro-pod .small-nav .ui-tabs-selected a
+{
+    color: #444;
+    text-decoration: none;
+    background-position: right -234px;
+}
+a.small-button-alt:hover span,
+.pro-pod .small-nav a:hover span {
+    background-position: left -306px;
+}
+a.small-button-alt.selected span,
+.pro-pod .small-nav a.selected span,
+.pro-pod .small-nav .ui-tabs-selected a span {
+    background-position: left -234px;
+}
+a.small-button-alt.active,
+.pro-pod .small-nav a.active,
+a.small-button-alt.active span,
+.pro-pod .small-nav a.active span,
+a.small-button-alt:active, .pro-pod .small-nav a:active { background-position: right -234px; color: #444; }
+a.small-button-alt:active span, .pro-pod .small-nav a:active span { background-position: left -234px; }
+a.small-button-alt.disabled, .pro-pod .small-nav a.disabled { color: #ccc; background-position: right -258px;  }
+a.small-button-alt.disabled span, .pro-pod .small-nav a.disabled span { background-position: left -258px;}
+#meet-experts .small-nav a {
+    color: #F7F7F7;
+}
+#meet-experts .small-nav a:hover {
+    color: #FFF;
+}
+#meet-experts .small-nav a:active {
+    color: #444;
+}
+#meet-experts .small-nav .ui-tabs-selected a {
+    color: #444;
+}
+/* ul.button-nav creates hub style navigation (use along with .menu)
+ 	.small-nav creates the same, but with tiny buttons */
+ul.button-nav li, ul.small-nav li { margin: 0 1px; }
+ul.button-nav a { font-weight: bold; }
+ul.small-nav a {font-weight: bold;}
+
+.ui-tabs-hide { display: none;}
+
+/* hub nav styles to set selected state for hub navigation only - needs to key off of wrapper element - put it in a seperate block of code cause it is going to
+get long */
+body.products-detail .hub-products span em {display: none;}
+#hub-nav {padding: 0 11px 14px;}
+#hub-nav.button-nav a { padding-right: 12px; }
+#hub-nav.button-nav a span { padding-left: 12px; }
+#hub-nav.button-nav span em { color: #CCC; }
+.button-nav span em { color: #FFF; font-size: 85%; font-style: normal;padding-left:5px;line-height:27px;}
+.button-nav a:active span em {color: #444;}
+.sweeps-lead .sponsor{width:35%;}
+body.channel-detail #hub-nav .hub-vid span em,
+body.article-detail #hub-nav .hub-art span em,
+body.project-detail #hub-nav .hub-project span em,
+body.howto-detail #hub-nav .hub-sxs span em,
+body.video #hub-nav .hub-vid span em,
+body.ton-photo #hub-nav .hub-photo span em, /* MM-2587 */
+body.materials-detail #hub-nav .hub-mt span em,
+body.comments-detail #hub-nav .hub-comments span em,
+body.products #hub-nav .hub-prod span em,
+body.subscribe .hub-subscribe span em,
+body.change-email .hub-change-email span em,
+body.unsubscribe .hub-unsubscribe span em,
+body.show-detail .hub-about span em,
+body.talent-detail .hub-about span em,
+body.experts-and-hosts.article-detail .hub-bio span em,
+body.topprojects-detail .hub-topprojects span em,
+body.episodes-detail .hub-episodes span em,
+body.player-detail .full-epi-wrap .hub-player span em,
+body.player-detail .video-wrap .hub-vid span em,
+body.tour-detail .hub-tour span em,
+body.products-detail .hub-products span em { color: #444; }
+
+body.channel-detail .hub-vid a,
+body.article-detail .hub-art a,
+body.project-detail .hub-project a,
+body.howto-detail .hub-sxs a,
+body.ton-photo .hub-photo a, /* MM-2587 */
+body.materials-detail .hub-mt a,
+body.comments-detail .hub-comments a,
+body.products .hub-prod a,
+body.subscribe .hub-subscribe a,
+body.change-email .hub-change-email a,
+body.unsubscribe .hub-unsubscribe a,
+body.show-detail .hub-about a,
+body.talent-detail .hub-about a,
+body.experts-and-hosts.article-detail .hub-bio a,
+body.topprojects-detail .hub-topprojects a,
+body.episodes-detail .hub-episodes a,
+body.player-detail .full-epi-wrap .hub-player a,
+body.player-detail .video-wrap .hub-vid a,
+body.tour-detail .hub-tour a,
+body.products-detail .hub-products a { color: #444; background-position: right -60px; text-shadow: none; }
+
+body.channel-detail .hub-vid a span,
+body.article-detail .hub-art a span,
+body.project-detail .hub-project a span,
+body.howto-detail .hub-sxs a span,
+body.ton-photo .hub-photo a span, /* MM-2587 */
+body.materials-detail .hub-mt a span,
+body.comments-detail .hub-comments a span,
+body.products .hub-prod a span,
+body.subscribe .hub-subscribe a span,
+body.change-email .hub-change-email a span,
+body.unsubscribe .hub-unsubscribe a span,
+body.show-detail .hub-about a span,
+body.talent-detail .hub-about a span,
+body.experts-and-hosts.article-detail .hub-bio a span,
+body.topprojects-detail .hub-topprojects a span,
+body.episodes-detail .hub-episodes a span,
+body.player-detail .full-epi-wrap .hub-player a span,
+body.player-detail .video-wrap .hub-vid a span,
+body.tour-detail .hub-tour a span,
+body.products-detail .hub-products a span { background-position: left -60px;}
+
+body#tv-shows #hub-nav{background: #fff;width:939px;padding:7px 13px;border:1px solid #dadada;margin:0 0 0 14px;position:relative;top: -6px;}
+
+/* div.columns: put two ul.list in here and they will be in two columns */
+.columns { *zoom: 1;}
+.columns:after {content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+.columns .list { float: left; width: 50%; }
+.columns .list li { line-height: 1.39; /*background-position: 0px 7px;*/ }
+
+/* a.calculate drops in a calculator icon */
+a.calculate { background: url(../imgs/se/icon_calculator.gif) no-repeat 0px 4px; padding-left: 20px; display: block;}
+
+a.feed { background: url(../imgs/se/icon_feed.gif) no-repeat right 0px; padding-right: 14px; }
+
+img.expert { width: 90px; height: 120px; display: block; }
+.image img { width: 92px; height: 69px; border: 2px solid #333; display: block;}
+
+.dialogue { padding-bottom: 12px; background: url(../imgs/se/dialogue_ww.gif) no-repeat center bottom;}
+.dialogue p { background: #e3e3e2; line-height: 1.38; padding: 7px;}
+
+#site-wrapper { background: url(../imgs/se/bd_pattern.gif) no-repeat center top; min-width: 994px; padding-top: 31px; _padding-top: 44px;_position: relative; }
+#diy-ft { background: #ddd;}
+
+#diy-bd { width: 994px; margin: 7px auto 0; }
+#diy-w { width: 644px; float: left; /* padding-bottom: 28px; */ }
+#diy-e { width: 336px; padding: 0 7px 14px; float: right;}
+
+#diy-w .full-w { margin: 0 14px 14px;}
+#diy-w .full-w h3 {font-size:108%; font-weight:bold;}
+#diy-w .full-w p { margin-bottom: 1em;}
+
+#diy-we { float: right; width: 406px; margin: 0 14px 14px; _margin-right: 7px; }
+#diy-ww { float: left; width: 196px; height: auto; margin: 0 0 14px 14px; border-top: 1px solid #e1e1e1; _margin-left: 7px; *zoom: 1;}
+
+.section-title { padding: 4px 11px 3px; color: #fff; margin-bottom: 14px; margin-right: 14px; text-transform: uppercase; background: #226a97; font-size: 254%; line-height: 1; *float: left; *width: 608px; *clear: both; }
+.section-title span { font-size: 48%; line-height: 1; letter-spacing: -0.04em; font-weight: bold;}
+.section-title h1 { display: inline; line-height: 1; letter-spacing: -0.04em; font-weight: bold; }
+
+#diy-we .pod { margin: 0 0 25px;}
+
+#diy-ww .pod { background: #f7f7f7; border-width: 0 1px 1px; border-style: solid; border-color: #e1e1e1; padding: 11px 6px 10px 6px; line-height: 1.38; margin: 0;}
+#diy-ww .pod h4 { padding: 0 7px; color: #333; font-size: 108%; line-height: 1; font-weight: bold; text-transform: uppercase; margin-bottom: 8px; text-shadow: 1px 1px 0 #fff;}
+#diy-ww .pod .bd { padding: 0 7px; *zoom: 1;}
+#diy-ww .pod .bd:after {content:".";display:block;height:0;width:0;line-height:0;clear:both;visibility:hidden;}
+#diy-ww .pod h5 { font-weight: bold; padding: 0 7px;}
+#diy-ww .pod h6 { font-weight: bold; }
+/*#diy-ww .pod .list li { background-position: 0 7px;}*/
+
+
+#diy-e .pod, #diy-e .widget { background: #fff; border: 1px solid #ccc; padding: 6px 0 9px; margin-bottom: 7px; }
+#diy-e .pod h4 { font-size: 123.1%; letter-spacing: -0.04em; line-height: 1; font-weight: bold; text-transform: uppercase; color: #fff; border-width: 0 0 0 6px; border-style: solid; padding: 8px 7px; margin-right: 6px; margin-bottom: 11px; background: #4d5254; border-color: #90909a;}
+#diy-e .pod h4 a, #diy-e .pod h4 a:hover, #diy-e .pod h4 a:visited { color: #fff; }
+#diy-e .pod .bd { padding: 0 13px;}
+#diy-e .pod .ft { padding: 0 13px;}
+#diy-e .widget h4 { font-size: 167%; line-height: 1; font-weight: bold; text-transform: uppercase; padding: 14px 7px;color: #fff; background: #010101 url(../imgs/se/bg-textured-black.png) no-repeat 0 0; margin: 0 6px;}
+body
+#diy-e .pro-pod { border-color: #000; background: #151615; color: #fff; }
+#diy-e .pro-pod h4 { font-size: 123.1%; border: none; padding: 7px 14px; margin: 0 0 7px; background:transparent;float: left; }
+body.bathroom #diy-e .pod.pro-pod h4,
+body.electrical #diy-e .pod.pro-pod h4,
+body.plumbing #diy-e .pod.pro-pod h4,
+body.painting #diy-e .pod.pro-pod h4,
+body.home-improvement #diy-e .pod.pro-pod h4,
+body.windows-walls-and-doors #diy-e .pod.pro-pod h4,
+body#experts-and-hosts #diy-e .pod.pro-pod h4,
+body.kitchen #diy-e .pod.pro-pod h4,
+body.remodeling #diy-e .pod.pro-pod h4,
+body.floors #diy-e .pod.pro-pod h4,
+body.outdoors #diy-e .pod.pro-pod h4,
+body.decorating #diy-e .pod.pro-pod h4 { background:transparent;}
+#diy-e .pro-pod .hd a.more{ float: right; font-size: 85%; margin-right: 14px;line-height:1; margin-top: 12px;}
+#diy-e .pro-pod .bd { padding: 0 6px;}
+#diy-e .pro-pod .ft { padding: 0 6px;}
+
+#diy-bd #diy-e .concrete h4 { background: #4d5254; border-color: #90909a; }
+#diy-bd #diy-e .tile h4 { background: #8c3b1d; border-color: #c6813e; }
+#diy-bd #diy-e .workbench h4 { background: #d96421; border-color: #ecb248; }
+#diy-bd #diy-e .drill h4, body.electrical #diy-e .pod h4 { background: #ddb527; border-color: #eeda55; }
+#diy-bd #diy-e .scaffolding h4, body.plumbing #diy-e .pod h4 { background: #384bc4; border-color: #79a0e3; }
+#diy-bd #diy-e .level h4, body.bathroom #diy-e .pod h4 { background: #5793b8; border-color: #aac9dd; }
+#diy-bd #diy-e .paint h4, body.painting #diy-e .pod h4 { background: #a91d1e; border-color: #e47171; }
+#diy-bd #diy-e .ladder h4, body.home-improvement #diy-e .pod h4 { background: #73500c; border-color: #cbb01b; }
+#diy-bd #diy-e .drywall h4, body.windows-walls-and-doors #diy-e .pod h4 { background: #091626; border-color: #384f6b; }
+#diy-bd #diy-e .backsplash h4, body.experts-and-hosts #diy-e .pod h4 { background: #545e8f; border-color: #b3c2d5; }
+#diy-bd #diy-e .lawn h4 { background: #3b7a40; border-color: #80bd8a; }
+#diy-bd #diy-e .leaf h4 { background: #504b21; border-color: #a2ad46; }
+#diy-bd #diy-e .pipes h4, body.kitchen #diy-e .pod h4 { background: #4d5255; border-color: #a5b0b4; }
+#diy-bd #diy-e .sawdust h4, body.remodeling #diy-e .pod h4 { background: #975a48; border-color: #d7bf9b; }
+#diy-bd #diy-e .carpet h4 { background: #3e2648; border-color: #87519c; }
+#diy-bd #diy-e .wood h4, body.floors #diy-e .pod h4 { background: #2c1f0e; border-color: #5c421d; }
+#diy-bd #diy-e .trim h4 { background: #3a585a; border-color: #7cbcbe; }
+#diy-bd #diy-e .frame h4 { background: #5a3a3b; border-color: #be7c7d; }
+#diy-bd #diy-e .tree h4, body.outdoors #diy-e .pod h4 { background: #404830; border-color: #8b9e66; }
+#diy-bd #diy-e .rooftop h4, body.decorating #diy-e .pod h4 { background: #290f0e; border-color: #5c2020; }
+#diy-bd #diy-e .hgtv h4 { background: #69968E ; border-color: #EF4141 ; }
+#diy-bd #diy-e .foodnetwork h4 { background: #660201; border-color: #a6b622; }
+#diy-bd #diy-e .recipezaar h4 { background: #872175; border-color: #d72d82; }
+
+#diy-w .concrete { background: #4d5254; }
+#diy-w .tile { background: #8c3b1d; }
+#diy-w .workbench { background: #d96421; }
+#diy-w .drill, body.electrical .section-title { background: #ddb527; }
+#diy-w .scaffolding, body.plumbing .section-title { background: #384bc4; }
+#diy-w .level, body.bathroom .section-title { background: #5793b8;  }
+#diy-w .paint, body.painting .section-title { background: #a91d1e;  }
+#diy-w .ladder, body.home-improvement .section-title { background: #73500c; }
+#diy-w .drywall, body.windows-walls-and-doors .section-title { background: #091626; }
+#diy-w .backsplash, body#experts-and-hosts .section-title { background: #545e8f; }
+#diy-w .lawn { background: #3b7a40;  }
+#diy-w .leaf { background: #504b21;  }
+#diy-w .pipes, body.kitchen .section-title { background: #4d5255; }
+#diy-w .sawdust, body.remodeling .section-title { background: #975a48;}
+#diy-w .carpet { background: #3e2648; }
+#diy-w .wood, body.floors .section-title { background: #2c1f0e;  }
+#diy-w .trim { background: #3a585a;  }
+#diy-w .frame { background: #5a3a3b; }
+#diy-w .tree, body.outdoors .section-title { background: #404830;  }
+#diy-w .rooftop, body.decorating .section-title { background: #290f0e;  }
+#diy-w .hgtv { background: #195a64;  }
+#diy-w .foodnetwork { background: #660201; }
+#diy-w .recipezaar { background: #872175;  }
+/* black isn't in the style guide, but it appears in visuals */
+#diy-w .black, #tv-shows .section-title { background: #000;}
+
+
+.bigboxad { margin-bottom: 7px; font-size: 77%; text-align: center; color: #999; line-height: 1; }
+.bigboxad #bigbox { background: #fff; border: 1px solid #ccc; padding: 16px;}
+.bigboxad p { padding: 5px 0;}
+
+.search form { background: transparent url(../imgs/se/diy-ui.png) right -354px; height: 34px; padding: 0 1px 0 0; margin-left: 1px;}
+.search .input { float: left; background: transparent url(../imgs/se/diy-ui.png) left -354px no-repeat; margin-left: -1px; height: 34px; line-height: 34px; padding: 0 9px; }
+.search .input input { background: none; border: none; font-size: 123.1%; padding: 7px 0 5px; width: 100%; color: #999; }
+.search button { width: 50px; height: 32px; background: transparent url(../imgs/se/diy-ui.png) -775px -580px no-repeat; overflow: hidden; cursor: pointer; text-indent: -9999px; border: none; float:right; margin: 1px 0; }
+.search button:active { background-position: -825px -580px; }
+
+#diy-we .search, #diy-w .search  { padding: 7px; background: #ddd;}
+#diy-we .search .input,#diy-w .search .input  { width: 325px; padding: 0 8px; }
+
+/* asset title area */
+.asset-title, .singleasset-title { margin: 0 14px 7px 14px; background: #fff; line-height: 1; border: 1px solid #ddd; zoom: 1; }
+.asset-title .intro, .singleasset-title .intro {padding: 14px;}
+.asset-title h1, .singleasset-title h1 { text-transform: uppercase; display: block; float: left;font-size:167%;padding-bottom:4px; /* width: 585px; */ }
+.asset-title h1 span, .singleasset-title h1 span { font-size: 85%; text-transform: none; }
+.asset-title .intro-txt { width: 585px; float: left; line-height: 1.7em; clear: left; }
+.asset-title p.intro-more {width: 585px; float: left; padding-top: 4px; color: #989898; font-size: 85%;  clear: left; }
+.asset-title p.intro-more.multi .more-lnk { background: url( ../imgs/se/sp-diy-icons.gif) no-repeat 0px -371px; margin-left: 4px; padding-left: 10px; }
+
+/* rating styles to be used across the site */
+.thumb-rate {background: url(../imgs/se/sp-diy-icons.gif) right -264px no-repeat; font-size: 85%; font-weight: normal; text-align: right;line-height: 1.8;padding-right: 25px;}
+.thumb-rate.rated {background-position: right -320px;}
+
+#diy-w .callout { margin: 0 14px 14px 14px; }
+#diy-w .callout p { line-height: 1.385; }
+#diy-we .callout { margin: 0 0 14px 0; }
+#diy-we .callout h4 { font-weight: bold; line-height: 1.385; }
+
+h3.sub-header { color: #671104; font-size: 123.1%; font-weight: bold; }
+h3.sub-header a { color: #671104; text-decoration:none; }
+h3.slug { color: #671104; font-weight: bold; line-height: 1; font-size: 85%; text-transform: uppercase; margin-bottom: 6px;}
+h4.story-header { font-size: 161.6%; line-height: 1.05; margin-bottom: 6px; font-weight: bold; }
+
+/* google ads in the footer */
+div#diy-bd div#diy-google{background: #fff;}
+#diy-google, #diy-google-top {border-top: 1px solid #ddd; padding: 12px 0 0;margin: 8px 0; *margin-bottom: 0; clear:both;}
+#diy-google-top {border-top:none;}
+#diy-google .google-ads-wrap, #diy-google-top .google-ads-wrap {margin:0 auto;/*width:994px;*/}
+#diy-google h5, #diy-google-top h5 {font-size:108%;font-weight:bold;line-height:1;margin:0 0 7px 0;text-transform:uppercase;}
+#diy-google .google-ad-results, #diy-google-top .google-ad-results {/*width:644px;*/margin-left:28px;}
+#diy-google dl, #diy-google-top dl {float:left;width:205px;}
+#diy-google dt, #diy-google-top dt {font-weight: bold;font-size: 93%;}
+#diy-google dd, #diy-google-top dd {font-size: 85%;}
+#search .pagi {margin-bottom:14px;}
+
+/* pagination */
+.pagi{text-align:center;/*margin-bottom:16px;*/color:#176684;font-size:85%;clear:both; *line-height: 1.8;}
+.pagi span{margin:0 7px;}
+.pagi a,
+.pagi a:visited {
+    border:1px solid #176684;
+    color: #176684;
+    padding:2px 5px;
+    margin-right:1px;
+}
+.pagi span.nextprev{margin-left:0;margin-right:1px;}
+.pagi a:hover{
+    border:1px solid #be1616;
+    color:#ba0707;
+    text-decoration:none;
+}
+.pagi span.nextprev{
+    border: none;
+    padding: 2px 5px;
+    color: #999;
+}
+.pagi a.nextprev{font-weight:bold; border: none;}
+.pagi .current{
+    background-color:#d8d8d8;
+    padding:2px 5px;
+    border:1px solid #aaaaaa;
+    color:#444444;
+    margin-right:1px;
+    margin-left:0;
+    font-weight: bold;
+}
+
+/* ERROR BlOCK is a lead for 500 and 404 error pages */
+.error-block { margin: 0 14px 14px; }
+.error-block h1 { font-size: 167%; line-height: 1; font-weight: bold; text-transform: uppercase; }
+.error-block .message { margin-bottom: 14px;}
+.error-block #code404 { float: left; width: 158px; height: 120px; background: url(../imgs/se/code-404.png) no-repeat; text-indent: -9999px; margin-right: 5px;}
+.error-block div { float: left; width: 453px;}
+.error-block div .list { margin-top: 7px;}
+.error-block div .list li {line-height: 1.39;}
+
+/* generic notice message with close btn */
+.notice-msg { margin: 0 14px 12px 14px; padding: 11px 12px 7px 12px; border: 1px solid #e8d5ab; background-color: #fdfad7; }
+.notice-msg h4 { margin-bottom: 5px; color: #000; font-size: 123.1%; font-weight: bold; line-height: 1.231; text-transform: uppercase; }
+.notice-msg .close { float: right; margin: -3px -5px 0 0; background: transparent url(../imgs/se/sp-popups.png) no-repeat left 0; _background-image:url(../imgs/se/sp-popups.gif); width: 12px; height: 12px; text-indent: -9999px; cursor: pointer; }
+.notice-msg p { line-height: 1.385; }
+
+.rating span { margin: 0 auto; display: block; text-indent: -9999px; height: 16px; width: 89px; background: url(../imgs/se/diy-ui.png) no-repeat 0px -829px;}
+.rating .one {background-position: -72px -829px;}
+.rating .two {background-position: -54px -829px;}
+.rating .three {background-position: -36px -829px;}
+.rating .four {background-position: -18px -829px;}
+.rating .five { background-position: 0px -829px;}
+
+
+/* shared image enlarge and video play icon */
+.media a.img-enlarge {background: url(../imgs/se/diy-ui.png) -400px -629px no-repeat; height: 0; padding-top: 14px; width: 14px; overflow: hidden; position: absolute; right: 0; top: 106px;}
+
+.media a.play {background: url(../imgs/se/diy-ui.png) -413px -628px no-repeat; height: 0; padding-top: 14px; width: 14px; overflow: hidden; position: absolute; right: 0; top: 106px;}
+
+
+a.img-enlarge2 { display: block; position: relative; }
+a.img-enlarge2 img { display: block }
+.img-enlarge2 .img-enl-ico { display: block; height: 14px; width: 14px; position: absolute; top: 0; right: 0; background: url(../imgs/se/diy-ui.png) -400px -629px no-repeat; }
+
+/*Video Icon*/
+a.video-link span.video-icon  { float:none;width:auto;cursor:pointer;display:inline;*display:inline-block;color:inherit;padding:0 24px 0 0;margin:0;font-size:100%;background:transparent url(../imgs/se/video-icon.gif) no-repeat right center;}
+a.video-link:hover span.video-icon { background-image:url(../imgs/se/video-icon-over.gif);}
+
+/* overriding css from rate-my-space */
+#rate-my-space.cgp-mg-01 .jcarousel-container .jcarousel-next-horizontal { background: url('../imgs/se/diy-ui.png') no-repeat scroll -260px -580px; }
+
+/* attribution */
+.attrib-mod { padding: 14px; margin: 14px; clear: both; background-color: #EEEEEE;}
+#diy-we .attrib-mod { margin: 14px 0 0; }
+.attrib-mod .thumb { display: block; float: left; margin-right: 14px; margin-bottom: 7px; }
+.attrib-mod p { padding-bottom: 4px;}
+
+/* tent-pole banners */
+.mini-lead h1 { height: 200px;letter-spacing: -999em; margin: 0 auto; overflow: hidden; text-indent: -999em; width: 966px; }
+
+#ERA_RC{min-height:250px;}
+
+/* MM-3670 */
+.eraLinksBlock {
+	background-color: #fff;
+	margin-bottom: 7px;
+}
+
+.eraLinksBlock .vsw-ad-footer {
+	padding-bottom: 10px;
+}
+
+.pod .eraLinksBlock {
+	margin-bottom: 0px;
+}
+.pod .eraLinksBlock .vsw-ad-footer {
+	padding-bottom: 0px;
+}
+
+
+/*GlobalPushdown MM-2718*/
+#pushdown_adtag {width: 100%; background: transparent; line-height: normal}
+#pushdown_adtag .iax_inner {width:970px; margin:0 auto;}
+
+/*pixel Tracker*/
+.pxTracker{
+    z-index: 100;
+    top:0;
+    position: absolute;
+}

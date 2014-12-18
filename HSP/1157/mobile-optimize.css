@@ -1,0 +1,54 @@
+#sh-head { display: none; }
+#social-toolbar { display: none;}
+section#social-module { display: none; }
+article.builder-uber + hr { display: none; }
+a.see-more { display: none; }
+div#we-recommend { display: none;}
+div#we-recommend + hr { display: none;}
+div#empty { display: none; }
+header.article-head + hr { display: none; } 
+article.builder-uber .lead p { width: 100%; }
+div.lead > div.bd > p { display: none; } 
+div.lead + hr { display: none; }
+
+
+div#sweeps-fineprint { padding: 0 14px; font-size: 11px; line-height: 17px; color: #adadad; }
+
+div.intro.sweeps h1 { padding: 14px; font-weight: bold; font-family: Arial, sans-serif; } 
+
+/*********************
+
+
+div#sponsors
+	div#sponsors-inner
+		h3
+		ul.clrfix
+			li
+				a 
+					img
+		h3.unbold
+		ul.also-by.clrfix
+			li
+				a 
+					img
+
+*/
+
+
+#sponsors { background-color: #FAF9F7; padding-top: 21px; border: 1px solid #e6e6e6;}
+#sponsors img { background-color: #FAF9F7; }
+#sponsors-inner {padding: 0 14px 21px;}
+#sponsors-inner h3 {margin-bottom: 11px;}
+#sponsors h3 { font-family: "Trebuchet MS", sans-serif; font-size: 14px; 
+	line-height: 1; font-weight: normal; color: #9A9A9A !important; } /* will be overriden by dream home local.css, use !important*/
+#sponsors ul {margin-bottom: 14px;}
+#sponsors li {margin-right: 6px; margin-bottom: 14px; display: inline; line-height: 40px; 
+	padding-right: 7px; float: left; vertical-align: middle; }
+#sponsors li img {vertical-align: middle; border: none; padding:0;}
+
+#sponsors ul { margin-bottom: 14px; }
+#sponsors div.first h3  { font-size: 19px; line-height: 1; }
+#sponsors ul.also-by li {height: 48px; margin-bottom: 21px;}
+#sponsors ul.also-by li.last {margin-bottom: 0; height: 32px;}
+#sponsors ul.also-by {margin-bottom: 0;}
+

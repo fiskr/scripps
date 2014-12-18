@@ -1,0 +1,14 @@
+.acco-link { cursor: pointer; }
+.selected .acco-link { cursor: auto; }
+
+#diy-e .widget .acco { margin: 0 6px;}
+#diy-e .widget .acco-group { margin: 4px 0 0;}
+.acco-link { background: transparent url(../imgs/se/diy-ui.png) no-repeat left -549px; height: 31px; }
+.acco-link.ui-state-active { background-position: left -518px;}
+.acco-link h5 { font-weight: bold; font-size: 108%; line-height: 31px; margin-left: 28px; text-transform: uppercase; background: transparent url(../imgs/se/diy-ui.png) no-repeat right -549px; text-shadow: 1px 1px 0 #fff;}
+.acco-bd .wrap { height: 160px; padding: 11px 7px; border-width: 0 1px 1px; border-color: #ddd; border-style: solid; }
+/* anything placed within an acco-bd needs the below property: */
+.acco-bd ul { height: 160px; overflow: auto;}
+
+#diy-e .acco-bd { *float: left; *width: 100%; height: auto; }
+#diy-e .widget .acco-group { float: left; width: 100%; }

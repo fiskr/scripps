@@ -1,0 +1,147 @@
+<style type="text/css">
+#gmc-container {width:601px;height:450px;position:relative;overflow:hidden}
+.sliderContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+ width: calc(100% * 3);
+	height: 336px;
+	z-index: 1010;
+	cursor: pointer;
+}
+.slide {
+	position: relative;
+	width: calc(100% / 3);
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.button {
+      position: absolute;
+      top: 160px;
+      z-index: 1050;
+      background: none;
+      cursor: pointer;
+      -webkit-transition: left 0.5s;
+              transition: left 0.5s; }
+.button.prev {
+        left: calc(50% - 270px); }
+.button.prev:hover {
+          left: calc(50% - 275px); }
+.button.next {
+        left: calc(50% + 247px); }
+.button.next:hover {
+          left: calc(50% + 252px); }
+</style>
+
+<div id="gmc-container">
+<div class="button prev"><img src="http://adimages.scrippsnetworks.com/iax/angelSoft/2014/pushdown/img/btn_prevArrow.png"></div>
+<div class="button next"><img src="http://adimages.scrippsnetworks.com/iax/angelSoft/2014/pushdown/img/btn_nextArrow.png"></div>
+<div class="sliderContainer">
+  <div class="slide" id="video1"><img src="http://scrippsonline.com/demo/gmc/ext-img1.jpg" border="0" width="601" height="450" alt=""/> </div>
+  <div class="slide" id="video2"><img src="http://scrippsonline.com/demo/gmc/ext-img2.jpg" border="0" width="601" height="450" alt=""/></div>
+  <div class="slide" id="video3"><img src="http://scrippsonline.com/demo/gmc/ext-img3.jpg" border="0" width="601" height="450" alt=""/></div>
+</div>
+</div>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="js/SNI_slider.js" type="text/javascript" charset="utf-8"></script> --> <!-- modify this -->
+<script>
+// JavaScript Document
+slider = {
+  vars: {
+    isTouchDevice: false,
+    startLeft: 0,
+    ranNum: Math.floor((Math.random() * 3) + 1),
+    onSlide: 1,
+    numSlides: 0,
+    slideContainer: $(".sliderContainer"),
+    navPrev: $(".button.prev"),
+    navNext: $(".button.next"),
+    currentLeft: 0,
+    sliderWidth: 0
+  },
+  init: function(useRandom) {
+    _self = slider;
+    if ("ontouchstart" in document.documentElement){
+      _self.vars.isTouchDevice = true;
+    }else{
+      _self.vars.isTouchDevice = false;
+    }
+    _self.vars.slideContainer.show();
+    _self.vars.numSlides = _self.vars.slideContainer.find(".slide").length;
+    console.log("number of slides is " + _self.vars.numSlides);
+    _self.vars.currentLeft = parseInt(_self.vars.slideContainer.css("left"));
+    _self.vars.sliderWidth = parseInt(_self.vars.slideContainer.width() / _self.vars.numSlides);
+    if(useRandom){
+      console.log("start on random slide");
+      _self.vars.startLeft = -(_self.vars.sliderWidth * (_self.vars.ranNum - 1));
+      _self.vars.onSlide = _self.vars.ranNum;
+    }else{
+      console.log("start on first slide");
+      _self.vars.startLeft = 0
+    }
+    _self.vars.slideContainer.css("left",_self.vars.startLeft);
+    
+    
+    setTimeout(function(){
+      _self.vars.slideContainer.css("transition","left 1s");
+    },300);
+  },
+  changeSlide: function(direction){
+    _self = slider;
+    console.log("change slider " + direction);
+    _self.vars.currentLeft = parseInt(_self.vars.slideContainer.css("left"));
+    console.log("on slide " + _self.vars.onSlide + " num of slides is " + _self.vars.numSlides);
+    
+    console.log("current left position is " + _self.vars.currentLeft + "slider width is " + _self.vars.sliderWidth);
+    
+    if(direction === "prev"){
+      if(_self.vars.onSlide === 1){
+        var endSlide = -(_self.vars.sliderWidth * (_self.vars.numSlides - 1));
+        _self.vars.slideContainer.css("left",endSlide);
+        _self.vars.onSlide = _self.vars.numSlides;
+      }else{
+        var newLeft = _self.vars.currentLeft + _self.vars.sliderWidth;
+        _self.vars.slideContainer.css("left",newLeft);
+        _self.vars.onSlide--;
+      }
+    }
+    if(direction === "next"){
+      if(_self.vars.onSlide === _self.vars.numSlides){
+        _self.vars.slideContainer.css("left",0);
+        _self.vars.onSlide = 1;
+      }else{
+        var newLeft = _self.vars.currentLeft - _self.vars.sliderWidth;
+        _self.vars.slideContainer.css("left",newLeft);
+        _self.vars.onSlide++;
+      }
+    }
+    
+    console.log("now on slide " + _self.vars.onSlide);
+  },
+  jumpSlide: function(whichSlide){
+    _self = slider;
+    console.log("jump to slide " + whichSlide);
+    _self.vars.currentLeft = parseInt(_self.vars.slideContainer.css("left"));
+    
+    var newLeft = -((whichSlide - 1) * _self.vars.sliderWidth);
+    _self.vars.slideContainer.css("left",newLeft);
+    _self.vars.onSlide = whichSlide;
+    
+    console.log("now on slide " + _self.vars.onSlide);
+  }
+}
+
+slider.vars.navPrev.click(function(){
+  slider.changeSlide("prev");
+});
+slider.vars.navNext.click(function(){
+  slider.changeSlide("next");
+});
+</script>
+<script type="text/javascript">
+slider.init(false);
+</script>

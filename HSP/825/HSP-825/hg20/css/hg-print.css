@@ -1,0 +1,19 @@
+body#print {
+    border:0;
+    }
+
+#print #print-link {
+    display:none
+    }
+
+#print #resources {
+    clear:both;
+    }
+
+#print .mrec {
+    display:none
+    }
+
+#print #hg-w-pr .imgwrap {
+    page-break-inside:avoid;
+    }

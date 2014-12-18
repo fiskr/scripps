@@ -1,0 +1,19 @@
+.super-lead-standard {background-color:#fff;border:7px solid #333;padding:14px;margin:0 14px 14px 14px;line-height:1.3;}
+.super-lead-standard .super-lead-inner {background:url(../imgs/se/bg-superlead-std.gif) top left repeat-y;}
+.super-lead-standard .lead {width:266px;float:left;padding-right:28px;}
+.super-lead-standard .lead.l-1 {width:175px;}
+.super-lead-standard .lead.l-4 {width:133px;padding:0;}
+.super-lead-standard h3 {line-height:1;}
+.super-lead-standard h4 {line-height:1;}
+.super-lead-standard p {padding:4px 0;}
+.super-lead-standard img {padding-bottom:7px;}
+.super-lead-standard h4 a {font-weight:bold;}
+.super-lead-standard li {background:url("../imgs/se/sp-diy-icons.gif") no-repeat scroll 0 -370px transparent;float:left;padding-left:10px;margin-left:4px;}
+.super-lead-standard li.first {background:none;padding-left:0;margin-left:0;}
+.super-lead-standard .pod {padding-bottom:21px;}
+.super-lead-standard .pod.last {padding-bottom:0;}
+.super-lead-standard .lead.l-3 h4 {font-size:161.6%;}
+.super-lead-standard .lead.l-4 .cta {font-size:85%;}
+.super-lead-standard .lead.l-4 img {display:block;margin:auto;}
+.super-lead-standard .lead.l-4 h4  {line-height:1.3;}
+.super-lead-standard object { *margin-bottom:7px; }
